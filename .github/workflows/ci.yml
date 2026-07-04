@@ -1,0 +1,98 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt pytest ruff black
+
+      - name: Lint (ruff)
+        run: ruff check . --select E,F,W --ignore E501
+
+      - name: Format check (black)
+        run: black --check .
+
+      - name: Security tests
+        run: pytest evals/test_security.py -v --tb=short
+
+      - name: Diagnostic tests
+        run: pytest evals/test_diagnostic.py -v --tb=short
+
+      - name: Assessment tests
+        run: pytest evals/test_assessment.py -v --tb=short
+
+      - name: Content tests
+        run: pytest evals/test_content.py -v --tb=short
+
+      - name: Quality tests (LLM-as-Judge, mock mode)
+        run: pytest evals/test_quality.py -v --tb=short
+        # GEMINI_API_KEY not set → runs in deterministic mock mode
+
+      - name: Full eval report
+        run: python evals/eval_runner.py
+
+  flutter-analyze:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.22.0"
+          channel: "stable"
+
+      - name: Flutter pub get
+        working-directory: mobile_app
+        run: flutter pub get
+
+      - name: Flutter analyze
+        working-directory: mobile_app
+        run: flutter analyze
+
+      - name: Flutter test
+        working-directory: mobile_app
+        run: flutter test
+
+  security-audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install pip-audit
+        run: pip install pip-audit
+
+      - name: Audit dependencies for CVEs
+        run: pip-audit -r requirements.txt --ignore-vuln PYSEC-2024-232

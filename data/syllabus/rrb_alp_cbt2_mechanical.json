@@ -1,0 +1,22 @@
+{
+  "exam": "RRB ALP CBT 2 — Mechanical Stream",
+  "total_questions": 75,
+  "subjects": [
+    {
+      "name": "Mechanical",
+      "weight": 1,
+      "topics": [
+        {"name": "Engineering Drawing", "subtopics": ["Scales", "First angle projection", "Orthographic views", "Isometric drawing", "Tolerances & fits"]},
+        {"name": "Measurements & Gauges", "subtopics": ["Vernier caliper", "Micrometer", "Dial gauge", "GO/NO-GO gauges", "Surface roughness"]},
+        {"name": "Lathe Operations", "subtopics": ["Turning", "Facing", "Taper turning", "Thread cutting", "Drilling on lathe", "Cutting speed"]},
+        {"name": "Fitting & Fasteners", "subtopics": ["Bolts & nuts", "Keys & keyways", "Rivets", "Thread pitch & lead", "Locking devices"]},
+        {"name": "Welding", "subtopics": ["Oxy-acetylene welding", "Arc welding (SMAW)", "MIG/TIG welding", "Welding defects", "PWHT"]},
+        {"name": "Heat Treatment", "subtopics": ["Annealing", "Normalising", "Hardening & Quenching", "Tempering", "Case hardening"]},
+        {"name": "Fluid Mechanics", "subtopics": ["Pascal's Law", "Bernoulli's Theorem", "Hydraulic systems", "Pumps", "Viscosity"]},
+        {"name": "Bearings & Lubrication", "subtopics": ["Ball & roller bearings", "Journal bearings", "Grease vs oil lubrication", "Bearing failure"]},
+        {"name": "Thermodynamics", "subtopics": ["Laws of thermodynamics", "Carnot cycle", "Boiler efficiency", "Air compressors", "Refrigeration"]},
+        {"name": "Maintenance & Safety", "subtopics": ["Preventive maintenance", "LOTO procedure", "Fire safety", "PPE", "5S methodology"]}
+      ]
+    }
+  ]
+}

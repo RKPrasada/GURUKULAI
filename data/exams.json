@@ -1,0 +1,196 @@
+{
+  "rrb_ntpc": {
+    "name": "RRB NTPC",
+    "papers": [
+      {
+        "id": "p1",
+        "name": "CBT 1",
+        "question_count": 100,
+        "duration_minutes": 90,
+        "correct_marks": 1,
+        "negative_marking": 0.333
+      },
+      {
+        "id": "p2",
+        "name": "CBT 2",
+        "question_count": 120,
+        "duration_minutes": 90,
+        "correct_marks": 1,
+        "negative_marking": 0.333
+      }
+    ]
+  },
+  "rrb_alp": {
+    "name": "RRB ALP",
+    "papers": [
+      {
+        "id": "p1",
+        "name": "CBT 1",
+        "question_count": 75,
+        "duration_minutes": 60,
+        "correct_marks": 1,
+        "negative_marking": 0.333
+      },
+      {
+        "id": "p2",
+        "name": "CBT 2 — Part A (Basic Science & Engineering)",
+        "question_count": 100,
+        "duration_minutes": 90,
+        "correct_marks": 1,
+        "negative_marking": 0.333
+      },
+      {
+        "id": "p2e",
+        "name": "CBT 2 — Part B Electrical",
+        "question_count": 75,
+        "duration_minutes": 60,
+        "correct_marks": 1,
+        "negative_marking": 0.333
+      },
+      {
+        "id": "p2m",
+        "name": "CBT 2 — Part B Mechanical",
+        "question_count": 75,
+        "duration_minutes": 60,
+        "correct_marks": 1,
+        "negative_marking": 0.333
+      }
+    ]
+  },
+  "rrb_alp_cbt2_electrical": {
+    "name": "RRB ALP CBT 2 — Electrical Stream",
+    "papers": [
+      {
+        "id": "p1",
+        "name": "Part B Electrical (75Q / 60 min)",
+        "question_count": 75,
+        "duration_minutes": 60,
+        "correct_marks": 1,
+        "negative_marking": 0.333
+      }
+    ]
+  },
+  "rrb_alp_cbt2_mechanical": {
+    "name": "RRB ALP CBT 2 — Mechanical Stream",
+    "papers": [
+      {
+        "id": "p1",
+        "name": "Part B Mechanical (75Q / 60 min)",
+        "question_count": 75,
+        "duration_minutes": 60,
+        "correct_marks": 1,
+        "negative_marking": 0.333
+      }
+    ]
+  },
+  "rrb_group_d": {
+    "name": "RRB Group D",
+    "papers": [
+      {
+        "id": "p1",
+        "name": "CBT",
+        "question_count": 100,
+        "duration_minutes": 90,
+        "correct_marks": 1,
+        "negative_marking": 0.333
+      }
+    ]
+  },
+  "rrb_technician": {
+    "name": "RRB Technician",
+    "papers": [
+      {
+        "id": "p1",
+        "name": "CBT 1 (Screening)",
+        "question_count": 75,
+        "duration_minutes": 60,
+        "correct_marks": 1,
+        "negative_marking": 0.333
+      },
+      {
+        "id": "p2a",
+        "name": "CBT 2 — Part A (Merit)",
+        "question_count": 100,
+        "duration_minutes": 90,
+        "correct_marks": 1,
+        "negative_marking": 0.333
+      },
+      {
+        "id": "p2b",
+        "name": "CBT 2 — Part B (Trade Qualifying, 35% min)",
+        "question_count": 75,
+        "duration_minutes": 60,
+        "correct_marks": 1,
+        "negative_marking": 0.333
+      }
+    ]
+  },
+  "rrb_je": {
+    "name": "RRB JE (Junior Engineer)",
+    "papers": [
+      {
+        "id": "p1",
+        "name": "CBT 1 (Screening)",
+        "question_count": 100,
+        "duration_minutes": 90,
+        "correct_marks": 1,
+        "negative_marking": 0.333
+      },
+      {
+        "id": "p2",
+        "name": "CBT 2 (Technical)",
+        "question_count": 150,
+        "duration_minutes": 120,
+        "correct_marks": 1,
+        "negative_marking": 0.333
+      }
+    ]
+  },
+  "nda": {
+    "name": "NDA",
+    "papers": [
+      {
+        "id": "p1",
+        "name": "Mathematics",
+        "question_count": 120,
+        "duration_minutes": 150,
+        "correct_marks": 2.5,
+        "negative_marking": 0.833
+      },
+      {
+        "id": "p2",
+        "name": "GAT",
+        "question_count": 150,
+        "duration_minutes": 150,
+        "correct_marks": 4,
+        "negative_marking": 1.333
+      }
+    ]
+  },
+  "jee": {
+    "name": "JEE Mains",
+    "papers": [
+      {
+        "id": "p1",
+        "name": "Paper 1 (B.E./B.Tech)",
+        "question_count": 75,
+        "duration_minutes": 180,
+        "correct_marks": 4,
+        "negative_marking": 1
+      }
+    ]
+  },
+  "neet": {
+    "name": "NEET",
+    "papers": [
+      {
+        "id": "p1",
+        "name": "NEET UG",
+        "question_count": 200,
+        "duration_minutes": 200,
+        "correct_marks": 4,
+        "negative_marking": 1
+      }
+    ]
+  }
+}

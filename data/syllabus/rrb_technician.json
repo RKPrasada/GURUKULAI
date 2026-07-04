@@ -1,0 +1,160 @@
+{
+  "exam": "RRB Technician",
+  "short_name": "rrb_technician",
+  "stages": [
+    {
+      "stage": "CBT 1 (Screening)",
+      "questions": 75,
+      "duration_minutes": 60,
+      "negative_marking": "1/3"
+    },
+    {
+      "stage": "CBT 2 Part A (Merit)",
+      "questions": 100,
+      "duration_minutes": 90,
+      "negative_marking": "1/3"
+    },
+    {
+      "stage": "CBT 2 Part B (Trade Qualifying)",
+      "questions": 75,
+      "duration_minutes": 60,
+      "pass_mark": "35%",
+      "note": "Trade-specific ITI syllabus; result is qualifying only, not counted in merit"
+    }
+  ],
+  "subjects": [
+    {
+      "name": "Mathematics",
+      "stage": ["CBT 1", "CBT 2 Part A"],
+      "topics": [
+        {
+          "name": "Number System",
+          "subtopics": ["Natural numbers", "Integers", "Rational & Irrational numbers", "LCM & HCF", "Divisibility"]
+        },
+        {
+          "name": "Arithmetic",
+          "subtopics": ["Ratio & Proportion", "Percentages", "Profit & Loss", "Simple Interest", "Compound Interest", "Average", "Time & Work", "Time & Distance"]
+        },
+        {
+          "name": "Algebra",
+          "subtopics": ["Basic identities", "Linear equations", "Polynomials", "Factorisation"]
+        },
+        {
+          "name": "Geometry & Mensuration",
+          "subtopics": ["Lines & Angles", "Triangles", "Circles", "Area of 2D figures", "Surface area & Volume of 3D figures"]
+        },
+        {
+          "name": "Trigonometry",
+          "subtopics": ["Trigonometric ratios", "Complementary angles", "Height & Distance"]
+        },
+        {
+          "name": "Statistics",
+          "subtopics": ["Mean", "Median", "Mode", "Data interpretation", "Bar graphs", "Pie charts"]
+        }
+      ]
+    },
+    {
+      "name": "General Intelligence & Reasoning",
+      "stage": ["CBT 1", "CBT 2 Part A"],
+      "topics": [
+        {
+          "name": "Verbal Reasoning",
+          "subtopics": ["Analogies", "Coding-Decoding", "Blood Relations", "Syllogism", "Statement & Conclusion", "Odd One Out"]
+        },
+        {
+          "name": "Non-Verbal Reasoning",
+          "subtopics": ["Series Completion", "Pattern Recognition", "Mirror & Water Images", "Embedded Figures", "Folding & Unfolding"]
+        },
+        {
+          "name": "Logical Reasoning",
+          "subtopics": ["Puzzles", "Seating Arrangement", "Direction Sense", "Ranking", "Venn Diagrams", "Data Sufficiency"]
+        }
+      ]
+    },
+    {
+      "name": "General Science",
+      "stage": ["CBT 1"],
+      "note": "NCERT Class 10 level",
+      "topics": [
+        {
+          "name": "Physics",
+          "subtopics": ["Laws of Motion", "Work Energy Power", "Gravitation", "Sound", "Light — Reflection & Refraction", "Electricity", "Magnetic Effects of Electric Current"]
+        },
+        {
+          "name": "Chemistry",
+          "subtopics": ["Chemical Reactions", "Acids Bases Salts", "Metals & Non-metals", "Carbon Compounds", "Periodic Classification of Elements"]
+        },
+        {
+          "name": "Biology",
+          "subtopics": ["Life Processes", "Control & Coordination", "Reproduction", "Heredity & Evolution", "Our Environment", "Natural Resource Management"]
+        }
+      ]
+    },
+    {
+      "name": "Basic Science & Engineering",
+      "stage": ["CBT 2 Part A"],
+      "topics": [
+        {
+          "name": "Engineering Drawing",
+          "subtopics": ["Lines & types", "Dimensioning", "Projection — First & Third angle", "Isometric views", "Reading of engineering drawings"]
+        },
+        {
+          "name": "Units & Measurements",
+          "subtopics": ["SI units", "Measurement of length, mass, time", "Derived units", "Error & accuracy"]
+        },
+        {
+          "name": "Mass, Weight & Density",
+          "subtopics": ["Difference between mass and weight", "Density & specific gravity", "Archimedes principle"]
+        },
+        {
+          "name": "Work, Power & Energy",
+          "subtopics": ["Work done by a force", "Power and its units", "Kinetic & Potential energy", "Conservation of energy", "Efficiency of machines"]
+        },
+        {
+          "name": "Speed & Velocity",
+          "subtopics": ["Scalar vs Vector", "Speed, velocity, acceleration", "Equations of motion", "Relative velocity"]
+        },
+        {
+          "name": "Heat & Temperature",
+          "subtopics": ["Temperature scales — Celsius, Fahrenheit, Kelvin", "Thermal expansion", "Heat transfer — conduction, convection, radiation", "Latent heat"]
+        },
+        {
+          "name": "Basic Electricity",
+          "subtopics": ["Ohm's law", "Series & Parallel circuits", "Electric power & energy", "AC & DC", "Kirchhoff's laws", "Capacitors & Inductors basics"]
+        },
+        {
+          "name": "Levers & Simple Machines",
+          "subtopics": ["Types of levers — class 1, 2, 3", "Mechanical advantage", "Pulleys, inclined planes, gears", "Efficiency of machines"]
+        },
+        {
+          "name": "Occupational Safety & Health",
+          "subtopics": ["Safety signs & symbols", "First aid", "Personal protective equipment", "Fire safety", "Accident prevention"]
+        },
+        {
+          "name": "Environment & Pollution Control",
+          "subtopics": ["Air pollution", "Water pollution", "Noise pollution", "Solid waste management", "Environmental laws basics"]
+        },
+        {
+          "name": "IT Literacy",
+          "subtopics": ["Basic computer components", "Operating system basics", "MS Office basics", "Internet & email", "Cyber safety"]
+        }
+      ]
+    },
+    {
+      "name": "Current Affairs",
+      "stage": ["CBT 1", "CBT 2 Part A"],
+      "topics": [
+        {
+          "name": "National & International Events",
+          "subtopics": ["Government schemes & policies", "Economic developments", "Science & technology news", "Sports achievements", "Awards & honours", "Important summits & agreements"]
+        }
+      ]
+    }
+  ],
+  "trades_for_part_b": [
+    "Electrician", "Fitter", "Mechanic (Motor Vehicle)", "Electronics",
+    "Instrument Mechanic", "Welder", "Carpenter", "Painter",
+    "Plumber", "Turner", "Machinist", "Wireman", "Draughtsman (Civil)",
+    "Draughtsman (Mechanical)", "Stenographer", "Refrigeration & Air Conditioning"
+  ]
+}

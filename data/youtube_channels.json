@@ -1,0 +1,52 @@
+{
+  "rrb_ntpc": [
+    {
+      "channel_id": "UCsVPl8agR3CchT3-AjKZ-Iw",
+      "name": "Mahendra Guru",
+      "description": "RRB NTPC & Railway exams",
+      "priority": 1
+    },
+    {
+      "channel_id": "UCJxb8o8m8ow5sNmfXdq7Ezg",
+      "name": "SSC Guru",
+      "description": "RRB & SSC exam preparation",
+      "priority": 2
+    }
+  ],
+  "jee": [
+    {
+      "channel_id": "UC7sRwBXhWTAW3F3LK8f_u9A",
+      "name": "Physics Wallah",
+      "description": "JEE & NEET comprehensive courses",
+      "priority": 1
+    },
+    {
+      "channel_id": "UCP6JDN3Byu0qJHgPaLKzZZQ",
+      "name": "Unacademy JEE",
+      "description": "JEE Main & Advanced",
+      "priority": 2
+    }
+  ],
+  "neet": [
+    {
+      "channel_id": "UC7sRwBXhWTAW3F3LK8f_u9A",
+      "name": "Physics Wallah",
+      "description": "JEE & NEET comprehensive courses",
+      "priority": 1
+    },
+    {
+      "channel_id": "UCJxb8o8m8ow5sNmfXdq7Ezg",
+      "name": "Unacademy NEET",
+      "description": "NEET Biology, Chemistry, Physics",
+      "priority": 2
+    }
+  ],
+  "nda": [
+    {
+      "channel_id": "UCsVPl8agR3CchT3-AjKZ-Iw",
+      "name": "NDA Guru",
+      "description": "NDA exam preparation",
+      "priority": 1
+    }
+  ]
+}

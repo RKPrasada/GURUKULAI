@@ -1,0 +1,392 @@
+[
+  {
+    "id": "rrb_group_d_978112fe",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 2,
+    "question_text": "If 'MATH' is coded as 'NBUI', how is 'LOGIC' coded?",
+    "options": [
+      "MPHJD",
+      "MPHJE",
+      "MPHID",
+      "MPHJC"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter is shifted forward by one position in the alphabet: L→M, O→P, G→H, I→J, C→D."
+  },
+  {
+    "id": "rrb_group_d_2a4da08e",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Relationships",
+    "difficulty": 1,
+    "question_text": "Pointing to a photograph, a woman says, 'He is the only son of my mother's husband.' How is the man related to the woman?",
+    "options": [
+      "Father",
+      "Brother",
+      "Son",
+      "Uncle"
+    ],
+    "correct_index": 1,
+    "explanation": "Mother's husband is the woman's father; the only son of her father is her brother."
+  },
+  {
+    "id": "rrb_group_d_4d6ca148",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Conclusions and Decision Making",
+    "difficulty": 3,
+    "question_text": "Statements: All pens are pencils. Some pencils are erasers. Conclusions: I. Some pens are erasers. II. Some erasers are pens. Which conclusion(s) follow?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct_index": 3,
+    "explanation": "The premises do not guarantee any overlap between pens and erasers; both conclusions are invalid."
+  },
+  {
+    "id": "rrb_group_d_fd9ff867",
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 1,
+    "question_text": "If a:b = 3:4 and b:c = 5:6, what is a:c?",
+    "options": [
+      "5:8",
+      "15:24",
+      "9:20",
+      "1:2"
+    ],
+    "correct_index": 0,
+    "explanation": "Make b common: a:b = 3:4 = 15:20, b:c = 5:6 = 20:24. Hence a:c = 15:24 = 5:8."
+  },
+  {
+    "id": "rrb_group_d_7a4ff352",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 1,
+    "question_text": "What is the compound interest on Rs. 10,000 at 10% per annum for 2 years, compounded annually?",
+    "options": [
+      "2000",
+      "2100",
+      "2200",
+      "2300"
+    ],
+    "correct_index": 1,
+    "explanation": "Amount = 10000 × (1 + 0.10)^2 = 10000 × 1.21 = 12100. CI = 12100 − 10000 = 2100."
+  },
+  {
+    "id": "rrb_group_d_409a9493",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "Which Indian satellite, launched in 2023, is dedicated to studying the Sun's corona and solar wind?",
+    "options": [
+      "Aditya-L1",
+      "Chandrayaan-3",
+      "GSAT-30",
+      "RISAT-2BR1"
+    ],
+    "correct_index": 0,
+    "explanation": "Aditya-L1, launched on 2 September 2023, is India's first solar observatory mission placed at the Sun-Earth L1 point to study the solar corona and solar wind."
+  },
+  {
+    "id": "rrb_group_d_0ab9a288",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 1,
+    "question_text": "Who won the Men's Singles title at the 2023 Wimbledon Championships?",
+    "options": [
+      "Carlos Alcaraz",
+      "Novak Djokovic",
+      "Daniil Medvedev",
+      "Jannik Sinner"
+    ],
+    "correct_index": 0,
+    "explanation": "Carlos Alcaraz defeated Novak Djokovic in the final to claim his first Wimbledon title in July 2023."
+  },
+  {
+    "id": "rrb_group_d_63517662",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 2,
+    "question_text": "The 'Kumbh Mela' is held at four rotating locations in India. Which of the following is NOT one of those locations?",
+    "options": [
+      "Prayagraj (Allahabad)",
+      "Haridwar",
+      "Ujjain",
+      "Varanasi"
+    ],
+    "correct_index": 3,
+    "explanation": "The Kumbh Mela rotates among Prayagraj, Haridwar, Ujjain, and Nashik. Varanasi is not a Kumbh Mela site."
+  },
+  {
+    "id": "rrb_group_d_bb08dc67",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 2,
+    "question_text": "What was the Reserve Bank of India's repo rate as of the monetary policy announced in February 2024?",
+    "options": [
+      "6.00%",
+      "6.25%",
+      "6.50%",
+      "6.75%"
+    ],
+    "correct_index": 2,
+    "explanation": "In the February 2024 monetary policy, the RBI kept the repo rate unchanged at 6.50%."
+  },
+  {
+    "id": "rrb_group_d_1e806a61",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "What is the SI unit of electric current?",
+    "options": [
+      "Volt",
+      "Ampere",
+      "Ohm",
+      "Watt"
+    ],
+    "correct_index": 1,
+    "explanation": "The SI unit of electric current is the ampere (A)."
+  },
+  {
+    "id": "rrb_group_d_2a837062",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "The refractive index of water with respect to air is approximately:",
+    "options": [
+      "1.33",
+      "1.50",
+      "1.00",
+      "0.75"
+    ],
+    "correct_index": 0,
+    "explanation": "Water's refractive index relative to air is about 1.33 at visible wavelengths."
+  },
+  {
+    "id": "rrb_group_d_cac1e107",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 2,
+    "question_text": "What is the chemical formula of washing soda?",
+    "options": [
+      "Na2CO3·10H2O",
+      "NaHCO3",
+      "NaCl",
+      "Na2SO4"
+    ],
+    "correct_index": 0,
+    "explanation": "Washing soda is sodium carbonate decahydrate, Na2CO3·10H2O."
+  },
+  {
+    "id": "rrb_group_d_e230f7e9",
+    "subject": "General Science",
+    "topic": "Life Sciences",
+    "difficulty": 2,
+    "question_text": "The process by which green plants synthesize food using sunlight is called:",
+    "options": [
+      "Respiration",
+      "Transpiration",
+      "Photosynthesis",
+      "Fermentation"
+    ],
+    "correct_index": 2,
+    "explanation": "Photosynthesis is the process where green plants convert light energy into chemical energy (glucose) using carbon dioxide and water."
+  },
+  {
+    "id": "rrb_group_d_174e21c2",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "What is the least common multiple (LCM) of 24, 36 and 54?",
+    "options": [
+      "216",
+      "432",
+      "108",
+      "72"
+    ],
+    "correct_index": 0,
+    "explanation": "Prime factorization: 24=2^3·3, 36=2^2·3^2, 54=2·3^3. LCM takes highest powers: 2^3·3^3 = 8·27 = 216."
+  },
+  {
+    "id": "rrb_group_d_daa24a9e",
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 2,
+    "question_text": "If a:b = 3:5 and b:c = 4:7, what is a:c?",
+    "options": [
+      "12:35",
+      "15:28",
+      "20:21",
+      "9:14"
+    ],
+    "correct_index": 0,
+    "explanation": "From a:b=3:5 => a=3k,b=5k. From b:c=4:7 => b=4m,c=7m. Equate b:5k=4m => k=4m/5. Then a=3k=12m/5. So a:c = (12m/5):7m = 12:35."
+  },
+  {
+    "id": "rrb_group_d_4f40f69e",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 1,
+    "question_text": "What is the compound interest on ₹10,000 at 10% per annum compounded annually for 2 years?",
+    "options": [
+      "2000",
+      "2100",
+      "2200",
+      "2300"
+    ],
+    "correct_index": 1,
+    "explanation": "Amount = 10000(1+0.10)^2 = 10000×1.21 = 12100. CI = 12100−10000 = 2100."
+  },
+  {
+    "id": "rrb_group_d_1eec9273",
+    "subject": "General Science",
+    "topic": "Physics (10th Standard)",
+    "difficulty": 2,
+    "question_text": "A force of 10 N acts on a body of mass 2 kg. What is the acceleration produced?",
+    "options": [
+      "5 m/s²",
+      "20 m/s²",
+      "0.5 m/s²",
+      "10 m/s²"
+    ],
+    "correct_index": 0,
+    "explanation": "Using Newton's second law, a = F/m = 10 N / 2 kg = 5 m/s²."
+  },
+  {
+    "id": "rrb_group_d_fd6a0f15",
+    "subject": "General Science",
+    "topic": "Chemistry (10th Standard)",
+    "difficulty": 2,
+    "question_text": "Which of the following is a strong acid?",
+    "options": [
+      "HCl",
+      "CH₃COOH",
+      "H₂CO₃",
+      "NH₃"
+    ],
+    "correct_index": 0,
+    "explanation": "Hydrochloric acid (HCl) dissociates completely in water, making it a strong acid."
+  },
+  {
+    "id": "rrb_group_d_aea27dc1",
+    "subject": "General Science",
+    "topic": "Life Sciences (10th Standard)",
+    "difficulty": 2,
+    "question_text": "Which part of the human brain is primarily responsible for balance and coordination?",
+    "options": [
+      "Cerebellum",
+      "Cerebrum",
+      "Medulla oblongata",
+      "Hypothalamus"
+    ],
+    "correct_index": 0,
+    "explanation": "The cerebellum controls motor coordination, posture, and balance."
+  },
+  {
+    "id": "rrb_group_d_fffba063",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 1,
+    "question_text": "Which Indian space agency launched the Chandrayaan-3 mission in July 2023?",
+    "options": [
+      "ISRO",
+      "NASA",
+      "ESA",
+      "Roscosmos"
+    ],
+    "correct_index": 0,
+    "explanation": "Chandrayaan-3 was launched by the Indian Space Research Organisation (ISRO) on 14 July 2023."
+  },
+  {
+    "id": "rrb_group_d_7f5ea66b",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 2,
+    "question_text": "Who won the men's singles title at the 2023 BWF World Championships in badminton?",
+    "options": [
+      "Viktor Axelsen",
+      "Kento Momota",
+      "Shi Yuqi",
+      "Lakshya Sen"
+    ],
+    "correct_index": 0,
+    "explanation": "Denmark's Viktor Axelsen defeated Kunlavut Vitidsarn in the final to claim the 2023 world championship title."
+  },
+  {
+    "id": "rrb_group_d_363c2130",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 2,
+    "question_text": "The Kumbh Mela is held at four rotating locations. Which of the following is NOT one of them?",
+    "options": [
+      "Prayagraj",
+      "Haridwar",
+      "Nashik",
+      "Varanasi"
+    ],
+    "correct_index": 3,
+    "explanation": "The four traditional Kumbh Mela sites are Prayagraj, Haridwar, Nashik, and Ujjain. Varanasi is not a Kumbh Mela venue."
+  },
+  {
+    "id": "rrb_group_d_8e14b76a",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Personalities",
+    "difficulty": 1,
+    "question_text": "Who is the author of the autobiography \"Wings of Fire\"?",
+    "options": [
+      "A.P.J. Abdul Kalam",
+      "Chetan Bhagat",
+      "Amartya Sen",
+      "Narendra Modi"
+    ],
+    "correct_index": 0,
+    "explanation": "\"Wings of Fire\" is the autobiography of former President of India Dr. A.P.J. Abdul Kalam, published in 1999."
+  },
+  {
+    "id": "rrb_group_d_9361bc99",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 3,
+    "question_text": "What was the revised GDP growth rate forecast for India for FY 2023-24 by the RBI in its October 2023 monetary policy?",
+    "options": [
+      "6.5%",
+      "7.0%",
+      "7.5%",
+      "8.0%"
+    ],
+    "correct_index": 0,
+    "explanation": "In the October 2023 monetary policy, the Reserve Bank of India revised India's real GDP growth projection for FY24 to 6.5%."
+  },
+  {
+    "id": "rrb_group_d_7b7c7da2",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 2,
+    "question_text": "In a certain code, 'CAT' is written as 'DBU'. How is 'DOG' written in the same code?",
+    "options": [
+      "EPH",
+      "EQH",
+      "EPG",
+      "DPH"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter is shifted forward by one position in the alphabet (C→D, A→B, T→U). Applying the same rule: D→E, O→P, G→H gives EPH."
+  },
+  {
+    "id": "rrb_group_d_013908ef",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Relationships",
+    "difficulty": 2,
+    "question_text": "A is the brother of B. B is the sister of C. C is the father of D. How is A related to D?",
+    "options": [
+      "Uncle",
+      "Father",
+      "Grandfather",
+      "Cousin"
+    ],
+    "correct_index": 0,
+    "explanation": "A and B are siblings; B and C are siblings, so A and C are siblings. Since C is the father of D, A is the uncle of D."
+  }
+]

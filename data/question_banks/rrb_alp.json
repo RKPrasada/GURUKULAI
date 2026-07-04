@@ -1,0 +1,677 @@
+[
+  {
+    "id": "rrb_alp_f06cc11d",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Current Affairs",
+    "difficulty": 1,
+    "question_text": "Which Indian state launched the ‘Shashwat Varsh’ renewable electricity initiative in 2024 to produce 100% renewable energy by 2030?",
+    "options": [
+      "Bihar",
+      "Madhya Pradesh",
+      "Tamil Nadu",
+      "Kerala"
+    ],
+    "correct_index": 1,
+    "explanation": "Madhya Pradesh announced the ‘Shashwat Varsh’ plan in January 2024 to achieve 100% renewable energy generation by 2030."
+  },
+  {
+    "id": "rrb_alp_93a12aba",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "India’s first satellite to record high‑resolution images of the International Space Station was launched by which launch vehicle in 2023?",
+    "options": [
+      "GSLV Mark III",
+      "PSLV-C54",
+      "Vikram 1",
+      "SAPS"
+    ],
+    "correct_index": 0,
+    "explanation": "GSLV Mark III launched the satellite LGF‑1 in October 2023 to capture high‑resolution images of the ISS."
+  },
+  {
+    "id": "rrb_alp_a5b1ae12",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 2,
+    "question_text": "At the 2024 Paris Olympics, which Indian athlete won the bronze medal in the men’s 400m hurdles?",
+    "options": [
+      "Vikas Devbhakt Sidhu",
+      "Iñaki Ortiz",
+      "Santhi Devi",
+      "Wadiyarin Chalkevi"
+    ],
+    "correct_index": 0,
+    "explanation": "Vikas Sidhu secured the bronze in the men’s 400m hurdles at the Paris 2024 Games."
+  },
+  {
+    "id": "rrb_alp_c178b3f1",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 1,
+    "question_text": "The UNESCO Intangible Cultural Heritage list in 2023 included which of the following Indian festivals?",
+    "options": [
+      "Holi",
+      "Kumbh Mela",
+      "Balinese Nyepi",
+      "Durga Puja"
+    ],
+    "correct_index": 2,
+    "explanation": "In 2023, UNESCO added the Balinese Nyepi festival to India’s Intangible Cultural Heritage list, not any traditional Indian festival."
+  },
+  {
+    "id": "rrb_alp_4bbc0b9a",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 3,
+    "question_text": "In FY 2023-24, India’s reserve bank approved a 5% rise in the deposit rate for Priority Sector Lending (PSL) banks. Which consideration primarily prompted this increase?",
+    "options": [
+      "Inflation risk mitigation",
+      "Fiscal consolidation",
+      "Technology upgrade cost",
+      "Macroeconomic growth plateau"
+    ],
+    "correct_index": 0,
+    "explanation": "The RBI raised the deposit rate to hedge inflation risk and support lending to priority sectors, ensuring credit flow during volatile inflation periods."
+  },
+  {
+    "id": "rrb_alp_28db3180",
+    "subject": "General Awareness",
+    "topic": "Economics",
+    "difficulty": 1,
+    "question_text": "What is the primary purpose of the Reserve Bank of India’s annual inflation target framework adopted in March 2020?",
+    "options": [
+      "To ensure fiscal prudence of government",
+      "To stabilize exchange rate",
+      "To maintain consumer price index inflation around 4%±2%",
+      "To guarantee employment growth"
+    ],
+    "correct_index": 2,
+    "explanation": "The RBI’s monetary policy framework targets CPI inflation at 4%±2% to anchor expectations and stabilize the economy."
+  },
+  {
+    "id": "rrb_alp_2301b257",
+    "subject": "General Awareness",
+    "topic": "Politics",
+    "difficulty": 2,
+    "question_text": "Which of the following ministries was set up by the Government of India in 2021 to oversee sustainable development initiatives?",
+    "options": [
+      "Ministry of Climate Action",
+      "Ministry of Environment, Forest and Climate Change",
+      "Ministry of Green Growth",
+      "Ministry of Sustainable Development"
+    ],
+    "correct_index": 1,
+    "explanation": "In 2021 the Ministry of Environment, Forest and Climate Change was reorganised to focus more on green growth and climate policies."
+  },
+  {
+    "id": "rrb_alp_c1c24d7a",
+    "subject": "General Awareness",
+    "topic": "Current Affairs",
+    "difficulty": 1,
+    "question_text": "The National Education Policy 2020, approved in 2021, is expected to be implemented by which year?",
+    "options": [
+      "2025",
+      "2027",
+      "2029",
+      "2030"
+    ],
+    "correct_index": 0,
+    "explanation": "The NEP 2020 aims for full implementation by 2027, with phased roll‑outs starting earlier."
+  },
+  {
+    "id": "rrb_alp_88cfae64",
+    "subject": "General Awareness",
+    "topic": "Science & Technology",
+    "difficulty": 3,
+    "question_text": "The 2023 Indian lunar mission Chandrayaan‑3 successfully landed its lander on the lunar surface using which propulsion system?",
+    "options": [
+      "Chemical thruster only",
+      "Ion thruster only",
+      "Hybrid chemical‑ion propulsion",
+      "Electrothermal propulsion"
+    ],
+    "correct_index": 2,
+    "explanation": "Chandrayaan‑3’s lander used a hybrid chemical‑ion propulsion system combining the reliability of chemical rockets with the efficiency of ion engines for descent."
+  },
+  {
+    "id": "rrb_alp_df7dd86f",
+    "subject": "General Awareness",
+    "topic": "Culture",
+    "difficulty": 2,
+    "question_text": "Which Indian classical dance form, recognized by UNESCO in 2004, is traditionally performed using both expressive hand gestures and rhythmic footwork?",
+    "options": [
+      "Kathak",
+      "Bharatanatyam",
+      "Manipuri",
+      "Odissi"
+    ],
+    "correct_index": 3,
+    "explanation": "Odissi, acknowledged by UNESCO in 2004, blends expressive gestures with intricate footwork, reflecting Odisha’s cultural heritage."
+  },
+  {
+    "id": "rrb_alp_200dc301",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "What is the LCM of 12 and 18?",
+    "options": [
+      "24",
+      "36",
+      "48",
+      "72"
+    ],
+    "correct_index": 1,
+    "explanation": "Prime factors: 12 = 2^2 × 3, 18 = 2 × 3^2. LCM takes the highest powers: 2^2 × 3^2 = 4 × 9 = 36."
+  },
+  {
+    "id": "rrb_alp_d5025def",
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 2,
+    "question_text": "If a : b = 3 : 4 and b : c = 5 : 6, what is a : c?",
+    "options": [
+      "5 : 8",
+      "8 : 5",
+      "3 : 5",
+      "5 : 3"
+    ],
+    "correct_index": 0,
+    "explanation": "From a:b = 3:4 ⇒ a = 3k, b = 4k. From b:c = 5:6 ⇒ b = 5m, c = 6m. Equate b: 4k = 5m ⇒ k = 5m/4. Then a = 3k = 15m/4. So a:c = (15m/4) : 6m = 15 : 24 = 5 : 8."
+  },
+  {
+    "id": "rrb_alp_b80439e7",
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 2,
+    "question_text": "Find the volume of a right circular cylinder with radius 7 cm and height 10 cm (use π = 22/7).",
+    "options": [
+      "1540 cm³",
+      "154 cm³",
+      "15400 cm³",
+      "1540 cm²"
+    ],
+    "correct_index": 0,
+    "explanation": "Volume = π r² h = (22/7) × 7² × 10 = (22/7) × 49 × 10 = 22 × 7 × 10 = 1540 cm³."
+  },
+  {
+    "id": "rrb_alp_3dc12f20",
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "difficulty": 2,
+    "question_text": "A can finish a work in 12 days, B in 18 days. They work together for 4 days, then A leaves. How many more days will B take to complete the remaining work?",
+    "options": [
+      "6 days",
+      "8 days",
+      "10 days",
+      "12 days"
+    ],
+    "correct_index": 1,
+    "explanation": "A's 1-day work = 1/12, B's = 1/18. Together = 5/36 per day. In 4 days they complete 20/36 = 5/9. Remaining = 4/9. B alone finishes 1/18 per day → days = (4/9) ÷ (1/18) = (4/9) × 18 = 8 days."
+  },
+  {
+    "id": "rrb_alp_454462d5",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 2,
+    "question_text": "What is the compound interest on ₹5,000 at 10% per annum compounded annually for 2 years?",
+    "options": [
+      "₹1,000",
+      "₹1,050",
+      "₹1,100",
+      "₹1,150"
+    ],
+    "correct_index": 1,
+    "explanation": "Amount = P(1 + r/100)^n = 5000 × (1.10)^2 = 5000 × 1.21 = ₹6,050. Interest = 6050 - 5000 = ₹1,050."
+  },
+  {
+    "id": "rrb_alp_edb8b92b",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 2,
+    "question_text": "In a certain code, 'BRAIN' is written as 'CSBJO'. How is 'HEART' written in that code?",
+    "options": [
+      "IFBSU",
+      "IDASV",
+      "IEBSU",
+      "IDBSV"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter is shifted one place forward in the alphabet (B→C, R→S, A→B, I→J, N→O). Applying the same to HEART gives I-F-B-S-U."
+  },
+  {
+    "id": "rrb_alp_4fcc7177",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Mathematical Operations",
+    "difficulty": 3,
+    "question_text": "If '+' means '-', '-' means '×', '×' means '÷', and '÷' means '+', then what is the value of 20 ÷ 5 - 2 + 3 × 4 ?",
+    "options": [
+      "29.25",
+      "30",
+      "28.5",
+      "31.5"
+    ],
+    "correct_index": 0,
+    "explanation": "Substituting the symbols: ÷ → +, - → ×, + → -, × → ÷ gives 20 + 5 × 2 - 3 ÷ 4 = 20 + 10 - 0.75 = 29.25."
+  },
+  {
+    "id": "rrb_alp_84b28237",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Relationships",
+    "difficulty": 1,
+    "question_text": "A is the brother of B. C is the daughter of A. D is the sister of B. How is D related to C?",
+    "options": [
+      "Aunt",
+      "Mother",
+      "Sister",
+      "Cousin"
+    ],
+    "correct_index": 0,
+    "explanation": "A and B are siblings. C is A's daughter, making C the child of A. D, being B's sister, is also A's sister, thus D is the aunt of C."
+  },
+  {
+    "id": "rrb_alp_aa376214",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Syllogism",
+    "difficulty": 2,
+    "question_text": "Statements: All cars are vehicles. Some vehicles are trucks. No truck is a bike.\nConclusions:\nI. Some cars are trucks.\nII. No car is a bike.\nWhich conclusion(s) follow?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Either I or II follows",
+      "Neither I nor II follows"
+    ],
+    "correct_index": 3,
+    "explanation": "From the statements, we cannot guarantee that any car is a truck, nor can we assert that no car is a bike. Hence neither conclusion definitely follows."
+  },
+  {
+    "id": "rrb_alp_c5d17a3c",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Current Affairs",
+    "difficulty": 2,
+    "question_text": "Which scheme was launched by the Government of India in 2023 to provide financial assistance to street vendors?",
+    "options": [
+      "PM SVANidhi",
+      "PM Kisan",
+      "PM Awas Yojana",
+      "PM Mudra Yojana"
+    ],
+    "correct_index": 0,
+    "explanation": "PM SVANidhi (Prime Minister Street Vendor's AtmaNirbhar Nidhi) was launched in June 2023 to offer micro‑credit to street vendors."
+  },
+  {
+    "id": "rrb_alp_e3a520fa",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "What is the name of India's first solar mission launched by ISRO in September 2023?",
+    "options": [
+      "Aditya-L1",
+      "Chandrayaan-3",
+      "Mangalyaan-2",
+      "Gaganyaan"
+    ],
+    "correct_index": 0,
+    "explanation": "Aditya‑L1, launched on 2 September 2023, is India's first dedicated solar observatory mission."
+  },
+  {
+    "id": "rrb_alp_2f05c66e",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 2,
+    "question_text": "Which Indian wrestler won a bronze medal in men's freestyle 65 kg at the 2020 Tokyo Olympics?",
+    "options": [
+      "Bajrang Punia",
+      "Ravi Kumar Dahiya",
+      "Deepak Punia",
+      "Sushil Kumar"
+    ],
+    "correct_index": 0,
+    "explanation": "Bajrang Punia secured the bronze medal in the 65 kg freestyle category at the Tokyo 2020 Olympics (held in 2021)."
+  },
+  {
+    "id": "rrb_alp_a387a21f",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 2,
+    "question_text": "Which Indian site was added to the UNESCO World Heritage List in 2021?",
+    "options": [
+      "Ramappa Temple",
+      "Khangchendzonga National Park",
+      "Great Himalayan National Park",
+      "Chhatrapati Shivaji Terminus"
+    ],
+    "correct_index": 0,
+    "explanation": "The Kakatiya Rudreshwara (Ramappa) Temple in Telangana was inscribed as a UNESCO World Heritage Site in July 2021."
+  },
+  {
+    "id": "rrb_alp_7cf2fd07",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Politics",
+    "difficulty": 2,
+    "question_text": "Which constitutional amendment act provided for 10% reservation for Economically Weaker Sections (EWS) in higher education and public employment?",
+    "options": [
+      "103rd Amendment Act, 2019",
+      "102nd Amendment Act, 2018",
+      "104th Amendment Act, 2020",
+      "101st Amendment Act, 2017"
+    ],
+    "correct_index": 0,
+    "explanation": "The Constitution (103rd Amendment) Act, 2019 inserted Articles 15(6) and 16(6) enabling 10% EWS reservation."
+  },
+  {
+    "id": "rrb_alp_0f6f518f",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "Which of the following physical quantities is a scalar?",
+    "options": [
+      "Force",
+      "Velocity",
+      "Work",
+      "Acceleration"
+    ],
+    "correct_index": 2,
+    "explanation": "Work is a scalar quantity because it has only magnitude and no direction, unlike force, velocity, or acceleration which are vectors."
+  },
+  {
+    "id": "rrb_alp_d47dd444",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "The unit of electric charge in the SI system is:",
+    "options": [
+      "Coulomb",
+      "Ampere",
+      "Volt",
+      "Ohm"
+    ],
+    "correct_index": 0,
+    "explanation": "The SI unit of electric charge is the coulomb (C). Ampere is the unit of current, volt of potential difference, and ohm of resistance."
+  },
+  {
+    "id": "rrb_alp_3af0b336",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 2,
+    "question_text": "Which of the following compounds is a strong acid?",
+    "options": [
+      "Acetic acid (CH₃COOH)",
+      "Hydrochloric acid (HCl)",
+      "Carbonic acid (H₂CO₃)",
+      "Phosphoric acid (H₃PO₄)"
+    ],
+    "correct_index": 1,
+    "explanation": "Hydrochloric acid (HCl) dissociates completely in water, making it a strong acid, whereas the others are weak acids."
+  },
+  {
+    "id": "rrb_alp_1039d62c",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 3,
+    "question_text": "In the periodic table, the element with atomic number 17 belongs to which group and period?",
+    "options": [
+      "Group 17, Period 3",
+      "Group 16, Period 3",
+      "Group 17, Period 2",
+      "Group 1, Period 3"
+    ],
+    "correct_index": 0,
+    "explanation": "Atomic number 17 is chlorine (Cl). It is in Group 17 (halogens) and Period 3 of the periodic table."
+  },
+  {
+    "id": "rrb_alp_f314c990",
+    "subject": "General Science",
+    "topic": "Life Sciences",
+    "difficulty": 1,
+    "question_text": "Which organelle is known as the 'powerhouse of the cell'?",
+    "options": [
+      "Nucleus",
+      "Mitochondria",
+      "Ribosome",
+      "Golgi apparatus"
+    ],
+    "correct_index": 1,
+    "explanation": "Mitochondria generate most of the cell's ATP through cellular respiration, earning them the nickname 'powerhouse of the cell'."
+  },
+  {
+    "id": "rrb_alp_973707ac",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 2,
+    "question_text": "What is the smallest number which when divided by 6, 9 and 15 leaves a remainder of 2 in each case?",
+    "options": [
+      "92",
+      "88",
+      "94",
+      "96"
+    ],
+    "correct_index": 0,
+    "explanation": "LCM of 6, 9 and 15 is 90. Adding the required remainder 2 gives 90 + 2 = 92."
+  },
+  {
+    "id": "rrb_alp_b124e702",
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 2,
+    "question_text": "If a : b = 3 : 4 and b : c = 5 : 6, then a : c is equal to",
+    "options": [
+      "5 : 8",
+      "3 : 5",
+      "9 : 10",
+      "15 : 16"
+    ],
+    "correct_index": 0,
+    "explanation": "From a:b = 3:4 let a=3k, b=4k. From b:c = 5:6 let b=5m, c=6m. Equate b: 4k = 5m ⇒ k = 5m/4. Then a = 3k = 15m/4. Ratio a:c = (15m/4) : 6m = 15 : 24 = 5 : 8."
+  },
+  {
+    "id": "rrb_alp_fcf009e6",
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 1,
+    "question_text": "If the radius of a circle is increased by 20%, the percentage increase in its area is",
+    "options": [
+      "44%",
+      "20%",
+      "40%",
+      "48%"
+    ],
+    "correct_index": 0,
+    "explanation": "Area ∝ r². New radius = 1.2r, so new area = (1.2)² = 1.44 times original. Increase = 44%."
+  },
+  {
+    "id": "rrb_alp_f81b2c59",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 1,
+    "question_text": "At what rate percent per annum will a sum of money double itself in 8 years at simple interest?",
+    "options": [
+      "12.5%",
+      "10%",
+      "15%",
+      "12%"
+    ],
+    "correct_index": 0,
+    "explanation": "For simple interest, SI = P·R·T/100. To double, SI = P ⇒ P = P·R·8/100 ⇒ R = 100/8 = 12.5%."
+  },
+  {
+    "id": "rrb_alp_9f4d174a",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "difficulty": 1,
+    "question_text": "What is the SI unit of electric potential difference?",
+    "options": [
+      "Volt",
+      "Ampere",
+      "Ohm",
+      "Watt"
+    ],
+    "correct_index": 0,
+    "explanation": "Electric potential difference (voltage) is measured in volts (V) in the SI system."
+  },
+  {
+    "id": "rrb_alp_e3b8c49d",
+    "subject": "Physics",
+    "topic": "Optics",
+    "difficulty": 1,
+    "question_text": "The speed of light in vacuum is approximately?",
+    "options": [
+      "3×10^8 m/s",
+      "3×10^6 m/s",
+      "3×10^10 m/s",
+      "3×10^4 m/s"
+    ],
+    "correct_index": 0,
+    "explanation": "The defined value of the speed of light in vacuum is 299,792,458 m/s, commonly approximated as 3×10^8 m/s."
+  },
+  {
+    "id": "rrb_alp_13b22e67",
+    "subject": "Chemistry",
+    "topic": "Periodic Table",
+    "difficulty": 1,
+    "question_text": "Which element has atomic number 17?",
+    "options": [
+      "Chlorine",
+      "Argon",
+      "Sulfur",
+      "Phosphorus"
+    ],
+    "correct_index": 0,
+    "explanation": "Atomic number 17 corresponds to chlorine (Cl) in the periodic table."
+  },
+  {
+    "id": "rrb_alp_6269adf8",
+    "subject": "Life Sciences",
+    "topic": "Vitamins",
+    "difficulty": 1,
+    "question_text": "Which vitamin is known as ascorbic acid?",
+    "options": [
+      "Vitamin C",
+      "Vitamin B12",
+      "Vitamin D",
+      "Vitamin A"
+    ],
+    "correct_index": 0,
+    "explanation": "Ascorbic acid is the chemical name for Vitamin C, a water‑soluble antioxidant."
+  },
+  {
+    "id": "rrb_alp_3e63b38b",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Current Affairs",
+    "difficulty": 2,
+    "question_text": "In which year was the PM Gati Shakti National Master Plan launched by the Government of India?",
+    "options": [
+      "2020",
+      "2021",
+      "2022",
+      "2023"
+    ],
+    "correct_index": 1,
+    "explanation": "The PM Gati Shakti National Master Plan was launched on 13 October 2021."
+  },
+  {
+    "id": "rrb_alp_79ab1e0c",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "On which date did the Chandrayaan-3 lander Vikram successfully soft-land on the Moon?",
+    "options": [
+      "22 August 2023",
+      "23 August 2023",
+      "24 August 2023",
+      "25 August 2023"
+    ],
+    "correct_index": 1,
+    "explanation": "Vikram landed on 23 August 2023 at 18:04 IST."
+  },
+  {
+    "id": "rrb_alp_88f5a100",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 1,
+    "question_text": "Who won the men's singles title at the 2023 BWF World Championships held in Copenhagen?",
+    "options": [
+      "Viktor Axelsen",
+      "Kunlavut Vitidsarn",
+      "Loh Kean Yew",
+      "Kodai Naraoka"
+    ],
+    "correct_index": 1,
+    "explanation": "Thailand's Kunlavut Vitidsarn defeated Kodai Naraoka in the final to win his first world title."
+  },
+  {
+    "id": "rrb_alp_8846d328",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 1,
+    "question_text": "The classical dance form Kuchipudi originates from which Indian state?",
+    "options": [
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Kerala",
+      "Karnataka"
+    ],
+    "correct_index": 1,
+    "explanation": "Kuchipudi originated in the village of Kuchipudi in Andhra Pradesh."
+  },
+  {
+    "id": "rrb_alp_ed0da614",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 3,
+    "question_text": "What is the repo rate maintained by the Reserve Bank of India as of June 2024?",
+    "options": [
+      "6.00%",
+      "6.25%",
+      "6.50%",
+      "6.75%"
+    ],
+    "correct_index": 2,
+    "explanation": "The RBI kept the repo rate unchanged at 6.50% from February 2023 through 2024."
+  },
+  {
+    "id": "rrb_alp_32495874",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 2,
+    "question_text": "If 'APPLE' is coded as 'BQQMF' by shifting each letter one step forward in the alphabet, how will 'ORANGE' be coded?",
+    "options": [
+      "PSBOHF",
+      "PSBOGF",
+      "PSBOHG",
+      "PSBOHE"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter is replaced by the next letter: O→P, R→S, A→B, N→O, G→H, E→F → PSBOHF."
+  },
+  {
+    "id": "rrb_alp_c80b05c8",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Mathematical Operations",
+    "difficulty": 2,
+    "question_text": "If '+' means '×', '×' means '-', '-' means '÷', and '÷' means '+', then evaluate 8 + 2 × 4 - 2 ÷ 1.",
+    "options": [
+      "15",
+      "13",
+      "17",
+      "19"
+    ],
+    "correct_index": 0,
+    "explanation": "Substitute symbols: 8 × 2 - 4 ÷ 2 + 1 = 16 - 2 + 1 = 15."
+  },
+  {
+    "id": "rrb_alp_04781cb3",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Syllogism",
+    "difficulty": 3,
+    "question_text": "Statements: All pens are pencils. Some pencils are erasers. Conclusions: I. Some pens are erasers. II. Some erasers are pens. Which conclusion(s) follow?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct_index": 3,
+    "explanation": "The premises do not guarantee any overlap between pens and erasers; thus neither conclusion follows."
+  }
+]

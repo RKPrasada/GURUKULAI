@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "gurukul-ai-web",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--", "--port", "3004"],
+      "cwd": "/Users/aruna/vidyabot/web",
+      "port": 3004
+    }
+  ]
+}

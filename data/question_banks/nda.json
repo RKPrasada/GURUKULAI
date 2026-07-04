@@ -1,0 +1,1562 @@
+[
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 1,
+    "question_text": "sin30°+cos60° =",
+    "options": [
+      "1",
+      "√3/2",
+      "1/2",
+      "√2"
+    ],
+    "correct_index": 0,
+    "explanation": "1/2+1/2=1.",
+    "id": "nda_mathem_trigon_36a95e"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Current Events",
+    "difficulty": 1,
+    "question_text": "The headquarters of ISRO is located in:",
+    "options": [
+      "Bengaluru",
+      "New Delhi",
+      "Mumbai",
+      "Chennai"
+    ],
+    "correct_index": 0,
+    "explanation": "Indian Space Research Organisation is headquartered in Bengaluru (Bangalore).",
+    "id": "nda_genera_curren_28381c"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 2,
+    "question_text": "sin²A+cos²A=",
+    "options": [
+      "1",
+      "0",
+      "2",
+      "sinA"
+    ],
+    "correct_index": 0,
+    "explanation": "Fundamental Pythagorean identity.",
+    "id": "nda_mathem_trigon_0e3617"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 1,
+    "question_text": "If α and β are roots of x²−5x+6=0, find α²+β².",
+    "options": [
+      "13",
+      "25",
+      "11",
+      "7"
+    ],
+    "correct_index": 0,
+    "explanation": "α+β=5, αβ=6. α²+β²=(α+β)²−2αβ=25−12=13.",
+    "id": "nda_mathem_algebr_b62e24"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 1,
+    "question_text": "In a right triangle with tanA=3/4, sinA=",
+    "options": [
+      "3/5",
+      "4/5",
+      "3/4",
+      "5/3"
+    ],
+    "correct_index": 0,
+    "explanation": "Hypotenuse=5; sinA=3/5.",
+    "id": "nda_mathem_trigon_a86ac0"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "R=5Ω, I=2A. Power dissipated=",
+    "options": [
+      "20 W",
+      "10 W",
+      "5 W",
+      "40 W"
+    ],
+    "correct_index": 0,
+    "explanation": "P=I²R=4×5=20 W.",
+    "id": "nda_genera_physic_830a5f"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 2,
+    "question_text": "How many 4-digit numbers can be formed using digits 1,2,3,4,5 without repetition?",
+    "options": [
+      "120",
+      "60",
+      "24",
+      "240"
+    ],
+    "correct_index": 0,
+    "explanation": "⁵P₄=5×4×3×2=120.",
+    "id": "nda_mathem_algebr_6ea3b2"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "A 2 kg mass at 5 m/s has kinetic energy:",
+    "options": [
+      "25 J",
+      "10 J",
+      "50 J",
+      "5 J"
+    ],
+    "correct_index": 0,
+    "explanation": "KE=½mv²=½×2×25=25 J.",
+    "id": "nda_genera_physic_68718b"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Geography",
+    "difficulty": 2,
+    "question_text": "International Date Line follows approximately:",
+    "options": [
+      "180° meridian",
+      "0° meridian",
+      "90°E",
+      "90°W"
+    ],
+    "correct_index": 0,
+    "explanation": "Runs along 180° longitude in the Pacific Ocean.",
+    "id": "nda_genera_geogra_574fbb"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 2,
+    "question_text": "Maximum value of 3sinθ+4cosθ is:",
+    "options": [
+      "5",
+      "7",
+      "4",
+      "3"
+    ],
+    "correct_index": 0,
+    "explanation": "√(a²+b²)=√(9+16)=5.",
+    "id": "nda_mathem_trigon_3d3de6"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 2,
+    "question_text": "n(A∪B)=60, n(A)=35, n(B)=40. Find n(A∩B).",
+    "options": [
+      "15",
+      "25",
+      "20",
+      "10"
+    ],
+    "correct_index": 0,
+    "explanation": "n(A∩B)=35+40−60=15.",
+    "id": "nda_mathem_algebr_8832d4"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Statistics & Probability",
+    "difficulty": 2,
+    "question_text": "Two dice thrown; P(sum=7)=",
+    "options": [
+      "1/6",
+      "5/36",
+      "7/36",
+      "1/4"
+    ],
+    "correct_index": 0,
+    "explanation": "6 favourable/36 total=1/6.",
+    "id": "nda_mathem_statis_fc0c6d"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Geography",
+    "difficulty": 1,
+    "question_text": "Largest continent is:",
+    "options": [
+      "Asia",
+      "Africa",
+      "North America",
+      "Europe"
+    ],
+    "correct_index": 0,
+    "explanation": "Asia covers ~44.6 million km².",
+    "id": "nda_genera_geogra_69829b"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 3,
+    "question_text": "Area bounded by y=x² and y=x is:",
+    "options": [
+      "1/6",
+      "1/3",
+      "1/2",
+      "1/4"
+    ],
+    "correct_index": 0,
+    "explanation": "∫₀¹(x−x²)dx=[x²/2−x³/3]₀¹=1/2−1/3=1/6.",
+    "id": "nda_mathem_calcul_4b0e25"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 2,
+    "question_text": "d/dx [e^(3x)]=",
+    "options": [
+      "3e^(3x)",
+      "e^(3x)",
+      "3xe^(3x)",
+      "eˣ"
+    ],
+    "correct_index": 0,
+    "explanation": "Chain rule: e^(3x)·3=3e^(3x).",
+    "id": "nda_mathem_calcul_0a7927"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 1,
+    "question_text": "cos(π)=",
+    "options": [
+      "−1",
+      "0",
+      "1",
+      "−√3/2"
+    ],
+    "correct_index": 0,
+    "explanation": "cos180°=−1.",
+    "id": "nda_mathem_trigon_b427e8"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Geography",
+    "difficulty": 1,
+    "question_text": "Country with longest coastline:",
+    "options": [
+      "Canada",
+      "Russia",
+      "Australia",
+      "USA"
+    ],
+    "correct_index": 0,
+    "explanation": "Canada: ~202,080 km coastline.",
+    "id": "nda_genera_geogra_e9e78f"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 2,
+    "question_text": "In a GP, 3rd term=4 and 6th term=32. Find the common ratio.",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "√2"
+    ],
+    "correct_index": 0,
+    "explanation": "ar²=4, ar⁵=32 → r³=8 → r=2.",
+    "id": "nda_mathem_algebr_61e280"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "Frequency=500 Hz, wavelength=0.6 m. Wave speed=",
+    "options": [
+      "300 m/s",
+      "500 m/s",
+      "0.6 m/s",
+      "833 m/s"
+    ],
+    "correct_index": 0,
+    "explanation": "v=fλ=500×0.6=300 m/s.",
+    "id": "nda_genera_physic_854f00"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Current Events",
+    "difficulty": 2,
+    "question_text": "G20 is a forum of how many member countries?",
+    "options": [
+      "20",
+      "19",
+      "21",
+      "25"
+    ],
+    "correct_index": 0,
+    "explanation": "G20 comprises 19 countries + European Union = 20 members.",
+    "id": "nda_genera_curren_293b10"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 2,
+    "question_text": "In an AP, if sum of n terms is 3n²+5n, find the common difference.",
+    "options": [
+      "6",
+      "3",
+      "5",
+      "10"
+    ],
+    "correct_index": 0,
+    "explanation": "aₙ=Sₙ−Sₙ₋₁=6n+2; d=aₙ₊₁−aₙ=6.",
+    "id": "nda_mathem_algebr_7d87ca"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Current Events",
+    "difficulty": 1,
+    "question_text": "Operation Sindoor (2025) was conducted by India against:",
+    "options": [
+      "Pakistan",
+      "China",
+      "Nepal",
+      "Bangladesh"
+    ],
+    "correct_index": 0,
+    "explanation": "Operation Sindoor was India's military strike against terrorist infrastructure in Pakistan following the Pahalgam attack.",
+    "id": "nda_genera_curren_1b8521"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 2,
+    "question_text": "∫(2x+3)dx from 0 to 2 equals:",
+    "options": [
+      "10",
+      "8",
+      "14",
+      "12"
+    ],
+    "correct_index": 0,
+    "explanation": "[x²+3x]₀²=(4+6)−0=10.",
+    "id": "nda_mathem_calcul_81be37"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "SI unit of force is:",
+    "options": [
+      "Newton",
+      "Joule",
+      "Watt",
+      "Pascal"
+    ],
+    "correct_index": 0,
+    "explanation": "1 N=1 kg·m/s².",
+    "id": "nda_genera_physic_bb5d3e"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Chemistry",
+    "difficulty": 1,
+    "question_text": "Molar mass of H₂SO₄=",
+    "options": [
+      "98 g/mol",
+      "80 g/mol",
+      "96 g/mol",
+      "100 g/mol"
+    ],
+    "correct_index": 0,
+    "explanation": "2+32+64=98 g/mol.",
+    "id": "nda_genera_chemis_5c6300"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Vector Algebra",
+    "difficulty": 2,
+    "question_text": "Dot product of (1,2,3) and (4,−1,2)=",
+    "options": [
+      "8",
+      "12",
+      "4",
+      "10"
+    ],
+    "correct_index": 0,
+    "explanation": "4−2+6=8.",
+    "id": "nda_mathem_vector_860207"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "English",
+    "difficulty": 2,
+    "question_text": "Passive of 'The teacher taught the students':",
+    "options": [
+      "The students were taught by the teacher.",
+      "The students are taught by the teacher.",
+      "The students taught by the teacher.",
+      "The teacher was taught."
+    ],
+    "correct_index": 0,
+    "explanation": "Object→subject, 'were'+past participle+'by'+agent.",
+    "id": "nda_genera_englis_790762"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 2,
+    "question_text": "The coefficient of x³ in (1+x)⁸ is:",
+    "options": [
+      "56",
+      "28",
+      "8",
+      "70"
+    ],
+    "correct_index": 0,
+    "explanation": "⁸C₃=56.",
+    "id": "nda_mathem_algebr_9268fc"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 1,
+    "question_text": "If log₂ 8=x, find x.",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "8"
+    ],
+    "correct_index": 0,
+    "explanation": "log₂ 2³=3.",
+    "id": "nda_mathem_algebr_b23cc9"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Vector Algebra",
+    "difficulty": 2,
+    "question_text": "Unit vector along î+ĵ is:",
+    "options": [
+      "(î+ĵ)/√2",
+      "î+ĵ",
+      "(î+ĵ)/2",
+      "√2(î+ĵ)"
+    ],
+    "correct_index": 0,
+    "explanation": "Magnitude=√2; unit vector=(î+ĵ)/√2.",
+    "id": "nda_mathem_vector_de067b"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Analytical Geometry",
+    "difficulty": 2,
+    "question_text": "For perpendicular lines, m₁×m₂=",
+    "options": [
+      "−1",
+      "0",
+      "1",
+      "∞"
+    ],
+    "correct_index": 0,
+    "explanation": "Condition for perpendicularity: m₁m₂=−1.",
+    "id": "nda_mathem_analyt_36093c"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "History",
+    "difficulty": 1,
+    "question_text": "UN was established in:",
+    "options": [
+      "1945",
+      "1919",
+      "1947",
+      "1960"
+    ],
+    "correct_index": 0,
+    "explanation": "UN Charter signed June 26, 1945; effective Oct 24, 1945.",
+    "id": "nda_genera_histor_109257"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 2,
+    "question_text": "cos²θ−sin²θ=",
+    "options": [
+      "cos2θ",
+      "1",
+      "0",
+      "sin2θ"
+    ],
+    "correct_index": 0,
+    "explanation": "Double angle identity: cos2θ.",
+    "id": "nda_mathem_trigon_191e85"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "History",
+    "difficulty": 1,
+    "question_text": "D-Day (June 6, 1944) refers to:",
+    "options": [
+      "Allied invasion of Normandy",
+      "Pearl Harbor attack",
+      "Hiroshima bombing",
+      "VE Day"
+    ],
+    "correct_index": 0,
+    "explanation": "Operation Overlord — the Allied amphibious landing in Normandy, France.",
+    "id": "nda_genera_histor_f5caf1"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Geography",
+    "difficulty": 2,
+    "question_text": "Strait of Hormuz connects Persian Gulf to:",
+    "options": [
+      "Arabian Sea",
+      "Red Sea",
+      "Caspian Sea",
+      "Indian Ocean"
+    ],
+    "correct_index": 0,
+    "explanation": "Connects via Gulf of Oman to the Arabian Sea.",
+    "id": "nda_genera_geogra_be0494"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "General Science",
+    "difficulty": 1,
+    "question_text": "Human heart has how many chambers?",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "6"
+    ],
+    "correct_index": 0,
+    "explanation": "Right/left atria and right/left ventricles.",
+    "id": "nda_genera_genera_4a4e30"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "Projectile fired at 45° for maximum range. If u=20 m/s and g=10, max range=",
+    "options": [
+      "40 m",
+      "20 m",
+      "80 m",
+      "10 m"
+    ],
+    "correct_index": 0,
+    "explanation": "R=u²sin2θ/g=400×1/10=40 m.",
+    "id": "nda_genera_physic_3efe77"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Current Events",
+    "difficulty": 1,
+    "question_text": "India's first indigenous aircraft carrier is:",
+    "options": [
+      "INS Vikrant",
+      "INS Viraat",
+      "INS Vikramaditya",
+      "INS Arihant"
+    ],
+    "correct_index": 0,
+    "explanation": "INS Vikrant was commissioned in September 2022 — India's first domestically built aircraft carrier.",
+    "id": "nda_genera_curren_6f08c3"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Chemistry",
+    "difficulty": 1,
+    "question_text": "Atomic number of Carbon=",
+    "options": [
+      "6",
+      "12",
+      "8",
+      "4"
+    ],
+    "correct_index": 0,
+    "explanation": "6 protons.",
+    "id": "nda_genera_chemis_b0faa0"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "English",
+    "difficulty": 1,
+    "question_text": "The news ___ shocking. (is/are)",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have"
+    ],
+    "correct_index": 0,
+    "explanation": "'News' is uncountable → singular verb 'is'.",
+    "id": "nda_genera_englis_b1d978"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Analytical Geometry",
+    "difficulty": 2,
+    "question_text": "The equation of a circle with centre (2,3) and radius 4 is:",
+    "options": [
+      "(x−2)²+(y−3)²=16",
+      "(x+2)²+(y+3)²=16",
+      "x²+y²=16",
+      "(x−2)²+(y−3)²=4"
+    ],
+    "correct_index": 0,
+    "explanation": "Standard form: (x−h)²+(y−k)²=r².",
+    "id": "nda_mathem_analyt_684814"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Chemistry",
+    "difficulty": 2,
+    "question_text": "Noble gases are unreactive because they have:",
+    "options": [
+      "Complete outer shells",
+      "Low mass",
+      "High boiling points",
+      "No protons"
+    ],
+    "correct_index": 0,
+    "explanation": "Full outermost electron shells make them stable.",
+    "id": "nda_genera_chemis_6ff7bf"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 1,
+    "question_text": "Slope of tangent to y=x² at x=3 is:",
+    "options": [
+      "6",
+      "9",
+      "3",
+      "12"
+    ],
+    "correct_index": 0,
+    "explanation": "dy/dx=2x; at x=3: slope=6.",
+    "id": "nda_mathem_calcul_468cac"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 2,
+    "question_text": "∫ x·eˣ dx=",
+    "options": [
+      "eˣ(x−1)+C",
+      "xeˣ+C",
+      "eˣ+C",
+      "eˣ(x+1)+C"
+    ],
+    "correct_index": 0,
+    "explanation": "By parts: xeˣ−eˣ+C=eˣ(x−1)+C.",
+    "id": "nda_mathem_calcul_098c6d"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "History",
+    "difficulty": 1,
+    "question_text": "India-Pakistan partition occurred in:",
+    "options": [
+      "1947",
+      "1950",
+      "1945",
+      "1948"
+    ],
+    "correct_index": 0,
+    "explanation": "August 14–15, 1947 under the Indian Independence Act.",
+    "id": "nda_genera_histor_b5bf29"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "General Science",
+    "difficulty": 1,
+    "question_text": "Normal human blood pH is approximately:",
+    "options": [
+      "7.4",
+      "6.8",
+      "8.0",
+      "7.0"
+    ],
+    "correct_index": 0,
+    "explanation": "Normal range 7.35–7.45 (slightly alkaline).",
+    "id": "nda_genera_genera_6b5d02"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Statistics & Probability",
+    "difficulty": 1,
+    "question_text": "Mean of first n natural numbers is:",
+    "options": [
+      "(n+1)/2",
+      "n/2",
+      "n",
+      "n(n+1)/2"
+    ],
+    "correct_index": 0,
+    "explanation": "Sum=n(n+1)/2; mean=(n+1)/2.",
+    "id": "nda_mathem_statis_bc8280"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "Boiling point of water at standard pressure=",
+    "options": [
+      "100°C",
+      "0°C",
+      "37°C",
+      "200°C"
+    ],
+    "correct_index": 0,
+    "explanation": "100°C=373 K=212°F at 1 atm.",
+    "id": "nda_genera_physic_fc72f4"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "History",
+    "difficulty": 2,
+    "question_text": "Battle of Waterloo (1815) ended the rule of:",
+    "options": [
+      "Napoleon",
+      "Louis XVIII",
+      "Wellington",
+      "Bismarck"
+    ],
+    "correct_index": 0,
+    "explanation": "Napoleon was decisively defeated at Waterloo on June 18, 1815.",
+    "id": "nda_genera_histor_456e06"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Chemistry",
+    "difficulty": 2,
+    "question_text": "Bond in NaCl is:",
+    "options": [
+      "Ionic",
+      "Covalent",
+      "Metallic",
+      "Van der Waals"
+    ],
+    "correct_index": 0,
+    "explanation": "Na⁺ and Cl⁻ form ionic bond.",
+    "id": "nda_genera_chemis_94378c"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 1,
+    "question_text": "The principal value of sin⁻¹(−1/2) is:",
+    "options": [
+      "−π/6",
+      "π/6",
+      "−π/3",
+      "5π/6"
+    ],
+    "correct_index": 0,
+    "explanation": "Principal value in [−π/2,π/2]: −π/6.",
+    "id": "nda_mathem_trigon_bf895c"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Statistics & Probability",
+    "difficulty": 2,
+    "question_text": "P(A)=0.4, P(B)=0.3, P(A∩B)=0.1. P(A∪B)=",
+    "options": [
+      "0.6",
+      "0.7",
+      "0.5",
+      "0.8"
+    ],
+    "correct_index": 0,
+    "explanation": "0.4+0.3−0.1=0.6.",
+    "id": "nda_mathem_statis_041923"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Geography",
+    "difficulty": 1,
+    "question_text": "World's highest peak is in:",
+    "options": [
+      "Nepal",
+      "India",
+      "China",
+      "Bhutan"
+    ],
+    "correct_index": 0,
+    "explanation": "Everest (8,848.86 m) is on the Nepal-China border; accessed from Nepal.",
+    "id": "nda_genera_geogra_eb2343"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Chemistry",
+    "difficulty": 2,
+    "question_text": "Zn+H₂SO₄→ produces which gas?",
+    "options": [
+      "H₂",
+      "O₂",
+      "SO₂",
+      "CO₂"
+    ],
+    "correct_index": 0,
+    "explanation": "Zn+H₂SO₄→ZnSO₄+H₂↑.",
+    "id": "nda_genera_chemis_2f270c"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Chemistry",
+    "difficulty": 2,
+    "question_text": "Rusting of iron is: Fe₂O₃·xH₂O. This is:",
+    "options": [
+      "Oxidation",
+      "Reduction",
+      "Sublimation",
+      "Decomposition"
+    ],
+    "correct_index": 0,
+    "explanation": "Iron loses electrons (oxidation) in the presence of O₂ and H₂O.",
+    "id": "nda_genera_chemis_0ac826"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 1,
+    "question_text": "d/dx [x³−3x²+5]=",
+    "options": [
+      "3x²−6x",
+      "3x²+6x",
+      "x³−6x",
+      "3x−6"
+    ],
+    "correct_index": 0,
+    "explanation": "Power rule: 3x²−6x.",
+    "id": "nda_mathem_calcul_1b73a2"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "English",
+    "difficulty": 2,
+    "question_text": "Correct sentence using 'neither...nor':",
+    "options": [
+      "She neither wrote nor spoke.",
+      "She neither wrote or spoke.",
+      "She neither wrote nor speak.",
+      "She not wrote nor spoke."
+    ],
+    "correct_index": 0,
+    "explanation": "'Neither...nor' pair with parallel verbs.",
+    "id": "nda_genera_englis_ce7f96"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Vector Algebra",
+    "difficulty": 2,
+    "question_text": "Magnitude of 3î+4ĵ is:",
+    "options": [
+      "5",
+      "7",
+      "3",
+      "4"
+    ],
+    "correct_index": 0,
+    "explanation": "√(9+16)=5.",
+    "id": "nda_mathem_vector_69e776"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 2,
+    "question_text": "General solution of sinθ=1/2 is:",
+    "options": [
+      "nπ+(−1)ⁿπ/6",
+      "nπ+π/6",
+      "2nπ±π/6",
+      "nπ/6"
+    ],
+    "correct_index": 0,
+    "explanation": "General solution of sinθ=sinα: θ=nπ+(−1)ⁿα; α=π/6.",
+    "id": "nda_mathem_trigon_49c67a"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "English",
+    "difficulty": 1,
+    "question_text": "'Once in a blue moon' means:",
+    "options": [
+      "Very rarely",
+      "Every month",
+      "During full moon",
+      "Frequently"
+    ],
+    "correct_index": 0,
+    "explanation": "Idiom for 'very rarely'.",
+    "id": "nda_genera_englis_06e57d"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Vector Algebra",
+    "difficulty": 3,
+    "question_text": "a⃗·b⃗=|a⃗||b⃗| implies angle between them is:",
+    "options": [
+      "0°",
+      "90°",
+      "180°",
+      "45°"
+    ],
+    "correct_index": 0,
+    "explanation": "cosθ=1 → θ=0°.",
+    "id": "nda_mathem_vector_843bf1"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 2,
+    "question_text": "Find ⁸C₃.",
+    "options": [
+      "56",
+      "28",
+      "70",
+      "84"
+    ],
+    "correct_index": 0,
+    "explanation": "⁸C₃=8!/(3!5!)=(8×7×6)/6=56.",
+    "id": "nda_mathem_algebr_85c4da"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "History",
+    "difficulty": 1,
+    "question_text": "World War II ended in:",
+    "options": [
+      "1945",
+      "1944",
+      "1918",
+      "1939"
+    ],
+    "correct_index": 0,
+    "explanation": "Germany surrendered May 1945; Japan September 1945.",
+    "id": "nda_genera_histor_6447f4"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 2,
+    "question_text": "lim(x→0) sinx/x=",
+    "options": [
+      "1",
+      "0",
+      "∞",
+      "Undefined"
+    ],
+    "correct_index": 0,
+    "explanation": "Standard limit: lim(x→0) sinx/x=1.",
+    "id": "nda_mathem_calcul_0aeecc"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Chemistry",
+    "difficulty": 1,
+    "question_text": "pH of neutral solution at 25°C=",
+    "options": [
+      "7",
+      "14",
+      "0",
+      "1"
+    ],
+    "correct_index": 0,
+    "explanation": "[H⁺]=[OH⁻]=10⁻⁷ M.",
+    "id": "nda_genera_chemis_87a103"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 1,
+    "question_text": "∫ sin x dx=",
+    "options": [
+      "−cos x+C",
+      "cos x+C",
+      "sin x+C",
+      "−sin x+C"
+    ],
+    "correct_index": 0,
+    "explanation": "∫sinx dx=−cosx+C.",
+    "id": "nda_mathem_calcul_cd996e"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "Convex lens f=20 cm; object at 30 cm. Image distance=",
+    "options": [
+      "60 cm",
+      "30 cm",
+      "20 cm",
+      "40 cm"
+    ],
+    "correct_index": 0,
+    "explanation": "1/v+1/30=1/20 → 1/v=1/20−1/30=1/60 → v=60 cm.",
+    "id": "nda_genera_physic_051c46"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "English",
+    "difficulty": 2,
+    "question_text": "Correctly spelled word:",
+    "options": [
+      "Conscientious",
+      "Conscienscious",
+      "Consciencious",
+      "Concientious"
+    ],
+    "correct_index": 0,
+    "explanation": "Conscientious: thorough and careful.",
+    "id": "nda_genera_englis_e6a0ac"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Current Events",
+    "difficulty": 2,
+    "question_text": "The 2024 Paris Olympics were the ___ Summer Olympics.",
+    "options": [
+      "33rd",
+      "32nd",
+      "30th",
+      "31st"
+    ],
+    "correct_index": 0,
+    "explanation": "Paris 2024 was the 33rd Summer Olympic Games.",
+    "id": "nda_genera_curren_57bcf0"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "General Science",
+    "difficulty": 1,
+    "question_text": "Sound travels fastest in:",
+    "options": [
+      "Solids",
+      "Liquids",
+      "Gases",
+      "Vacuum"
+    ],
+    "correct_index": 0,
+    "explanation": "Speed in steel ~5100 m/s vs air ~340 m/s.",
+    "id": "nda_genera_genera_5b9dfa"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Chemistry",
+    "difficulty": 3,
+    "question_text": "0.5 mol NaOH contains how many OH⁻ ions?",
+    "options": [
+      "3.01×10²³",
+      "6.02×10²³",
+      "1.5×10²³",
+      "12×10²³"
+    ],
+    "correct_index": 0,
+    "explanation": "0.5×6.02×10²³=3.01×10²³.",
+    "id": "nda_genera_chemis_c0bb1c"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 1,
+    "question_text": "The modulus of the complex number 3+4i is:",
+    "options": [
+      "5",
+      "7",
+      "3",
+      "4"
+    ],
+    "correct_index": 0,
+    "explanation": "|3+4i|=√(9+16)=5.",
+    "id": "nda_mathem_algebr_883e21"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "General Science",
+    "difficulty": 1,
+    "question_text": "Largest planet in Solar System:",
+    "options": [
+      "Jupiter",
+      "Saturn",
+      "Uranus",
+      "Neptune"
+    ],
+    "correct_index": 0,
+    "explanation": "Jupiter — mass > all other planets combined.",
+    "id": "nda_genera_genera_1d6e56"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Statistics & Probability",
+    "difficulty": 2,
+    "question_text": "Variance of 2,4,6,8,10 is:",
+    "options": [
+      "8",
+      "4",
+      "6",
+      "10"
+    ],
+    "correct_index": 0,
+    "explanation": "Mean=6; deviations²: 16,4,0,4,16; variance=40/5=8.",
+    "id": "nda_mathem_statis_e4e5ab"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Statistics & Probability",
+    "difficulty": 1,
+    "question_text": "P(exactly 2 heads in 3 coin tosses)=",
+    "options": [
+      "3/8",
+      "1/2",
+      "1/4",
+      "1/8"
+    ],
+    "correct_index": 0,
+    "explanation": "³C₂×(1/2)³=3/8.",
+    "id": "nda_mathem_statis_063848"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "Light travels fastest in:",
+    "options": [
+      "Vacuum",
+      "Water",
+      "Glass",
+      "Air"
+    ],
+    "correct_index": 0,
+    "explanation": "Speed of light in vacuum ≈3×10⁸ m/s.",
+    "id": "nda_genera_physic_4ea558"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 2,
+    "question_text": "f(x)=x³−3x has a local minimum at x=",
+    "options": [
+      "1",
+      "−1",
+      "0",
+      "3"
+    ],
+    "correct_index": 0,
+    "explanation": "f'(x)=3x²−3=0 → x=±1. f''(1)=6>0 → minimum at x=1.",
+    "id": "nda_mathem_calcul_a3ea05"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Chemistry",
+    "difficulty": 1,
+    "question_text": "Most abundant gas in Earth's atmosphere=",
+    "options": [
+      "Nitrogen",
+      "Oxygen",
+      "CO₂",
+      "Argon"
+    ],
+    "correct_index": 0,
+    "explanation": "N₂≈78% of atmosphere.",
+    "id": "nda_genera_chemis_fd3cda"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "Half-life=20 years. After 60 years, fraction remaining=",
+    "options": [
+      "1/8",
+      "1/4",
+      "1/2",
+      "1/16"
+    ],
+    "correct_index": 0,
+    "explanation": "3 half-lives: (1/2)³=1/8.",
+    "id": "nda_genera_physic_a0432d"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "History",
+    "difficulty": 2,
+    "question_text": "Who was the first UN Secretary-General?",
+    "options": [
+      "Trygve Lie",
+      "Dag Hammarskjöld",
+      "U Thant",
+      "Kurt Waldheim"
+    ],
+    "correct_index": 0,
+    "explanation": "Trygve Lie of Norway: 1946–1952.",
+    "id": "nda_genera_histor_7ead1c"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 2,
+    "question_text": "d/dx [sin(x²)]=",
+    "options": [
+      "2x cos(x²)",
+      "cos(x²)",
+      "2sinx cosx",
+      "−2x cos(x²)"
+    ],
+    "correct_index": 0,
+    "explanation": "Chain rule: cos(x²)·2x=2x cos(x²).",
+    "id": "nda_mathem_calcul_eeb29d"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "50 kg person in lift accelerating up at 2 m/s² (g=10). Normal force=",
+    "options": [
+      "600 N",
+      "500 N",
+      "400 N",
+      "700 N"
+    ],
+    "correct_index": 0,
+    "explanation": "N=m(g+a)=50×12=600 N.",
+    "id": "nda_genera_physic_209291"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 3,
+    "question_text": "Number of arrangements of letters in 'MISSISSIPPI':",
+    "options": [
+      "34650",
+      "30240",
+      "11880",
+      "25200"
+    ],
+    "correct_index": 0,
+    "explanation": "11!/(1!4!4!2!)=34650.",
+    "id": "nda_mathem_algebr_53a387"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "General Science",
+    "difficulty": 1,
+    "question_text": "Photosynthesis occurs in:",
+    "options": [
+      "Chloroplast",
+      "Mitochondria",
+      "Nucleus",
+      "Ribosome"
+    ],
+    "correct_index": 0,
+    "explanation": "Chloroplasts contain chlorophyll for light capture.",
+    "id": "nda_genera_genera_3a01ea"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Geography",
+    "difficulty": 2,
+    "question_text": "Amazon River flows primarily through:",
+    "options": [
+      "Brazil",
+      "Argentina",
+      "Peru",
+      "Colombia"
+    ],
+    "correct_index": 0,
+    "explanation": "The Amazon (largest by discharge) flows through Brazil to the Atlantic.",
+    "id": "nda_genera_geogra_4776db"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 2,
+    "question_text": "If 2ˣ⁺¹=32, find x.",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "2"
+    ],
+    "correct_index": 0,
+    "explanation": "2ˣ⁺¹=2⁵ ⟹ x+1=5 ⟹ x=4.",
+    "id": "nda_mathem_algebr_20ee37"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "History",
+    "difficulty": 2,
+    "question_text": "The Cold War was primarily between:",
+    "options": [
+      "USA and USSR",
+      "USA and China",
+      "UK and USSR",
+      "Germany and USA"
+    ],
+    "correct_index": 0,
+    "explanation": "Cold War (1947–1991) was the ideological rivalry between the US-led West and Soviet-led East.",
+    "id": "nda_genera_histor_3ae616"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Analytical Geometry",
+    "difficulty": 2,
+    "question_text": "Centre of x²+y²−6x+4y−3=0 is:",
+    "options": [
+      "(3,−2)",
+      "(−3,2)",
+      "(6,−4)",
+      "(3,2)"
+    ],
+    "correct_index": 0,
+    "explanation": "Complete the square: (x−3)²+(y+2)²=16; centre=(3,−2).",
+    "id": "nda_mathem_analyt_4c54ff"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 2,
+    "question_text": "sin2A=2sinAcosA. Find sin120°.",
+    "options": [
+      "√3/2",
+      "1/2",
+      "1",
+      "−√3/2"
+    ],
+    "correct_index": 0,
+    "explanation": "sin120°=sin(180°−60°)=sin60°=√3/2.",
+    "id": "nda_mathem_trigon_c3c009"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "English",
+    "difficulty": 1,
+    "question_text": "Antonym of 'benevolent' is:",
+    "options": [
+      "Malevolent",
+      "Generous",
+      "Kind",
+      "Philanthropic"
+    ],
+    "correct_index": 0,
+    "explanation": "Benevolent=wishing good; malevolent=wishing harm.",
+    "id": "nda_genera_englis_b85260"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Analytical Geometry",
+    "difficulty": 2,
+    "question_text": "Parabola y²=12x has focus at:",
+    "options": [
+      "(3,0)",
+      "(0,3)",
+      "(12,0)",
+      "(−3,0)"
+    ],
+    "correct_index": 0,
+    "explanation": "4a=12→a=3; focus=(3,0).",
+    "id": "nda_mathem_analyt_a525fd"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "General Science",
+    "difficulty": 2,
+    "question_text": "Vitamin essential for blood clotting:",
+    "options": [
+      "Vitamin K",
+      "Vitamin C",
+      "Vitamin D",
+      "Vitamin B12"
+    ],
+    "correct_index": 0,
+    "explanation": "Vitamin K is required for synthesis of clotting factors II, VII, IX, X.",
+    "id": "nda_genera_genera_534ee6"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Analytical Geometry",
+    "difficulty": 3,
+    "question_text": "Eccentricity of ellipse with semi-major axis 5 and semi-minor axis 3 is:",
+    "options": [
+      "4/5",
+      "3/5",
+      "2/5",
+      "1/5"
+    ],
+    "correct_index": 0,
+    "explanation": "c=√(25−9)=4; e=c/a=4/5.",
+    "id": "nda_mathem_analyt_fe302b"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Statistics & Probability",
+    "difficulty": 3,
+    "question_text": "P(B|A)=0.7, P(A)=0.4, P(B)=0.5. P(A|B)=",
+    "options": [
+      "0.56",
+      "0.28",
+      "0.70",
+      "0.40"
+    ],
+    "correct_index": 0,
+    "explanation": "P(A|B)=P(B|A)P(A)/P(B)=0.7×0.4/0.5=0.56.",
+    "id": "nda_mathem_statis_73a4b8"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Analytical Geometry",
+    "difficulty": 2,
+    "question_text": "Slope of line 3x−4y+7=0 is:",
+    "options": [
+      "3/4",
+      "−4/3",
+      "4/3",
+      "−3/4"
+    ],
+    "correct_index": 0,
+    "explanation": "y=(3/4)x+7/4; slope=3/4.",
+    "id": "nda_mathem_analyt_b43b6f"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "English",
+    "difficulty": 1,
+    "question_text": "Synonym of 'ubiquitous' is:",
+    "options": [
+      "Omnipresent",
+      "Rare",
+      "Absent",
+      "Unique"
+    ],
+    "correct_index": 0,
+    "explanation": "Ubiquitous=appearing everywhere; omnipresent.",
+    "id": "nda_genera_englis_b89a25"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Vector Algebra",
+    "difficulty": 1,
+    "question_text": "a⃗=(2,3), b⃗=(4,−1). a⃗+b⃗=",
+    "options": [
+      "(6,2)",
+      "(2,4)",
+      "(6,−4)",
+      "(−2,4)"
+    ],
+    "correct_index": 0,
+    "explanation": "Component-wise: (6,2).",
+    "id": "nda_mathem_vector_09be98"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 3,
+    "question_text": "A tower 100m tall casts a shadow of 100/√3 m. The sun's elevation angle is:",
+    "options": [
+      "60°",
+      "30°",
+      "45°",
+      "75°"
+    ],
+    "correct_index": 0,
+    "explanation": "tanθ=100/(100/√3)=√3 → θ=60°.",
+    "id": "nda_mathem_trigon_937afe"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 3,
+    "question_text": "∫₀^(π/2) sin²x dx=",
+    "options": [
+      "π/4",
+      "π/2",
+      "1",
+      "π/8"
+    ],
+    "correct_index": 0,
+    "explanation": "Using sin²x=(1−cos2x)/2: [x/2−sin2x/4]₀^(π/2)=π/4.",
+    "id": "nda_mathem_calcul_854cae"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Vector Algebra",
+    "difficulty": 2,
+    "question_text": "|a⃗×b⃗|=0 implies a⃗ and b⃗ are:",
+    "options": [
+      "Parallel",
+      "Perpendicular",
+      "Equal",
+      "Opposite"
+    ],
+    "correct_index": 0,
+    "explanation": "sinθ=0 → θ=0° or 180°; vectors are parallel.",
+    "id": "nda_mathem_vector_028497"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 1,
+    "question_text": "The number of subsets of a set with 4 elements is:",
+    "options": [
+      "16",
+      "8",
+      "12",
+      "4"
+    ],
+    "correct_index": 0,
+    "explanation": "2⁴=16 subsets.",
+    "id": "nda_mathem_algebr_6d9ff4"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "History",
+    "difficulty": 2,
+    "question_text": "The French Revolution began in:",
+    "options": [
+      "1789",
+      "1776",
+      "1804",
+      "1815"
+    ],
+    "correct_index": 0,
+    "explanation": "Storming of the Bastille: July 14, 1789.",
+    "id": "nda_genera_histor_836bdc"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Analytical Geometry",
+    "difficulty": 1,
+    "question_text": "Distance between (3,4) and (0,0) is:",
+    "options": [
+      "5",
+      "7",
+      "4",
+      "3"
+    ],
+    "correct_index": 0,
+    "explanation": "√(9+16)=5.",
+    "id": "nda_mathem_analyt_71d817"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Analytical Geometry",
+    "difficulty": 1,
+    "question_text": "Midpoint of (4,6) and (2,2) is:",
+    "options": [
+      "(3,4)",
+      "(6,8)",
+      "(2,4)",
+      "(3,2)"
+    ],
+    "correct_index": 0,
+    "explanation": "((4+2)/2,(6+2)/2)=(3,4).",
+    "id": "nda_mathem_analyt_cfdab1"
+  }
+]

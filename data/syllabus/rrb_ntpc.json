@@ -1,0 +1,45 @@
+{
+  "exam": "RRB NTPC",
+  "total_questions": 100,
+  "subjects": [
+    {
+      "name": "Mathematics",
+      "weight": 30,
+      "topics": [
+        {"name": "Number System", "subtopics": ["LCM & HCF", "Fractions", "Decimals", "BODMAS", "Prime Numbers", "Simplification"]},
+        {"name": "Algebra", "subtopics": ["Linear Equations", "Quadratic Equations", "Polynomials", "Identities", "Inequalities"]},
+        {"name": "Trigonometry", "subtopics": ["Ratios", "Identities", "Heights & Distances", "Angle of Elevation", "Complementary Angles"]},
+        {"name": "Geometry", "subtopics": ["Lines & Angles", "Triangles", "Circles", "Quadrilaterals", "Area & Perimeter"]},
+        {"name": "Statistics", "subtopics": ["Mean", "Median", "Mode", "Data Interpretation", "Bar Graphs", "Pie Charts"]},
+        {"name": "Percentage", "subtopics": ["Profit & Loss", "Discount", "Simple Interest", "Compound Interest"]},
+        {"name": "Time & Work", "subtopics": ["Work & Efficiency", "Pipes & Cisterns", "Time & Distance", "Speed Problems"]},
+        {"name": "Ratio & Proportion", "subtopics": ["Direct Proportion", "Inverse Proportion", "Mixture & Alligation", "Partnership"]}
+      ]
+    },
+    {
+      "name": "General Intelligence & Reasoning",
+      "weight": 30,
+      "topics": [
+        {"name": "Coding-Decoding", "subtopics": ["Letter Coding", "Number Coding", "Mixed Coding"]},
+        {"name": "Blood Relations", "subtopics": ["Family Tree", "Coded Relations", "Pointing Questions"]},
+        {"name": "Syllogism", "subtopics": ["All-Some-No", "Possibility Cases", "Complementary Pairs"]},
+        {"name": "Direction & Distance", "subtopics": ["Cardinal Directions", "Shadow Problems", "Distance Calculation"]},
+        {"name": "Series", "subtopics": ["Number Series", "Letter Series", "Mixed Series", "Missing Number"]},
+        {"name": "Analogy", "subtopics": ["Word Analogy", "Number Analogy", "Letter Analogy"]},
+        {"name": "Puzzle & Arrangement", "subtopics": ["Linear Arrangement", "Circular Arrangement", "Floor Puzzle"]},
+        {"name": "Classification", "subtopics": ["Odd One Out", "Group Classification"]}
+      ]
+    },
+    {
+      "name": "General Awareness",
+      "weight": 40,
+      "topics": [
+        {"name": "History", "subtopics": ["Ancient India", "Medieval India", "Modern India", "Freedom Movement", "Dynasties"]},
+        {"name": "Geography", "subtopics": ["Physical Geography", "Indian Geography", "World Geography", "Climate", "Rivers & Mountains"]},
+        {"name": "Polity", "subtopics": ["Constitution", "Parliament", "Judiciary", "Fundamental Rights", "Directive Principles"]},
+        {"name": "Economics", "subtopics": ["National Income", "Budget", "Five Year Plans", "Banking", "Trade"]},
+        {"name": "Science", "subtopics": ["Physics Basics", "Chemistry Basics", "Biology Basics", "Inventions", "Scientists"]}
+      ]
+    }
+  ]
+}

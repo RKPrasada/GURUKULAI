@@ -1,0 +1,55 @@
+{
+  "exam": "RRB ALP",
+  "subjects": [
+    {
+      "name": "Mathematics",
+      "topics": [
+        {"name": "Number System", "subtopics": ["BODMAS", "Decimals", "Fractions", "LCM & HCF"]},
+        {"name": "Ratio and Proportion", "subtopics": ["Percentages", "Direct Proportion", "Inverse Proportion"]},
+        {"name": "Mensuration", "subtopics": ["Area", "Volume", "Surface Area"]},
+        {"name": "Time and Work", "subtopics": ["Pipes & Cisterns", "Work & Efficiency"]},
+        {"name": "Time and Distance", "subtopics": ["Speed", "Trains", "Boats"]},
+        {"name": "Simple and Compound Interest", "subtopics": ["SI", "CI", "Profit and Loss"]},
+        {"name": "Algebra", "subtopics": ["Equations", "Polynomials"]},
+        {"name": "Geometry and Trigonometry", "subtopics": ["Triangles", "Circles", "Heights and Distances"]},
+        {"name": "Elementary Statistics", "subtopics": ["Mean", "Median", "Mode", "Variance"]},
+        {"name": "Square Root", "subtopics": ["Age Calculations", "Calendar & Clock"]}
+      ]
+    },
+    {
+      "name": "General Intelligence & Reasoning",
+      "topics": [
+        {"name": "Analogies", "subtopics": ["Word Analogy", "Number Analogy"]},
+        {"name": "Coding and Decoding", "subtopics": ["Letter Coding", "Number Coding"]},
+        {"name": "Mathematical Operations", "subtopics": ["BODMAS Application"]},
+        {"name": "Relationships", "subtopics": ["Blood Relations", "Family Tree"]},
+        {"name": "Syllogism", "subtopics": ["Statements and Conclusions"]},
+        {"name": "Jumbling", "subtopics": ["Word Jumbling", "Sentence Jumbling"]},
+        {"name": "Venn Diagram", "subtopics": ["Logical Diagrams", "Data Interpretation"]},
+        {"name": "Conclusions and Decision Making", "subtopics": ["Inferences", "Arguments"]},
+        {"name": "Similarities and Differences", "subtopics": ["Classification"]},
+        {"name": "Analytical Reasoning", "subtopics": ["Puzzles", "Arrangements"]}
+      ]
+    },
+    {
+      "name": "General Science",
+      "topics": [
+        {"name": "Physics", "subtopics": ["Motion", "Force", "Work, Energy & Power", "Sound", "Light"]},
+        {"name": "Chemistry", "subtopics": ["Matter", "Atoms & Molecules", "Acids, Bases & Salts", "Metals & Non-metals"]},
+        {"name": "Life Sciences", "subtopics": ["Cells", "Tissues", "Human Anatomy", "Diseases"]}
+      ]
+    },
+    {
+      "name": "General Awareness and Current Affairs",
+      "topics": [
+        {"name": "Current Affairs", "subtopics": ["National Events", "International Events"]},
+        {"name": "Science & Technology", "subtopics": ["Recent Discoveries"]},
+        {"name": "Sports", "subtopics": ["Tournaments", "Awards"]},
+        {"name": "Culture", "subtopics": ["Indian Culture", "History"]},
+        {"name": "Personalities", "subtopics": ["Famous Persons"]},
+        {"name": "Economics", "subtopics": ["Indian Economy"]},
+        {"name": "Politics", "subtopics": ["Indian Polity"]}
+      ]
+    }
+  ]
+}

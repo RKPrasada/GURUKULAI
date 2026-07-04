@@ -1,0 +1,55 @@
+# Secrets — never commit
+.env
+
+# Database & audit log — runtime data
+*.db
+*.db-journal
+data/audit.jsonl
+data/users.jsonl
+data/mentor/
+
+# Offline fallback dirs — local data, not source
+data/calendar_offline/
+data/drive_offline/
+data/gmail_offline/
+data/calendar_mock/
+data/drive_mock/
+data/gmail_mock/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+vidya/
+*.egg-info/
+dist/
+build/
+
+# Node
+web/node_modules/
+web/dist/
+web/.vite/
+
+# Flutter
+mobile_app/build/
+mobile_app/.dart_tool/
+mobile_app/.flutter-plugins
+mobile_app/.flutter-plugins-dependencies
+
+# macOS
+.DS_Store
+*.dmg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Pytest cache
+.pytest_cache/
+.coverage
+
+# PyInstaller packaging output
+packaging/dist/
+packaging/build/

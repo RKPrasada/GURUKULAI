@@ -1,0 +1,388 @@
+{
+  "exam": "RRB JE (Junior Engineer)",
+  "short_name": "rrb_je",
+  "stages": [
+    {
+      "stage": "CBT 1 (Screening)",
+      "questions": 100,
+      "duration_minutes": 90,
+      "negative_marking": "1/3"
+    },
+    {
+      "stage": "CBT 2 (Technical)",
+      "questions": 150,
+      "duration_minutes": 120,
+      "negative_marking": "1/3",
+      "note": "Technical Abilities section is discipline-specific (Civil / Electrical / Mechanical / Electronics)"
+    }
+  ],
+  "subjects": [
+    {
+      "name": "Mathematics",
+      "stage": ["CBT 1"],
+      "topics": [
+        {
+          "name": "Number System & Arithmetic",
+          "subtopics": ["BODMAS", "Fractions & Decimals", "LCM & HCF", "Ratio & Proportion",
+                        "Percentages", "Profit & Loss", "Average", "Simple & Compound Interest",
+                        "Time & Work", "Time & Distance", "Pipes & Cisterns"]
+        },
+        {
+          "name": "Algebra",
+          "subtopics": ["Linear equations", "Quadratic equations", "Polynomials", "Algebraic identities",
+                        "Sets & Relations"]
+        },
+        {
+          "name": "Geometry & Mensuration",
+          "subtopics": ["Lines, Angles & Triangles", "Congruence & Similarity", "Circles",
+                        "Area of 2D figures", "Surface area & Volume of 3D solids", "Coordinate Geometry basics"]
+        },
+        {
+          "name": "Trigonometry",
+          "subtopics": ["Trigonometric ratios", "Complementary angles", "Identities", "Height & Distance"]
+        },
+        {
+          "name": "Statistics & Probability",
+          "subtopics": ["Mean, Median, Mode", "Data Interpretation", "Bar graphs, Pie charts, Histograms",
+                        "Basic probability concepts"]
+        }
+      ]
+    },
+    {
+      "name": "General Intelligence & Reasoning",
+      "stage": ["CBT 1"],
+      "topics": [
+        {
+          "name": "Verbal Reasoning",
+          "subtopics": ["Analogies", "Coding-Decoding", "Blood Relations", "Syllogism",
+                        "Statement & Conclusion", "Cause & Effect", "Odd One Out"]
+        },
+        {
+          "name": "Non-Verbal Reasoning",
+          "subtopics": ["Series Completion", "Matrix patterns", "Mirror & Water Images",
+                        "Paper Folding & Cutting", "Embedded Figures"]
+        },
+        {
+          "name": "Logical Reasoning",
+          "subtopics": ["Puzzles & Seating Arrangement", "Direction & Distance", "Ranking & Order",
+                        "Venn Diagrams", "Data Sufficiency", "Input-Output"]
+        }
+      ]
+    },
+    {
+      "name": "General Awareness",
+      "stage": ["CBT 1"],
+      "topics": [
+        {
+          "name": "India & World",
+          "subtopics": ["Indian History — Ancient, Medieval, Modern", "Indian Geography", "Indian Polity & Constitution",
+                        "Indian Economy", "Science & Technology developments", "Sports & Culture",
+                        "Important Awards & Prizes", "Books & Authors"]
+        },
+        {
+          "name": "Current Affairs",
+          "subtopics": ["National events", "International events", "Government schemes", "Economic developments",
+                        "Environmental issues", "Important summits & treaties"]
+        }
+      ]
+    },
+    {
+      "name": "General Science",
+      "stage": ["CBT 1"],
+      "note": "NCERT Class 10 level",
+      "topics": [
+        {
+          "name": "Physics",
+          "subtopics": ["Laws of Motion", "Work Energy Power", "Gravitation", "Pressure & Fluids",
+                        "Sound & Waves", "Light — Reflection, Refraction, Lenses & Mirrors",
+                        "Electricity & Magnetism", "Nuclear Physics basics"]
+        },
+        {
+          "name": "Chemistry",
+          "subtopics": ["Atomic Structure", "Chemical Bonding", "Acids Bases Salts",
+                        "Metals & Non-metals", "Carbon & Organic compounds", "Periodic Table",
+                        "Chemical Reactions & Equations", "Electrochemistry basics"]
+        },
+        {
+          "name": "Biology",
+          "subtopics": ["Cell Biology", "Life Processes", "Control & Coordination",
+                        "Heredity & Genetics", "Evolution", "Environment & Ecology",
+                        "Human Health & Diseases", "Natural Resource Management"]
+        },
+        {
+          "name": "Environment & Ecology",
+          "subtopics": ["Ecosystem & Biodiversity", "Environmental pollution — types & control",
+                        "Climate change & global warming", "Environmental laws & conventions"]
+        }
+      ]
+    },
+    {
+      "name": "Technical Abilities — Civil Engineering",
+      "stage": ["CBT 2"],
+      "discipline": "Civil",
+      "topics": [
+        {
+          "name": "Engineering Mechanics & Structural Analysis",
+          "subtopics": ["Forces & equilibrium", "Bending moment & shear force diagrams",
+                        "Truss analysis", "Deflection of beams"]
+        },
+        {
+          "name": "Building Materials",
+          "subtopics": ["Bricks, Cement, Timber, Steel, Glass, Plastics",
+                        "Properties & tests of building materials", "Concrete — mix design & grades"]
+        },
+        {
+          "name": "Construction Technology",
+          "subtopics": ["Foundation types", "Masonry — brick & stone", "RCC construction",
+                        "Formwork & Scaffolding", "Plastering, Pointing, Painting"]
+        },
+        {
+          "name": "Geotechnical Engineering",
+          "subtopics": ["Soil classification & index properties", "Compaction", "Shear strength",
+                        "Bearing capacity of foundations", "Earth pressure basics"]
+        },
+        {
+          "name": "Fluid Mechanics & Hydraulics",
+          "subtopics": ["Properties of fluids", "Bernoulli's theorem", "Flow in pipes",
+                        "Open channel flow", "Hydraulic machines basics"]
+        },
+        {
+          "name": "Hydrology & Irrigation",
+          "subtopics": ["Hydrological cycle", "Runoff & flood estimation", "Dams & reservoirs",
+                        "Canal irrigation — types, design", "Water lifting devices"]
+        },
+        {
+          "name": "Environmental Engineering",
+          "subtopics": ["Water supply — sources, purification", "Sewage treatment", "Solid waste management",
+                        "Air & noise pollution control"]
+        },
+        {
+          "name": "Steel & Concrete Design",
+          "subtopics": ["Working stress method", "Limit state method", "Design of beams, columns, slabs",
+                        "Steel connections — riveted, bolted, welded"]
+        },
+        {
+          "name": "Surveying",
+          "subtopics": ["Chain & compass surveying", "Levelling", "Theodolite traversing",
+                        "Tacheometry", "Curves", "Remote sensing & GIS basics"]
+        },
+        {
+          "name": "Transportation Engineering",
+          "subtopics": ["Highway alignment & geometric design", "Pavement design", "Traffic engineering",
+                        "Railways — components & maintenance basics", "Bridges — types & components"]
+        }
+      ]
+    },
+    {
+      "name": "Technical Abilities — Electrical Engineering",
+      "stage": ["CBT 2"],
+      "discipline": "Electrical",
+      "topics": [
+        {
+          "name": "Circuit Laws & Network Analysis",
+          "subtopics": ["Ohm's law", "Kirchhoff's laws", "Mesh & Nodal analysis",
+                        "Thevenin & Norton theorems", "Superposition theorem", "Maximum power transfer"]
+        },
+        {
+          "name": "AC Fundamentals",
+          "subtopics": ["Phasors", "RLC circuits", "Resonance", "Power factor",
+                        "Three-phase systems", "Power measurements"]
+        },
+        {
+          "name": "Electrical Machines",
+          "subtopics": ["DC generators & motors — construction, characteristics, starting",
+                        "Transformers — principle, efficiency, regulation",
+                        "Induction motors — 3-phase & single-phase",
+                        "Synchronous machines — generator & motor"]
+        },
+        {
+          "name": "Power Systems",
+          "subtopics": ["Generation — thermal, hydro, nuclear basics",
+                        "Transmission lines — model, efficiency, regulation",
+                        "Switchgear & protection — relays, circuit breakers, fuses",
+                        "Distribution systems — feeders, substations"]
+        },
+        {
+          "name": "Control Systems",
+          "subtopics": ["Open loop & closed loop systems", "Transfer functions",
+                        "Time response analysis", "Stability — Routh-Hurwitz", "PID controllers"]
+        },
+        {
+          "name": "Electrical Measurements",
+          "subtopics": ["Ammeters, voltmeters, wattmeters", "CRO & signal generators",
+                        "Bridges for resistance, inductance, capacitance", "Transducers basics"]
+        },
+        {
+          "name": "Electronics & Digital Logic",
+          "subtopics": ["Diodes, BJT, FET — basics", "Rectifiers & filters",
+                        "Amplifiers — class A, B, AB, C", "Number systems",
+                        "Logic gates, Boolean algebra", "Flip-flops & counters"]
+        },
+        {
+          "name": "Utilisation of Electrical Energy",
+          "subtopics": ["Electric traction", "Illumination", "Electrolysis",
+                        "Electric heating & welding", "Drives & control"]
+        }
+      ]
+    },
+    {
+      "name": "Technical Abilities — Mechanical Engineering",
+      "stage": ["CBT 2"],
+      "discipline": "Mechanical",
+      "topics": [
+        {
+          "name": "Engineering Mechanics",
+          "subtopics": ["Free body diagrams", "Equilibrium of forces", "Friction",
+                        "Kinematics & dynamics of particles", "Moment of inertia"]
+        },
+        {
+          "name": "Strength of Materials",
+          "subtopics": ["Stress & strain", "Bending moment & shear force", "Torsion",
+                        "Thin cylinders & spheres", "Euler's column theory"]
+        },
+        {
+          "name": "Theory of Machines",
+          "subtopics": ["Velocity & acceleration analysis", "Gear trains", "Cam & follower",
+                        "Governors & gyroscope", "Balancing of rotating masses"]
+        },
+        {
+          "name": "Fluid Mechanics & Machinery",
+          "subtopics": ["Properties of fluids", "Bernoulli's equation & applications",
+                        "Flow through pipes", "Hydraulic turbines — Pelton, Francis, Kaplan",
+                        "Centrifugal & reciprocating pumps"]
+        },
+        {
+          "name": "Thermal Engineering",
+          "subtopics": ["Laws of thermodynamics", "Air standard cycles — Carnot, Otto, Diesel, Brayton",
+                        "Steam turbines & steam power plant", "IC engines — 2-stroke & 4-stroke",
+                        "Refrigeration & Air Conditioning basics"]
+        },
+        {
+          "name": "Production Engineering",
+          "subtopics": ["Metal cutting — turning, milling, drilling, grinding",
+                        "Welding — arc, gas, resistance, TIG, MIG",
+                        "Casting & forging", "Sheet metal operations", "CNC basics"]
+        },
+        {
+          "name": "Engineering Materials",
+          "subtopics": ["Iron-carbon diagram", "Heat treatment — annealing, hardening, tempering",
+                        "Properties of metals & alloys", "Non-metallic materials", "Composite materials"]
+        },
+        {
+          "name": "Machine Design",
+          "subtopics": ["Design of fasteners", "Shafts, keys & couplings",
+                        "Bearings — rolling & sliding", "Springs", "Clutches & brakes"]
+        }
+      ]
+    },
+    {
+      "name": "Technical Abilities — Electronics Engineering",
+      "stage": ["CBT 2"],
+      "discipline": "Electronics",
+      "topics": [
+        {
+          "name": "Electronic Devices & Circuits",
+          "subtopics": ["PN junction diode — characteristics & applications", "Zener diode",
+                        "BJT — CE, CB, CC configurations", "FET & MOSFET",
+                        "Rectifiers, filters & voltage regulators", "Oscillators — RC, LC, crystal"]
+        },
+        {
+          "name": "Analog Electronics",
+          "subtopics": ["Amplifier analysis — small signal model", "Feedback amplifiers",
+                        "Operational amplifiers — inverting, non-inverting, integrator, differentiator",
+                        "Active filters", "Waveform generators"]
+        },
+        {
+          "name": "Digital Electronics",
+          "subtopics": ["Number systems — Binary, Octal, Hexadecimal", "Boolean algebra & De Morgan's laws",
+                        "Logic gates & minimisation — K-map", "Combinational circuits — adder, decoder, MUX",
+                        "Sequential circuits — flip-flops, counters, shift registers", "ADC & DAC basics"]
+        },
+        {
+          "name": "Microprocessors & Microcontrollers",
+          "subtopics": ["8085 architecture & instruction set", "Assembly language programming basics",
+                        "Interfacing — memory, I/O ports", "8051 microcontroller basics",
+                        "Interrupts & timers"]
+        },
+        {
+          "name": "Communication Systems",
+          "subtopics": ["Modulation — AM, FM, PM", "Demodulation techniques",
+                        "Sampling theorem & PCM", "Noise in communication systems",
+                        "Digital communication — ASK, FSK, PSK", "Fibre optics basics"]
+        },
+        {
+          "name": "Network Analysis",
+          "subtopics": ["Mesh & nodal analysis", "Network theorems", "Two-port networks",
+                        "Transient response", "Fourier series & Laplace transform basics"]
+        },
+        {
+          "name": "Control Systems",
+          "subtopics": ["Transfer functions", "Block diagrams & signal flow graphs",
+                        "Time domain response", "Frequency domain — Bode plots, Nyquist",
+                        "Stability analysis", "PID control"]
+        },
+        {
+          "name": "Electronic Measurements & Instrumentation",
+          "subtopics": ["CRO — operation & measurements", "Signal generators",
+                        "Q-meter", "Bridges — Wheatstone, Maxwell, Wien",
+                        "Transducers — temperature, pressure, flow", "Data acquisition systems"]
+        }
+      ]
+    },
+    {
+      "name": "Physics & Chemistry",
+      "stage": ["CBT 2"],
+      "note": "Class 10+2 level",
+      "topics": [
+        {
+          "name": "Physics",
+          "subtopics": ["Laws of motion & gravitation", "Thermodynamics", "Waves & Sound",
+                        "Optics", "Electrostatics & Magnetism", "Modern Physics — Photoelectric, Nuclear"]
+        },
+        {
+          "name": "Chemistry",
+          "subtopics": ["Atomic structure", "Periodic table & chemical bonding",
+                        "Thermochemistry", "Electrochemistry", "Chemical kinetics",
+                        "Polymers & biomolecules basics"]
+        }
+      ]
+    },
+    {
+      "name": "Computer Applications",
+      "stage": ["CBT 2"],
+      "topics": [
+        {
+          "name": "Computer Fundamentals",
+          "subtopics": ["Hardware components", "Operating system concepts — Windows, Linux basics",
+                        "MS Office — Word, Excel, PowerPoint", "Internet & networking basics",
+                        "Cyber security basics", "Database basics — SQL queries"]
+        }
+      ]
+    },
+    {
+      "name": "Environment & Pollution Control",
+      "stage": ["CBT 2"],
+      "topics": [
+        {
+          "name": "Environmental Engineering",
+          "subtopics": ["Air pollution — sources, effects, control measures",
+                        "Water pollution — treatment methods", "Noise & soil pollution",
+                        "Solid waste management", "Environmental impact assessment",
+                        "Environmental legislation — Water Act, Air Act, EPA"]
+        }
+      ]
+    },
+    {
+      "name": "Current Affairs",
+      "stage": ["CBT 2"],
+      "topics": [
+        {
+          "name": "General Awareness",
+          "subtopics": ["National & international events", "Science & technology news",
+                        "Government policies & schemes", "Awards & sports achievements"]
+        }
+      ]
+    }
+  ],
+  "disciplines": ["Civil", "Electrical", "Mechanical", "Electronics & Communication"]
+}

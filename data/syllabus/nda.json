@@ -1,0 +1,28 @@
+{
+  "exam": "NDA",
+  "subjects": [
+    {
+      "name": "Mathematics",
+      "topics": [
+        {"name": "Algebra", "subtopics": ["Sets", "Relations", "Complex Numbers", "Binary System", "Matrices", "Determinants"]},
+        {"name": "Calculus", "subtopics": ["Functions", "Limits", "Continuity", "Differentiation", "Integration", "Maxima & Minima"]},
+        {"name": "Trigonometry", "subtopics": ["Angles", "Inverse Functions", "Properties of Triangles", "Heights & Distances"]},
+        {"name": "Analytical Geometry", "subtopics": ["Rectangular Cartesian Coordinates", "Distance Formula", "Conic Sections", "3D Geometry"]},
+        {"name": "Statistics & Probability", "subtopics": ["Statistics", "Frequency Distribution", "Probability Theory", "Random Variable"]},
+        {"name": "Vector Algebra", "subtopics": ["Vectors in 2D & 3D", "Scalar & Vector Products", "Applications"]}
+      ]
+    },
+    {
+      "name": "General Ability",
+      "topics": [
+        {"name": "English", "subtopics": ["Grammar", "Vocabulary", "Comprehension", "Usage & Vocabulary"]},
+        {"name": "Physics", "subtopics": ["Motion", "Mechanics", "Heat & Temperature", "Light", "Sound", "Electricity", "Magnetism"]},
+        {"name": "Chemistry", "subtopics": ["Physical & Chemical Changes", "Elements", "Mixtures", "Acids & Bases", "Oxidation"]},
+        {"name": "General Science", "subtopics": ["Human Body", "Cell Biology", "Ecology", "Food & Nutrition"]},
+        {"name": "History", "subtopics": ["Indian History", "Freedom Struggle", "World Wars", "Post-Independence India"]},
+        {"name": "Geography", "subtopics": ["Earth", "Climate", "India Geography", "Rivers", "World Geography"]},
+        {"name": "Current Events", "subtopics": ["National Affairs", "International Affairs", "Defense News", "Awards & Honours"]}
+      ]
+    }
+  ]
+}

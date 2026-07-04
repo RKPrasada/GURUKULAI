@@ -1,0 +1,594 @@
+[
+  {
+    "subject": "Mechanical",
+    "topic": "Engineering Drawing",
+    "stream": "mechanical",
+    "difficulty": 1,
+    "question_text": "The scale 1:10 means:",
+    "options": [
+      "Drawing is 1/10th of actual size",
+      "Drawing is 10 times actual size",
+      "Drawing equals actual size",
+      "None of these"
+    ],
+    "correct_index": 0,
+    "explanation": "Scale 1:10 = reducing scale. 1 unit on drawing = 10 units actual.",
+    "id": "alp_cbt2_mech_engine_e4c90d"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Engineering Drawing",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "In first angle projection (used in India), the front view is placed:",
+    "options": [
+      "Below the top view",
+      "Above the top view",
+      "Left of the side view",
+      "Right of the front view"
+    ],
+    "correct_index": 0,
+    "explanation": "First angle (European) projection: top view is below front view, right side view is placed to the left.",
+    "id": "alp_cbt2_mech_engine_e36693"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Engineering Drawing",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "A hidden line in engineering drawing is represented by:",
+    "options": [
+      "Dashed line",
+      "Continuous thick line",
+      "Chain line",
+      "Zigzag line"
+    ],
+    "correct_index": 0,
+    "explanation": "Hidden (invisible) edges are shown as short dashed lines (IS specification).",
+    "id": "alp_cbt2_mech_engine_faf4ae"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Engineering Drawing",
+    "stream": "mechanical",
+    "difficulty": 1,
+    "question_text": "The tolerance is the difference between:",
+    "options": [
+      "Upper limit and lower limit",
+      "Basic size and actual size",
+      "Fit and allowance",
+      "Shaft size and hole size"
+    ],
+    "correct_index": 0,
+    "explanation": "Tolerance = Upper Limit − Lower Limit. It represents permissible variation in size.",
+    "id": "alp_cbt2_mech_engine_2fb909"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Engineering Drawing",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "An isometric drawing uses equal angles of ___ between each axis:",
+    "options": [
+      "120°",
+      "90°",
+      "60°",
+      "30°"
+    ],
+    "correct_index": 0,
+    "explanation": "In isometric projection, all three axes are equally inclined at 120° to each other.",
+    "id": "alp_cbt2_mech_engine_6ad24c"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Measurements & Gauges",
+    "stream": "mechanical",
+    "difficulty": 1,
+    "question_text": "Least count of a vernier caliper with 50 vernier divisions coinciding with 49 main scale divisions (MSD=1mm) is:",
+    "options": [
+      "0.02 mm",
+      "0.1 mm",
+      "0.05 mm",
+      "0.01 mm"
+    ],
+    "correct_index": 0,
+    "explanation": "LC=1 MSD − 1VSD=1−49/50=0.02 mm.",
+    "id": "alp_cbt2_mech_measur_51cf05"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Measurements & Gauges",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "A micrometer screw gauge has 0.5 mm pitch and thimble has 50 divisions. Least count is:",
+    "options": [
+      "0.01 mm",
+      "0.05 mm",
+      "0.1 mm",
+      "0.001 mm"
+    ],
+    "correct_index": 0,
+    "explanation": "LC=Pitch/No. of divisions=0.5/50=0.01 mm.",
+    "id": "alp_cbt2_mech_measur_b0a2d5"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Measurements & Gauges",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "GO/NO-GO gauges are used to check:",
+    "options": [
+      "Limits of size of components",
+      "Surface finish",
+      "Hardness",
+      "Concentricity"
+    ],
+    "correct_index": 0,
+    "explanation": "Plug gauges (GO end enters, NO-GO end should not enter) verify a hole is within its tolerance limits.",
+    "id": "alp_cbt2_mech_measur_c675c6"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Measurements & Gauges",
+    "stream": "mechanical",
+    "difficulty": 1,
+    "question_text": "Surface roughness is measured using a:",
+    "options": [
+      "Profilometer (Surface Roughness Tester)",
+      "Vernier caliper",
+      "Dial gauge",
+      "Feeler gauge"
+    ],
+    "correct_index": 0,
+    "explanation": "A profilometer measures Ra (average roughness) of a machined surface in µm.",
+    "id": "alp_cbt2_mech_measur_7ea04b"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Lathe Operations",
+    "stream": "mechanical",
+    "difficulty": 1,
+    "question_text": "The most widely used holding device on a lathe is:",
+    "options": [
+      "Three-jaw self-centering chuck",
+      "Four-jaw independent chuck",
+      "Collet",
+      "Face plate"
+    ],
+    "correct_index": 0,
+    "explanation": "Three-jaw chuck grips round stock automatically; fast and convenient for most turning operations.",
+    "id": "alp_cbt2_mech_lathe__f65694"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Lathe Operations",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "Taper turning using the tailstock offset method is used for:",
+    "options": [
+      "Long, slight tapers",
+      "Short steep tapers",
+      "External threads",
+      "Facing"
+    ],
+    "correct_index": 0,
+    "explanation": "Tailstock offset method: suitable for long gentle tapers. Limitation: cannot turn internal tapers.",
+    "id": "alp_cbt2_mech_lathe__9dc6cc"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Lathe Operations",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "The cutting speed for turning mild steel with HSS tool is approximately:",
+    "options": [
+      "25–30 m/min",
+      "100–120 m/min",
+      "5–10 m/min",
+      "200 m/min"
+    ],
+    "correct_index": 0,
+    "explanation": "HSS tool on mild steel: ~25–30 m/min. Carbide tools can achieve 100+ m/min.",
+    "id": "alp_cbt2_mech_lathe__1ce736"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Lathe Operations",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "A 50 mm diameter bar is to be turned at 300 rpm. Cutting speed=",
+    "options": [
+      "47.1 m/min",
+      "15 m/min",
+      "300 m/min",
+      "94 m/min"
+    ],
+    "correct_index": 0,
+    "explanation": "V=πDN/1000=π×50×300/1000=47.1 m/min.",
+    "id": "alp_cbt2_mech_lathe__d4d8d2"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Lathe Operations",
+    "stream": "mechanical",
+    "difficulty": 1,
+    "question_text": "Threading on a lathe is done by engaging the:",
+    "options": [
+      "Half-nut on lead screw",
+      "Carriage hand wheel",
+      "Cross-slide",
+      "Apron handwheel"
+    ],
+    "correct_index": 0,
+    "explanation": "Engaging the half-nut on the lead screw synchronises tool movement with spindle for thread cutting.",
+    "id": "alp_cbt2_mech_lathe__33b935"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fitting & Fasteners",
+    "stream": "mechanical",
+    "difficulty": 1,
+    "question_text": "A key is used to:",
+    "options": [
+      "Prevent relative rotation between shaft and hub",
+      "Join two shafts end to end",
+      "Prevent axial movement only",
+      "Reduce friction"
+    ],
+    "correct_index": 0,
+    "explanation": "Keys (Woodruff, sunk, feather) fit in keyways on shaft and hub to transmit torque.",
+    "id": "alp_cbt2_mech_fittin_0159dc"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fitting & Fasteners",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "The pitch of a screw thread is:",
+    "options": [
+      "Distance between adjacent thread crests",
+      "Thread depth",
+      "Thread angle",
+      "Number of threads per inch"
+    ],
+    "correct_index": 0,
+    "explanation": "Pitch = axial distance from one thread crest to the next. Lead = pitch × number of starts.",
+    "id": "alp_cbt2_mech_fittin_53c7a1"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fitting & Fasteners",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "Loctite (thread locker) is used to:",
+    "options": [
+      "Prevent loosening of bolts due to vibration",
+      "Join metal surfaces permanently",
+      "Cut threads",
+      "Lubricate bearings"
+    ],
+    "correct_index": 0,
+    "explanation": "Thread-locking compounds fill gaps in thread flanks, curing by anaerobic polymerisation to prevent self-loosening.",
+    "id": "alp_cbt2_mech_fittin_f23702"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fitting & Fasteners",
+    "stream": "mechanical",
+    "difficulty": 1,
+    "question_text": "A rivet is a permanent fastener. Which operation is done to fix the rivet?",
+    "options": [
+      "Riveting (upsetting the tail)",
+      "Welding",
+      "Bolting",
+      "Soldering"
+    ],
+    "correct_index": 0,
+    "explanation": "The rivet tail is deformed (upset) with a rivet set or hammer to create the closing head.",
+    "id": "alp_cbt2_mech_fittin_cb2817"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Welding",
+    "stream": "mechanical",
+    "difficulty": 1,
+    "question_text": "The temperature of an oxy-acetylene welding flame is approximately:",
+    "options": [
+      "3200°C",
+      "1500°C",
+      "800°C",
+      "5000°C"
+    ],
+    "correct_index": 0,
+    "explanation": "Oxy-acetylene neutral flame: ~3100–3200°C — suitable for most metals.",
+    "id": "alp_cbt2_mech_weldin_76a414"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Welding",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "In MIG (GMAW) welding, the electrode is:",
+    "options": [
+      "Continuous consumable wire",
+      "Tungsten (non-consumable)",
+      "Flux coated rod",
+      "Carbon electrode"
+    ],
+    "correct_index": 0,
+    "explanation": "MIG/GMAW uses a continuously fed consumable wire electrode. The arc melts both wire and base metal.",
+    "id": "alp_cbt2_mech_weldin_3fa5d0"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Welding",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "Post Weld Heat Treatment (PWHT) is done to:",
+    "options": [
+      "Relieve residual stresses",
+      "Increase hardness",
+      "Improve surface finish",
+      "Reduce weld size"
+    ],
+    "correct_index": 0,
+    "explanation": "PWHT (stress relieving) heats the welded assembly to reduce residual stresses and prevent cracking.",
+    "id": "alp_cbt2_mech_weldin_1019c1"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Welding",
+    "stream": "mechanical",
+    "difficulty": 1,
+    "question_text": "In arc welding, the polarity DCEP (DC Electrode Positive) gives:",
+    "options": [
+      "More heat at electrode (deeper penetration on base metal)",
+      "More heat at work",
+      "Less spatter",
+      "Faster deposition"
+    ],
+    "correct_index": 0,
+    "explanation": "DCEP: 2/3 heat at electrode, 1/3 at base metal → good deposition but less penetration. DCEN reverses this.",
+    "id": "alp_cbt2_mech_weldin_3bb922"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Heat Treatment",
+    "stream": "mechanical",
+    "difficulty": 1,
+    "question_text": "Annealing of steel is done to:",
+    "options": [
+      "Soften, relieve stresses and improve machinability",
+      "Increase hardness",
+      "Increase brittleness",
+      "Improve corrosion resistance"
+    ],
+    "correct_index": 0,
+    "explanation": "Annealing: heat to austenitising temp, soak, slow cool in furnace → soft, ductile, stress-free microstructure.",
+    "id": "alp_cbt2_mech_heat_t_ed0067"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Heat Treatment",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "Case hardening is used when the requirement is:",
+    "options": [
+      "Hard surface with tough core",
+      "Uniform hardness throughout",
+      "Soft surface with hard core",
+      "Maximum ductility"
+    ],
+    "correct_index": 0,
+    "explanation": "Case hardening (carburising, nitriding, induction hardening) gives wear-resistant surface while maintaining tough core — used for gears, crankshafts.",
+    "id": "alp_cbt2_mech_heat_t_eb2925"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Heat Treatment",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "Quenching medium that gives the least severe quench:",
+    "options": [
+      "Oil",
+      "Water",
+      "Brine",
+      "Air"
+    ],
+    "correct_index": 3,
+    "explanation": "Quench severity: Brine > Water > Oil > Air. Air quench is least severe — used for air-hardening tool steels.",
+    "id": "alp_cbt2_mech_heat_t_bd0399"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fluid Mechanics",
+    "stream": "mechanical",
+    "difficulty": 1,
+    "question_text": "Pascal's Law states that pressure applied to an enclosed fluid is transmitted:",
+    "options": [
+      "Equally in all directions",
+      "Only downward",
+      "Only in direction of force",
+      "Upward only"
+    ],
+    "correct_index": 0,
+    "explanation": "Pascal's law: pressure in an enclosed fluid is transmitted undiminished in all directions.",
+    "id": "alp_cbt2_mech_fluid__87802b"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fluid Mechanics",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "A hydraulic jack uses the principle of:",
+    "options": [
+      "Pascal's Law with area ratio for force multiplication",
+      "Archimedes Principle",
+      "Bernoulli's Theorem",
+      "Boyle's Law"
+    ],
+    "correct_index": 0,
+    "explanation": "F₂=F₁×A₂/A₁. Small force on small piston creates large force on large piston (Pascal's Law).",
+    "id": "alp_cbt2_mech_fluid__bf3830"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fluid Mechanics",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "Bernoulli's equation: P + ½ρv² + ρgh = constant. It applies to:",
+    "options": [
+      "Steady, incompressible, non-viscous flow along a streamline",
+      "All fluid flows",
+      "Compressible gases only",
+      "Turbulent flow"
+    ],
+    "correct_index": 0,
+    "explanation": "Bernoulli's theorem: energy conservation for ideal fluid — applies to steady, inviscid, incompressible flow.",
+    "id": "alp_cbt2_mech_fluid__0dbbd0"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fluid Mechanics",
+    "stream": "mechanical",
+    "difficulty": 1,
+    "question_text": "Hydraulic oil viscosity grade ISO VG 46 means kinematic viscosity of approximately:",
+    "options": [
+      "46 cSt at 40°C",
+      "46 cP at 20°C",
+      "46 mm²/s at 100°C",
+      "46 SUS at 60°C"
+    ],
+    "correct_index": 0,
+    "explanation": "ISO VG grade = kinematic viscosity in centistokes (cSt) at 40°C ± 10%.",
+    "id": "alp_cbt2_mech_fluid__b17e2c"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Bearings & Lubrication",
+    "stream": "mechanical",
+    "difficulty": 1,
+    "question_text": "The bearing suitable for heavy radial loads at low speeds is:",
+    "options": [
+      "Journal (plain/sleeve) bearing",
+      "Ball bearing",
+      "Roller bearing",
+      "Needle bearing"
+    ],
+    "correct_index": 0,
+    "explanation": "Journal bearings operate on hydrodynamic oil film — ideal for heavy continuous radial loads (e.g., crankshaft main bearings).",
+    "id": "alp_cbt2_mech_bearin_c3a109"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Bearings & Lubrication",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "Grease lubrication is preferred over oil in bearings when:",
+    "options": [
+      "Sealing is difficult, speed is moderate, environment is contaminated",
+      "Very high speeds",
+      "Continuous lubrication is possible",
+      "Heavy loads at very high temperatures"
+    ],
+    "correct_index": 0,
+    "explanation": "Grease stays in place, provides sealing, and suits moderate-speed bearings where oil retention is difficult.",
+    "id": "alp_cbt2_mech_bearin_ea270c"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Thermodynamics",
+    "stream": "mechanical",
+    "difficulty": 1,
+    "question_text": "In a Carnot cycle, heat is rejected at constant:",
+    "options": [
+      "Temperature",
+      "Pressure",
+      "Volume",
+      "Entropy"
+    ],
+    "correct_index": 0,
+    "explanation": "Carnot cycle: isothermal expansion (T_H), adiabatic expansion, isothermal compression (T_C), adiabatic compression.",
+    "id": "alp_cbt2_mech_thermo_fb7ce0"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Thermodynamics",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "Boiler efficiency is defined as:",
+    "options": [
+      "Heat utilised by steam / Heat in fuel burned",
+      "Steam output / fuel consumed",
+      "Steam pressure / heat input",
+      "Heat in steam / total heat"
+    ],
+    "correct_index": 0,
+    "explanation": "Boiler efficiency=(mass of steam × enthalpy rise)/(mass of fuel × calorific value)×100%.",
+    "id": "alp_cbt2_mech_thermo_000d9c"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Thermodynamics",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "An air compressor with intercooling between stages is used to:",
+    "options": [
+      "Reduce work input and lower discharge temperature",
+      "Increase compression ratio in single stage",
+      "Reduce volumetric efficiency",
+      "Increase air velocity"
+    ],
+    "correct_index": 0,
+    "explanation": "Intercooling cools air between stages → approaches isothermal compression → less work. Also reduces temperature.",
+    "id": "alp_cbt2_mech_thermo_a4cd52"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Maintenance & Safety",
+    "stream": "mechanical",
+    "difficulty": 1,
+    "question_text": "Preventive Maintenance (PM) is carried out:",
+    "options": [
+      "At scheduled intervals before failure",
+      "Only after equipment breaks down",
+      "When spares are available",
+      "Once a year only"
+    ],
+    "correct_index": 0,
+    "explanation": "PM is systematic, scheduled maintenance to prevent failures — includes lubrication, inspection, calibration.",
+    "id": "alp_cbt2_mech_mainte_c3ca67"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Maintenance & Safety",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "LOTO (Lockout-Tagout) procedure is used to:",
+    "options": [
+      "Isolate hazardous energy before maintenance",
+      "Log maintenance records",
+      "Lubricate equipment",
+      "Test tool accuracy"
+    ],
+    "correct_index": 0,
+    "explanation": "LOTO: energy isolation procedure to protect maintenance workers from unexpected energisation of equipment.",
+    "id": "alp_cbt2_mech_mainte_aaeb95"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Maintenance & Safety",
+    "stream": "mechanical",
+    "difficulty": 1,
+    "question_text": "The correct fire extinguisher type for electrical fires (Class C) is:",
+    "options": [
+      "CO₂ or Dry Powder",
+      "Water",
+      "Foam",
+      "Sand bucket"
+    ],
+    "correct_index": 0,
+    "explanation": "CO₂ and dry chemical (ABC powder) are safe for electrical fires — water conducts electricity and should never be used.",
+    "id": "alp_cbt2_mech_mainte_46cf1c"
+  }
+]

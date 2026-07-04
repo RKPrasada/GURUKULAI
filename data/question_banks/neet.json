@@ -1,0 +1,1112 @@
+[
+  {
+    "subject": "Physics",
+    "topic": "Modern Physics",
+    "difficulty": 3,
+    "question_text": "Energy released in fusion of 1 kg of H to He (binding energy gain ≈7 MeV/nucleon for He):",
+    "options": [
+      "6.3×10¹⁴ J",
+      "6.3×10¹¹ J",
+      "4.2×10¹⁴ J",
+      "1×10¹⁷ J"
+    ],
+    "correct_index": 0,
+    "explanation": "1 kg H = 6×10²⁶ nucleons; gain ≈7 MeV×6×10²⁶/4×1.6×10⁻¹³≈6.3×10¹⁴ J.",
+    "id": "neet_physic_modern_a4b22e"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Electrostatics & Magnetism",
+    "difficulty": 2,
+    "question_text": "A solenoid with n turns/m carrying current I has magnetic field inside:",
+    "options": [
+      "μ₀nI",
+      "μ₀I/n",
+      "nI",
+      "μ₀n/I"
+    ],
+    "correct_index": 0,
+    "explanation": "B=μ₀nI inside a long solenoid.",
+    "id": "neet_physic_electr_34a593"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Ecology",
+    "difficulty": 2,
+    "question_text": "10% energy law in ecological pyramids means:",
+    "options": [
+      "10% of energy transfers to next trophic level",
+      "90% transfers",
+      "10% is lost as heat",
+      "10% used in growth"
+    ],
+    "correct_index": 0,
+    "explanation": "Lindeman's 10% law: only ~10% of energy at one trophic level passes to the next.",
+    "id": "neet_biolog_ecolog_59804b"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 2,
+    "question_text": "Hydrolysis of starch by amylase produces:",
+    "options": [
+      "Maltose then glucose",
+      "Fructose",
+      "Cellulose",
+      "Lactose"
+    ],
+    "correct_index": 0,
+    "explanation": "Amylase breaks starch → maltose; maltase breaks maltose → glucose.",
+    "id": "neet_chemis_organi_8a8b07"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Reproduction",
+    "difficulty": 2,
+    "question_text": "Meiosis ensures:",
+    "options": [
+      "Genetic variation and halving of chromosome number",
+      "Identical daughter cells",
+      "DNA replication",
+      "No genetic change"
+    ],
+    "correct_index": 0,
+    "explanation": "Meiosis produces 4 haploid cells with genetic variation via crossing over and independent assortment.",
+    "id": "neet_biolog_reprod_9f5943"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Plant Physiology",
+    "difficulty": 2,
+    "question_text": "Transpiration pull in xylem depends on:",
+    "options": [
+      "Cohesion-tension of water",
+      "Root pressure only",
+      "Active transport",
+      "Osmosis only"
+    ],
+    "correct_index": 0,
+    "explanation": "Cohesion-tension theory: transpiration creates negative pressure; water cohesion pulls columns upward.",
+    "id": "neet_biolog_plant__3f6351"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Cell Biology",
+    "difficulty": 1,
+    "question_text": "ATP is synthesized in mitochondria by:",
+    "options": [
+      "Oxidative phosphorylation",
+      "Glycolysis",
+      "Photosynthesis",
+      "Fermentation"
+    ],
+    "correct_index": 0,
+    "explanation": "Oxidative phosphorylation in the inner mitochondrial membrane produces most cellular ATP.",
+    "id": "neet_biolog_cell_b_fbfc4d"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Reproduction",
+    "difficulty": 1,
+    "question_text": "Fertilization in humans occurs in:",
+    "options": [
+      "Fallopian tube",
+      "Uterus",
+      "Ovary",
+      "Cervix"
+    ],
+    "correct_index": 0,
+    "explanation": "Fertilization (sperm meets egg) occurs in the ampulla of the fallopian (uterine) tube.",
+    "id": "neet_biolog_reprod_887b83"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Plant Kingdom",
+    "difficulty": 1,
+    "question_text": "Which plant group has true vascular tissue but no seeds?",
+    "options": [
+      "Pteridophytes",
+      "Bryophytes",
+      "Gymnosperms",
+      "Angiosperms"
+    ],
+    "correct_index": 0,
+    "explanation": "Pteridophytes (ferns) have xylem and phloem but reproduce by spores, not seeds.",
+    "id": "neet_biolog_plant__f6982b"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Physical Chemistry",
+    "difficulty": 2,
+    "question_text": "Henderson-Hasselbalch equation: pH=pKa+log([A⁻]/[HA]). At pH=pKa:",
+    "options": [
+      "[A⁻]=[HA]",
+      "[A⁻]>[HA]",
+      "[A⁻]<[HA]",
+      "No relationship"
+    ],
+    "correct_index": 0,
+    "explanation": "When pH=pKa, log ratio=0, so [A⁻]/[HA]=1, i.e., equal concentrations.",
+    "id": "neet_chemis_physic_311dd6"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 2,
+    "question_text": "Primary structure of a protein refers to:",
+    "options": [
+      "Sequence of amino acids",
+      "Alpha helix structure",
+      "Beta sheet structure",
+      "3D folding"
+    ],
+    "correct_index": 0,
+    "explanation": "Primary structure = amino acid sequence held by peptide (covalent) bonds.",
+    "id": "neet_chemis_organi_02e812"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Biotechnology",
+    "difficulty": 3,
+    "question_text": "ELISA test detects:",
+    "options": [
+      "Antigen-antibody interactions",
+      "DNA mutations",
+      "RNA splicing",
+      "Protein folding"
+    ],
+    "correct_index": 0,
+    "explanation": "Enzyme-Linked Immunosorbent Assay (ELISA) detects antigens/antibodies using enzyme-linked secondary antibodies.",
+    "id": "neet_biolog_biotec_317aed"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Plant Physiology",
+    "difficulty": 1,
+    "question_text": "The site of photosynthesis in a cell is:",
+    "options": [
+      "Chloroplast",
+      "Mitochondria",
+      "Nucleus",
+      "Vacuole"
+    ],
+    "correct_index": 0,
+    "explanation": "Chloroplasts contain chlorophyll and are the site of light reactions and Calvin cycle.",
+    "id": "neet_biolog_plant__5ad5a3"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Cell Biology",
+    "difficulty": 2,
+    "question_text": "Ribosomes are found in:",
+    "options": [
+      "Both prokaryotes and eukaryotes",
+      "Only eukaryotes",
+      "Only prokaryotes",
+      "Only plants"
+    ],
+    "correct_index": 0,
+    "explanation": "Ribosomes (site of protein synthesis) are universal — found in all living cells, though 70S in prokaryotes and 80S in eukaryotes.",
+    "id": "neet_biolog_cell_b_e9be3a"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Cell Biology",
+    "difficulty": 2,
+    "question_text": "The Golgi apparatus is responsible for:",
+    "options": [
+      "Protein processing and secretion",
+      "DNA replication",
+      "Photosynthesis",
+      "Lipid synthesis only"
+    ],
+    "correct_index": 0,
+    "explanation": "Golgi complex modifies, packages, and ships proteins to their destinations (secretory pathway).",
+    "id": "neet_biolog_cell_b_456911"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "difficulty": 1,
+    "question_text": "Heat always flows from:",
+    "options": [
+      "Higher to lower temperature",
+      "Lower to higher temperature",
+      "Hot to cold and back",
+      "No direction preference"
+    ],
+    "correct_index": 0,
+    "explanation": "2nd law of thermodynamics: heat flows spontaneously from hot to cold.",
+    "id": "neet_physic_thermo_d37c95"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Genetics",
+    "difficulty": 2,
+    "question_text": "In incomplete dominance, F1 of red×white flower is:",
+    "options": [
+      "Pink",
+      "Red",
+      "White",
+      "Half red half white"
+    ],
+    "correct_index": 0,
+    "explanation": "Neither allele is dominant; F1 shows intermediate phenotype (pink).",
+    "id": "neet_biolog_geneti_abf87d"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Reproduction",
+    "difficulty": 2,
+    "question_text": "Which hormone maintains corpus luteum during early pregnancy?",
+    "options": [
+      "hCG (human Chorionic Gonadotropin)",
+      "LH",
+      "FSH",
+      "Progesterone"
+    ],
+    "correct_index": 0,
+    "explanation": "hCG secreted by the embryo after implantation mimics LH and maintains the corpus luteum.",
+    "id": "neet_biolog_reprod_37970c"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Electrostatics & Magnetism",
+    "difficulty": 1,
+    "question_text": "Gauss's law: total electric flux through a closed surface = Q_enc/ε₀. If Q_enc=0:",
+    "options": [
+      "Flux=0",
+      "Flux>0",
+      "Flux<0",
+      "Cannot determine"
+    ],
+    "correct_index": 0,
+    "explanation": "If enclosed charge=0, net electric flux=0.",
+    "id": "neet_physic_electr_f35588"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Plant Physiology",
+    "difficulty": 2,
+    "question_text": "C4 plants avoid photorespiration because:",
+    "options": [
+      "CO₂ is fixed first in mesophyll then released in bundle sheath",
+      "They fix CO₂ at night",
+      "They have no RuBisCO",
+      "They absorb only green light"
+    ],
+    "correct_index": 0,
+    "explanation": "C4 plants (sugarcane, maize) use PEP carboxylase in mesophyll to concentrate CO₂ in bundle sheath cells where RuBisCO operates.",
+    "id": "neet_biolog_plant__a050fd"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Electrostatics & Magnetism",
+    "difficulty": 2,
+    "question_text": "Faraday's law: induced EMF = −dΦ/dt. Negative sign represents:",
+    "options": [
+      "Lenz's law (opposing change)",
+      "Energy loss",
+      "Current direction",
+      "Resistance"
+    ],
+    "correct_index": 0,
+    "explanation": "Negative sign represents Lenz's law: induced EMF opposes the change in flux.",
+    "id": "neet_physic_electr_a9809b"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 3,
+    "question_text": "Saponification of ester produces:",
+    "options": [
+      "Carboxylate + alcohol",
+      "Carboxylic acid + alkene",
+      "Aldehyde + alcohol",
+      "Ketone + water"
+    ],
+    "correct_index": 0,
+    "explanation": "Ester + NaOH → sodium carboxylate (soap) + alcohol. This is saponification.",
+    "id": "neet_chemis_organi_071256"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Biotechnology",
+    "difficulty": 2,
+    "question_text": "Bt toxin in transgenic plants is derived from:",
+    "options": [
+      "Bacillus thuringiensis",
+      "Agrobacterium tumefaciens",
+      "E. coli",
+      "Streptomyces"
+    ],
+    "correct_index": 0,
+    "explanation": "Bt toxin genes (cry genes) from Bacillus thuringiensis are inserted into crop plants for pest resistance.",
+    "id": "neet_biolog_biotec_244628"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Evolution",
+    "difficulty": 2,
+    "question_text": "Hardy-Weinberg equilibrium requires:",
+    "options": [
+      "Large population, random mating, no selection",
+      "Small population",
+      "Migration",
+      "Mutation pressure"
+    ],
+    "correct_index": 0,
+    "explanation": "H-W equilibrium: no evolution when large pop, random mating, no mutation/migration/selection/genetic drift.",
+    "id": "neet_biolog_evolut_6a4f1f"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Inorganic Chemistry",
+    "difficulty": 2,
+    "question_text": "Haemoglobin contains which metal?",
+    "options": [
+      "Iron",
+      "Magnesium",
+      "Zinc",
+      "Copper"
+    ],
+    "correct_index": 0,
+    "explanation": "Haemoglobin has Fe²⁺ in its haem group which binds oxygen.",
+    "id": "neet_chemis_inorga_24614b"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Human Physiology",
+    "difficulty": 1,
+    "question_text": "Normal human body temperature is:",
+    "options": [
+      "37°C (98.6°F)",
+      "36°C",
+      "38°C",
+      "35°C"
+    ],
+    "correct_index": 0,
+    "explanation": "Normal core body temperature is ~37°C (98.6°F), maintained by thermoregulation.",
+    "id": "neet_biolog_human__f34bd8"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Physical Chemistry",
+    "difficulty": 2,
+    "question_text": "Buffer solution resists change in:",
+    "options": [
+      "pH",
+      "Temperature",
+      "Pressure",
+      "Volume"
+    ],
+    "correct_index": 0,
+    "explanation": "A buffer solution maintains nearly constant pH upon addition of small amounts of acid or base.",
+    "id": "neet_chemis_physic_a1b62c"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Inorganic Chemistry",
+    "difficulty": 1,
+    "question_text": "Which element is essential for chlorophyll in plants?",
+    "options": [
+      "Magnesium",
+      "Iron",
+      "Calcium",
+      "Potassium"
+    ],
+    "correct_index": 0,
+    "explanation": "Chlorophyll contains Mg²⁺ at its centre in a porphyrin ring.",
+    "id": "neet_chemis_inorga_a1d7a7"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Plant Physiology",
+    "difficulty": 2,
+    "question_text": "The Calvin cycle occurs in:",
+    "options": [
+      "Stroma of chloroplast",
+      "Thylakoid membrane",
+      "Matrix of mitochondria",
+      "Cytoplasm"
+    ],
+    "correct_index": 0,
+    "explanation": "Dark reactions (Calvin/C3 cycle) fix CO₂ in the stroma using ATP and NADPH from light reactions.",
+    "id": "neet_biolog_plant__9452b4"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Animal Kingdom",
+    "difficulty": 1,
+    "question_text": "Which phylum includes animals with a notochord at some stage?",
+    "options": [
+      "Chordata",
+      "Echinodermata",
+      "Arthropoda",
+      "Mollusca"
+    ],
+    "correct_index": 0,
+    "explanation": "Phylum Chordata: all members have notochord, dorsal nerve cord, pharyngeal slits at some life stage.",
+    "id": "neet_biolog_animal_6cd358"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Human Physiology",
+    "difficulty": 2,
+    "question_text": "Neurotransmitter at neuromuscular junction is:",
+    "options": [
+      "Acetylcholine",
+      "Dopamine",
+      "Serotonin",
+      "Norepinephrine"
+    ],
+    "correct_index": 0,
+    "explanation": "Acetylcholine (ACh) is released from motor neurons at the neuromuscular junction.",
+    "id": "neet_biolog_human__c1d758"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 1,
+    "question_text": "Glucose molecular formula is:",
+    "options": [
+      "C₆H₁₂O₆",
+      "C₁₂H₂₂O₁₁",
+      "C₆H₁₀O₅",
+      "C₃H₆O₃"
+    ],
+    "correct_index": 0,
+    "explanation": "Glucose (monosaccharide) = C₆H₁₂O₆.",
+    "id": "neet_chemis_organi_a3bb15"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": 1,
+    "question_text": "SI unit of pressure is:",
+    "options": [
+      "Pascal",
+      "Newton",
+      "Joule",
+      "Watt"
+    ],
+    "correct_index": 0,
+    "explanation": "1 Pascal=1 N/m².",
+    "id": "neet_physic_mechan_d4da60"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Cell Biology",
+    "difficulty": 2,
+    "question_text": "Lysosomes are called 'suicide bags' because they:",
+    "options": [
+      "Contain hydrolytic enzymes that digest cell components",
+      "Explode during apoptosis",
+      "Kill bacteria",
+      "Destroy mitochondria only"
+    ],
+    "correct_index": 0,
+    "explanation": "Lysosomes contain hydrolytic enzymes (acid hydrolases) that can digest all cellular macromolecules.",
+    "id": "neet_biolog_cell_b_e58f9e"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Biotechnology",
+    "difficulty": 2,
+    "question_text": "Restriction enzymes cut DNA at specific sequences called:",
+    "options": [
+      "Palindromic sequences",
+      "Random sequences",
+      "Promoter sequences",
+      "Coding sequences"
+    ],
+    "correct_index": 0,
+    "explanation": "Restriction endonucleases recognise and cut at specific palindromic sequences (read same 5'→3' on both strands).",
+    "id": "neet_biolog_biotec_7c4d70"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Plant Kingdom",
+    "difficulty": 2,
+    "question_text": "Bryophytes are called amphibians of the plant kingdom because:",
+    "options": [
+      "They need water for reproduction",
+      "They live in water and land",
+      "They have gills",
+      "They breathe like amphibians"
+    ],
+    "correct_index": 0,
+    "explanation": "Bryophytes grow on land but require water for fertilization (flagellate sperms swim to egg).",
+    "id": "neet_biolog_plant__aa839f"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": 2,
+    "question_text": "Escape velocity from Earth's surface (R=6400km, g=9.8 m/s²) ≈",
+    "options": [
+      "11.2 km/s",
+      "8 km/s",
+      "9.8 km/s",
+      "7.9 km/s"
+    ],
+    "correct_index": 0,
+    "explanation": "v_e=√(2gR)=√(2×9.8×6.4×10⁶)≈11.2 km/s.",
+    "id": "neet_physic_mechan_800544"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Optics",
+    "difficulty": 1,
+    "question_text": "A concave mirror of focal length 15 cm forms image at 30 cm from mirror. Object distance:",
+    "options": [
+      "30 cm",
+      "15 cm",
+      "45 cm",
+      "60 cm"
+    ],
+    "correct_index": 0,
+    "explanation": "Mirror formula: 1/v+1/u=1/f. 1/30+1/u=1/15 → 1/u=1/15−1/30=1/30 → u=30 cm.",
+    "id": "neet_physic_optics_f94275"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Genetics",
+    "difficulty": 2,
+    "question_text": "Polyploidy is most common in:",
+    "options": [
+      "Plants",
+      "Insects",
+      "Mammals",
+      "Bacteria"
+    ],
+    "correct_index": 0,
+    "explanation": "Polyploidy (multiple chromosome sets) is very common in flowering plants; drives speciation.",
+    "id": "neet_biolog_geneti_a2950c"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": 2,
+    "question_text": "Law of conservation of momentum holds when:",
+    "options": [
+      "Net external force=0",
+      "Energy is conserved",
+      "All forces are conservative",
+      "Velocity is constant"
+    ],
+    "correct_index": 0,
+    "explanation": "Momentum is conserved when net external force on system=0 (Newton's 3rd law consequence).",
+    "id": "neet_physic_mechan_349272"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Animal Kingdom",
+    "difficulty": 1,
+    "question_text": "Earthworm belongs to phylum:",
+    "options": [
+      "Annelida",
+      "Nematoda",
+      "Platyhelminthes",
+      "Arthropoda"
+    ],
+    "correct_index": 0,
+    "explanation": "Earthworm = Lumbricus terrestris, phylum Annelida (segmented worms).",
+    "id": "neet_biolog_animal_dba929"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Optics",
+    "difficulty": 2,
+    "question_text": "Human eye can see objects clearly between near point (25 cm) and far point (∞). This is called:",
+    "options": [
+      "Range of accommodation",
+      "Persistence of vision",
+      "Least distance of distinct vision",
+      "Visual angle"
+    ],
+    "correct_index": 0,
+    "explanation": "The range over which the eye can focus by changing lens curvature is the range of accommodation.",
+    "id": "neet_physic_optics_7fd6d0"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Plant Physiology",
+    "difficulty": 1,
+    "question_text": "Phytohormone promoting fruit ripening is:",
+    "options": [
+      "Ethylene",
+      "Auxin",
+      "Gibberellin",
+      "Cytokinin"
+    ],
+    "correct_index": 0,
+    "explanation": "Ethylene (a gas) promotes fruit ripening, leaf abscission, and senescence.",
+    "id": "neet_biolog_plant__676ee4"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Ecology",
+    "difficulty": 1,
+    "question_text": "The primary producers in an ecosystem are:",
+    "options": [
+      "Green plants",
+      "Herbivores",
+      "Decomposers",
+      "Carnivores"
+    ],
+    "correct_index": 0,
+    "explanation": "Green plants fix solar energy via photosynthesis — they are autotrophs/primary producers.",
+    "id": "neet_biolog_ecolog_107144"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Genetics",
+    "difficulty": 2,
+    "question_text": "A man with blood group AB and woman with O. Possible blood groups in children:",
+    "options": [
+      "A and B only",
+      "AB only",
+      "O only",
+      "A, B, AB, O"
+    ],
+    "correct_index": 0,
+    "explanation": "Father AB (I^A I^B) × Mother O (ii). Children: I^A i (A) or I^B i (B). Only A and B.",
+    "id": "neet_biolog_geneti_9161d6"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Plant Kingdom",
+    "difficulty": 2,
+    "question_text": "Alternation of generations in plants refers to:",
+    "options": [
+      "Alternating sporophyte and gametophyte",
+      "Day and night cycle",
+      "Summer and winter growth",
+      "Sexual and asexual reproduction"
+    ],
+    "correct_index": 0,
+    "explanation": "Plant life cycles alternate between diploid sporophyte (2n) and haploid gametophyte (n) generations.",
+    "id": "neet_biolog_plant__13e9b8"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Modern Physics",
+    "difficulty": 1,
+    "question_text": "X-rays are:",
+    "options": [
+      "Electromagnetic radiation",
+      "Sound waves",
+      "Mechanical waves",
+      "Particle radiation"
+    ],
+    "correct_index": 0,
+    "explanation": "X-rays are high-energy electromagnetic radiation (wavelength 0.01–10 nm).",
+    "id": "neet_physic_modern_df56bc"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Ecology",
+    "difficulty": 1,
+    "question_text": "Biodiversity hotspot means:",
+    "options": [
+      "Area with high species richness under threat",
+      "Very hot region",
+      "Area with many predators",
+      "Volcanic region"
+    ],
+    "correct_index": 0,
+    "explanation": "Biodiversity hotspots: regions with >1500 endemic plant species that have lost >70% of original habitat.",
+    "id": "neet_biolog_ecolog_85af5e"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Cell Biology",
+    "difficulty": 1,
+    "question_text": "Mitosis results in:",
+    "options": [
+      "Two genetically identical diploid cells",
+      "Four haploid cells",
+      "Two haploid cells",
+      "One diploid cell"
+    ],
+    "correct_index": 0,
+    "explanation": "Mitosis: somatic cell division producing 2 identical daughter cells with same chromosome number.",
+    "id": "neet_biolog_cell_b_4f6bcb"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Genetics",
+    "difficulty": 3,
+    "question_text": "In a testcross of Aa×aa, expected ratio of phenotypes:",
+    "options": [
+      "1:1",
+      "3:1",
+      "1:2:1",
+      "All dominant"
+    ],
+    "correct_index": 0,
+    "explanation": "Aa×aa → 1/2 Aa (dominant) : 1/2 aa (recessive). Ratio 1:1.",
+    "id": "neet_biolog_geneti_22e1c9"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Physical Chemistry",
+    "difficulty": 1,
+    "question_text": "Osmosis involves movement of water from:",
+    "options": [
+      "Low solute to high solute concentration",
+      "High to low solute concentration",
+      "Equal concentrations",
+      "Both directions equally"
+    ],
+    "correct_index": 0,
+    "explanation": "Water moves from hypotonic (low solute) to hypertonic (high solute) solution across semipermeable membrane.",
+    "id": "neet_chemis_physic_e88d23"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": 2,
+    "question_text": "A 60 kg person runs up stairs of height 5m in 10s. Power developed:",
+    "options": [
+      "300 W",
+      "600 W",
+      "150 W",
+      "3000 W"
+    ],
+    "correct_index": 0,
+    "explanation": "P=mgh/t=60×10×5/10=300 W.",
+    "id": "neet_physic_mechan_d33f03"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Evolution",
+    "difficulty": 2,
+    "question_text": "Industrial melanism in peppered moths demonstrates:",
+    "options": [
+      "Natural selection",
+      "Genetic drift",
+      "Mutation",
+      "Sexual selection"
+    ],
+    "correct_index": 0,
+    "explanation": "During industrial revolution, dark moths survived better on soot-covered trees — classic natural selection.",
+    "id": "neet_biolog_evolut_057578"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Genetics",
+    "difficulty": 1,
+    "question_text": "DNA double helix was proposed by:",
+    "options": [
+      "Watson and Crick",
+      "Mendel",
+      "Darwin",
+      "Morgan"
+    ],
+    "correct_index": 0,
+    "explanation": "Watson and Crick (1953) proposed the double helix model based on Franklin's X-ray data.",
+    "id": "neet_biolog_geneti_316af5"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Plant Kingdom",
+    "difficulty": 1,
+    "question_text": "Angiosperms are different from gymnosperms in having:",
+    "options": [
+      "Enclosed seeds (fruits)",
+      "Naked seeds",
+      "No flowers",
+      "Vascular tissue"
+    ],
+    "correct_index": 0,
+    "explanation": "Angiosperms have seeds enclosed in a fruit (ovary wall). Gymnosperms have naked seeds.",
+    "id": "neet_biolog_plant__f223a4"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Human Physiology",
+    "difficulty": 1,
+    "question_text": "Which enzyme in saliva begins carbohydrate digestion?",
+    "options": [
+      "Salivary amylase (ptyalin)",
+      "Lipase",
+      "Pepsin",
+      "Trypsin"
+    ],
+    "correct_index": 0,
+    "explanation": "Salivary amylase (ptyalin) breaks down starch into maltose in the mouth.",
+    "id": "neet_biolog_human__10218d"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Animal Kingdom",
+    "difficulty": 2,
+    "question_text": "Mammals are unique in having:",
+    "options": [
+      "Mammary glands and hair",
+      "Warm blood only",
+      "Four-chambered heart",
+      "Vertebral column"
+    ],
+    "correct_index": 0,
+    "explanation": "Defining mammalian characters: mammary glands (milk), hair/fur, three middle ear bones.",
+    "id": "neet_biolog_animal_5c8c7b"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Animal Kingdom",
+    "difficulty": 2,
+    "question_text": "Insects are distinguished by having:",
+    "options": [
+      "6 legs and 3 body regions",
+      "4 legs and 2 body regions",
+      "8 legs and 2 body regions",
+      "10 legs and 2 body regions"
+    ],
+    "correct_index": 0,
+    "explanation": "Class Insecta: 3 pairs of legs (6), 3 body regions (head, thorax, abdomen).",
+    "id": "neet_biolog_animal_d227a7"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Human Physiology",
+    "difficulty": 2,
+    "question_text": "The functional unit of the kidney is:",
+    "options": [
+      "Nephron",
+      "Glomerulus",
+      "Bowman's capsule",
+      "Loop of Henle"
+    ],
+    "correct_index": 0,
+    "explanation": "Nephron is the structural and functional unit of the kidney; ~1 million per kidney.",
+    "id": "neet_biolog_human__45fcee"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "difficulty": 2,
+    "question_text": "Specific heat at constant pressure Cp vs at constant volume Cv: for ideal gas:",
+    "options": [
+      "Cp>Cv",
+      "Cp<Cv",
+      "Cp=Cv",
+      "Cp=Cv/γ"
+    ],
+    "correct_index": 0,
+    "explanation": "Cp=Cv+R. Always Cp>Cv for ideal gases.",
+    "id": "neet_physic_thermo_28e98a"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Evolution",
+    "difficulty": 1,
+    "question_text": "Theory of Natural Selection was proposed by:",
+    "options": [
+      "Darwin and Wallace",
+      "Lamarck",
+      "Mendel",
+      "De Vries"
+    ],
+    "correct_index": 0,
+    "explanation": "Charles Darwin and Alfred Russel Wallace independently proposed natural selection (1858).",
+    "id": "neet_biolog_evolut_0fb560"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Ecology",
+    "difficulty": 2,
+    "question_text": "Nitrogen fixation is carried out by:",
+    "options": [
+      "Rhizobium bacteria",
+      "Nitrifying bacteria",
+      "Denitrifying bacteria",
+      "Decomposers"
+    ],
+    "correct_index": 0,
+    "explanation": "Rhizobium (in root nodules) and free-living bacteria (Azotobacter) fix atmospheric N₂.",
+    "id": "neet_biolog_ecolog_677310"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Modern Physics",
+    "difficulty": 2,
+    "question_text": "In α-decay, mass number decreases by:",
+    "options": [
+      "4",
+      "2",
+      "1",
+      "0"
+    ],
+    "correct_index": 0,
+    "explanation": "α-particle = ⁴He nucleus; α-decay: A decreases by 4, Z decreases by 2.",
+    "id": "neet_physic_modern_91ea10"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": 1,
+    "question_text": "A stone dropped from height h hits ground after time:",
+    "options": [
+      "√(2h/g)",
+      "√(h/g)",
+      "2h/g",
+      "h/g"
+    ],
+    "correct_index": 0,
+    "explanation": "h=½gt² → t=√(2h/g).",
+    "id": "neet_physic_mechan_dcc8e3"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Optics",
+    "difficulty": 2,
+    "question_text": "Dispersive power of prism depends on:",
+    "options": [
+      "Material of prism",
+      "Angle of prism",
+      "Colour of light",
+      "Size of prism"
+    ],
+    "correct_index": 0,
+    "explanation": "Dispersive power=ω=(μᵥ−μᵣ)/(μ_y−1) depends on the material (refractive indices).",
+    "id": "neet_physic_optics_7db3be"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Biotechnology",
+    "difficulty": 1,
+    "question_text": "PCR (Polymerase Chain Reaction) is used to:",
+    "options": [
+      "Amplify specific DNA sequences",
+      "Sequence proteins",
+      "Clone organisms",
+      "Produce antibodies"
+    ],
+    "correct_index": 0,
+    "explanation": "PCR amplifies target DNA exponentially using primers and Taq polymerase through thermal cycling.",
+    "id": "neet_biolog_biotec_2a52f9"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Human Physiology",
+    "difficulty": 3,
+    "question_text": "During strenuous exercise, which metabolic pathway is used for quick ATP?",
+    "options": [
+      "Lactic acid fermentation",
+      "Aerobic respiration",
+      "Fatty acid oxidation",
+      "Gluconeogenesis"
+    ],
+    "correct_index": 0,
+    "explanation": "In anaerobic conditions, pyruvate → lactic acid, regenerating NAD⁺ for glycolysis to continue producing ATP quickly.",
+    "id": "neet_biolog_human__b99d16"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Biotechnology",
+    "difficulty": 1,
+    "question_text": "Which scientist developed the first recombinant DNA in 1972?",
+    "options": [
+      "Paul Berg",
+      "James Watson",
+      "Frederick Sanger",
+      "Kary Mullis"
+    ],
+    "correct_index": 0,
+    "explanation": "Paul Berg (1972) created the first recombinant DNA molecule, earning the 1980 Nobel Prize.",
+    "id": "neet_biolog_biotec_7fc4d6"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Reproduction",
+    "difficulty": 1,
+    "question_text": "Human gestation period is approximately:",
+    "options": [
+      "280 days",
+      "360 days",
+      "180 days",
+      "120 days"
+    ],
+    "correct_index": 0,
+    "explanation": "Human pregnancy lasts approximately 280 days (40 weeks) from last menstrual period.",
+    "id": "neet_biolog_reprod_3afdcb"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Human Physiology",
+    "difficulty": 2,
+    "question_text": "Insulin is produced by which cells of the pancreas?",
+    "options": [
+      "Beta cells of Islets of Langerhans",
+      "Alpha cells",
+      "Delta cells",
+      "Acinar cells"
+    ],
+    "correct_index": 0,
+    "explanation": "Beta cells in Islets of Langerhans secrete insulin in response to high blood glucose.",
+    "id": "neet_biolog_human__b9f4f3"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Inorganic Chemistry",
+    "difficulty": 2,
+    "question_text": "Enzyme carbonic anhydrase contains:",
+    "options": [
+      "Zinc",
+      "Magnesium",
+      "Iron",
+      "Copper"
+    ],
+    "correct_index": 0,
+    "explanation": "Carbonic anhydrase (CO₂+H₂O↔H₂CO₃) has Zn²⁺ as cofactor.",
+    "id": "neet_chemis_inorga_da219a"
+  },
+  {
+    "subject": "Biology — Botany",
+    "topic": "Cell Biology",
+    "difficulty": 1,
+    "question_text": "The fluid mosaic model of cell membrane was proposed by:",
+    "options": [
+      "Singer and Nicolson",
+      "Watson and Crick",
+      "Schleiden and Schwann",
+      "Virchow"
+    ],
+    "correct_index": 0,
+    "explanation": "Singer and Nicolson (1972) proposed the fluid mosaic model — phospholipid bilayer with embedded proteins.",
+    "id": "neet_biolog_cell_b_2c0815"
+  },
+  {
+    "subject": "Biology — Zoology",
+    "topic": "Evolution",
+    "difficulty": 3,
+    "question_text": "Analogous organs suggest:",
+    "options": [
+      "Convergent evolution",
+      "Divergent evolution",
+      "Common ancestry",
+      "Genetic drift"
+    ],
+    "correct_index": 0,
+    "explanation": "Analogous organs have similar function but different origin (e.g., bird wing and insect wing) — convergent evolution.",
+    "id": "neet_biolog_evolut_96e779"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "difficulty": 2,
+    "question_text": "A gas is compressed isothermally. Internal energy:",
+    "options": [
+      "Remains constant",
+      "Increases",
+      "Decreases",
+      "Becomes zero"
+    ],
+    "correct_index": 0,
+    "explanation": "For ideal gas: internal energy depends only on temperature. Isothermal→T constant→ΔU=0.",
+    "id": "neet_physic_thermo_f22a0b"
+  }
+]

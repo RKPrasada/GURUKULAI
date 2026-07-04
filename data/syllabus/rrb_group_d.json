@@ -1,0 +1,46 @@
+{
+  "exam": "RRB Group D",
+  "subjects": [
+    {
+      "name": "Mathematics",
+      "topics": [
+        {"name": "Number System", "subtopics": ["BODMAS", "Decimals", "Fractions", "LCM & HCF"]},
+        {"name": "Ratio and Proportion", "subtopics": ["Percentages", "Mensuration"]},
+        {"name": "Time and Work", "subtopics": ["Time and Distance"]},
+        {"name": "Simple and Compound Interest", "subtopics": ["Profit and Loss"]},
+        {"name": "Algebra", "subtopics": ["Geometry and Trigonometry"]},
+        {"name": "Elementary Statistics", "subtopics": ["Square Root", "Age Calculations", "Calendar & Clock", "Pipes & Cistern"]}
+      ]
+    },
+    {
+      "name": "General Intelligence & Reasoning",
+      "topics": [
+        {"name": "Analogies", "subtopics": ["Alphabetical and Number Series"]},
+        {"name": "Coding and Decoding", "subtopics": ["Mathematical Operations"]},
+        {"name": "Relationships", "subtopics": ["Syllogism", "Jumbling"]},
+        {"name": "Venn Diagram", "subtopics": ["Data Interpretation and Sufficiency"]},
+        {"name": "Conclusions and Decision Making", "subtopics": ["Similarities and Differences"]},
+        {"name": "Analytical Reasoning", "subtopics": ["Classification", "Directions", "Statement – Arguments and Assumptions"]}
+      ]
+    },
+    {
+      "name": "General Science",
+      "topics": [
+        {"name": "Physics (10th Standard)", "subtopics": ["Motion", "Force", "Work and Energy", "Sound", "Light"]},
+        {"name": "Chemistry (10th Standard)", "subtopics": ["Matter", "Atoms and Molecules", "Acids Bases and Salts", "Metals and Non-metals"]},
+        {"name": "Life Sciences (10th Standard)", "subtopics": ["Cells", "Tissues", "Diversity in Living Organisms", "Human Physiology"]}
+      ]
+    },
+    {
+      "name": "General Awareness and Current Affairs",
+      "topics": [
+        {"name": "Science & Technology", "subtopics": ["Recent Developments", "Space Exploration", "IT"]},
+        {"name": "Sports", "subtopics": ["Major Tournaments", "Awards", "Records"]},
+        {"name": "Culture", "subtopics": ["Indian Culture", "Art", "Dance Forms"]},
+        {"name": "Personalities", "subtopics": ["Famous People in News", "Appointments"]},
+        {"name": "Economics", "subtopics": ["Indian Economy", "Budget", "Financial Policies"]},
+        {"name": "Politics", "subtopics": ["Indian Polity", "Constitution", "Government Schemes"]}
+      ]
+    }
+  ]
+}

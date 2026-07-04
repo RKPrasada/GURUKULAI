@@ -1,0 +1,36 @@
+{
+  "exam": "JEE Mains",
+  "subjects": [
+    {
+      "name": "Physics",
+      "topics": [
+        {"name": "Mechanics", "subtopics": ["Kinematics", "Newton's Laws", "Work & Energy", "Rotation", "Gravitation", "Simple Harmonic Motion"]},
+        {"name": "Thermodynamics", "subtopics": ["Kinetic Theory", "Laws of Thermodynamics", "Heat Transfer", "Thermal Expansion"]},
+        {"name": "Electrostatics", "subtopics": ["Coulomb's Law", "Electric Field", "Gauss's Law", "Capacitance", "Potential"]},
+        {"name": "Current Electricity", "subtopics": ["Ohm's Law", "Kirchhoff's Laws", "Wheatstone Bridge", "Heating Effect"]},
+        {"name": "Magnetism", "subtopics": ["Biot-Savart Law", "Ampere's Law", "Electromagnetic Induction", "Faraday's Law"]},
+        {"name": "Optics", "subtopics": ["Reflection", "Refraction", "Lens Formula", "Wave Optics", "Diffraction", "Interference"]},
+        {"name": "Modern Physics", "subtopics": ["Photoelectric Effect", "Atomic Models", "Nuclear Physics", "Semiconductors"]}
+      ]
+    },
+    {
+      "name": "Chemistry",
+      "topics": [
+        {"name": "Organic Chemistry", "subtopics": ["Hydrocarbons", "Alcohols", "Aldehydes & Ketones", "Carboxylic Acids", "Amines", "Polymers", "Biomolecules"]},
+        {"name": "Inorganic Chemistry", "subtopics": ["Periodic Table", "Chemical Bonding", "s-Block", "p-Block", "d-Block", "Coordination Compounds"]},
+        {"name": "Physical Chemistry", "subtopics": ["Mole Concept", "Electrochemistry", "Chemical Kinetics", "Equilibrium", "Thermodynamics", "Solutions"]}
+      ]
+    },
+    {
+      "name": "Mathematics",
+      "topics": [
+        {"name": "Algebra", "subtopics": ["Complex Numbers", "Matrices & Determinants", "Permutations & Combinations", "Binomial Theorem", "Sequences & Series"]},
+        {"name": "Calculus", "subtopics": ["Limits", "Continuity", "Differentiation", "Applications of Derivatives", "Integration", "Differential Equations"]},
+        {"name": "Coordinate Geometry", "subtopics": ["Straight Lines", "Circles", "Parabola", "Ellipse", "Hyperbola"]},
+        {"name": "Vectors & 3D", "subtopics": ["Vector Algebra", "3D Geometry", "Planes", "Lines in 3D"]},
+        {"name": "Trigonometry", "subtopics": ["Inverse Trigonometry", "Trigonometric Equations", "Properties of Triangles"]},
+        {"name": "Statistics & Probability", "subtopics": ["Mean & Variance", "Bayes' Theorem", "Distributions"]}
+      ]
+    }
+  ]
+}

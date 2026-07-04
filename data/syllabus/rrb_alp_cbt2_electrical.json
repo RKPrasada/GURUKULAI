@@ -1,0 +1,20 @@
+{
+  "exam": "RRB ALP CBT 2 — Electrical Stream",
+  "total_questions": 75,
+  "subjects": [
+    {
+      "name": "Electrical",
+      "weight": 1,
+      "topics": [
+        {"name": "DC Circuits", "subtopics": ["Ohm's Law", "Kirchhoff's Laws", "Series & Parallel circuits", "Power & Energy"]},
+        {"name": "AC Circuits", "subtopics": ["Frequency & Period", "RMS & Peak values", "Power Factor", "Impedance", "Resonance"]},
+        {"name": "Transformers", "subtopics": ["Turns ratio", "Efficiency", "Core losses", "Types of transformers", "Transformer oil"]},
+        {"name": "Electrical Machines", "subtopics": ["DC motors & generators", "3-phase induction motor", "Synchronous speed", "Slip", "Starters (DOL, Star-Delta)"]},
+        {"name": "Measuring Instruments", "subtopics": ["Ammeter", "Voltmeter", "Wattmeter", "Megger", "Energy meter", "Tong tester"]},
+        {"name": "Wiring & Safety", "subtopics": ["IS colour codes", "Earthing", "ELCB/RCCB", "MCB", "Cable types", "Safe working practices"]},
+        {"name": "Storage Batteries", "subtopics": ["Lead-acid battery", "Specific gravity", "Charging methods", "Ni-Cd battery", "Capacity"]},
+        {"name": "Basic Electronics", "subtopics": ["Diodes", "Rectifiers (half-wave, full-wave)", "Zener diode", "Transistors", "Logic gates"]}
+      ]
+    }
+  ]
+}

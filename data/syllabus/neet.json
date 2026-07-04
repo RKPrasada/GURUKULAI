@@ -1,0 +1,43 @@
+{
+  "exam": "NEET",
+  "subjects": [
+    {
+      "name": "Physics",
+      "topics": [
+        {"name": "Mechanics", "subtopics": ["Kinematics", "Newton's Laws", "Work & Energy", "Rotation", "Gravitation"]},
+        {"name": "Thermodynamics", "subtopics": ["Thermal Expansion", "Specific Heat", "Laws of Thermodynamics"]},
+        {"name": "Electrostatics & Magnetism", "subtopics": ["Coulomb's Law", "Capacitors", "Current Electricity", "Electromagnetic Induction"]},
+        {"name": "Optics", "subtopics": ["Ray Optics", "Wave Optics", "Optical Instruments"]},
+        {"name": "Modern Physics", "subtopics": ["Dual Nature of Matter", "Atoms & Nuclei", "Semiconductors"]}
+      ]
+    },
+    {
+      "name": "Chemistry",
+      "topics": [
+        {"name": "Organic Chemistry", "subtopics": ["Basic Concepts", "Hydrocarbons", "Haloalkanes", "Alcohols", "Carbonyl Compounds", "Biomolecules", "Polymers"]},
+        {"name": "Inorganic Chemistry", "subtopics": ["Periodic Table", "Chemical Bonding", "s-Block", "p-Block", "d-Block Elements"]},
+        {"name": "Physical Chemistry", "subtopics": ["Solutions", "Electrochemistry", "Chemical Kinetics", "Surface Chemistry", "Equilibrium"]}
+      ]
+    },
+    {
+      "name": "Biology — Botany",
+      "topics": [
+        {"name": "Cell Biology", "subtopics": ["Cell Structure", "Biomolecules", "Cell Division (Mitosis & Meiosis)", "Cell Cycle"]},
+        {"name": "Plant Physiology", "subtopics": ["Photosynthesis", "Respiration", "Plant Growth", "Transport in Plants"]},
+        {"name": "Genetics", "subtopics": ["Mendelian Genetics", "Chromosomal Theory", "Mutation", "DNA Replication", "Gene Expression"]},
+        {"name": "Ecology", "subtopics": ["Ecosystem", "Biodiversity", "Environmental Issues", "Population Dynamics"]},
+        {"name": "Plant Kingdom", "subtopics": ["Classification", "Algae", "Fungi", "Bryophytes", "Pteridophytes", "Gymnosperms", "Angiosperms"]}
+      ]
+    },
+    {
+      "name": "Biology — Zoology",
+      "topics": [
+        {"name": "Human Physiology", "subtopics": ["Digestion", "Breathing & Respiration", "Body Fluids & Circulation", "Excretion", "Locomotion", "Neural Control", "Chemical Coordination"]},
+        {"name": "Reproduction", "subtopics": ["Asexual Reproduction", "Sexual Reproduction in Flowering Plants", "Human Reproduction", "Reproductive Health"]},
+        {"name": "Evolution", "subtopics": ["Origin of Life", "Theories of Evolution", "Evidence", "Human Evolution"]},
+        {"name": "Biotechnology", "subtopics": ["DNA Technology", "PCR", "Cloning", "Applications", "Ethical Issues"]},
+        {"name": "Animal Kingdom", "subtopics": ["Classification", "Animal Tissues", "Structural Organisation"]}
+      ]
+    }
+  ]
+}

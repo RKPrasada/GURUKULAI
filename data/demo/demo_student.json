@@ -1,0 +1,19 @@
+{
+  "student_id": "demo_rrb_001",
+  "exam_target": "rrb_ntpc",
+  "preferred_language": "en",
+  "diagnostic_done": true,
+  "study_streak_days": 7,
+  "total_questions_attempted": 87,
+  "created_at": "2026-06-15T09:00:00",
+  "weakness_map": [
+    {"subject": "Mathematics", "topic": "Algebra", "score_pct": 0.22, "attempts": 10, "last_attempted": "2026-06-21T10:00:00"},
+    {"subject": "Mathematics", "topic": "Trigonometry", "score_pct": 0.33, "attempts": 9, "last_attempted": "2026-06-20T11:00:00"},
+    {"subject": "General Intelligence & Reasoning", "topic": "Coding-Decoding", "score_pct": 0.41, "attempts": 11, "last_attempted": "2026-06-21T14:00:00"},
+    {"subject": "General Awareness", "topic": "History", "score_pct": 0.55, "attempts": 10, "last_attempted": "2026-06-19T09:00:00"},
+    {"subject": "Mathematics", "topic": "Percentage", "score_pct": 0.60, "attempts": 10, "last_attempted": "2026-06-18T10:00:00"},
+    {"subject": "General Intelligence & Reasoning", "topic": "Syllogism", "score_pct": 0.70, "attempts": 9, "last_attempted": "2026-06-17T15:00:00"},
+    {"subject": "General Awareness", "topic": "Geography", "score_pct": 0.78, "attempts": 10, "last_attempted": "2026-06-16T10:00:00"},
+    {"subject": "Mathematics", "topic": "Number System", "score_pct": 0.89, "attempts": 11, "last_attempted": "2026-06-15T10:00:00"}
+  ]
+}

@@ -1,0 +1,1202 @@
+[
+  {
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "difficulty": 2,
+    "question_text": "Specific heat capacity of water is 4200 J/(kg·K). Heat to raise 2 kg by 5°C:",
+    "options": [
+      "42000 J",
+      "21000 J",
+      "8400 J",
+      "4200 J"
+    ],
+    "correct_index": 0,
+    "explanation": "Q=mcΔT=2×4200×5=42000 J.",
+    "id": "jee_physic_thermo_b47b01"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Physical Chemistry",
+    "difficulty": 2,
+    "question_text": "pH of 0.01 M HCl solution is:",
+    "options": [
+      "2",
+      "−2",
+      "12",
+      "1"
+    ],
+    "correct_index": 0,
+    "explanation": "HCl is strong acid: [H⁺]=0.01=10⁻² M. pH=−log(10⁻²)=2.",
+    "id": "jee_chemis_physic_f42b91"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "difficulty": 1,
+    "question_text": "At absolute zero (0 K), entropy of a perfect crystal is:",
+    "options": [
+      "Zero",
+      "Maximum",
+      "One",
+      "Undefined"
+    ],
+    "correct_index": 0,
+    "explanation": "Third law of thermodynamics: S=0 at T=0 K for a perfect crystal.",
+    "id": "jee_physic_thermo_0d736b"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Optics",
+    "difficulty": 2,
+    "question_text": "Young's double-slit: fringe width β=λD/d. If λ=600nm, D=1m, d=0.3mm, β=",
+    "options": [
+      "2 mm",
+      "0.2 mm",
+      "20 mm",
+      "0.02 mm"
+    ],
+    "correct_index": 0,
+    "explanation": "β=600×10⁻⁹×1/(0.3×10⁻³)=2×10⁻³ m=2 mm.",
+    "id": "jee_physic_optics_49d11e"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Electrostatics",
+    "difficulty": 2,
+    "question_text": "Electric field due to a point charge q at distance r: E=",
+    "options": [
+      "kq/r²",
+      "kq/r",
+      "kq²/r",
+      "kq·r"
+    ],
+    "correct_index": 0,
+    "explanation": "E=kq/r²; k=9×10⁹ N·m²/C².",
+    "id": "jee_physic_electr_a2d3aa"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Current Electricity",
+    "difficulty": 2,
+    "question_text": "EMF=12V, internal resistance=2Ω, external R=4Ω. Current through circuit:",
+    "options": [
+      "2 A",
+      "3 A",
+      "1.5 A",
+      "6 A"
+    ],
+    "correct_index": 0,
+    "explanation": "I=EMF/(R+r)=12/6=2 A.",
+    "id": "jee_physic_curren_6cf6aa"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Current Electricity",
+    "difficulty": 2,
+    "question_text": "Power dissipated in resistor R carrying current I:",
+    "options": [
+      "I²R",
+      "IR",
+      "I/R",
+      "IR²"
+    ],
+    "correct_index": 0,
+    "explanation": "P=I²R=V²/R=VI.",
+    "id": "jee_physic_curren_3bf85b"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 1,
+    "question_text": "CH₄ (methane) belongs to the homologous series of:",
+    "options": [
+      "Alkanes",
+      "Alkenes",
+      "Alkynes",
+      "Alcohols"
+    ],
+    "correct_index": 0,
+    "explanation": "Methane is the simplest alkane (CₙH₂ₙ₊₂), saturated hydrocarbons with single C-C bonds.",
+    "id": "jee_chemis_organi_cb96b9"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Inorganic Chemistry",
+    "difficulty": 3,
+    "question_text": "In coordination compound [Fe(CN)₆]⁴⁻, the oxidation state of Fe is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "correct_index": 0,
+    "explanation": "CN⁻ has charge −1 each. Total charge=−4. 6×(−1)+Fe=−4 → Fe=+2.",
+    "id": "jee_chemis_inorga_d24bfb"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Inorganic Chemistry",
+    "difficulty": 1,
+    "question_text": "The most electronegative element is:",
+    "options": [
+      "Fluorine",
+      "Oxygen",
+      "Chlorine",
+      "Nitrogen"
+    ],
+    "correct_index": 0,
+    "explanation": "Fluorine (F) has the highest electronegativity (4.0 on Pauling scale).",
+    "id": "jee_chemis_inorga_2a13dd"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": 2,
+    "question_text": "Angular momentum L=Iω. If I=2 kg·m² and ω=4 rad/s, L=",
+    "options": [
+      "8 kg·m²/s",
+      "6 kg·m²/s",
+      "2 kg·m²/s",
+      "0.5 kg·m²/s"
+    ],
+    "correct_index": 0,
+    "explanation": "L=2×4=8 kg·m²/s.",
+    "id": "jee_physic_mechan_553247"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Statistics & Probability",
+    "difficulty": 2,
+    "question_text": "In Binomial distribution B(n,p), mean=np and variance=",
+    "options": [
+      "np(1−p)",
+      "np",
+      "np²",
+      "n²p"
+    ],
+    "correct_index": 0,
+    "explanation": "Variance of binomial distribution = npq = np(1−p).",
+    "id": "jee_mathem_statis_fc9477"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 2,
+    "question_text": "Benzene (C₆H₆) undergoes which type of reaction preferentially?",
+    "options": [
+      "Electrophilic substitution",
+      "Nucleophilic addition",
+      "Free radical addition",
+      "Elimination"
+    ],
+    "correct_index": 0,
+    "explanation": "Benzene's aromatic ring prefers electrophilic substitution (nitration, sulfonation, halogenation) to preserve aromaticity.",
+    "id": "jee_chemis_organi_a96688"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "difficulty": 2,
+    "question_text": "Efficiency of Carnot engine with T_H=500K and T_C=300K:",
+    "options": [
+      "40%",
+      "60%",
+      "50%",
+      "20%"
+    ],
+    "correct_index": 0,
+    "explanation": "η=(1−T_C/T_H)×100=(1−300/500)×100=40%.",
+    "id": "jee_physic_thermo_fae167"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Coordinate Geometry",
+    "difficulty": 2,
+    "question_text": "The directrix of parabola y²=8x is:",
+    "options": [
+      "x=−2",
+      "x=2",
+      "y=−2",
+      "y=2"
+    ],
+    "correct_index": 0,
+    "explanation": "y²=4ax → a=2. Directrix: x=−a=−2.",
+    "id": "jee_mathem_coordi_862ee1"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Magnetism",
+    "difficulty": 3,
+    "question_text": "A proton moves perpendicular to B=0.1 T at v=10⁶ m/s. Radius of circular path (m_p=1.67×10⁻²⁷ kg):",
+    "options": [
+      "0.104 m",
+      "0.01 m",
+      "1.04 m",
+      "0.001 m"
+    ],
+    "correct_index": 0,
+    "explanation": "r=mv/(qB)=1.67×10⁻²⁷×10⁶/(1.6×10⁻¹⁹×0.1)≈0.104 m.",
+    "id": "jee_physic_magnet_a2a6ca"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Electrostatics",
+    "difficulty": 2,
+    "question_text": "Energy stored in capacitor C at voltage V:",
+    "options": [
+      "½CV²",
+      "CV",
+      "CV²",
+      "C/V"
+    ],
+    "correct_index": 0,
+    "explanation": "U=½CV²=Q²/2C=QV/2.",
+    "id": "jee_physic_electr_73d285"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 2,
+    "question_text": "Aldol condensation occurs between:",
+    "options": [
+      "Two carbonyl compounds with α-H",
+      "Alkene and water",
+      "Alcohol and acid",
+      "Amine and carboxylic acid"
+    ],
+    "correct_index": 0,
+    "explanation": "Aldol condensation: enolate of one carbonyl attacks the carbonyl carbon of another, forming β-hydroxy carbonyl compound.",
+    "id": "jee_chemis_organi_9adece"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 2,
+    "question_text": "The value of tan75°=",
+    "options": [
+      "2+√3",
+      "2−√3",
+      "√3",
+      "1"
+    ],
+    "correct_index": 0,
+    "explanation": "tan75°=tan(45°+30°)=(1+1/√3)/(1−1/√3)=(√3+1)/(√3−1)=2+√3.",
+    "id": "jee_mathem_trigon_635c1b"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Statistics & Probability",
+    "difficulty": 1,
+    "question_text": "Standard deviation of 2,4,4,4,5,5,7,9 is:",
+    "options": [
+      "2",
+      "4",
+      "1",
+      "3"
+    ],
+    "correct_index": 0,
+    "explanation": "Mean=5; deviations²: 9,1,1,1,0,0,4,16; variance=32/8=4; SD=2.",
+    "id": "jee_mathem_statis_c248ba"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Vectors & 3D",
+    "difficulty": 1,
+    "question_text": "The distance between parallel planes 2x+y+2z=3 and 4x+2y+4z=12 is:",
+    "options": [
+      "1/2",
+      "1",
+      "3/2",
+      "2"
+    ],
+    "correct_index": 0,
+    "explanation": "Rewrite 2nd plane: 2x+y+2z=6. Distance=|6−3|/√(4+1+4)=3/3=1.",
+    "id": "jee_mathem_vector_1c1ec8"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Current Electricity",
+    "difficulty": 1,
+    "question_text": "Three resistors 2Ω, 3Ω, 6Ω in parallel. Equivalent resistance:",
+    "options": [
+      "1 Ω",
+      "11 Ω",
+      "0.5 Ω",
+      "3.67 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "1/R=1/2+1/3+1/6=3/6+2/6+1/6=1. R=1Ω.",
+    "id": "jee_physic_curren_750c91"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Physical Chemistry",
+    "difficulty": 2,
+    "question_text": "ΔG=ΔH−TΔS. Reaction is spontaneous when:",
+    "options": [
+      "ΔG<0",
+      "ΔG>0",
+      "ΔG=0",
+      "ΔH>0"
+    ],
+    "correct_index": 0,
+    "explanation": "Negative ΔG indicates spontaneous process at constant T and P.",
+    "id": "jee_chemis_physic_c90ae6"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Vectors & 3D",
+    "difficulty": 2,
+    "question_text": "Equation of line through (1,2,3) with direction (2,1,−1):",
+    "options": [
+      "(x−1)/2=(y−2)/1=(z−3)/(−1)",
+      "x/2=y/1=z/(−1)",
+      "(x−2)/1=(y−1)/2=(z+1)/3",
+      "None"
+    ],
+    "correct_index": 0,
+    "explanation": "Symmetric form: (x−x₁)/l=(y−y₁)/m=(z−z₁)/n.",
+    "id": "jee_mathem_vector_12f19f"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Magnetism",
+    "difficulty": 1,
+    "question_text": "Force on charge q moving with velocity v in magnetic field B: F=",
+    "options": [
+      "qv×B",
+      "qB/v",
+      "qvB",
+      "q/vB"
+    ],
+    "correct_index": 0,
+    "explanation": "Lorentz magnetic force: F=q(v×B). Magnitude: F=qvBsinθ.",
+    "id": "jee_physic_magnet_e88aae"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": 2,
+    "question_text": "Work done by force F=5î+3ĵ N over displacement d=2î+4ĵ m:",
+    "options": [
+      "22 J",
+      "26 J",
+      "10 J",
+      "16 J"
+    ],
+    "correct_index": 0,
+    "explanation": "W=F·d=5×2+3×4=10+12=22 J.",
+    "id": "jee_physic_mechan_af3274"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "difficulty": 1,
+    "question_text": "First law of thermodynamics states:",
+    "options": [
+      "ΔU=Q−W",
+      "ΔU=Q+W",
+      "Q=W",
+      "ΔU=0"
+    ],
+    "correct_index": 0,
+    "explanation": "Energy conservation: internal energy change = heat added − work done by system.",
+    "id": "jee_physic_thermo_79dce0"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 3,
+    "question_text": "∫₀^1 x²eˣ dx (by parts twice)=",
+    "options": [
+      "e−2",
+      "2e−1",
+      "e+1",
+      "e−1"
+    ],
+    "correct_index": 0,
+    "explanation": "∫x²eˣdx=eˣ(x²−2x+2)+C. At x=1: e(1−2+2)=e. At x=0: 1(0−0+2)=2. Result=e−2.",
+    "id": "jee_mathem_calcul_1bb11b"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": 3,
+    "question_text": "A satellite in circular orbit at height R above Earth's surface (R=Earth's radius). Orbital speed vs escape speed ratio:",
+    "options": [
+      "1/√2",
+      "1/2",
+      "√2",
+      "2"
+    ],
+    "correct_index": 0,
+    "explanation": "At r=2R: v_orbital=√(GM/2R); v_escape=√(2GM/2R). Ratio=1/√2.",
+    "id": "jee_physic_mechan_e3e335"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Statistics & Probability",
+    "difficulty": 2,
+    "question_text": "If P(A)=0.6 and A, B are independent with P(B)=0.5, P(A∩B)=",
+    "options": [
+      "0.3",
+      "0.1",
+      "0.6",
+      "0.5"
+    ],
+    "correct_index": 0,
+    "explanation": "For independent events: P(A∩B)=P(A)×P(B)=0.6×0.5=0.3.",
+    "id": "jee_mathem_statis_77a51d"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 2,
+    "question_text": "The number of complex roots of x⁴−1=0 is:",
+    "options": [
+      "2",
+      "4",
+      "0",
+      "1"
+    ],
+    "correct_index": 0,
+    "explanation": "x⁴=1 has 4 roots: 1,−1,i,−i. Two are purely imaginary (complex).",
+    "id": "jee_mathem_algebr_e384b5"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Optics",
+    "difficulty": 2,
+    "question_text": "Power of a lens with focal length 25 cm:",
+    "options": [
+      "4 D",
+      "2.5 D",
+      "0.25 D",
+      "40 D"
+    ],
+    "correct_index": 0,
+    "explanation": "P=1/f(m)=1/0.25=4 diopters.",
+    "id": "jee_physic_optics_a75681"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Inorganic Chemistry",
+    "difficulty": 2,
+    "question_text": "Which period 3 element has the highest ionization energy?",
+    "options": [
+      "Argon",
+      "Sodium",
+      "Chlorine",
+      "Silicon"
+    ],
+    "correct_index": 0,
+    "explanation": "Noble gases have highest ionization energies due to complete shells. Ar has the highest in period 3.",
+    "id": "jee_chemis_inorga_b14309"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Coordinate Geometry",
+    "difficulty": 2,
+    "question_text": "Area of triangle with vertices (0,0),(4,0),(0,3):",
+    "options": [
+      "6",
+      "12",
+      "3",
+      "4"
+    ],
+    "correct_index": 0,
+    "explanation": "Area=½×base×height=½×4×3=6.",
+    "id": "jee_mathem_coordi_e98e95"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 2,
+    "question_text": "cos2A in terms of tanA:",
+    "options": [
+      "(1−tan²A)/(1+tan²A)",
+      "(1+tan²A)/(1−tan²A)",
+      "2tanA",
+      "1−tan²A"
+    ],
+    "correct_index": 0,
+    "explanation": "cos2A=(1−tan²A)/(1+tan²A).",
+    "id": "jee_mathem_trigon_f2692d"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 2,
+    "question_text": "∫(1/x)dx=",
+    "options": [
+      "ln|x|+C",
+      "x+C",
+      "−1/x²+C",
+      "log x+C"
+    ],
+    "correct_index": 0,
+    "explanation": "∫(1/x)dx=ln|x|+C.",
+    "id": "jee_mathem_calcul_3bd565"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Modern Physics",
+    "difficulty": 2,
+    "question_text": "Energy of a photon with frequency ν=6×10¹⁴ Hz (h=6.63×10⁻³⁴ J·s):",
+    "options": [
+      "3.98×10⁻¹⁹ J",
+      "6×10⁻¹⁹ J",
+      "1×10⁻¹⁹ J",
+      "6.63×10⁻³⁴ J"
+    ],
+    "correct_index": 0,
+    "explanation": "E=hν=6.63×10⁻³⁴×6×10¹⁴≈3.98×10⁻¹⁹ J.",
+    "id": "jee_physic_modern_982441"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Inorganic Chemistry",
+    "difficulty": 1,
+    "question_text": "Which family of elements is called halogens?",
+    "options": [
+      "Group 17",
+      "Group 18",
+      "Group 1",
+      "Group 16"
+    ],
+    "correct_index": 0,
+    "explanation": "Group 17 elements (F, Cl, Br, I, At) are halogens — reactive nonmetals.",
+    "id": "jee_chemis_inorga_44d21a"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Electrostatics",
+    "difficulty": 2,
+    "question_text": "Capacitance of parallel plate capacitor with area A, separation d, dielectric k:",
+    "options": [
+      "kε₀A/d",
+      "ε₀A/d",
+      "kε₀d/A",
+      "ε₀Ad"
+    ],
+    "correct_index": 0,
+    "explanation": "C=kε₀A/d where ε₀=8.85×10⁻¹² F/m.",
+    "id": "jee_physic_electr_7c04df"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "difficulty": 3,
+    "question_text": "In adiabatic process, Q=0. For ideal gas: PVᵞ=const. For diatomic gas, γ=",
+    "options": [
+      "7/5",
+      "5/3",
+      "4/3",
+      "1"
+    ],
+    "correct_index": 0,
+    "explanation": "γ=Cp/Cv; diatomic: Cv=5R/2, Cp=7R/2, γ=7/5=1.4.",
+    "id": "jee_physic_thermo_3e65f4"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Modern Physics",
+    "difficulty": 2,
+    "question_text": "In photoelectric effect, stopping potential depends on:",
+    "options": [
+      "Frequency of light",
+      "Intensity of light",
+      "Both",
+      "Neither"
+    ],
+    "correct_index": 0,
+    "explanation": "Stopping potential depends on frequency (not intensity). Higher frequency → higher KE_max → higher stopping potential.",
+    "id": "jee_physic_modern_3275f6"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Inorganic Chemistry",
+    "difficulty": 2,
+    "question_text": "Amphoteric oxides react with both acids and bases. An example is:",
+    "options": [
+      "Al₂O₃",
+      "Na₂O",
+      "CO₂",
+      "FeO"
+    ],
+    "correct_index": 0,
+    "explanation": "Aluminium oxide (Al₂O₃) reacts with both HCl and NaOH → amphoteric.",
+    "id": "jee_chemis_inorga_62a423"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Modern Physics",
+    "difficulty": 3,
+    "question_text": "de Broglie wavelength λ=h/mv. For electron at v=10⁶ m/s (m=9.1×10⁻³¹ kg):",
+    "options": [
+      "0.727 nm",
+      "0.073 nm",
+      "7.27 nm",
+      "72.7 pm"
+    ],
+    "correct_index": 0,
+    "explanation": "λ=6.63×10⁻³⁴/(9.1×10⁻³¹×10⁶)=7.27×10⁻¹⁰ m=0.727 nm.",
+    "id": "jee_physic_modern_52b4c0"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Physical Chemistry",
+    "difficulty": 2,
+    "question_text": "The colligative property that explains why salt lowers the freezing point of water is:",
+    "options": [
+      "Depression in freezing point",
+      "Elevation of boiling point",
+      "Osmotic pressure",
+      "Vapour pressure lowering"
+    ],
+    "correct_index": 0,
+    "explanation": "Adding solute lowers the freezing point: ΔTf=Kf×m. This is called cryoscopic depression.",
+    "id": "jee_chemis_physic_667453"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": 3,
+    "question_text": "Two balls of mass m and 2m collide elastically. Ball m is at rest; 2m moves at v. After collision, velocity of m=",
+    "options": [
+      "4v/3",
+      "2v/3",
+      "v",
+      "0"
+    ],
+    "correct_index": 0,
+    "explanation": "For elastic collision: v₁'=(m₁−m₂)v/(m₁+m₂). Here m moves, m₁=2m (moving), m₂=m (rest). v_m'=2×2m×v/(3m)=4v/3.",
+    "id": "jee_physic_mechan_26049e"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 2,
+    "question_text": "Sum of GP: 1+3+9+...+3⁷=",
+    "options": [
+      "3280",
+      "1093",
+      "9841",
+      "2187"
+    ],
+    "correct_index": 0,
+    "explanation": "S=a(rⁿ−1)/(r−1)=1×(3⁸−1)/2=(6561−1)/2=3280.",
+    "id": "jee_mathem_algebr_0ed08a"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 1,
+    "question_text": "Functional group in carboxylic acids is:",
+    "options": [
+      "−COOH",
+      "−OH",
+      "−CHO",
+      "−CO−"
+    ],
+    "correct_index": 0,
+    "explanation": "Carboxylic acids contain −COOH (carboxyl group).",
+    "id": "jee_chemis_organi_69bf38"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Optics",
+    "difficulty": 1,
+    "question_text": "Refractive index μ=c/v. If μ=1.5 for glass, speed of light in glass=",
+    "options": [
+      "2×10⁸ m/s",
+      "1.5×10⁸ m/s",
+      "3×10⁸ m/s",
+      "4.5×10⁸ m/s"
+    ],
+    "correct_index": 0,
+    "explanation": "v=c/μ=3×10⁸/1.5=2×10⁸ m/s.",
+    "id": "jee_physic_optics_9b993e"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Optics",
+    "difficulty": 1,
+    "question_text": "Total internal reflection occurs when light goes from:",
+    "options": [
+      "Denser to rarer medium beyond critical angle",
+      "Rarer to denser",
+      "At any angle",
+      "In vacuum"
+    ],
+    "correct_index": 0,
+    "explanation": "TIR occurs when light in denser medium hits rarer medium at angle ≥ critical angle.",
+    "id": "jee_physic_optics_47738b"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": 1,
+    "question_text": "An object in uniform circular motion has:",
+    "options": [
+      "Constant speed, changing direction",
+      "Constant velocity",
+      "No acceleration",
+      "Increasing speed"
+    ],
+    "correct_index": 0,
+    "explanation": "Speed is constant but direction changes, so velocity and acceleration change.",
+    "id": "jee_physic_mechan_3ec658"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": 1,
+    "question_text": "A ball is thrown vertically upward with u=20 m/s. Max height reached (g=10 m/s²):",
+    "options": [
+      "20 m",
+      "40 m",
+      "10 m",
+      "5 m"
+    ],
+    "correct_index": 0,
+    "explanation": "H=u²/2g=400/20=20 m.",
+    "id": "jee_physic_mechan_a4f377"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 2,
+    "question_text": "Which reaction converts alkene to alkane?",
+    "options": [
+      "Hydrogenation",
+      "Halogenation",
+      "Oxidation",
+      "Elimination"
+    ],
+    "correct_index": 0,
+    "explanation": "Hydrogenation adds H₂ across C=C double bond (Ni/Pt catalyst) to form alkane.",
+    "id": "jee_chemis_organi_1f7ef4"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Optics",
+    "difficulty": 2,
+    "question_text": "Lens formula: 1/v−1/u=1/f. Object at u=−30 cm, f=10 cm. Image position:",
+    "options": [
+      "15 cm",
+      "−15 cm",
+      "30 cm",
+      "10 cm"
+    ],
+    "correct_index": 0,
+    "explanation": "1/v=1/f+1/u=1/10+1/(−30)=3/30−1/30=2/30; v=15 cm.",
+    "id": "jee_physic_optics_b0f4d6"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Inorganic Chemistry",
+    "difficulty": 2,
+    "question_text": "The shape of NH₃ molecule is:",
+    "options": [
+      "Trigonal pyramidal",
+      "Tetrahedral",
+      "Trigonal planar",
+      "Linear"
+    ],
+    "correct_index": 0,
+    "explanation": "NH₃ has 3 bond pairs + 1 lone pair; VSEPR: trigonal pyramidal, bond angle ~107°.",
+    "id": "jee_chemis_inorga_780aa5"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": 2,
+    "question_text": "A 5 kg block on a frictionless surface is pushed by F=15 N. Acceleration=",
+    "options": [
+      "3 m/s²",
+      "5 m/s²",
+      "15 m/s²",
+      "1 m/s²"
+    ],
+    "correct_index": 0,
+    "explanation": "a=F/m=15/5=3 m/s².",
+    "id": "jee_physic_mechan_97be76"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 1,
+    "question_text": "Range of sin x is:",
+    "options": [
+      "[−1,1]",
+      "[0,1]",
+      "(−∞,∞)",
+      "[0,∞)"
+    ],
+    "correct_index": 0,
+    "explanation": "sin x oscillates between −1 and 1 inclusive.",
+    "id": "jee_mathem_trigon_cd12ae"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 2,
+    "question_text": "The IUPAC name of CH₃-CH₂-OH is:",
+    "options": [
+      "Ethanol",
+      "Methanol",
+      "Propanol",
+      "Ethanoic acid"
+    ],
+    "correct_index": 0,
+    "explanation": "Two carbon chain with -OH group: eth+anol=Ethanol.",
+    "id": "jee_chemis_organi_520cca"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 1,
+    "question_text": "If A is a 3×3 matrix, det(2A)=",
+    "options": [
+      "8 det(A)",
+      "2 det(A)",
+      "4 det(A)",
+      "det(A)"
+    ],
+    "correct_index": 0,
+    "explanation": "det(kA)=kⁿdet(A) for n×n matrix. det(2A)=2³det(A)=8det(A).",
+    "id": "jee_mathem_algebr_ff8af4"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "difficulty": 2,
+    "question_text": "An ideal gas expands isothermally. Work done by gas=",
+    "options": [
+      "nRT ln(V₂/V₁)",
+      "nRΔT",
+      "P(V₂−V₁)",
+      "0"
+    ],
+    "correct_index": 0,
+    "explanation": "For isothermal process of ideal gas: W=nRT ln(V₂/V₁).",
+    "id": "jee_physic_thermo_bb2a06"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Current Electricity",
+    "difficulty": 2,
+    "question_text": "Kirchhoff's Current Law states:",
+    "options": [
+      "Sum of currents at a node=0",
+      "Sum of voltages in loop=0",
+      "V=IR",
+      "P=IV"
+    ],
+    "correct_index": 0,
+    "explanation": "KCL: algebraic sum of currents entering/leaving a junction=0.",
+    "id": "jee_physic_curren_2b8c69"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Physical Chemistry",
+    "difficulty": 3,
+    "question_text": "Faraday's first law: mass deposited∝charge passed. 96500 C deposits how many grams of Ag (M=108)?",
+    "options": [
+      "108 g",
+      "54 g",
+      "216 g",
+      "1 g"
+    ],
+    "correct_index": 0,
+    "explanation": "1 Faraday (96500 C) deposits 1 mole of Ag⁺ → 108 g.",
+    "id": "jee_chemis_physic_b8288c"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Electrostatics",
+    "difficulty": 3,
+    "question_text": "Electric potential at distance r from charge q: V=kq/r. Work to bring charge q₀ from ∞ to r:",
+    "options": [
+      "kqq₀/r",
+      "kq/r",
+      "kqq₀/r²",
+      "0"
+    ],
+    "correct_index": 0,
+    "explanation": "W=q₀V=kqq₀/r.",
+    "id": "jee_physic_electr_a06bd7"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Physical Chemistry",
+    "difficulty": 1,
+    "question_text": "Raoult's Law relates to:",
+    "options": [
+      "Vapour pressure of solutions",
+      "Reaction rates",
+      "Electrode potentials",
+      "Gas laws"
+    ],
+    "correct_index": 0,
+    "explanation": "Raoult's Law: vapour pressure of solution = mole fraction × vapour pressure of pure solvent.",
+    "id": "jee_chemis_physic_dbf5ec"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Coordinate Geometry",
+    "difficulty": 1,
+    "question_text": "Equation of x-axis is:",
+    "options": [
+      "y=0",
+      "x=0",
+      "y=x",
+      "x+y=0"
+    ],
+    "correct_index": 0,
+    "explanation": "The x-axis is the line y=0.",
+    "id": "jee_mathem_coordi_f0c880"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Modern Physics",
+    "difficulty": 1,
+    "question_text": "Nucleus of an atom contains:",
+    "options": [
+      "Protons and neutrons",
+      "Protons and electrons",
+      "Neutrons only",
+      "Electrons"
+    ],
+    "correct_index": 0,
+    "explanation": "The nucleus contains protons (positive) and neutrons (neutral). Electrons orbit outside.",
+    "id": "jee_physic_modern_d5c14c"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": 2,
+    "question_text": "Momentum of 4 kg object moving at 6 m/s:",
+    "options": [
+      "24 kg·m/s",
+      "10 kg·m/s",
+      "2.4 kg·m/s",
+      "12 kg·m/s"
+    ],
+    "correct_index": 0,
+    "explanation": "p=mv=4×6=24 kg·m/s.",
+    "id": "jee_physic_mechan_a1c386"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Vectors & 3D",
+    "difficulty": 2,
+    "question_text": "The angle between vectors a⃗=î+ĵ and b⃗=ĵ+k̂:",
+    "options": [
+      "60°",
+      "90°",
+      "45°",
+      "30°"
+    ],
+    "correct_index": 0,
+    "explanation": "cosθ=a·b/(|a||b|)=1/(√2×√2)=1/2; θ=60°.",
+    "id": "jee_mathem_vector_52dbb7"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Current Electricity",
+    "difficulty": 1,
+    "question_text": "Resistivity of a material depends on:",
+    "options": [
+      "Material and temperature",
+      "Length only",
+      "Area only",
+      "Current"
+    ],
+    "correct_index": 0,
+    "explanation": "Resistivity ρ is an intrinsic property depending on material and temperature.",
+    "id": "jee_physic_curren_d5cd2d"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 2,
+    "question_text": "d/dx[tan x]=",
+    "options": [
+      "sec²x",
+      "cot²x",
+      "cosec²x",
+      "−sec²x"
+    ],
+    "correct_index": 0,
+    "explanation": "d/dx[tanx]=sec²x.",
+    "id": "jee_mathem_calcul_2d0387"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 2,
+    "question_text": "The hybridization of carbon in ethyne (C₂H₂) is:",
+    "options": [
+      "sp",
+      "sp²",
+      "sp³",
+      "sp³d"
+    ],
+    "correct_index": 0,
+    "explanation": "Ethyne has a triple bond; each carbon is sp hybridized (linear geometry, 180°).",
+    "id": "jee_chemis_organi_6179e6"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Magnetism",
+    "difficulty": 2,
+    "question_text": "A current-carrying conductor in a magnetic field experiences a force called:",
+    "options": [
+      "Ampere force",
+      "Lorentz force",
+      "Coulomb force",
+      "Gravitational force"
+    ],
+    "correct_index": 0,
+    "explanation": "The force on a current-carrying conductor in a magnetic field is called the Ampere force (F=IL×B).",
+    "id": "jee_physic_magnet_92a054"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 2,
+    "question_text": "The roots of x²−3x+2=0 are:",
+    "options": [
+      "1 and 2",
+      "−1 and −2",
+      "3 and 1",
+      "1 and 3"
+    ],
+    "correct_index": 0,
+    "explanation": "(x−1)(x−2)=0; roots: 1 and 2.",
+    "id": "jee_mathem_algebr_b2a305"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": 2,
+    "question_text": "A spring of k=200 N/m is compressed by 0.1 m. Potential energy stored=",
+    "options": [
+      "1 J",
+      "2 J",
+      "0.5 J",
+      "20 J"
+    ],
+    "correct_index": 0,
+    "explanation": "PE=½kx²=½×200×0.01=1 J.",
+    "id": "jee_physic_mechan_14563e"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": 1,
+    "question_text": "Centripetal acceleration for circular motion of radius r and speed v is:",
+    "options": [
+      "v²/r",
+      "v/r",
+      "vr",
+      "v²r"
+    ],
+    "correct_index": 0,
+    "explanation": "a_c=v²/r directed toward center.",
+    "id": "jee_physic_mechan_9ee682"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Coordinate Geometry",
+    "difficulty": 2,
+    "question_text": "The foci of ellipse x²/25+y²/16=1 are at:",
+    "options": [
+      "(±3,0)",
+      "(±5,0)",
+      "(±4,0)",
+      "(0,±3)"
+    ],
+    "correct_index": 0,
+    "explanation": "a²=25, b²=16; c=√(25−16)=3. Foci at (±3,0).",
+    "id": "jee_mathem_coordi_8474c2"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 3,
+    "question_text": "In Lucas test, 2° alcohols react with anhydrous ZnCl₂/HCl at room temperature:",
+    "options": [
+      "Slowly (turbidity in 5 min)",
+      "Immediately",
+      "No reaction",
+      "Only on heating"
+    ],
+    "correct_index": 0,
+    "explanation": "Lucas test: 3° alcohols react immediately; 2° slowly (~5 min); 1° alcohols require heating.",
+    "id": "jee_chemis_organi_5e94c8"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Physical Chemistry",
+    "difficulty": 2,
+    "question_text": "Rate constant of 1st order reaction has units:",
+    "options": [
+      "s⁻¹",
+      "mol·L⁻¹·s⁻¹",
+      "L·mol⁻¹·s⁻¹",
+      "s"
+    ],
+    "correct_index": 0,
+    "explanation": "For 1st order: rate=k[A]; k=rate/[A]=(mol·L⁻¹·s⁻¹)/(mol·L⁻¹)=s⁻¹.",
+    "id": "jee_chemis_physic_bed5df"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Electrostatics",
+    "difficulty": 1,
+    "question_text": "Coulomb's law: F=kq₁q₂/r². If r doubles, F becomes:",
+    "options": [
+      "F/4",
+      "F/2",
+      "2F",
+      "4F"
+    ],
+    "correct_index": 0,
+    "explanation": "F∝1/r²; doubling r → F becomes F/4.",
+    "id": "jee_physic_electr_9a0793"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Magnetism",
+    "difficulty": 2,
+    "question_text": "The SI unit of magnetic field strength (B) is:",
+    "options": [
+      "Tesla",
+      "Gauss",
+      "Ampere/m",
+      "Weber"
+    ],
+    "correct_index": 0,
+    "explanation": "SI unit of magnetic flux density B is Tesla (T). 1 T=10,000 Gauss.",
+    "id": "jee_physic_magnet_eca203"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Inorganic Chemistry",
+    "difficulty": 2,
+    "question_text": "Electronic configuration of Fe (Z=26) is:",
+    "options": [
+      "[Ar]3d⁶4s²",
+      "[Ar]4s²3d⁶",
+      "[Kr]3d⁶4s²",
+      "[Ar]3d⁸"
+    ],
+    "correct_index": 0,
+    "explanation": "Fe: 1s²2s²2p⁶3s²3p⁶3d⁶4s²=[Ar]3d⁶4s².",
+    "id": "jee_chemis_inorga_8ade10"
+  }
+]

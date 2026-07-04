@@ -1,0 +1,626 @@
+[
+  {
+    "subject": "Electrical",
+    "topic": "DC Circuits",
+    "stream": "electrical",
+    "difficulty": 1,
+    "question_text": "A 12 V battery is connected across a 4 Ω resistor. The current through the circuit is:",
+    "options": [
+      "3 A",
+      "4 A",
+      "2 A",
+      "48 A"
+    ],
+    "correct_index": 0,
+    "explanation": "I=V/R=12/4=3 A (Ohm's Law).",
+    "id": "alp_cbt2_elec_dc_cir_395df4"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "DC Circuits",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "Three resistors of 6 Ω, 3 Ω and 2 Ω are connected in parallel. The equivalent resistance is:",
+    "options": [
+      "1 Ω",
+      "11 Ω",
+      "0.5 Ω",
+      "3.67 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "1/R=1/6+1/3+1/2=1/6+2/6+3/6=1. R=1 Ω.",
+    "id": "alp_cbt2_elec_dc_cir_153dbe"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "DC Circuits",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "Power dissipated in a 10 Ω resistor carrying 2 A current is:",
+    "options": [
+      "40 W",
+      "20 W",
+      "10 W",
+      "4 W"
+    ],
+    "correct_index": 0,
+    "explanation": "P=I²R=4×10=40 W.",
+    "id": "alp_cbt2_elec_dc_cir_0ecd24"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "DC Circuits",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "Kirchhoff's Voltage Law states that the algebraic sum of all voltages in a closed loop is:",
+    "options": [
+      "Zero",
+      "Equal to EMF",
+      "Equal to total resistance",
+      "Equal to current"
+    ],
+    "correct_index": 0,
+    "explanation": "KVL: ΣV=0 around any closed loop (energy conservation).",
+    "id": "alp_cbt2_elec_dc_cir_3d2802"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "DC Circuits",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "A 100 W, 250 V bulb and a 60 W, 250 V bulb are connected in series across 250 V. Which bulb glows brighter?",
+    "options": [
+      "60 W bulb",
+      "100 W bulb",
+      "Both equally",
+      "Neither glows"
+    ],
+    "correct_index": 0,
+    "explanation": "In series, same current flows. R(60W)=250²/60≈1042Ω > R(100W)=250²/100=625Ω. Higher resistance → more voltage → more power → 60W bulb glows brighter.",
+    "id": "alp_cbt2_elec_dc_cir_129440"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "DC Circuits",
+    "stream": "electrical",
+    "difficulty": 1,
+    "question_text": "The unit of electrical resistance is:",
+    "options": [
+      "Ohm",
+      "Ampere",
+      "Volt",
+      "Watt"
+    ],
+    "correct_index": 0,
+    "explanation": "Resistance is measured in Ohms (Ω). Named after Georg Simon Ohm.",
+    "id": "alp_cbt2_elec_dc_cir_b771cd"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "DC Circuits",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "In a series circuit of R₁=5Ω and R₂=10Ω connected to 30V, voltage across R₂ is:",
+    "options": [
+      "20 V",
+      "10 V",
+      "15 V",
+      "30 V"
+    ],
+    "correct_index": 0,
+    "explanation": "I=V/(R₁+R₂)=30/15=2A. V₂=I×R₂=2×10=20V.",
+    "id": "alp_cbt2_elec_dc_cir_580142"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "AC Circuits",
+    "stream": "electrical",
+    "difficulty": 1,
+    "question_text": "The frequency of AC supply in India is:",
+    "options": [
+      "50 Hz",
+      "60 Hz",
+      "40 Hz",
+      "100 Hz"
+    ],
+    "correct_index": 0,
+    "explanation": "India uses 50 Hz AC supply. USA/Canada use 60 Hz.",
+    "id": "alp_cbt2_elec_ac_cir_8fdddd"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "AC Circuits",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "RMS value of a sinusoidal AC voltage with peak value Vm is:",
+    "options": [
+      "Vm/√2",
+      "Vm/2",
+      "√2·Vm",
+      "2Vm"
+    ],
+    "correct_index": 0,
+    "explanation": "VRMS=Vm/√2≈0.707Vm for pure sinusoidal waveform.",
+    "id": "alp_cbt2_elec_ac_cir_6c4f17"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "AC Circuits",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "In a purely inductive AC circuit, current lags voltage by:",
+    "options": [
+      "90°",
+      "0°",
+      "45°",
+      "180°"
+    ],
+    "correct_index": 0,
+    "explanation": "In a pure inductor, current lags voltage by 90° (π/2 radians).",
+    "id": "alp_cbt2_elec_ac_cir_3bb0c1"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "AC Circuits",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "Power factor of a purely resistive circuit is:",
+    "options": [
+      "1",
+      "0",
+      "0.5",
+      "0.866"
+    ],
+    "correct_index": 0,
+    "explanation": "PF=cosφ. For purely resistive load, φ=0°, PF=cos0°=1.",
+    "id": "alp_cbt2_elec_ac_cir_059d39"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "AC Circuits",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "A series RLC circuit has R=10Ω, XL=20Ω, XC=10Ω. The impedance Z is:",
+    "options": [
+      "√200 Ω ≈14.14Ω",
+      "30Ω",
+      "10Ω",
+      "20Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "Z=√(R²+(XL-XC)²)=√(100+100)=√200≈14.14Ω.",
+    "id": "alp_cbt2_elec_ac_cir_179397"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "AC Circuits",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "The standard domestic single-phase voltage in India is:",
+    "options": [
+      "230 V",
+      "110 V",
+      "415 V",
+      "440 V"
+    ],
+    "correct_index": 0,
+    "explanation": "Single-phase domestic supply in India: 230V (±6%), 50Hz.",
+    "id": "alp_cbt2_elec_ac_cir_467e5d"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Transformers",
+    "stream": "electrical",
+    "difficulty": 1,
+    "question_text": "A transformer with primary turns 200 and secondary turns 400, primary voltage 230V. Secondary voltage is:",
+    "options": [
+      "460 V",
+      "115 V",
+      "920 V",
+      "230 V"
+    ],
+    "correct_index": 0,
+    "explanation": "V₂/V₁=N₂/N₁ → V₂=230×400/200=460V.",
+    "id": "alp_cbt2_elec_transf_d5dc40"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Transformers",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "Transformer cores are made of laminated silicon steel to reduce:",
+    "options": [
+      "Eddy current losses",
+      "Copper losses",
+      "Hysteresis losses",
+      "Iron losses only"
+    ],
+    "correct_index": 0,
+    "explanation": "Lamination increases resistance to eddy currents, reducing eddy current losses (P∝t², where t=lamination thickness).",
+    "id": "alp_cbt2_elec_transf_a799ad"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Transformers",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "A step-up transformer increases:",
+    "options": [
+      "Voltage",
+      "Current",
+      "Power",
+      "Both voltage and current"
+    ],
+    "correct_index": 0,
+    "explanation": "Step-up transformer increases voltage while decreasing current (power stays constant, ignoring losses).",
+    "id": "alp_cbt2_elec_transf_c764c1"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Transformers",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "A transformer has 100% efficiency with input 1000W. If primary current is 5A at 200V, secondary voltage is 400V. Secondary current is:",
+    "options": [
+      "2.5 A",
+      "5 A",
+      "10 A",
+      "1 A"
+    ],
+    "correct_index": 0,
+    "explanation": "Power out=Power in=1000W. I₂=P/V₂=1000/400=2.5A.",
+    "id": "alp_cbt2_elec_transf_94ce3d"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Transformers",
+    "stream": "electrical",
+    "difficulty": 1,
+    "question_text": "Transformer oil is used for:",
+    "options": [
+      "Insulation and cooling",
+      "Conduction",
+      "Reducing noise",
+      "Increasing efficiency"
+    ],
+    "correct_index": 0,
+    "explanation": "Transformer oil (mineral oil) provides insulation and carries away heat from windings and core.",
+    "id": "alp_cbt2_elec_transf_a45302"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Machines",
+    "stream": "electrical",
+    "difficulty": 1,
+    "question_text": "The speed of a 4-pole induction motor on 50 Hz supply (synchronous speed) is:",
+    "options": [
+      "1500 rpm",
+      "3000 rpm",
+      "750 rpm",
+      "1000 rpm"
+    ],
+    "correct_index": 0,
+    "explanation": "Ns=120f/P=120×50/4=1500 rpm.",
+    "id": "alp_cbt2_elec_electr_b44367"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Machines",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "The slip of a 3-phase induction motor running at 1440 rpm with synchronous speed 1500 rpm is:",
+    "options": [
+      "4%",
+      "2%",
+      "6%",
+      "10%"
+    ],
+    "correct_index": 0,
+    "explanation": "Slip s=(Ns-N)/Ns=(1500-1440)/1500=60/1500=0.04=4%.",
+    "id": "alp_cbt2_elec_electr_e4a80f"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Machines",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "A DC motor has back EMF because:",
+    "options": [
+      "Armature rotates in magnetic field generating EMF opposing supply",
+      "Commutator reverses current",
+      "Field winding creates opposing flux",
+      "Load resistance"
+    ],
+    "correct_index": 0,
+    "explanation": "When armature rotates, it cuts magnetic flux and generates a back EMF (Eb) opposing the applied voltage (V). Eb=V−IaRa.",
+    "id": "alp_cbt2_elec_electr_06c977"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Machines",
+    "stream": "electrical",
+    "difficulty": 1,
+    "question_text": "The rotor of a squirrel cage induction motor is made of:",
+    "options": [
+      "Copper/aluminium bars short-circuited at ends",
+      "Wound coils with slip rings",
+      "Permanent magnets",
+      "DC windings"
+    ],
+    "correct_index": 0,
+    "explanation": "Squirrel cage rotor: conducting bars (Al or Cu) embedded in slots, short-circuited by end rings — no external connections.",
+    "id": "alp_cbt2_elec_electr_d2b358"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Machines",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "Which starting method for a 3-phase induction motor gives the lowest starting current?",
+    "options": [
+      "Star-Delta starter",
+      "Direct On-Line (DOL) starter",
+      "Auto-transformer starter",
+      "Soft starter"
+    ],
+    "correct_index": 0,
+    "explanation": "Star-Delta reduces starting voltage by 1/√3, current by 1/3 of DOL current — lowest among mechanical starters.",
+    "id": "alp_cbt2_elec_electr_185f13"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Measuring Instruments",
+    "stream": "electrical",
+    "difficulty": 1,
+    "question_text": "A voltmeter is always connected:",
+    "options": [
+      "In parallel with the component",
+      "In series with the component",
+      "Between earth and neutral",
+      "Across the source only"
+    ],
+    "correct_index": 0,
+    "explanation": "Voltmeter measures potential difference — must be in parallel to avoid disturbing circuit.",
+    "id": "alp_cbt2_elec_measur_064185"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Measuring Instruments",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "Megger is used to measure:",
+    "options": [
+      "Insulation resistance",
+      "Continuity",
+      "Voltage",
+      "Earth resistance"
+    ],
+    "correct_index": 0,
+    "explanation": "Megger (Megohmmeter) measures insulation resistance in MΩ — used to test winding insulation of motors/cables.",
+    "id": "alp_cbt2_elec_measur_48f19d"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Measuring Instruments",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "A wattmeter measures:",
+    "options": [
+      "Real (active) power in watts",
+      "Reactive power",
+      "Apparent power",
+      "Power factor"
+    ],
+    "correct_index": 0,
+    "explanation": "Wattmeter has current coil (series) and pressure coil (parallel) — deflection∝V×I×cosφ = real power (W).",
+    "id": "alp_cbt2_elec_measur_4cc4c6"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Measuring Instruments",
+    "stream": "electrical",
+    "difficulty": 1,
+    "question_text": "The instrument used to measure insulation resistance between two conductors is:",
+    "options": [
+      "Megger",
+      "Multimeter",
+      "Tong tester",
+      "Ammeter"
+    ],
+    "correct_index": 0,
+    "explanation": "Megger applies high DC voltage (500V/1000V) to measure insulation resistance in MΩ.",
+    "id": "alp_cbt2_elec_measur_0e9286"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Wiring & Safety",
+    "stream": "electrical",
+    "difficulty": 1,
+    "question_text": "The colour code of the earth wire in Indian standard wiring is:",
+    "options": [
+      "Green/Yellow",
+      "Red",
+      "Black",
+      "Blue"
+    ],
+    "correct_index": 0,
+    "explanation": "IS 694: Earth=Green/Yellow, Phase=Red/Yellow/Blue (3-ph), Neutral=Black.",
+    "id": "alp_cbt2_elec_wiring_fe98a1"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Wiring & Safety",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "An ELCB (Earth Leakage Circuit Breaker) trips when leakage current exceeds:",
+    "options": [
+      "30 mA",
+      "5 A",
+      "1 A",
+      "100 mA"
+    ],
+    "correct_index": 0,
+    "explanation": "Standard ELCB/RCCB trips at 30 mA leakage current — this level can cause ventricular fibrillation.",
+    "id": "alp_cbt2_elec_wiring_ab346e"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Wiring & Safety",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "The purpose of earthing in electrical installations is to:",
+    "options": [
+      "Provide low resistance path for fault current",
+      "Improve power factor",
+      "Reduce energy consumption",
+      "Increase current capacity"
+    ],
+    "correct_index": 0,
+    "explanation": "Earthing channels fault current safely to ground, operating the protective device and preventing electric shock.",
+    "id": "alp_cbt2_elec_wiring_75c9c6"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Wiring & Safety",
+    "stream": "electrical",
+    "difficulty": 1,
+    "question_text": "MCB stands for:",
+    "options": [
+      "Miniature Circuit Breaker",
+      "Main Current Breaker",
+      "Motor Control Box",
+      "Magnetic Core Breaker"
+    ],
+    "correct_index": 0,
+    "explanation": "MCB (Miniature Circuit Breaker) automatically breaks the circuit on overload or short circuit.",
+    "id": "alp_cbt2_elec_wiring_60605d"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Storage Batteries",
+    "stream": "electrical",
+    "difficulty": 1,
+    "question_text": "EMF of a fully charged lead-acid cell is approximately:",
+    "options": [
+      "2.1 V",
+      "1.5 V",
+      "3.7 V",
+      "6 V"
+    ],
+    "correct_index": 0,
+    "explanation": "Fully charged lead-acid cell: 2.1V. A 12V battery has 6 cells (6×2.1=12.6V).",
+    "id": "alp_cbt2_elec_storag_ee40ca"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Storage Batteries",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "During discharge of a lead-acid battery, the specific gravity of electrolyte:",
+    "options": [
+      "Decreases",
+      "Increases",
+      "Remains constant",
+      "First increases then decreases"
+    ],
+    "correct_index": 0,
+    "explanation": "H₂SO₄ is consumed during discharge → specific gravity decreases (from ~1.28 charged to ~1.15 discharged).",
+    "id": "alp_cbt2_elec_storag_9fb245"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Storage Batteries",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "The electrolyte used in a lead-acid battery is:",
+    "options": [
+      "Dilute sulphuric acid",
+      "Dilute hydrochloric acid",
+      "Potassium hydroxide",
+      "Distilled water"
+    ],
+    "correct_index": 0,
+    "explanation": "Lead-acid battery uses dilute H₂SO₄ (sulphuric acid) as electrolyte.",
+    "id": "alp_cbt2_elec_storag_4128df"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Basic Electronics",
+    "stream": "electrical",
+    "difficulty": 1,
+    "question_text": "A diode allows current flow:",
+    "options": [
+      "In only one direction (forward biased)",
+      "In both directions",
+      "When reverse biased",
+      "Only in AC circuits"
+    ],
+    "correct_index": 0,
+    "explanation": "A PN junction diode conducts in forward bias (P+, N−) and blocks in reverse bias.",
+    "id": "alp_cbt2_elec_basic__89e1e2"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Basic Electronics",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "A full-wave bridge rectifier converts AC to DC using:",
+    "options": [
+      "4 diodes",
+      "2 diodes",
+      "1 diode",
+      "6 diodes"
+    ],
+    "correct_index": 0,
+    "explanation": "Bridge rectifier uses 4 diodes in a bridge arrangement to use both half-cycles of AC.",
+    "id": "alp_cbt2_elec_basic__24f791"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Basic Electronics",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "The device used to regulate output voltage in a power supply is:",
+    "options": [
+      "Zener diode",
+      "Rectifier diode",
+      "LED",
+      "Transistor"
+    ],
+    "correct_index": 0,
+    "explanation": "Zener diode maintains constant voltage in reverse breakdown region — used as voltage regulator.",
+    "id": "alp_cbt2_elec_basic__884dd4"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Basic Electronics",
+    "stream": "electrical",
+    "difficulty": 1,
+    "question_text": "NPN transistor operates when base is:",
+    "options": [
+      "Forward biased w.r.t. emitter",
+      "Reverse biased",
+      "At same potential as collector",
+      "At ground potential"
+    ],
+    "correct_index": 0,
+    "explanation": "NPN transistor: B-E junction forward biased, B-C junction reverse biased for active operation.",
+    "id": "alp_cbt2_elec_basic__5dcea0"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Basic Electronics",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "The ripple frequency of a full-wave rectifier on 50 Hz supply is:",
+    "options": [
+      "100 Hz",
+      "50 Hz",
+      "25 Hz",
+      "200 Hz"
+    ],
+    "correct_index": 0,
+    "explanation": "Full-wave rectifier rectifies both half-cycles → ripple frequency = 2×supply frequency = 2×50=100 Hz.",
+    "id": "alp_cbt2_elec_basic__3958fe"
+  }
+]
