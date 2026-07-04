@@ -36,6 +36,9 @@ class StudentProfile {
   final List<WeaknessMap> weaknessMap;
   final int studyStreakDays;
   final int totalQuestionsAttempted;
+  final String? name;
+  final String? username;
+  final String? email;
 
   const StudentProfile({
     required this.studentId,
@@ -45,11 +48,16 @@ class StudentProfile {
     required this.weaknessMap,
     required this.studyStreakDays,
     required this.totalQuestionsAttempted,
+    this.name,
+    this.username,
+    this.email,
   });
 
   factory StudentProfile.fromJson(Map<String, dynamic> json) {
+    // API may return user_id (auth login) or student_id (demo/session)
+    final id = (json['student_id'] ?? json['user_id'] ?? '') as String;
     return StudentProfile(
-      studentId: json['student_id'] as String,
+      studentId: id,
       examTarget: json['exam_target'] as String,
       preferredLanguage: json['preferred_language'] as String,
       diagnosticDone: json['diagnostic_done'] as bool? ?? false,
@@ -58,6 +66,9 @@ class StudentProfile {
           .toList(),
       studyStreakDays: (json['study_streak_days'] as num?)?.toInt() ?? 0,
       totalQuestionsAttempted: (json['total_questions_attempted'] as num?)?.toInt() ?? 0,
+      name: (json['full_name'] ?? json['name']) as String?,
+      username: json['username'] as String?,
+      email: json['email'] as String?,
     );
   }
 
@@ -69,6 +80,9 @@ class StudentProfile {
     'weakness_map': weaknessMap.map((w) => w.toJson()).toList(),
     'study_streak_days': studyStreakDays,
     'total_questions_attempted': totalQuestionsAttempted,
+    if (name != null) 'full_name': name,
+    if (username != null) 'username': username,
+    if (email != null) 'email': email,
   };
 
   StudentProfile copyWith({
@@ -77,6 +91,9 @@ class StudentProfile {
     String? preferredLanguage,
     int? studyStreakDays,
     int? totalQuestionsAttempted,
+    String? name,
+    String? username,
+    String? email,
   }) {
     return StudentProfile(
       studentId: studentId,
@@ -86,6 +103,11 @@ class StudentProfile {
       weaknessMap: weaknessMap ?? this.weaknessMap,
       studyStreakDays: studyStreakDays ?? this.studyStreakDays,
       totalQuestionsAttempted: totalQuestionsAttempted ?? this.totalQuestionsAttempted,
+      name: name ?? this.name,
+      username: username ?? this.username,
+      email: email ?? this.email,
     );
   }
+
+  String get displayName => name ?? username ?? 'Student';
 }

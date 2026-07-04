@@ -17,8 +17,66 @@ class AuthProvider extends ChangeNotifier {
   Future<void> loadSavedSession() async {
     final prefs = await SharedPreferences.getInstance();
     final studentJson = prefs.getString('student_profile');
+    final token = prefs.getString('auth_token');
+    if (token != null) ApiService().setToken(token);
     if (studentJson != null) {
       _student = StudentProfile.fromJson(jsonDecode(studentJson) as Map<String, dynamic>);
+      notifyListeners();
+    }
+  }
+
+  Future<void> login(String username, String password) async {
+    _isLoading = true;
+    _error = null;
+    notifyListeners();
+    try {
+      final data = await ApiService().login(username, password);
+      final token = data['access_token'] as String?;
+      if (token != null) ApiService().setToken(token);
+      _student = StudentProfile.fromJson(data);
+      await _saveSession(token: token);
+    } catch (e) {
+      _error = e.toString().replaceFirst('ApiException(401): ', '').replaceFirst('ApiException(400): ', '');
+    } finally {
+      _isLoading = false;
+      notifyListeners();
+    }
+  }
+
+  Future<void> register({
+    required String username,
+    required String email,
+    required String password,
+    required String confirmPassword,
+    required String fullName,
+    required String examTarget,
+    String language = 'en',
+    String trade = '',
+    String engineeringDiscipline = '',
+  }) async {
+    _isLoading = true;
+    _error = null;
+    notifyListeners();
+    try {
+      final data = await ApiService().register(
+        username: username,
+        email: email,
+        password: password,
+        confirmPassword: confirmPassword,
+        fullName: fullName,
+        examTarget: examTarget,
+        language: language,
+        trade: trade,
+        engineeringDiscipline: engineeringDiscipline,
+      );
+      final token = data['access_token'] as String?;
+      if (token != null) ApiService().setToken(token);
+      _student = StudentProfile.fromJson(data);
+      await _saveSession(token: token);
+    } catch (e) {
+      _error = e.toString().replaceFirst('ApiException(409): ', '').replaceFirst('ApiException(400): ', '');
+    } finally {
+      _isLoading = false;
       notifyListeners();
     }
   }
@@ -29,8 +87,10 @@ class AuthProvider extends ChangeNotifier {
     notifyListeners();
     try {
       final data = await ApiService().demoLogin(exam, language, name: name);
+      final token = data['access_token'] as String?;
+      if (token != null) ApiService().setToken(token);
       _student = StudentProfile.fromJson(data);
-      await _saveSession();
+      await _saveSession(token: token);
     } catch (e) {
       _error = e.toString();
     } finally {
@@ -58,14 +118,17 @@ class AuthProvider extends ChangeNotifier {
   Future<void> logout() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove('student_profile');
+    await prefs.remove('auth_token');
+    ApiService().clearToken();
     _student = null;
     _error = null;
     notifyListeners();
   }
 
-  Future<void> _saveSession() async {
+  Future<void> _saveSession({String? token}) async {
     if (_student == null) return;
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('student_profile', jsonEncode(_student!.toJson()));
+    if (token != null) await prefs.setString('auth_token', token);
   }
 }

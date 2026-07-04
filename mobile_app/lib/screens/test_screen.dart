@@ -240,7 +240,7 @@ class _OptionTile extends StatelessWidget {
 
 class _TopicSelector extends StatefulWidget {
   final String lang;
-  final Function(String?) onStart;
+  final Future<void> Function({String? topic}) onStart;
   const _TopicSelector({required this.lang, required this.onStart});
 
   @override
@@ -289,7 +289,7 @@ class _TopicSelectorState extends State<_TopicSelector> {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () => widget.onStart(_topic),
+              onPressed: () => widget.onStart(topic: _topic),
               child: Text(widget.lang == 'hi' ? '🚀 परीक्षा शुरू करें' : '🚀 Start Test'),
             ),
           ),

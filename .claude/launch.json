@@ -7,6 +7,13 @@
       "runtimeArgs": ["run", "dev", "--", "--port", "3004"],
       "cwd": "/Users/aruna/vidyabot/web",
       "port": 3004
+    },
+    {
+      "name": "gurukul-ai-flutter",
+      "runtimeExecutable": "flutter",
+      "runtimeArgs": ["run", "-d", "web-server", "--web-port", "9090"],
+      "cwd": "/Users/aruna/vidyabot/mobile_app",
+      "port": 9090
     }
   ]
 }

@@ -9,9 +9,14 @@ class ApiService {
 
   String get baseUrl => dotenv.env['API_BASE_URL'] ?? 'http://localhost:8000';
 
+  String? _token;
+  void setToken(String token) => _token = token;
+  void clearToken() => _token = null;
+
   Map<String, String> get _headers => {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
+    if (_token != null) 'Authorization': 'Bearer $_token',
   };
 
   Future<Map<String, dynamic>> get(String endpoint) async {
@@ -56,6 +61,34 @@ class ApiService {
     });
   }
 
+  Future<Map<String, dynamic>> login(String username, String password) {
+    return post('/api/auth/login', {'username': username, 'password': password});
+  }
+
+  Future<Map<String, dynamic>> register({
+    required String username,
+    required String email,
+    required String password,
+    required String confirmPassword,
+    required String fullName,
+    required String examTarget,
+    String language = 'en',
+    String trade = '',
+    String engineeringDiscipline = '',
+  }) {
+    return post('/api/auth/register', {
+      'username': username,
+      'email': email,
+      'password': password,
+      'confirm_password': confirmPassword,
+      'full_name': fullName,
+      'exam_target': examTarget,
+      'preferred_language': language,
+      'trade': trade,
+      'engineering_discipline': engineeringDiscipline,
+    });
+  }
+
   // Student
   Future<Map<String, dynamic>> getStudent(String studentId) => get('/api/student/$studentId');
 
@@ -68,7 +101,7 @@ class ApiService {
 
   // Diagnostic
   Future<Map<String, dynamic>> startDiagnostic(String studentId) {
-    return get('/api/session/diagnostic/start?student_id=$studentId');
+    return post('/api/session/diagnostic/start', {'student_id': studentId, 'paper_id': 'p1'});
   }
 
   Future<Map<String, dynamic>> submitDiagnostic(
@@ -134,6 +167,91 @@ class ApiService {
   // Pending actions list
   Future<Map<String, dynamic>> getPendingActions(String studentId) =>
     get('/api/session/pending-actions/$studentId');
+
+  // ── Mock Test ─────────────────────────────────────────────────────────────
+
+  Future<Map<String, dynamic>> getMockStatus(String examKey) =>
+      get('/api/mock/status/$examKey');
+
+  Future<Map<String, dynamic>> getMockPaper(String examKey) =>
+      get('/api/mock/paper/$examKey');
+
+  Future<Map<String, dynamic>> startMockSession(String examKey) =>
+      post('/api/mock/session/start', {'exam_key': examKey});
+
+  Future<Map<String, dynamic>> autosaveMock(
+      String sessionId, List<int> answers, List<int> flagged) =>
+      _put('/api/mock/session/$sessionId', {'answers': answers, 'flagged': flagged});
+
+  Future<Map<String, dynamic>> submitMock(
+      String sessionId, List<int> answers, List<int> flagged) =>
+      post('/api/mock/session/$sessionId/submit', {'answers': answers, 'flagged': flagged});
+
+  Future<Map<String, dynamic>> getMockSession(String sessionId) =>
+      get('/api/mock/session/$sessionId');
+
+  Future<Map<String, dynamic>> getMockHistory() => get('/api/mock/history');
+
+  // ── NAGA / Mentor ─────────────────────────────────────────────────────────
+
+  Future<Map<String, dynamic>> postQuestionToNaga({
+    required String studentId,
+    required String question,
+    required String subject,
+    String? topic,
+  }) =>
+      post('/api/mentor/questions', {
+        'student_id': studentId,
+        'question': question,
+        'subject': subject,
+        if (topic != null) 'topic': topic,
+      });
+
+  Future<Map<String, dynamic>> getNagaQuestions({String? studentId}) =>
+      get('/api/mentor/questions${studentId != null ? '?student_id=$studentId' : ''}');
+
+  Future<Map<String, dynamic>> getNagaNotifications() =>
+      get('/api/mentor/notifications');
+
+  Future<Map<String, dynamic>> markNotificationRead(String notificationId) =>
+      post('/api/mentor/notifications/$notificationId/read', {});
+
+  Future<Map<String, dynamic>> requestMeeting(
+      String studentId, String topic, String message) =>
+      post('/api/mentor/meeting-requests', {
+        'student_id': studentId,
+        'topic': topic,
+        'message': message,
+      });
+
+  Future<Map<String, dynamic>> getMeetingRequests() =>
+      get('/api/mentor/meeting-requests');
+
+  Future<Map<String, dynamic>> getNagaClasses() => get('/api/mentor/classes');
+
+  Future<Map<String, dynamic>> rsvpClass(String classId, bool attending) =>
+      post('/api/mentor/classes/$classId/rsvp', {'attending': attending});
+
+  // ── Progress / Dabbu ─────────────────────────────────────────────────────
+
+  Future<Map<String, dynamic>> getFullProgress() => get('/api/progress');
+
+  Future<Map<String, dynamic>> takeSnapshot() =>
+      post('/api/progress/snapshot', {});
+
+  Future<Map<String, dynamic>> triggerDabbuAnalysis() =>
+      post('/api/progress/dabbu-analyze', {});
+
+  Future<Map<String, dynamic>> getInterventions() =>
+      get('/api/progress/interventions');
+
+  Future<Map<String, dynamic>> getDabbuStudyPlan(String studentId) =>
+      get('/api/dabbu/study-plan');
+
+  // ── Internal helpers ──────────────────────────────────────────────────────
+
+  Future<Map<String, dynamic>> _put(String endpoint, Map<String, dynamic> body) =>
+      put(endpoint, body);
 }
 
 class ApiException implements Exception {

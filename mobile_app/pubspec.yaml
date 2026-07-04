@@ -1,5 +1,5 @@
-name: vidyabot
-description: Personalized AI Tutor for Indian Competitive Exams (RRB, NDA, JEE, NEET)
+name: gurukul_ai
+description: Gurukul AI — Personalized AI Tutor for Indian Competitive Exams (RRB NTPC/ALP/GroupD/Technician/JE, NDA, JEE, NEET)
 version: 1.0.0+1
 publish_to: none
 

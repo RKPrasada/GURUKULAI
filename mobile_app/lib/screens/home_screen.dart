@@ -7,6 +7,8 @@ import '../utils/helpers.dart';
 import 'diagnostic_screen.dart';
 import 'study_screen.dart';
 import 'test_screen.dart';
+import 'mock_screen.dart';
+import 'naga_screen.dart';
 import 'progress_screen.dart';
 import 'settings_screen.dart';
 
@@ -24,6 +26,8 @@ class _HomeScreenState extends State<HomeScreen> {
     _HomeTab(),
     StudyScreen(),
     TestScreen(),
+    MockScreen(),
+    NagaScreen(),
     ProgressScreen(),
   ];
 
@@ -38,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Row(
           children: [
             const Text('📚 ', style: TextStyle(fontSize: 20)),
-            const Text('VidyaBot', style: TextStyle(fontWeight: FontWeight.w800, color: AppTheme.primary)),
+            const Text('Gurukul AI', style: TextStyle(fontWeight: FontWeight.w800, color: AppTheme.primary)),
             const SizedBox(width: 8),
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
@@ -64,6 +68,9 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _tab,
         onTap: (i) => setState(() => _tab = i),
+        type: BottomNavigationBarType.fixed,
+        selectedFontSize: 11,
+        unselectedFontSize: 10,
         items: [
           BottomNavigationBarItem(
             icon: const Icon(Icons.home_outlined),
@@ -78,7 +85,17 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: const Icon(Icons.quiz_outlined),
             activeIcon: const Icon(Icons.quiz),
-            label: lang == 'hi' ? 'परीक्षा' : 'Test',
+            label: lang == 'hi' ? 'अभ्यास' : 'Practice',
+          ),
+          BottomNavigationBarItem(
+            icon: const Icon(Icons.assignment_outlined),
+            activeIcon: const Icon(Icons.assignment),
+            label: lang == 'hi' ? 'मॉक' : 'Mock',
+          ),
+          BottomNavigationBarItem(
+            icon: const Icon(Icons.person_outlined),
+            activeIcon: const Icon(Icons.person),
+            label: 'NAGA',
           ),
           BottomNavigationBarItem(
             icon: const Icon(Icons.bar_chart_outlined),
@@ -164,22 +181,59 @@ class _HomeTab extends StatelessWidget {
           ],
         ],
         const SizedBox(height: 12),
-        Row(
+        GridView.count(
+          crossAxisCount: 2,
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 10,
+          childAspectRatio: 2.8,
           children: [
-            Expanded(child: ElevatedButton.icon(
-              onPressed: () {},
-              icon: const Icon(Icons.menu_book, size: 18),
-              label: Text(lang == 'hi' ? 'पढ़ें' : 'Study'),
-            )),
-            const SizedBox(width: 12),
-            Expanded(child: OutlinedButton.icon(
-              onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const DiagnosticScreen())),
-              icon: const Icon(Icons.quiz, size: 18),
-              label: Text(lang == 'hi' ? 'टेस्ट दें' : 'Take Test'),
-            )),
+            _QuickAction(icon: Icons.menu_book, label: lang == 'hi' ? 'पढ़ाई' : 'Study',
+                onTap: () => _changeTab(context, 1)),
+            _QuickAction(icon: Icons.quiz, label: lang == 'hi' ? 'अभ्यास' : 'Practice',
+                onTap: () => _changeTab(context, 2)),
+            _QuickAction(icon: Icons.assignment, label: lang == 'hi' ? 'मॉक टेस्ट' : 'Mock Test',
+                onTap: () => _changeTab(context, 3)),
+            _QuickAction(icon: Icons.person, label: 'NAGA',
+                onTap: () => _changeTab(context, 4)),
           ],
         ),
       ],
+    );
+  }
+}
+
+void _changeTab(BuildContext context, int tab) {
+  final state = context.findAncestorStateOfType<_HomeScreenState>();
+  state?.setState(() => state._tab = tab);
+}
+
+class _QuickAction extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  final VoidCallback onTap;
+  const _QuickAction({required this.icon, required this.label, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: AppTheme.primary.withOpacity(0.07),
+      borderRadius: BorderRadius.circular(10),
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(10),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+          child: Row(
+            children: [
+              Icon(icon, size: 18, color: AppTheme.primary),
+              const SizedBox(width: 8),
+              Text(label, style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 13)),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

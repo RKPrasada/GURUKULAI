@@ -1,16 +1,41 @@
 import 'package:flutter/material.dart';
 
 class AppConstants {
-  static const appName = 'VidyaBot';
+  static const appName = 'Gurukul AI';
   static const appTagline = 'AI Tutor for Indian Competitive Exams';
 
-  static const supportedExams = ['RRB NTPC', 'NDA', 'JEE', 'NEET'];
-  static const examKeys = ['rrb_ntpc', 'nda', 'jee', 'neet'];
+  static const supportedExams = [
+    'RRB NTPC', 'RRB ALP', 'RRB Group D', 'RRB Technician', 'RRB JE',
+    'NDA', 'JEE', 'NEET',
+  ];
+  static const examKeys = [
+    'rrb_ntpc', 'rrb_alp', 'rrb_group_d', 'rrb_technician', 'rrb_je',
+    'nda', 'jee', 'neet',
+  ];
   static const examDescriptions = [
-    'Railway Recruitment Board',
+    'Non-Technical Popular Categories',
+    'Assistant Loco Pilot',
+    'Group D — Level 1 Posts',
+    'Technician — CBT 2 Pattern',
+    'Junior Engineer — CBT 1 Pattern',
     'National Defence Academy',
     'Joint Entrance Examination',
     'National Eligibility cum Entrance Test',
+  ];
+
+  static const examsRequiringTrade = ['rrb_alp', 'rrb_technician'];
+  static const examsRequiringDiscipline = ['rrb_je'];
+
+  static const itiTrades = [
+    'Electrician', 'Fitter', 'Machinist', 'Turner', 'Welder',
+    'Electronics Mechanic', 'Mechanic Radio & TV', 'Heat Engine',
+    'Wireman', 'Plumber', 'Carpenter', 'Painter (General)',
+    'Mechanic Motor Vehicle', 'Tractor Mechanic', 'Diesel Mechanic',
+    'Draughtsman (Civil)',
+  ];
+
+  static const engineeringDisciplines = [
+    'Civil', 'Electrical', 'Mechanical', 'Electronics & Communication',
   ];
 
   static const languages = ['English', 'हिंदी'];

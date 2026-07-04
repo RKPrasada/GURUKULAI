@@ -115,8 +115,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 children: [
                   ListTile(
                     leading: const CircleAvatar(child: Icon(Icons.person)),
-                    title: Text(lang == 'hi' ? 'डेमो छात्र' : 'Demo Student'),
-                    subtitle: Text(student.studentId.substring(0, 16) + '...'),
+                    title: Text(student.displayName),
+                    subtitle: Text(student.username != null
+                        ? '@${student.username}'
+                        : student.studentId.substring(0, 16) + '...'),
                   ),
                   const Divider(height: 0),
                   ListTile(
@@ -154,15 +156,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
           Card(
             child: Column(
               children: [
-                const ListTile(title: Text('VidyaBot'), subtitle: Text('Version 1.0.0'), leading: Text('📚', style: TextStyle(fontSize: 28))),
+                const ListTile(title: Text('Gurukul AI'), subtitle: Text('Version 1.0.0'), leading: Text('🎓', style: TextStyle(fontSize: 28))),
                 const Divider(height: 0),
-                const ListTile(title: Text('Stack'), subtitle: Text('Flutter · FastAPI · Google ADK · Gemini 2.0 Flash')),
+                const ListTile(title: Text('Stack'), subtitle: Text('Flutter · FastAPI · OpenRouter · RRB NTPC · NDA · JEE · NEET')),
                 const Divider(height: 0),
-                ListTile(
-                  title: const Text('GitHub'),
-                  subtitle: const Text('github.com/[username]/vidyabot'),
-                  leading: const Icon(Icons.code),
-                  onTap: () {},
+                const ListTile(
+                  title: Text('GitHub'),
+                  subtitle: Text('github.com/RKPrasada/GURUKULAI'),
+                  leading: Icon(Icons.code),
                 ),
               ],
             ),

@@ -21,7 +21,7 @@ class AppTheme {
         background: background,
       ),
       scaffoldBackgroundColor: background,
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: cardColor,
         elevation: 2,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(radiusMedium)),

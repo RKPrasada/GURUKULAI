@@ -11,11 +11,11 @@ import 'theme/app_theme.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: '.env');
-  runApp(const VidyaBotApp());
+  runApp(const GurkulAIApp());
 }
 
-class VidyaBotApp extends StatelessWidget {
-  const VidyaBotApp({super.key});
+class GurkulAIApp extends StatelessWidget {
+  const GurkulAIApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class VidyaBotApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => SessionProvider()),
       ],
       child: MaterialApp(
-        title: 'VidyaBot',
+        title: 'Gurukul AI',
         debugShowCheckedModeBanner: false,
         theme: AppTheme.light(),
         home: const _AppEntry(),
@@ -49,7 +49,7 @@ class _AppEntry extends StatelessWidget {
                 children: [
                   CircularProgressIndicator(),
                   SizedBox(height: 16),
-                  Text('Loading VidyaBot...'),
+                  Text('Loading Gurukul AI...'),
                 ],
               ),
             ),

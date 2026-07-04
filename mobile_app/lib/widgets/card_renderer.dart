@@ -93,8 +93,8 @@ class QuizCard extends StatelessWidget {
     final difficulty = result['difficulty'] as int? ?? 1;
     final total = result['total'] as int? ?? 0;
     final q = result['first_question'] as Map<String, dynamic>?;
-    final qText = (lang == 'hi' ? q?['question_text_hi'] : null) ??
-        q?['question_text_en'] ?? '';
+    final qText = (lang == 'hi' ? (q != null ? q['question_text_hi'] : null) : null) ??
+        (q != null ? q['question_text_en'] : null) ?? '';
     final options = (q?['options'] as List?)?.cast<String>() ?? [];
 
     return Card(
@@ -209,8 +209,8 @@ class DiagnosticCard extends StatelessWidget {
     final total = result['total'] as int? ?? 0;
     final questions = (result['questions'] as List?)?.cast<Map<String, dynamic>>() ?? [];
     final q = questions.isNotEmpty ? questions[0] : null;
-    final qText = (lang == 'hi' ? q?['question_text_hi'] : null) ??
-        q?['question_text_en'] ?? '';
+    final qText = (lang == 'hi' ? (q != null ? q['question_text_hi'] : null) : null) ??
+        (q != null ? q['question_text_en'] : null) ?? '';
 
     return Card(
       child: Padding(
