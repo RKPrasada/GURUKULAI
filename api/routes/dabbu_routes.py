@@ -122,6 +122,16 @@ async def generate_study_plan(
     from api.main import _students  # import here to avoid circular at module load
     student = _get_student_from_store(auth_id, _students)
 
+    # Auto-heal: if the student has a weakness_map they clearly completed the diagnostic,
+    # even if the flag wasn't persisted (e.g. server restart before save completed).
+    if not student.diagnostic_done and student.weakness_map:
+        student.diagnostic_done = True
+        from api.main import _save_student_to_db
+        try:
+            _save_student_to_db(student)
+        except Exception:
+            pass
+
     if not student.diagnostic_done:
         raise HTTPException(
             status_code=400,

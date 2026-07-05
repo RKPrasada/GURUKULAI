@@ -44,6 +44,9 @@ class _StudyPlanScreenState extends State<StudyPlanScreen> {
   Future<void> _loadPlans() async {
     setState(() { _loading = true; _error = null; });
     try {
+      // Refresh student profile first so diagnostic_done is current
+      // (cached profile may be stale if diagnostic was completed after last login)
+      await context.read<AuthProvider>().refreshStudent();
       final results = await Future.wait([
         ApiService().getDabbuStudyPlan(),
         ApiService().getProposedStudyPlan(),

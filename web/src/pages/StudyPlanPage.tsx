@@ -528,6 +528,7 @@ function PlanFullView({ plan: rawPlan, readOnly = false }: { plan: StudyPlan; re
 
 export default function StudyPlanPage() {
   const student = useAuthStore((s) => s.student)
+  const updateStudent = useAuthStore((s) => s.updateStudent)
   const [loading, setLoading] = useState(true)
   const [generating, setGenerating] = useState(false)
   const [activePlan, setActivePlan] = useState<StudyPlan | null>(null)
@@ -539,14 +540,21 @@ export default function StudyPlanPage() {
 
   const loadPlans = async () => {
     setLoading(true)
+    setError('')
     try {
-      const [activeRes, proposedRes] = await Promise.all([
+      // Re-fetch student profile first to get fresh diagnostic_done status
+      // (localStorage cache may be stale if diagnostic was done in another session)
+      const [activeRes, proposedRes, studentRes] = await Promise.all([
         api.getDabbuActivePlan(),
         api.getDabbuProposedPlan(),
+        student?.user_id ? api.getStudent(student.user_id).catch(() => null) : Promise.resolve(null),
       ])
+      if (studentRes?.data) {
+        updateStudent(studentRes.data)
+      }
       setActivePlan(activeRes.data.plan ?? null)
       setProposedPlan(proposedRes.data.plan ?? null)
-      if (activeRes.data.plan && student?.diagnostic_done) {
+      if (activeRes.data.plan) {
         api.checkProgress().then((res) => {
           if (res.data.suggested) setRediagMsg(res.data.reason ?? '')
         }).catch(() => {})
