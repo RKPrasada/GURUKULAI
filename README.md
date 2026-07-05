@@ -2,6 +2,8 @@
 
 Personalized, bilingual (EN + HI) AI tutor for **RRB NTPC · RRB ALP · RRB Group D · RRB Technician · RRB JE · NDA · JEE · NEET**.
 
+[![Download APK](https://img.shields.io/badge/Download-Android%20APK-green?style=for-the-badge&logo=android)](https://github.com/RKPrasada/GURUKULAI/releases/tag/v1.0-kaggle)
+
 Built with **OpenRouter LLM · FastAPI · React 18 (Vite) · Flutter · Google ADK**
 
 Submitted to: [Kaggle Agents for Good 2026](https://www.kaggle.com/competitions/agents-for-good)
@@ -244,8 +246,8 @@ Copy `.env.example` to `.env`. Only `OPENROUTER_API_KEY` is required to run.
 |---|---|
 | Web (React 18) | `python launcher_react.py` → http://localhost:3001 |
 | Flutter Mobile (dev) | `cd mobile_app && flutter run` |
-| Android APK (sideload) | `gurukulai.apk` in project root — install directly, no Play Store needed |
-| Rebuild APK | `cd mobile_app && flutter build apk --release && cp build/app/outputs/flutter-apk/app-release.apk ../gurukulai.apk` |
+| Android APK (sideload) | [Download from GitHub Releases](https://github.com/RKPrasada/GURUKULAI/releases/tag/v1.0-kaggle) |
+| Rebuild APK | `cd mobile_app && flutter build apk --release` |
 | macOS .app | `bash packaging/build_mac.sh` |
 
 **Backend (production):** Google Cloud Run — `https://gurukulai-backend-242694625313.us-central1.run.app` — scales to zero, free tier.
