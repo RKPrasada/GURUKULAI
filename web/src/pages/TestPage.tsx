@@ -21,6 +21,7 @@ interface TestState {
   session_id: string
   total: number
   current_question: Question
+  next_question?: Question | null
   answered: number
   score: number
   session_complete: boolean
@@ -189,7 +190,8 @@ export default function TestPage() {
         correct: data.correct,
         correct_index: data.correct_index,
         explanation_en: data.explanation_en,
-        current_question: data.next_question || testState.current_question,
+        next_question: data.next_question,
+        // current_question stays as the answered question until user clicks Next
       })
       setShowFeedback(true)
     } catch (err: any) {
@@ -209,6 +211,16 @@ export default function TestPage() {
     } else {
       setSelectedIndex(null)
       setShowFeedback(false)
+      if (testState?.next_question) {
+        setTestState({
+          ...testState,
+          current_question: testState.next_question,
+          next_question: null,
+          correct: undefined,
+          correct_index: undefined,
+          explanation_en: undefined,
+        })
+      }
     }
   }
 
