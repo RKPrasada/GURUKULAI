@@ -53,6 +53,7 @@ export default function QuestionsPage() {
       setSuccessMsg('Your question has been submitted. NAGA will review it shortly.')
       setShowForm(false)
       setForm({ subject: '', topic: '', content: '' })
+      load()
     } catch (err: any) {
       setSubmitError(err.response?.data?.detail || err.message || 'Submission failed.')
     }
