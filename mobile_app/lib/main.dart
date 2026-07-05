@@ -28,9 +28,34 @@ class GurkulAIApp extends StatelessWidget {
         title: 'Gurukul AI',
         debugShowCheckedModeBanner: false,
         theme: AppTheme.light(),
-        home: const _AppEntry(),
+        home: const _WarmUpOnStart(),
       ),
     );
+  }
+}
+
+// Fires a /health ping as soon as the app opens so Cloud Run isn't cold
+// when the user presses Login.
+class _WarmUpOnStart extends StatefulWidget {
+  const _WarmUpOnStart();
+
+  @override
+  State<_WarmUpOnStart> createState() => _WarmUpOnStartState();
+}
+
+class _WarmUpOnStartState extends State<_WarmUpOnStart> {
+  @override
+  void initState() {
+    super.initState();
+    // Kick off warm-up without blocking the UI
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      context.read<AuthProvider>().warmUp();
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return const _AppEntry();
   }
 }
 

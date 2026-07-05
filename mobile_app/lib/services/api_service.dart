@@ -52,6 +52,9 @@ class ApiService {
     throw ApiException(response.statusCode, response.body);
   }
 
+  // Health / warm-up
+  Future<Map<String, dynamic>> healthCheck() => get('/health');
+
   // Auth
   Future<Map<String, dynamic>> demoLogin(String exam, String language, {String name = 'Demo Student'}) {
     return post('/api/student/demo', {

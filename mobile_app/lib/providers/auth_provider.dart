@@ -7,12 +7,26 @@ import '../services/api_service.dart';
 class AuthProvider extends ChangeNotifier {
   StudentProfile? _student;
   bool _isLoading = false;
+  bool _isWarmingUp = false;
   String? _error;
 
   StudentProfile? get student => _student;
   bool get isLoading => _isLoading;
+  bool get isWarmingUp => _isWarmingUp;
   bool get isAuthenticated => _student != null;
   String? get error => _error;
+
+  // Fire-and-forget health ping so Cloud Run isn't cold when user hits Login
+  Future<void> warmUp() async {
+    _isWarmingUp = true;
+    notifyListeners();
+    try {
+      await ApiService().healthCheck().timeout(const Duration(seconds: 20));
+    } catch (_) {} finally {
+      _isWarmingUp = false;
+      notifyListeners();
+    }
+  }
 
   Future<void> loadSavedSession() async {
     final prefs = await SharedPreferences.getInstance();

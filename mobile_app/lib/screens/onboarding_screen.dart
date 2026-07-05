@@ -308,6 +308,17 @@ class _LoginSheetState extends State<_LoginSheet> {
                     : const Text('Login', style: TextStyle(fontSize: 16)),
               ),
             ),
+            if (auth.isLoading) ...[
+              const SizedBox(height: 8),
+              Center(
+                child: Text(
+                  auth.isWarmingUp
+                      ? 'Connecting to server…'
+                      : 'Signing you in, please wait…',
+                  style: TextStyle(color: Colors.grey.shade500, fontSize: 12),
+                ),
+              ),
+            ],
             const SizedBox(height: 8),
             const Center(
               child: Text(
