@@ -195,6 +195,7 @@ Questions come from Gemini/OpenRouter first; `data/question_banks/{exam}.json` i
 4. No endpoint may skip `require_auth` — whitelist only `/health`, `/auth/*`, `/docs`, `/openapi.json`.
 5. Irreversible actions (calendar, gmail, delete) must go through `VibeDiff.register()` first — return pending token to frontend, execute only on `/confirm`.
 6. `data/audit.jsonl` SHA-256 chain must never be modified or deleted.
+7. **"Direct agent call" is not an exemption.** `/api/session/content` bypasses orchestrator routing but must still apply InputGuard → OutputGuard → AuditLogger. Every endpoint that sends user text to an LLM carries this obligation.
 
 ## React Frontend
 
@@ -220,6 +221,28 @@ Questions come from Gemini/OpenRouter first; `data/question_banks/{exam}.json` i
 | `SECRET_KEY` | HMAC token signing (has insecure default — set in prod) |
 | `DATABASE_URL` | SQLite path (default: `vidyabot.db`) |
 
+## Defensive Enum Deserialization
+
+JSONL files outlive code deployments. Never call `EnumClass(value)` directly in a `from_dict`. Use `safe_enum()` from `models/enum_utils.py`:
+
+```python
+from models.enum_utils import safe_enum
+status = safe_enum(PlanStatus, d.get("status", "proposed"), PlanStatus.PROPOSED)
+```
+
+Applied to: `NotificationType`, `QuestionStatus`, `ClassType`, `MeetingRequestStatus` (`models/mentor.py`), `SessionType`, `PlanStatus` (`models/study_plan.py`).
+
+Root cause: mock scheduler wrote `type: "mock_test_ready"` notifications before `MOCK_TEST_READY` was in `NotificationType`. Every 30-second notification poll returned HTTP 500 until fixed.
+
+## Mobile App
+
+- **Flutter** in `mobile_app/` — Android APK + iOS (untested)
+- Backend URL in `mobile_app/.env` → `API_BASE_URL`
+- **Production URL:** `https://gurukulai-backend-ekbh2if4xa-el.a.run.app` (Google Cloud Run, free tier, scales to zero)
+- **Local dev:** `http://192.168.0.12:8000` — requires `uvicorn --host 0.0.0.0`
+- **APK:** `gurukulai.apk` in project root — sideloadable, debug-signed (not Play Store ready)
+- Rebuild APK: `cd mobile_app && flutter build apk --release && cp build/app/outputs/flutter-apk/app-release.apk ../gurukulai.apk`
+
 ## Known Architecture Decisions
 
 - `call_gemini()` is named for Gemini but routes through OpenRouter — kept for import compatibility across all agents.
@@ -232,6 +255,7 @@ Questions come from Gemini/OpenRouter first; `data/question_banks/{exam}.json` i
 - `rrb_je` mock uses CBT-1 pattern; CBT-2 Technical (discipline-specific) is future work.
 - Dabbu proposes → NAGA approves/amends → student sees. Students never see unapproved Dabbu output except `fyi_only` notifications.
 - Content filter is keyword-only (no LLM call) — fast and NAGA-editable. LLM classification was dropped after it proved inconsistent on Indian educational content.
+- `/api/session/content` calls ContentAgent directly (skips orchestrator routing) but still applies the full 3-layer security stack. Bypassing routing ≠ bypassing security.
 
 ## Adding a New Agent
 

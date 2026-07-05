@@ -188,14 +188,14 @@ React 18 Web (:3001)          Flutter Mobile
 ## Evals
 
 ```bash
-pytest evals/ -v                  # 89 tests
-pytest evals/test_security.py -v  # 45 security tests — all must pass
+pytest evals/ -v                  # all tests
+pytest evals/test_security.py -v  # 76 security tests — all must pass
 python evals/eval_runner.py        # formatted summary with LLM-as-Judge scores
 ```
 
 | Suite | Tests | What it covers |
 |---|---|---|
-| Security | 45 | Injection, PII scrub, quarantine, VibeDiff, audit chain |
+| Security | 76 | Injection (EN/HI/obfuscated/base64), PII scrub, output guard, quarantine, audit chain, content endpoint security |
 | Assessment | 8 | Difficulty adaptation, MCQ schema, session tracking |
 | Content | 7 | Note generation, bilingual, Drive integration |
 | Diagnostic | 7 | Placement paper, weakness map accuracy, topic granularity |
@@ -235,12 +235,17 @@ Copy `.env.example` to `.env`. Only `OPENROUTER_API_KEY` is required to run.
 
 ## Platforms
 
-| Platform | Command |
+| Platform | Command / File |
 |---|---|
 | Web (React 18) | `python launcher_react.py` → http://localhost:3001 |
-| Flutter Mobile | `cd mobile_app && flutter run` |
+| Flutter Mobile (dev) | `cd mobile_app && flutter run` |
+| Android APK (sideload) | `gurukulai.apk` in project root — install directly, no Play Store needed |
+| Rebuild APK | `cd mobile_app && flutter build apk --release && cp build/app/outputs/flutter-apk/app-release.apk ../gurukulai.apk` |
 | macOS .app | `bash packaging/build_mac.sh` |
-| Android APK | `cd mobile_app && flutter build apk` |
+
+**Backend (production):** Google Cloud Run — `https://gurukulai-backend-ekbh2if4xa-el.a.run.app` — scales to zero, free tier.
+
+**Backend URL for APK:** set in `mobile_app/.env` → `API_BASE_URL`. Edit and rebuild to switch between local and cloud.
 
 ---
 
