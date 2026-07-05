@@ -257,7 +257,8 @@ Root cause: mock scheduler wrote `type: "mock_test_ready"` notifications before 
 
 - **Flutter** in `mobile_app/` — Android APK + iOS (untested)
 - Backend URL in `mobile_app/.env` → `API_BASE_URL`
-- **Production URL:** `https://gurukulai-backend-242694625313.us-central1.run.app` (Google Cloud Run, free tier, scales to zero)
+- **Production URL (APK default):** `https://gurukulai-backend-242694625313.asia-south1.run.app` (Mumbai — lower latency for India)
+- **Also deployed:** `https://gurukulai-backend-242694625313.us-central1.run.app` (us-central1)
 - **Local dev:** `http://192.168.0.12:8000` — requires `uvicorn --host 0.0.0.0`
 - **APK:** `gurukulai.apk` in project root — sideloadable, debug-signed (not Play Store ready)
 - Rebuild APK: `cd mobile_app && flutter build apk --release && cp build/app/outputs/flutter-apk/app-release.apk ../gurukulai.apk`
