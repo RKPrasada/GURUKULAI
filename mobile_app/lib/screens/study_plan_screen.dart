@@ -317,6 +317,49 @@ class _ActivePlanView extends StatefulWidget {
 
 class _ActivePlanViewState extends State<_ActivePlanView> {
   int _selectedWeek = 1;
+  String? _selectedDay;
+
+  @override
+  void initState() {
+    super.initState();
+    _initSelection();
+  }
+
+  void _initSelection() {
+    final weeks = (widget.plan['weeks'] as List<dynamic>? ?? []).cast<Map<String, dynamic>>();
+    final today = DateTime.now().toIso8601String().substring(0, 10);
+    // Find the current week
+    Map<String, dynamic>? curWeek;
+    for (final w in weeks) {
+      final start = w['start_date'] as String? ?? '';
+      final end = w['end_date'] as String? ?? '';
+      if (start.isNotEmpty && end.isNotEmpty && today.compareTo(start) >= 0 && today.compareTo(end) <= 0) {
+        curWeek = w;
+        break;
+      }
+    }
+    final targetWeek = curWeek ?? (weeks.isNotEmpty ? weeks.first : null);
+    if (targetWeek == null) return;
+    _selectedWeek = targetWeek['week_number'] as int? ?? 1;
+    // Default to today if it's a study day, else first non-rest day
+    final days = (targetWeek['days'] as List<dynamic>? ?? []).cast<Map<String, dynamic>>();
+    final todayEntry = days.where((d) => d['day_date'] == today && !(d['is_rest_day'] as bool? ?? false)).firstOrNull;
+    final firstStudy = days.where((d) => !(d['is_rest_day'] as bool? ?? false)).firstOrNull;
+    _selectedDay = todayEntry?['day_date'] as String? ?? firstStudy?['day_date'] as String?;
+  }
+
+  Map<String, dynamic>? _getSelectedDayData(List<Map<String, dynamic>> weeks) {
+    for (final w in weeks) {
+      if (w['week_number'] == _selectedWeek) {
+        final days = (w['days'] as List<dynamic>? ?? []).cast<Map<String, dynamic>>();
+        if (_selectedDay != null) {
+          return days.where((d) => d['day_date'] == _selectedDay).firstOrNull;
+        }
+        return days.where((d) => !(d['is_rest_day'] as bool? ?? false)).firstOrNull;
+      }
+    }
+    return null;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -325,6 +368,8 @@ class _ActivePlanViewState extends State<_ActivePlanView> {
       (w) => w['week_number'] == _selectedWeek,
       orElse: () => weeks.isNotEmpty ? weeks.first : {},
     );
+    final days = (selectedWeekData['days'] as List<dynamic>? ?? []).cast<Map<String, dynamic>>();
+    final selectedDayData = _getSelectedDayData(weeks);
 
     return Column(children: [
       // Plan summary
@@ -332,10 +377,10 @@ class _ActivePlanViewState extends State<_ActivePlanView> {
         padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
         child: _PlanSummaryCard(plan: widget.plan),
       ),
-      const SizedBox(height: 12),
+      const SizedBox(height: 10),
       // Week selector
       SizedBox(
-        height: 44,
+        height: 40,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -345,16 +390,24 @@ class _ActivePlanViewState extends State<_ActivePlanView> {
             final num = w['week_number'] as int;
             final active = num == _selectedWeek;
             return GestureDetector(
-              onTap: () => setState(() => _selectedWeek = num),
+              onTap: () {
+                final wDays = (w['days'] as List<dynamic>? ?? []).cast<Map<String, dynamic>>();
+                final today = DateTime.now().toIso8601String().substring(0, 10);
+                final todayEntry = wDays.where((d) => d['day_date'] == today && !(d['is_rest_day'] as bool? ?? false)).firstOrNull;
+                final firstStudy = wDays.where((d) => !(d['is_rest_day'] as bool? ?? false)).firstOrNull;
+                setState(() {
+                  _selectedWeek = num;
+                  _selectedDay = todayEntry?['day_date'] as String? ?? firstStudy?['day_date'] as String?;
+                });
+              },
               child: Container(
                 margin: const EdgeInsets.symmetric(horizontal: 4),
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
                 decoration: BoxDecoration(
                   color: active ? AppTheme.primary : Colors.grey.shade100,
                   borderRadius: BorderRadius.circular(20),
                 ),
-                child: Text(
-                  'Wk $num',
+                child: Text('Wk $num',
                   style: TextStyle(
                     color: active ? Colors.white : Colors.grey.shade700,
                     fontWeight: active ? FontWeight.w700 : FontWeight.normal,
@@ -366,124 +419,192 @@ class _ActivePlanViewState extends State<_ActivePlanView> {
           },
         ),
       ),
-      const SizedBox(height: 12),
-      // Selected week detail
+      const SizedBox(height: 8),
+      // Day selector strip
+      SizedBox(
+        height: 60,
+        child: ListView(
+          scrollDirection: Axis.horizontal,
+          padding: const EdgeInsets.symmetric(horizontal: 12),
+          children: days.map((day) {
+            final date = day['day_date'] as String? ?? '';
+            final isRest = day['is_rest_day'] as bool? ?? false;
+            final dow = (day['day_of_week'] as String? ?? '').substring(0, 3);
+            final dayNum = date.length >= 10 ? int.tryParse(date.substring(8, 10)) ?? 0 : 0;
+            final isSelected = date == _selectedDay;
+            final today = DateTime.now().toIso8601String().substring(0, 10);
+            final isToday = date == today;
+            return GestureDetector(
+              onTap: () => setState(() => _selectedDay = date),
+              child: Container(
+                width: 44,
+                margin: const EdgeInsets.symmetric(horizontal: 3),
+                decoration: BoxDecoration(
+                  color: isSelected ? AppTheme.primary : isToday ? AppTheme.primary.withOpacity(0.1) : Colors.grey.shade50,
+                  borderRadius: BorderRadius.circular(10),
+                  border: isToday && !isSelected ? Border.all(color: AppTheme.primary, width: 1.5) : null,
+                ),
+                child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+                  Text(dow,
+                    style: TextStyle(fontSize: 10, color: isSelected ? Colors.white70 : Colors.grey.shade500, fontWeight: FontWeight.w600)),
+                  const SizedBox(height: 2),
+                  Text('$dayNum',
+                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.w800,
+                      color: isSelected ? Colors.white : isRest ? Colors.grey.shade400 : Colors.grey.shade800)),
+                  if (isRest)
+                    Text('—', style: TextStyle(fontSize: 9, color: Colors.grey.shade400))
+                  else
+                    Text('${(day['blocks'] as List?)?.length ?? 0}✓',
+                      style: TextStyle(fontSize: 9, color: isSelected ? Colors.white70 : Colors.grey.shade500)),
+                ]),
+              ),
+            );
+          }).toList(),
+        ),
+      ),
+      const SizedBox(height: 8),
+      // Day schedule
       Expanded(
-        child: selectedWeekData.isEmpty
-            ? const Center(child: Text('No week data'))
-            : _WeekDetailView(week: selectedWeekData),
+        child: selectedDayData == null
+            ? const Center(child: Text('Select a day above'))
+            : _DayScheduleView(day: selectedDayData),
       ),
     ]);
   }
 }
 
-// ── Week detail ────────────────────────────────────────────────────────────────
+// ── Day schedule view (hour-by-hour) ──────────────────────────────────────────
 
-class _WeekDetailView extends StatelessWidget {
-  final Map<String, dynamic> week;
-  const _WeekDetailView({required this.week});
-
-  @override
-  Widget build(BuildContext context) {
-    final days = (week['days'] as List<dynamic>? ?? []).cast<Map<String, dynamic>>();
-    return ListView(padding: const EdgeInsets.symmetric(horizontal: 16), children: [
-      if ((week['theme'] as String? ?? '').isNotEmpty)
-        Padding(
-          padding: const EdgeInsets.only(bottom: 12),
-          child: Text(week['theme'] as String,
-              style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 15)),
-        ),
-      ...days.map((day) => _DayCard(day: day)),
-    ]);
-  }
-}
-
-// ── Day card ───────────────────────────────────────────────────────────────────
-
-class _DayCard extends StatelessWidget {
+class _DayScheduleView extends StatelessWidget {
   final Map<String, dynamic> day;
-  const _DayCard({required this.day});
+  const _DayScheduleView({required this.day});
+
+  static const _typeColors = <String, Color>{
+    'study':    Color(0xFF2563EB),  // blue-600
+    'practice': Color(0xFFC026D3),  // fuchsia-600
+    'mock':     Color(0xFFDC2626),  // red-600
+    'revision': Color(0xFFF59E0B),  // amber-500
+    'rest':     Color(0xFF9CA3AF),
+  };
+  static const _typeBg = <String, Color>{
+    'study':    Color(0xFFEFF6FF),
+    'practice': Color(0xFFFDF4FF),
+    'mock':     Color(0xFFFEF2F2),
+    'revision': Color(0xFFFFFBEB),
+  };
+  static const _typeLabels = <String, String>{
+    'study': 'STUDY', 'practice': 'PRACTICE', 'mock': 'MOCK', 'revision': 'REVISION',
+  };
+  static const _typeIcons = <String, IconData>{
+    'study': Icons.menu_book_outlined, 'practice': Icons.quiz_outlined,
+    'mock': Icons.timer_outlined, 'revision': Icons.replay_outlined,
+  };
+
+  String _fmt12h(int hour) {
+    final h = hour % 12 == 0 ? 12 : hour % 12;
+    final ampm = hour < 12 ? 'AM' : 'PM';
+    return '$h:00 $ampm';
+  }
 
   @override
   Widget build(BuildContext context) {
-    final blocks = (day['blocks'] as List<dynamic>? ?? []).cast<Map<String, dynamic>>();
     final isRest = day['is_rest_day'] as bool? ?? false;
     final dayName = day['day_of_week'] as String? ?? '';
     final date = day['day_date'] as String? ?? '';
+    final totalHours = (day['total_hours'] as num?)?.toStringAsFixed(0) ?? '0';
 
-    return Card(
-      margin: const EdgeInsets.only(bottom: 8),
-      child: ExpansionTile(
-        leading: _dayIcon(isRest, blocks),
-        title: Text('$dayName${date.isNotEmpty ? ' · ${date.substring(5)}' : ''}',
-            style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 14)),
-        subtitle: isRest
-            ? const Text('Rest day', style: TextStyle(color: Colors.grey))
-            : Text('${blocks.length} block${blocks.length == 1 ? '' : 's'} · ${day['total_hours']?.toStringAsFixed(1) ?? '0'}h',
-                style: const TextStyle(fontSize: 12)),
-        children: blocks.map((b) => _BlockTile(block: b)).toList(),
-      ),
-    );
-  }
+    if (isRest) {
+      return Center(child: Column(mainAxisSize: MainAxisSize.min, children: [
+        const Icon(Icons.self_improvement, size: 48, color: Colors.grey),
+        const SizedBox(height: 12),
+        Text('$dayName — Rest Day', style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 16)),
+        const SizedBox(height: 4),
+        const Text("Take a break — you've earned it.", style: TextStyle(color: Colors.grey)),
+      ]));
+    }
 
-  Widget _dayIcon(bool isRest, List blocks) {
-    if (isRest) return const CircleAvatar(backgroundColor: Colors.grey, radius: 16, child: Icon(Icons.self_improvement, size: 16, color: Colors.white));
-    final type = blocks.isNotEmpty ? (blocks.first['session_type'] as String? ?? 'study') : 'study';
-    final colors = {'study': AppTheme.primary, 'practice': const Color(0xFF7C3AED), 'mock': Colors.red, 'revision': Colors.orange, 'rest': Colors.grey};
-    final color = colors[type] ?? AppTheme.primary;
-    return CircleAvatar(backgroundColor: color.withOpacity(0.15), radius: 16,
-        child: Icon(Icons.calendar_today, size: 14, color: color));
-  }
-}
+    final blocks = (day['blocks'] as List<dynamic>? ?? [])
+        .cast<Map<String, dynamic>>()
+        ..sort((a, b) => (a['start_hour'] as int? ?? 0).compareTo(b['start_hour'] as int? ?? 0));
 
-// ── Block tile ─────────────────────────────────────────────────────────────────
+    return ListView(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      children: [
+        // Day header
+        Row(children: [
+          Expanded(child: Text('$dayName${date.length >= 10 ? " · ${date.substring(5)}" : ""}',
+              style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 15))),
+          Text('${blocks.length} sessions · ${totalHours}h',
+              style: TextStyle(fontSize: 12, color: Colors.grey.shade500)),
+        ]),
+        const SizedBox(height: 12),
+        // Timeline entries
+        ...blocks.asMap().entries.map((entry) {
+          final b = entry.value;
+          final isLast = entry.key == blocks.length - 1;
+          final type = b['session_type'] as String? ?? 'study';
+          final startHour = b['start_hour'] as int? ?? 7;
+          final durHours = b['duration_hours'] as int? ?? 2;
+          final endHour = startHour + durHours;
+          final subject = b['subject'] as String? ?? '';
+          final topic = b['topic'] as String? ?? '';
+          final color = _typeColors[type] ?? const Color(0xFF2563EB);
+          final bg = _typeBg[type] ?? const Color(0xFFEFF6FF);
+          final icon = _typeIcons[type] ?? Icons.school_outlined;
+          final label = _typeLabels[type] ?? type.toUpperCase();
 
-class _BlockTile extends StatelessWidget {
-  final Map<String, dynamic> block;
-  const _BlockTile({required this.block});
-
-  static const _typeColors = {
-    'study': AppTheme.primary,
-    'practice': Color(0xFF7C3AED),
-    'mock': Colors.red,
-    'revision': Colors.orange,
-    'rest': Colors.grey,
-  };
-  static const _typeIcons = {
-    'study': Icons.menu_book_outlined,
-    'practice': Icons.quiz_outlined,
-    'mock': Icons.timer_outlined,
-    'revision': Icons.replay_outlined,
-    'rest': Icons.self_improvement,
-  };
-
-  @override
-  Widget build(BuildContext context) {
-    final type = block['session_type'] as String? ?? 'study';
-    final color = _typeColors[type] ?? AppTheme.primary;
-    final icon = _typeIcons[type] ?? Icons.school_outlined;
-    final subject = block['subject'] as String? ?? '';
-    final topic = block['topic'] as String? ?? '';
-    final hours = block['duration_hours'] as int? ?? 2;
-    final startHour = block['start_hour'] as int? ?? 8;
-    final ampm = startHour >= 12 ? 'PM' : 'AM';
-    final hour12 = startHour % 12 == 0 ? 12 : startHour % 12;
-
-    return ListTile(
-      dense: true,
-      leading: Icon(icon, color: color, size: 18),
-      title: Text(topic.isNotEmpty ? topic : subject,
-          style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w500)),
-      subtitle: Text('$subject · $hour12:00 $ampm · ${hours}h',
-          style: const TextStyle(fontSize: 11)),
-      trailing: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-        decoration: BoxDecoration(
-          color: color.withOpacity(0.1),
-          borderRadius: BorderRadius.circular(8),
-        ),
-        child: Text(type, style: TextStyle(color: color, fontSize: 11, fontWeight: FontWeight.w600)),
-      ),
+          return IntrinsicHeight(
+            child: Row(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+              // Time column
+              SizedBox(width: 76, child: Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
+                Padding(
+                  padding: const EdgeInsets.only(right: 12, top: 10),
+                  child: Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
+                    Text(_fmt12h(startHour),
+                        style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w700, color: Color(0xFF374151))),
+                    Text('– ${_fmt12h(endHour)}',
+                        style: TextStyle(fontSize: 10, color: Colors.grey.shade500)),
+                    Text('${durHours}h', style: TextStyle(fontSize: 10, color: Colors.grey.shade400)),
+                  ]),
+                ),
+              ])),
+              // Connector
+              Column(children: [
+                Container(width: 10, height: 10, margin: const EdgeInsets.only(top: 12),
+                    decoration: BoxDecoration(color: color, shape: BoxShape.circle)),
+                if (!isLast)
+                  Expanded(child: Container(width: 2, color: Colors.grey.shade200)),
+              ]),
+              const SizedBox(width: 10),
+              // Session card
+              Expanded(child: Container(
+                margin: EdgeInsets.only(bottom: isLast ? 0 : 8),
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: bg,
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border(left: BorderSide(color: color, width: 3)),
+                ),
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  Row(children: [
+                    Icon(icon, size: 13, color: color),
+                    const SizedBox(width: 4),
+                    Text(label, style: TextStyle(fontSize: 11, fontWeight: FontWeight.w800,
+                        color: color, letterSpacing: 0.8)),
+                  ]),
+                  if (topic.isNotEmpty) ...[
+                    const SizedBox(height: 4),
+                    Text(topic, style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w700)),
+                  ],
+                  if (subject.isNotEmpty)
+                    Text(subject, style: TextStyle(fontSize: 11, color: Colors.grey.shade600)),
+                ]),
+              )),
+            ]),
+          );
+        }),
+        const SizedBox(height: 16),
+      ],
     );
   }
 }

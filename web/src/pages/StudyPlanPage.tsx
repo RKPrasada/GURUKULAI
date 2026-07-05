@@ -100,36 +100,53 @@ const isToday = (dayDate: string): boolean => dayDate === today()
 
 function BlockCard({ block, onToggleDone }: { block: SessionBlock; onToggleDone: () => void }) {
   const s = SESSION_STYLES[block.session_type] ?? SESSION_STYLES.study
+  const startLabel = fmt12h(block.start_hour)
+  const endLabel   = fmt12h(block.start_hour + block.duration_hours)
+
   return (
-    <div className={`flex gap-3 rounded-lg p-3 ${s.bg} ${PRIORITY_BORDER[block.priority]} transition`}>
-      <div className="shrink-0 pt-0.5">
-        <span className={s.text}>{s.icon}</span>
+    <div className="flex items-stretch gap-0 group">
+      {/* Time column */}
+      <div className="w-24 shrink-0 flex flex-col items-end pr-3 pt-2.5 pb-2.5">
+        <span className="text-xs font-mono font-semibold text-gray-600 dark:text-gray-300 leading-tight">{startLabel}</span>
+        <span className="text-xs font-mono text-gray-400 leading-tight">–{endLabel}</span>
+        <span className="text-xs text-gray-400 mt-0.5">{block.duration_hours}h</span>
       </div>
-      <div className="flex-1 min-w-0">
-        <div className="flex items-center gap-2">
-          <span className={`text-xs font-bold uppercase tracking-wide ${s.text}`}>{s.label}</span>
-          <span className="text-xs text-gray-400">{fmt12h(block.start_hour)} — {fmt12h(block.start_hour + block.duration_hours)}</span>
-          {block.priority === 3 && <Flame size={12} className="text-red-500" aria-label="Critical weak area"/>}
-          {block.priority === 2 && <AlertCircle size={12} className="text-amber-500" aria-label="Weak area"/>}
-          {block.rescheduled && <span className="text-xs text-gray-400 italic">rescheduled</span>}
+
+      {/* Connector line */}
+      <div className="flex flex-col items-center mr-3">
+        <div className={`w-2.5 h-2.5 rounded-full border-2 mt-3 shrink-0 ${block.completed ? 'bg-green-500 border-green-500' : 'bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-500'}`} />
+        <div className="flex-1 w-px bg-gray-200 dark:bg-gray-600 mt-0.5" />
+      </div>
+
+      {/* Session card */}
+      <div className={`flex-1 mb-2 rounded-xl p-3 ${s.bg} ${PRIORITY_BORDER[block.priority]} transition`}>
+        <div className="flex items-start justify-between gap-2">
+          <div className="min-w-0 flex-1">
+            <div className="flex items-center gap-2 mb-1">
+              <span className={`text-xs font-bold uppercase tracking-widest ${s.text}`}>{s.label}</span>
+              {block.priority === 3 && <Flame size={11} className="text-red-500" aria-label="Critical weak area"/>}
+              {block.priority === 2 && <AlertCircle size={11} className="text-amber-500" aria-label="Weak area"/>}
+              {block.rescheduled && <span className="text-xs text-gray-400 italic">rescheduled</span>}
+            </div>
+            {block.topic && (
+              <p className="text-sm font-semibold text-gray-900 dark:text-white leading-tight">{block.topic}</p>
+            )}
+            {block.subject && (
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{block.subject}</p>
+            )}
+          </div>
+          <button
+            onClick={onToggleDone}
+            title={block.completed ? 'Mark incomplete' : 'Mark complete'}
+            className="shrink-0 mt-0.5"
+          >
+            <CheckCircle2
+              size={20}
+              className={block.completed ? 'text-green-500' : 'text-gray-300 dark:text-gray-600 hover:text-green-400 transition'}
+            />
+          </button>
         </div>
-        {block.topic ? (
-          <p className="text-sm font-medium text-gray-900 dark:text-white truncate mt-0.5">{block.topic}</p>
-        ) : null}
-        {block.subject ? (
-          <p className="text-xs text-gray-500 dark:text-gray-400">{block.subject}</p>
-        ) : null}
       </div>
-      <button
-        onClick={onToggleDone}
-        title={block.completed ? 'Mark incomplete' : 'Mark complete'}
-        className="shrink-0 self-start mt-0.5"
-      >
-        <CheckCircle2
-          size={18}
-          className={block.completed ? 'text-green-500' : 'text-gray-300 dark:text-gray-600 hover:text-green-400 transition'}
-        />
-      </button>
     </div>
   )
 }
@@ -140,23 +157,49 @@ function DayTimeline({ day, onToggleDone }: {
 }) {
   if (day.is_rest_day) {
     return (
-      <div className="text-center py-8 text-gray-400 dark:text-gray-500">
-        <Clock size={32} className="mx-auto mb-2 opacity-40" />
-        <p className="font-medium">Rest Day</p>
-        <p className="text-sm">Take a break — you've earned it.</p>
+      <div className="text-center py-10 text-gray-400 dark:text-gray-500">
+        <Clock size={36} className="mx-auto mb-2 opacity-30" />
+        <p className="font-semibold text-gray-500 dark:text-gray-400">Rest Day</p>
+        <p className="text-sm mt-1">Take a break — you've earned it.</p>
       </div>
     )
   }
+
   const done = day.blocks.filter((b) => b.completed).length
+  const sorted = [...day.blocks].sort((a, b) => a.start_hour - b.start_hour)
+
   return (
-    <div className="space-y-2">
-      <div className="flex items-center justify-between mb-3">
-        <span className="text-xs text-gray-500">{day.blocks.length} sessions · {day.total_hours}h</span>
-        <span className="text-xs text-green-600 font-medium">{done}/{day.blocks.length} done</span>
+    <div>
+      {/* Header */}
+      <div className="flex items-center justify-between px-1 mb-3">
+        <div className="flex items-center gap-3">
+          <span className="text-xs text-gray-500 dark:text-gray-400">
+            {day.blocks.length} sessions · {day.total_hours}h
+          </span>
+          <div className="flex gap-1">
+            {sorted.map((b) => {
+              const s = SESSION_STYLES[b.session_type] ?? SESSION_STYLES.study
+              return (
+                <span
+                  key={b.block_id}
+                  title={`${fmt12h(b.start_hour)} ${s.label}`}
+                  className={`inline-block w-3 h-3 rounded-sm ${TYPE_BG[b.session_type] ?? 'bg-blue-600'} opacity-80`}
+                />
+              )
+            })}
+          </div>
+        </div>
+        <span className={`text-xs font-semibold ${done === day.blocks.length ? 'text-green-600' : 'text-gray-400'}`}>
+          {done}/{day.blocks.length} done
+        </span>
       </div>
-      {day.blocks.map((block) => (
-        <BlockCard key={block.block_id} block={block} onToggleDone={() => onToggleDone(block.block_id)} />
-      ))}
+
+      {/* Timeline */}
+      <div className="relative">
+        {sorted.map((block) => (
+          <BlockCard key={block.block_id} block={block} onToggleDone={() => onToggleDone(block.block_id)} />
+        ))}
+      </div>
     </div>
   )
 }
@@ -321,51 +364,76 @@ function ProposedView({ plan }: { plan: StudyPlan }) {
 
 // ── Year-at-a-Glance overview ──────────────────────────────────────────────────
 
-function YearOverview({ plan }: { plan: StudyPlan }) {
-  const typeColor: Record<string, string> = {
-    study:    'bg-blue-400',
-    practice: 'bg-violet-400',
-    mock:     'bg-red-400',
-    revision: 'bg-amber-400',
-    rest:     'bg-gray-200 dark:bg-gray-600',
-  }
+// Mirrors _DAILY_SLOTS in dabbu_agent.py — 5 slots per study day
+const DAILY_SLOT_HOURS = [7, 9, 11, 14, 16]
+
+const TYPE_BG: Record<string, string> = {
+  study:    'bg-blue-600',
+  practice: 'bg-fuchsia-600',
+  mock:     'bg-red-500',
+  revision: 'bg-amber-500',
+  rest:     'bg-gray-200 dark:bg-gray-700',
+}
+
+const TYPE_LABEL: Record<string, string> = {
+  study: 'Study (7–9, 9–11 AM)',
+  practice: 'Practice (11 AM–1 PM)',
+  revision: 'Revision (2–4 PM)',
+  mock: 'Mock Test (4–6 PM)',
+}
+
+function YearOverview({ plan, onSelectDay }: { plan: StudyPlan; onSelectDay: (date: string) => void }) {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4">
-      <h3 className="text-sm font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+      <h3 className="text-sm font-bold text-gray-900 dark:text-white mb-1 flex items-center gap-2">
         <Calendar size={14} className="text-primary" />
         {plan.weeks.length}-week plan at a glance
       </h3>
-      <div className="flex flex-wrap gap-0.5">
-        {plan.weeks.flatMap((w) =>
-          w.days.map((d) => {
-            const types = d.blocks.map((b) => b.session_type)
-            const dominant = types.length === 0
-              ? 'rest'
-              : (['mock','practice','study','revision','rest'] as const)
-                  .find((t) => types.includes(t as any)) ?? 'study'
-            const pct = d.blocks.length
-              ? Math.round(d.blocks.filter((b) => b.completed).length / d.blocks.length * 100)
-              : 0
+      <p className="text-xs text-gray-400 dark:text-gray-500 mb-3">
+        Each column = one day. 5 coloured bars = 5 sessions (7 AM → 6 PM). Click any day to see its schedule.
+      </p>
+
+      {/* Day grid: grouped by week with a gap between weeks */}
+      <div className="flex flex-wrap" style={{ gap: '2px 1px' }}>
+        {plan.weeks.flatMap((w, wi) =>
+          w.days.map((d, di) => {
+            const blockBySlot = DAILY_SLOT_HOURS.map(h =>
+              d.blocks.find(b => b.start_hour === h)
+            )
             return (
-              <div
+              <button
                 key={d.day_date}
-                title={`${d.day_date} — ${d.blocks.length} sessions, ${pct}% done`}
-                className={`w-3 h-3 rounded-sm ${typeColor[dominant]} ${pct === 100 ? 'opacity-100' : d.is_rest_day ? 'opacity-30' : 'opacity-60'}`}
-              />
+                onClick={() => onSelectDay(d.day_date)}
+                title={`${d.day_of_week} ${d.day_date}${d.is_rest_day ? ' — Rest' : ` — ${d.blocks.length} sessions`}`}
+                className={`flex flex-col rounded-sm hover:ring-2 hover:ring-primary/50 focus:outline-none${di === 0 && wi > 0 ? ' ml-2' : ''}`}
+                style={{ gap: '1px' }}
+              >
+                {d.is_rest_day ? (
+                  <div className="w-2.5 bg-gray-200 dark:bg-gray-700 rounded-sm opacity-40" style={{ height: 17 }} />
+                ) : (
+                  blockBySlot.map((block, si) => (
+                    <div
+                      key={si}
+                      className={`w-2.5 rounded-sm ${block ? (TYPE_BG[block.session_type] ?? TYPE_BG.study) : 'bg-gray-200 dark:bg-gray-600 opacity-20'} ${block?.completed ? 'opacity-100' : 'opacity-75'}`}
+                      style={{ height: 3 }}
+                    />
+                  ))
+                )}
+              </button>
             )
           })
         )}
       </div>
-      <div className="flex flex-wrap gap-3 mt-3 text-xs text-gray-500">
-        {Object.entries(typeColor).filter(([k]) => k !== 'rest').map(([k, cls]) => (
-          <span key={k} className="flex items-center gap-1">
-            <span className={`w-2.5 h-2.5 rounded-sm inline-block ${cls}`} />
-            {k.charAt(0).toUpperCase() + k.slice(1)}
+
+      {/* Legend */}
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-3 text-xs text-gray-500 dark:text-gray-400">
+        {Object.entries(TYPE_LABEL).map(([k, label]) => (
+          <span key={k} className="flex items-center gap-1.5">
+            <span className={`inline-block rounded-sm ${TYPE_BG[k]}`} style={{ width: 10, height: 6 }} />
+            {label}
           </span>
         ))}
-        <span className="flex items-center gap-1 ml-auto">
-          {plan.total_study_hours?.toFixed(0)}h total · {plan.weeks.length} weeks
-        </span>
+        <span className="ml-auto text-gray-400">{plan.total_study_hours?.toFixed(0)}h · {plan.weeks.length} wks</span>
       </div>
     </div>
   )
@@ -383,7 +451,14 @@ function PlanFullView({ plan: rawPlan, readOnly = false }: { plan: StudyPlan; re
   const [selectedDay, setSelectedDay] = useState<string | null>(() => {
     const t = today()
     const cur = rawPlan.weeks.find((w) => w.start_date <= t && t <= w.end_date)
-    return cur ? t : rawPlan.weeks[0]?.days[0]?.day_date ?? null
+    if (cur) {
+      const todayEntry = cur.days.find((d) => d.day_date === t)
+      // If today is a rest day, pick the next study day in this week
+      if (todayEntry && !todayEntry.is_rest_day) return t
+      return cur.days.find((d) => !d.is_rest_day)?.day_date ?? t
+    }
+    return rawPlan.weeks[0]?.days.find((d) => !d.is_rest_day)?.day_date
+      ?? rawPlan.weeks[0]?.days[0]?.day_date ?? null
   })
 
   const enrichPlan = (p: StudyPlan): StudyPlan => ({
@@ -446,7 +521,13 @@ function PlanFullView({ plan: rawPlan, readOnly = false }: { plan: StudyPlan; re
       </div>
 
       {/* Year at a glance */}
-      <YearOverview plan={plan} />
+      <YearOverview plan={plan} onSelectDay={(date) => {
+        const week = plan.weeks.find((w) => w.days.some((d) => d.day_date === date))
+        if (week) setSelectedWeekNum(week.week_number)
+        setSelectedDay(date)
+        // Scroll to the day detail section
+        setTimeout(() => document.getElementById('day-detail')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50)
+      }} />
 
       {/* Week + day navigation */}
       <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-4">
@@ -462,8 +543,9 @@ function PlanFullView({ plan: rawPlan, readOnly = false }: { plan: StudyPlan; re
               onClick={() => {
                 setSelectedWeekNum(w.week_number)
                 const t = today()
-                const dayInWeek = w.days.find((d) => d.day_date === t)
-                setSelectedDay(dayInWeek?.day_date ?? w.days[0]?.day_date ?? null)
+                const todayInWeek = w.days.find((d) => d.day_date === t && !d.is_rest_day)
+                const firstStudyDay = w.days.find((d) => !d.is_rest_day)
+                setSelectedDay(todayInWeek?.day_date ?? firstStudyDay?.day_date ?? w.days[0]?.day_date ?? null)
               }}
             />
           ))}
@@ -493,7 +575,7 @@ function PlanFullView({ plan: rawPlan, readOnly = false }: { plan: StudyPlan; re
             </div>
             <DayGrid week={selectedWeek} selectedDay={selectedDay} onSelectDay={setSelectedDay} />
             {selectedDayData && (
-              <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4">
+              <div id="day-detail" className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4">
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                   <Calendar size={16} className="text-primary" />
                   {fmtFullDate(selectedDayData.day_date)}
