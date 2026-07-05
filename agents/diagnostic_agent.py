@@ -291,7 +291,8 @@ class DiagnosticAgent:
                 except Exception as e:
                     logger.error(f"Batch failed for {subject}: {e}")
 
-        # Deduplicate across all subject batches (LLM sometimes repeats questions)
+        # Deduplicate across all subject batches (LLM sometimes repeats questions,
+        # and bank sampling is independent per subject so the same question can appear twice)
         seen: set[str] = set()
         unique: list[dict] = []
         for q in questions:
@@ -300,6 +301,21 @@ class DiagnosticAgent:
                 seen.add(key)
                 unique.append(q)
         questions = unique
+
+        # Pad to question_count if dedup or bank shortfall left us short
+        if len(questions) < question_count:
+            shortfall = question_count - len(questions)
+            extras = _load_from_question_bank(exam_key, "General", shortfall * 2)
+            for q in extras:
+                key = (q.get("question_text_en") or "").strip().lower()[:120]
+                if key and key not in seen:
+                    seen.add(key)
+                    questions.append(q)
+                    if len(questions) >= question_count:
+                        break
+            logger.info(
+                f"Padded to {len(questions)}/{question_count} questions after dedup shortfall"
+            )
 
         if not questions:
             # Last resort: sample directly from question bank
@@ -369,30 +385,30 @@ class DiagnosticAgent:
         score_pct = total_correct / len(questions) if questions else 0
         student.diagnostic_score = score_pct
 
-        # Progression: decide whether another test is needed
+        # Stage 1 is sufficient to build a study plan — mark diagnostic done immediately
+        # so the student can access the study plan right away. Additional stages are
+        # offered as optional refinements, not blockers.
+        student.diagnostic_done = True
+
         if stage == 3:
-            student.diagnostic_done = True
-            next_steps_msg = "Diagnostic complete! Your weakness map is ready."
+            next_steps_msg = "Diagnostic complete! Your detailed weakness map is ready."
         elif score_pct < 0.40:
-            # Poor score — another full test will refine the weak-area picture
             student.diagnostic_stage += 1
             next_steps_msg = (
-                f"Score: {score_pct*100:.0f}%. "
-                f"Taking one more test (Stage {student.diagnostic_stage}) to confirm weak areas."
+                f"Score: {score_pct*100:.0f}%. Weakness map saved — you can go to Study Plan now, "
+                f"or take Stage {student.diagnostic_stage} for deeper accuracy."
             )
         elif score_pct <= 0.70:
             student.diagnostic_stage += 1
             next_steps_msg = (
-                f"Score: {score_pct*100:.0f}%. "
-                f"Stage {student.diagnostic_stage} will drill into your weak topics. "
-                f"Continue now or start studying?"
+                f"Score: {score_pct*100:.0f}%. Your study plan is ready — or take "
+                f"Stage {student.diagnostic_stage} to refine weak topics further."
             )
         else:
-            # Good score — one targeted refinement pass is optional
             student.diagnostic_stage += 1
             next_steps_msg = (
-                f"Score: {score_pct*100:.0f}%. Strong foundation. "
-                f"Stage {student.diagnostic_stage} will find edge-case gaps. Continue?"
+                f"Score: {score_pct*100:.0f}%. Strong foundation — study plan is ready. "
+                f"Stage {student.diagnostic_stage} available for edge-case refinement."
             )
 
         return tag({
