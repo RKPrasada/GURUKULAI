@@ -38,7 +38,7 @@ cp .env.example .env
 # Add your OPENROUTER_API_KEY to .env
 
 # Start everything
-python launcher_react.py        # starts API :8000 + React :3001, opens browser
+python launcher_react.py        # starts API :8000 + React :3000, opens browser
 ```
 
 Or start manually:
@@ -46,11 +46,11 @@ Or start manually:
 # Terminal 1 — FastAPI backend
 uvicorn api.main:app --reload --port 8000
 
-# Terminal 2 — React frontend (port 3001)
+# Terminal 2 — React frontend (port 3000)
 cd web && npm run dev
 ```
 
-Open http://localhost:3001 — click **Try Demo** to start without Google login.
+Open http://localhost:3000 — click **Try Demo** to start without Google login.
 
 ---
 
@@ -132,7 +132,7 @@ Login: `username=naga` / `password=naga@vidyabot` (auto-seeded on startup)
 ## Architecture
 
 ```
-React 18 Web (:3001)          Flutter Mobile
+React 18 Web (:3000)          Flutter Mobile
      │                             │
      └──────── HTTPS + Bearer ─────┘
                     │
@@ -244,7 +244,7 @@ Copy `.env.example` to `.env`. Only `OPENROUTER_API_KEY` is required to run.
 
 | Platform | Command / File |
 |---|---|
-| Web (React 18) | `python launcher_react.py` → http://localhost:3001 |
+| Web (React 18) | `python launcher_react.py` → http://localhost:3000 |
 | Flutter Mobile (dev) | `cd mobile_app && flutter run` |
 | Android APK (sideload) | [Download from GitHub Releases](https://github.com/RKPrasada/GURUKULAI/releases/tag/v1.0-kaggle) |
 | Rebuild APK | `cd mobile_app && flutter build apk --release` |

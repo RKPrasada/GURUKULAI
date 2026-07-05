@@ -10,7 +10,7 @@ Gurukul AI is a multi-platform adaptive tutoring system built on a FastAPI backe
 
 ```
 ┌─────────────────────────┐   ┌──────────────────────────┐
-│   React 18 Web (:3001)  │   │  Flutter Mobile (Android) │
+│   React 18 Web (:3000)  │   │  Flutter Mobile (Android) │
 │   Vite + Tailwind CSS   │   │  gurukulai.apk            │
 │   Zustand auth store    │   │  Provider state mgmt      │
 │   Axios + Bearer token  │   │  http + flutter_dotenv    │
@@ -252,7 +252,7 @@ python evals/eval_runner.py        # LLM-as-Judge quality scores
 
 | Target | How |
 |---|---|
-| Local dev | `python launcher_react.py` (starts API :8000 + React :3001) |
+| Local dev | `python launcher_react.py` (starts API :8000 + React :3000) |
 | Network dev | `uvicorn api.main:app --host 0.0.0.0 --port 8000` |
 | Cloud (prod) | Google Cloud Run — `gurukulai-backend-ekbh2if4xa-el.a.run.app` — scales to zero, free tier |
 | Android APK | `gurukulai.apk` in project root — sideload, no Play Store needed |

@@ -8,7 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Exams supported:** RRB NTPC · RRB ALP · RRB Group D · RRB Technician · RRB JE · NDA · JEE · NEET
 
-**Stack:** FastAPI (:8000) + React 18 / Vite (:3001) + Flutter (mobile) + OpenRouter LLM API.
+**Stack:** FastAPI (:8000) + React 18 / Vite (:3000) + Flutter (mobile) + OpenRouter LLM API.
 
 ## Commands
 
@@ -16,8 +16,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 # Backend
 uvicorn api.main:app --reload --port 8000
 
-# React frontend (separate terminal) — port 3001 because :3000 is used by another project
-cd web && npm run dev                     # vite.config.ts has port: 3001
+# React frontend (separate terminal)
+cd web && npm run dev                     # vite.config.ts has port: 3000
 
 # Combined launcher
 python launcher_react.py                  # starts both, opens browser
@@ -209,7 +209,7 @@ Questions come from Gemini/OpenRouter first; `data/question_banks/{exam}.json` i
 
 ## React Frontend
 
-- Port **3001** (vite.config.ts) — port 3000 is used by a separate exam-prep project on this machine
+- Port **3000** (vite.config.ts)
 - `@/` alias → `web/src/`
 - Zustand auth store (`web/src/store/auth.ts`) persisted to localStorage; Axios interceptor attaches Bearer token, 401 → auto-logout
 - `ContentAgent` returns `{ notes: "markdown string", ... }` — `StudyPage` reads `response.data.notes`, not an array

@@ -22,7 +22,7 @@ if (BASE_DIR / ".env").exists():
     load_dotenv(BASE_DIR / ".env")
 
 API_PORT = int(os.getenv("API_PORT", "8000"))
-FRONTEND_PORT = int(os.getenv("FRONTEND_PORT", "3001"))
+FRONTEND_PORT = int(os.getenv("FRONTEND_PORT", "3000"))
 API_URL = f"http://localhost:{API_PORT}"
 FRONTEND_URL = f"http://localhost:{FRONTEND_PORT}"
 
