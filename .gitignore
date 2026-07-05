@@ -76,3 +76,4 @@ mobile_app/.flutter-plugins-dependencies
 # PyInstaller packaging output
 packaging/dist/
 packaging/build/
+.claude/RULES.md
