@@ -2728,5 +2728,785 @@
     "correct_index": 0,
     "explanation": "cos 90° = 0. Any number multiplied by 0 is 0.",
     "id": "rrb_ntpc_mat_trigon_277b45"
+  },
+  {
+    "id": "rrb_ntpc_1f51b0f8",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding-Decoding",
+    "difficulty": 1,
+    "question_text": "In a certain code each letter of a word is replaced by the next letter in the English alphabet. If 'MANGO' is coded as 'NBOHP', how will 'APPLE' be coded?",
+    "options": [
+      "BQQMF",
+      "BQQME",
+      "BQQMG",
+      "BQQMH"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter shifts forward by one: A→B, P→Q, P→Q, L→M, E→F → BQQMF."
+  },
+  {
+    "id": "rrb_ntpc_84a06f56",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Blood Relations",
+    "difficulty": 2,
+    "question_text": "A is the brother of B. C is the father of A. D is the sister of C. How is D related to B?",
+    "options": [
+      "Mother",
+      "Aunt",
+      "Grandmother",
+      "Sister"
+    ],
+    "correct_index": 1,
+    "explanation": "C is the father of A and B, so C is B's father. D is C's sister, making D the aunt of B."
+  },
+  {
+    "id": "rrb_ntpc_7ecbe2b7",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Syllogism",
+    "difficulty": 2,
+    "question_text": "Statements:\n1. All pens are pencils.\n2. Some pencils are erasers.\nConclusions:\nI. Some pens are erasers.\nII. Some erasers are pens.\nWhich conclusion(s) follow?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct_index": 3,
+    "explanation": "From the statements we only know that some pencils are erasers; there is no definite link between pens and erasers, so neither conclusion follows."
+  },
+  {
+    "id": "rrb_ntpc_2a96063c",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Direction & Distance",
+    "difficulty": 1,
+    "question_text": "Ravi walks 10 m north, turns right and walks 5 m, then turns right again and walks 10 m. How far is he from his starting point?",
+    "options": [
+      "5 m",
+      "10 m",
+      "15 m",
+      "20 m"
+    ],
+    "correct_index": 0,
+    "explanation": "The north and south legs cancel (10 m each). He ends up 5 m east of the start, so the straight‑line distance is 5 m."
+  },
+  {
+    "id": "rrb_ntpc_775d452f",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Series",
+    "difficulty": 2,
+    "question_text": "Find the next term in the series: 2, 6, 12, 20, 30, ?",
+    "options": [
+      "40",
+      "42",
+      "44",
+      "46"
+    ],
+    "correct_index": 1,
+    "explanation": "The nth term follows n(n+1): 1×2=2, 2×3=6, 3×4=12, 4×5=20, 5×6=30, 6×7=42."
+  },
+  {
+    "id": "rrb_ntpc_34967fa3",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "What is the smallest positive integer that is divisible by 6, 8, and 9?",
+    "options": [
+      "36",
+      "72",
+      "144",
+      "216"
+    ],
+    "correct_index": 1,
+    "explanation": "LCM(6,8,9) = 2^3 * 3^2 = 72."
+  },
+  {
+    "id": "rrb_ntpc_c4b588a7",
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 2,
+    "question_text": "In a right triangle, if sin θ = 3/5, what is cos θ?",
+    "options": [
+      "4/5",
+      "3/4",
+      "5/4",
+      "2/5"
+    ],
+    "correct_index": 0,
+    "explanation": "sin²θ + cos²θ = 1 ⇒ cosθ = √(1 - 9/25) = 4/5 (θ acute)."
+  },
+  {
+    "id": "rrb_ntpc_3bcbdd65",
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "difficulty": 1,
+    "question_text": "The area of a circle is 154 cm². What is its radius? (Take π = 22/7)",
+    "options": [
+      "3.5 cm",
+      "7 cm",
+      "10 cm",
+      "14 cm"
+    ],
+    "correct_index": 1,
+    "explanation": "Area = πr² ⇒ r² = 154 × 7/22 = 49 ⇒ r = 7 cm."
+  },
+  {
+    "id": "rrb_ntpc_1acba108",
+    "subject": "Mathematics",
+    "topic": "Percentage",
+    "difficulty": 2,
+    "question_text": "A shopkeeper marks his goods 40% above cost price and then gives a discount of 10%. What is his profit percent?",
+    "options": [
+      "24%",
+      "26%",
+      "28%",
+      "30%"
+    ],
+    "correct_index": 1,
+    "explanation": "Let CP = 100. MP = 140. SP = 140 × 0.9 = 126. Profit = 26 ⇒ 26%."
+  },
+  {
+    "id": "rrb_ntpc_369a80cd",
+    "subject": "Mathematics",
+    "topic": "Time & Work",
+    "difficulty": 3,
+    "question_text": "A can complete a work in 12 days, B in 18 days. They work together for 4 days, then A leaves. How many more days will B take to finish the remaining work?",
+    "options": [
+      "8 days",
+      "9 days",
+      "10 days",
+      "11 days"
+    ],
+    "correct_index": 0,
+    "explanation": "Combined rate = 1/12 + 1/18 = 5/36 per day. In 4 days they finish 20/36 = 5/9. Remaining = 4/9. B's rate = 1/18 ⇒ days = (4/9) ÷ (1/18) = 8 days."
+  },
+  {
+    "id": "rrb_ntpc_13ab5307",
+    "subject": "General Awareness",
+    "topic": "History",
+    "difficulty": 1,
+    "question_text": "Who was the founder of the Mughal Empire in India?",
+    "options": [
+      "Babur",
+      "Akbar",
+      "Humayun",
+      "Shah Jahan"
+    ],
+    "correct_index": 0,
+    "explanation": "Babur established the Mughal Empire after his victory at the First Battle of Panipat in 1526."
+  },
+  {
+    "id": "rrb_ntpc_1c212ef1",
+    "subject": "General Awareness",
+    "topic": "History",
+    "difficulty": 2,
+    "question_text": "The Jallianwala Bagh massacre took place in which year?",
+    "options": [
+      "1915",
+      "1919",
+      "1921",
+      "1925"
+    ],
+    "correct_index": 1,
+    "explanation": "The massacre occurred on 13 April 1919 in Amritsar, Punjab, under the orders of Brigadier-General Reginald Dyer."
+  },
+  {
+    "id": "rrb_ntpc_0efb7949",
+    "subject": "General Awareness",
+    "topic": "Geography",
+    "difficulty": 2,
+    "question_text": "The state with the largest area in India is?",
+    "options": [
+      "Rajasthan",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Uttar Pradesh"
+    ],
+    "correct_index": 0,
+    "explanation": "Rajasthan covers approximately 342,239 km², making it the largest Indian state by area."
+  },
+  {
+    "id": "rrb_ntpc_93f0a529",
+    "subject": "General Awareness",
+    "topic": "Polity",
+    "difficulty": 1,
+    "question_text": "Who is the ex-officio Chairman of the Rajya Sabha?",
+    "options": [
+      "President",
+      "Vice President",
+      "Prime Minister",
+      "Speaker of Lok Sabha"
+    ],
+    "correct_index": 1,
+    "explanation": "The Vice President of India serves as the ex-officio Chairman of the Rajya Sabha under Article 64 of the Constitution."
+  },
+  {
+    "id": "rrb_ntpc_bebe9724",
+    "subject": "General Awareness",
+    "topic": "Science",
+    "difficulty": 1,
+    "question_text": "Which gas is most abundant in Earth's atmosphere?",
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Carbon Dioxide",
+      "Argon"
+    ],
+    "correct_index": 1,
+    "explanation": "Nitrogen constitutes about 78% of the volume of dry air, making it the most abundant gas."
+  },
+  {
+    "id": "rrb_ntpc_59fba774",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "What is the smallest positive integer that is divisible by both 12 and 18?",
+    "options": [
+      "24",
+      "36",
+      "48",
+      "72"
+    ],
+    "correct_index": 1,
+    "explanation": "LCM of 12 and 18 = 36, because 12 = 2^2 * 3, 18 = 2 * 3^2, LCM = 2^2 * 3^2 = 36."
+  },
+  {
+    "id": "rrb_ntpc_476ed3ab",
+    "subject": "Mathematics",
+    "topic": "Percentage",
+    "difficulty": 2,
+    "question_text": "A product's price is increased by 20% and then decreased by 20%. What is the net percentage change?",
+    "options": [
+      "4% increase",
+      "4% decrease",
+      "no change",
+      "2% decrease"
+    ],
+    "correct_index": 1,
+    "explanation": "Net factor = 1.2 * 0.8 = 0.96 => 4% decrease."
+  },
+  {
+    "id": "rrb_ntpc_6b36e037",
+    "subject": "Mathematics",
+    "topic": "Time & Work",
+    "difficulty": 2,
+    "question_text": "A can complete a work in 10 days, B in 15 days. How many days will they take to complete the work together?",
+    "options": [
+      "6 days",
+      "5 days",
+      "8 days",
+      "4 days"
+    ],
+    "correct_index": 0,
+    "explanation": "Combined rate = 1/10 + 1/15 = 5/30 = 1/6 => 6 days."
+  },
+  {
+    "id": "rrb_ntpc_82fab23e",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Blood Relations",
+    "difficulty": 2,
+    "question_text": "A is the brother of B. B is the mother of C. How is A related to C?",
+    "options": [
+      "Father",
+      "Uncle",
+      "Grandfather",
+      "Brother"
+    ],
+    "correct_index": 1,
+    "explanation": "A is the brother of B, and B is the mother of C, so A is C's uncle."
+  },
+  {
+    "id": "rrb_ntpc_bf5e95ff",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Direction & Distance",
+    "difficulty": 3,
+    "question_text": "Starting from point O, a person walks 5 km north, then 3 km east, then 2 km south. What is the straight‑line distance from the final position back to O?",
+    "options": [
+      "4 km",
+      "5 km",
+      "6 km",
+      "7 km"
+    ],
+    "correct_index": 0,
+    "explanation": "Net north displacement = 5 km − 2 km = 3 km. East displacement = 3 km. Distance = √(3² + 3²) = √18 ≈ 4.24 km, nearest option 4 km."
+  },
+  {
+    "id": "rrb_ntpc_b4e946cc",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding-Decoding",
+    "difficulty": 2,
+    "question_text": "If in a certain code language, 'MANGO' is written as 'NBOHP', how will 'APPLE' be written in that code?",
+    "options": [
+      "BQQMF",
+      "BQQMG",
+      "BQQME",
+      "BQQMD"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter is shifted one place forward in the alphabet (M→N, A→B, N→O, G→H, O→P). Applying the same rule to APPLE gives BQQMF."
+  },
+  {
+    "id": "rrb_ntpc_02f85118",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Blood Relations",
+    "difficulty": 1,
+    "question_text": "P is the father of Q. R is the sister of Q. S is the mother of R. How is S related to P?",
+    "options": [
+      "Sister",
+      "Mother",
+      "Wife",
+      "Daughter"
+    ],
+    "correct_index": 2,
+    "explanation": "Since R and Q are siblings, they share the same parents. S is the mother of R, therefore S is also the mother of Q and the wife of P."
+  },
+  {
+    "id": "rrb_ntpc_81c2eb8c",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Syllogism",
+    "difficulty": 3,
+    "question_text": "Statements:\n1. All pens are pencils.\n2. Some pencils are erasers.\n3. No eraser is a marker.\nConclusions:\nI. Some pens are erasers.\nII. No pen is a marker.\nWhich conclusion(s) logically follow?",
+    "options": [
+      "Only I",
+      "Only II",
+      "Both I and II",
+      "Neither I nor II"
+    ],
+    "correct_index": 3,
+    "explanation": "From the statements we cannot deduce that some pens are erasers (pens could be a subset of pencils that are not erasers). Also, pens could be markers through pencils that are not erasers, so neither conclusion is certain."
+  },
+  {
+    "id": "rrb_ntpc_af6308be",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Direction & Distance",
+    "difficulty": 1,
+    "question_text": "Ravi walks 5 km east, then 3 km north, then 5 km west. What is his straight‑line distance from the starting point?",
+    "options": [
+      "3 km",
+      "5 km",
+      "8 km",
+      "13 km"
+    ],
+    "correct_index": 0,
+    "explanation": "The east and west walks cancel each other (5 km east + 5 km west = 0). He is only 3 km north of the start, so the distance is 3 km."
+  },
+  {
+    "id": "rrb_ntpc_4e229850",
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 2,
+    "question_text": "If sin θ = 3/5 and θ is acute, what is cos θ?",
+    "options": [
+      "4/5",
+      "3/4",
+      "5/4",
+      "1/5"
+    ],
+    "correct_index": 0,
+    "explanation": "For an acute angle, cos θ = √(1 - sin²θ) = √(1 - 9/25) = √(16/25) = 4/5."
+  },
+  {
+    "id": "rrb_ntpc_f6fbef0e",
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "difficulty": 1,
+    "question_text": "Find the area of a circle with radius 7 cm (use π = 22/7).",
+    "options": [
+      "154",
+      "308",
+      "44",
+      "22"
+    ],
+    "correct_index": 0,
+    "explanation": "Area = πr² = (22/7) × 7² = (22/7) × 49 = 22 × 7 = 154 cm²."
+  },
+  {
+    "id": "rrb_ntpc_a0a2bf58",
+    "subject": "Mathematics",
+    "topic": "Percentage",
+    "difficulty": 2,
+    "question_text": "A shopkeeper marks up the cost price by 25% and then allows a discount of 10%. What is his net profit percent?",
+    "options": [
+      "12.5%",
+      "15%",
+      "10%",
+      "12%"
+    ],
+    "correct_index": 0,
+    "explanation": "Let CP = 100. MP = 125. SP after 10% discount = 125 × 0.9 = 112.5. Profit = 12.5 → Profit% = 12.5%."
+  },
+  {
+    "id": "rrb_ntpc_6d5c1815",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding-Decoding",
+    "difficulty": 1,
+    "question_text": "If 'CAT' is coded as 'DBU', how is 'DOG' coded?",
+    "options": [
+      "EPG",
+      "EPH",
+      "EPF",
+      "EPI"
+    ],
+    "correct_index": 1,
+    "explanation": "Each letter is shifted forward by one position in the alphabet: D→E, O→P, G→H, giving 'EPH'."
+  },
+  {
+    "id": "rrb_ntpc_dbc472ff",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Blood Relations",
+    "difficulty": 2,
+    "question_text": "A is the brother of B. C is the mother of A. D is the father of C. How is D related to B?",
+    "options": [
+      "Grandfather",
+      "Father",
+      "Uncle",
+      "Brother"
+    ],
+    "correct_index": 0,
+    "explanation": "C is the mother of A and B (since A is B's brother). D is C's father, making D the maternal grandfather of B."
+  },
+  {
+    "id": "rrb_ntpc_7c132678",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Syllogism",
+    "difficulty": 2,
+    "question_text": "Statements: All pens are pencils. Some pencils are erasers. Conclusions: I. Some pens are erasers. II. Some erasers are pens. Which conclusion(s) follow?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct_index": 3,
+    "explanation": "From 'All pens are pencils' and 'Some pencils are erasers', we cannot definitively conclude that some pens are erasers; the erasers could be among pencils that are not pens. Hence neither conclusion follows."
+  },
+  {
+    "id": "rrb_ntpc_209aea2e",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Direction & Distance",
+    "difficulty": 2,
+    "question_text": "Starting from point X, Ravi walks 5 km North, then turns right and walks 3 km, then turns left and walks 2 km. What is his straight-line distance from point X?",
+    "options": [
+      "7 km",
+      "8 km",
+      "√58 km",
+      "10 km"
+    ],
+    "correct_index": 2,
+    "explanation": "Final coordinates relative to X: (3 km East, 7 km North). Distance = √(3² + 7²) = √58 km."
+  },
+  {
+    "id": "rrb_ntpc_d7bff3ba",
+    "subject": "General Awareness",
+    "topic": "History",
+    "difficulty": 1,
+    "question_text": "In which year did the Battle of Plassey take place?",
+    "options": [
+      "1757",
+      "1764",
+      "1770",
+      "1780"
+    ],
+    "correct_index": 0,
+    "explanation": "The Battle of Plassey was fought on 23 June 1757 between the British East India Company and the Nawab of Bengal."
+  },
+  {
+    "id": "rrb_ntpc_2c2cb7f0",
+    "subject": "General Awareness",
+    "topic": "History",
+    "difficulty": 2,
+    "question_text": "Who was the first Governor‑General of independent India?",
+    "options": [
+      "Lord Mountbatten",
+      "C. Rajagopalachari",
+      "Jawaharlal Nehru",
+      "Sardar Patel"
+    ],
+    "correct_index": 1,
+    "explanation": "C. Rajagopalachari served as the first and only Indian Governor‑General of India from 1948 to 1950."
+  },
+  {
+    "id": "rrb_ntpc_1827bf0f",
+    "subject": "General Awareness",
+    "topic": "Geography",
+    "difficulty": 1,
+    "question_text": "Which river is known as the 'Sorrow of Bihar' due to its frequent flooding?",
+    "options": [
+      "Kosi",
+      "Gandak",
+      "Mahananda",
+      "Bagmati"
+    ],
+    "correct_index": 0,
+    "explanation": "The Kosi River changes course often and causes severe floods in Bihar, earning it the nickname."
+  },
+  {
+    "id": "rrb_ntpc_27a8fc32",
+    "subject": "General Awareness",
+    "topic": "Geography",
+    "difficulty": 2,
+    "question_text": "What is the approximate length of India's coastline?",
+    "options": [
+      "5,500 km",
+      "7,500 km",
+      "9,500 km",
+      "11,500 km"
+    ],
+    "correct_index": 1,
+    "explanation": "India's coastline measures about 7,516 km, commonly rounded to 7,500 km."
+  },
+  {
+    "id": "rrb_ntpc_022c0cf8",
+    "subject": "General Awareness",
+    "topic": "Polity",
+    "difficulty": 2,
+    "question_text": "Under which Article of the Indian Constitution is the Right to Equality guaranteed?",
+    "options": [
+      "Article 14",
+      "Article 15",
+      "Article 16",
+      "Article 17"
+    ],
+    "correct_index": 0,
+    "explanation": "Article 14 ensures equality before the law and equal protection of the laws within the territory of India."
+  },
+  {
+    "id": "rrb_ntpc_bd0e4704",
+    "subject": "General Awareness",
+    "topic": "Economics",
+    "difficulty": 3,
+    "question_text": "What is the base year for the new Consumer Price Index (CPI) series introduced in India in 2020?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correct_index": 2,
+    "explanation": "The revised CPI (Combined) series uses 2012 as the base year (2012 = 100)."
+  },
+  {
+    "id": "rrb_ntpc_caf9785d",
+    "subject": "General Awareness",
+    "topic": "Science",
+    "difficulty": 2,
+    "question_text": "Which planet in the solar system has the highest average surface temperature?",
+    "options": [
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Jupiter"
+    ],
+    "correct_index": 1,
+    "explanation": "Venus has a thick carbon‑dioxide atmosphere creating a strong greenhouse effect, giving it the highest mean surface temperature (~462 °C)."
+  },
+  {
+    "id": "rrb_ntpc_6fc7912e",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "What is the HCF of 84 and 126?",
+    "options": [
+      "21",
+      "42",
+      "63",
+      "84"
+    ],
+    "correct_index": 1,
+    "explanation": "Prime factors: 84 = 2²·3·7, 126 = 2·3²·7. Common factors: 2·3·7 = 42."
+  },
+  {
+    "id": "rrb_ntpc_f23fd800",
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 1,
+    "question_text": "Solve for x: 3x - 7 = 2x + 5",
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "correct_index": 1,
+    "explanation": "Subtract 2x from both sides: x - 7 = 5 → x = 12."
+  },
+  {
+    "id": "rrb_ntpc_f9bb25e4",
+    "subject": "Mathematics",
+    "topic": "Percentage",
+    "difficulty": 2,
+    "question_text": "A shopkeeper marks his goods 20% above cost price and allows a discount of 10%. What is his profit percent?",
+    "options": [
+      "8%",
+      "10%",
+      "12%",
+      "15%"
+    ],
+    "correct_index": 0,
+    "explanation": "Let CP = 100. MP = 120. SP after 10% discount = 108. Profit = 8 → 8%."
+  },
+  {
+    "id": "rrb_ntpc_a4cde844",
+    "subject": "Mathematics",
+    "topic": "Time & Work",
+    "difficulty": 3,
+    "question_text": "A can complete a work in 12 days, B in 18 days. They work together for 4 days, then A leaves. In how many more days will B finish the remaining work?",
+    "options": [
+      "6 days",
+      "8 days",
+      "10 days",
+      "12 days"
+    ],
+    "correct_index": 1,
+    "explanation": "A's rate = 1/12, B's = 1/18. Together 4 days: 4(1/12+1/18)=5/9 work done. Remaining = 4/9. B alone: (4/9)/(1/18)=8 days."
+  },
+  {
+    "id": "rrb_ntpc_fb9646c1",
+    "subject": "General Awareness",
+    "topic": "History",
+    "difficulty": 2,
+    "question_text": "Who was the first President of the Indian National Congress?",
+    "options": [
+      "Womesh Chunder Bonnerjee",
+      "Dadabhai Naoroji",
+      "Badruddin Tyabji",
+      "Surendranath Banerjee"
+    ],
+    "correct_index": 0,
+    "explanation": "Womesh Chunder Bonnerjee presided over the first session of the Indian National Congress in 1885."
+  },
+  {
+    "id": "rrb_ntpc_cdf9087b",
+    "subject": "General Awareness",
+    "topic": "History",
+    "difficulty": 3,
+    "question_text": "The Battle of Plassey was fought in which year?",
+    "options": [
+      "1757",
+      "1764",
+      "1775",
+      "1780"
+    ],
+    "correct_index": 0,
+    "explanation": "The Battle of Plassey took place on 23 June 1757, marking the beginning of British colonial rule in India."
+  },
+  {
+    "id": "rrb_ntpc_4691a3b7",
+    "subject": "General Awareness",
+    "topic": "Geography",
+    "difficulty": 1,
+    "question_text": "Which river forms the largest delta in the world?",
+    "options": [
+      "Ganga",
+      "Brahmaputra",
+      "Ganga-Brahmaputra (Sundarbans)",
+      "Indus"
+    ],
+    "correct_index": 2,
+    "explanation": "The combined Ganga-Brahmaputra delta (Sundarbans) is the world's largest river delta."
+  },
+  {
+    "id": "rrb_ntpc_d5ecfd8e",
+    "subject": "General Awareness",
+    "topic": "Geography",
+    "difficulty": 2,
+    "question_text": "The Tropic of Cancer passes through which of the following Indian states?",
+    "options": [
+      "Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura, Mizoram",
+      "Maharashtra, Karnataka, Andhra Pradesh, Tamil Nadu",
+      "Punjab, Haryana, Uttar Pradesh, Bihar",
+      "Kerala, Goa, Maharashtra, Gujarat"
+    ],
+    "correct_index": 0,
+    "explanation": "The Tropic of Cancer (23.5° N) crosses eight Indian states: Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura, and Mizoram."
+  },
+  {
+    "id": "rrb_ntpc_0d93ead8",
+    "subject": "General Awareness",
+    "topic": "Polity",
+    "difficulty": 2,
+    "question_text": "What is the maximum number of members in the Lok Sabha as per the Constitution?",
+    "options": [
+      "545",
+      "552",
+      "550",
+      "543"
+    ],
+    "correct_index": 1,
+    "explanation": "Article 81 provides for a maximum of 552 members (530 from states, 20 from Union Territories, and 2 nominated Anglo-Indians, though the nomination provision was abolished in 2020)."
+  },
+  {
+    "id": "rrb_ntpc_482bfd21",
+    "subject": "General Awareness",
+    "topic": "Economics",
+    "difficulty": 1,
+    "question_text": "Which of the following is a direct tax in India?",
+    "options": [
+      "Goods and Services Tax (GST)",
+      "Excise Duty",
+      "Income Tax",
+      "Customs Duty"
+    ],
+    "correct_index": 2,
+    "explanation": "Income Tax is levied directly on the income of individuals and entities, making it a direct tax."
+  },
+  {
+    "id": "rrb_ntpc_3c065928",
+    "subject": "General Awareness",
+    "topic": "Science",
+    "difficulty": 3,
+    "question_text": "Which element has the highest electronegativity on the Pauling scale?",
+    "options": [
+      "Oxygen",
+      "Fluorine",
+      "Chlorine",
+      "Nitrogen"
+    ],
+    "correct_index": 1,
+    "explanation": "Fluorine has the highest Pauling electronegativity value of 3.98."
+  },
+  {
+    "id": "rrb_ntpc_07071af8",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding-Decoding",
+    "difficulty": 1,
+    "question_text": "In a certain code language, each letter of a word is replaced by the next letter in the English alphabet. If 'MATH' is coded as 'NBUI', how will 'LOGIC' be coded?",
+    "options": [
+      "MPHJD",
+      "MPHJC",
+      "MPHJE",
+      "MPHJF"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter is shifted forward by one position: L→M, O→P, G→H, I→J, C→D, giving 'MPHJD'."
+  },
+  {
+    "id": "rrb_ntpc_34873ced",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Syllogism",
+    "difficulty": 3,
+    "question_text": "Statements: All cats are mammals. Some mammals are dogs. Conclusions: I. Some cats are dogs. II. Some dogs are cats. Which conclusion(s) follow?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct_index": 3,
+    "explanation": "From the given statements, there is no definite overlap between cats and dogs; therefore neither conclusion can be logically deduced."
+  },
+  {
+    "id": "rrb_ntpc_6bbab11b",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Direction & Distance",
+    "difficulty": 2,
+    "question_text": "A man walks 5 km north, turns right and walks 3 km, then turns right again and walks 5 km. What is the straight-line distance between his final position and the starting point?",
+    "options": [
+      "3 km",
+      "5 km",
+      "8 km",
+      "13 km"
+    ],
+    "correct_index": 0,
+    "explanation": "The northward and southward legs cancel (5 km each). The net displacement is 3 km east, so the distance is 3 km."
   }
 ]

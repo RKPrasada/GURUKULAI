@@ -19,3 +19,4 @@ matplotlib==3.9.0
 plotly==5.22.0
 pandas==2.2.2
 pyinstaller==6.6.0
+email-validator>=2.0.0

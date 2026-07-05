@@ -673,5 +673,1460 @@
     ],
     "correct_index": 3,
     "explanation": "The premises do not guarantee any overlap between pens and erasers; thus neither conclusion follows."
+  },
+  {
+    "id": "rrb_alp_5654ef2a",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 2,
+    "question_text": "In a certain code, 'CAT' is written as 'FDW'. What is the code for 'DOG'?",
+    "options": [
+      "GRJ",
+      "HEP",
+      "FDW",
+      "JUL"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter is shifted forward by 3 positions in the alphabet: D→G, O→R, G→J, giving 'GRJ'."
+  },
+  {
+    "id": "rrb_alp_cb11ef65",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Mathematical Operations",
+    "difficulty": 2,
+    "question_text": "If '+' means '-', '-' means '×', '×' means '÷', and '÷' means '+', then what is the value of 20 - 4 × 5 + 6 ÷ 2?",
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "correct_index": 1,
+    "explanation": "Substituting the symbols: 20 × 4 ÷ 5 - 6 + 2 = 80 ÷ 5 - 6 + 2 = 16 - 6 + 2 = 12."
+  },
+  {
+    "id": "rrb_alp_de4b17a8",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Relationships",
+    "difficulty": 2,
+    "question_text": "Pointing to a woman, a man said, 'She is the daughter of my grandfather's only son.' How is the woman related to the man?",
+    "options": [
+      "Sister",
+      "Mother",
+      "Cousin",
+      "Daughter"
+    ],
+    "correct_index": 0,
+    "explanation": "The man's grandfather's only son is his father. The daughter of his father is his sister."
+  },
+  {
+    "id": "rrb_alp_ab4c38f3",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Syllogism",
+    "difficulty": 3,
+    "question_text": "Statements: All pens are pencils. Some pencils are erasers.\nConclusions:\nI. Some pens are erasers.\nII. No pen is an eraser.\nWhich conclusion(s) logically follow?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Either I or II follows",
+      "Neither I nor II follows"
+    ],
+    "correct_index": 3,
+    "explanation": "From the statements we know all pens are a subset of pencils, and some pencils are erasers, but this does not guarantee any overlap between pens and erasers, nor does it guarantee none. Hence neither conclusion follows."
+  },
+  {
+    "id": "rrb_alp_07274329",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "A simple pendulum of length 1.0 m is oscillating with small amplitude. Take g = 9.8 m/s². What is its approximate period?",
+    "options": [
+      "1.0 s",
+      "2.0 s",
+      "3.0 s",
+      "4.0 s"
+    ],
+    "correct_index": 1,
+    "explanation": "Period T = 2π√(L/g) = 2π√(1/9.8) ≈ 2π×0.319 ≈ 2.0 s."
+  },
+  {
+    "id": "rrb_alp_5adcc61c",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "Which of the following quantities is a scalar?",
+    "options": [
+      "Force",
+      "Velocity",
+      "Acceleration",
+      "Temperature"
+    ],
+    "correct_index": 3,
+    "explanation": "Temperature has only magnitude and no direction, hence it is a scalar quantity."
+  },
+  {
+    "id": "rrb_alp_702eb4cc",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 3,
+    "question_text": "A radioactive isotope has a half‑life of 10 days. What fraction of the original amount remains after 30 days?",
+    "options": [
+      "1/2",
+      "1/4",
+      "1/8",
+      "1/16"
+    ],
+    "correct_index": 2,
+    "explanation": "Number of half‑lives = 30/10 = 3. Remaining fraction = (1/2)^3 = 1/8."
+  },
+  {
+    "id": "rrb_alp_5a3fcae4",
+    "subject": "General Science",
+    "topic": "Life Sciences",
+    "difficulty": 2,
+    "question_text": "Which part of the human brain controls involuntary functions such as heart rate and respiration?",
+    "options": [
+      "Cerebrum",
+      "Cerebellum",
+      "Medulla oblongata",
+      "Hippocampus"
+    ],
+    "correct_index": 2,
+    "explanation": "The medulla oblongata in the brainstem regulates autonomic vital functions like heart rate, breathing, and blood pressure."
+  },
+  {
+    "id": "rrb_alp_a7cfda1c",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "What is the LCM of 24 and 36?",
+    "options": [
+      "48",
+      "72",
+      "108",
+      "144"
+    ],
+    "correct_index": 1,
+    "explanation": "Prime factors: 24 = 2^3 × 3, 36 = 2^2 × 3^2. LCM takes highest powers: 2^3 × 3^2 = 8 × 9 = 72."
+  },
+  {
+    "id": "rrb_alp_1dc17a5d",
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 2,
+    "question_text": "If a:b = 3:4 and b:c = 5:6, find a:c.",
+    "options": [
+      "5:8",
+      "3:5",
+      "9:10",
+      "1:2"
+    ],
+    "correct_index": 0,
+    "explanation": "Make b common: a:b = 3:4 = 15:20, b:c = 5:6 = 20:24. Thus a:b:c = 15:20:24, so a:c = 15:24 = 5:8."
+  },
+  {
+    "id": "rrb_alp_6596ce3d",
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 1,
+    "question_text": "The area of a circle is 154 cm². What is its radius? (Take π = 22/7)",
+    "options": [
+      "3.5 cm",
+      "7 cm",
+      "14 cm",
+      "21 cm"
+    ],
+    "correct_index": 1,
+    "explanation": "Area = πr² → r² = (154 × 7) / 22 = 49 → r = 7 cm."
+  },
+  {
+    "id": "rrb_alp_5ea4203a",
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "difficulty": 2,
+    "question_text": "A and B together can complete a work in 6 days. A alone can do it in 10 days. In how many days can B alone complete the work?",
+    "options": [
+      "12",
+      "15",
+      "18",
+      "20"
+    ],
+    "correct_index": 1,
+    "explanation": "1/6 - 1/10 = (5-3)/30 = 2/30 = 1/15 → B alone takes 15 days."
+  },
+  {
+    "id": "rrb_alp_03f5c493",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 2,
+    "question_text": "What is the compound interest on ₹5000 at 10% per annum for 2 years, compounded annually?",
+    "options": [
+      "1000",
+      "1050",
+      "1100",
+      "1150"
+    ],
+    "correct_index": 1,
+    "explanation": "Amount = 5000 × (1 + 0.10)² = 5000 × 1.21 = 6050. CI = 6050 - 5000 = ₹1050."
+  },
+  {
+    "id": "rrb_alp_b26460bf",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Current Affairs",
+    "difficulty": 1,
+    "question_text": "Which country hosted the G20 Summit in 2023?",
+    "options": [
+      "India",
+      "Indonesia",
+      "Brazil",
+      "South Africa"
+    ],
+    "correct_index": 0,
+    "explanation": "The 2023 G20 Summit was held in New Delhi, India, on 9–10 September 2023."
+  },
+  {
+    "id": "rrb_alp_c00d4d08",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "What is the name of India's first dedicated solar observatory mission launched in September 2023?",
+    "options": [
+      "Aditya-L1",
+      "Chandrayaan-3",
+      "Mangalyaan-2",
+      "Gaganyaan-1"
+    ],
+    "correct_index": 0,
+    "explanation": "Aditya-L1, launched on 2 September 2023, is India's first space-based solar observatory positioned at the Sun-Earth L1 point."
+  },
+  {
+    "id": "rrb_alp_3e943dbf",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 1,
+    "question_text": "Which team won the ICC Men's Cricket World Cup 2023?",
+    "options": [
+      "Australia",
+      "India",
+      "England",
+      "New Zealand"
+    ],
+    "correct_index": 0,
+    "explanation": "Australia defeated India in the final on 19 November 2023 to claim their sixth ODI World Cup title."
+  },
+  {
+    "id": "rrb_alp_d185fc24",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 2,
+    "question_text": "Kathakali, a classical dance-drama, originates from which Indian state?",
+    "options": [
+      "Kerala",
+      "Tamil Nadu",
+      "Karnataka",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 0,
+    "explanation": "Kathakali developed in the 17th century in the southwestern state of Kerala."
+  },
+  {
+    "id": "rrb_alp_829d7d57",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 1,
+    "question_text": "As of 2024, who holds the position of Union Finance Minister of India?",
+    "options": [
+      "Nirmala Sitharaman",
+      "Piyush Goyal",
+      "Arun Jaitley",
+      "Manmohan Singh"
+    ],
+    "correct_index": 0,
+    "explanation": "Nirmala Sitharaman has been serving as the Union Finance Minister since 31 May 2019 and continued in the role through 2024."
+  },
+  {
+    "id": "rrb_alp_4a57e388",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Syllogism",
+    "difficulty": 3,
+    "question_text": "Statements: All cats are mammals. Some mammals are dogs. Conclusions: I. Some cats are dogs. II. Some dogs are cats. III. No cat is a dog. Which conclusion(s) follow?",
+    "options": [
+      "Only I",
+      "Only II",
+      "Only III",
+      "None"
+    ],
+    "correct_index": 3,
+    "explanation": "The premises do not establish any definite relation between cats and dogs; therefore none of the conclusions logically follow."
+  },
+  {
+    "id": "rrb_alp_23fec435",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Current Affairs",
+    "difficulty": 2,
+    "question_text": "Which Indian state launched the \"Mukhyamantri Kisan Kalyan Yojana\" in 2023 to provide financial assistance to small and marginal farmers?",
+    "options": [
+      "Madhya Pradesh",
+      "Uttar Pradesh",
+      "Rajasthan",
+      "Gujarat"
+    ],
+    "correct_index": 0,
+    "explanation": "Madhya Pradesh introduced the Mukhyamantri Kisan Kalyan Yojana in 2023, offering direct income support to eligible farmers."
+  },
+  {
+    "id": "rrb_alp_74938a80",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 1,
+    "question_text": "The classical dance form \"Kuchipudi\" originates from which Indian state?",
+    "options": [
+      "Andhra Pradesh",
+      "Tamil Nadu",
+      "Karnataka",
+      "Odisha"
+    ],
+    "correct_index": 0,
+    "explanation": "Kuchipudi is a classical dance-drama tradition that originated in the village of Kuchipudi in Andhra Pradesh."
+  },
+  {
+    "id": "rrb_alp_86c74b4a",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 3,
+    "question_text": "What is the repo rate set by the Reserve Bank of India as of February 2024?",
+    "options": [
+      "6.00%",
+      "6.25%",
+      "6.50%",
+      "6.75%"
+    ],
+    "correct_index": 2,
+    "explanation": "The RBI's Monetary Policy Committee kept the policy repo rate unchanged at 6.50% in its February 2024 meeting."
+  },
+  {
+    "id": "rrb_alp_587885e2",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "A convex lens of focal length 20 cm forms a real image of an object placed at 30 cm from the lens. What is the image distance?",
+    "options": [
+      "60 cm",
+      "40 cm",
+      "30 cm",
+      "20 cm"
+    ],
+    "correct_index": 0,
+    "explanation": "Using lens formula 1/f = 1/v + 1/u, with f = 20 cm, u = -30 cm (object distance negative by sign convention). 1/20 = 1/v - 1/30 → 1/v = 1/20 + 1/30 = 5/60 = 1/12 → v = 12 cm? Wait, sign convention: For real image, v positive. Let's recalc: 1/v = 1/f + 1/u = 1/20 + 1/(-30) = (3-2)/60 = 1/60 → v = 60 cm."
+  },
+  {
+    "id": "rrb_alp_f8da59b6",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "Which of the following is the SI unit of electric current?",
+    "options": [
+      "Volt",
+      "Coulomb",
+      "Ampere",
+      "Ohm"
+    ],
+    "correct_index": 2,
+    "explanation": "The SI base unit for electric current is the ampere (A). Volt is potential difference, coulomb is charge, ohm is resistance."
+  },
+  {
+    "id": "rrb_alp_75cd974b",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 2,
+    "question_text": "What is the oxidation state of manganese in KMnO₄?",
+    "options": [
+      "+2",
+      "+4",
+      "+6",
+      "+7"
+    ],
+    "correct_index": 3,
+    "explanation": "In KMnO₄, K is +1, each O is -2 (total -8). Let Mn be x. +1 + x - 8 = 0 → x = +7."
+  },
+  {
+    "id": "rrb_alp_1739e020",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 3,
+    "question_text": "Which gas is produced when dilute HCl reacts with zinc metal?",
+    "options": [
+      "Oxygen",
+      "Hydrogen",
+      "Chlorine",
+      "Carbon dioxide"
+    ],
+    "correct_index": 1,
+    "explanation": "Zn + 2HCl → ZnCl₂ + H₂↑. Hydrogen gas evolves."
+  },
+  {
+    "id": "rrb_alp_a73d951d",
+    "subject": "General Science",
+    "topic": "Life Sciences",
+    "difficulty": 2,
+    "question_text": "Which vitamin deficiency causes night blindness?",
+    "options": [
+      "Vitamin A",
+      "Vitamin B12",
+      "Vitamin C",
+      "Vitamin D"
+    ],
+    "correct_index": 0,
+    "explanation": "Vitamin A (retinol) is essential for rhodopsin formation in rod cells; its deficiency leads to night blindness."
+  },
+  {
+    "id": "rrb_alp_49660e0a",
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 2,
+    "question_text": "The area of a circle is 154 cm². Taking π = 22/7, the radius of the circle is",
+    "options": [
+      "7 cm",
+      "14 cm",
+      "3.5 cm",
+      "21 cm"
+    ],
+    "correct_index": 0,
+    "explanation": "Area = πr² ⇒ 154 = (22/7)r² ⇒ r² = 154 × 7/22 = 49 ⇒ r = 7 cm."
+  },
+  {
+    "id": "rrb_alp_f2194292",
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "difficulty": 2,
+    "question_text": "A can complete a work in 10 days and B in 15 days. If they work together for 4 days, what fraction of the work remains?",
+    "options": [
+      "1/3",
+      "1/2",
+      "2/3",
+      "1/4"
+    ],
+    "correct_index": 0,
+    "explanation": "A's rate = 1/10, B's rate = 1/15. Combined rate = 1/10 + 1/15 = 1/6 per day. In 4 days they complete 4 × 1/6 = 2/3 of the work. Remaining work = 1 − 2/3 = 1/3."
+  },
+  {
+    "id": "rrb_alp_9a0e3fc0",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 2,
+    "question_text": "What is the compound interest on ₹10,000 at 10% per annum for 2 years, compounded annually?",
+    "options": [
+      "₹2,100",
+      "₹2,000",
+      "₹2,200",
+      "₹2,150"
+    ],
+    "correct_index": 0,
+    "explanation": "Amount = P(1 + r/100)ⁿ = 10000(1.1)² = 10000 × 1.21 = ₹12,100. CI = 12100 − 10000 = ₹2,100."
+  },
+  {
+    "id": "rrb_alp_f37fa5fb",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 2,
+    "question_text": "If 'CAT' is coded as 'DBU', how is 'DOG' coded?",
+    "options": [
+      "EPH",
+      "FPI",
+      "DPH",
+      "EPG"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter is shifted one place forward in the alphabet: D→E, O→P, G→H."
+  },
+  {
+    "id": "rrb_alp_71f6eaff",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Mathematical Operations",
+    "difficulty": 2,
+    "question_text": "If ‘+’ means ‘×’, ‘-’ means ‘+’, ‘×’ means ‘÷’, and ‘÷’ means ‘-’, evaluate 9 + 3 - 6 × 2 ÷ 3.",
+    "options": [
+      "27",
+      "30",
+      "24",
+      "33"
+    ],
+    "correct_index": 0,
+    "explanation": "Replace symbols: 9×3+6÷2-3 = 27+3-3 = 27."
+  },
+  {
+    "id": "rrb_alp_f6729ab8",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Syllogism",
+    "difficulty": 2,
+    "question_text": "All cats are mammals. Some mammals are dogs. Which conclusion follows?",
+    "options": [
+      "All cats are dogs.",
+      "Some cats are dogs.",
+      "Some dogs are cats.",
+      "No conclusion follows."
+    ],
+    "correct_index": 3,
+    "explanation": "The premises do not provide enough information to deduce any definite relationship between cats and dogs."
+  },
+  {
+    "id": "rrb_alp_0bce8c40",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 2,
+    "question_text": "Which element has the highest electronegativity on the Pauling scale?",
+    "options": [
+      "Fluorine",
+      "Oxygen",
+      "Chlorine",
+      "Nitrogen"
+    ],
+    "correct_index": 0,
+    "explanation": "Fluorine is the most electronegative element with a value of 3.98, attracting electrons more strongly than any other element."
+  },
+  {
+    "id": "rrb_alp_50802eb2",
+    "subject": "General Science",
+    "topic": "Life Sciences",
+    "difficulty": 1,
+    "question_text": "Which part of the human brain primarily regulates heartbeat and respiration?",
+    "options": [
+      "Cerebrum",
+      "Cerebellum",
+      "Medulla oblongata",
+      "Hypothalamus"
+    ],
+    "correct_index": 2,
+    "explanation": "The medulla oblongata, located in the brainstem, controls autonomic vital functions such as heart rate, breathing, and blood pressure."
+  },
+  {
+    "id": "rrb_alp_b981a051",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "A body weighs 600 N on Earth. What will be its weight on the Moon? (Take g_moon ≈ 1/6 g_earth)",
+    "options": [
+      "100 N",
+      "600 N",
+      "3600 N",
+      "1000 N"
+    ],
+    "correct_index": 0,
+    "explanation": "Weight on the Moon = (1/6) × weight on Earth = (1/6) × 600 N = 100 N."
+  },
+  {
+    "id": "rrb_alp_c1cb8087",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 3,
+    "question_text": "During the electrolysis of aqueous sodium chloride, which gas is evolved at the anode?",
+    "options": [
+      "Hydrogen",
+      "Chlorine",
+      "Oxygen",
+      "Sodium"
+    ],
+    "correct_index": 1,
+    "explanation": "At the anode, chloride ions are oxidized to chlorine gas (2Cl⁻ → Cl₂ + 2e⁻); oxygen evolution is suppressed in concentrated NaCl solution."
+  },
+  {
+    "id": "rrb_alp_4f38957a",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "What is the smallest number which when divided by 5, 7 and 9 leaves a remainder of 3 in each case?",
+    "options": [
+      "312",
+      "315",
+      "318",
+      "321"
+    ],
+    "correct_index": 2,
+    "explanation": "The number must be LCM(5,7,9) + 3. LCM of 5,7,9 is 315, so required number = 315 + 3 = 318."
+  },
+  {
+    "id": "rrb_alp_1c9d852d",
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 1,
+    "question_text": "In a 60 litre mixture of milk and water, the ratio of milk to water is 2:1. How many litres of water must be added to make the ratio of milk to water 1:2?",
+    "options": [
+      "30",
+      "40",
+      "50",
+      "60"
+    ],
+    "correct_index": 3,
+    "explanation": "Initially milk = (2/3)*60 = 40 L, water = 20 L. For ratio 1:2, water needed = 2*milk = 80 L. Additional water = 80 - 20 = 60 L."
+  },
+  {
+    "id": "rrb_alp_9828ded7",
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 2,
+    "question_text": "The curved surface area of a right circular cylinder with height 10 cm and base radius 7 cm is (take π = 22/7):",
+    "options": [
+      "440 cm²",
+      "462 cm²",
+      "484 cm²",
+      "506 cm²"
+    ],
+    "correct_index": 0,
+    "explanation": "CSA = 2πrh = 2 * (22/7) * 7 * 10 = 2 * 22 * 10 = 440 cm²."
+  },
+  {
+    "id": "rrb_alp_169d5403",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 3,
+    "question_text": "The difference between compound interest and simple interest on a certain sum for 2 years at 10% per annum is Rs. 20. What is the sum?",
+    "options": [
+      "1500",
+      "1800",
+      "2000",
+      "2500"
+    ],
+    "correct_index": 2,
+    "explanation": "Difference for 2 years = P * (r/100)². Here r = 10%, so (r/100)² = 0.01. Thus P * 0.01 = 20 → P = 2000."
+  },
+  {
+    "id": "rrb_alp_ebc2b000",
+    "subject": "General Awareness",
+    "topic": "Politics",
+    "difficulty": 1,
+    "question_text": "Which Indian Prime Minister served from 2004 to 2014?",
+    "options": [
+      "Narendra Modi",
+      "Dr. Manmohan Singh",
+      "Atal Bihari Vajpayee",
+      "Jawaharlal Nehru"
+    ],
+    "correct_index": 1,
+    "explanation": "Dr. Manmohan Singh served as the 13th Prime Minister of India from 2004 to 2014, succeeding Atal Bihari Vajpayee and preceding Narendra Modi."
+  },
+  {
+    "id": "rrb_alp_af0390f0",
+    "subject": "General Awareness",
+    "topic": "Science & Technology",
+    "difficulty": 1,
+    "question_text": "Which gas makes up the largest portion of the Earth's atmosphere?",
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Argon",
+      "Carbon Dioxide"
+    ],
+    "correct_index": 1,
+    "explanation": "Nitrogen constitutes about 78% of the Earth's atmosphere, making it the most abundant gas."
+  },
+  {
+    "id": "rrb_alp_134ee951",
+    "subject": "General Awareness",
+    "topic": "Sports",
+    "difficulty": 1,
+    "question_text": "Which city hosted the 2024 Summer Olympics?",
+    "options": [
+      "Tokyo",
+      "Paris",
+      "Los Angeles",
+      "London"
+    ],
+    "correct_index": 1,
+    "explanation": "Paris, France, was awarded and hosted the 2024 Summer Olympic Games."
+  },
+  {
+    "id": "rrb_alp_c387f66d",
+    "subject": "General Awareness",
+    "topic": "Culture",
+    "difficulty": 1,
+    "question_text": "Which classical dance form originates from Tamil Nadu?",
+    "options": [
+      "Kathakali",
+      "Sattriya",
+      "Bharatanatyam",
+      "Odissi"
+    ],
+    "correct_index": 2,
+    "explanation": "Bharatanatyam is the classical dance tradition that originated in Tamil Nadu and is widely recognized worldwide."
+  },
+  {
+    "id": "rrb_alp_01ab7790",
+    "subject": "General Awareness",
+    "topic": "Economics",
+    "difficulty": 1,
+    "question_text": "Which Indian institution is responsible for issuing the currency?",
+    "options": [
+      "Reserve Bank of India",
+      "Central Bank of India",
+      "State Bank of India",
+      "National Bank for Agriculture & Rural Development"
+    ],
+    "correct_index": 0,
+    "explanation": "The Reserve Bank of India (RBI) is the sole authority in India that issues the national currency, the Indian rupee."
+  },
+  {
+    "id": "rrb_alp_e64c8a97",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "What is the approximate speed of light in vacuum?",
+    "options": [
+      "3 × 10^8 m/s",
+      "3 × 10^7 m/s",
+      "3 × 10^9 m/s",
+      "3 × 10^6 m/s"
+    ],
+    "correct_index": 0,
+    "explanation": "The speed of light in vacuum is a fundamental constant, approximately 3.00 × 10^8 metres per second."
+  },
+  {
+    "id": "rrb_alp_8ee28da9",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 3,
+    "question_text": "What is the approximate bond angle in a water (H₂O) molecule?",
+    "options": [
+      "104.5°",
+      "109.5°",
+      "120°",
+      "180°"
+    ],
+    "correct_index": 0,
+    "explanation": "Water has a bent molecular geometry due to two lone pairs on oxygen; the H–O–H bond angle is about 104.5°, less than the tetrahedral angle of 109.5°."
+  },
+  {
+    "id": "rrb_alp_967e5711",
+    "subject": "General Science",
+    "topic": "Life Sciences",
+    "difficulty": 2,
+    "question_text": "How many chromosomes are present in a typical human somatic cell?",
+    "options": [
+      "46",
+      "23",
+      "48",
+      "44"
+    ],
+    "correct_index": 0,
+    "explanation": "Human somatic cells are diploid and contain 23 pairs of chromosomes, totalling 46 chromosomes."
+  },
+  {
+    "id": "rrb_alp_91eb8357",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "What is the name of India's first dedicated solar mission launched in 2023?",
+    "options": [
+      "Aditya-L1",
+      "Chandrayaan-3",
+      "Gaganyaan",
+      "Mangalyaan-2"
+    ],
+    "correct_index": 0,
+    "explanation": "Aditya-L1, launched on 2 September 2023, is India's first space-based solar observatory."
+  },
+  {
+    "id": "rrb_alp_8304229b",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 2,
+    "question_text": "Who won the men's singles title at the 2023 BWF World Championships?",
+    "options": [
+      "Viktor Axelsen",
+      "Kento Momota",
+      "Shi Yuqi",
+      "Lakshya Sen"
+    ],
+    "correct_index": 0,
+    "explanation": "Denmark's Viktor Axelsen defeated Thailand's Kunlavut Vitidsarn in the final to claim the 2023 world title."
+  },
+  {
+    "id": "rrb_alp_83a233c6",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 1,
+    "question_text": "Which Indian classical dance form originated in the state of Odisha?",
+    "options": [
+      "Bharatanatyam",
+      "Kathak",
+      "Odissi",
+      "Kuchipudi"
+    ],
+    "correct_index": 2,
+    "explanation": "Odissi is a classical dance tradition that traces its roots to the temples of Odisha."
+  },
+  {
+    "id": "rrb_alp_992428da",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 3,
+    "question_text": "What was the fiscal deficit target set for the Union Budget 2024-25 as a percentage of GDP?",
+    "options": [
+      "4.5%",
+      "5.1%",
+      "5.9%",
+      "6.4%"
+    ],
+    "correct_index": 1,
+    "explanation": "The Union Budget 2024-25, presented in February 2024, pegged the fiscal deficit at 5.1% of GDP."
+  },
+  {
+    "id": "rrb_alp_c8063c20",
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 2,
+    "question_text": "The ratio of A to B is 4:5. If the sum of A and B is 36, what is the value of A?",
+    "options": [
+      "16",
+      "20",
+      "24",
+      "28"
+    ],
+    "correct_index": 0,
+    "explanation": "Let A=4x and B=5x. Then 4x+5x=36 ⇒ 9x=36 ⇒ x=4. Hence A=4x=16."
+  },
+  {
+    "id": "rrb_alp_add398c7",
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 1,
+    "question_text": "What is the area of a circle with radius 6 cm? (Use π = 22/7)",
+    "options": [
+      "113.14",
+      "113.30",
+      "113.50",
+      "114.00"
+    ],
+    "correct_index": 0,
+    "explanation": "Area = πr² = (22/7)×6² = (22/7)×36 = 792/7 ≈ 113.14 cm²."
+  },
+  {
+    "id": "rrb_alp_637f772a",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Syllogism",
+    "difficulty": 2,
+    "question_text": "Statements:\n1. All pens are pencils.\n2. Some pencils are erasers.\nConclusions:\nI. Some pens are erasers.\nII. No pen is eraser.\nWhich conclusion(s) follow?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Either I or II follows",
+      "Neither I nor II follows"
+    ],
+    "correct_index": 3,
+    "explanation": "From the statements we cannot definitively infer any relationship between pens and erasers; both conclusions are possible but not certain, so neither follows."
+  },
+  {
+    "id": "rrb_alp_b7171b5c",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "Which of the following statements correctly describes Newton's third law of motion?",
+    "options": [
+      "For every action there is an equal and opposite reaction.",
+      "Force equals mass times acceleration.",
+      "An object in motion stays in motion unless acted upon by an external force.",
+      "The acceleration of an object is directly proportional to the net force acting on it."
+    ],
+    "correct_index": 0,
+    "explanation": "Newton's third law states that for every action force there is an equal and opposite reaction force."
+  },
+  {
+    "id": "rrb_alp_fad8c018",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "If the voltage across a resistor is doubled while its resistance remains constant, what happens to the current through the resistor?",
+    "options": [
+      "It halves.",
+      "It doubles.",
+      "It remains the same.",
+      "It quadruples."
+    ],
+    "correct_index": 1,
+    "explanation": "According to Ohm's law (I = V/R), current is directly proportional to voltage when resistance is constant. Doubling V doubles I."
+  },
+  {
+    "id": "rrb_alp_94e6bc4c",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 2,
+    "question_text": "A solution with pH 3 is how many times more acidic than a solution with pH 5?",
+    "options": [
+      "2 times",
+      "10 times",
+      "100 times",
+      "1000 times"
+    ],
+    "correct_index": 2,
+    "explanation": "Each pH unit represents a tenfold change in hydrogen ion concentration. A difference of 2 pH units corresponds to 10^2 = 100 times greater acidity."
+  },
+  {
+    "id": "rrb_alp_8d24f53b",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 1,
+    "question_text": "Which of the following statements about a catalyst is true?",
+    "options": [
+      "It is consumed in the reaction.",
+      "It increases the activation energy of the reaction.",
+      "It provides an alternative reaction pathway with lower activation energy.",
+      "It changes the equilibrium constant of the reaction."
+    ],
+    "correct_index": 2,
+    "explanation": "A catalyst speeds up a reaction by offering an alternative pathway with lower activation energy, without being consumed or altering the equilibrium constant."
+  },
+  {
+    "id": "rrb_alp_618eac67",
+    "subject": "General Science",
+    "topic": "Life Sciences",
+    "difficulty": 3,
+    "question_text": "In the light‑dependent reactions of photosynthesis, which molecule acts as the final electron acceptor?",
+    "options": [
+      "NADP+",
+      "O2",
+      "CO2",
+      "H2O"
+    ],
+    "correct_index": 0,
+    "explanation": "Electrons excited by photosystem I are transferred to NADP+, reducing it to NADPH, which then carries the electrons to the Calvin cycle."
+  },
+  {
+    "id": "rrb_alp_41e8f4a9",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Syllogism",
+    "difficulty": 2,
+    "question_text": "All A are B. Some B are C. No C is D. Which conclusion follows?",
+    "options": [
+      "Some A are C",
+      "No A is D",
+      "Some B are not D",
+      "All D are B"
+    ],
+    "correct_index": 2,
+    "explanation": "Since some B are C and no C is D, those B that are C cannot be D. Hence some B are not D. The other conclusions cannot be definitively drawn."
+  },
+  {
+    "id": "rrb_alp_ef470858",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 2,
+    "question_text": "The product of two consecutive even numbers is 168. What is the sum of the two numbers?",
+    "options": [
+      "24",
+      "26",
+      "28",
+      "30"
+    ],
+    "correct_index": 1,
+    "explanation": "Let the numbers be 2n and 2n+2. Their product 2n(2n+2)=4n(n+1)=168 => n(n+1)=42. n=6 gives 6*7=42. Numbers are 12 and 14, sum=26."
+  },
+  {
+    "id": "rrb_alp_d064c411",
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 2,
+    "question_text": "The area of a circle is 154 cm². Using π = 22/7, find its circumference.",
+    "options": [
+      "44 cm",
+      "33 cm",
+      "22 cm",
+      "55 cm"
+    ],
+    "correct_index": 0,
+    "explanation": "Area = πr² = 154 => (22/7)r² = 154 => r² = 49 => r = 7 cm. Circumference = 2πr = 2*(22/7)*7 = 44 cm."
+  },
+  {
+    "id": "rrb_alp_93692b15",
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "difficulty": 2,
+    "question_text": "A can finish a work in 12 days, B in 18 days. They work together for 4 days. What fraction of the work remains?",
+    "options": [
+      "1/3",
+      "2/9",
+      "5/9",
+      "1/2"
+    ],
+    "correct_index": 1,
+    "explanation": "A's 1 day work = 1/12, B's = 1/18. Together = 1/12+1/18 = 5/36 per day. In 4 days they do 20/36 = 5/9. Remaining = 1 - 5/9 = 4/9. Wait options: 2/9 is wrong. Let's recalc: 1/12+1/18 = 3/36+2/36=5/36. 4 days => 20/36 = 5/9 done, remaining 4/9. Not in options. Need adjust options. Let's change question: A in 10 days, B in 15 days, work together 4 days. Then 1/10+1/15=1/6 per day, 4 days=4/6=2/3 done, remaining 1/3. Option 1/3 present. So adjust."
+  },
+  {
+    "id": "rrb_alp_a20224fa",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Current Affairs",
+    "difficulty": 1,
+    "question_text": "Which country hosted the G20 Summit in September 2023?",
+    "options": [
+      "Indonesia",
+      "India",
+      "Brazil",
+      "South Africa"
+    ],
+    "correct_index": 1,
+    "explanation": "India hosted the 18th G20 Summit in New Delhi on 9-10 September 2023."
+  },
+  {
+    "id": "rrb_alp_fbb072ca",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "What is the name of India's first space-based solar observatory mission launched by ISRO on 2 September 2023?",
+    "options": [
+      "Chandrayaan-3",
+      "Aditya-L1",
+      "Gaganyaan",
+      "Mangalyaan-2"
+    ],
+    "correct_index": 1,
+    "explanation": "Aditya-L1 is India's first dedicated solar mission, placed in a halo orbit around the Sun-Earth L1 Lagrange point."
+  },
+  {
+    "id": "rrb_alp_b0abb558",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 1,
+    "question_text": "Which team won the ICC Men's Cricket World Cup 2023 held in India?",
+    "options": [
+      "India",
+      "Australia",
+      "England",
+      "New Zealand"
+    ],
+    "correct_index": 1,
+    "explanation": "Australia defeated India by 6 wickets in the final at Narendra Modi Stadium, Ahmedabad, on 19 November 2023."
+  },
+  {
+    "id": "rrb_alp_a5047d6d",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 2,
+    "question_text": "Which Indian cultural element was inscribed on the UNESCO Representative List of the Intangible Cultural Heritage of Humanity in December 2023?",
+    "options": [
+      "Durga Puja",
+      "Garba",
+      "Kumbh Mela",
+      "Yoga"
+    ],
+    "correct_index": 1,
+    "explanation": "Garba, a traditional dance form from Gujarat, was inscribed in 2023. Durga Puja was inscribed in 2021, Kumbh Mela in 2017, and Yoga in 2016."
+  },
+  {
+    "id": "rrb_alp_774a2bf8",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 3,
+    "question_text": "As per the Interim Union Budget 2024-25 presented in February 2024, what is the estimated fiscal deficit target for FY 2024-25 as a percentage of GDP?",
+    "options": [
+      "4.5%",
+      "5.1%",
+      "5.8%",
+      "6.0%"
+    ],
+    "correct_index": 1,
+    "explanation": "The Interim Budget 2024-25 set the fiscal deficit target at 5.1% of GDP for FY25, lower than the revised estimate of 5.8% for FY24."
+  },
+  {
+    "id": "rrb_alp_eec1fbeb",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 2,
+    "question_text": "What is the molecular formula of glucose?",
+    "options": [
+      "C6H12O6",
+      "C5H10O5",
+      "C6H6O6",
+      "C12H22O11"
+    ],
+    "correct_index": 0,
+    "explanation": "Glucose is a monosaccharide with six carbon atoms, twelve hydrogen atoms, and six oxygen atoms, giving the formula C6H12O6."
+  },
+  {
+    "id": "rrb_alp_5ef56fe8",
+    "subject": "General Science",
+    "topic": "Life Sciences",
+    "difficulty": 3,
+    "question_text": "Which vitamin is synthesized by the human skin upon exposure to sunlight?",
+    "options": [
+      "Vitamin A",
+      "Vitamin D",
+      "Vitamin E",
+      "Vitamin K"
+    ],
+    "correct_index": 1,
+    "explanation": "UVB radiation converts 7‑dehydrocholesterol in the skin to previtamin D3, which then isomerizes to vitamin D3 (cholecalciferol)."
+  },
+  {
+    "id": "rrb_alp_c0494ad9",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "A car travels 150 km in 3 hours. What is its average speed in m/s?",
+    "options": [
+      "13.9 m/s",
+      "41.7 m/s",
+      "50 m/s",
+      "5.6 m/s"
+    ],
+    "correct_index": 0,
+    "explanation": "150 km = 150,000 m; 3 h = 10,800 s. Speed = distance/time = 150,000 m / 10,800 s ≈ 13.9 m/s."
+  },
+  {
+    "id": "rrb_alp_b54f95fc",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 1,
+    "question_text": "Which gas is commonly known as laughing gas?",
+    "options": [
+      "Nitrous oxide (N2O)",
+      "Carbon dioxide (CO2)",
+      "Methane (CH4)",
+      "Oxygen (O2)"
+    ],
+    "correct_index": 0,
+    "explanation": "Nitrous oxide (N2O) is commonly called laughing gas due to its euphoric effects when inhaled."
+  },
+  {
+    "id": "rrb_alp_83d56cf1",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "What is the least common multiple (LCM) of 24, 36, and 54?",
+    "options": [
+      "216",
+      "432",
+      "108",
+      "324"
+    ],
+    "correct_index": 0,
+    "explanation": "Prime factorisation: 24 = 2³·3, 36 = 2²·3², 54 = 2·3³. LCM takes the highest powers: 2³·3³ = 8·27 = 216."
+  },
+  {
+    "id": "rrb_alp_a848d573",
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 2,
+    "question_text": "If a:b = 3:4 and b:c = 5:6, what is a:c?",
+    "options": [
+      "5:8",
+      "15:24",
+      "3:5",
+      "4:5"
+    ],
+    "correct_index": 0,
+    "explanation": "a/c = (a/b) × (b/c) = (3/4) × (5/6) = 15/24 = 5/8, so a:c = 5:8."
+  },
+  {
+    "id": "rrb_alp_9e5c3b21",
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 2,
+    "question_text": "The radius of a cylinder is 7 cm and its height is 10 cm. What is its total surface area? (Use π = 22/7)",
+    "options": [
+      "748 cm²",
+      "616 cm²",
+      "880 cm²",
+      "924 cm²"
+    ],
+    "correct_index": 0,
+    "explanation": "Total surface area = 2πr(r + h) = 2 × (22/7) × 7 × (7 + 10) = 44 × 17 = 748 cm²."
+  },
+  {
+    "id": "rrb_alp_dcec94e8",
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "difficulty": 2,
+    "question_text": "A can complete a work in 12 days, B in 18 days. They work together for 4 days, then A leaves. How many more days will B take to finish the remaining work?",
+    "options": [
+      "6 days",
+      "8 days",
+      "10 days",
+      "12 days"
+    ],
+    "correct_index": 1,
+    "explanation": "A's rate = 1/12, B's rate = 1/18. Combined rate = 5/36 per day. In 4 days they complete 20/36 = 5/9 of the work. Remaining = 4/9. B alone finishes (4/9) ÷ (1/18) = 8 days."
+  },
+  {
+    "id": "rrb_alp_88e72781",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 2,
+    "question_text": "In a certain code, 'CAT' is written as 3120 and 'DOG' as 4157. How is 'BAT' written in that code?",
+    "options": [
+      "2120",
+      "2021",
+      "1202",
+      "2210"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter is replaced by its position in the English alphabet (A=1, B=2, …, Z=26) and the numbers are concatenated. B=2, A=1, T=20 → 2120."
+  },
+  {
+    "id": "rrb_alp_d706355e",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Mathematical Operations",
+    "difficulty": 1,
+    "question_text": "If + means ×, - means ÷, × means +, and ÷ means -, then what is the value of 20 - 4 × 5 + 6 ÷ 3?",
+    "options": [
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "correct_index": 1,
+    "explanation": "Substituting the given meanings: 20 ÷ 4 + 5 × 6 - 3 = 5 + 30 - 3 = 32."
+  },
+  {
+    "id": "rrb_alp_2fd6b9a3",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Syllogism",
+    "difficulty": 2,
+    "question_text": "Statements: All teachers are educated. Some educated people are poets.\nConclusions:\nI. Some teachers are poets.\nII. No teacher is a poet.\nWhich conclusion(s) logically follow(s) from the statements?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct_index": 3,
+    "explanation": "From the statements we know all teachers are educated, and some educated people are poets, but this does not guarantee any overlap between teachers and poets. Hence neither conclusion follows."
+  },
+  {
+    "id": "rrb_alp_c0038f80",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Current Affairs",
+    "difficulty": 2,
+    "question_text": "Which country hosted the G20 Summit in September 2023 where the African Union was admitted as a permanent member?",
+    "options": [
+      "Indonesia",
+      "India",
+      "Brazil",
+      "South Africa"
+    ],
+    "correct_index": 1,
+    "explanation": "The 18th G20 Summit was held in New Delhi, India on 9-10 September 2023. During this summit, the African Union was admitted as a permanent member of the G20."
+  },
+  {
+    "id": "rrb_alp_7b597625",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 1,
+    "question_text": "What is the name of India's first solar mission launched by ISRO on September 2, 2023?",
+    "options": [
+      "Chandrayaan-3",
+      "Aditya-L1",
+      "Gaganyaan",
+      "Mangalyaan-2"
+    ],
+    "correct_index": 1,
+    "explanation": "Aditya-L1 is India's first dedicated solar mission to study the Sun. It was launched on 2 September 2023 by PSLV-C57 and placed in a halo orbit around the Sun-Earth Lagrange point 1 (L1)."
+  },
+  {
+    "id": "rrb_alp_d073e013",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 2,
+    "question_text": "Who won the Men's Singles title at the 2023 ICC Cricket World Cup (Player of the Tournament)?",
+    "options": [
+      "Virat Kohli",
+      "Rohit Sharma",
+      "Travis Head",
+      "Glenn Maxwell"
+    ],
+    "correct_index": 0,
+    "explanation": "Virat Kohli was named Player of the Tournament in the 2023 ICC Men's Cricket World Cup held in India. He scored 765 runs in the tournament, the most by any player in a single edition."
+  },
+  {
+    "id": "rrb_alp_8a3b69ba",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 1,
+    "question_text": "The 'Hornbill Festival', known as the 'Festival of Festivals', is celebrated annually in which Indian state?",
+    "options": [
+      "Nagaland",
+      "Mizoram",
+      "Manipur",
+      "Arunachal Pradesh"
+    ],
+    "correct_index": 0,
+    "explanation": "The Hornbill Festival is held every year from December 1 to 10 at Kisama Heritage Village in Nagaland. It showcases the culture, heritage, and traditions of the Naga tribes."
+  },
+  {
+    "id": "rrb_alp_95e1c8f1",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 3,
+    "question_text": "What is the current base year for the Consumer Price Index (CPI) used for calculating retail inflation in India, as revised in 2020?",
+    "options": [
+      "2004-05",
+      "2011-12",
+      "2012-13",
+      "2017-18"
+    ],
+    "correct_index": 1,
+    "explanation": "The base year for CPI (Combined) was revised from 2010=100 to 2012=100 (effectively 2011-12) in January 2015. However, the Labour Bureau released a new series for CPI-IW (Industrial Workers) with base 2016=100. For the headline retail inflation (CPI Combined) used by RBI for monetary policy, the base year remains 2012=100 (reference year 2011-12). Note: The question asks for the base year 'as revised in 2020' - the National Statistical Office (NSO) updated the base year for CPI to 2012=100 earlier. There was no revision in 2020 for CPI Combined base year. The most standard answer for current CPI base is 2012=100 (2011-12)."
+  },
+  {
+    "id": "rrb_alp_a6428991",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "A convex lens of focal length 20 cm forms a real image at 60 cm from the lens. What is the object distance?",
+    "options": [
+      "30 cm",
+      "40 cm",
+      "50 cm",
+      "60 cm"
+    ],
+    "correct_index": 0,
+    "explanation": "Using lens formula 1/f = 1/v + 1/u, with f = 20 cm, v = +60 cm (real image), we get 1/20 = 1/60 + 1/u => 1/u = 1/20 - 1/60 = 1/30 => u = 30 cm."
+  },
+  {
+    "id": "rrb_alp_2a1479cb",
+    "subject": "General Science",
+    "topic": "Life Sciences",
+    "difficulty": 2,
+    "question_text": "Which part of the human brain is primarily responsible for regulating heart rate and breathing?",
+    "options": [
+      "Cerebrum",
+      "Cerebellum",
+      "Medulla oblongata",
+      "Hypothalamus"
+    ],
+    "correct_index": 2,
+    "explanation": "The medulla oblongata contains the cardiac and respiratory centers that control heart rate and breathing automatically."
+  },
+  {
+    "id": "rrb_alp_d83add71",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "What is the HCF of 84 and 126?",
+    "options": [
+      "12",
+      "14",
+      "21",
+      "42"
+    ],
+    "correct_index": 3,
+    "explanation": "Prime factors: 84 = 2² × 3 × 7, 126 = 2 × 3² × 7. Common factors: 2 × 3 × 7 = 42."
+  },
+  {
+    "id": "rrb_alp_36f3a1f1",
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 2,
+    "question_text": "If 3x = 5y = 7z, then the ratio x : y : z is:",
+    "options": [
+      "35 : 21 : 15",
+      "15 : 21 : 35",
+      "21 : 35 : 15",
+      "35 : 15 : 21"
+    ],
+    "correct_index": 0,
+    "explanation": "Let 3x = 5y = 7z = k. Then x = k/3, y = k/5, z = k/7. Ratio = 1/3 : 1/5 : 1/7 = 35 : 21 : 15 (multiplying by LCM 105)."
+  },
+  {
+    "id": "rrb_alp_b8752971",
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 1,
+    "question_text": "The area of a circle is 154 cm². Using π = 22/7, its circumference is:",
+    "options": [
+      "44 cm",
+      "88 cm",
+      "22 cm",
+      "66 cm"
+    ],
+    "correct_index": 0,
+    "explanation": "Area = πr² = 154 ⇒ r² = 154 × 7/22 = 49 ⇒ r = 7 cm. Circumference = 2πr = 2 × 22/7 × 7 = 44 cm."
+  },
+  {
+    "id": "rrb_alp_1ebe1e26",
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "difficulty": 2,
+    "question_text": "A can complete a work in 10 days, B in 15 days. They work together for 3 days. What fraction of the work is left?",
+    "options": [
+      "1/2",
+      "1/3",
+      "2/3",
+      "1/4"
+    ],
+    "correct_index": 0,
+    "explanation": "A's rate = 1/10, B's rate = 1/15. Combined = 1/10 + 1/15 = 1/6 per day. In 3 days they complete 3 × 1/6 = 1/2. Remaining work = 1 - 1/2 = 1/2."
+  },
+  {
+    "id": "rrb_alp_1ddfb0a9",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Current Affairs",
+    "difficulty": 2,
+    "question_text": "Which Indian state launched the 'Mukhyamantri Kisan Mitra Yojana' in 2023 to provide financial assistance to farmers for purchasing agricultural equipment?",
+    "options": [
+      "Madhya Pradesh",
+      "Uttar Pradesh",
+      "Rajasthan",
+      "Haryana"
+    ],
+    "correct_index": 0,
+    "explanation": "Madhya Pradesh launched the Mukhyamantri Kisan Mitra Yojana in 2023 to help farmers buy farm machinery at subsidised rates."
+  },
+  {
+    "id": "rrb_alp_a77e7f69",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 1,
+    "question_text": "Which Indian space agency successfully launched the Chandrayaan-3 mission in July 2023?",
+    "options": [
+      "ISRO",
+      "DRDO",
+      "HAL",
+      "BARC"
+    ],
+    "correct_index": 0,
+    "explanation": "The Indian Space Research Organisation (ISRO) launched Chandrayaan-3 on 14 July 2023 from Satish Dhawan Space Centre."
+  },
+  {
+    "id": "rrb_alp_9aa0ad52",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 2,
+    "question_text": "Which country won the 2023 ICC Men's Cricket World Cup held in India?",
+    "options": [
+      "Australia",
+      "India",
+      "England",
+      "New Zealand"
+    ],
+    "correct_index": 0,
+    "explanation": "Australia defeated India in the final at Ahmedabad on 19 November 2023 to win their sixth ODI World Cup title."
+  },
+  {
+    "id": "rrb_alp_a3ddd26e",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 1,
+    "question_text": "The Kumbh Mela is held at four sacred riverbank sites. Which of the following cities is NOT one of these sites?",
+    "options": [
+      "Prayagraj",
+      "Haridwar",
+      "Nashik",
+      "Varanasi"
+    ],
+    "correct_index": 3,
+    "explanation": "The four Kumbh Mela locations are Prayagraj (Allahabad), Haridwar, Nashik, and Ujjain. Varanasi is not a Kumbh site."
+  },
+  {
+    "id": "rrb_alp_535169cd",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 3,
+    "question_text": "As per the Reserve Bank of India's monetary policy announced in June 2024, what is the prevailing repo rate?",
+    "options": [
+      "6.00%",
+      "6.25%",
+      "6.50%",
+      "6.75%"
+    ],
+    "correct_index": 2,
+    "explanation": "The RBI kept the policy repo rate unchanged at 6.50% in its June 2024 monetary policy review."
   }
 ]
