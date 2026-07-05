@@ -267,8 +267,14 @@ class ApiService {
   Future<Map<String, dynamic>> getInterventions() =>
       get('/api/progress/interventions');
 
-  Future<Map<String, dynamic>> getDabbuStudyPlan(String studentId) =>
+  Future<Map<String, dynamic>> getDabbuStudyPlan() =>
       get('/api/dabbu/study-plan');
+
+  Future<Map<String, dynamic>> getProposedStudyPlan() =>
+      get('/api/dabbu/study-plan/proposed');
+
+  Future<Map<String, dynamic>> generateStudyPlan({String? examDate}) =>
+      post('/api/dabbu/study-plan', {if (examDate != null) 'exam_date': examDate});
 
   // ── Internal helpers ──────────────────────────────────────────────────────
 

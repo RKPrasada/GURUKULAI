@@ -6,6 +6,7 @@ import '../utils/constants.dart';
 import '../utils/helpers.dart';
 import 'diagnostic_screen.dart';
 import 'study_screen.dart';
+import 'study_plan_screen.dart';
 import 'test_screen.dart';
 import 'mock_screen.dart';
 import 'naga_screen.dart';
@@ -179,6 +180,23 @@ class _HomeTab extends StatelessWidget {
               ),
             )),
           ],
+          const SizedBox(height: 12),
+          // Study Plan card
+          Card(
+            color: AppTheme.primary.withOpacity(0.06),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+              side: BorderSide(color: AppTheme.primary.withOpacity(0.2)),
+            ),
+            child: ListTile(
+              leading: const Icon(Icons.calendar_month, color: AppTheme.primary, size: 30),
+              title: Text(lang == 'hi' ? 'मेरी पढ़ाई योजना' : 'My Study Plan',
+                  style: const TextStyle(fontWeight: FontWeight.w700)),
+              subtitle: Text(lang == 'hi' ? 'Dabbu की योजना देखें' : 'View your Dabbu-powered schedule'),
+              trailing: const Icon(Icons.arrow_forward_ios, size: 14, color: AppTheme.primary),
+              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const StudyPlanScreen())),
+            ),
+          ),
         ],
         const SizedBox(height: 12),
         GridView.count(
@@ -193,10 +211,10 @@ class _HomeTab extends StatelessWidget {
                 onTap: () => _changeTab(context, 1)),
             _QuickAction(icon: Icons.quiz, label: lang == 'hi' ? 'अभ्यास' : 'Practice',
                 onTap: () => _changeTab(context, 2)),
+            _QuickAction(icon: Icons.calendar_month, label: lang == 'hi' ? 'योजना' : 'Plan',
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const StudyPlanScreen()))),
             _QuickAction(icon: Icons.assignment, label: lang == 'hi' ? 'मॉक टेस्ट' : 'Mock Test',
                 onTap: () => _changeTab(context, 3)),
-            _QuickAction(icon: Icons.person, label: 'NAGA',
-                onTap: () => _changeTab(context, 4)),
           ],
         ),
       ],

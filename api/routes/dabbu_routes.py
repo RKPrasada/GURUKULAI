@@ -94,6 +94,15 @@ def _require_naga(auth_id: str) -> None:
 def _get_student_from_store(student_id: str, students_store: dict) -> StudentProfile:
     student = students_store.get(student_id)
     if not student:
+        # Lazy-load from DB on cache miss (e.g. fresh Cloud Run cold-start)
+        try:
+            from api.main import _load_student_from_db
+            student = _load_student_from_db(student_id)
+            if student:
+                students_store[student_id] = student
+        except Exception:
+            pass
+    if not student:
         raise HTTPException(status_code=404, detail="Student profile not found")
     return student
 
