@@ -66,7 +66,13 @@ Raw user input
 | VibeDiff | `security/vibe_diff.py` | Irreversible actions need explicit `/confirm` |
 | AuditLogger | `security/audit_logger.py` | SHA-256 chain — detects tampering + truncation |
 
-**Rule:** every endpoint that accepts free-text input to an LLM must apply all three: `InputGuard` → `OutputGuard` → `AuditLogger`. This applies equally to `/chat` and `/content` — there are no shortcuts even for "direct" agent calls.
+**Rule:** every endpoint that accepts free-text from a user must apply `InputGuard` before any processing — even routes that don't call an LLM (e.g. `POST /api/mentor/questions` saves to disk, but the text goes to NAGA who is a human reader). Routes that do call an LLM additionally require `OutputGuard` and `AuditLogger`. There are no shortcuts, including "direct" agent calls.
+
+| Endpoint | InputGuard | OutputGuard | AuditLogger |
+|---|---|---|---|
+| `/api/session/chat` | ✅ orchestrator | ✅ orchestrator | ✅ orchestrator |
+| `/api/session/content` | ✅ inline | ✅ inline | ✅ inline |
+| `/api/mentor/questions` (POST) | ✅ `_input_guard` in mentor.py | — (not LLM) | — (not LLM) |
 
 ---
 
@@ -137,7 +143,7 @@ UserAuth  (data/users.jsonl)          StudentProfile  (vidyabot.db SQLite)
 | `vidyabot.db` | SQLite | StudentProfile (weakness_map, SM-2, streaks) |
 | `data/audit.jsonl` | JSONL + SHA-256 chain | Immutable interaction log |
 | `data/mentor/` | JSONL (4 files) | Questions, classes, meetings, notifications |
-| `data/study_plans/` | JSON | `{id}_active.json` + `{id}_proposed.json` |
+| `data/study_plans/` | JSON | `{id}_active.json` (NAGA-approved) + `{id}_proposed.json` (pending) |
 | `data/mock_banks/` | JSON | `{exam}/current_paper.json` + `archive/` |
 | `data/mock_sessions/` | JSON | Per-student mock session state |
 | `data/progress/{id}/` | JSONL (4 files) | Snapshots, sessions, activity, completions |
@@ -254,6 +260,37 @@ python evals/eval_runner.py        # LLM-as-Judge quality scores
 
 ---
 
+## Dabbu Study Plan
+
+```
+POST /api/dabbu/study-plan  (student requests plan generation)
+  └── requires diagnostic_done = True
+  └── auto-heals: if weakness_map non-empty but flag False → patch + save
+  └── DabbuAgent generates 7-day rolling plan (5 slots/day × 2 hrs each)
+  └── DAILY_SLOTS = [7, 9, 11, 14, 16]   ← slot start hours
+  └── saves {student_id}_proposed.json
+
+NAGA approves in Approvals tab
+  └── file renamed/copied to {student_id}_active.json
+
+GET /api/dabbu/study-plan   → returns active plan or proposed plan
+GET /api/dabbu/study-plan/proposed  → proposed plan only
+```
+
+**Frontend rendering:**
+- Web `StudyPlanPage.tsx`: year-overview calendar (stacked per-slot color bars) → click day → `DayTimeline` (time col + dot connector + colored left-border card)
+- Mobile `study_plan_screen.dart`: 7-day horizontal strip + `_DayScheduleView` vertical timeline
+
+**Slot colors:** Study=blue, Practice=fuchsia, Mock=red, Revision=amber
+
+---
+
+## Cold-Start Warm-Up (Mobile)
+
+`_WarmUpOnStart` in `mobile_app/lib/main.dart` fires `GET /health` immediately on app open via `AuthProvider.warmUp()`. This runs in parallel with the user reading the onboarding screen, so Cloud Run is no longer cold when the user hits Login. `isWarmingUp` drives a "Connecting to server…" hint in `onboarding_screen.dart`.
+
+---
+
 ## React Frontend Conventions
 
 - `@/` → `web/src/`
@@ -261,6 +298,20 @@ python evals/eval_runner.py        # LLM-as-Judge quality scores
 - Axios interceptor: attach Bearer token, 401 → auto-logout
 - Notification bell polls `/api/mentor/notifications` every 30s
 - Brand: **Gurukul AI** in UI, `vidyabot` in codebase
+
+## Chat Window Guardrail Responses
+
+All three student-facing chat windows detect guardrail responses from the backend and render them visibly:
+
+| Window | Web | Mobile |
+|---|---|---|
+| AI Tutor | Amber error card in notes list | Amber shield card in `_NoteCard` |
+| Practice Test | Amber chat bubble + "Guardrail" label in `AiChatPanel` | Amber bubble in `_AiChatSheet` bottom sheet |
+| Ask NAGA | Red `submitError` box above the form | Amber snackbar with shield icon |
+
+Detection pattern: response has `agent === "guardrail"` or `threat` field set.
+
+---
 
 ## Flutter Conventions
 

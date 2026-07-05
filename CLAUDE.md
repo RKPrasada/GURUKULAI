@@ -50,6 +50,16 @@ Free-tier models on OpenRouter rotate availability — if one returns 404/429 th
 - `session._get_student()` lazy-loads from SQLite on cache miss
 - `session.submit_diagnostic` calls `_save_student_fn(student)` immediately to persist weakness_map — without this, diagnostic results reset on server restart
 
+### Dabbu Study Plan (July 2026)
+- `GET /api/dabbu/study-plan` — returns active plan (if NAGA-approved) or proposed plan
+- `GET /api/dabbu/study-plan/proposed` — pending plan awaiting NAGA review
+- `POST /api/dabbu/study-plan` — generate a new plan (requires `diagnostic_done`)
+- Plan generator: `_DAILY_SLOTS = [7, 9, 11, 14, 16]` — five 2-hour slots per day
+- Data: `data/study_plans/{student_id}_active.json` + `{student_id}_proposed.json`
+- `diagnostic_done` auto-heal: if `weakness_map` is non-empty but flag is `False`, auto-set and persist to SQLite
+- **Web:** `StudyPlanPage.tsx` — year overview calendar (stacked per-slot bars), week strip, `DayTimeline` with time column + dot connector + colored left-border card
+- **Mobile:** `study_plan_screen.dart` — linked from HomeScreen card + quick-action grid
+
 ### New StudentProfile fields (July 2026)
 - `trade: str` — ITI trade (e.g. "Electrician") — required for RRB ALP and RRB Technician
 - `engineering_discipline: str` — e.g. "Civil", "Electrical" — required for RRB JE
@@ -211,6 +221,15 @@ Questions come from Gemini/OpenRouter first; `data/question_banks/{exam}.json` i
 - `MockTestPage.tsx` — fully rebuilt: landing / test / result views; countdown timer auto-submit; section tabs; question navigator grid; autosave every 30s; negative marking result card
 - `NagaDashboard.tsx` — Approvals tab expanded: progress interventions (approve/amend/dismiss) + keyword blocklist manager (add/remove chips)
 - `RegisterPage.tsx` — conditional `trade` dropdown for ALP/Technician; conditional `engineering_discipline` dropdown for JE
+- `StudyPlanPage.tsx` — Dabbu study plan calendar: year overview of color-coded daily slots, week strip, hour-by-hour `DayTimeline`
+- `TestPage.tsx` — added `AiChatPanel` below each question (calls `/api/session/chat`); guardrail rejections shown as amber bubble with shield label
+- `QuestionsPage.tsx` — separate `submitError` state shown in red box; guardrail rejections no longer appear green
+
+### Mobile screens added (July 2026)
+- `study_plan_screen.dart` — full study plan UI: diagnostic gate, generate flow, proposed/active plan views, 7-day strip, `_DayScheduleView` timeline
+- `test_screen.dart` — added `_AiChatSheet` bottom sheet via brain-icon FAB; per-message guardrail colouring
+- `study_screen.dart` — detects `agent=guardrail` / `threat` fields in `/content` response; shows amber shield card instead of silent blank
+- `naga_screen.dart` — parses `ApiException` JSON body to surface human-readable guardrail message in amber snackbar
 
 ## Environment Variables
 
@@ -238,10 +257,26 @@ Root cause: mock scheduler wrote `type: "mock_test_ready"` notifications before 
 
 - **Flutter** in `mobile_app/` — Android APK + iOS (untested)
 - Backend URL in `mobile_app/.env` → `API_BASE_URL`
-- **Production URL:** `https://gurukulai-backend-ekbh2if4xa-el.a.run.app` (Google Cloud Run, free tier, scales to zero)
+- **Production URL:** `https://gurukulai-backend-242694625313.us-central1.run.app` (Google Cloud Run, free tier, scales to zero)
 - **Local dev:** `http://192.168.0.12:8000` — requires `uvicorn --host 0.0.0.0`
 - **APK:** `gurukulai.apk` in project root — sideloadable, debug-signed (not Play Store ready)
 - Rebuild APK: `cd mobile_app && flutter build apk --release && cp build/app/outputs/flutter-apk/app-release.apk ../gurukulai.apk`
+
+### Cold-start warm-up
+`_WarmUpOnStart` widget in `main.dart` fires a `GET /health` ping immediately on app open via `AuthProvider.warmUp()`. This warms the Cloud Run instance during the onboarding screen so the user doesn't wait 10–15 s on Login. `isWarmingUp` getter drives the "Connecting to server…" message in `onboarding_screen.dart`.
+
+## Guardrail Coverage (all chat entry points)
+
+Every surface that accepts free text from a student must apply InputGuard before any processing:
+
+| Surface | Endpoint | Guard applied |
+|---|---|---|
+| AI Tutor (chat mode) | `/api/session/chat` | Orchestrator InputGuard |
+| AI Tutor (notes mode) | `/api/session/content` | InputGuard inline in route |
+| Practice Test chat | `/api/session/chat` | Orchestrator InputGuard |
+| Ask NAGA question | `/api/mentor/questions` | `_input_guard` in `mentor.py` |
+
+Response handling: all three frontends detect `{agent: "guardrail", response: "...", threat: "..."}` and render an amber shield card / snackbar — never silent blank.
 
 ## Known Architecture Decisions
 

@@ -18,6 +18,18 @@ logger.log_interaction(student_id, clean, str(result)[:200])   # layer 3
 
 This applies to `/chat`, `/content`, and any new endpoint that accepts a message and calls an LLM. "Direct agent call" is not an exemption — `/api/session/content` bypassed all 3 and was a critical vulnerability.
 
+### 1a. Every user-submitted text route must apply InputGuard — even without LLM
+
+InputGuard is not optional for non-LLM routes. Example: `POST /api/mentor/questions` saves to JSONL and notifies a human reviewer — no LLM involved. But without InputGuard, injection payloads, PII, and harassment reach NAGA's queue. Apply `InputGuard.process()` and raise HTTP 400 on threat.
+
+```python
+_, threat = _input_guard.process(req.content)
+if threat:
+    raise HTTPException(status_code=400, detail=SAFE_REDIRECT_EN)
+```
+
+**Guardrail rejection must always be visible in the UI.** Never silently discard. All chat surfaces detect `agent === "guardrail"` or `threat` fields and render an amber warning card — never a silent blank.
+
 ### 2. Never bypass require_auth
 
 Every route must have `Depends(require_auth)`. Only these paths are whitelisted: `/health`, `/auth/*`, `/docs`, `/openapi.json`. Adding a new "public" endpoint requires explicit justification.
@@ -220,8 +232,12 @@ Default `127.0.0.1` only accepts loopback. Mobile devices and Cloud Run health c
 | `dict(zip(col_names, row))` | `_load_student_from_db` | Schema-safe SQLite reads without migration code |
 | 5-model LLM fallback chain | `agents/base.py` | Free-tier models go down; chain keeps the app alive |
 | InputGuard → Agent → OutputGuard → AuditLogger | `agents/orchestrator.py` | One pipeline for all LLM endpoints — no gaps |
+| InputGuard on non-LLM text routes | `mentor.py` | Stops PII + injection from reaching human reviewers |
 | `d.get("key") or default` | `UserAuth.from_dict` | Handles both missing keys and stored nulls |
 | VibeDiff pending token + /confirm | `security/vibe_diff.py` | User sees what will happen before it happens |
 | SHA-256 hash chain on audit log | `security/audit_logger.py` | Tamper-evident — detects edits AND deletions |
 | Dabbu proposes → NAGA approves | whole system | AI suggests, human decides — safe for students |
 | Cycling loading phrases | `DiagnosticPage`, `StudyPage` | Reduces perceived wait time on slow LLM calls |
+| Fire-and-forget warm-up ping | `main.dart` → `AuthProvider.warmUp()` | Cloud Run cold start (10–15 s) is hidden behind onboarding screen |
+| Guardrail response detection | All three chat UIs | `agent==="guardrail"` or `threat` field → amber card; never silent blank |
+| `diagnostic_done` auto-heal | `dabbu_routes.py` | `weakness_map` non-empty is authoritative proof diagnostic ran; patches stale flag |

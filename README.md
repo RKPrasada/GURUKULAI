@@ -68,12 +68,14 @@ Weakness Map → ContentAgent (study notes) → AssessmentAgent (MCQs at your le
 
 Difficulty adjusts per session: avg score < 40% → easy, 40–70% → medium, > 70% → hard.
 
-### 3. Dabbu — Autonomous AI Agent
+### 3. Dabbu — Autonomous AI Agent + Study Planner
 
 Dabbu watches your progress and proposes actions:
 - If you're stagnant on a topic for 2 weeks → proposes a different study approach
 - If your SM-2 reviews are overdue → proposes a catch-up session
 - If you've been inactive for 7 days → sends an inactivity alert
+
+Dabbu also generates your **personal study plan**: a week-by-week calendar with 5 two-hour study slots per day (07:00, 09:00, 11:00, 14:00, 16:00). Each slot is colour-coded — Study (blue), Practice (fuchsia), Mock (red), Revision (amber). Click any day to see an hour-by-hour timeline.
 
 All Dabbu proposals go through **NAGA** (human mentor) for review before you see them.
 
@@ -175,13 +177,15 @@ React 18 Web (:3001)          Flutter Mobile
 
 | Layer | What it does |
 |---|---|
-| InjectionDetector | 24+ prompt injection patterns blocked at input |
+| InjectionDetector | 40+ prompt injection patterns blocked at input |
 | PIIScrubber | Strips Aadhaar, PAN, phone, email, voter ID |
 | InputGuard | Combines injection + PII before any agent sees input |
 | OutputGuard | Blocks system prompt leakage in responses |
 | VibeDiff | Irreversible actions (calendar create, email send, delete) need explicit `/confirm` |
 | Quarantine | 3 threats in 10 min → 30-min block |
 | AuditLogger | Append-only JSONL with SHA-256 hash chain |
+
+InputGuard is applied to **every** surface that accepts free text — including the Ask NAGA question form. Guardrail rejections are always surfaced visibly in the UI (amber card / snackbar) — never silent.
 
 ---
 
@@ -226,10 +230,11 @@ Copy `.env.example` to `.env`. Only `OPENROUTER_API_KEY` is required to run.
 |---|---|
 | 1. Onboarding | Register → select RRB NTPC → 100Q diagnostic → view topic-level weakness map |
 | 2. Study loop | Ask about Number System → study notes → MCQ practice → wrong answer → Hindi explanation |
-| 3. Progress | Progress page → streak heatmap → SM-2 cards → "Ask Dabbu" → Dabbu intervention → NAGA approves |
-| 4. Mock test | Saturday mock test → timed exam UI → result card with rank estimate |
-| 5. NAGA | Post question → login as NAGA → approve + answer → back to student, see notification |
-| 6. Security | Show injection blocked live → show SHA-256 audit log |
+| 3. Study plan | Study Plan page → Dabbu-generated week calendar → click day → hour-by-hour 5-slot timeline |
+| 4. Progress | Progress page → streak heatmap → SM-2 cards → "Ask Dabbu" → Dabbu intervention → NAGA approves |
+| 5. Mock test | Saturday mock test → timed exam UI → result card with rank estimate |
+| 6. NAGA | Post question → login as NAGA → approve + answer → back to student, see notification |
+| 7. Security | Show injection blocked live (phone number input → amber guardrail card) → show SHA-256 audit log |
 
 ---
 
@@ -243,7 +248,7 @@ Copy `.env.example` to `.env`. Only `OPENROUTER_API_KEY` is required to run.
 | Rebuild APK | `cd mobile_app && flutter build apk --release && cp build/app/outputs/flutter-apk/app-release.apk ../gurukulai.apk` |
 | macOS .app | `bash packaging/build_mac.sh` |
 
-**Backend (production):** Google Cloud Run — `https://gurukulai-backend-ekbh2if4xa-el.a.run.app` — scales to zero, free tier.
+**Backend (production):** Google Cloud Run — `https://gurukulai-backend-242694625313.us-central1.run.app` — scales to zero, free tier.
 
 **Backend URL for APK:** set in `mobile_app/.env` → `API_BASE_URL`. Edit and rebuild to switch between local and cloud.
 
