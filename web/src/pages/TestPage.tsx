@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuthStore } from '@/store/auth'
 import api from '@/services/api'
-import { ChevronRight, Clock, CheckCircle, Zap, Loader2 } from 'lucide-react'
+import { ChevronRight, Clock, CheckCircle, Zap, Loader2, MessageCircle, Send, ShieldAlert } from 'lucide-react'
 
 interface Question {
   question_id: string
@@ -27,6 +27,115 @@ interface TestState {
   correct?: boolean
   correct_index?: number
   explanation_en?: string
+}
+
+interface ChatMessage {
+  role: 'user' | 'ai'
+  text: string
+  isGuardrail?: boolean
+}
+
+function AiChatPanel({ questionText: _questionText }: { questionText: string }) {
+  const [open, setOpen] = useState(false)
+  const [input, setInput] = useState('')
+  const [messages, setMessages] = useState<ChatMessage[]>([])
+  const [loading, setLoading] = useState(false)
+  const bottomRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }, [messages])
+
+  const send = async (e: React.FormEvent) => {
+    e.preventDefault()
+    const msg = input.trim()
+    if (!msg || loading) return
+    setInput('')
+    setMessages((prev) => [...prev, { role: 'user', text: msg }])
+    setLoading(true)
+    try {
+      const res = await api.sendMessage(msg)
+      const d = res.data
+      const isGuardrail = !!(d.agent === 'guardrail' || d.threat || d.quarantined)
+      const text = d.response || d.notes || d.message || "I'm here to help you study!"
+      setMessages((prev) => [...prev, { role: 'ai', text, isGuardrail }])
+    } catch (err: any) {
+      const text = err.response?.data?.detail || 'Could not get a response. Please try again.'
+      setMessages((prev) => [...prev, { role: 'ai', text, isGuardrail: false }])
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  return (
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow border border-gray-200 dark:border-gray-700">
+      <button
+        onClick={() => setOpen((o) => !o)}
+        className="w-full flex items-center justify-between px-5 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition rounded-lg"
+      >
+        <span className="flex items-center gap-2">
+          <MessageCircle size={16} className="text-primary" />
+          Ask AI about this question
+        </span>
+        <ChevronRight size={16} className={`text-gray-400 transition-transform ${open ? 'rotate-90' : ''}`} />
+      </button>
+
+      {open && (
+        <div className="border-t border-gray-100 dark:border-gray-700">
+          {messages.length === 0 && (
+            <p className="px-5 py-3 text-xs text-gray-400">
+              Ask anything about this question — concept, formula, or approach.
+            </p>
+          )}
+          <div className="max-h-64 overflow-y-auto px-4 py-2 space-y-3">
+            {messages.map((m, i) => (
+              <div key={i} className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
+                <div
+                  className={`max-w-[80%] px-3 py-2 rounded-xl text-sm leading-relaxed ${
+                    m.role === 'user'
+                      ? 'bg-primary text-white rounded-br-sm'
+                      : m.isGuardrail
+                      ? 'bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 text-amber-800 dark:text-amber-200 rounded-bl-sm'
+                      : 'bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-bl-sm'
+                  }`}
+                >
+                  {m.isGuardrail && (
+                    <span className="flex items-center gap-1 text-xs font-semibold mb-1">
+                      <ShieldAlert size={12} /> Guardrail
+                    </span>
+                  )}
+                  {m.text}
+                </div>
+              </div>
+            ))}
+            {loading && (
+              <div className="flex justify-start">
+                <div className="bg-gray-100 dark:bg-gray-700 px-3 py-2 rounded-xl rounded-bl-sm">
+                  <Loader2 size={14} className="animate-spin text-primary" />
+                </div>
+              </div>
+            )}
+            <div ref={bottomRef} />
+          </div>
+          <form onSubmit={send} className="flex gap-2 px-4 pb-4 pt-2">
+            <input
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              placeholder="Ask about the concept, formula, or approach…"
+              className="flex-1 px-3 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+            />
+            <button
+              type="submit"
+              disabled={!input.trim() || loading}
+              className="p-2 bg-primary text-white rounded-lg hover:bg-primary/90 disabled:opacity-40 transition"
+            >
+              <Send size={16} />
+            </button>
+          </form>
+        </div>
+      )}
+    </div>
+  )
 }
 
 export default function TestPage() {
@@ -200,7 +309,7 @@ export default function TestPage() {
   }
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-2xl mx-auto space-y-4">
       <div className="mb-6">
         <div className="flex justify-between items-center mb-2">
           <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">
@@ -290,6 +399,8 @@ export default function TestPage() {
           )}
         </div>
       </div>
+
+      <AiChatPanel key={q.question_id} questionText={q.question_text_en} />
     </div>
   )
 }

@@ -1,7 +1,9 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/auth_provider.dart';
 import '../providers/session_provider.dart';
+import '../services/api_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/constants.dart';
 
@@ -15,6 +17,17 @@ class TestScreen extends StatefulWidget {
 class _TestScreenState extends State<TestScreen> {
   bool _sessionStarted = false;
   int? _selectedOption;
+
+  void _showAiChat(BuildContext context, String questionText, String lang) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(AppTheme.radiusLarge)),
+      ),
+      builder: (_) => _AiChatSheet(questionText: questionText, lang: lang),
+    );
+  }
 
   Future<void> _startSession({String? topic}) async {
     final auth = context.read<AuthProvider>();
@@ -66,6 +79,12 @@ class _TestScreenState extends State<TestScreen> {
     final lastResult = session.lastResult;
 
     return Scaffold(
+      floatingActionButton: FloatingActionButton.small(
+        onPressed: () => _showAiChat(context, q.textFor(lang), lang),
+        backgroundColor: AppTheme.secondary,
+        tooltip: lang == 'hi' ? 'AI से पूछें' : 'Ask AI',
+        child: const Icon(Icons.psychology_outlined, color: Colors.white),
+      ),
       body: SafeArea(
         child: Column(
           children: [
@@ -329,6 +348,232 @@ class _SessionComplete extends StatelessWidget {
                   child: Text(lang == 'hi' ? '🔄 दोबारा खेलें' : '🔄 Try Again')),
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+// ── AI Chat Sheet ─────────────────────────────────────────────────────────────
+
+class _ChatMsg {
+  final bool isUser;
+  final String text;
+  final bool isGuardrail;
+  const _ChatMsg({required this.isUser, required this.text, this.isGuardrail = false});
+}
+
+class _AiChatSheet extends StatefulWidget {
+  final String questionText;
+  final String lang;
+  const _AiChatSheet({required this.questionText, required this.lang});
+
+  @override
+  State<_AiChatSheet> createState() => _AiChatSheetState();
+}
+
+class _AiChatSheetState extends State<_AiChatSheet> {
+  final _ctrl = TextEditingController();
+  final _scrollCtrl = ScrollController();
+  final List<_ChatMsg> _msgs = [];
+  bool _loading = false;
+
+  @override
+  void dispose() {
+    _ctrl.dispose();
+    _scrollCtrl.dispose();
+    super.dispose();
+  }
+
+  Future<void> _send() async {
+    final text = _ctrl.text.trim();
+    if (text.isEmpty || _loading) return;
+    _ctrl.clear();
+    setState(() {
+      _msgs.add(_ChatMsg(isUser: true, text: text));
+      _loading = true;
+    });
+    _scrollToBottom();
+    try {
+      final result = await ApiService().sendMessage('', text);
+      final agent = result['agent'] as String?;
+      final threat = result['threat'] as String?;
+      final isGuardrail = agent == 'guardrail' || threat != null || result['quarantined'] == true;
+      final reply = result['response'] as String? ??
+          result['notes'] as String? ??
+          result['message'] as String? ??
+          (widget.lang == 'hi' ? 'कोई जवाब नहीं मिला।' : 'No response received.');
+      setState(() => _msgs.add(_ChatMsg(isUser: false, text: reply, isGuardrail: isGuardrail)));
+    } catch (e) {
+      String msg;
+      if (e is ApiException) {
+        try {
+          final body = jsonDecode(e.message) as Map<String, dynamic>;
+          msg = body['detail'] as String? ?? e.message;
+        } catch (_) {
+          msg = e.message;
+        }
+      } else {
+        msg = widget.lang == 'hi' ? 'जवाब नहीं मिला। फिर से कोशिश करें।' : 'Could not get a response. Please try again.';
+      }
+      setState(() => _msgs.add(_ChatMsg(isUser: false, text: msg)));
+    } finally {
+      setState(() => _loading = false);
+      _scrollToBottom();
+    }
+  }
+
+  void _scrollToBottom() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (_scrollCtrl.hasClients) {
+        _scrollCtrl.animateTo(
+          _scrollCtrl.position.maxScrollExtent,
+          duration: const Duration(milliseconds: 250),
+          curve: Curves.easeOut,
+        );
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final lang = widget.lang;
+    return Padding(
+      padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
+      child: SizedBox(
+        height: MediaQuery.of(context).size.height * 0.65,
+        child: Column(
+          children: [
+            Container(
+              margin: const EdgeInsets.symmetric(vertical: 10),
+              width: 40, height: 4,
+              decoration: BoxDecoration(color: Colors.grey.shade300, borderRadius: BorderRadius.circular(2)),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+              child: Row(
+                children: [
+                  const Icon(Icons.psychology_outlined, color: AppTheme.secondary, size: 20),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      lang == 'hi' ? 'इस प्रश्न के बारे में AI से पूछें' : 'Ask AI about this question',
+                      style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 15),
+                    ),
+                  ),
+                  IconButton(icon: const Icon(Icons.close, size: 20), onPressed: () => Navigator.pop(context)),
+                ],
+              ),
+            ),
+            const Divider(height: 1),
+            Expanded(
+              child: _msgs.isEmpty
+                  ? Center(
+                      child: Padding(
+                        padding: const EdgeInsets.all(24),
+                        child: Text(
+                          lang == 'hi'
+                              ? 'इस प्रश्न के concept, formula या approach के बारे में कुछ भी पूछें।'
+                              : 'Ask about the concept, formula, or approach for this question.',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(color: Colors.grey.shade500, fontSize: 13),
+                        ),
+                      ),
+                    )
+                  : ListView.builder(
+                      controller: _scrollCtrl,
+                      padding: const EdgeInsets.all(12),
+                      itemCount: _msgs.length,
+                      itemBuilder: (_, i) {
+                        final m = _msgs[i];
+                        return Align(
+                          alignment: m.isUser ? Alignment.centerRight : Alignment.centerLeft,
+                          child: Container(
+                            constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.78),
+                            margin: const EdgeInsets.only(bottom: 8),
+                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                            decoration: BoxDecoration(
+                              color: m.isUser
+                                  ? AppTheme.primary
+                                  : m.isGuardrail
+                                      ? Colors.amber.shade50
+                                      : Colors.grey.shade100,
+                              borderRadius: BorderRadius.only(
+                                topLeft: const Radius.circular(14),
+                                topRight: const Radius.circular(14),
+                                bottomLeft: Radius.circular(m.isUser ? 14 : 2),
+                                bottomRight: Radius.circular(m.isUser ? 2 : 14),
+                              ),
+                              border: m.isGuardrail
+                                  ? Border.all(color: Colors.amber.shade300)
+                                  : null,
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                if (m.isGuardrail)
+                                  Padding(
+                                    padding: const EdgeInsets.only(bottom: 4),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        Icon(Icons.shield_outlined, size: 12, color: Colors.amber.shade700),
+                                        const SizedBox(width: 4),
+                                        Text('Guardrail', style: TextStyle(fontSize: 10, color: Colors.amber.shade700, fontWeight: FontWeight.bold)),
+                                      ],
+                                    ),
+                                  ),
+                                Text(
+                                  m.text,
+                                  style: TextStyle(
+                                    color: m.isUser ? Colors.white : m.isGuardrail ? Colors.amber.shade900 : Colors.black87,
+                                    fontSize: 13,
+                                    height: 1.4,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+            ),
+            if (_loading)
+              const Padding(
+                padding: EdgeInsets.symmetric(vertical: 4),
+                child: LinearProgressIndicator(minHeight: 2),
+              ),
+            const Divider(height: 1),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(12, 8, 12, 12),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: TextField(
+                      controller: _ctrl,
+                      decoration: InputDecoration(
+                        hintText: lang == 'hi' ? 'यहाँ लिखें...' : 'Ask about this question…',
+                        contentPadding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(24),
+                          borderSide: BorderSide(color: Colors.grey.shade300),
+                        ),
+                        isDense: true,
+                      ),
+                      onSubmitted: (_) => _send(),
+                      textInputAction: TextInputAction.send,
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  IconButton.filled(
+                    onPressed: _loading ? null : _send,
+                    icon: const Icon(Icons.send, size: 18),
+                    style: IconButton.styleFrom(backgroundColor: AppTheme.primary),
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );

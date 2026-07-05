@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/auth_provider.dart';
@@ -412,7 +413,31 @@ class _AskNagaSheetState extends State<_AskNagaSheet> {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Error: $e')));
+        // Extract the detail message from ApiException JSON body
+        String msg;
+        if (e is ApiException) {
+          try {
+            final body = jsonDecode(e.message) as Map<String, dynamic>;
+            msg = body['detail'] as String? ?? e.message;
+          } catch (_) {
+            msg = e.message;
+          }
+        } else {
+          msg = e.toString();
+        }
+        final isGuardrail = e is ApiException && e.statusCode == 400;
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Row(
+            children: [
+              if (isGuardrail) ...[
+                const Icon(Icons.shield_outlined, color: Colors.white, size: 18),
+                const SizedBox(width: 8),
+              ],
+              Expanded(child: Text(msg)),
+            ],
+          ),
+          backgroundColor: isGuardrail ? Colors.amber.shade700 : Colors.red.shade700,
+        ));
       }
     } finally {
       if (mounted) setState(() => _sending = false);

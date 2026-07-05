@@ -16,6 +16,9 @@ from models.mentor import (
     MeetingRequest, MeetingRequestStatus,
     Notification, NotificationType,
 )
+from security.guardrails import InputGuard, SAFE_REDIRECT_EN, SAFE_REDIRECT_HI
+
+_input_guard = InputGuard()
 
 router = APIRouter(prefix="/api/mentor", tags=["mentor"])
 
@@ -184,6 +187,13 @@ class ApproveQuestionRequest(BaseModel):
 @router.post("/questions")
 async def post_question(req: PostQuestionRequest, auth_id: str = Depends(require_auth)):
     """Student posts a question — goes to NAGA's pending queue."""
+    # Security rule 1: InputGuard on all user-submitted text before storing or routing
+    _, threat = _input_guard.process(req.content)
+    if threat:
+        student = _students_store.get(auth_id)
+        lang = getattr(getattr(student, "preferred_language", None), "value", "en") if student else "en"
+        raise HTTPException(status_code=400, detail=SAFE_REDIRECT_HI if lang == "hi" else SAFE_REDIRECT_EN)
+
     student_name = _get_student_name(auth_id)
     q = Question(
         question_id=str(uuid.uuid4()),

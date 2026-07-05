@@ -54,6 +54,17 @@ class _StudyScreenState extends State<StudyScreen> {
     });
     try {
       final result = await ApiService().getStudyNotes(topic.trim());
+      // Guardrail or quarantine: backend returns {agent: "guardrail", response: "...", threat: "..."}
+      final agent = result['agent'] as String?;
+      final threat = result['threat'] as String?;
+      if (agent == 'guardrail' || threat != null || result['quarantined'] == true) {
+        final msg = result['response'] as String? ?? "I'm here to help you study! What topic would you like to explore?";
+        setState(() {
+          final idx = _notes.indexWhere((n) => n.id == id);
+          if (idx >= 0) _notes[idx] = _NoteEntry(id: id, topic: topic, error: msg, isGuardrail: true);
+        });
+        return;
+      }
       final notes = result['notes'] as String? ?? '';
       final videos = (result['youtube_videos'] as List<dynamic>? ?? [])
           .map((v) => _Video(
@@ -288,11 +299,28 @@ class _NoteCardState extends State<_NoteCard> {
     }
 
     if (e.error != null) {
+      final isGuardrail = e.isGuardrail;
       return Card(
-        color: Colors.red.shade50,
+        color: isGuardrail ? Colors.amber.shade50 : Colors.red.shade50,
         child: Padding(
           padding: const EdgeInsets.all(16),
-          child: Text(e.error!, style: const TextStyle(color: Colors.red)),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(
+                isGuardrail ? Icons.shield_outlined : Icons.error_outline,
+                color: isGuardrail ? Colors.amber.shade700 : Colors.red,
+                size: 20,
+              ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Text(
+                  e.error!,
+                  style: TextStyle(color: isGuardrail ? Colors.amber.shade900 : Colors.red),
+                ),
+              ),
+            ],
+          ),
         ),
       );
     }
@@ -374,6 +402,7 @@ class _NoteEntry {
   final String? notes;
   final List<_Video>? videos;
   final String? error;
+  final bool isGuardrail;
 
   const _NoteEntry({
     required this.id,
@@ -382,6 +411,7 @@ class _NoteEntry {
     this.notes,
     this.videos,
     this.error,
+    this.isGuardrail = false,
   });
 }
 

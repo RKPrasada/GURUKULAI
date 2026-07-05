@@ -29,6 +29,7 @@ export default function QuestionsPage() {
   const [filterSubject, setFilterSubject] = useState('')
   const [form, setForm] = useState({ subject: '', topic: '', content: '' })
   const [successMsg, setSuccessMsg] = useState('')
+  const [submitError, setSubmitError] = useState('')
 
   const isNaga = student?.user_id === 'naga'
 
@@ -45,13 +46,15 @@ export default function QuestionsPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setSubmitting(true)
+    setSubmitError('')
+    setSuccessMsg('')
     try {
       await api.postQuestion(form.subject, form.topic, form.content)
       setSuccessMsg('Your question has been submitted. NAGA will review it shortly.')
       setShowForm(false)
       setForm({ subject: '', topic: '', content: '' })
     } catch (err: any) {
-      setSuccessMsg(`Error: ${err.response?.data?.detail || err.message}`)
+      setSubmitError(err.response?.data?.detail || err.message || 'Submission failed.')
     }
     setSubmitting(false)
   }
@@ -97,6 +100,12 @@ export default function QuestionsPage() {
       {successMsg && (
         <div className="p-4 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-200 rounded-lg">
           {successMsg}
+        </div>
+      )}
+      {submitError && (
+        <div className="p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 rounded-lg flex items-start gap-2">
+          <span className="shrink-0">⚠️</span>
+          <span>{submitError}</span>
         </div>
       )}
 

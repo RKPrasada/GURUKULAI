@@ -167,6 +167,14 @@ export default function StudyPage() {
     try {
       const res = await api.getStudyNotes(topic)
       const d = res.data
+      // Guardrail or quarantine response — show the redirect message as an error
+      if (d.agent === 'guardrail' || d.threat || d.quarantined) {
+        setMessages((prev) => prev.map((m) => m.id !== id ? m : {
+          id, topic, timestamp: new Date().toISOString(),
+          error: d.response || "I'm here to help you study! What topic would you like to explore?",
+        }))
+        return
+      }
       setMessages((prev) => prev.map((m) => m.id !== id ? m : {
         id, topic, timestamp: new Date().toISOString(),
         notes: d.notes,
