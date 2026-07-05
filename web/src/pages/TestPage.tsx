@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuthStore } from '@/store/auth'
 import api from '@/services/api'
-import { ChevronRight, Clock, CheckCircle, Zap } from 'lucide-react'
+import { ChevronRight, Clock, CheckCircle, Zap, Loader2 } from 'lucide-react'
 
 interface Question {
   question_id: string
@@ -146,7 +146,10 @@ export default function TestPage() {
             disabled={loading}
             className="w-full bg-primary hover:bg-primary/90 disabled:bg-gray-400 text-white font-semibold py-3 px-6 rounded-lg transition flex items-center justify-center gap-2"
           >
-            {loading ? '⏳ Loading...' : <><span>Start Test</span> <Zap size={20} /></>}
+            {loading
+              ? <><Loader2 size={16} className="animate-spin" /> Generating questions…</>
+              : <><span>Start Test</span> <Zap size={20} /></>
+            }
           </button>
         </div>
       </div>
@@ -272,7 +275,10 @@ export default function TestPage() {
               disabled={selectedIndex === null || submitting}
               className="bg-primary hover:bg-primary/90 disabled:bg-gray-400 text-white font-semibold py-2 px-6 rounded-lg transition flex items-center gap-2"
             >
-              {submitting ? '⏳ Checking...' : <><span>Submit</span> <ChevronRight size={18} /></>}
+              {submitting
+                ? <><Loader2 size={15} className="animate-spin" /> Checking…</>
+                : <><span>Submit</span> <ChevronRight size={18} /></>
+              }
             </button>
           ) : (
             <button

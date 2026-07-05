@@ -120,6 +120,19 @@ async def chat(req: ChatRequest, auth_id: str = Depends(require_auth)):
     return result
 
 
+@router.post("/content")
+async def get_study_notes(req: ChatRequest, auth_id: str = Depends(require_auth)):
+    """Directly invokes ContentAgent — always returns study notes, skips orchestrator routing."""
+    student_id = _resolve_student_id(auth_id, req.student_id)
+    student = _get_student(student_id)
+    if not student:
+        raise HTTPException(status_code=404, detail="Student not found")
+    result = await _orchestrator.content.run(student, req.message)
+    if isinstance(result, dict):
+        result["_agent"] = "content"
+    return result
+
+
 @router.post("/assessment/start")
 async def start_assessment(req: AssessmentStart, auth_id: str = Depends(require_auth)):
     student_id = _resolve_student_id(auth_id, req.student_id)

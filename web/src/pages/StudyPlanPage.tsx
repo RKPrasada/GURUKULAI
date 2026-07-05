@@ -302,31 +302,224 @@ function GenerateView({ diagnosticDone, onGenerate, generating }: {
 }
 
 function ProposedView({ plan }: { plan: StudyPlan }) {
+  // Show the full plan with a "pending approval" banner — don't hide it behind a spinner
   return (
-    <div className="max-w-md mx-auto text-center py-12 space-y-5">
-      <div className="w-16 h-16 rounded-2xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center mx-auto">
-        <Loader2 size={32} className="text-amber-600 dark:text-amber-400 animate-spin" />
+    <div className="space-y-4">
+      <div className="flex items-center gap-3 bg-amber-50 dark:bg-amber-900/20 border border-amber-300 dark:border-amber-700 rounded-xl px-4 py-3">
+        <Loader2 size={16} className="text-amber-600 animate-spin shrink-0" />
+        <div className="text-sm">
+          <span className="font-semibold text-amber-800 dark:text-amber-200">Awaiting NAGA's review · </span>
+          <span className="text-amber-700 dark:text-amber-300">
+            Dabbu built this plan. NAGA will approve or adjust it before it goes live. You can preview it below.
+          </span>
+        </div>
       </div>
-      <h2 className="text-xl font-bold text-gray-900 dark:text-white">Awaiting NAGA's approval</h2>
-      <p className="text-sm text-gray-500 dark:text-gray-400">
-        Dabbu has built your study plan. NAGA is reviewing it — you'll get a notification as soon as it's approved.
-      </p>
-      <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4 text-left space-y-2">
-        <Row label="Exam" value={plan.exam_target.toUpperCase().replace(/_/g, ' ')} />
-        <Row label="Duration" value={`${plan.duration_months} months`} />
-        <Row label="Total hours" value={`${plan.total_study_hours?.toFixed(0)}h`} />
-        <Row label="Weak topics" value={`${plan.weak_topics.length} identified`} />
-        {plan.exam_date && <Row label="Exam date" value={fmtDate(plan.exam_date)} />}
+      <PlanFullView plan={plan} readOnly />
+    </div>
+  )
+}
+
+// ── Year-at-a-Glance overview ──────────────────────────────────────────────────
+
+function YearOverview({ plan }: { plan: StudyPlan }) {
+  const typeColor: Record<string, string> = {
+    study:    'bg-blue-400',
+    practice: 'bg-violet-400',
+    mock:     'bg-red-400',
+    revision: 'bg-amber-400',
+    rest:     'bg-gray-200 dark:bg-gray-600',
+  }
+  return (
+    <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4">
+      <h3 className="text-sm font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+        <Calendar size={14} className="text-primary" />
+        {plan.weeks.length}-week plan at a glance
+      </h3>
+      <div className="flex flex-wrap gap-0.5">
+        {plan.weeks.flatMap((w) =>
+          w.days.map((d) => {
+            const types = d.blocks.map((b) => b.session_type)
+            const dominant = types.length === 0
+              ? 'rest'
+              : (['mock','practice','study','revision','rest'] as const)
+                  .find((t) => types.includes(t as any)) ?? 'study'
+            const pct = d.blocks.length
+              ? Math.round(d.blocks.filter((b) => b.completed).length / d.blocks.length * 100)
+              : 0
+            return (
+              <div
+                key={d.day_date}
+                title={`${d.day_date} — ${d.blocks.length} sessions, ${pct}% done`}
+                className={`w-3 h-3 rounded-sm ${typeColor[dominant]} ${pct === 100 ? 'opacity-100' : d.is_rest_day ? 'opacity-30' : 'opacity-60'}`}
+              />
+            )
+          })
+        )}
+      </div>
+      <div className="flex flex-wrap gap-3 mt-3 text-xs text-gray-500">
+        {Object.entries(typeColor).filter(([k]) => k !== 'rest').map(([k, cls]) => (
+          <span key={k} className="flex items-center gap-1">
+            <span className={`w-2.5 h-2.5 rounded-sm inline-block ${cls}`} />
+            {k.charAt(0).toUpperCase() + k.slice(1)}
+          </span>
+        ))}
+        <span className="flex items-center gap-1 ml-auto">
+          {plan.total_study_hours?.toFixed(0)}h total · {plan.weeks.length} weeks
+        </span>
       </div>
     </div>
   )
 }
 
-function Row({ label, value }: { label: string; value: string }) {
+// ── Shared full plan view (used for both active and proposed) ──────────────────
+
+function PlanFullView({ plan: rawPlan, readOnly = false }: { plan: StudyPlan; readOnly?: boolean }) {
+  const [completions, setCompletions] = useState<Set<string>>(new Set())
+  const [selectedWeekNum, setSelectedWeekNum] = useState<number | null>(() => {
+    const t = today()
+    const cur = rawPlan.weeks.find((w) => w.start_date <= t && t <= w.end_date)
+    return cur?.week_number ?? rawPlan.weeks[0]?.week_number ?? 1
+  })
+  const [selectedDay, setSelectedDay] = useState<string | null>(() => {
+    const t = today()
+    const cur = rawPlan.weeks.find((w) => w.start_date <= t && t <= w.end_date)
+    return cur ? t : rawPlan.weeks[0]?.days[0]?.day_date ?? null
+  })
+
+  const enrichPlan = (p: StudyPlan): StudyPlan => ({
+    ...p,
+    weeks: p.weeks.map((w) => ({
+      ...w,
+      days: w.days.map((d) => ({
+        ...d,
+        blocks: d.blocks.map((b) => ({ ...b, completed: completions.has(b.block_id) || b.completed })),
+      })),
+    })),
+  })
+
+  const plan = enrichPlan(rawPlan)
+  const selectedWeek = plan.weeks.find((w) => w.week_number === selectedWeekNum) ?? plan.weeks[0]
+  const selectedDayData = selectedWeek?.days.find((d) => d.day_date === selectedDay) ?? null
+  const totalDays = Math.round((new Date(plan.end_date).getTime() - new Date(plan.start_date).getTime()) / 86400000)
+  const elapsedDays = Math.max(0, Math.round((Date.now() - new Date(plan.start_date).getTime()) / 86400000))
+  const overallPct = Math.min(100, Math.round((elapsedDays / totalDays) * 100))
+
+  const toggleDone = (blockId: string) => {
+    if (readOnly) return
+    setCompletions((prev) => { const n = new Set(prev); n.has(blockId) ? n.delete(blockId) : n.add(blockId); return n })
+  }
+
   return (
-    <div className="flex justify-between text-sm">
-      <span className="text-gray-500 dark:text-gray-400">{label}</span>
-      <span className="font-medium text-gray-900 dark:text-white">{value}</span>
+    <div className="space-y-4">
+      {/* Plan summary */}
+      <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4">
+        <div className="flex flex-wrap items-center gap-4 mb-3">
+          <div>
+            <p className="text-xs text-gray-500 dark:text-gray-400">Exam</p>
+            <p className="text-sm font-bold text-gray-900 dark:text-white">{plan.exam_target.toUpperCase().replace(/_/g, ' ')}</p>
+          </div>
+          <div>
+            <p className="text-xs text-gray-500 dark:text-gray-400">Duration</p>
+            <p className="text-sm font-bold text-gray-900 dark:text-white">{plan.duration_months} months · {plan.weeks.length} weeks</p>
+          </div>
+          <div>
+            <p className="text-xs text-gray-500 dark:text-gray-400">Total study</p>
+            <p className="text-sm font-bold text-gray-900 dark:text-white">{plan.total_study_hours?.toFixed(0)}h</p>
+          </div>
+          {plan.exam_date && (
+            <div>
+              <p className="text-xs text-gray-500 dark:text-gray-400">Exam date</p>
+              <p className="text-sm font-bold text-gray-900 dark:text-white">{fmtDate(plan.exam_date)}</p>
+            </div>
+          )}
+        </div>
+        <div className="flex justify-between text-xs text-gray-400 mb-1">
+          <span>Overall progress</span><span>{overallPct}%</span>
+        </div>
+        <div className="h-2 rounded-full bg-gray-200 dark:bg-gray-600">
+          <div className="h-full rounded-full bg-primary transition-all" style={{ width: `${overallPct}%` }} />
+        </div>
+        <div className="flex justify-between text-xs text-gray-400 mt-1">
+          <span>{fmtDate(plan.start_date)}</span>
+          <span>{fmtDate(plan.end_date)}</span>
+        </div>
+      </div>
+
+      {/* Year at a glance */}
+      <YearOverview plan={plan} />
+
+      {/* Week + day navigation */}
+      <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-4">
+        <div className="space-y-2 max-h-[560px] overflow-y-auto pr-1">
+          <h2 className="text-xs font-bold uppercase tracking-wide text-gray-500 dark:text-gray-400 px-1">
+            {plan.weeks.length} Weeks
+          </h2>
+          {plan.weeks.map((w) => (
+            <WeekCard
+              key={w.week_number}
+              week={w}
+              active={w.week_number === selectedWeekNum}
+              onClick={() => {
+                setSelectedWeekNum(w.week_number)
+                const t = today()
+                const dayInWeek = w.days.find((d) => d.day_date === t)
+                setSelectedDay(dayInWeek?.day_date ?? w.days[0]?.day_date ?? null)
+              }}
+            />
+          ))}
+        </div>
+
+        {selectedWeek && (
+          <div className="space-y-4">
+            <div className="flex items-center justify-between">
+              <div>
+                <h2 className="font-bold text-gray-900 dark:text-white">
+                  Week {selectedWeek.week_number}{selectedWeek.theme ? ` — ${selectedWeek.theme}` : ''}
+                </h2>
+                <p className="text-xs text-gray-500">{fmtDate(selectedWeek.start_date)} – {fmtDate(selectedWeek.end_date)} · {selectedWeek.total_hours}h</p>
+              </div>
+              <div className="flex gap-1">
+                <button
+                  onClick={() => setSelectedWeekNum((n) => Math.max(1, (n ?? 1) - 1))}
+                  disabled={(selectedWeekNum ?? 1) <= 1}
+                  className="p-1.5 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 disabled:opacity-30"
+                ><ChevronLeft size={16} /></button>
+                <button
+                  onClick={() => setSelectedWeekNum((n) => Math.min(plan.weeks.length, (n ?? 1) + 1))}
+                  disabled={(selectedWeekNum ?? 1) >= plan.weeks.length}
+                  className="p-1.5 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 disabled:opacity-30"
+                ><ChevronRight size={16} /></button>
+              </div>
+            </div>
+            <DayGrid week={selectedWeek} selectedDay={selectedDay} onSelectDay={setSelectedDay} />
+            {selectedDayData && (
+              <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4">
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                  <Calendar size={16} className="text-primary" />
+                  {fmtFullDate(selectedDayData.day_date)}
+                  {isToday(selectedDayData.day_date) && (
+                    <span className="bg-amber-100 text-amber-700 text-xs font-bold px-2 py-0.5 rounded-full">Today</span>
+                  )}
+                </h3>
+                <DayTimeline day={selectedDayData} onToggleDone={toggleDone} />
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+
+      {plan.weak_topics.length > 0 && (
+        <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4">
+          <h3 className="text-sm font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+            <Flame size={14} className="text-red-500" /> Priority topics (extra study slots)
+          </h3>
+          <div className="flex flex-wrap gap-2">
+            {plan.weak_topics.map((t) => (
+              <span key={t} className="text-xs bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400 border border-red-200 dark:border-red-800 px-2 py-1 rounded-full">{t}</span>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   )
 }
@@ -342,16 +535,7 @@ export default function StudyPlanPage() {
   const [error, setError] = useState('')
   const [rediagMsg, setRediagMsg] = useState('')
 
-  // Navigation state
-  const [selectedWeekNum, setSelectedWeekNum] = useState<number | null>(null)
-  const [selectedDay, setSelectedDay] = useState<string | null>(null)
-
-  // Local completion tracking (client-side; persisted back via API in next iteration)
-  const [completions, setCompletions] = useState<Set<string>>(new Set())
-
-  useEffect(() => {
-    loadPlans()
-  }, [])
+  useEffect(() => { loadPlans() }, [])
 
   const loadPlans = async () => {
     setLoading(true)
@@ -360,21 +544,9 @@ export default function StudyPlanPage() {
         api.getDabbuActivePlan(),
         api.getDabbuProposedPlan(),
       ])
-      const a: StudyPlan | null = activeRes.data.plan
-      const p: StudyPlan | null = proposedRes.data.plan
-      setActivePlan(a)
-      setProposedPlan(p)
-
-      // Auto-select current week
-      if (a) {
-        const t = today()
-        const cur = a.weeks.find((w) => w.start_date <= t && t <= w.end_date)
-        setSelectedWeekNum(cur?.week_number ?? a.weeks[0]?.week_number ?? 1)
-        setSelectedDay(t)
-      }
-
-      // Check for re-diagnostic suggestion (background, non-blocking)
-      if (a && student?.diagnostic_done) {
+      setActivePlan(activeRes.data.plan ?? null)
+      setProposedPlan(proposedRes.data.plan ?? null)
+      if (activeRes.data.plan && student?.diagnostic_done) {
         api.checkProgress().then((res) => {
           if (res.data.suggested) setRediagMsg(res.data.reason ?? '')
         }).catch(() => {})
@@ -398,33 +570,11 @@ export default function StudyPlanPage() {
     setGenerating(false)
   }
 
-  const toggleDone = (blockId: string) => {
-    setCompletions((prev) => {
-      const next = new Set(prev)
-      next.has(blockId) ? next.delete(blockId) : next.add(blockId)
-      return next
-    })
-  }
-
-  // Merge local completions into plan data
-  const enrichPlan = (plan: StudyPlan): StudyPlan => ({
-    ...plan,
-    weeks: plan.weeks.map((w) => ({
-      ...w,
-      days: w.days.map((d) => ({
-        ...d,
-        blocks: d.blocks.map((b) => ({
-          ...b,
-          completed: completions.has(b.block_id) || b.completed,
-        })),
-      })),
-    })),
-  })
-
   if (loading) {
     return (
-      <div className="flex items-center justify-center h-48">
+      <div className="flex flex-col items-center justify-center h-48 gap-3">
         <Loader2 size={28} className="animate-spin text-primary" />
+        <p className="text-sm text-gray-500 dark:text-gray-400">Loading your study plan…</p>
       </div>
     )
   }
@@ -456,39 +606,26 @@ export default function StudyPlanPage() {
   // ── Proposed / awaiting NAGA ──
   if (!activePlan && proposedPlan) {
     return (
-      <div className="max-w-xl mx-auto">
-        <h1 className="text-xl font-bold text-gray-900 dark:text-white mb-1">Study Plan</h1>
+      <div className="space-y-4">
+        <h1 className="text-xl font-bold text-gray-900 dark:text-white">Study Plan</h1>
         <ProposedView plan={proposedPlan} />
       </div>
     )
   }
 
-  // ── Active plan — main view ──
-  const plan = enrichPlan(activePlan!)
-  const selectedWeek = plan.weeks.find((w) => w.week_number === selectedWeekNum) ?? plan.weeks[0]
-  const selectedDayData = selectedWeek?.days.find((d) => d.day_date === selectedDay) ?? null
-
-  const totalDays = Math.round(
-    (new Date(plan.end_date).getTime() - new Date(plan.start_date).getTime()) / 86400000
-  )
-  const elapsedDays = Math.max(
-    0,
-    Math.round((Date.now() - new Date(plan.start_date).getTime()) / 86400000)
-  )
-  const overallPct = Math.min(100, Math.round((elapsedDays / totalDays) * 100))
-
+  // ── Active plan ──
   return (
     <div className="space-y-5">
-      {/* Header */}
-      <div>
-        <h1 className="text-xl font-bold text-gray-900 dark:text-white">Study Plan</h1>
-        <p className="text-sm text-gray-500 dark:text-gray-400">
-          {plan.exam_target.toUpperCase().replace(/_/g, ' ')} · {plan.duration_months} months · {plan.total_study_hours?.toFixed(0)}h total
-          {plan.exam_date ? ` · Exam: ${fmtDate(plan.exam_date)}` : ''}
-        </p>
+      <div className="flex items-start justify-between">
+        <div>
+          <h1 className="text-xl font-bold text-gray-900 dark:text-white">Study Plan</h1>
+          <p className="text-sm text-gray-500 dark:text-gray-400">
+            {activePlan!.exam_target.toUpperCase().replace(/_/g, ' ')} · {activePlan!.duration_months} months
+            {activePlan!.exam_date ? ` · Exam: ${fmtDate(activePlan!.exam_date)}` : ''}
+          </p>
+        </div>
       </div>
 
-      {/* Re-diagnostic nudge */}
       {rediagMsg && (
         <div className="flex gap-3 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-xl p-4">
           <AlertCircle size={18} className="text-amber-600 shrink-0 mt-0.5" />
@@ -500,112 +637,7 @@ export default function StudyPlanPage() {
         </div>
       )}
 
-      {/* Overall progress bar */}
-      <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4">
-        <div className="flex justify-between text-sm mb-2">
-          <span className="text-gray-600 dark:text-gray-400">Overall progress</span>
-          <span className="font-semibold text-gray-900 dark:text-white">{overallPct}%</span>
-        </div>
-        <div className="h-2 rounded-full bg-gray-200 dark:bg-gray-600">
-          <div className="h-full rounded-full bg-primary transition-all" style={{ width: `${overallPct}%` }} />
-        </div>
-        <div className="flex justify-between text-xs text-gray-400 mt-1">
-          <span>{fmtDate(plan.start_date)}</span>
-          <span>{fmtDate(plan.end_date)}</span>
-        </div>
-      </div>
-
-      {/* Three-column layout: week list | day grid + timeline */}
-      <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-4">
-        {/* Week list */}
-        <div className="space-y-2 max-h-[600px] overflow-y-auto pr-1">
-          <h2 className="text-xs font-bold uppercase tracking-wide text-gray-500 dark:text-gray-400 px-1">
-            {plan.weeks.length} Weeks
-          </h2>
-          {plan.weeks.map((w) => (
-            <WeekCard
-              key={w.week_number}
-              week={w}
-              active={w.week_number === selectedWeekNum}
-              onClick={() => {
-                setSelectedWeekNum(w.week_number)
-                // auto-select today if it's in this week, else first day
-                const t = today()
-                const dayInWeek = w.days.find((d) => d.day_date === t)
-                setSelectedDay(dayInWeek?.day_date ?? w.days[0]?.day_date ?? null)
-              }}
-            />
-          ))}
-        </div>
-
-        {/* Day grid + timeline */}
-        {selectedWeek && (
-          <div className="space-y-4">
-            {/* Week header */}
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-bold text-gray-900 dark:text-white">
-                  Week {selectedWeek.week_number}
-                  {selectedWeek.theme ? ` — ${selectedWeek.theme}` : ''}
-                </h2>
-                <p className="text-xs text-gray-500">{fmtDate(selectedWeek.start_date)} – {fmtDate(selectedWeek.end_date)} · {selectedWeek.total_hours}h</p>
-              </div>
-              <div className="flex gap-1">
-                <button
-                  onClick={() => setSelectedWeekNum((n) => Math.max(1, (n ?? 1) - 1))}
-                  disabled={(selectedWeekNum ?? 1) <= 1}
-                  className="p-1.5 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 disabled:opacity-30"
-                ><ChevronLeft size={16} /></button>
-                <button
-                  onClick={() => setSelectedWeekNum((n) => Math.min(plan.weeks.length, (n ?? 1) + 1))}
-                  disabled={(selectedWeekNum ?? 1) >= plan.weeks.length}
-                  className="p-1.5 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 disabled:opacity-30"
-                ><ChevronRight size={16} /></button>
-              </div>
-            </div>
-
-            {/* Day selector grid */}
-            <DayGrid
-              week={selectedWeek}
-              selectedDay={selectedDay}
-              onSelectDay={setSelectedDay}
-            />
-
-            {/* Day timeline */}
-            {selectedDayData && (
-              <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4">
-                <h3 className="font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-                  <Calendar size={16} className="text-primary" />
-                  {fmtFullDate(selectedDayData.day_date)}
-                  {isToday(selectedDayData.day_date) && (
-                    <span className="bg-amber-100 text-amber-700 text-xs font-bold px-2 py-0.5 rounded-full">Today</span>
-                  )}
-                </h3>
-                <DayTimeline
-                  day={selectedDayData}
-                  onToggleDone={toggleDone}
-                />
-              </div>
-            )}
-          </div>
-        )}
-      </div>
-
-      {/* Weak topics summary */}
-      {plan.weak_topics.length > 0 && (
-        <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4">
-          <h3 className="text-sm font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
-            <Flame size={14} className="text-red-500" /> Priority Topics (given extra slots)
-          </h3>
-          <div className="flex flex-wrap gap-2">
-            {plan.weak_topics.map((t) => (
-              <span key={t} className="text-xs bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400 border border-red-200 dark:border-red-800 px-2 py-1 rounded-full">
-                {t}
-              </span>
-            ))}
-          </div>
-        </div>
-      )}
+      <PlanFullView plan={activePlan!} />
     </div>
   )
 }

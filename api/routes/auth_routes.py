@@ -282,8 +282,18 @@ async def forgot_password(email: str):
     }
 
 
+class ResetPasswordRequest(BaseModel):
+    user_id: str
+    reset_token: str
+    new_password: str
+    confirm_password: str
+
+
 @router.post("/reset-password")
-async def reset_password(user_id: str, reset_token: str, new_password: str, confirm_password: str):
+async def reset_password(req: ResetPasswordRequest):
+    user_id, reset_token, new_password, confirm_password = (
+        req.user_id, req.reset_token, req.new_password, req.confirm_password
+    )
     """Reset password using reset token."""
     if new_password != confirm_password:
         raise HTTPException(status_code=400, detail="Passwords do not match")

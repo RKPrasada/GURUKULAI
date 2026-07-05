@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/auth_provider.dart';
+import '../services/api_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/constants.dart';
 
@@ -278,7 +279,25 @@ class _LoginSheetState extends State<_LoginSheet> {
               const SizedBox(height: 8),
               Text(auth.error!, style: const TextStyle(color: Colors.red, fontSize: 13)),
             ],
-            const SizedBox(height: 20),
+            const SizedBox(height: 16),
+            Align(
+              alignment: Alignment.centerRight,
+              child: TextButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                  showModalBottomSheet(
+                    context: context,
+                    isScrollControlled: true,
+                    shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.vertical(top: Radius.circular(AppTheme.radiusLarge)),
+                    ),
+                    builder: (_) => const _ForgotPasswordSheet(),
+                  );
+                },
+                child: const Text('Forgot Password?', style: TextStyle(fontSize: 13)),
+              ),
+            ),
+            const SizedBox(height: 4),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
@@ -302,6 +321,219 @@ class _LoginSheetState extends State<_LoginSheet> {
       ),
     );
   }
+}
+
+// ── Forgot Password Sheet ──────────────────────────────────────────────────────
+
+class _ForgotPasswordSheet extends StatefulWidget {
+  const _ForgotPasswordSheet();
+  @override
+  State<_ForgotPasswordSheet> createState() => _ForgotPasswordSheetState();
+}
+
+class _ForgotPasswordSheetState extends State<_ForgotPasswordSheet> {
+  final _api = ApiService();
+  int _step = 1; // 1=email, 2=reset, 3=done
+  bool _loading = false;
+  String? _error;
+  String _email = '';
+  String _userId = '';
+  String _resetToken = '';
+  final _emailCtrl = TextEditingController();
+  final _pw1Ctrl = TextEditingController();
+  final _pw2Ctrl = TextEditingController();
+  bool _obscure1 = true;
+  bool _obscure2 = true;
+
+  @override
+  void dispose() {
+    _emailCtrl.dispose();
+    _pw1Ctrl.dispose();
+    _pw2Ctrl.dispose();
+    super.dispose();
+  }
+
+  Future<void> _submitEmail() async {
+    final e = _emailCtrl.text.trim();
+    if (!e.contains('@')) {
+      setState(() => _error = 'Enter a valid email address.');
+      return;
+    }
+    setState(() { _loading = true; _error = null; });
+    try {
+      final res = await _api.forgotPassword(e);
+      _email = e;
+      _userId = res['user_id'] as String? ?? '';
+      _resetToken = res['reset_token'] as String? ?? '';
+      setState(() { _step = 2; _loading = false; });
+    } catch (ex) {
+      setState(() {
+        _error = 'No account found with that email.';
+        _loading = false;
+      });
+    }
+  }
+
+  Future<void> _submitReset() async {
+    if (_pw1Ctrl.text.length < 8) {
+      setState(() => _error = 'Password must be at least 8 characters.');
+      return;
+    }
+    if (_pw1Ctrl.text != _pw2Ctrl.text) {
+      setState(() => _error = 'Passwords do not match.');
+      return;
+    }
+    setState(() { _loading = true; _error = null; });
+    try {
+      await _api.resetPassword(
+        userId: _userId,
+        resetToken: _resetToken,
+        newPassword: _pw1Ctrl.text,
+        confirmPassword: _pw2Ctrl.text,
+      );
+      setState(() { _step = 3; _loading = false; });
+    } catch (ex) {
+      setState(() {
+        _error = 'Reset failed. Please try again.';
+        _loading = false;
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.only(
+        left: 24, right: 24, top: 24,
+        bottom: MediaQuery.of(context).viewInsets.bottom + 24,
+      ),
+      child: _step == 3 ? _buildSuccess() : _step == 2 ? _buildReset() : _buildEmail(),
+    );
+  }
+
+  Widget _buildEmail() => Column(
+    mainAxisSize: MainAxisSize.min,
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+      const Text('Reset Password', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w700)),
+      const SizedBox(height: 4),
+      const Text('Enter your registered email to get a reset token.', style: TextStyle(color: Colors.grey)),
+      const SizedBox(height: 20),
+      TextField(
+        controller: _emailCtrl,
+        keyboardType: TextInputType.emailAddress,
+        decoration: const InputDecoration(
+          labelText: 'Email address',
+          prefixIcon: Icon(Icons.email_outlined),
+        ),
+      ),
+      if (_error != null) ...[
+        const SizedBox(height: 8),
+        Text(_error!, style: const TextStyle(color: Colors.red, fontSize: 13)),
+      ],
+      const SizedBox(height: 20),
+      SizedBox(
+        width: double.infinity,
+        child: ElevatedButton(
+          onPressed: _loading ? null : _submitEmail,
+          child: _loading
+              ? const SizedBox(height: 20, width: 20, child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2))
+              : const Text('Continue'),
+        ),
+      ),
+      const SizedBox(height: 8),
+      Center(
+        child: TextButton(
+          onPressed: () => Navigator.pop(context),
+          child: const Text('← Back to Login'),
+        ),
+      ),
+      const SizedBox(height: 4),
+    ],
+  );
+
+  Widget _buildReset() => Column(
+    mainAxisSize: MainAxisSize.min,
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+      const Text('Set New Password', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w700)),
+      const SizedBox(height: 4),
+      Text('Resetting password for $_email', style: const TextStyle(color: Colors.grey, fontSize: 13)),
+      const SizedBox(height: 20),
+      TextField(
+        controller: _pw1Ctrl,
+        obscureText: _obscure1,
+        decoration: InputDecoration(
+          labelText: 'New Password (min 8 chars)',
+          prefixIcon: const Icon(Icons.lock_outline),
+          suffixIcon: IconButton(
+            icon: Icon(_obscure1 ? Icons.visibility_outlined : Icons.visibility_off_outlined),
+            onPressed: () => setState(() => _obscure1 = !_obscure1),
+          ),
+        ),
+      ),
+      const SizedBox(height: 12),
+      TextField(
+        controller: _pw2Ctrl,
+        obscureText: _obscure2,
+        decoration: InputDecoration(
+          labelText: 'Confirm New Password',
+          prefixIcon: const Icon(Icons.lock_outline),
+          suffixIcon: IconButton(
+            icon: Icon(_obscure2 ? Icons.visibility_outlined : Icons.visibility_off_outlined),
+            onPressed: () => setState(() => _obscure2 = !_obscure2),
+          ),
+        ),
+      ),
+      if (_error != null) ...[
+        const SizedBox(height: 8),
+        Text(_error!, style: const TextStyle(color: Colors.red, fontSize: 13)),
+      ],
+      const SizedBox(height: 20),
+      SizedBox(
+        width: double.infinity,
+        child: ElevatedButton(
+          onPressed: _loading ? null : _submitReset,
+          child: _loading
+              ? const SizedBox(height: 20, width: 20, child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2))
+              : const Text('Reset Password'),
+        ),
+      ),
+      const SizedBox(height: 8),
+      Center(
+        child: TextButton(
+          onPressed: () => setState(() { _step = 1; _error = null; }),
+          child: const Text('← Use a different email'),
+        ),
+      ),
+      const SizedBox(height: 4),
+    ],
+  );
+
+  Widget _buildSuccess() => Column(
+    mainAxisSize: MainAxisSize.min,
+    children: [
+      const SizedBox(height: 16),
+      const Icon(Icons.check_circle_outline_rounded, color: Colors.green, size: 64),
+      const SizedBox(height: 16),
+      const Text('Password Reset!', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w700)),
+      const SizedBox(height: 8),
+      const Text(
+        'Your password has been updated. You can now login with your new password.',
+        textAlign: TextAlign.center,
+        style: TextStyle(color: Colors.grey),
+      ),
+      const SizedBox(height: 24),
+      SizedBox(
+        width: double.infinity,
+        child: ElevatedButton(
+          onPressed: () => Navigator.pop(context),
+          child: const Text('Go to Login'),
+        ),
+      ),
+      const SizedBox(height: 16),
+    ],
+  );
 }
 
 // ── Register Sheet ─────────────────────────────────────────────────────────────

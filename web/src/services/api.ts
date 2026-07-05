@@ -107,6 +107,10 @@ class ApiService {
     })
   }
 
+  async getStudyNotes(topic: string) {
+    return this.client.post('/api/session/content', { message: topic })
+  }
+
   async confirmSessionAction(token: string) {
     return this.client.post('/api/session/confirm-action', { token })
   }

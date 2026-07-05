@@ -2,7 +2,14 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuthStore } from '@/store/auth'
 import api from '@/services/api'
-import { ChevronRight, CheckCircle, XCircle, Trophy, AlertTriangle, BookOpen } from 'lucide-react'
+import { ChevronRight, CheckCircle, XCircle, Trophy, AlertTriangle, BookOpen, Loader2 } from 'lucide-react'
+
+const LOADING_STAGES = [
+  'Generating your diagnostic questions…',
+  'Pulling syllabus topics for your exam…',
+  'Calibrating difficulty levels…',
+  'Almost ready — building your test…',
+]
 
 interface Question {
   question_id: string
@@ -195,6 +202,7 @@ export default function DiagnosticPage() {
   const [session, setSession] = useState<DiagnosticSession | null>(null)
   const [selectedAnswers, setSelectedAnswers] = useState<{ [key: string]: number }>({})
   const [loading, setLoading] = useState(true)
+  const [loadingStage, setLoadingStage] = useState(0)
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState('')
   const [result, setResult] = useState<DiagnosticResult | null>(null)
@@ -204,22 +212,35 @@ export default function DiagnosticPage() {
   }, [])
 
   const initDiagnostic = async () => {
+    // Cycle through informative loading messages while we wait
+    const interval = setInterval(() => {
+      setLoadingStage((s) => Math.min(s + 1, LOADING_STAGES.length - 1))
+    }, 1800)
     try {
       const response = await api.startDiagnostic()
       setSession({ ...response.data, current_index: 0 })
-      setLoading(false)
     } catch (err: any) {
       setError(err.response?.data?.detail || 'Failed to start diagnostic')
+    } finally {
+      clearInterval(interval)
       setLoading(false)
     }
   }
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-[400px]">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-primary mx-auto mb-4"></div>
-          <p className="text-gray-600 dark:text-gray-400">Loading diagnostic test...</p>
+      <div className="flex flex-col items-center justify-center min-h-[400px] gap-4">
+        <Loader2 size={36} className="animate-spin text-primary" />
+        <p className="text-base font-medium text-gray-700 dark:text-gray-300">
+          {LOADING_STAGES[loadingStage]}
+        </p>
+        <div className="flex gap-1 mt-1">
+          {LOADING_STAGES.map((_, i) => (
+            <div
+              key={i}
+              className={`w-1.5 h-1.5 rounded-full transition-all ${i <= loadingStage ? 'bg-primary' : 'bg-gray-300 dark:bg-gray-600'}`}
+            />
+          ))}
         </div>
       </div>
     )
@@ -368,7 +389,7 @@ export default function DiagnosticPage() {
           >
             {session.current_index === session.questions.length - 1 ? (
               submitting ? (
-                <><span className="animate-spin">⏳</span> Submitting...</>
+                <><Loader2 size={16} className="animate-spin" /> Analysing your answers…</>
               ) : (
                 'Submit Test'
               )

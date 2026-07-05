@@ -53,9 +53,17 @@ class _DiagnosticScreenState extends State<DiagnosticScreen> {
         body: Center(child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const CircularProgressIndicator(),
-            const SizedBox(height: 16),
-            Text(lang == 'hi' ? 'टेस्ट तैयार हो रहा है...' : 'Preparing your test...'),
+            const CircularProgressIndicator(color: AppTheme.primary),
+            const SizedBox(height: 24),
+            Text(
+              lang == 'hi' ? 'प्रश्न तैयार हो रहे हैं…' : 'Generating your diagnostic questions…',
+              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              lang == 'hi' ? 'आपके एग्जाम के सिलेबस के अनुसार' : 'Tailored to your exam syllabus',
+              style: TextStyle(color: Colors.grey.shade600),
+            ),
           ],
         )),
       );
@@ -131,7 +139,11 @@ class _DiagnosticScreenState extends State<DiagnosticScreen> {
             Expanded(child: ElevatedButton(
               onPressed: session.isLoading ? null : (isLastPage ? _submit : () => setState(() => _page++)),
               child: session.isLoading
-                  ? const SizedBox(height: 20, width: 20, child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2))
+                  ? Row(mainAxisSize: MainAxisSize.min, children: [
+                      const SizedBox(height: 18, width: 18, child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2)),
+                      const SizedBox(width: 8),
+                      Text(lang == 'hi' ? 'विश्लेषण हो रहा है…' : 'Analysing your answers…'),
+                    ])
                   : Text(isLastPage ? (lang == 'hi' ? '✅ सबमिट' : '✅ Submit') : (lang == 'hi' ? 'अगला →' : 'Next →')),
             )),
           ],

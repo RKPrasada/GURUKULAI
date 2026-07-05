@@ -65,6 +65,24 @@ class ApiService {
     return post('/api/auth/login', {'username': username, 'password': password});
   }
 
+  Future<Map<String, dynamic>> forgotPassword(String email) {
+    return post('/api/auth/forgot-password?email=${Uri.encodeQueryComponent(email)}', {});
+  }
+
+  Future<Map<String, dynamic>> resetPassword({
+    required String userId,
+    required String resetToken,
+    required String newPassword,
+    required String confirmPassword,
+  }) {
+    return post('/api/auth/reset-password', {
+      'user_id': userId,
+      'reset_token': resetToken,
+      'new_password': newPassword,
+      'confirm_password': confirmPassword,
+    });
+  }
+
   Future<Map<String, dynamic>> register({
     required String username,
     required String email,
@@ -116,6 +134,10 @@ class ApiService {
   // Chat / Study
   Future<Map<String, dynamic>> sendMessage(String studentId, String message) {
     return post('/api/session/chat', {'student_id': studentId, 'message': message});
+  }
+
+  Future<Map<String, dynamic>> getStudyNotes(String topic) {
+    return post('/api/session/content', {'message': topic});
   }
 
   // Assessment
