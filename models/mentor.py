@@ -6,6 +6,8 @@ from datetime import datetime
 from enum import Enum
 from typing import Optional
 
+from models.enum_utils import safe_enum as _safe_enum
+
 
 class QuestionStatus(str, Enum):
     PENDING = "pending"       # Awaiting NAGA approval
@@ -45,6 +47,8 @@ class NotificationType(str, Enum):
     NOTE_PUBLISHED = "note_published"
     # Dabbu → Student direct suggestions
     DIAGNOSTIC_RECOMMENDED = "diagnostic_recommended"
+    # Mock test system
+    MOCK_TEST_READY = "mock_test_ready"
 
 
 @dataclass
@@ -91,7 +95,7 @@ class Question:
             subject=d["subject"],
             topic=d["topic"],
             content=d["content"],
-            status=QuestionStatus(d.get("status", "pending")),
+            status=_safe_enum(QuestionStatus, d.get("status", "pending"), QuestionStatus.PENDING),
             upvotes=d.get("upvotes", 0),
             upvoted_by=d.get("upvoted_by", []),
             answer=d.get("answer"),
@@ -151,7 +155,7 @@ class ScheduledClass:
             description=d["description"],
             subject=d["subject"],
             topic=d["topic"],
-            class_type=ClassType(d["class_type"]),
+            class_type=_safe_enum(ClassType, d.get("class_type", "group"), ClassType.GROUP),
             scheduled_at=datetime.fromisoformat(d["scheduled_at"]),
             duration_minutes=d.get("duration_minutes", 60),
             meet_link=d.get("meet_link", ""),
@@ -204,7 +208,7 @@ class MeetingRequest:
             student_email=d.get("student_email", ""),
             message=d["message"],
             preferred_times=d.get("preferred_times", []),
-            status=MeetingRequestStatus(d.get("status", "pending")),
+            status=_safe_enum(MeetingRequestStatus, d.get("status", "pending"), MeetingRequestStatus.PENDING),
             class_id=d.get("class_id"),
             naga_note=d.get("naga_note", ""),
             created_at=datetime.fromisoformat(d["created_at"]),
@@ -237,10 +241,11 @@ class Notification:
 
     @classmethod
     def from_dict(cls, d: dict) -> "Notification":
+        ntype = _safe_enum(NotificationType, d.get("type", ""), NotificationType.DIAGNOSTIC_RECOMMENDED)
         return cls(
             notification_id=d["notification_id"],
             user_id=d["user_id"],
-            type=NotificationType(d["type"]),
+            type=ntype,
             title=d["title"],
             body=d["body"],
             read=d.get("read", False),

@@ -5,6 +5,8 @@ from datetime import date, datetime
 from enum import Enum
 from typing import Optional
 
+from models.enum_utils import safe_enum as _safe_enum
+
 
 class PlanStatus(str, Enum):
     PROPOSED = "proposed"   # Dabbu generated; awaiting NAGA approval
@@ -55,7 +57,7 @@ class SessionBlock:
             duration_hours=d.get("duration_hours", 2),
             subject=d.get("subject", ""),
             topic=d.get("topic", ""),
-            session_type=SessionType(d.get("session_type", "study")),
+            session_type=_safe_enum(SessionType, d.get("session_type", "study"), SessionType.STUDY),
             priority=d.get("priority", 1),
             completed=d.get("completed", False),
             rescheduled=d.get("rescheduled", False),
@@ -164,7 +166,7 @@ class StudyPlan:
             plan_id=d["plan_id"],
             student_id=d["student_id"],
             exam_target=d["exam_target"],
-            status=PlanStatus(d.get("status", "proposed")),
+            status=_safe_enum(PlanStatus, d.get("status", "proposed"), PlanStatus.PROPOSED),
             duration_months=d.get("duration_months", 6),
             start_date=d.get("start_date", ""),
             end_date=d.get("end_date", ""),
