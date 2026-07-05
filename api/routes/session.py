@@ -122,14 +122,42 @@ async def chat(req: ChatRequest, auth_id: str = Depends(require_auth)):
 
 @router.post("/content")
 async def get_study_notes(req: ChatRequest, auth_id: str = Depends(require_auth)):
-    """Directly invokes ContentAgent — always returns study notes, skips orchestrator routing."""
+    """Directly invokes ContentAgent — always returns study notes, skips orchestrator routing.
+
+    Applies the full security stack (InputGuard → ContentAgent → OutputGuard → AuditLogger)
+    even though it bypasses the orchestrator's routing logic. This endpoint is used by the
+    mobile app and must satisfy all CLAUDE.md security rules (1, 2, 3).
+    """
     student_id = _resolve_student_id(auth_id, req.student_id)
+
+    # Rule 1 — InputGuard before any agent
+    clean_message, threat = _orchestrator.input_guard.process(req.message)
+    if threat:
+        _orchestrator.logger.log_threat(student_id, req.message, threat)
+        lang = "en"
+        student = _get_student(student_id)
+        if student:
+            lang = student.preferred_language.value
+        from security.guardrails import SAFE_REDIRECT_HI, SAFE_REDIRECT_EN
+        return {"response": SAFE_REDIRECT_HI if lang == "hi" else SAFE_REDIRECT_EN,
+                "agent": "guardrail", "threat": threat}
+
     student = _get_student(student_id)
     if not student:
         raise HTTPException(status_code=404, detail="Student not found")
-    result = await _orchestrator.content.run(student, req.message)
+
+    result = await _orchestrator.content.run(student, clean_message)
+
+    # Rule 2 — OutputGuard on every string value in the result
+    lang = student.preferred_language.value
     if isinstance(result, dict):
+        result = {k: (_orchestrator.output_guard.process(v, lang) if isinstance(v, str) else v)
+                  for k, v in result.items()}
         result["_agent"] = "content"
+
+    # Rule 3 — AuditLogger
+    _orchestrator.logger.log_interaction(student_id, clean_message, str(result)[:200])
+
     return result
 
 
