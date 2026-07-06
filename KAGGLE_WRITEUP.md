@@ -152,7 +152,7 @@ The AI handled the volume of boilerplate (JSONL persistence, auth middleware, ch
 
 ## Demo
 
-**Video demo**: [Link to be added — recording in progress]
+**Video demo**: [https://youtu.be/AkeJM2bScQU](https://youtu.be/AkeJM2bScQU)
 
 **GitHub**: [https://github.com/RKPrasada/GURUKULAI](https://github.com/RKPrasada/GURUKULAI)
 
