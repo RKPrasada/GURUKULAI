@@ -24,7 +24,7 @@ python launcher_react.py                  # starts both, opens browser
 
 # Tests
 pytest evals/ -v
-pytest evals/test_security.py -v         # 45 tests — must all pass
+pytest evals/test_security.py -v         # 76 tests — must all pass
 python evals/eval_runner.py              # formatted summary
 ```
 
