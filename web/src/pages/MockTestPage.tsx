@@ -210,6 +210,7 @@ function TestView({
   const [secsLeft, setSecsLeft] = useState(initialSecsLeft)
   const [activeSec, setActiveSec] = useState(0)
   const [showConfirm, setShowConfirm] = useState(false)
+  const [showFlaggedReview, setShowFlaggedReview] = useState(false)
   const [showNav, setShowNav] = useState(false)
   const autosaveRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
@@ -304,7 +305,7 @@ function TestView({
             {fmtTime(secsLeft)}
           </div>
           <button
-            onClick={() => setShowConfirm(true)}
+            onClick={() => flagged.size > 0 ? setShowFlaggedReview(true) : setShowConfirm(true)}
             className="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-4 py-1.5 rounded-lg transition"
           >
             Submit
@@ -459,6 +460,69 @@ function TestView({
                 {i + 1}
               </button>
             ))}
+          </div>
+        </div>
+      )}
+
+      {/* Flagged review modal */}
+      {showFlaggedReview && (
+        <div className="fixed inset-0 bg-black/50 z-40 flex items-center justify-center p-4">
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full max-w-lg max-h-[80vh] flex flex-col">
+            <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700 flex items-center gap-2">
+              <Flag size={16} className="text-orange-500" />
+              <h2 className="text-lg font-bold text-gray-900 dark:text-white">
+                Review Flagged Questions ({flagged.size})
+              </h2>
+            </div>
+
+            <div className="overflow-y-auto flex-1 divide-y divide-gray-100 dark:divide-gray-700">
+              {Array.from(flagged).sort((a, b) => a - b).map((qi) => {
+                const fq = allQuestions[qi]
+                const ans = answers[qi]
+                return (
+                  <div key={qi} className="px-6 py-4 flex items-start justify-between gap-4">
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className="text-xs font-bold text-gray-400">Q{qi + 1}</span>
+                        <span className="text-xs text-gray-400">· {fq.topic}</span>
+                        {ans === -1 && (
+                          <span className="text-xs bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 px-1.5 py-0.5 rounded font-medium">
+                            Not answered
+                          </span>
+                        )}
+                      </div>
+                      <p className="text-sm text-gray-800 dark:text-gray-200 line-clamp-2">{fq.question_text_en}</p>
+                      {ans !== -1 && (
+                        <p className="text-xs text-indigo-600 dark:text-indigo-400 mt-1 font-medium">
+                          Your answer: {String.fromCharCode(65 + ans)}. {fq.options[ans]}
+                        </p>
+                      )}
+                    </div>
+                    <button
+                      onClick={() => { setCurrentIdx(qi); setShowFlaggedReview(false) }}
+                      className="flex-shrink-0 text-xs px-3 py-1.5 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 rounded-lg font-medium hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition"
+                    >
+                      Go to Q{qi + 1}
+                    </button>
+                  </div>
+                )
+              })}
+            </div>
+
+            <div className="px-6 py-4 border-t border-gray-200 dark:border-gray-700 flex gap-3">
+              <button
+                onClick={() => setShowFlaggedReview(false)}
+                className="flex-1 py-2 border border-gray-300 dark:border-gray-600 rounded-lg text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition"
+              >
+                Back to test
+              </button>
+              <button
+                onClick={() => { setShowFlaggedReview(false); setShowConfirm(true) }}
+                className="flex-1 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text-sm font-bold transition"
+              >
+                Submit anyway →
+              </button>
+            </div>
           </div>
         </div>
       )}
