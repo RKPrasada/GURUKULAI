@@ -27,7 +27,7 @@ import logging
 from pathlib import Path
 from typing import Optional
 
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException
 from pydantic import BaseModel
 
 from agents.dabbu_agent import get_dabbu
@@ -330,14 +330,21 @@ async def approve_note(req: NoteApprovalRequest, auth_id: str = Depends(require_
 
 
 @router.post("/naga/notes/reject")
-async def reject_note(req: NoteApprovalRequest, auth_id: str = Depends(require_auth)):
-    """NAGA rejects a note — it will be regenerated on the next nightly run."""
+async def reject_note(
+    req: NoteApprovalRequest,
+    background_tasks: BackgroundTasks,
+    auth_id: str = Depends(require_auth),
+):
+    """NAGA rejects a note — immediately triggers LLM regeneration in the background."""
     _require_naga(auth_id)
-    from scripts.notes_generation import reject_note as _reject
+    from scripts.notes_generation import reject_note as _reject, regenerate_note as _regen
     ok = _reject(req.exam, req.subject, req.topic, reason=req.naga_note)
     if not ok:
         raise HTTPException(status_code=404, detail="Note not found")
-    return {"status": "rejected", "topic": req.topic, "reason": req.naga_note}
+    # Kick off a fresh LLM generation; the new version will appear in Approvals
+    background_tasks.add_task(_regen, req.exam, req.subject, req.topic)
+    return {"status": "rejected", "topic": req.topic, "reason": req.naga_note,
+            "regenerating": True}
 
 
 # ── NAGA YouTube video moderation routes ───────────────────────────────────────

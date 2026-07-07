@@ -21,5 +21,5 @@ pandas==2.2.2
 pyinstaller==6.6.0
 email-validator>=2.0.0
 chromadb>=0.4.0
-sentence-transformers>=2.6.0
+sentence-transformers>=3.0.0
 google-cloud-storage>=2.16.0

@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { useAuthStore } from './store/auth'
 import LandingPage from './pages/LandingPage'
@@ -22,6 +23,13 @@ import Layout from './components/Layout'
 
 function App() {
   const student = useAuthStore((state) => state.student)
+
+  // Fire-and-forget warm-up ping on app load — hides Cloud Run cold-start
+  // delay behind the time the user spends reading the landing/login page.
+  useEffect(() => {
+    const base = (import.meta as any).env?.VITE_API_URL || 'http://localhost:8000'
+    fetch(`${base}/health`).catch(() => {})
+  }, [])
 
   return (
     <BrowserRouter>

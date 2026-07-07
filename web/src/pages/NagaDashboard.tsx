@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react'
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import api from '@/services/api'
 import { MessageSquare, Calendar, Users, Clock, CheckCircle, X, Video, Plus, ShieldAlert, TrendingUp, AlertTriangle, Edit2 } from 'lucide-react'
 
@@ -51,6 +53,7 @@ export default function NagaDashboard() {
   const [planNotes, setPlanNotes] = useState<{ [id: string]: string }>({})
   const [noteRejectReasons, setNoteRejectReasons] = useState<{ [key: string]: string }>({})
   const [kbStats, setKbStats] = useState<{ total: number; by_exam: Record<string, number> } | null>(null)
+  const [expandedNote, setExpandedNote] = useState<string | null>(null)
   const [keywords, setKeywords] = useState<{ blocked: string[]; flagged: string[] } | null>(null)
   const [newKw, setNewKw] = useState('')
   const [newKwTier, setNewKwTier] = useState<'blocked' | 'flagged'>('blocked')
@@ -496,17 +499,64 @@ export default function NagaDashboard() {
               ? <p className="text-sm text-gray-400">No notes pending.</p>
               : approvals!.notes.map((note) => {
                 const key = `${note.exam}|${note.subject}|${note.topic}`
+                const isExpanded = expandedNote === key
+                const isSystemGenerated = !note.requested_by || note.requested_by === 'Testing / System'
                 return (
                   <div key={key} className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4 mb-3">
-                    <div className="flex flex-wrap gap-3 text-sm mb-2">
+
+                    {/* Header row: topic + exam + requester */}
+                    <div className="flex flex-wrap items-center gap-2 mb-2">
                       <span className="font-semibold text-gray-900 dark:text-white">{note.topic}</span>
-                      <span className="text-gray-500">{note.subject} · {note.exam.toUpperCase()}</span>
+                      <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded-full">
+                        {note.subject} · {note.exam.toUpperCase().replace(/_/g, ' ')}
+                      </span>
+                      {/* Requester badge */}
+                      {isSystemGenerated
+                        ? <span className="text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 px-2 py-0.5 rounded-full">
+                            🤖 Testing / System
+                          </span>
+                        : <span className="text-xs font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded-full">
+                            👤 Requested by: {note.requested_by}
+                          </span>
+                      }
+                      {note.generated_at && (
+                        <span className="text-xs text-gray-400 ml-auto">
+                          {new Date(note.generated_at).toLocaleString()}
+                        </span>
+                      )}
                     </div>
-                    {note.preview && (
-                      <pre className="text-xs text-gray-500 dark:text-gray-400 bg-gray-50 dark:bg-gray-900 rounded p-2 mb-3 whitespace-pre-wrap line-clamp-4 max-h-24 overflow-hidden">
-                        {note.preview}
-                      </pre>
-                    )}
+
+                    {/* Full notes content — rendered as Markdown */}
+                    {note.content
+                      ? <>
+                          <div className={`relative bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg px-4 py-3 mb-2 overflow-y-auto transition-all ${isExpanded ? 'max-h-[36rem]' : 'max-h-40 overflow-hidden'}`}>
+                            <div className="prose prose-sm dark:prose-invert max-w-none
+                              prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-white
+                              prose-h2:text-base prose-h3:text-sm
+                              prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-p:text-sm prose-p:my-1
+                              prose-li:text-gray-700 dark:prose-li:text-gray-300 prose-li:text-sm
+                              prose-code:bg-amber-50 dark:prose-code:bg-amber-900/30 prose-code:text-amber-800 dark:prose-code:text-amber-200 prose-code:px-1 prose-code:rounded prose-code:text-xs prose-code:font-mono
+                              prose-strong:text-gray-900 dark:prose-strong:text-white
+                              prose-blockquote:border-blue-400 prose-blockquote:bg-blue-50 dark:prose-blockquote:bg-blue-900/20 prose-blockquote:text-sm prose-blockquote:rounded prose-blockquote:px-3
+                              prose-table:text-xs prose-th:bg-gray-100 dark:prose-th:bg-gray-700">
+                              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                                {note.content}
+                              </ReactMarkdown>
+                            </div>
+                            {!isExpanded && (
+                              <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-white dark:from-gray-900 to-transparent rounded-b-lg" />
+                            )}
+                          </div>
+                          <button
+                            onClick={() => setExpandedNote(isExpanded ? null : key)}
+                            className="text-xs text-blue-600 dark:text-blue-400 hover:underline mb-3 block"
+                          >
+                            {isExpanded ? '▲ Collapse notes' : '▼ Expand full notes'}
+                          </button>
+                        </>
+                      : <p className="text-xs text-gray-400 mb-3 italic">No content available.</p>
+                    }
+
                     <input
                       type="text"
                       placeholder="Optional feedback / rejection reason…"
@@ -528,9 +578,9 @@ export default function NagaDashboard() {
                       )}
                       <button onClick={async () => {
                         await api.dabbuRejectNote(note.exam, note.subject, note.topic, noteRejectReasons[key] ?? '')
-                        setApprovalsMsg(`Notes for '${note.topic}' rejected — will regenerate next run.`)
+                        setApprovalsMsg(`Notes for '${note.topic}' rejected — regenerating improved version in background…`)
                         loadApprovals()
-                      }} className="bg-red-100 hover:bg-red-200 text-red-700 text-sm font-semibold px-4 py-1.5 rounded-lg transition">Reject</button>
+                      }} className="bg-red-100 hover:bg-red-200 text-red-700 text-sm font-semibold px-4 py-1.5 rounded-lg transition">Reject &amp; Regenerate</button>
                     </div>
                   </div>
                 )

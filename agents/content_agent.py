@@ -150,26 +150,22 @@ class ContentAgent:
         notes = call_gemini(prompt, system) or _offline_notes(topic, exam_key, lang)
 
         # ── 3. Queue for NAGA approval → will enter vector store on approval ──
-        self._queue_for_naga(topic, exam_key, lang, notes)
+        self._queue_for_naga(topic, exam_key, lang, notes, student_id=student.student_id)
 
         return notes, False
 
-    def _queue_for_naga(self, topic: str, exam_key: str, lang: str, content: str) -> None:
+    def _queue_for_naga(self, topic: str, exam_key: str, lang: str, content: str, student_id: str = "") -> None:
         """Save LLM-generated notes as pending so NAGA can approve and publish to KB."""
         try:
-            from scripts.notes_generation import process_topic
-            # process_topic skips if status=approved; pending notes are safe to overwrite
-            process_topic(exam_key, subject="General", topic=topic, subtopics=[], force=False)
-        except Exception:
-            pass  # best-effort; primary goal is returning notes to student
-        try:
-            # Direct save so we capture the actual content returned to the student
             import json
             from datetime import datetime
             from pathlib import Path as _Path
 
+            # Strip skill context injected by the orchestrator — store only the clean topic name
+            clean_topic = topic.split("\n\n[Skill Context]")[0].strip()
+
             notes_dir = _Path(__file__).parent.parent / "data" / "notes"
-            slug = topic.lower().replace(" ", "_").replace("/", "_")[:40]
+            slug = clean_topic.lower().replace(" ", "_").replace("/", "_")[:40]
             subj_dir = notes_dir / exam_key / "general"
             subj_dir.mkdir(parents=True, exist_ok=True)
             note_path = subj_dir / f"{slug}.md"
@@ -178,13 +174,14 @@ class ContentAgent:
             if not meta_path.exists() or json.loads(meta_path.read_text()).get("status") != "approved":
                 note_path.write_text(content, encoding="utf-8")
                 meta_path.write_text(json.dumps({
-                    "exam": exam_key, "subject": "General", "topic": topic,
+                    "exam": exam_key, "subject": "General", "topic": clean_topic,
                     "lang": lang, "note_path": str(note_path),
                     "status": "pending",
                     "generated_at": datetime.utcnow().isoformat(),
                     "source": "content_agent",
+                    "student_id": student_id,
                 }, indent=2), encoding="utf-8")
-                logger.info("ContentAgent: queued notes for NAGA approval  exam=%s  topic=%r", exam_key, topic)
+                logger.info("ContentAgent: queued notes for NAGA approval  exam=%s  topic=%r  student=%s", exam_key, clean_topic, student_id)
         except Exception as e:
             logger.warning("ContentAgent: could not queue notes for NAGA: %s", e)
 
