@@ -52,6 +52,9 @@ _oauth: GoogleOAuth | None = None
 
 def _init_db():
     conn = sqlite3.connect(DB_PATH)
+    # WAL mode: safer crash recovery and better performance under concurrent reads
+    conn.execute("PRAGMA journal_mode=WAL")
+    conn.execute("PRAGMA synchronous=NORMAL")
     conn.executescript("""
         CREATE TABLE IF NOT EXISTS students (
             student_id TEXT PRIMARY KEY,
@@ -142,6 +145,11 @@ def _save_student_to_db(student: StudentProfile):
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     global _orchestrator, _diagnostic, _assessment, _progress, _oauth, _save_student_fn
+
+    # Restore DB + data/ from GCS before anything else (no-op if GCS_DATA_BUCKET not set)
+    from api.persistence import restore_from_gcs, start_background_sync
+    restore_from_gcs(DB_PATH)
+
     _init_db()
     _orchestrator = OrchestratorAgent()
     _diagnostic = DiagnosticAgent()
@@ -157,9 +165,12 @@ async def lifespan(app: FastAPI):
     mentor_routes.setup_mentor(_students)
     from scripts.mock_scheduler import start_scheduler
     start_scheduler()
+    start_background_sync(DB_PATH)
     logger.info(f"VidyaBot started | dev_mode={DEV_MODE} | MockScheduler running")
     yield
     logger.info("VidyaBot shutting down")
+    from api.persistence import backup_to_gcs
+    backup_to_gcs(DB_PATH)
 
 
 app = FastAPI(title="VidyaBot API", version="1.0.0", lifespan=lifespan)
