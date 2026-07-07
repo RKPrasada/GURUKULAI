@@ -1,0 +1,2177 @@
+[
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "The product of two consecutive integers is 56. The integers are:",
+    "options": [
+      "7 and 8",
+      "6 and 9",
+      "5 and 11",
+      "4 and 14"
+    ],
+    "correct_index": 0,
+    "explanation": "7×8=56. Consecutive integers.",
+    "id": "rrb_tech_b6fc8245"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Percentage",
+    "difficulty": 1,
+    "question_text": "20% of 500 is:",
+    "options": [
+      "100",
+      "80",
+      "120",
+      "50"
+    ],
+    "correct_index": 0,
+    "explanation": "20/100 × 500 = 100.",
+    "id": "rrb_tech_4485a722"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 1,
+    "question_text": "If 4 workers earn ₹800 in 2 days, how much do 6 workers earn in 3 days?",
+    "options": [
+      "₹1800",
+      "₹1200",
+      "₹2400",
+      "₹900"
+    ],
+    "correct_index": 0,
+    "explanation": "Rate per worker per day = 800/(4×2)=100. 6 workers × 3 days × 100 = ₹1800.",
+    "id": "rrb_tech_8d36f2eb"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 1,
+    "question_text": "Volume of a cube with side 4 cm is:",
+    "options": [
+      "64 cm³",
+      "16 cm³",
+      "48 cm³",
+      "32 cm³"
+    ],
+    "correct_index": 0,
+    "explanation": "V = a³ = 4³ = 64 cm³.",
+    "id": "rrb_tech_f3682f2b"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 1,
+    "question_text": "At what rate will ₹500 become ₹600 in 4 years (simple interest)?",
+    "options": [
+      "5%",
+      "4%",
+      "6%",
+      "8%"
+    ],
+    "correct_index": 0,
+    "explanation": "SI=100, P=500, T=4. R=SI×100/(P×T)=100×100/(500×4)=5%.",
+    "id": "rrb_tech_0907acc0"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 1,
+    "question_text": "Simplify: (a + b)² − (a − b)²",
+    "options": [
+      "4ab",
+      "2a²",
+      "2b²",
+      "a²−b²"
+    ],
+    "correct_index": 0,
+    "explanation": "(a+b)²=a²+2ab+b², (a-b)²=a²-2ab+b². Difference = 4ab.",
+    "id": "rrb_tech_54b15b53"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "A 60 W bulb used for 5 hours consumes energy of:",
+    "options": [
+      "0.3 kWh",
+      "60 kWh",
+      "300 kWh",
+      "0.06 kWh"
+    ],
+    "correct_index": 0,
+    "explanation": "Energy = Power × Time = 60 W × 5 h = 300 Wh = 0.3 kWh.",
+    "id": "rrb_tech_44bf6d33"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "Ohm's law states V = IR. If V=12V and R=4Ω, current I is:",
+    "options": [
+      "3 A",
+      "48 A",
+      "0.33 A",
+      "8 A"
+    ],
+    "correct_index": 0,
+    "explanation": "I = V/R = 12/4 = 3 A.",
+    "id": "rrb_tech_7a698a31"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "Which of these is a conductor of electricity?",
+    "options": [
+      "Copper",
+      "Rubber",
+      "Glass",
+      "Wood"
+    ],
+    "correct_index": 0,
+    "explanation": "Copper is an excellent conductor (low resistivity ~1.7×10⁻⁸ Ω·m). Rubber, glass, and wood are insulators.",
+    "id": "rrb_tech_25a4c82c"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 1,
+    "question_text": "The gas used in electric filament bulbs (to prevent oxidation) is:",
+    "options": [
+      "Argon",
+      "Oxygen",
+      "Nitrogen dioxide",
+      "Hydrogen"
+    ],
+    "correct_index": 0,
+    "explanation": "Tungsten bulbs are filled with inert gas (argon or nitrogen) to prevent filament oxidation and slow evaporation.",
+    "id": "rrb_tech_5473474c"
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Science & Technology",
+    "difficulty": 1,
+    "question_text": "The full form of LED is:",
+    "options": [
+      "Light Emitting Diode",
+      "Light Electric Device",
+      "Low Energy Display",
+      "Laser Emission Diode"
+    ],
+    "correct_index": 0,
+    "explanation": "LED = Light Emitting Diode. A semiconductor diode that emits light when forward biased.",
+    "id": "rrb_tech_adf697cf"
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Science & Technology",
+    "difficulty": 1,
+    "question_text": "Which organisation manufactures railway engines in India at Varanasi?",
+    "options": [
+      "Diesel Locomotive Works (DLW)",
+      "Integral Coach Factory",
+      "Rail Wheel Factory",
+      "Chittaranjan Locomotive Works"
+    ],
+    "correct_index": 0,
+    "explanation": "DLW (Diesel Locomotive Works), Varanasi manufactures diesel locomotives. CLW, Chittaranjan manufactures electric locomotives.",
+    "id": "rrb_tech_27de5f8e"
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Current Affairs",
+    "difficulty": 1,
+    "question_text": "The headquarters of Indian Railways is in:",
+    "options": [
+      "New Delhi",
+      "Mumbai",
+      "Kolkata",
+      "Chennai"
+    ],
+    "correct_index": 0,
+    "explanation": "The Railway Board and Indian Railways headquarters are located in Rail Bhavan, New Delhi.",
+    "id": "rrb_tech_f2522925"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Number Series",
+    "difficulty": 1,
+    "question_text": "Find the missing number: 5, 10, 20, 40, ?",
+    "options": [
+      "80",
+      "60",
+      "100",
+      "70"
+    ],
+    "correct_index": 0,
+    "explanation": "Each term is doubled. 40×2 = 80.",
+    "id": "rrb_tech_54437400"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Analogy",
+    "difficulty": 1,
+    "question_text": "Ammeter : Current :: Voltmeter : ?",
+    "options": [
+      "Voltage",
+      "Resistance",
+      "Power",
+      "Energy"
+    ],
+    "correct_index": 0,
+    "explanation": "Ammeter measures current; voltmeter measures voltage. Both are electrical measuring instruments.",
+    "id": "rrb_tech_a0762c76"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Odd One Out",
+    "difficulty": 1,
+    "question_text": "Find the odd one out: Transformer, Alternator, Inductor, Resistor",
+    "options": [
+      "Resistor",
+      "Transformer",
+      "Alternator",
+      "Inductor"
+    ],
+    "correct_index": 0,
+    "explanation": "Transformer, Alternator, and Inductor all store/transfer magnetic energy. Resistor dissipates energy as heat — the only purely dissipative element.",
+    "id": "rrb_tech_e2be7379"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 1,
+    "question_text": "If WIRE is coded as XLSF, then FUSE is coded as:",
+    "options": [
+      "GVTF",
+      "HVUF",
+      "GWTF",
+      "FVTF"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter shifts +1: F→G, U→V, S→T, E→F → GVTF.",
+    "id": "rrb_tech_a3a5ae42"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "The frequency of Indian AC power supply is:",
+    "options": [
+      "50 Hz",
+      "60 Hz",
+      "100 Hz",
+      "25 Hz"
+    ],
+    "correct_index": 0,
+    "explanation": "India uses 50 Hz AC supply at 230 V (single phase). USA uses 60 Hz.",
+    "id": "rrb_tech_d01cfa85"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "A fuse wire should have:",
+    "options": [
+      "Low melting point and high resistance",
+      "High melting point and low resistance",
+      "High melting point and high resistance",
+      "Low melting point and low resistance"
+    ],
+    "correct_index": 0,
+    "explanation": "Fuse wire melts on overcurrent to break circuit — needs low melting point. High resistance ensures it heats up quickly under fault current.",
+    "id": "rrb_tech_9cd186ac"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "difficulty": 1,
+    "question_text": "Angles in a triangle sum to:",
+    "options": [
+      "180°",
+      "360°",
+      "90°",
+      "270°"
+    ],
+    "correct_index": 0,
+    "explanation": "Sum of interior angles of any triangle = 180°. This is a fundamental theorem of Euclidean geometry.",
+    "id": "rrb_tech_367952c7"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Direction Sense",
+    "difficulty": 1,
+    "question_text": "A person walks 5 km East, then 3 km North. How far is he from the start?",
+    "options": [
+      "√34 km",
+      "8 km",
+      "5.8 km",
+      "4 km"
+    ],
+    "correct_index": 0,
+    "explanation": "Resultant = √(5²+3²) = √(25+9) = √34 ≈ 5.83 km.",
+    "id": "rrb_tech_9c4703a0"
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "The standard colour code for earth wire in India is:",
+    "options": [
+      "Green/Yellow",
+      "Red",
+      "Black",
+      "Blue"
+    ],
+    "correct_index": 0,
+    "explanation": "New IS/IEC standard: Earth = Green-Yellow, Phase = Brown, Neutral = Blue. Old standard: Earth = Green.",
+    "id": "rrb_tech_319431de"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "EMF stands for:",
+    "options": [
+      "Electromotive Force",
+      "Electric Magnetic Force",
+      "Electromagnetic Field",
+      "Electronic Motive Force"
+    ],
+    "correct_index": 0,
+    "explanation": "EMF = Electromotive Force — the energy per unit charge supplied by a source like a battery or generator.",
+    "id": "rrb_tech_d2ce9d27"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Speed, Distance and Time",
+    "difficulty": 1,
+    "question_text": "A train covers 180 km in 3 hours. Its average speed is:",
+    "options": [
+      "60 km/h",
+      "54 km/h",
+      "90 km/h",
+      "45 km/h"
+    ],
+    "correct_index": 0,
+    "explanation": "Speed = Distance/Time = 180/3 = 60 km/h.",
+    "id": "rrb_tech_87181574"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Relationships",
+    "difficulty": 1,
+    "question_text": "Pointing to a man, a woman said 'His mother is the only daughter of my mother'. How is the woman related to the man?",
+    "options": [
+      "Mother",
+      "Sister",
+      "Aunt",
+      "Grandmother"
+    ],
+    "correct_index": 0,
+    "explanation": "Only daughter of the woman's mother = the woman herself. So the man's mother is the woman → she is his mother.",
+    "id": "rrb_tech_5ddc1e5e"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Quadratic Equations",
+    "difficulty": 2,
+    "question_text": "Roots of x² − 5x + 6 = 0 are:",
+    "options": [
+      "2 and 3",
+      "1 and 6",
+      "−2 and −3",
+      "3 and 4"
+    ],
+    "correct_index": 0,
+    "explanation": "x²−5x+6 = (x−2)(x−3) = 0 → x=2 or x=3.",
+    "id": "rrb_tech_f611792a"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 2,
+    "question_text": "tan 45° equals:",
+    "options": [
+      "1",
+      "0",
+      "√3",
+      "1/√3"
+    ],
+    "correct_index": 0,
+    "explanation": "tan 45° = sin45°/cos45° = (1/√2)/(1/√2) = 1.",
+    "id": "rrb_tech_fe2d69a1"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Statistics",
+    "difficulty": 2,
+    "question_text": "Mean of 5,10,15,20,25 is:",
+    "options": [
+      "15",
+      "12",
+      "17",
+      "20"
+    ],
+    "correct_index": 0,
+    "explanation": "Sum = 75. Mean = 75/5 = 15.",
+    "id": "rrb_tech_c3e5ec78"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "Two capacitors of 4 μF and 6 μF are connected in series. Equivalent capacitance is:",
+    "options": [
+      "2.4 μF",
+      "10 μF",
+      "1.2 μF",
+      "5 μF"
+    ],
+    "correct_index": 0,
+    "explanation": "1/C = 1/4 + 1/6 = 5/12. C = 12/5 = 2.4 μF.",
+    "id": "rrb_tech_02547af0"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "The power factor of a purely capacitive circuit is:",
+    "options": [
+      "0 leading",
+      "1",
+      "0 lagging",
+      "0.5 leading"
+    ],
+    "correct_index": 0,
+    "explanation": "Pure capacitor: current leads voltage by 90°. PF = cos90° = 0 (leading).",
+    "id": "rrb_tech_c83d212a"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Electrical",
+    "difficulty": 2,
+    "question_text": "In a DC circuit, two resistors of 10Ω and 40Ω are in parallel. Current through 10Ω is 4A. Current through 40Ω is:",
+    "options": [
+      "1 A",
+      "4 A",
+      "0.4 A",
+      "2 A"
+    ],
+    "correct_index": 0,
+    "explanation": "Voltage across parallel resistors is same: V=10×4=40V. I₂=V/R₂=40/40=1A.",
+    "id": "rrb_tech_38b9d8f9"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Electrical",
+    "difficulty": 2,
+    "question_text": "The unit of electrical energy consumed by households is:",
+    "options": [
+      "kWh (unit)",
+      "Watt",
+      "Joule",
+      "Volt-ampere"
+    ],
+    "correct_index": 0,
+    "explanation": "Electricity bills are in kWh (kilowatt-hour), commonly called 'units'. 1 unit = 1 kWh = 3.6×10⁶ J.",
+    "id": "rrb_tech_7ac8736c"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Electrical",
+    "difficulty": 2,
+    "question_text": "A transformer has primary 1100 V, secondary 110 V, primary current 2A. Secondary current is:",
+    "options": [
+      "20 A",
+      "0.2 A",
+      "10 A",
+      "5 A"
+    ],
+    "correct_index": 0,
+    "explanation": "V₁I₁ = V₂I₂ (ideal). I₂ = 1100×2/110 = 20 A.",
+    "id": "rrb_tech_481b12a2"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Electronics",
+    "difficulty": 2,
+    "question_text": "A transistor in CE configuration with Ic=10mA and Ib=0.1mA has β of:",
+    "options": [
+      "100",
+      "10",
+      "1000",
+      "0.99"
+    ],
+    "correct_index": 0,
+    "explanation": "β = Ic/Ib = 10mA/0.1mA = 100. Current gain of CE transistor.",
+    "id": "rrb_tech_0fafa05b"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Electronics",
+    "difficulty": 2,
+    "question_text": "An NPN transistor conducts when base-emitter junction is:",
+    "options": [
+      "Forward biased",
+      "Reverse biased",
+      "Unbiased",
+      "At breakdown"
+    ],
+    "correct_index": 0,
+    "explanation": "NPN transistor: VBE must be +ve (base more positive than emitter) — forward biased B-E junction. VCB reverse biased.",
+    "id": "rrb_tech_b4ed016a"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Number Series",
+    "difficulty": 2,
+    "question_text": "Find next: 1, 4, 9, 16, 25, ?",
+    "options": [
+      "36",
+      "30",
+      "35",
+      "49"
+    ],
+    "correct_index": 0,
+    "explanation": "Perfect squares: 1², 2², 3², 4², 5², 6² = 36.",
+    "id": "rrb_tech_f624e0b4"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Puzzles",
+    "difficulty": 2,
+    "question_text": "A technician can service 8 machines in 4 hours. How many machines can 3 technicians service in 6 hours?",
+    "options": [
+      "36",
+      "24",
+      "18",
+      "48"
+    ],
+    "correct_index": 0,
+    "explanation": "1 tech = 2 machines/hr. 3 techs × 6 hrs × 2 machines/hr = 36 machines.",
+    "id": "rrb_tech_c7a50b1d"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Electrical",
+    "difficulty": 2,
+    "question_text": "The insulation resistance of a healthy cable measured by Megger should be:",
+    "options": [
+      "Several MΩ (megaohms)",
+      "A few ohms",
+      "Exactly 0 Ω",
+      "100 kΩ"
+    ],
+    "correct_index": 0,
+    "explanation": "Healthy cable insulation: MΩ range (typically >1 MΩ for LV, >100 MΩ for HV). Low insulation resistance indicates moisture, ageing, or damage.",
+    "id": "rrb_tech_ab4cb878"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Electrical",
+    "difficulty": 2,
+    "question_text": "The function of a circuit breaker is to:",
+    "options": [
+      "Automatically interrupt the circuit on fault",
+      "Measure current",
+      "Step down voltage",
+      "Convert AC to DC"
+    ],
+    "correct_index": 0,
+    "explanation": "Circuit breaker = automatic switching device that interrupts abnormal currents (overcurrent, short circuit) and can be reclosed after fault clearance.",
+    "id": "rrb_tech_3010b82b"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 2,
+    "question_text": "The surface area of a sphere of radius 7 cm is:",
+    "options": [
+      "616 cm²",
+      "154 cm²",
+      "308 cm²",
+      "1232 cm²"
+    ],
+    "correct_index": 0,
+    "explanation": "SA = 4πr² = 4×(22/7)×49 = 4×22×7 = 616 cm².",
+    "id": "rrb_tech_73950b04"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Electronics",
+    "difficulty": 2,
+    "question_text": "Binary number 1010 in decimal is:",
+    "options": [
+      "10",
+      "8",
+      "12",
+      "14"
+    ],
+    "correct_index": 0,
+    "explanation": "1×2³+0×2²+1×2¹+0×2⁰ = 8+0+2+0 = 10.",
+    "id": "rrb_tech_f78b71a1"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Electronics",
+    "difficulty": 2,
+    "question_text": "The output of a NOT gate (inverter) for input 1 is:",
+    "options": [
+      "0",
+      "1",
+      "Undefined",
+      "High impedance"
+    ],
+    "correct_index": 0,
+    "explanation": "NOT gate inverts the input: NOT(1) = 0. Truth table: 0→1, 1→0.",
+    "id": "rrb_tech_3b6017ae"
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Railway Technology",
+    "difficulty": 2,
+    "question_text": "The overhead catenary wire voltage in Indian Railways (25 kV AC traction) is:",
+    "options": [
+      "25 kV AC at 50 Hz",
+      "11 kV DC",
+      "110 kV DC",
+      "1.5 kV DC"
+    ],
+    "correct_index": 0,
+    "explanation": "Indian Railways uses 25 kV, 50 Hz single-phase AC for mainline traction. Some older suburban systems use 1.5 kV DC.",
+    "id": "rrb_tech_3873f94f"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Electrical",
+    "difficulty": 2,
+    "question_text": "In AC circuits, apparent power (S), active power (P), and reactive power (Q) are related by:",
+    "options": [
+      "S² = P² + Q²",
+      "S = P + Q",
+      "P = S + Q",
+      "Q = P × S"
+    ],
+    "correct_index": 0,
+    "explanation": "Power triangle: S² = P² + Q². S in VA, P in W, Q in VAR. PF = P/S = cosφ.",
+    "id": "rrb_tech_174a492e"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Logarithms",
+    "difficulty": 2,
+    "question_text": "log₁₀ 1000 equals:",
+    "options": [
+      "3",
+      "10",
+      "100",
+      "1/3"
+    ],
+    "correct_index": 0,
+    "explanation": "10³ = 1000 → log₁₀(1000) = 3.",
+    "id": "rrb_tech_c7e7b080"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Electrical",
+    "difficulty": 2,
+    "question_text": "An earth leakage circuit breaker (ELCB) operates on a leakage current as low as:",
+    "options": [
+      "30 mA",
+      "5 A",
+      "1 A",
+      "100 mA"
+    ],
+    "correct_index": 0,
+    "explanation": "RCCB/ELCB for personnel protection operates at 30 mA (can detect faults before lethal current). Industrial types may use 100–300 mA.",
+    "id": "rrb_tech_2c94549e"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Electrical",
+    "difficulty": 2,
+    "question_text": "The purpose of a neutral link in a distribution board is to:",
+    "options": [
+      "Provide a removable connection for neutral conductor",
+      "Carry earth current",
+      "Fuse the neutral line",
+      "Isolate the main supply"
+    ],
+    "correct_index": 0,
+    "explanation": "Neutral link: solid (non-fused) removable link that connects incoming neutral to outgoing neutral busbars. Allows isolation for testing insulation.",
+    "id": "rrb_tech_28ad6674"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "difficulty": 2,
+    "question_text": "A and B together finish a job in 6 days. A alone takes 10 days. B alone takes:",
+    "options": [
+      "15 days",
+      "12 days",
+      "8 days",
+      "20 days"
+    ],
+    "correct_index": 0,
+    "explanation": "1/B = 1/6−1/10 = 5/30−3/30 = 2/30 = 1/15. B takes 15 days.",
+    "id": "rrb_tech_e917bb38"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Matrix",
+    "difficulty": 2,
+    "question_text": "A matrix has elements coded by row (0-4) and column (0-4). Element at row 3, col 4 has code:",
+    "options": [
+      "34",
+      "43",
+      "304",
+      "403"
+    ],
+    "correct_index": 0,
+    "explanation": "Matrix coding: row digit followed by column digit → 3,4 = 34.",
+    "id": "rrb_tech_0c15ecf5"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "The wavelength of visible light ranges approximately from:",
+    "options": [
+      "400–700 nm",
+      "100–400 nm",
+      "700–1000 nm",
+      "10–100 nm"
+    ],
+    "correct_index": 0,
+    "explanation": "Visible spectrum: ~400 nm (violet) to ~700 nm (red). UV < 400 nm, IR > 700 nm.",
+    "id": "rrb_tech_c1f08fdb"
+  },
+  {
+    "subject": "Electrical Technology",
+    "topic": "Wiring & Protection",
+    "difficulty": 3,
+    "question_text": "The minimum cross-section of copper conductor for a 15A socket outlet circuit (IS 732) is:",
+    "options": [
+      "2.5 mm²",
+      "1.0 mm²",
+      "4.0 mm²",
+      "1.5 mm²"
+    ],
+    "correct_index": 0,
+    "explanation": "IS 732: 15A circuits require minimum 2.5 mm² copper (or 4 mm² aluminium). Lighting circuits: 1.0 mm² copper.",
+    "id": "rrb_tech_1a4fd377"
+  },
+  {
+    "subject": "Electrical Technology",
+    "topic": "Electrical Machines",
+    "difficulty": 3,
+    "question_text": "The direction of rotation of a 3-phase induction motor is reversed by:",
+    "options": [
+      "Interchanging any two supply phases",
+      "Reversing all three phases",
+      "Changing the capacitor",
+      "Increasing the load"
+    ],
+    "correct_index": 0,
+    "explanation": "Swapping any two of the three supply phases reverses the rotating magnetic field direction → motor reverses. All three swapped = same rotation.",
+    "id": "rrb_tech_874996d4"
+  },
+  {
+    "subject": "Electrical Technology",
+    "topic": "Transformers",
+    "difficulty": 3,
+    "question_text": "The all-day efficiency of a distribution transformer is defined as:",
+    "options": [
+      "kWh output / kWh input over 24 hours",
+      "Output VA / Input VA",
+      "Peak efficiency",
+      "Full load efficiency"
+    ],
+    "correct_index": 0,
+    "explanation": "All-day efficiency accounts for distribution transformer operating at varying loads throughout the day. It penalises always-energised iron losses even at light load.",
+    "id": "rrb_tech_dbea950e"
+  },
+  {
+    "subject": "Electrical Technology",
+    "topic": "Power Systems",
+    "difficulty": 3,
+    "question_text": "In a ring main distribution system, each consumer is fed from:",
+    "options": [
+      "Two directions (both ends of the ring)",
+      "One direction only",
+      "A separate feeder",
+      "A dedicated transformer"
+    ],
+    "correct_index": 0,
+    "explanation": "Ring main: feeder forms a closed loop. Each consumer can receive supply from either direction — improves reliability and reduces voltage drop.",
+    "id": "rrb_tech_3ba0f6aa"
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Semiconductor Devices",
+    "difficulty": 3,
+    "question_text": "The main advantage of CMOS logic gates over TTL is:",
+    "options": [
+      "Very low power dissipation (μW at rest)",
+      "Faster switching speed",
+      "Higher output current",
+      "Lower voltage supply needed"
+    ],
+    "correct_index": 0,
+    "explanation": "CMOS: near-zero static power (complementary MOSFETs — one always OFF). TTL uses BJTs that draw continuous base current. CMOS power ∝ frequency.",
+    "id": "rrb_tech_71d8a45c"
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Amplifiers",
+    "difficulty": 3,
+    "question_text": "The gain-bandwidth product (GBW) of an op-amp is:",
+    "options": [
+      "Constant — gain × bandwidth = fixed value",
+      "Variable with supply voltage",
+      "Depends on input impedance",
+      "Proportional to temperature"
+    ],
+    "correct_index": 0,
+    "explanation": "GBW = Av × BW = constant for a given op-amp (e.g., 741: 1 MHz). Higher closed-loop gain → lower bandwidth and vice versa.",
+    "id": "rrb_tech_48b3198d"
+  },
+  {
+    "subject": "Electrical Technology",
+    "topic": "AC Circuits",
+    "difficulty": 3,
+    "question_text": "The reactive power consumed by a 10 kVA load at 0.8 power factor is:",
+    "options": [
+      "6 kVAR",
+      "8 kVAR",
+      "10 kVAR",
+      "2 kVAR"
+    ],
+    "correct_index": 0,
+    "explanation": "P=S×PF=10×0.8=8kW. Q=√(S²−P²)=√(100−64)=√36=6 kVAR.",
+    "id": "rrb_tech_6b2e1ef4"
+  },
+  {
+    "subject": "Electrical Technology",
+    "topic": "Earthing",
+    "difficulty": 3,
+    "question_text": "The resistance of the earth electrode (plate/pipe earthing) should not exceed:",
+    "options": [
+      "5 Ω for power systems, 1 Ω for sensitive equipment",
+      "100 Ω",
+      "50 Ω",
+      "500 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "IS 3043: earth electrode resistance ≤ 5 Ω for general systems. For sensitive electronic and generating stations ≤ 1 Ω. Higher resistance reduces fault current.",
+    "id": "rrb_tech_456aef7f"
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Digital Electronics",
+    "difficulty": 3,
+    "question_text": "A JK flip-flop with J=1, K=1 and a clock pulse will:",
+    "options": [
+      "Toggle (change state)",
+      "Set to 1",
+      "Reset to 0",
+      "Hold state"
+    ],
+    "correct_index": 0,
+    "explanation": "JK flip-flop truth: J=0,K=0→hold; J=0,K=1→reset; J=1,K=0→set; J=1,K=1→toggle. Solves SR flip-flop's forbidden state.",
+    "id": "rrb_tech_d22d05ac"
+  },
+  {
+    "subject": "Electrical Technology",
+    "topic": "Wiring & Protection",
+    "difficulty": 3,
+    "question_text": "IP (Ingress Protection) rating IP65 means the equipment is:",
+    "options": [
+      "Dust-tight and protected against low-pressure water jets",
+      "Waterproof to 1m depth",
+      "Explosion-proof",
+      "Only dust-protected"
+    ],
+    "correct_index": 0,
+    "explanation": "IP6X = dust-tight (no ingress). IPX5 = protected against water jets. IP65 = dust-tight + water jet resistant. IP67 = dust-tight + immersion to 1m.",
+    "id": "rrb_tech_ea0de7ac"
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Semiconductor Devices",
+    "difficulty": 3,
+    "question_text": "A UPS (Uninterruptible Power Supply) uses which type of battery most commonly for short-duration backup?",
+    "options": [
+      "VRLA (Valve-Regulated Lead-Acid)",
+      "Lithium-ion only",
+      "NiCd only",
+      "Carbon-zinc"
+    ],
+    "correct_index": 0,
+    "explanation": "VRLA (sealed maintenance-free lead-acid) batteries are standard in UPS — cost-effective, no electrolyte spillage, readily available. Li-ion increasingly used in modern UPS.",
+    "id": "rrb_tech_65694b0d"
+  },
+  {
+    "subject": "Electrical Technology",
+    "topic": "Electrical Machines",
+    "difficulty": 3,
+    "question_text": "Power factor improvement by capacitor banks reduces:",
+    "options": [
+      "Reactive current and line losses",
+      "Active power consumed",
+      "System frequency",
+      "Transformer turns ratio"
+    ],
+    "correct_index": 0,
+    "explanation": "Capacitors supply reactive power locally → reduces reactive component of current from source → lower I²R line losses, reduced voltage drop, improved power factor.",
+    "id": "rrb_tech_e9c5e36b"
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Communication",
+    "difficulty": 3,
+    "question_text": "In amplitude modulation, the bandwidth required is:",
+    "options": [
+      "2 × message frequency (twice the highest audio frequency)",
+      "Equal to carrier frequency",
+      "Half the message frequency",
+      "Equal to message frequency"
+    ],
+    "correct_index": 0,
+    "explanation": "AM sidebands: upper and lower each = signal bandwidth. Total AM BW = 2 × Wm. For 5 kHz audio: BW = 10 kHz.",
+    "id": "rrb_tech_eeb0e42f"
+  },
+  {
+    "subject": "Electrical Technology",
+    "topic": "AC Circuits",
+    "difficulty": 3,
+    "question_text": "The current drawn by a 230V, 1000W, unity PF load is:",
+    "options": [
+      "4.35 A",
+      "0.23 A",
+      "43.5 A",
+      "10 A"
+    ],
+    "correct_index": 0,
+    "explanation": "P = VI×PF → I = P/(V×PF) = 1000/(230×1) ≈ 4.35 A.",
+    "id": "rrb_tech_d40847ba"
+  },
+  {
+    "subject": "Electrical Technology",
+    "topic": "Illumination",
+    "difficulty": 3,
+    "question_text": "The luminous efficacy of a LED lamp is approximately:",
+    "options": [
+      "80–150 lm/W",
+      "10–15 lm/W",
+      "50–60 lm/W",
+      "200–300 lm/W"
+    ],
+    "correct_index": 0,
+    "explanation": "LED efficacy: modern LEDs 80–150+ lm/W. Compare: incandescent ~15 lm/W, CFL ~50–70 lm/W, fluorescent tube ~75–100 lm/W.",
+    "id": "rrb_tech_5f700b6a"
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Digital Electronics",
+    "difficulty": 3,
+    "question_text": "The hexadecimal equivalent of decimal 255 is:",
+    "options": [
+      "FF",
+      "FE",
+      "EF",
+      "F0"
+    ],
+    "correct_index": 0,
+    "explanation": "255 ÷ 16 = 15 rem 15. 15=F in hex. So 255 = 15×16+15 = FF₁₆. Also: 11111111₂ = FF₁₆.",
+    "id": "rrb_tech_83d4ce63"
+  },
+  {
+    "subject": "Electrical Technology",
+    "topic": "Power Systems",
+    "difficulty": 3,
+    "question_text": "The purpose of a conservator tank on a power transformer is to:",
+    "options": [
+      "Accommodate thermal expansion of oil without oil-air contact",
+      "Cool the transformer",
+      "Monitor load",
+      "Protect against short circuits"
+    ],
+    "correct_index": 0,
+    "explanation": "Conservator: small tank above main tank connected by pipe. As oil expands (hot) or contracts (cold), oil level in conservator changes — preventing direct air contact with main tank oil.",
+    "id": "rrb_tech_38be24bb"
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Semiconductor Devices",
+    "difficulty": 3,
+    "question_text": "A photodiode is operated in:",
+    "options": [
+      "Reverse bias (photoconductive mode)",
+      "Forward bias",
+      "Zero bias only",
+      "Either bias equally"
+    ],
+    "correct_index": 0,
+    "explanation": "Photodiode: reverse biased. Incident photons generate minority carriers → photocurrent increases with light intensity. Faster response than photovoltaic (zero-bias) mode.",
+    "id": "rrb_tech_ba005209"
+  },
+  {
+    "subject": "Electrical Technology",
+    "topic": "Wiring & Protection",
+    "difficulty": 3,
+    "question_text": "The time-current characteristic of a Type B MCB trips instantaneously for currents above:",
+    "options": [
+      "3–5 times rated current",
+      "1–2 times rated current",
+      "10–20 times rated current",
+      "50 times rated current"
+    ],
+    "correct_index": 0,
+    "explanation": "Type B MCB: instantaneous trip at 3–5×In (for resistive loads). Type C: 5–10×In (motors). Type D: 10–20×In (transformers, high inrush).",
+    "id": "rrb_tech_5f99014b"
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Amplifiers",
+    "difficulty": 3,
+    "question_text": "Negative feedback in amplifiers reduces:",
+    "options": [
+      "Gain, distortion, and noise while increasing bandwidth",
+      "Gain only",
+      "Bandwidth",
+      "Input impedance"
+    ],
+    "correct_index": 0,
+    "explanation": "Negative feedback (NFB) reduces gain by (1+Aβ) but also reduces distortion and noise by same factor, and increases bandwidth by (1+Aβ). Improves stability.",
+    "id": "rrb_tech_c8a00ae5"
+  },
+  {
+    "subject": "Electrical Technology",
+    "topic": "DC Circuits",
+    "difficulty": 3,
+    "question_text": "In superposition theorem, while finding contribution of one source, all other sources are:",
+    "options": [
+      "Voltage sources short-circuited, current sources open-circuited",
+      "All removed from circuit",
+      "Doubled",
+      "Left unchanged"
+    ],
+    "correct_index": 0,
+    "explanation": "Superposition: deactivate all but one source at a time. Ideal voltage source → short circuit (V=0). Ideal current source → open circuit (I=0). Internal resistances remain.",
+    "id": "rrb_tech_1d6ecf82"
+  },
+  {
+    "subject": "Electrical Technology",
+    "topic": "Electrical Machines",
+    "difficulty": 3,
+    "question_text": "The percentage slip of an induction motor with synchronous speed 1500 rpm running at 1440 rpm is:",
+    "options": [
+      "4%",
+      "6%",
+      "10%",
+      "2%"
+    ],
+    "correct_index": 0,
+    "explanation": "s = (Ns−N)/Ns × 100 = (1500−1440)/1500 × 100 = 60/1500 × 100 = 4%.",
+    "id": "rrb_tech_16d97cda"
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Communication",
+    "difficulty": 3,
+    "question_text": "The modulation index of FM is 5, message frequency 2 kHz. Carson's rule bandwidth is:",
+    "options": [
+      "24 kHz",
+      "10 kHz",
+      "20 kHz",
+      "5 kHz"
+    ],
+    "correct_index": 0,
+    "explanation": "Carson's rule: BW = 2(β+1)fm = 2(5+1)×2000 = 2×6×2000 = 24 kHz.",
+    "id": "rrb_tech_d79369a3"
+  },
+  {
+    "subject": "Electrical Technology",
+    "topic": "Illumination",
+    "difficulty": 3,
+    "question_text": "The inverse square law of illumination states that illuminance E is proportional to:",
+    "options": [
+      "1/d² (inversely proportional to square of distance)",
+      "d² (directly proportional)",
+      "1/d",
+      "1/d³"
+    ],
+    "correct_index": 0,
+    "explanation": "E = I/d² × cosθ. Illuminance falls with square of distance from point source. Double the distance → quarter the illuminance.",
+    "id": "rrb_tech_aa26481c"
+  },
+  {
+    "subject": "Electrical Technology",
+    "topic": "Earthing",
+    "difficulty": 3,
+    "question_text": "TN-S earthing system (IS 3043 / IEC 60364) has:",
+    "options": [
+      "Separate neutral (N) and protective earth (PE) conductors throughout",
+      "Combined neutral and earth conductor",
+      "No earth conductor",
+      "Earth conductor at consumer end only"
+    ],
+    "correct_index": 0,
+    "explanation": "TN-S: separate N and PE from source to load — safest, no interference between neutral current and earth. TN-C combines them (PEN conductor). TN-C-S splits at consumer.",
+    "id": "rrb_tech_534e5948"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "What is 5² + 5?",
+    "options": [
+      "30",
+      "25",
+      "35",
+      "15"
+    ],
+    "correct_index": 0,
+    "explanation": "5²=25; 25+5=30."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Percentage",
+    "difficulty": 1,
+    "question_text": "What is 10% of 500?",
+    "options": [
+      "50",
+      "100",
+      "25",
+      "5"
+    ],
+    "correct_index": 0,
+    "explanation": "10/100×500=50."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 1,
+    "question_text": "Solve: 3x = 21",
+    "options": [
+      "7",
+      "6",
+      "8",
+      "9"
+    ],
+    "correct_index": 0,
+    "explanation": "x=21/3=7."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 1,
+    "question_text": "Area of a circle with radius 7 cm (π=22/7):",
+    "options": [
+      "154 cm²",
+      "22 cm²",
+      "44 cm²",
+      "77 cm²"
+    ],
+    "correct_index": 0,
+    "explanation": "A=πr²=22/7×7²=22/7×49=154 cm²."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "Which is a prime number: 15, 17, 21, 25?",
+    "options": [
+      "17",
+      "15",
+      "21",
+      "25"
+    ],
+    "correct_index": 0,
+    "explanation": "17 has no divisors other than 1 and 17. 15=3×5, 21=3×7, 25=5²."
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "Sound cannot travel through:",
+    "options": [
+      "Vacuum",
+      "Air",
+      "Water",
+      "Solids"
+    ],
+    "correct_index": 0,
+    "explanation": "Sound needs a medium — it cannot travel through vacuum (no particles to vibrate)."
+  },
+  {
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 1,
+    "question_text": "Water is composed of:",
+    "options": [
+      "Hydrogen and Oxygen",
+      "Carbon and Oxygen",
+      "Hydrogen and Nitrogen",
+      "Oxygen and Nitrogen"
+    ],
+    "correct_index": 0,
+    "explanation": "H₂O = 2 hydrogen atoms + 1 oxygen atom."
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "The device that converts electrical energy to light is:",
+    "options": [
+      "Bulb (lamp)",
+      "Motor",
+      "Generator",
+      "Capacitor"
+    ],
+    "correct_index": 0,
+    "explanation": "A light bulb (incandescent or LED) converts electrical energy to light (and heat)."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Basic Components",
+    "difficulty": 1,
+    "question_text": "A resistor is used to:",
+    "options": [
+      "Limit current flow",
+      "Store charge",
+      "Amplify signal",
+      "Generate electricity"
+    ],
+    "correct_index": 0,
+    "explanation": "A resistor opposes current flow. V=IR — it drops voltage proportional to current."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Basic Components",
+    "difficulty": 1,
+    "question_text": "The unit of capacitance is:",
+    "options": [
+      "Farad (F)",
+      "Henry (H)",
+      "Ohm (Ω)",
+      "Watt (W)"
+    ],
+    "correct_index": 0,
+    "explanation": "Capacitance C measured in Farads (F). 1F = 1 C/V. Practical: μF (10⁻⁶F), pF (10⁻¹²F)."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Basic Components",
+    "difficulty": 1,
+    "question_text": "An LED emits light when:",
+    "options": [
+      "Forward biased",
+      "Reverse biased",
+      "No current flows",
+      "At zero voltage"
+    ],
+    "correct_index": 0,
+    "explanation": "LED (Light Emitting Diode) emits light when forward biased — minority carriers recombine, releasing photons."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Basic Components",
+    "difficulty": 1,
+    "question_text": "A diode allows current to flow:",
+    "options": [
+      "In one direction only",
+      "In both directions",
+      "When reverse biased",
+      "Never"
+    ],
+    "correct_index": 0,
+    "explanation": "Diode: semiconductor device that conducts in forward bias (anode+, cathode−) and blocks in reverse bias."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "question_text": "The device used to convert AC to DC is called:",
+    "options": [
+      "Rectifier",
+      "Inverter",
+      "Transformer",
+      "Oscillator"
+    ],
+    "correct_index": 0,
+    "explanation": "Rectifier converts AC to DC (using diodes). Inverter does the opposite (DC to AC)."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "question_text": "Alternating Current (AC) is produced by:",
+    "options": [
+      "AC generator (alternator)",
+      "Battery",
+      "DC generator",
+      "Rectifier"
+    ],
+    "correct_index": 0,
+    "explanation": "AC alternators (synchronous generators) produce AC by rotating a coil in a magnetic field."
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Railway GK",
+    "difficulty": 1,
+    "question_text": "Indian Railways is under the control of:",
+    "options": [
+      "Ministry of Railways",
+      "Ministry of Transport",
+      "Ministry of Finance",
+      "State Governments"
+    ],
+    "correct_index": 0,
+    "explanation": "Indian Railways is managed by the Ministry of Railways, Government of India."
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "General Knowledge",
+    "difficulty": 1,
+    "question_text": "The capital of Maharashtra is:",
+    "options": [
+      "Mumbai",
+      "Pune",
+      "Nagpur",
+      "Nashik"
+    ],
+    "correct_index": 0,
+    "explanation": "Mumbai (formerly Bombay) is the capital and largest city of Maharashtra."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 1,
+    "question_text": "Ratio 2:3 expressed as a fraction is:",
+    "options": [
+      "2/3",
+      "3/2",
+      "1/3",
+      "2/5"
+    ],
+    "correct_index": 0,
+    "explanation": "A ratio a:b = fraction a/b. So 2:3 = 2/3."
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "A fuse wire is made of material with:",
+    "options": [
+      "Low melting point",
+      "High melting point",
+      "High resistance only",
+      "No resistance"
+    ],
+    "correct_index": 0,
+    "explanation": "Fuse wire (tin-lead alloy) has low melting point so it melts and breaks circuit when excessive current flows."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Basic Components",
+    "difficulty": 1,
+    "question_text": "In digital electronics, a logic gate with output 1 only when ALL inputs are 1 is:",
+    "options": [
+      "AND gate",
+      "OR gate",
+      "NOT gate",
+      "XOR gate"
+    ],
+    "correct_index": 0,
+    "explanation": "AND gate: output = 1 only when A=1 AND B=1. Truth table: 00→0, 01→0, 10→0, 11→1."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Basic Components",
+    "difficulty": 1,
+    "question_text": "Binary number 1010 in decimal is:",
+    "options": [
+      "10",
+      "12",
+      "8",
+      "14"
+    ],
+    "correct_index": 0,
+    "explanation": "1010₂ = 1×8+0×4+1×2+0×1 = 8+0+2+0 = 10₁₀."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Speed, Distance and Time",
+    "difficulty": 1,
+    "question_text": "Train speed 60 km/h. In 2 hours it travels:",
+    "options": [
+      "120 km",
+      "60 km",
+      "30 km",
+      "180 km"
+    ],
+    "correct_index": 0,
+    "explanation": "Distance = Speed × Time = 60 × 2 = 120 km."
+  },
+  {
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 1,
+    "question_text": "Rust is formed when iron reacts with:",
+    "options": [
+      "Oxygen and water",
+      "Nitrogen",
+      "Carbon dioxide",
+      "Hydrogen"
+    ],
+    "correct_index": 0,
+    "explanation": "Rusting: 4Fe + 3O₂ + 6H₂O → 4Fe(OH)₃ → Fe₂O₃·xH₂O (hydrated iron oxide = rust)."
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Science & Technology",
+    "difficulty": 1,
+    "question_text": "RAM stands for:",
+    "options": [
+      "Random Access Memory",
+      "Read After Memory",
+      "Random Assigned Memory",
+      "Read All Memory"
+    ],
+    "correct_index": 0,
+    "explanation": "RAM = Random Access Memory. Volatile memory used for running programs and data currently in use."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Profit and Loss",
+    "difficulty": 1,
+    "question_text": "CP=₹200, SP=₹250. Profit% =",
+    "options": [
+      "25%",
+      "20%",
+      "30%",
+      "50%"
+    ],
+    "correct_index": 0,
+    "explanation": "Profit=50. Profit%=50/200×100=25%."
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Analogy",
+    "difficulty": 1,
+    "question_text": "Bulb : Light :: Fan : ?",
+    "options": [
+      "Air/Wind",
+      "Current",
+      "Switch",
+      "Wire"
+    ],
+    "correct_index": 0,
+    "explanation": "A bulb produces light; a fan produces air movement/wind."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Semiconductors",
+    "difficulty": 2,
+    "question_text": "A transistor in saturation region acts as:",
+    "options": [
+      "Closed switch",
+      "Open switch",
+      "Amplifier",
+      "Resistor"
+    ],
+    "correct_index": 0,
+    "explanation": "In saturation, both junctions forward biased → VCE≈0.2V → transistor fully ON (closed switch). Used in digital circuits."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Semiconductors",
+    "difficulty": 2,
+    "question_text": "The majority carriers in p-type semiconductor are:",
+    "options": [
+      "Holes",
+      "Electrons",
+      "Both holes and electrons",
+      "Neither"
+    ],
+    "correct_index": 0,
+    "explanation": "p-type: doped with trivalent impurity (boron) → creates holes (majority). Electrons are minority carriers."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Amplifiers",
+    "difficulty": 2,
+    "question_text": "A common emitter amplifier provides:",
+    "options": [
+      "Voltage gain and current gain with 180° phase inversion",
+      "Only current gain",
+      "Only voltage gain",
+      "No phase inversion"
+    ],
+    "correct_index": 0,
+    "explanation": "CE amplifier: high voltage gain (~100), current gain (β), inverts output (180° phase shift). Most common BJT configuration."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "AC Circuits",
+    "difficulty": 2,
+    "question_text": "Inductive reactance XL = 2πfL. At 50 Hz with L=0.1H, XL =",
+    "options": [
+      "~31.4Ω",
+      "~5Ω",
+      "~50Ω",
+      "~100Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "XL=2π×50×0.1=10π≈31.4Ω."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "AC Circuits",
+    "difficulty": 2,
+    "question_text": "Capacitive reactance XC = 1/(2πfC). At 50 Hz with C=100μF, XC ≈",
+    "options": [
+      "31.8Ω",
+      "50Ω",
+      "100Ω",
+      "5Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "XC=1/(2π×50×100×10⁻⁶)=1/(0.03142)≈31.8Ω."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Digital Electronics",
+    "difficulty": 2,
+    "question_text": "The output of NAND gate for inputs A=1, B=1 is:",
+    "options": [
+      "0",
+      "1",
+      "A",
+      "B"
+    ],
+    "correct_index": 0,
+    "explanation": "NAND = NOT AND. AND(1,1)=1 → NAND=0. Truth table: 00→1, 01→1, 10→1, 11→0."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Digital Electronics",
+    "difficulty": 2,
+    "question_text": "Hexadecimal digit F = __ in decimal",
+    "options": [
+      "15",
+      "16",
+      "12",
+      "14"
+    ],
+    "correct_index": 0,
+    "explanation": "Hex A=10, B=11, C=12, D=13, E=14, F=15."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Communication",
+    "difficulty": 2,
+    "question_text": "AM stands for:",
+    "options": [
+      "Amplitude Modulation",
+      "Automatic Modulation",
+      "Analogue Mixing",
+      "Audio Mode"
+    ],
+    "correct_index": 0,
+    "explanation": "AM = Amplitude Modulation — carrier amplitude varies with message signal. Bandwidth = 2fm (for single-tone message fm)."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Communication",
+    "difficulty": 2,
+    "question_text": "FM offers better noise immunity than AM because:",
+    "options": [
+      "Noise mainly affects amplitude, not frequency",
+      "Noise mainly affects frequency",
+      "FM uses lower frequency",
+      "FM has narrower bandwidth"
+    ],
+    "correct_index": 0,
+    "explanation": "Most noise is amplitude noise. FM carries information in frequency variations, so amplitude noise has minimal effect. FM: better S/N ratio."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Power Systems",
+    "difficulty": 2,
+    "question_text": "The function of a circuit breaker is to:",
+    "options": [
+      "Interrupt fault current automatically",
+      "Measure current",
+      "Step up voltage",
+      "Store energy"
+    ],
+    "correct_index": 0,
+    "explanation": "Circuit breaker: protective device that automatically opens under fault conditions (overcurrent, short circuit). Can be reclosed (unlike fuse)."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Semiconductors",
+    "difficulty": 2,
+    "question_text": "Zener diode is mainly used for:",
+    "options": [
+      "Voltage regulation",
+      "Rectification",
+      "Amplification",
+      "Oscillation"
+    ],
+    "correct_index": 0,
+    "explanation": "Zener diode maintains constant voltage across load when reverse biased above Zener breakdown voltage. Used in voltage regulators, reference circuits."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 2,
+    "question_text": "Factorize: x² − 9",
+    "options": [
+      "(x+3)(x−3)",
+      "(x−3)²",
+      "(x+9)(x−1)",
+      "x(x−9)"
+    ],
+    "correct_index": 0,
+    "explanation": "Difference of squares: a²−b²=(a+b)(a−b). x²−9=x²−3²=(x+3)(x−3)."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 2,
+    "question_text": "sin²θ + cos²θ =",
+    "options": [
+      "1",
+      "0",
+      "sinθ",
+      "2"
+    ],
+    "correct_index": 0,
+    "explanation": "Fundamental Pythagorean identity: sin²θ+cos²θ=1. Valid for all θ."
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "Transformer works only with AC because:",
+    "options": [
+      "AC produces changing magnetic flux",
+      "DC is more powerful",
+      "AC has higher voltage",
+      "Transformers have diodes"
+    ],
+    "correct_index": 0,
+    "explanation": "Mutual induction requires changing flux (dΦ/dt). AC's continuously varying current creates changing B. DC creates constant B → no EMF induced."
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "5G networks primarily use which frequency bands?",
+    "options": [
+      "Sub-6GHz and mmWave (24–100GHz)",
+      "Only AM radio frequencies",
+      "Only FM radio frequencies",
+      "Microwave (1–3 GHz) only"
+    ],
+    "correct_index": 0,
+    "explanation": "5G: sub-6GHz for coverage, mmWave (24–100GHz) for extreme capacity. India rolled out 5G in 2022 using primarily sub-6GHz bands."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Digital Electronics",
+    "difficulty": 2,
+    "question_text": "A flip-flop stores:",
+    "options": [
+      "1 bit of data",
+      "1 byte of data",
+      "8 bits",
+      "1 nibble"
+    ],
+    "correct_index": 0,
+    "explanation": "A flip-flop (SR, D, JK, T) is a bistable element storing 1 bit (0 or 1). 8 flip-flops = 1 register (1 byte)."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Wiring",
+    "difficulty": 2,
+    "question_text": "A three-pin plug has: L (Live), N (Neutral), and:",
+    "options": [
+      "E (Earth/Ground)",
+      "B (Bias)",
+      "P (Power)",
+      "S (Signal)"
+    ],
+    "correct_index": 0,
+    "explanation": "Three-pin plug: Live (Brown/Red), Neutral (Blue/Black), Earth (Green-Yellow). Earth provides safety path for fault current."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Basic Components",
+    "difficulty": 2,
+    "question_text": "The unit of inductance is:",
+    "options": [
+      "Henry (H)",
+      "Farad (F)",
+      "Ohm (Ω)",
+      "Siemens (S)"
+    ],
+    "correct_index": 0,
+    "explanation": "Inductance L is measured in Henry (H). 1H = 1 Wb/A. Named after Joseph Henry."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 2,
+    "question_text": "Convert 0.625 to a fraction in lowest terms:",
+    "options": [
+      "5/8",
+      "3/5",
+      "7/10",
+      "2/3"
+    ],
+    "correct_index": 0,
+    "explanation": "0.625=625/1000=5/8 (divide by HCF 125)."
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Railway GK",
+    "difficulty": 2,
+    "question_text": "Which is the longest railway platform in India?",
+    "options": [
+      "Gorakhpur",
+      "Patna",
+      "Mumbai CST",
+      "Howrah"
+    ],
+    "correct_index": 0,
+    "explanation": "Gorakhpur Junction (UP) holds the record for world's longest railway platform at approximately 1,366 metres."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Measurements",
+    "difficulty": 2,
+    "question_text": "A CRO (Cathode Ray Oscilloscope) is used to display:",
+    "options": [
+      "Waveforms (voltage vs time)",
+      "DC current only",
+      "Resistance",
+      "Power factor"
+    ],
+    "correct_index": 0,
+    "explanation": "CRO displays voltage variations over time — shows waveform shape, amplitude, frequency, and phase of AC signals."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Safety",
+    "difficulty": 2,
+    "question_text": "MCB stands for:",
+    "options": [
+      "Miniature Circuit Breaker",
+      "Main Control Board",
+      "Modular Cable Box",
+      "Motor Circuit Bus"
+    ],
+    "correct_index": 0,
+    "explanation": "MCB = Miniature Circuit Breaker. Protects domestic circuits from overload and short circuit. Available in Type B (3–5In), C (5–10In), D (10–20In) trip characteristics."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Statistics",
+    "difficulty": 2,
+    "question_text": "Median of 3, 7, 5, 9, 1, 6, 8 (sorted: 1,3,5,6,7,8,9) is:",
+    "options": [
+      "6",
+      "5",
+      "7",
+      "8"
+    ],
+    "correct_index": 0,
+    "explanation": "Sorted: 1,3,5,6,7,8,9. n=7 (odd). Median = middle value = 4th = 6."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Communication",
+    "difficulty": 2,
+    "question_text": "The decibel (dB) is used to express:",
+    "options": [
+      "Ratio of power or amplitude levels",
+      "Absolute power",
+      "Frequency",
+      "Time period"
+    ],
+    "correct_index": 0,
+    "explanation": "dB = 10 log₁₀(P2/P1) for power, 20 log₁₀(V2/V1) for voltage. Logarithmic scale — 3dB = double power, 10dB = 10× power."
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "In a parallel circuit, the voltage across all components is:",
+    "options": [
+      "Same",
+      "Different",
+      "Divided equally",
+      "Zero"
+    ],
+    "correct_index": 0,
+    "explanation": "Parallel circuit: same voltage across all branches (nodes at same potential). Current divides: I_branch = V/R_branch."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Wiring & Protection",
+    "difficulty": 3,
+    "question_text": "As per IS 732, the minimum cross-section for a domestic light circuit conductor is:",
+    "options": [
+      "1 mm²",
+      "0.5 mm²",
+      "2.5 mm²",
+      "4 mm²"
+    ],
+    "correct_index": 0,
+    "explanation": "IS 732 (Code of Practice for Electrical Wiring Installations): minimum conductor size for domestic sub-circuits: 1 mm² for lighting, 2.5 mm² for power outlets."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Wiring & Protection",
+    "difficulty": 3,
+    "question_text": "Type C MCB has a tripping characteristic that protects against:",
+    "options": [
+      "Moderate inrush currents (5–10× In), e.g., motors and fluorescent lights",
+      "Low overcurrent (3–5× In) for resistive loads",
+      "High inrush (10–20× In) for transformer loads",
+      "Instantaneous short circuit only"
+    ],
+    "correct_index": 0,
+    "explanation": "MCB trip types: B (3–5×In, resistive), C (5–10×In, inductive/fluorescent/small motors), D (10–20×In, large motors, transformers). Select C for most industrial and commercial applications."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Wiring & Protection",
+    "difficulty": 3,
+    "question_text": "IP65 enclosure rating means:",
+    "options": [
+      "Dust-tight and protected against water jets",
+      "Splash-proof only",
+      "Submersible to 1m",
+      "Dust-proof and drip-proof"
+    ],
+    "correct_index": 0,
+    "explanation": "IP (Ingress Protection) XX: first digit = solid (6=dust-tight), second = liquid (5=water jets from any direction). IP65 used for outdoor lighting, industrial panels."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Wiring & Protection",
+    "difficulty": 3,
+    "question_text": "TN-S earthing system uses:",
+    "options": [
+      "Separate neutral (N) and protective earth (PE) conductors throughout",
+      "Combined PEN conductor throughout",
+      "Earth at one point only",
+      "No earth connection"
+    ],
+    "correct_index": 0,
+    "explanation": "TN-S: N and PE are separate conductors from transformer to consumer. Better EMC (no circulating currents on PE). Standard for new installations in UK/India."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Wiring & Protection",
+    "difficulty": 3,
+    "question_text": "As per IS 3043, the minimum depth of earth electrode burial for a plate electrode is:",
+    "options": [
+      "At least 3 m below ground surface",
+      "0.5 m",
+      "1 m",
+      "2 m but surface exposed"
+    ],
+    "correct_index": 0,
+    "explanation": "IS 3043 (Code of Practice for Earthing): plate electrodes buried at minimum 3 m depth to stay in moist soil. Pipe electrodes: 2–3 m length."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Power Electronics",
+    "difficulty": 3,
+    "question_text": "A full-wave bridge rectifier uses how many diodes?",
+    "options": [
+      "4",
+      "2",
+      "1",
+      "6"
+    ],
+    "correct_index": 0,
+    "explanation": "Bridge rectifier: 4 diodes arranged in H-bridge. Both half-cycles of AC produce DC output. Ripple frequency = 2× supply frequency (100 Hz for 50 Hz supply)."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Power Electronics",
+    "difficulty": 3,
+    "question_text": "A MOSFET is a voltage-controlled device. Its gate draws:",
+    "options": [
+      "Nearly zero current (insulated gate)",
+      "Large base current",
+      "Collector current",
+      "Emitter current"
+    ],
+    "correct_index": 0,
+    "explanation": "MOSFET has insulated (oxide) gate — input impedance > 10⁸Ω. Gate current ≈ 0. This makes it ideal for switching (CMOS logic, motor drives, solar inverters)."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Digital Electronics",
+    "difficulty": 3,
+    "question_text": "Gray code for decimal 7 is:",
+    "options": [
+      "0100",
+      "0111",
+      "1000",
+      "1111"
+    ],
+    "correct_index": 0,
+    "explanation": "Gray code: 0=0000,1=0001,2=0011,3=0010,4=0110,5=0111,6=0101,7=0100. Only 1 bit changes between consecutive values."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Digital Electronics",
+    "difficulty": 3,
+    "question_text": "A JK flip-flop with J=1, K=1 toggles. If Q=0, after clock edge Q becomes:",
+    "options": [
+      "1",
+      "0",
+      "Undefined",
+      "Z (high-impedance)"
+    ],
+    "correct_index": 0,
+    "explanation": "JK: J=0,K=0→Q unchanged; J=1,K=0→Set Q=1; J=0,K=1→Reset Q=0; J=1,K=1→Toggle. From Q=0, toggle→Q=1."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Microcontrollers",
+    "difficulty": 3,
+    "question_text": "In an 8051 microcontroller, the number of I/O ports is:",
+    "options": [
+      "4 (P0–P3, each 8-bit)",
+      "2",
+      "8",
+      "16"
+    ],
+    "correct_index": 0,
+    "explanation": "8051 has four 8-bit I/O ports: P0, P1, P2, P3 = 32 I/O lines. P0 doubles as address/data bus in expanded mode."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Communication",
+    "difficulty": 3,
+    "question_text": "In PCM, if the sampling rate is 8 kHz and quantisation uses 8 bits, the bit rate is:",
+    "options": [
+      "64 kbps",
+      "8 kbps",
+      "8 kHz",
+      "16 kbps"
+    ],
+    "correct_index": 0,
+    "explanation": "Bit rate = sampling rate × bits per sample = 8000×8 = 64,000 bps = 64 kbps. Standard G.711 telephony PCM."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Communication",
+    "difficulty": 3,
+    "question_text": "Carson's rule for FM bandwidth is BW ≈",
+    "options": [
+      "2(Δf + fm)",
+      "2fm",
+      "Δf/fm",
+      "2Δf"
+    ],
+    "correct_index": 0,
+    "explanation": "Carson's rule: BW=2(Δf+fm) where Δf=frequency deviation, fm=max message frequency. Contains ~98% of power. For commercial FM: Δf=75kHz, fm=15kHz → BW=180kHz."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Illumination",
+    "difficulty": 3,
+    "question_text": "LED efficacy (lumens per watt) compared to incandescent bulb is:",
+    "options": [
+      "Much higher (~100 lm/W vs ~15 lm/W)",
+      "About the same",
+      "Lower",
+      "Dependent on voltage only"
+    ],
+    "correct_index": 0,
+    "explanation": "LED: ~80–120 lm/W. CFL: ~55–70 lm/W. Incandescent: ~10–18 lm/W. LEDs are 5–8× more efficient and last 25× longer."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Illumination",
+    "difficulty": 3,
+    "question_text": "The inverse square law for illumination states E (illuminance) ∝",
+    "options": [
+      "1/d²",
+      "d²",
+      "1/d",
+      "d"
+    ],
+    "correct_index": 0,
+    "explanation": "E = I/d² where I=luminous intensity (candela), d=distance. At 2m vs 1m, illuminance drops to 1/4. Used in lighting design, photometry."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Microcontrollers",
+    "difficulty": 3,
+    "question_text": "PWM (Pulse Width Modulation) is used in electronic circuits to control:",
+    "options": [
+      "Average power to a load (e.g., motor speed, LED brightness)",
+      "Frequency only",
+      "Voltage amplitude directly",
+      "AC waveform shape"
+    ],
+    "correct_index": 0,
+    "explanation": "PWM varies duty cycle (t_on/T) at constant frequency. Average voltage = Vcc × duty cycle. Applications: DC motor speed control, SMPS, LED dimming, inverters."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Power Electronics",
+    "difficulty": 3,
+    "question_text": "The ripple factor of a full-wave rectifier with capacitor filter is approximately:",
+    "options": [
+      "Lower than half-wave (≈0.48 unfiltered, much less with C)",
+      "Higher than half-wave",
+      "Equal to 1",
+      "Greater than 2"
+    ],
+    "correct_index": 0,
+    "explanation": "Unfiltered FW: RF=0.48. HW: RF=1.21. With capacitor filter, RF=1/(4√3×f×R×C). Full-wave + C filter gives much smoother DC."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Digital Electronics",
+    "difficulty": 3,
+    "question_text": "Boolean expression A·(A+B) simplifies to:",
+    "options": [
+      "A",
+      "A+B",
+      "AB",
+      "B"
+    ],
+    "correct_index": 0,
+    "explanation": "A·(A+B)=A·A+A·B=A+A·B=A(1+B)=A×1=A (absorption law: A+AB=A)."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Wiring & Protection",
+    "difficulty": 3,
+    "question_text": "RCCB (Residual Current Circuit Breaker) trips when:",
+    "options": [
+      "Imbalance between line and neutral currents ≥ 30mA",
+      "Overcurrent occurs",
+      "Voltage surges",
+      "Power factor drops"
+    ],
+    "correct_index": 0,
+    "explanation": "RCCB detects difference in current between L and N (should be zero in fault-free circuit). 30mA is safe threshold — current above this is detected and circuit trips within 40ms."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Machines",
+    "difficulty": 3,
+    "question_text": "Star-delta starter is used for starting induction motors because it:",
+    "options": [
+      "Reduces starting current to 1/3 of direct-on-line (DOL) value",
+      "Increases starting torque",
+      "Maintains full voltage at start",
+      "Reduces power factor penalty"
+    ],
+    "correct_index": 0,
+    "explanation": "Star connection: V_phase=VL/√3 → I_start reduces to 1/3 of DOL. Torque also reduces to 1/3 (T∝V²). Star-delta used for motors >5kW."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Power Electronics",
+    "difficulty": 3,
+    "question_text": "In a step-down (buck) converter, the output voltage Vo = Vin × D, where D is:",
+    "options": [
+      "Duty cycle (0<D<1)",
+      "Frequency ratio",
+      "Turn ratio",
+      "Load resistance ratio"
+    ],
+    "correct_index": 0,
+    "explanation": "Buck converter: Vo=Vin×D. For Vin=12V, D=0.5 → Vo=6V. D is the duty cycle (t_on/T). MOSFET switch + inductor + diode + capacitor."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Sensors",
+    "difficulty": 3,
+    "question_text": "A thermistor with negative temperature coefficient (NTC) has resistance that:",
+    "options": [
+      "Decreases as temperature increases",
+      "Increases with temperature",
+      "Remains constant",
+      "Changes with pressure only"
+    ],
+    "correct_index": 0,
+    "explanation": "NTC thermistor: R∝e^(B/T). As T↑, R↓. Used in temperature measurement, inrush current limiting (large NTC in series at startup). PTC: R increases with T."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Amplifiers",
+    "difficulty": 3,
+    "question_text": "Op-amp ideal characteristics include infinite gain, infinite input impedance, and:",
+    "options": [
+      "Zero output impedance",
+      "Zero input impedance",
+      "Finite bandwidth",
+      "Unity gain only"
+    ],
+    "correct_index": 0,
+    "explanation": "Ideal op-amp: Av=∞, Rin=∞, Rout=0, BW=∞, CMRR=∞, Vos=0. Real op-amp (e.g., 741): Av~200,000, Rin~2MΩ, Rout~75Ω."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Measurements",
+    "difficulty": 3,
+    "question_text": "A spectrum analyser displays:",
+    "options": [
+      "Signal amplitude vs frequency",
+      "Signal voltage vs time",
+      "Current vs resistance",
+      "Phase vs time"
+    ],
+    "correct_index": 0,
+    "explanation": "Spectrum analyser: frequency domain display (X=frequency, Y=amplitude). Used for EMI testing, modulation analysis, harmonic distortion measurement."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Digital Electronics",
+    "difficulty": 3,
+    "question_text": "8-to-3 line encoder has how many input lines?",
+    "options": [
+      "8",
+      "3",
+      "16",
+      "4"
+    ],
+    "correct_index": 0,
+    "explanation": "8-to-3 priority encoder: 8 inputs (2⁰ to 2⁷), 3 output bits encoding the highest-priority active input. Used in interrupt priority systems."
+  },
+  {
+    "subject": "Electronics",
+    "topic": "Communication",
+    "difficulty": 3,
+    "question_text": "The modulation index m of AM signal is defined as:",
+    "options": [
+      "(Vmax−Vmin)/(Vmax+Vmin)",
+      "Vmax/Vmin",
+      "Vc/Vm",
+      "fm/fc"
+    ],
+    "correct_index": 0,
+    "explanation": "AM modulation index m=(Vmax−Vmin)/(Vmax+Vmin)=Am/Ac. For undistorted AM: m≤1. Over-modulation (m>1) causes distortion and excessive BW."
+  }
+]

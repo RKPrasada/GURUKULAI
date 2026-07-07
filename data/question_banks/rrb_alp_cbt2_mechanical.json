@@ -590,5 +590,1998 @@
     "correct_index": 0,
     "explanation": "CO₂ and dry chemical (ABC powder) are safe for electrical fires — water conducts electricity and should never be used.",
     "id": "alp_cbt2_mech_mainte_46cf1c"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Thermodynamics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "A Carnot engine operates between 627°C and 27°C. Its efficiency is:",
+    "options": [
+      "66.7%",
+      "50%",
+      "75%",
+      "33.3%"
+    ],
+    "correct_index": 0,
+    "explanation": "η = 1 - TL/TH = 1 - 300/900 = 1 - 1/3 = 2/3 = 66.7%. (Temperatures in Kelvin: 27+273=300, 627+273=900).",
+    "id": "alp_cbt2_mech_d82e5a"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Thermodynamics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "In a throttling process, which property remains constant?",
+    "options": [
+      "Enthalpy",
+      "Entropy",
+      "Temperature",
+      "Pressure"
+    ],
+    "correct_index": 0,
+    "explanation": "Throttling is isenthalpic (constant enthalpy). It is irreversible, so entropy increases; pressure and temperature may change.",
+    "id": "alp_cbt2_mech_33956c"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fluid Mechanics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The velocity of flow in a pipe doubles. The head loss due to friction (Darcy-Weisbach) becomes:",
+    "options": [
+      "4 times",
+      "2 times",
+      "8 times",
+      "16 times"
+    ],
+    "correct_index": 0,
+    "explanation": "hf = fLV²/2gD. Head loss ∝ V². If V doubles, hf increases by 2² = 4 times.",
+    "id": "alp_cbt2_mech_364f2e"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fluid Mechanics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The continuity equation for incompressible steady flow is:",
+    "options": [
+      "A₁V₁ = A₂V₂",
+      "P₁V₁ = P₂V₂",
+      "A₁/V₁ = A₂/V₂",
+      "V₁/A₁ = V₂/A₂"
+    ],
+    "correct_index": 0,
+    "explanation": "Conservation of mass for incompressible (constant density) steady flow: A₁V₁ = A₂V₂ (product of area and velocity is constant).",
+    "id": "alp_cbt2_mech_4c7f61"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Strength of Materials",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "A solid circular shaft of diameter d transmits torque T. The maximum shear stress is:",
+    "options": [
+      "16T/πd³",
+      "32T/πd³",
+      "8T/πd³",
+      "T/πd³"
+    ],
+    "correct_index": 0,
+    "explanation": "τmax = T×r/J = T×(d/2)/(πd⁴/32) = 16T/πd³. This is the torsion formula for solid circular shaft.",
+    "id": "alp_cbt2_mech_0d161d"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Strength of Materials",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The ratio of Young's modulus (E) to modulus of rigidity (G) for a material with Poisson's ratio ν = 0.25 is:",
+    "options": [
+      "2.5",
+      "2",
+      "3",
+      "1.5"
+    ],
+    "correct_index": 0,
+    "explanation": "E = 2G(1+ν) → E/G = 2(1+0.25) = 2×1.25 = 2.5.",
+    "id": "alp_cbt2_mech_fd7d82"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Theory of Machines",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The number of degrees of freedom of a planar mechanism with 6 links and 7 joints (lower pairs) is:",
+    "options": [
+      "1",
+      "2",
+      "0",
+      "3"
+    ],
+    "correct_index": 0,
+    "explanation": "Grübler's formula: F = 3(L-1) - 2J = 3(6-1) - 2×7 = 15-14 = 1. One DOF — a constrained mechanism.",
+    "id": "alp_cbt2_mech_dacc11"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Theory of Machines",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "In a governor, the sensitiveness is defined as the ratio of:",
+    "options": [
+      "Speed range to mean speed",
+      "Lift to speed",
+      "Sleeve force to spring force",
+      "Mean speed to speed range"
+    ],
+    "correct_index": 0,
+    "explanation": "Sensitiveness = (N2-N1)/N where N2 and N1 are max and min speeds and N is mean speed. Higher sensitiveness means smaller speed range.",
+    "id": "alp_cbt2_mech_4c999c"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Machine Design",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "A bolt is subjected to a tensile load of 50 kN. Bolt material has yield stress 400 MPa. For a factor of safety of 2, the required core diameter is approximately:",
+    "options": [
+      "20 mm",
+      "28 mm",
+      "14 mm",
+      "18 mm"
+    ],
+    "correct_index": 0,
+    "explanation": "Allowable stress = 400/2 = 200 MPa. A = F/σ = 50000/200 = 250 mm². d = √(4×250/π) ≈ 17.8 mm ≈ 18 mm → nearest standard ≈ 20 mm.",
+    "id": "alp_cbt2_mech_c04aaf"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Manufacturing Processes",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "In investment casting, the pattern is made of:",
+    "options": [
+      "Wax",
+      "Wood",
+      "Plastic",
+      "Metal"
+    ],
+    "correct_index": 0,
+    "explanation": "Investment (lost-wax) casting uses wax patterns that are melted out after the ceramic mould is formed. Allows complex, high-precision parts.",
+    "id": "alp_cbt2_mech_b25b0b"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Manufacturing Processes",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The material removal rate (MRR) in turning is given by:",
+    "options": [
+      "MRR = f × d × v",
+      "MRR = f + d + v",
+      "MRR = f²× d × v",
+      "MRR = v/fd"
+    ],
+    "correct_index": 0,
+    "explanation": "MRR = feed (mm/rev) × depth of cut (mm) × cutting speed (mm/min) = f × d × v in consistent units.",
+    "id": "alp_cbt2_mech_28e00d"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Engineering Drawing",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The true length of a line is shown in orthographic projection when the line is:",
+    "options": [
+      "Parallel to the projection plane",
+      "Perpendicular to the projection plane",
+      "At 45° to the projection plane",
+      "At 30° to the projection plane"
+    ],
+    "correct_index": 0,
+    "explanation": "A line parallel to the projection plane projects at its true length. An inclined line projects shorter than true length (foreshortened).",
+    "id": "alp_cbt2_mech_b5c0b5"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Thermodynamics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "Steam at 5 bar, 200°C is: (saturation temp at 5 bar ≈ 151.8°C)",
+    "options": [
+      "Superheated steam",
+      "Saturated wet steam",
+      "Saturated dry steam",
+      "Sub-cooled liquid"
+    ],
+    "correct_index": 0,
+    "explanation": "Since 200°C > saturation temperature at 5 bar (151.8°C), the steam is superheated. Degree of superheat = 200-151.8 = 48.2°C.",
+    "id": "alp_cbt2_mech_261e63"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fluid Mechanics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The dimensionless number that governs dynamic similarity in flows with free surface effects is:",
+    "options": [
+      "Froude number",
+      "Reynolds number",
+      "Mach number",
+      "Weber number"
+    ],
+    "correct_index": 0,
+    "explanation": "Froude number (Fr = V/√gL) governs gravity-driven and free-surface flows — used in ship hull, spillway, and open-channel modelling.",
+    "id": "alp_cbt2_mech_d8391b"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Strength of Materials",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "Euler's buckling load for a column with both ends fixed is:",
+    "options": [
+      "4π²EI/L²",
+      "π²EI/L²",
+      "2π²EI/L²",
+      "π²EI/4L²"
+    ],
+    "correct_index": 0,
+    "explanation": "Effective length of fixed-fixed column: Le=L/2. Pcr=π²EI/Le²=π²EI/(L/2)²=4π²EI/L².",
+    "id": "alp_cbt2_mech_1101e3"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Theory of Machines",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "In a 4-bar mechanism with crank, coupler and follower, the Grashof condition for continuous rotation of crank is:",
+    "options": [
+      "Shortest + Longest ≤ sum of other two",
+      "Shortest + Longest > sum of other two",
+      "All links equal length",
+      "Shortest link must be the frame"
+    ],
+    "correct_index": 0,
+    "explanation": "Grashof's condition: l + s ≤ p + q (s=shortest, l=longest, p,q=other two links). Satisfied → at least one link can rotate fully.",
+    "id": "alp_cbt2_mech_c7b8bb"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Machine Design",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The endurance limit of a steel shaft is reduced by a surface finish factor of 0.8 and a size factor of 0.9. If material endurance limit is 300 MPa, the corrected value is:",
+    "options": [
+      "216 MPa",
+      "270 MPa",
+      "240 MPa",
+      "280 MPa"
+    ],
+    "correct_index": 0,
+    "explanation": "Corrected Se = Se' × Kf × Ka × Kb... = 300 × 0.8 × 0.9 = 216 MPa.",
+    "id": "alp_cbt2_mech_cebdce"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Manufacturing Processes",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "In electrochemical machining (ECM), material removal is based on:",
+    "options": [
+      "Faraday's law of electrolysis",
+      "Joule heating",
+      "Erosion by sparks",
+      "Abrasive action"
+    ],
+    "correct_index": 0,
+    "explanation": "ECM uses anodic dissolution — Faraday's law: m = ZIt/F. The workpiece is anode; material dissolves into electrolyte.",
+    "id": "alp_cbt2_mech_1e9c86"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Strength of Materials",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "A cantilever beam of length L carries UDL of w per unit length. Maximum bending moment is at:",
+    "options": [
+      "Fixed end, value wL²/2",
+      "Free end, value wL²/2",
+      "Mid-span, value wL²/8",
+      "Fixed end, value wL²/8"
+    ],
+    "correct_index": 0,
+    "explanation": "For cantilever with UDL, BM is maximum at the fixed support = wL²/2 and zero at the free end.",
+    "id": "alp_cbt2_mech_3cb106"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fluid Mechanics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "Bernoulli's equation assumes flow to be:",
+    "options": [
+      "Steady, incompressible, inviscid",
+      "Unsteady, compressible, viscous",
+      "Turbulent, compressible, inviscid",
+      "Laminar, viscous, compressible"
+    ],
+    "correct_index": 0,
+    "explanation": "Bernoulli's equation applies along a streamline for steady, incompressible, inviscid (frictionless) flow: P + ½ρV² + ρgz = constant.",
+    "id": "alp_cbt2_mech_503e5e"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Thermodynamics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The COP of a refrigerator working between -10°C and 30°C is (ideal):",
+    "options": [
+      "6.58",
+      "5.75",
+      "4.0",
+      "7.25"
+    ],
+    "correct_index": 0,
+    "explanation": "TL=263 K, TH=303 K. COPref = TL/(TH-TL) = 263/40 = 6.575 ≈ 6.58.",
+    "id": "alp_cbt2_mech_706863"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Theory of Machines",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "Critical speed of a shaft is the speed at which:",
+    "options": [
+      "Shaft resonates with its natural frequency",
+      "Shaft breaks due to overload",
+      "Bearing fails",
+      "Maximum torque is transmitted"
+    ],
+    "correct_index": 0,
+    "explanation": "Critical (whirling) speed occurs when rotational speed equals the shaft's natural transverse frequency. Resonance causes large deflections.",
+    "id": "alp_cbt2_mech_b7af1f"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Manufacturing Processes",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "In welding, the flux is used to:",
+    "options": [
+      "Prevent oxidation of the weld pool",
+      "Increase current flow",
+      "Cool the weld",
+      "Strengthen the base metal"
+    ],
+    "correct_index": 0,
+    "explanation": "Flux forms a slag layer over the molten pool, shielding it from atmospheric oxygen and nitrogen, preventing oxidation and porosity.",
+    "id": "alp_cbt2_mech_ba82a6"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Machine Design",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "A helical spring has wire diameter 8 mm, coil diameter 80 mm, 10 active coils. Spring index C is:",
+    "options": [
+      "10",
+      "8",
+      "12",
+      "5"
+    ],
+    "correct_index": 0,
+    "explanation": "Spring index C = D/d = 80/8 = 10. (D=mean coil diameter, d=wire diameter).",
+    "id": "alp_cbt2_mech_f405db"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Strength of Materials",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The hoop stress in a thin cylinder of internal pressure p, diameter D, thickness t is:",
+    "options": [
+      "pD/2t",
+      "pD/4t",
+      "2pD/t",
+      "pt/D"
+    ],
+    "correct_index": 0,
+    "explanation": "Hoop (circumferential) stress σh = pd/2t. Longitudinal stress σl = pd/4t. Hoop stress is twice the longitudinal stress.",
+    "id": "alp_cbt2_mech_409925"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Thermodynamics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The ratio of specific heats (γ = Cp/Cv) for a diatomic gas is:",
+    "options": [
+      "1.4",
+      "1.67",
+      "1.3",
+      "1.0"
+    ],
+    "correct_index": 0,
+    "explanation": "Diatomic gases (N₂, O₂, air): 5 degrees of freedom, Cv=5R/2, Cp=7R/2, γ=7/5=1.4. Monatomic gases (Ar, He): γ=5/3=1.67.",
+    "id": "alp_cbt2_mech_cdc663"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Thermodynamics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "In a Rankine cycle, the pump work input is negligible because:",
+    "options": [
+      "Liquid is incompressible and has very small specific volume",
+      "Steam has low pressure",
+      "Condenser temperature is low",
+      "Boiler efficiency is high"
+    ],
+    "correct_index": 0,
+    "explanation": "Pump compresses liquid water. Since liquid is nearly incompressible (small v), pump work Wp = v(P2-P1) is very small compared to turbine work.",
+    "id": "alp_cbt2_mech_0e9449"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fluid Mechanics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The boundary layer thickness (δ) over a flat plate in laminar flow varies as:",
+    "options": [
+      "x^0.5",
+      "x",
+      "x^0.8",
+      "x^2"
+    ],
+    "correct_index": 0,
+    "explanation": "For laminar flow over flat plate: δ = 5x/√(Rex) ∝ x^0.5 (Blasius solution). For turbulent: δ ∝ x^0.8.",
+    "id": "alp_cbt2_mech_e82e7a"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fluid Mechanics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "Cavitation in a pump is caused by:",
+    "options": [
+      "Local pressure falling below vapour pressure",
+      "High discharge pressure",
+      "Over-lubrication",
+      "High fluid temperature"
+    ],
+    "correct_index": 0,
+    "explanation": "Cavitation occurs when local static pressure drops to the fluid's vapour pressure, forming vapour bubbles that collapse violently, causing noise, vibration, and erosion.",
+    "id": "alp_cbt2_mech_719c80"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Strength of Materials",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The shear stress distribution across a circular cross-section under transverse load is:",
+    "options": [
+      "Parabolic, maximum at neutral axis",
+      "Uniform",
+      "Linear",
+      "Zero at neutral axis"
+    ],
+    "correct_index": 0,
+    "explanation": "For circular cross-section, shear stress is parabolic: zero at top/bottom, maximum at the neutral axis. τmax = 4V/3A where V is shear force and A is area.",
+    "id": "alp_cbt2_mech_a41c95"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Strength of Materials",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "A bar of length L, cross-section A, Young's modulus E is subjected to axial tensile force P. The strain energy stored is:",
+    "options": [
+      "P²L/2AE",
+      "PL/AE",
+      "P²L/AE",
+      "2PL/AE"
+    ],
+    "correct_index": 0,
+    "explanation": "Strain energy U = σ²V/2E = (P/A)² × AL / 2E = P²L/(2AE). This is Castigliano's basis for deflection calculation.",
+    "id": "alp_cbt2_mech_3e571f"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Theory of Machines",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "In a cam-follower mechanism, the follower velocity is maximum when the cam acceleration is:",
+    "options": [
+      "Zero",
+      "Maximum",
+      "Minimum",
+      "Negative"
+    ],
+    "correct_index": 0,
+    "explanation": "Velocity is maximum when its rate of change (acceleration) is zero. This is the inflection point of the displacement-time curve.",
+    "id": "alp_cbt2_mech_941cd1"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Theory of Machines",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The efficiency of a screw jack with lead angle λ and friction angle φ is:",
+    "options": [
+      "tan λ / tan(λ+φ)",
+      "tan(λ+φ) / tan λ",
+      "sin λ / sin(λ+φ)",
+      "cos(λ+φ) / cos λ"
+    ],
+    "correct_index": 0,
+    "explanation": "For lifting: η = tan λ / tan(λ+φ). For self-locking: λ < φ. Maximum efficiency occurs at λ = 45°-φ/2.",
+    "id": "alp_cbt2_mech_0f8198"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Machine Design",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "Stress concentration factor Kt is defined as the ratio of:",
+    "options": [
+      "Maximum stress at discontinuity to nominal stress",
+      "Actual stress to ultimate stress",
+      "Fatigue stress to yield stress",
+      "Shear stress to normal stress"
+    ],
+    "correct_index": 0,
+    "explanation": "Kt = σmax/σnom. It accounts for geometric discontinuities (holes, notches, fillets) that cause local stress concentration.",
+    "id": "alp_cbt2_mech_d731f0"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Machine Design",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "In a gear pair, the module is defined as:",
+    "options": [
+      "Pitch circle diameter / Number of teeth",
+      "Number of teeth / Pitch circle diameter",
+      "Addendum / Dedendum",
+      "Face width / Number of teeth"
+    ],
+    "correct_index": 0,
+    "explanation": "Module m = D/T (mm) where D = pitch circle diameter and T = number of teeth. It is the basic unit of gear tooth size; meshing gears must have the same module.",
+    "id": "alp_cbt2_mech_d9f89d"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Manufacturing Processes",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "In a forward extrusion process, the material flow is:",
+    "options": [
+      "In the same direction as punch movement",
+      "Opposite to punch movement",
+      "Perpendicular to punch movement",
+      "At 45° to punch movement"
+    ],
+    "correct_index": 0,
+    "explanation": "Forward (direct) extrusion: material flows in the same direction as punch movement. Backward extrusion: material flows opposite to punch.",
+    "id": "alp_cbt2_mech_d9a961"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Manufacturing Processes",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The tool life equation (Taylor's) is VTⁿ = C. At higher cutting speed:",
+    "options": [
+      "Tool life decreases",
+      "Tool life increases",
+      "Tool life is unaffected",
+      "Tool life first increases then decreases"
+    ],
+    "correct_index": 0,
+    "explanation": "Taylor's tool life equation: VTⁿ = C → T = (C/V)^(1/n). As V increases, T decreases. Higher speed means shorter tool life.",
+    "id": "alp_cbt2_mech_d44278"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Engineering Drawing",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "In a sectional view, hatching lines are drawn at:",
+    "options": [
+      "45° to the principal axes",
+      "90° to the principal axes",
+      "30° to the horizontal",
+      "60° to the vertical"
+    ],
+    "correct_index": 0,
+    "explanation": "Standard hatching: parallel lines at 45° to the horizontal (or to the principal axis of the part). Different materials may use different hatch patterns.",
+    "id": "alp_cbt2_mech_d01108"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Thermodynamics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "For an isentropic process, which relation between pressure and volume holds (γ = ratio of specific heats)?",
+    "options": [
+      "PVᵞ = constant",
+      "PV = constant",
+      "PV² = constant",
+      "P²V = constant"
+    ],
+    "correct_index": 0,
+    "explanation": "Isentropic (reversible adiabatic) process: PVᵞ = constant. Isothermal: PV = constant. For air, γ ≈ 1.4.",
+    "id": "alp_cbt2_mech_039b20"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fluid Mechanics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The metacentric height (GM) of a floating body determines its:",
+    "options": [
+      "Stability",
+      "Buoyancy",
+      "Drag",
+      "Lift"
+    ],
+    "correct_index": 0,
+    "explanation": "GM > 0: stable (restoring moment when tilted). GM = 0: neutral. GM < 0: unstable. Larger GM = stiffer ship but rougher ride.",
+    "id": "alp_cbt2_mech_eadf9b"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Strength of Materials",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "Principal stresses on an element are σ1=60 MPa and σ2=-40 MPa. Maximum shear stress is:",
+    "options": [
+      "50 MPa",
+      "60 MPa",
+      "40 MPa",
+      "20 MPa"
+    ],
+    "correct_index": 0,
+    "explanation": "τmax = (σ1-σ2)/2 = (60-(-40))/2 = 100/2 = 50 MPa.",
+    "id": "alp_cbt2_mech_e70aae"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Theory of Machines",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "Flywheel stores energy during the period of:",
+    "options": [
+      "Excess torque (supply > demand)",
+      "Deficit torque",
+      "Constant speed",
+      "Load application"
+    ],
+    "correct_index": 0,
+    "explanation": "Flywheel absorbs excess energy when driving torque exceeds load torque (speed tends to rise), and releases it when torque is insufficient (speed tends to fall).",
+    "id": "alp_cbt2_mech_d39adc"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Manufacturing Processes",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "Recrystallisation temperature of a metal is the temperature at which:",
+    "options": [
+      "New stress-free grains form from deformed structure",
+      "Metal melts",
+      "Metal becomes brittle",
+      "Hardness is maximum"
+    ],
+    "correct_index": 0,
+    "explanation": "Recrystallisation: new equiaxed, dislocation-free grains nucleate and grow from the deformed (cold-worked) microstructure, restoring ductility and reducing hardness.",
+    "id": "alp_cbt2_mech_358f8a"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Machine Design",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The preferred fits in the 'Hole Basis' system are named using the letter:",
+    "options": [
+      "H",
+      "h",
+      "D",
+      "d"
+    ],
+    "correct_index": 0,
+    "explanation": "In Hole Basis system, the hole is kept constant (fundamental deviation = 0), designated by 'H'. The shaft is varied to achieve required fit (clearance/interference).",
+    "id": "alp_cbt2_mech_a95b39"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fluid Mechanics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The velocity profile for fully developed laminar flow in a pipe (Hagen-Poiseuille) is:",
+    "options": [
+      "Parabolic",
+      "Uniform (plug)",
+      "Logarithmic",
+      "Linear"
+    ],
+    "correct_index": 0,
+    "explanation": "Hagen-Poiseuille flow: u(r) = (1/4μ)(dp/dx)(R²-r²) — a parabola. Maximum velocity at centreline = 2 × average velocity.",
+    "id": "alp_cbt2_mech_86dd04"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Strength of Materials",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The section modulus (Z) of a rectangular beam of width b and depth d is:",
+    "options": [
+      "bd²/6",
+      "bd³/12",
+      "b²d/6",
+      "bd/6"
+    ],
+    "correct_index": 0,
+    "explanation": "Z = I/y = (bd³/12)/(d/2) = bd²/6. Moment of resistance M = σZ = σbd²/6.",
+    "id": "alp_cbt2_mech_bb9439"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Thermodynamics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The Otto cycle efficiency depends only on:",
+    "options": [
+      "Compression ratio",
+      "Cut-off ratio",
+      "Pressure ratio",
+      "Stroke volume"
+    ],
+    "correct_index": 0,
+    "explanation": "η_Otto = 1 - 1/r^(γ-1) where r is compression ratio and γ is specific heat ratio. Diesel efficiency depends on both compression and cut-off ratios.",
+    "id": "alp_cbt2_mech_c74a75"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Theory of Machines",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "In a journal bearing, the Sommerfeld number is used to determine:",
+    "options": [
+      "Bearing performance and film thickness",
+      "Fatigue life",
+      "Material hardness",
+      "Contact angle"
+    ],
+    "correct_index": 0,
+    "explanation": "Sommerfeld number S = (μNs/P)(r/c)² relates viscosity, speed, pressure, and clearance to bearing performance characteristics (eccentricity, film thickness, friction).",
+    "id": "alp_cbt2_mech_00e6f2"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Manufacturing Processes",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "In powder metallurgy, the process of heating compacted powder below melting point to increase strength is called:",
+    "options": [
+      "Sintering",
+      "Annealing",
+      "Tempering",
+      "Normalising"
+    ],
+    "correct_index": 0,
+    "explanation": "Sintering: controlled heating of compacted powder below melting point. Atomic diffusion bonds particles together, increasing density, strength, and hardness.",
+    "id": "alp_cbt2_mech_bdb765"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Machine Design",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "A welded joint in tension is weakest in:",
+    "options": [
+      "Transverse (butt) fillet weld at throat",
+      "Parallel fillet weld",
+      "Spot weld",
+      "Plug weld"
+    ],
+    "correct_index": 0,
+    "explanation": "The throat of a fillet weld (= 0.707 × leg size) is the minimum cross-section, making the throat the weakest plane under tension. Transverse fillet welds fail at the throat.",
+    "id": "alp_cbt2_mech_913259"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Thermodynamics",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "The First Law of Thermodynamics states that:",
+    "options": [
+      "Energy can neither be created nor destroyed, only converted",
+      "Heat flows from cold to hot",
+      "Entropy always increases",
+      "Work done is proportional to temperature"
+    ],
+    "correct_index": 0,
+    "explanation": "First Law: ΔU = Q - W. Energy is conserved. Heat added to a system equals change in internal energy plus work done by the system.",
+    "id": "alp_cbt2_mech_62d9c0"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fluid Mechanics",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "Pascal's law states that pressure applied to an enclosed fluid is transmitted:",
+    "options": [
+      "Equally in all directions",
+      "Only upward",
+      "Only in the direction applied",
+      "Proportional to height"
+    ],
+    "correct_index": 0,
+    "explanation": "Pascal's law: pressure applied to a confined fluid at rest is transmitted equally and undiminished in all directions throughout the fluid.",
+    "id": "alp_cbt2_mech_c19787"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Strength of Materials",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "Young's modulus is defined as the ratio of:",
+    "options": [
+      "Stress to Strain",
+      "Strain to Stress",
+      "Force to Area",
+      "Deformation to Length"
+    ],
+    "correct_index": 0,
+    "explanation": "E = Stress / Strain = (F/A) / (ΔL/L). It measures the stiffness of a material. For steel, E ≈ 200 GPa.",
+    "id": "alp_cbt2_mech_e0e324"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Strength of Materials",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "A steel rod of 20 mm diameter, 1 m long, is subjected to 40 kN tensile load. Stress is approximately:",
+    "options": [
+      "127 MPa",
+      "64 MPa",
+      "200 MPa",
+      "100 MPa"
+    ],
+    "correct_index": 0,
+    "explanation": "A = π/4×(0.02)² = 3.14×10⁻⁴ m². σ = F/A = 40000/3.14×10⁻⁴ ≈ 127 MPa.",
+    "id": "alp_cbt2_mech_4992ef"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Theory of Machines",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "A four-bar linkage has links: crank, coupler, follower, and:",
+    "options": [
+      "Fixed link (frame)",
+      "Gear",
+      "Cam",
+      "Slider"
+    ],
+    "correct_index": 0,
+    "explanation": "Four-bar mechanism: crank (input), coupler (connecting rod), follower (output), and frame (fixed link). The frame is the ground link.",
+    "id": "alp_cbt2_mech_884213"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Manufacturing Processes",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "In turning operation, the feed is the distance moved by the tool per:",
+    "options": [
+      "Revolution of workpiece",
+      "Minute",
+      "Second",
+      "mm of depth"
+    ],
+    "correct_index": 0,
+    "explanation": "Feed (f) in turning = distance the tool advances along the workpiece axis per revolution of the workpiece. Units: mm/rev.",
+    "id": "alp_cbt2_mech_6b2b77"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Engineering Drawing",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "A broken-out section in engineering drawing is used to:",
+    "options": [
+      "Show interior details of a small portion",
+      "Show entire cross-section",
+      "Indicate symmetry",
+      "Show surface finish"
+    ],
+    "correct_index": 0,
+    "explanation": "Broken-out (partial) section removes a small portion of the exterior using an irregular break line to reveal interior features without a full section view.",
+    "id": "alp_cbt2_mech_39e3ec"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Thermodynamics",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "Latent heat of vaporisation is the heat required to:",
+    "options": [
+      "Convert liquid to vapour at constant temperature",
+      "Raise liquid temperature by 1°C",
+      "Melt a solid",
+      "Superheat steam"
+    ],
+    "correct_index": 0,
+    "explanation": "Latent heat of vaporisation: heat absorbed during phase change from liquid to vapour at constant temperature and pressure (e.g., 2257 kJ/kg for water at 100°C).",
+    "id": "alp_cbt2_mech_4fbb28"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fluid Mechanics",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "The specific gravity of a liquid is defined as the ratio of its density to the density of:",
+    "options": [
+      "Water at 4°C",
+      "Air at STP",
+      "Mercury",
+      "Pure alcohol"
+    ],
+    "correct_index": 0,
+    "explanation": "Specific gravity (relative density) = density of substance / density of water at 4°C (1000 kg/m³). Dimensionless.",
+    "id": "alp_cbt2_mech_4878cb"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Manufacturing Processes",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "Forging is a manufacturing process that involves:",
+    "options": [
+      "Shaping metal by compressive forces (hammering/pressing)",
+      "Melting and pouring into mould",
+      "Removing material by cutting",
+      "Joining two metals"
+    ],
+    "correct_index": 0,
+    "explanation": "Forging uses compressive forces (hammer, press, or roll) to plastically deform metal into desired shape. Produces high-strength parts with good grain flow.",
+    "id": "alp_cbt2_mech_c05211"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Strength of Materials",
+    "stress": "mechanical",
+    "difficulty": 2,
+    "question_text": "Poisson's ratio is defined as the ratio of:",
+    "options": [
+      "Lateral strain to longitudinal strain",
+      "Longitudinal strain to lateral strain",
+      "Stress to strain",
+      "Shear stress to shear strain"
+    ],
+    "correct_index": 0,
+    "explanation": "ν = lateral strain / longitudinal strain. For most metals, ν ≈ 0.25–0.35. An incompressible material has ν = 0.5.",
+    "id": "alp_cbt2_mech_c3d400"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Theory of Machines",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "Gear ratio is defined as:",
+    "options": [
+      "Speed of driver / Speed of driven",
+      "Speed of driven / Speed of driver",
+      "Number of driver teeth / Number of driven teeth",
+      "Torque of driven / Torque of driver"
+    ],
+    "correct_index": 0,
+    "explanation": "Gear ratio i = ω_driver/ω_driven = N_driver/N_driven = T_driven/T_driver. Also = No. of driven teeth / No. of driver teeth.",
+    "id": "alp_cbt2_mech_16749d"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Thermodynamics",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "A refrigerator maintains -5°C inside, room temperature 25°C. This violates which law?",
+    "options": [
+      "Neither — it is a work-driven device and consistent with both laws",
+      "First Law",
+      "Second Law",
+      "Zeroth Law"
+    ],
+    "correct_index": 0,
+    "explanation": "A refrigerator requires work input (compressor) to move heat from cold to hot. This is fully consistent with both laws of thermodynamics — no violation.",
+    "id": "alp_cbt2_mech_d23b5e"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Machine Design",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "A key is used in a shaft-hub assembly to:",
+    "options": [
+      "Transmit torque between shaft and hub",
+      "Prevent axial movement only",
+      "Balance the shaft",
+      "Reduce weight"
+    ],
+    "correct_index": 0,
+    "explanation": "Keys are machine elements that fit in keyways (slots) in shaft and hub to transmit torque and prevent relative rotation. Common types: flat, Woodruff, square.",
+    "id": "alp_cbt2_mech_05f362"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Manufacturing Processes",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "The tolerance is defined as:",
+    "options": [
+      "Difference between maximum and minimum limit of size",
+      "Half of the basic size",
+      "The actual measured size",
+      "Difference between actual and nominal size"
+    ],
+    "correct_index": 0,
+    "explanation": "Tolerance = Upper limit - Lower limit = Maximum size - Minimum size. It represents the allowable variation in a dimension.",
+    "id": "alp_cbt2_mech_cfe5e8"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fluid Mechanics",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "The Reynolds number determines whether flow is:",
+    "options": [
+      "Laminar or turbulent",
+      "Compressible or incompressible",
+      "Steady or unsteady",
+      "Rotational or irrotational"
+    ],
+    "correct_index": 0,
+    "explanation": "Re = ρVD/μ. Re < 2300: laminar; Re > 4000: turbulent; 2300–4000: transition. Re is the ratio of inertia to viscous forces.",
+    "id": "alp_cbt2_mech_02a9de"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Strength of Materials",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "The bending stress in a beam is zero at the:",
+    "options": [
+      "Neutral axis",
+      "Outermost fibre",
+      "Support",
+      "Mid-span"
+    ],
+    "correct_index": 0,
+    "explanation": "The neutral axis is the plane where bending stress = 0. Above neutral axis: compressive stress; below: tensile stress (for sagging beam).",
+    "id": "alp_cbt2_mech_7735c3"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Theory of Machines",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "The mechanical advantage of a simple gear train is:",
+    "options": [
+      "Number of teeth on driven gear / Number of teeth on driver gear",
+      "Equal to 1 always",
+      "Speed ratio of gears",
+      "Inversely proportional to gear size"
+    ],
+    "correct_index": 0,
+    "explanation": "MA = T_driven/T_driver = ω_driver/ω_driven. Larger driven gear → higher torque output (MA>1) but lower speed.",
+    "id": "alp_cbt2_mech_b89d13"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Manufacturing Processes",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "Annealing of steel is done to:",
+    "options": [
+      "Soften the steel and relieve residual stresses",
+      "Harden the surface",
+      "Increase hardness",
+      "Improve corrosion resistance"
+    ],
+    "correct_index": 0,
+    "explanation": "Annealing: heat to austenite range, soak, then slow cool in furnace. Reduces hardness, improves ductility, and relieves internal stresses.",
+    "id": "alp_cbt2_mech_86542c"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Thermodynamics",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "Wet steam contains:",
+    "options": [
+      "A mixture of saturated liquid and saturated vapour",
+      "Only superheated vapour",
+      "Only water droplets",
+      "Dissolved gases"
+    ],
+    "correct_index": 0,
+    "explanation": "Wet steam = saturated liquid + saturated vapour mixture. Dryness fraction x = mass of vapour / total mass. x=0: saturated liquid; x=1: dry saturated steam.",
+    "id": "alp_cbt2_mech_644192"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Engineering Drawing",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "The symbol ⌀ in engineering drawing denotes:",
+    "options": [
+      "Diameter",
+      "Radius",
+      "Depth",
+      "Tolerance"
+    ],
+    "correct_index": 0,
+    "explanation": "⌀ (phi symbol) denotes diameter in engineering drawings and GD&T. R denotes radius. Used before a dimension value, e.g., ⌀25 means 25 mm diameter.",
+    "id": "alp_cbt2_mech_6bec11"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fluid Mechanics",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "The gauge pressure of a system is:",
+    "options": [
+      "Absolute pressure minus atmospheric pressure",
+      "Atmospheric pressure minus absolute pressure",
+      "Absolute pressure plus atmospheric pressure",
+      "Equal to absolute pressure always"
+    ],
+    "correct_index": 0,
+    "explanation": "P_gauge = P_abs - P_atm. Positive gauge = above atmosphere; negative gauge (vacuum) = below atmosphere.",
+    "id": "alp_cbt2_mech_084b1d"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Manufacturing Processes",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "TIG welding uses which shielding gas?",
+    "options": [
+      "Argon or Helium",
+      "CO₂",
+      "Oxygen",
+      "Nitrogen"
+    ],
+    "correct_index": 0,
+    "explanation": "TIG (Tungsten Inert Gas / GTAW) uses inert shielding gas — argon, helium, or argon-helium mix — to protect the weld pool from oxidation.",
+    "id": "alp_cbt2_mech_04b6c1"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Strength of Materials",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "Factor of safety is defined as:",
+    "options": [
+      "Ultimate (or yield) stress / Permissible stress",
+      "Permissible stress / Ultimate stress",
+      "Load / Area",
+      "Deformation / Original length"
+    ],
+    "correct_index": 0,
+    "explanation": "FOS = Ultimate (or yield) stress / Working (permissible) stress. FOS > 1 provides a safety margin against unexpected loads, material defects, or analysis errors.",
+    "id": "alp_cbt2_mech_11bb55"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Theory of Machines",
+    "stream": "mechanical",
+    "difficulty": 2,
+    "question_text": "A V-belt drive is preferred over a flat belt because it:",
+    "options": [
+      "Has higher power transmission capacity due to wedging action",
+      "Is cheaper",
+      "Runs faster",
+      "Has lower slip"
+    ],
+    "correct_index": 0,
+    "explanation": "V-belt wedges into the groove, increasing normal force without increasing belt tension. This gives higher friction force and power transmission capacity.",
+    "id": "alp_cbt2_mech_8ac00d"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Thermodynamics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "In a Diesel cycle, heat is added at constant:",
+    "options": [
+      "Pressure",
+      "Volume",
+      "Temperature",
+      "Entropy"
+    ],
+    "correct_index": 0,
+    "explanation": "Diesel cycle: Process 2→3 is isobaric (constant pressure) heat addition. Otto cycle: isochoric (constant volume). Dual cycle: both.",
+    "id": "alp_cbt2_mech_0f09b1"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fluid Mechanics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The lift force on an aerofoil according to Kutta-Joukowski theorem is L = ρVΓ, where Γ is:",
+    "options": [
+      "Circulation (∮V·ds)",
+      "Drag coefficient",
+      "Reynolds number",
+      "Aspect ratio"
+    ],
+    "correct_index": 0,
+    "explanation": "Circulation Γ = ∮V·dl around the aerofoil. Kutta-Joukowski: L = ρVΓ per unit span. Lift is generated by asymmetric flow creating circulation.",
+    "id": "alp_cbt2_mech_d8fbb0"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Strength of Materials",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "Castigliano's first theorem states that partial derivative of strain energy with respect to a force gives:",
+    "options": [
+      "Displacement at that force's point and direction",
+      "Stress at that point",
+      "Reaction force",
+      "Moment"
+    ],
+    "correct_index": 0,
+    "explanation": "Castigliano: δᵢ = ∂U/∂Fᵢ. The deflection at the point of application of force Fᵢ equals the partial derivative of strain energy U with respect to that force.",
+    "id": "alp_cbt2_mech_ac8c37"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Theory of Machines",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "In gear terminology, interference occurs when:",
+    "options": [
+      "Contact occurs below the base circle of the pinion",
+      "Module is too large",
+      "Pressure angle is 20°",
+      "Both gears have equal teeth"
+    ],
+    "correct_index": 0,
+    "explanation": "Interference: tip of mating gear tooth undercuts the flank below the base circle — non-involute action. Prevented by profile correction, stub teeth, or increasing pressure angle.",
+    "id": "alp_cbt2_mech_c1dad6"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Machine Design",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "A shaft is subjected to bending moment 2000 N·m and torque 1500 N·m. The equivalent bending moment (von Mises) is:",
+    "options": [
+      "√(2000²+1500²) ≈ 2500 N·m",
+      "2000 N·m",
+      "1500 N·m",
+      "3500 N·m"
+    ],
+    "correct_index": 0,
+    "explanation": "Equivalent bending moment Me = √(M²+T²) = √(4000000+2250000) = √6250000 = 2500 N·m.",
+    "id": "alp_cbt2_mech_82a4a9"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Manufacturing Processes",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The Merchant's force diagram in orthogonal cutting gives the shear angle φ when friction angle β and rake angle γ are:",
+    "options": [
+      "φ = 45° + γ/2 − β/2",
+      "φ = 45° − γ/2 + β/2",
+      "φ = γ + β",
+      "φ = 45°"
+    ],
+    "correct_index": 0,
+    "explanation": "Merchant's shear angle relation: 2φ + β − γ = 90° → φ = 45° − (β−γ)/2 = 45° + γ/2 − β/2. Maximises shear plane area, minimises cutting force.",
+    "id": "alp_cbt2_mech_da4074"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Thermodynamics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "Availability (exergy) in thermodynamics represents:",
+    "options": [
+      "Maximum useful work obtainable from a system in equilibrium with surroundings",
+      "Total energy content",
+      "Entropy of the system",
+      "Enthalpy difference"
+    ],
+    "correct_index": 0,
+    "explanation": "Exergy (availability) = maximum useful work = (H-H₀) - T₀(S-S₀) for flow systems. Destroyed by irreversibilities. Zero when system reaches dead state.",
+    "id": "alp_cbt2_mech_9ae637"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Fluid Mechanics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The hydraulic efficiency of a Pelton wheel is maximum when bucket speed is:",
+    "options": [
+      "Half the jet velocity",
+      "Equal to jet velocity",
+      "Twice the jet velocity",
+      "One-third of jet velocity"
+    ],
+    "correct_index": 0,
+    "explanation": "Pelton wheel: maximum efficiency when u = V/2 (bucket velocity = half jet velocity). At this speed, relative velocity at exit is zero → all kinetic energy transferred.",
+    "id": "alp_cbt2_mech_af85c8"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Strength of Materials",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "In thick cylinders under internal pressure, the maximum hoop stress occurs at:",
+    "options": [
+      "Inner radius",
+      "Outer radius",
+      "Mid-thickness",
+      "At both radii equally"
+    ],
+    "correct_index": 0,
+    "explanation": "Lamé's equations: hoop stress = p(r₁²/r²)(r₂²+r²)/(r₂²-r₁²). At r=r₁ (inner): maximum. At r=r₂ (outer): minimum. For thin cylinders uniform assumption is adequate.",
+    "id": "alp_cbt2_mech_881156"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Theory of Machines",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The dynamic balancing condition requires that the resultant of dynamic forces and the resultant:",
+    "options": [
+      "Couple of dynamic forces both equal zero",
+      "Force only equals zero",
+      "Couple only equals zero",
+      "Sum of masses equals zero"
+    ],
+    "correct_index": 0,
+    "explanation": "For complete dynamic balance: (1) ΣF = 0 (static balance — resultant centrifugal force zero), and (2) ΣM = 0 (dynamic balance — resultant couple zero).",
+    "id": "alp_cbt2_mech_814a47"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Manufacturing Processes",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "In deep drawing, the limiting drawing ratio (LDR) is defined as:",
+    "options": [
+      "Maximum blank diameter / punch diameter without failure",
+      "Punch force / blank thickness",
+      "Blank holder force / punch force",
+      "Drawing speed / punch diameter"
+    ],
+    "correct_index": 0,
+    "explanation": "LDR = D_blank/D_punch (maximum). LDR > 1 means successful draw. Typical LDR for steel ≈ 2.0–2.3. Higher LDR → better drawability (r-value of material).",
+    "id": "alp_cbt2_mech_142eca"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Machine Design",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "The pitch of a power screw is 6 mm, single-start, and lead is:",
+    "options": [
+      "6 mm",
+      "12 mm",
+      "3 mm",
+      "18 mm"
+    ],
+    "correct_index": 0,
+    "explanation": "For single-start thread: Lead = Pitch = 6 mm. For double-start: Lead=2×Pitch. Lead = axial distance moved per revolution.",
+    "id": "alp_cbt2_mech_0a7efa"
+  },
+  {
+    "subject": "Mechanical",
+    "topic": "Thermodynamics",
+    "stream": "mechanical",
+    "difficulty": 3,
+    "question_text": "For an ideal gas, the Joule-Thomson coefficient μJT = (∂T/∂P)H is:",
+    "options": [
+      "Zero",
+      "Positive always",
+      "Negative always",
+      "Depends on pressure"
+    ],
+    "correct_index": 0,
+    "explanation": "For an ideal gas, internal energy depends only on temperature and (∂T/∂P)H = 0. Real gases have μJT > 0 below inversion temperature (cooling on expansion).",
+    "id": "alp_cbt2_mech_591cad"
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Basic Mechanics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Newton's first law of motion states that a body:",
+    "options": [
+      "Continues in its state of rest or uniform motion unless acted upon by a force",
+      "Accelerates proportional to force",
+      "Has equal and opposite reactions",
+      "None of these"
+    ],
+    "correct_index": 0,
+    "explanation": "First law (law of inertia): without net external force, a body stays at rest or moves in a straight line at constant speed."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Basic Mechanics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "The SI unit of force is:",
+    "options": [
+      "Newton (N)",
+      "Joule (J)",
+      "Pascal (Pa)",
+      "Watt (W)"
+    ],
+    "correct_index": 0,
+    "explanation": "Force = mass × acceleration. Unit = kg×m/s² = Newton (N)."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Basic Mechanics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Work done = Force × Displacement × cos θ. When θ=90°, work done is:",
+    "options": [
+      "Zero",
+      "Maximum",
+      "Negative",
+      "Equal to Force"
+    ],
+    "correct_index": 0,
+    "explanation": "cos(90°)=0 → W=0. A force perpendicular to displacement does no work (e.g., centripetal force)."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Basic Mechanics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Kinetic energy of a body of mass m moving with velocity v is:",
+    "options": [
+      "½mv²",
+      "mv²",
+      "2mv",
+      "mv"
+    ],
+    "correct_index": 0,
+    "explanation": "KE=½mv². For m=2kg, v=3m/s: KE=½×2×9=9J."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Basic Mechanics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Potential energy stored in a body of mass m at height h (g=10m/s²):",
+    "options": [
+      "mgh",
+      "mgh/2",
+      "mg/h",
+      "mh"
+    ],
+    "correct_index": 0,
+    "explanation": "Gravitational PE = mgh. At h=5m, m=3kg: PE=3×10×5=150J."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Basic Mechanics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Momentum is defined as:",
+    "options": [
+      "Mass × Velocity",
+      "Mass × Acceleration",
+      "Force × Time",
+      "Velocity / Mass"
+    ],
+    "correct_index": 0,
+    "explanation": "Momentum p=mv. SI unit: kg·m/s. Newton's 2nd law: F=dp/dt."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Basic Mechanics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "The unit of pressure is:",
+    "options": [
+      "Pascal (Pa)",
+      "Newton (N)",
+      "Joule (J)",
+      "Watt (W)"
+    ],
+    "correct_index": 0,
+    "explanation": "Pressure = Force/Area. Unit = N/m² = Pascal (Pa)."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Thermodynamics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Boyle's law states that at constant temperature, volume of a gas is:",
+    "options": [
+      "Inversely proportional to pressure",
+      "Directly proportional to pressure",
+      "Independent of pressure",
+      "Proportional to temperature"
+    ],
+    "correct_index": 0,
+    "explanation": "Boyle's law: PV = constant (at const T). P↑ → V↓. For ideal gas."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Thermodynamics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "0°C in Kelvin is:",
+    "options": [
+      "273 K",
+      "0 K",
+      "100 K",
+      "373 K"
+    ],
+    "correct_index": 0,
+    "explanation": "K = °C + 273. 0°C = 273 K. Absolute zero = 0 K = −273°C."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Thermodynamics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "The first law of thermodynamics states:",
+    "options": [
+      "Energy can be converted but not created or destroyed",
+      "Heat flows from cold to hot",
+      "Entropy always increases",
+      "Work = Force × Distance"
+    ],
+    "correct_index": 0,
+    "explanation": "1st law: ΔU = Q − W. Energy conservation — the total energy of an isolated system is constant."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Thermodynamics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "In a diesel cycle, heat is added at:",
+    "options": [
+      "Constant pressure",
+      "Constant volume",
+      "Constant temperature",
+      "Adiabatically"
+    ],
+    "correct_index": 0,
+    "explanation": "Diesel cycle: compression (adiabatic), heat addition (constant pressure), expansion (adiabatic), heat rejection (constant volume)."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Thermodynamics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Specific heat is the heat required to raise the temperature of:",
+    "options": [
+      "1 kg of substance by 1°C",
+      "1 gram by 100°C",
+      "1 mole by 1 K",
+      "Any mass by 1°C"
+    ],
+    "correct_index": 0,
+    "explanation": "Specific heat capacity c = Q/(m×ΔT). For water, c=4186 J/kg·K."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Fluid Mechanics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Buoyancy force on an object submerged in liquid equals:",
+    "options": [
+      "Weight of liquid displaced",
+      "Weight of the object",
+      "Volume of the object",
+      "Density of liquid"
+    ],
+    "correct_index": 0,
+    "explanation": "Archimedes' principle: Buoyant force = ρ_liquid × V_submerged × g = weight of displaced fluid."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Fluid Mechanics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "The unit of dynamic viscosity is:",
+    "options": [
+      "Pa·s (Pascal-second)",
+      "m/s",
+      "m²/s",
+      "kg/m³"
+    ],
+    "correct_index": 0,
+    "explanation": "Dynamic viscosity μ has unit Pa·s = N·s/m² = kg/(m·s). CGS unit: Poise (P). 1 Pa·s = 10 P."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Fluid Mechanics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Continuity equation for incompressible flow states:",
+    "options": [
+      "A₁V₁ = A₂V₂",
+      "P₁+½ρV₁²=P₂+½ρV₂²",
+      "P = ρgh",
+      "F = ma"
+    ],
+    "correct_index": 0,
+    "explanation": "Continuity: mass flow rate is constant. For incompressible fluid: A₁V₁=A₂V₂."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Fluid Mechanics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Bernoulli's equation applies to:",
+    "options": [
+      "Inviscid, incompressible, steady flow",
+      "Any flow",
+      "Compressible flow only",
+      "Turbulent flow"
+    ],
+    "correct_index": 0,
+    "explanation": "Bernoulli's equation: P + ½ρV² + ρgh = constant. Valid for ideal (inviscid, incompressible, steady, irrotational) flow."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Engineering Materials",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Hardness is the resistance of a material to:",
+    "options": [
+      "Surface indentation/scratching",
+      "Fracture",
+      "Bending",
+      "Compression"
+    ],
+    "correct_index": 0,
+    "explanation": "Hardness measures resistance to permanent surface deformation. Measured by Brinell (BHN), Vickers (HV), Rockwell (HRC)."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Engineering Materials",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Ductility is the ability of a material to:",
+    "options": [
+      "Deform plastically before fracture",
+      "Resist deformation",
+      "Spring back after load",
+      "Store elastic energy"
+    ],
+    "correct_index": 0,
+    "explanation": "Ductile materials (copper, mild steel) can be drawn into wires. Brittle materials (cast iron, glass) fracture without plastic deformation."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Engineering Materials",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Mild steel contains carbon percentage:",
+    "options": [
+      "0.15–0.3%",
+      "0.6–1.5%",
+      "1.5–2.5%",
+      "Over 2%"
+    ],
+    "correct_index": 0,
+    "explanation": "Mild steel (low carbon steel): C=0.15–0.30%. Medium: 0.3–0.6%. High carbon: 0.6–1.5%. Cast iron: >2%."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Manufacturing",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Welding joins metals by:",
+    "options": [
+      "Melting and fusing them together",
+      "Mechanical fasteners",
+      "Adhesives",
+      "Pressure alone"
+    ],
+    "correct_index": 0,
+    "explanation": "Fusion welding melts base metal and filler to form a joint. Types: MIG, TIG, arc, spot, gas welding."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Manufacturing",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "A lathe machine is used for:",
+    "options": [
+      "Turning cylindrical workpieces",
+      "Drilling holes",
+      "Cutting flat surfaces",
+      "Grinding"
+    ],
+    "correct_index": 0,
+    "explanation": "Lathe rotates the workpiece; cutting tool moves linearly to produce cylindrical shapes, threads, tapers."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Manufacturing",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Pitch of a screw thread is:",
+    "options": [
+      "Distance between adjacent threads",
+      "Height of thread",
+      "Diameter of screw",
+      "Number of threads per inch"
+    ],
+    "correct_index": 0,
+    "explanation": "Pitch = axial distance between corresponding points on adjacent threads. Lead = pitch × starts."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Basic Mechanics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "A simple machine with no friction has efficiency:",
+    "options": [
+      "100%",
+      "0%",
+      "50%",
+      "75%"
+    ],
+    "correct_index": 0,
+    "explanation": "Ideal (frictionless) machine: all input work = output work → efficiency = 100%. Real machines always have η<100%."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Basic Mechanics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Torque is defined as:",
+    "options": [
+      "Force × perpendicular distance",
+      "Force / distance",
+      "Mass × acceleration",
+      "Force × velocity"
+    ],
+    "correct_index": 0,
+    "explanation": "Torque τ = F × r × sinθ. For perpendicular force: τ = F × r. Unit: N·m."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Thermodynamics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "An ideal gas obeys the equation:",
+    "options": [
+      "PV = nRT",
+      "PV = constant",
+      "P/T = constant",
+      "V/n = constant"
+    ],
+    "correct_index": 0,
+    "explanation": "Ideal gas law: PV=nRT where n=moles, R=8.314 J/mol·K. Combines Boyle's, Charles's, and Avogadro's laws."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Fluid Mechanics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Pascal's law states that pressure applied to an enclosed fluid is:",
+    "options": [
+      "Transmitted equally in all directions",
+      "Lost due to friction",
+      "Concentrated at one point",
+      "Reduced by the container"
+    ],
+    "correct_index": 0,
+    "explanation": "Pascal's law is the basis of hydraulic systems (jacks, brakes, presses)."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Engineering Materials",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Cast iron is obtained by melting pig iron with:",
+    "options": [
+      "Scrap iron in a cupola furnace",
+      "Limestone only",
+      "Coke and sand",
+      "Water and chemicals"
+    ],
+    "correct_index": 0,
+    "explanation": "Cast iron (C>2%) is produced in a cupola furnace by remelting pig iron and scrap. Good in compression, brittle in tension."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Basic Mechanics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Angle of friction is the angle between:",
+    "options": [
+      "Resultant reaction and normal reaction",
+      "Applied force and normal force",
+      "Friction and applied force",
+      "Velocity and acceleration"
+    ],
+    "correct_index": 0,
+    "explanation": "Angle of friction φ = arctan(μ) where μ is the coefficient of friction. Used in friction analysis of wedges, screws."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Thermodynamics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "A heat engine converts:",
+    "options": [
+      "Heat energy to mechanical work",
+      "Electrical energy to heat",
+      "Mechanical work to electricity",
+      "Chemical energy to heat"
+    ],
+    "correct_index": 0,
+    "explanation": "Heat engines (IC engines, steam turbines) convert thermal energy to work. Efficiency η=(W_out)/(Q_in)=1−TL/TH (Carnot)."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Manufacturing",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "The process of shaping metal by hammering or pressing is called:",
+    "options": [
+      "Forging",
+      "Casting",
+      "Welding",
+      "Machining"
+    ],
+    "correct_index": 0,
+    "explanation": "Forging shapes metal by compressive forces (hammering/pressing). Improves grain structure and mechanical properties."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Basic Mechanics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Which gear is used to transmit motion between parallel shafts?",
+    "options": [
+      "Spur gear",
+      "Bevel gear",
+      "Worm gear",
+      "Helical crossed gear"
+    ],
+    "correct_index": 0,
+    "explanation": "Spur gears have straight teeth and connect parallel shafts. Bevel gears connect shafts at an angle, worm gears connect perpendicular non-intersecting shafts."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Basic Mechanics",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Velocity ratio of a simple pulley system with 3 pulleys (block and tackle, 3 rope segments supporting load) is:",
+    "options": [
+      "3",
+      "1",
+      "2",
+      "6"
+    ],
+    "correct_index": 0,
+    "explanation": "Velocity ratio = number of rope segments supporting the movable block. With 3 segments, VR=3 → effort = Load/3 (ideal)."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Engineering Materials",
+    "difficulty": 1,
+    "stream": "mechanical",
+    "question_text": "Young's modulus (E) represents:",
+    "options": [
+      "Stiffness: ratio of stress to strain in elastic region",
+      "Shear stress to shear strain",
+      "Volumetric stress to volumetric strain",
+      "Breaking stress"
+    ],
+    "correct_index": 0,
+    "explanation": "Young's modulus E = σ/ε (longitudinal stress/strain in elastic range). For steel E≈200 GPa."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Thermodynamics",
+    "difficulty": 2,
+    "stream": "mechanical",
+    "question_text": "The thermal efficiency of a Carnot engine operating between 600K and 300K is:",
+    "options": [
+      "50%",
+      "33%",
+      "67%",
+      "25%"
+    ],
+    "correct_index": 0,
+    "explanation": "η_Carnot=1−TL/TH=1−300/600=0.5=50%."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Fluid Mechanics",
+    "difficulty": 2,
+    "stream": "mechanical",
+    "question_text": "Reynolds number Re = ρVD/μ. If Re < 2000, flow is:",
+    "options": [
+      "Laminar",
+      "Turbulent",
+      "Transitional",
+      "Supersonic"
+    ],
+    "correct_index": 0,
+    "explanation": "Re<2000: laminar flow. Re>4000: turbulent. 2000–4000: transitional. Named after Osborne Reynolds."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Strength of Materials",
+    "difficulty": 2,
+    "stream": "mechanical",
+    "question_text": "A cantilever beam of length L with point load W at free end. Maximum bending moment is:",
+    "options": [
+      "WL",
+      "WL/2",
+      "WL/4",
+      "WL/8"
+    ],
+    "correct_index": 0,
+    "explanation": "Max BM at fixed end of cantilever = W×L. Bending moment diagram is triangular, zero at free end."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Manufacturing",
+    "difficulty": 2,
+    "stream": "mechanical",
+    "question_text": "In metal cutting, the angle between the tool face and the vertical is called:",
+    "options": [
+      "Rake angle",
+      "Clearance angle",
+      "Wedge angle",
+      "Cutting angle"
+    ],
+    "correct_index": 0,
+    "explanation": "Rake angle (γ): angle between tool face and normal to cutting velocity. Positive rake reduces cutting force; negative rake increases tool strength."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Thermodynamics",
+    "difficulty": 2,
+    "stream": "mechanical",
+    "question_text": "In an Otto cycle, the heat is rejected at:",
+    "options": [
+      "Constant volume",
+      "Constant pressure",
+      "Constant temperature",
+      "Adiabatically"
+    ],
+    "correct_index": 0,
+    "explanation": "Otto cycle (petrol engine): 1→2 adiabatic compression, 2→3 const-V heat addition, 3→4 adiabatic expansion, 4→1 const-V heat rejection."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Fluid Mechanics",
+    "difficulty": 2,
+    "stream": "mechanical",
+    "question_text": "Venturimeter measures:",
+    "options": [
+      "Volumetric flow rate",
+      "Pressure only",
+      "Viscosity",
+      "Temperature"
+    ],
+    "correct_index": 0,
+    "explanation": "Venturimeter uses Bernoulli's equation + continuity to measure flow rate from the pressure drop between inlet (wide) and throat (narrow)."
   }
 ]

@@ -1198,5 +1198,1400 @@
     "correct_index": 0,
     "explanation": "Fe: 1s²2s²2p⁶3s²3p⁶3d⁶4s²=[Ar]3d⁶4s².",
     "id": "jee_chemis_inorga_8ade10"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Laws of Motion",
+    "difficulty": 2,
+    "question_text": "A 5 kg block on a frictionless surface is pushed by 20 N force. Its acceleration is:",
+    "options": [
+      "4 m/s²",
+      "2.5 m/s²",
+      "10 m/s²",
+      "100 m/s²"
+    ],
+    "correct_index": 0,
+    "explanation": "F = ma → a = F/m = 20/5 = 4 m/s² (Newton's second law).",
+    "id": "jee_physi_4f917f"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Work, Energy and Power",
+    "difficulty": 2,
+    "question_text": "A 2 kg ball is dropped from 5 m height. Its kinetic energy just before hitting the ground is (g=10):",
+    "options": [
+      "100 J",
+      "50 J",
+      "200 J",
+      "25 J"
+    ],
+    "correct_index": 0,
+    "explanation": "KE = mgh = 2×10×5 = 100 J (by energy conservation, all PE converts to KE).",
+    "id": "jee_physi_60bcd3"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Waves and Sound",
+    "difficulty": 2,
+    "question_text": "The speed of sound in air at 0°C is 332 m/s. At 30°C it is approximately:",
+    "options": [
+      "349 m/s",
+      "332 m/s",
+      "366 m/s",
+      "380 m/s"
+    ],
+    "correct_index": 0,
+    "explanation": "v ∝ √T. v₂ = 332×√(303/273) = 332×1.053 ≈ 349 m/s.",
+    "id": "jee_physi_fb3ad9"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Electrostatics",
+    "difficulty": 2,
+    "question_text": "Two point charges +4 μC and -4 μC are placed 0.3 m apart. Force between them (k=9×10⁹) is:",
+    "options": [
+      "1.6 N",
+      "0.16 N",
+      "16 N",
+      "0.016 N"
+    ],
+    "correct_index": 0,
+    "explanation": "F = kq₁q₂/r² = 9×10⁹×4×10⁻⁶×4×10⁻⁶/(0.09) = 9×10⁹×16×10⁻¹²/0.09 = 1.6 N.",
+    "id": "jee_physi_58bcd8"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Current Electricity",
+    "difficulty": 2,
+    "question_text": "In a circuit, 3 resistors of 6Ω each are connected in parallel. Total resistance is:",
+    "options": [
+      "2 Ω",
+      "18 Ω",
+      "6 Ω",
+      "3 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "1/R = 1/6+1/6+1/6 = 3/6 = 1/2 → R = 2 Ω.",
+    "id": "jee_physi_b41ef4"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Optics",
+    "difficulty": 2,
+    "question_text": "A ray of light passes from water (n=1.33) to glass (n=1.5). It bends:",
+    "options": [
+      "Towards the normal",
+      "Away from the normal",
+      "No bending",
+      "Completely reflected"
+    ],
+    "correct_index": 0,
+    "explanation": "Going from lower to higher refractive index (water→glass): light bends towards the normal (Snell's law: n₁sinθ₁=n₂sinθ₂, θ₂ < θ₁).",
+    "id": "jee_physi_259186"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Periodic Table",
+    "difficulty": 2,
+    "question_text": "The element with atomic number 17 belongs to which group?",
+    "options": [
+      "Group 17 (Halogens)",
+      "Group 16",
+      "Group 18",
+      "Group 1"
+    ],
+    "correct_index": 0,
+    "explanation": "Z=17 is Chlorine. Configuration: 2,8,7. 7 valence electrons → Group 17 (Halogens: F, Cl, Br, I, At).",
+    "id": "jee_chemi_8ef7f6"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Chemical Bonding",
+    "difficulty": 2,
+    "question_text": "The shape of the water molecule (H₂O) is:",
+    "options": [
+      "Bent (V-shaped)",
+      "Linear",
+      "Tetrahedral",
+      "Trigonal planar"
+    ],
+    "correct_index": 0,
+    "explanation": "O has 2 bonding pairs + 2 lone pairs. VSEPR: tetrahedral electron geometry but bent molecular shape, bond angle ≈104.5°.",
+    "id": "jee_chemi_708171"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Equilibrium",
+    "difficulty": 2,
+    "question_text": "Le Chatelier's principle states that if a system at equilibrium is disturbed, it will:",
+    "options": [
+      "Shift to minimise the disturbance",
+      "Shift in the direction of disturbance",
+      "Remain unchanged",
+      "Increase temperature always"
+    ],
+    "correct_index": 0,
+    "explanation": "Le Chatelier: an equilibrium system responds to a stress (concentration, pressure, temperature change) by shifting to partially counteract the disturbance.",
+    "id": "jee_chemi_e0c12f"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 2,
+    "question_text": "Which of the following is an alkene?",
+    "options": [
+      "C₂H₄",
+      "C₂H₆",
+      "C₂H₂",
+      "CH₄"
+    ],
+    "correct_index": 0,
+    "explanation": "C₂H₄ (ethylene/ethene) has a C=C double bond — alkene. C₂H₆ is an alkane, C₂H₂ is an alkyne, CH₄ is an alkane (methane).",
+    "id": "jee_chemi_99e481"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Thermochemistry",
+    "difficulty": 2,
+    "question_text": "An exothermic reaction releases heat. The sign of ΔH is:",
+    "options": [
+      "Negative (−)",
+      "Positive (+)",
+      "Zero",
+      "Depends on temperature"
+    ],
+    "correct_index": 0,
+    "explanation": "Exothermic: heat is released → system loses enthalpy → ΔH < 0 (negative). Endothermic: ΔH > 0.",
+    "id": "jee_chemi_6f35bc"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Electrochemistry",
+    "difficulty": 2,
+    "question_text": "In electrolysis, oxidation occurs at the:",
+    "options": [
+      "Anode",
+      "Cathode",
+      "Both electrodes",
+      "Electrolyte"
+    ],
+    "correct_index": 0,
+    "explanation": "Anode: oxidation (loss of electrons). Cathode: reduction (gain of electrons). Mnemonic: OIL RIG (Oxidation Is Loss, Reduction Is Gain). ANOX / REDCAT.",
+    "id": "jee_chemi_081e76"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Coordinate Geometry",
+    "difficulty": 2,
+    "question_text": "The distance between points (3,4) and (0,0) is:",
+    "options": [
+      "5",
+      "7",
+      "3",
+      "4"
+    ],
+    "correct_index": 0,
+    "explanation": "d = √(3²+4²) = √(9+16) = √25 = 5. Classic 3-4-5 Pythagorean triple.",
+    "id": "jee_mathe_c3ecc2"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Differentiation",
+    "difficulty": 2,
+    "question_text": "The derivative of sin x is:",
+    "options": [
+      "cos x",
+      "−cos x",
+      "−sin x",
+      "sec²x"
+    ],
+    "correct_index": 0,
+    "explanation": "d(sin x)/dx = cos x. d(cos x)/dx = −sin x. These are fundamental calculus results.",
+    "id": "jee_mathe_e857e3"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Integration",
+    "difficulty": 2,
+    "question_text": "∫x² dx equals:",
+    "options": [
+      "x³/3 + C",
+      "2x + C",
+      "x²/2 + C",
+      "3x² + C"
+    ],
+    "correct_index": 0,
+    "explanation": "∫xⁿ dx = xⁿ⁺¹/(n+1) + C. ∫x² dx = x³/3 + C.",
+    "id": "jee_mathe_a9a8d5"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Probability",
+    "difficulty": 2,
+    "question_text": "A card is drawn from a deck of 52. Probability of drawing a king is:",
+    "options": [
+      "1/13",
+      "1/52",
+      "4/13",
+      "1/4"
+    ],
+    "correct_index": 0,
+    "explanation": "4 kings in 52 cards. P = 4/52 = 1/13.",
+    "id": "jee_mathe_8fdc83"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Matrices",
+    "difficulty": 2,
+    "question_text": "The determinant of matrix [[2,3],[1,4]] is:",
+    "options": [
+      "5",
+      "11",
+      "−5",
+      "8"
+    ],
+    "correct_index": 0,
+    "explanation": "det = 2×4 - 3×1 = 8-3 = 5.",
+    "id": "jee_mathe_bc4a1f"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Rotational Motion",
+    "difficulty": 2,
+    "question_text": "Moment of inertia of a solid sphere of mass M and radius R about its diameter is:",
+    "options": [
+      "2MR²/5",
+      "MR²/2",
+      "MR²",
+      "2MR²/3"
+    ],
+    "correct_index": 0,
+    "explanation": "I = 2MR²/5 for solid sphere about diameter. Hollow sphere: 2MR²/3. Solid cylinder about axis: MR²/2.",
+    "id": "jee_physi_e2faa8"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Gravitation",
+    "difficulty": 2,
+    "question_text": "The escape velocity from Earth's surface (g=10 m/s², R=6400 km) is approximately:",
+    "options": [
+      "11.2 km/s",
+      "7.9 km/s",
+      "9.8 km/s",
+      "16 km/s"
+    ],
+    "correct_index": 0,
+    "explanation": "ve = √(2gR) = √(2×10×6.4×10⁶) = √(1.28×10⁸) ≈ 11.3 km/s ≈ 11.2 km/s.",
+    "id": "jee_physi_38dd1b"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "States of Matter",
+    "difficulty": 2,
+    "question_text": "At STP, 1 mole of an ideal gas occupies:",
+    "options": [
+      "22.4 L",
+      "11.2 L",
+      "44.8 L",
+      "1 L"
+    ],
+    "correct_index": 0,
+    "explanation": "Molar volume of an ideal gas at STP (0°C, 1 atm) = 22.4 L/mol. At SATP (25°C, 1 bar) = 24.8 L/mol.",
+    "id": "jee_chemi_9af6ef"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Binomial Theorem",
+    "difficulty": 2,
+    "question_text": "The number of terms in the expansion of (x+y)¹⁰ is:",
+    "options": [
+      "11",
+      "10",
+      "12",
+      "9"
+    ],
+    "correct_index": 0,
+    "explanation": "(x+y)ⁿ has n+1 terms. (x+y)¹⁰ has 11 terms (from r=0 to r=10).",
+    "id": "jee_mathe_45ea0f"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 2,
+    "question_text": "sin²θ + cos²θ equals:",
+    "options": [
+      "1",
+      "0",
+      "sin 2θ",
+      "2"
+    ],
+    "correct_index": 0,
+    "explanation": "Fundamental Pythagorean identity: sin²θ + cos²θ = 1 for all values of θ.",
+    "id": "jee_mathe_2d8777"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Electromagnetic Induction",
+    "difficulty": 2,
+    "question_text": "Lenz's law states that induced current opposes the:",
+    "options": [
+      "Change in magnetic flux causing it",
+      "Direction of the original current",
+      "Resistance of the conductor",
+      "Applied EMF"
+    ],
+    "correct_index": 0,
+    "explanation": "Lenz's law: induced EMF (and current) is in such a direction as to oppose the change in magnetic flux that produced it. Consistent with energy conservation.",
+    "id": "jee_physi_3cff7b"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Atomic Structure",
+    "difficulty": 2,
+    "question_text": "The maximum number of electrons in the M shell (n=3) is:",
+    "options": [
+      "18",
+      "8",
+      "32",
+      "2"
+    ],
+    "correct_index": 0,
+    "explanation": "Max electrons per shell = 2n². For n=3: 2×9 = 18. Subshells: 3s(2) + 3p(6) + 3d(10) = 18.",
+    "id": "jee_chemi_904d94"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Limits",
+    "difficulty": 2,
+    "question_text": "lim(x→0) (sin x)/x equals:",
+    "options": [
+      "1",
+      "0",
+      "∞",
+      "sin 0"
+    ],
+    "correct_index": 0,
+    "explanation": "Standard limit: lim(x→0) sin(x)/x = 1. This is a fundamental result in calculus used in derivatives and Fourier analysis.",
+    "id": "jee_mathe_cab684"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Electrostatics",
+    "difficulty": 3,
+    "question_text": "A conducting sphere of radius R carries charge Q. Electric field at distance r > R from centre is:",
+    "options": [
+      "kQ/r²",
+      "kQ/R²",
+      "kQr/R³",
+      "Zero"
+    ],
+    "correct_index": 0,
+    "explanation": "Outside a conducting sphere, field = kQ/r² (same as point charge). Inside: E=0. At surface: kQ/R².",
+    "id": "jee_phys_07f67b"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Electromagnetic Induction",
+    "difficulty": 3,
+    "question_text": "A circular loop of radius 0.1 m is in a magnetic field B = 0.5t T (increasing). EMF induced is:",
+    "options": [
+      "π/200 V",
+      "π/20 V",
+      "0.05π V",
+      "0.5π V"
+    ],
+    "correct_index": 0,
+    "explanation": "EMF = dΦ/dt = A×dB/dt = π(0.1)²×0.5 = 0.01π×0.5 = π/200 V.",
+    "id": "jee_phys_2adae2"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Modern Physics",
+    "difficulty": 3,
+    "question_text": "The de Broglie wavelength of an electron accelerated through 100 V is approximately:",
+    "options": [
+      "1.23 Å",
+      "12.3 Å",
+      "0.123 Å",
+      "123 Å"
+    ],
+    "correct_index": 0,
+    "explanation": "λ = h/√(2meV) = 1.226/√V nm = 1.226/10 nm ≈ 0.1226 nm = 1.226 Å ≈ 1.23 Å.",
+    "id": "jee_phys_7f7ccb"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Rotational Motion",
+    "difficulty": 3,
+    "question_text": "A solid cylinder and a hollow cylinder of same mass and radius roll down an incline. Which reaches bottom first?",
+    "options": [
+      "Solid cylinder",
+      "Hollow cylinder",
+      "Both simultaneously",
+      "Depends on angle"
+    ],
+    "correct_index": 0,
+    "explanation": "Solid cylinder: I=mR²/2 → acceleration=2gsinθ/3. Hollow: I=mR² → a=gsinθ/2. Solid has higher a, reaches first.",
+    "id": "jee_phys_102842"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Waves and Sound",
+    "difficulty": 3,
+    "question_text": "Two sound waves of frequencies 256 Hz and 260 Hz superpose. Number of beats per second is:",
+    "options": [
+      "4",
+      "256",
+      "516",
+      "2"
+    ],
+    "correct_index": 0,
+    "explanation": "Beats per second = |f₁ - f₂| = |256 - 260| = 4 beats/s.",
+    "id": "jee_phys_45581b"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "difficulty": 3,
+    "question_text": "In an adiabatic compression, temperature of an ideal gas:",
+    "options": [
+      "Increases",
+      "Decreases",
+      "Remains constant",
+      "First increases then decreases"
+    ],
+    "correct_index": 0,
+    "explanation": "Adiabatic compression: Q=0, work done ON gas increases internal energy → temperature rises. TV^(γ-1) = constant.",
+    "id": "jee_phys_26e02f"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Chemical Kinetics",
+    "difficulty": 3,
+    "question_text": "For a first-order reaction, the half-life is 10 minutes. After 30 minutes, fraction remaining is:",
+    "options": [
+      "1/8",
+      "1/4",
+      "1/2",
+      "1/16"
+    ],
+    "correct_index": 0,
+    "explanation": "30 min = 3 half-lives. Fraction remaining = (1/2)³ = 1/8.",
+    "id": "jee_chem_e8051c"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Electrochemistry",
+    "difficulty": 3,
+    "question_text": "E°cell for Zn|Zn²⁺||Cu²⁺|Cu is 1.10 V. The Gibbs energy change ΔG° (n=2) is:",
+    "options": [
+      "−212.3 kJ/mol",
+      "−106.1 kJ/mol",
+      "+212.3 kJ/mol",
+      "−424.6 kJ/mol"
+    ],
+    "correct_index": 0,
+    "explanation": "ΔG° = −nFE° = −2×96500×1.10 = −212,300 J/mol = −212.3 kJ/mol.",
+    "id": "jee_chem_832085"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 3,
+    "question_text": "The major product of addition of HBr to propene (CH₃CH=CH₂) follows:",
+    "options": [
+      "Markovnikov's rule: 2-bromopropane",
+      "Anti-Markovnikov: 1-bromopropane",
+      "Equal mixture of both",
+      "No reaction"
+    ],
+    "correct_index": 0,
+    "explanation": "Markovnikov: H adds to less-substituted C, Br to more-substituted C. CH₃CH=CH₂ + HBr → CH₃CHBrCH₃ (2-bromopropane).",
+    "id": "jee_chem_433c33"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Coordination Chemistry",
+    "difficulty": 3,
+    "question_text": "The coordination number of Fe in [Fe(CN)₆]³⁻ is:",
+    "options": [
+      "6",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct_index": 0,
+    "explanation": "6 CN⁻ ligands surround Fe³⁺. Coordination number = number of ligand donor atoms directly bonded = 6. Octahedral geometry.",
+    "id": "jee_chem_93804c"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Equilibrium",
+    "difficulty": 3,
+    "question_text": "For N₂ + 3H₂ ⇌ 2NH₃, Kp and Kc are related by (Δn = 2−4 = −2):",
+    "options": [
+      "Kp = Kc(RT)⁻²",
+      "Kp = Kc(RT)²",
+      "Kp = Kc",
+      "Kp = Kc/RT"
+    ],
+    "correct_index": 0,
+    "explanation": "Kp = Kc(RT)^Δn. Δn = moles of gaseous products − reactants = 2−4 = −2. Kp = Kc(RT)⁻².",
+    "id": "jee_chem_cf8e25"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Differential Equations",
+    "difficulty": 3,
+    "question_text": "The general solution of dy/dx = y is:",
+    "options": [
+      "y = Ce^x",
+      "y = Cx",
+      "y = e^x + C",
+      "y = ln x + C"
+    ],
+    "correct_index": 0,
+    "explanation": "dy/y = dx → ln y = x + C₁ → y = e^(x+C₁) = Ce^x (where C=e^C₁).",
+    "id": "jee_math_3c2b1a"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Vectors",
+    "difficulty": 3,
+    "question_text": "If |a⃗| = 3, |b⃗| = 4 and a⃗·b⃗ = 0, then |a⃗ + b⃗| is:",
+    "options": [
+      "5",
+      "7",
+      "1",
+      "√7"
+    ],
+    "correct_index": 0,
+    "explanation": "a·b=0 → perpendicular. |a+b|² = |a|²+|b|²+2a·b = 9+16+0 = 25. |a+b| = 5.",
+    "id": "jee_math_dc7fc7"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Complex Numbers",
+    "difficulty": 3,
+    "question_text": "The modulus of (3 + 4i) is:",
+    "options": [
+      "5",
+      "7",
+      "25",
+      "√7"
+    ],
+    "correct_index": 0,
+    "explanation": "|3+4i| = √(3²+4²) = √(9+16) = √25 = 5.",
+    "id": "jee_math_ee3ce5"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Permutation and Combination",
+    "difficulty": 3,
+    "question_text": "Number of ways to arrange letters of MISSISSIPPI is:",
+    "options": [
+      "34650",
+      "3465",
+      "11!",
+      "1000"
+    ],
+    "correct_index": 0,
+    "explanation": "MISSISSIPPI: 11 letters, M=1,I=4,S=4,P=2. Ways = 11!/(1!4!4!2!) = 39916800/1152 = 34650.",
+    "id": "jee_math_373389"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Conic Sections",
+    "difficulty": 3,
+    "question_text": "The eccentricity of an ellipse x²/16 + y²/9 = 1 is:",
+    "options": [
+      "√7/4",
+      "√7/3",
+      "3/4",
+      "7/16"
+    ],
+    "correct_index": 0,
+    "explanation": "a²=16,b²=9. c²=a²-b²=7. e=c/a=√7/4.",
+    "id": "jee_math_95673d"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Current Electricity",
+    "difficulty": 3,
+    "question_text": "In a Wheatstone bridge P=10Ω,Q=15Ω,R=20Ω. For balance, S=?",
+    "options": [
+      "30 Ω",
+      "25 Ω",
+      "15 Ω",
+      "45 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "P/Q=R/S → S=QR/P=15×20/10=30 Ω.",
+    "id": "jee_phys_d3a54d"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Optics",
+    "difficulty": 3,
+    "question_text": "In Young's double slit experiment, slit separation d=0.5mm, screen distance D=1m, wavelength λ=500nm. Fringe width is:",
+    "options": [
+      "1 mm",
+      "0.5 mm",
+      "2 mm",
+      "0.25 mm"
+    ],
+    "correct_index": 0,
+    "explanation": "β = λD/d = 500×10⁻⁹×1/0.5×10⁻³ = 1×10⁻³ m = 1 mm.",
+    "id": "jee_phys_7467b3"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Thermochemistry",
+    "difficulty": 3,
+    "question_text": "If ΔH = +ve and ΔS = +ve, the reaction is spontaneous:",
+    "options": [
+      "At high temperature only",
+      "At all temperatures",
+      "At low temperature only",
+      "Never"
+    ],
+    "correct_index": 0,
+    "explanation": "ΔG = ΔH − TΔS. +ΔH and +ΔS: ΔG = + − T(+). Spontaneous (ΔG<0) when T is high enough that TΔS > ΔH.",
+    "id": "jee_chem_b7aa02"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Sequence and Series",
+    "difficulty": 3,
+    "question_text": "Sum of infinite GP: 1 + 1/3 + 1/9 + ... is:",
+    "options": [
+      "3/2",
+      "2",
+      "1/2",
+      "∞"
+    ],
+    "correct_index": 0,
+    "explanation": "S = a/(1-r) = 1/(1-1/3) = 1/(2/3) = 3/2. |r|=1/3 < 1, so series converges.",
+    "id": "jee_math_f0f401"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Nuclear Physics",
+    "difficulty": 3,
+    "question_text": "In nuclear fission of ²³⁵U by a neutron, the mass defect is 0.2 u. Energy released (1u=931.5 MeV) is approximately:",
+    "options": [
+      "186.3 MeV",
+      "93.2 MeV",
+      "0.2 MeV",
+      "931.5 MeV"
+    ],
+    "correct_index": 0,
+    "explanation": "E = Δm × 931.5 = 0.2 × 931.5 = 186.3 MeV.",
+    "id": "jee_phys_831998"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Atomic Structure",
+    "difficulty": 3,
+    "question_text": "The uncertainty principle ΔxΔp ≥ h/4π was given by:",
+    "options": [
+      "Heisenberg",
+      "Bohr",
+      "Schrödinger",
+      "de Broglie"
+    ],
+    "correct_index": 0,
+    "explanation": "Heisenberg's Uncertainty Principle: it is impossible to simultaneously determine exact position and momentum. ΔxΔp ≥ ℏ/2 = h/4π.",
+    "id": "jee_chem_3d67ac"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Limits",
+    "difficulty": 3,
+    "question_text": "lim(x→0) (1-cos x)/x² equals:",
+    "options": [
+      "1/2",
+      "1",
+      "0",
+      "∞"
+    ],
+    "correct_index": 0,
+    "explanation": "Using L'Hôpital or expansion: 1-cos x ≈ x²/2 for small x. So (1-cos x)/x² → 1/2.",
+    "id": "jee_math_a5278c"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Gravitation",
+    "difficulty": 3,
+    "question_text": "A satellite orbits at height h above Earth's surface. Its orbital velocity is:",
+    "options": [
+      "√(GM/(R+h))",
+      "√(2GM/R)",
+      "√(gR)",
+      "√(GM/R)"
+    ],
+    "correct_index": 0,
+    "explanation": "Centripetal force = gravitational force: mv²/(R+h) = GMm/(R+h)² → v = √(GM/(R+h)).",
+    "id": "jee_phys_996724"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Integration",
+    "difficulty": 3,
+    "question_text": "∫₀^π sin x dx equals:",
+    "options": [
+      "2",
+      "0",
+      "1",
+      "π"
+    ],
+    "correct_index": 0,
+    "explanation": "∫₀^π sin x dx = [-cos x]₀^π = (-cos π)-(-cos 0) = (1)+(1) = 2.",
+    "id": "jee_math_d59cc2"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Kinematics",
+    "difficulty": 1,
+    "question_text": "A car starts from rest and accelerates at 5 m/s². Speed after 4 s is:",
+    "options": [
+      "20 m/s",
+      "10 m/s",
+      "25 m/s",
+      "40 m/s"
+    ],
+    "correct_index": 0,
+    "explanation": "v=u+at=0+5×4=20 m/s.",
+    "id": "jee_e3903c5d"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Laws of Motion",
+    "difficulty": 1,
+    "question_text": "The weight of a 5 kg object on Earth (g=10 m/s²) is:",
+    "options": [
+      "50 N",
+      "5 N",
+      "500 N",
+      "0.5 N"
+    ],
+    "correct_index": 0,
+    "explanation": "W=mg=5×10=50 N.",
+    "id": "jee_e52e2b13"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Gravitation",
+    "difficulty": 1,
+    "question_text": "Gravitational force is attractive between two masses and proportional to:",
+    "options": [
+      "Product of masses / distance²",
+      "Sum of masses",
+      "Distance between them",
+      "Difference of masses"
+    ],
+    "correct_index": 0,
+    "explanation": "Newton's law: F=Gm₁m₂/r².",
+    "id": "jee_7989d8a7"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Work Energy Power",
+    "difficulty": 1,
+    "question_text": "Work done by a force of 10 N moving an object 5 m in the direction of force is:",
+    "options": [
+      "50 J",
+      "15 J",
+      "2 J",
+      "500 J"
+    ],
+    "correct_index": 0,
+    "explanation": "W=F×d=10×5=50 J.",
+    "id": "jee_dc7df82c"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Properties of Matter",
+    "difficulty": 1,
+    "question_text": "Pascal is the SI unit of:",
+    "options": [
+      "Pressure",
+      "Force",
+      "Energy",
+      "Power"
+    ],
+    "correct_index": 0,
+    "explanation": "1 Pa = 1 N/m². Pressure = Force/Area.",
+    "id": "jee_8a0f5268"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "difficulty": 1,
+    "question_text": "When a gas is compressed adiabatically, its temperature:",
+    "options": [
+      "Increases",
+      "Decreases",
+      "Stays same",
+      "Becomes zero"
+    ],
+    "correct_index": 0,
+    "explanation": "Work done ON gas → internal energy increases → temperature rises.",
+    "id": "jee_44de4d1d"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Current Electricity",
+    "difficulty": 1,
+    "question_text": "Resistance is measured in:",
+    "options": [
+      "Ohm (Ω)",
+      "Ampere",
+      "Volt",
+      "Watt"
+    ],
+    "correct_index": 0,
+    "explanation": "Resistance unit = Ohm. Named after Georg Ohm.",
+    "id": "jee_0d8995f8"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Optics",
+    "difficulty": 1,
+    "question_text": "The speed of light in water is less than in vacuum because water has:",
+    "options": [
+      "Higher refractive index",
+      "Lower density",
+      "More viscosity",
+      "Magnetic properties"
+    ],
+    "correct_index": 0,
+    "explanation": "n=c/v. Higher n → lower speed. n_water≈1.33.",
+    "id": "jee_c20f57d6"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Waves",
+    "difficulty": 1,
+    "question_text": "The number of oscillations per second is called:",
+    "options": [
+      "Frequency",
+      "Amplitude",
+      "Wavelength",
+      "Time period"
+    ],
+    "correct_index": 0,
+    "explanation": "Frequency f=1/T. Unit: Hz (hertz).",
+    "id": "jee_05ea7af8"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Modern Physics",
+    "difficulty": 1,
+    "question_text": "An alpha particle consists of:",
+    "options": [
+      "2 protons and 2 neutrons",
+      "1 proton and 1 neutron",
+      "2 electrons",
+      "4 protons"
+    ],
+    "correct_index": 0,
+    "explanation": "α particle = ⁴₂He nucleus = 2 protons + 2 neutrons.",
+    "id": "jee_52196be9"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "question_text": "Avogadro's number is approximately:",
+    "options": [
+      "6.022×10²³",
+      "6.022×10²²",
+      "6.022×10²⁰",
+      "3.14×10²³"
+    ],
+    "correct_index": 0,
+    "explanation": "One mole of any substance contains 6.022×10²³ particles.",
+    "id": "jee_d5ed7e07"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "States of Matter",
+    "difficulty": 1,
+    "question_text": "Boiling point of water at standard atmospheric pressure is:",
+    "options": [
+      "100°C",
+      "0°C",
+      "37°C",
+      "212°F only"
+    ],
+    "correct_index": 0,
+    "explanation": "Water boils at 100°C (373 K) at 1 atm. 212°F is equivalent.",
+    "id": "jee_22bc11a9"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Chemical Reactions",
+    "difficulty": 1,
+    "question_text": "Combination of hydrogen and oxygen to form water is a:",
+    "options": [
+      "Synthesis (combination) reaction",
+      "Decomposition reaction",
+      "Displacement reaction",
+      "Double displacement"
+    ],
+    "correct_index": 0,
+    "explanation": "2H₂+O₂→2H₂O: two substances combine to form one product.",
+    "id": "jee_38ba4ec9"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Periodic Table",
+    "difficulty": 1,
+    "question_text": "The period number of an element indicates the number of:",
+    "options": [
+      "Electron shells",
+      "Valence electrons",
+      "Protons",
+      "Neutrons"
+    ],
+    "correct_index": 0,
+    "explanation": "Period = number of occupied electron shells. Na (Period 3) has 3 shells.",
+    "id": "jee_07ea5d89"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Acids Bases",
+    "difficulty": 1,
+    "question_text": "Litmus paper turns red in:",
+    "options": [
+      "Acidic solution",
+      "Basic solution",
+      "Neutral solution",
+      "Salt solution"
+    ],
+    "correct_index": 0,
+    "explanation": "Acids turn blue litmus red. Bases turn red litmus blue.",
+    "id": "jee_3acd7c2e"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Chemical Bonding",
+    "difficulty": 1,
+    "question_text": "NaCl is formed by which type of bond?",
+    "options": [
+      "Ionic bond",
+      "Covalent bond",
+      "Metallic bond",
+      "Hydrogen bond"
+    ],
+    "correct_index": 0,
+    "explanation": "Na⁺ and Cl⁻ held by electrostatic attraction = ionic bond.",
+    "id": "jee_21b27a7d"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 1,
+    "question_text": "Methane (CH₄) belongs to which series?",
+    "options": [
+      "Alkanes (CₙH₂ₙ₊₂)",
+      "Alkenes (CₙH₂ₙ)",
+      "Alkynes (CₙH₂ₙ₋₂)",
+      "Benzene series"
+    ],
+    "correct_index": 0,
+    "explanation": "CH₄: n=1, H=2(1)+2=4. Fits CₙH₂ₙ₊₂ = alkane.",
+    "id": "jee_7419d28c"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Sets",
+    "difficulty": 1,
+    "question_text": "The number of subsets of a set with 3 elements is:",
+    "options": [
+      "8",
+      "6",
+      "3",
+      "9"
+    ],
+    "correct_index": 0,
+    "explanation": "Number of subsets = 2ⁿ = 2³ = 8.",
+    "id": "jee_a3374063"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 1,
+    "question_text": "If 3x − 7 = 8, then x =",
+    "options": [
+      "5",
+      "3",
+      "15",
+      "1"
+    ],
+    "correct_index": 0,
+    "explanation": "3x=15 → x=5.",
+    "id": "jee_f0098c45"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 1,
+    "question_text": "cos 0° =",
+    "options": [
+      "1",
+      "0",
+      "−1",
+      "½"
+    ],
+    "correct_index": 0,
+    "explanation": "cos 0° = 1. sin 0° = 0.",
+    "id": "jee_adf36f6c"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Coordinate Geometry",
+    "difficulty": 1,
+    "question_text": "The slope of a horizontal line is:",
+    "options": [
+      "0",
+      "1",
+      "Undefined",
+      "∞"
+    ],
+    "correct_index": 0,
+    "explanation": "Horizontal line: y=constant, Δy=0. Slope m=Δy/Δx=0.",
+    "id": "jee_861e4a20"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 1,
+    "question_text": "The derivative of a constant is:",
+    "options": [
+      "0",
+      "1",
+      "The constant itself",
+      "Undefined"
+    ],
+    "correct_index": 0,
+    "explanation": "d(c)/dx = 0 for any constant c.",
+    "id": "jee_f08caf87"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 1,
+    "question_text": "∫ 1 dx =",
+    "options": [
+      "x + C",
+      "1 + C",
+      "0",
+      "x²/2 + C"
+    ],
+    "correct_index": 0,
+    "explanation": "∫dx = x + C (integral of 1 with respect to x).",
+    "id": "jee_428ff709"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Probability",
+    "difficulty": 1,
+    "question_text": "The probability of a certain event is:",
+    "options": [
+      "1",
+      "0",
+      "0.5",
+      "Between 0 and 1 exclusive"
+    ],
+    "correct_index": 0,
+    "explanation": "Probability ranges 0 to 1. P(certain event)=1, P(impossible)=0.",
+    "id": "jee_4ef0d108"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Quadratic Equations",
+    "difficulty": 1,
+    "question_text": "The discriminant of ax²+bx+c=0 is b²−4ac. If it equals zero, roots are:",
+    "options": [
+      "Real and equal",
+      "Complex",
+      "Real and unequal",
+      "Imaginary"
+    ],
+    "correct_index": 0,
+    "explanation": "D=0 → two equal real roots (repeated root x=−b/2a).",
+    "id": "jee_5e61867d"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Logarithms",
+    "difficulty": 1,
+    "question_text": "log₂ 8 =",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "8"
+    ],
+    "correct_index": 0,
+    "explanation": "2³=8 → log₂8=3.",
+    "id": "jee_8b188b18"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Sequence and Series",
+    "difficulty": 1,
+    "question_text": "The 5th term of GP 2, 6, 18, ... is:",
+    "options": [
+      "162",
+      "54",
+      "486",
+      "108"
+    ],
+    "correct_index": 0,
+    "explanation": "r=3. a₅=2×3⁴=2×81=162.",
+    "id": "jee_782fcdd9"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "The value of 0! is:",
+    "options": [
+      "1",
+      "0",
+      "Undefined",
+      "∞"
+    ],
+    "correct_index": 0,
+    "explanation": "0! = 1 by definition. Consistent with n! = n×(n−1)!",
+    "id": "jee_75a9fe4b"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Electrostatics",
+    "difficulty": 3,
+    "question_text": "A solid conducting sphere of radius a is inside a hollow sphere of radius b. Charge q is on inner sphere. Electric field between them at radius r is:",
+    "options": [
+      "kq/r²",
+      "0",
+      "kq/(r²−a²)",
+      "kq/b²"
+    ],
+    "correct_index": 0,
+    "explanation": "Between concentric spheres, field = kq/r² (Gauss's law). Inside hollow sphere outer shell has no effect.",
+    "id": "jee_57f23e35"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Magnetism",
+    "difficulty": 3,
+    "question_text": "A proton moves with velocity v perpendicular to magnetic field B. The radius of circular path (m=proton mass) is:",
+    "options": [
+      "mv/qB",
+      "qB/mv",
+      "mv/B",
+      "qvB/m"
+    ],
+    "correct_index": 0,
+    "explanation": "Centripetal=magnetic: mv²/r=qvB → r=mv/qB.",
+    "id": "jee_8a7035e1"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Waves",
+    "difficulty": 3,
+    "question_text": "In a standing wave, the distance between two consecutive nodes is:",
+    "options": [
+      "λ/2",
+      "λ",
+      "λ/4",
+      "2λ"
+    ],
+    "correct_index": 0,
+    "explanation": "Nodes are half-wavelength apart. Antinodes are also λ/2 apart.",
+    "id": "jee_bdcd5c81"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Modern Physics",
+    "difficulty": 3,
+    "question_text": "The energy of a photon with wavelength λ is:",
+    "options": [
+      "hc/λ",
+      "hλ/c",
+      "h/λ",
+      "hcλ"
+    ],
+    "correct_index": 0,
+    "explanation": "E=hf=hc/λ. Higher frequency (shorter λ) → higher energy photon.",
+    "id": "jee_75de554c"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "difficulty": 3,
+    "question_text": "One mole of ideal monatomic gas is heated at constant pressure. Ratio of heat supplied to work done is:",
+    "options": [
+      "5/2",
+      "3/2",
+      "5/3",
+      "1"
+    ],
+    "correct_index": 0,
+    "explanation": "Q=nCpΔT=5R/2ΔT. W=PΔV=nRΔT. Q/W=5/2.",
+    "id": "jee_063b950e"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Chemical Kinetics",
+    "difficulty": 3,
+    "question_text": "Rate constant of first-order reaction has units:",
+    "options": [
+      "s⁻¹",
+      "mol/L·s",
+      "L/mol·s",
+      "L²/mol²·s"
+    ],
+    "correct_index": 0,
+    "explanation": "First order: rate=k[A]. k=rate/[A]=(mol/L·s)/(mol/L)=s⁻¹.",
+    "id": "jee_57bcf381"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Electrochemistry",
+    "difficulty": 3,
+    "question_text": "Standard electrode potential of SHE (Standard Hydrogen Electrode) is:",
+    "options": [
+      "0.00 V",
+      "1.23 V",
+      "−0.76 V",
+      "+0.34 V"
+    ],
+    "correct_index": 0,
+    "explanation": "By definition, E°(H⁺/H₂)=0.00 V. All other potentials measured relative to it.",
+    "id": "jee_c378a45d"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 3,
+    "question_text": "In SN1 reaction, the rate-determining step is:",
+    "options": [
+      "Formation of carbocation intermediate",
+      "Attack of nucleophile",
+      "Departure of leaving group and nucleophile attack simultaneously",
+      "Proton transfer"
+    ],
+    "correct_index": 0,
+    "explanation": "SN1: unimolecular. Step 1 (slow): C-X bond breaks → carbocation. Step 2 (fast): Nu⁻ attacks.",
+    "id": "jee_8307ada8"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Coordination Chemistry",
+    "difficulty": 3,
+    "question_text": "The IUPAC name of [Co(NH₃)₅Cl]Cl₂ is:",
+    "options": [
+      "Pentaamminechloridocobalt(III) chloride",
+      "Cobalt pentaammine chloride",
+      "Chloropentaamminecobalt(II) chloride",
+      "Amminecobalt chloride"
+    ],
+    "correct_index": 0,
+    "explanation": "[Co(NH₃)₅Cl]Cl₂: central Co³⁺, 5 NH₃ (pentaammine), 1 Cl⁻ (chlorido), 2 Cl⁻ counter ions.",
+    "id": "jee_62aff8bf"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Differential Equations",
+    "difficulty": 3,
+    "question_text": "Solution of dy/dx = (y/x) + tan(y/x) is:",
+    "options": [
+      "sin(y/x) = Cx",
+      "y = Cx",
+      "cos(y/x) = Cx",
+      "x sin(y/x) = C"
+    ],
+    "correct_index": 0,
+    "explanation": "Homogeneous. Let y=vx: dv/dx·x=tan v → cotv dv=dx/x → ln|sinv|=ln|x|+C → sin(y/x)=Cx.",
+    "id": "jee_04dd5d6d"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Conic Sections",
+    "difficulty": 3,
+    "question_text": "Eccentricity of a parabola is:",
+    "options": [
+      "1",
+      "0",
+      "e<1",
+      "e>1"
+    ],
+    "correct_index": 0,
+    "explanation": "Parabola: e=1. Ellipse: 0<e<1. Circle: e=0. Hyperbola: e>1.",
+    "id": "jee_23954b1b"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Vectors",
+    "difficulty": 3,
+    "question_text": "The unit vector along a⃗=3î+4ĵ is:",
+    "options": [
+      "(3î+4ĵ)/5",
+      "(3î+4ĵ)/7",
+      "3î+4ĵ",
+      "(î+ĵ)/√2"
+    ],
+    "correct_index": 0,
+    "explanation": "|a⃗|=√(9+16)=5. Unit vector=a⃗/|a⃗|=(3î+4ĵ)/5.",
+    "id": "jee_96f4561a"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Probability",
+    "difficulty": 3,
+    "question_text": "P(A∪B) = P(A)+P(B)−P(A∩B). If P(A)=0.4, P(B)=0.5, P(A∩B)=0.2, P(A∪B)=",
+    "options": [
+      "0.7",
+      "0.9",
+      "1.1",
+      "0.2"
+    ],
+    "correct_index": 0,
+    "explanation": "P(A∪B)=0.4+0.5−0.2=0.7.",
+    "id": "jee_66853b0f"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Integration",
+    "difficulty": 3,
+    "question_text": "∫tan x dx =",
+    "options": [
+      "ln|sec x| + C",
+      "ln|cos x| + C",
+      "−ln|cos x|... same as ln|sec x|",
+      "sec²x + C"
+    ],
+    "correct_index": 0,
+    "explanation": "∫tan x dx=∫sin x/cos x dx=−ln|cos x|+C=ln|sec x|+C.",
+    "id": "jee_39b19687"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "3D Geometry",
+    "difficulty": 3,
+    "question_text": "Direction cosines l,m,n of a line satisfy:",
+    "options": [
+      "l²+m²+n²=1",
+      "l+m+n=1",
+      "l²+m²+n²=0",
+      "l=m=n"
+    ],
+    "correct_index": 0,
+    "explanation": "Direction cosines: l=cosα, m=cosβ, n=cosγ. l²+m²+n²=cos²α+cos²β+cos²γ=1.",
+    "id": "jee_843d04b1"
   }
 ]

@@ -1,0 +1,5082 @@
+{
+  "plan_id": "04518d55-68b0-4c7c-a610-76b1959b9417",
+  "student_id": "24d9fec6-b242-43f2-943e-41cf4224224b",
+  "exam_target": "rrb_ntpc",
+  "status": "approved",
+  "duration_months": 3,
+  "start_date": "2026-07-05",
+  "end_date": "2026-10-02",
+  "exam_date": null,
+  "weeks": [
+    {
+      "week_number": 1,
+      "start_date": "2026-07-05",
+      "end_date": "2026-07-11",
+      "theme": "Mathematics",
+      "days": [
+        {
+          "day_date": "2026-07-05",
+          "day_of_week": "Sunday",
+          "blocks": [],
+          "total_hours": 0.0,
+          "is_rest_day": true
+        },
+        {
+          "day_date": "2026-07-06",
+          "day_of_week": "Monday",
+          "blocks": [
+            {
+              "block_id": "7b69fac0",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "e91810c0",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Coding-Decoding",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "1daac6ec",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "History",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "51bb9a2f",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "0c0018cd",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Blood Relations",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-07-07",
+          "day_of_week": "Tuesday",
+          "blocks": [
+            {
+              "block_id": "76de1d60",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Geography",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "9d385f7e",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "115f0c80",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "59cff01c",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Polity",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "0c75efa0",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Algebra",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-07-08",
+          "day_of_week": "Wednesday",
+          "blocks": [
+            {
+              "block_id": "fc72ef1b",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "7a0a91e1",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Economics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "4a09ab41",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Trigonometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "2989eaee",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Direction & Distance",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "8389b187",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Science",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-07-09",
+          "day_of_week": "Thursday",
+          "blocks": [
+            {
+              "block_id": "6b4ff93c",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Geometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "8542cdf9",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Series",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "8c654382",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Statistics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "5eb877f0",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Analogy",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "4251d8ca",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-07-10",
+          "day_of_week": "Friday",
+          "blocks": [
+            {
+              "block_id": "15cb8dc0",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Puzzle & Arrangement",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "fa712c4e",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "bba7b2de",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Classification",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "cf652c8f",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Time & Work",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "1eaa82a4",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-07-11",
+          "day_of_week": "Saturday",
+          "blocks": [
+            {
+              "block_id": "ebf16f00",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "5c457619",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "85d1ef3a",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Coding-Decoding",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "d4c4d86d",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "History",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "1eb67278",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "",
+              "topic": "",
+              "session_type": "mock",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        }
+      ],
+      "total_hours": 60.0
+    },
+    {
+      "week_number": 2,
+      "start_date": "2026-07-12",
+      "end_date": "2026-07-18",
+      "theme": "Mathematics",
+      "days": [
+        {
+          "day_date": "2026-07-12",
+          "day_of_week": "Sunday",
+          "blocks": [],
+          "total_hours": 0.0,
+          "is_rest_day": true
+        },
+        {
+          "day_date": "2026-07-13",
+          "day_of_week": "Monday",
+          "blocks": [
+            {
+              "block_id": "cec8f088",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Blood Relations",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "e321cdeb",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Geography",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "caa159a4",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "362bb5dd",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "61103e1d",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Polity",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-07-14",
+          "day_of_week": "Tuesday",
+          "blocks": [
+            {
+              "block_id": "3fb40547",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Algebra",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "12f011f2",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "e9a41e65",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Economics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "9f4e10e2",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Trigonometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "21aed2a6",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Direction & Distance",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-07-15",
+          "day_of_week": "Wednesday",
+          "blocks": [
+            {
+              "block_id": "66beb81a",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Science",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "9a4fe901",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Geometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "99856874",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Series",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "48d98998",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Statistics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "20adcc30",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Analogy",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-07-16",
+          "day_of_week": "Thursday",
+          "blocks": [
+            {
+              "block_id": "282653fa",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "bd8d5cf0",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Puzzle & Arrangement",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "44147922",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "30e6607f",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Classification",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "7b41436e",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Time & Work",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-07-17",
+          "day_of_week": "Friday",
+          "blocks": [
+            {
+              "block_id": "9fe1df2b",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "93e3cd36",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "196652e2",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "04f1fe73",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Coding-Decoding",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "0b3e7b00",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "History",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-07-18",
+          "day_of_week": "Saturday",
+          "blocks": [
+            {
+              "block_id": "18e10db0",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "3b835f7b",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Blood Relations",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "fe258852",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Geography",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "d46bfa61",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "8ba18c07",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "",
+              "topic": "",
+              "session_type": "mock",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        }
+      ],
+      "total_hours": 60.0
+    },
+    {
+      "week_number": 3,
+      "start_date": "2026-07-19",
+      "end_date": "2026-07-25",
+      "theme": "Mathematics",
+      "days": [
+        {
+          "day_date": "2026-07-19",
+          "day_of_week": "Sunday",
+          "blocks": [],
+          "total_hours": 0.0,
+          "is_rest_day": true
+        },
+        {
+          "day_date": "2026-07-20",
+          "day_of_week": "Monday",
+          "blocks": [
+            {
+              "block_id": "f645be46",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Polity",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "de5bc33b",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Algebra",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "db51e2fa",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "6ee29cbb",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Economics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "8051ebdb",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Trigonometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-07-21",
+          "day_of_week": "Tuesday",
+          "blocks": [
+            {
+              "block_id": "71351fbe",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Direction & Distance",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "f967e72b",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Science",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "8c531316",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Geometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "86f595da",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Series",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "43730071",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Statistics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-07-22",
+          "day_of_week": "Wednesday",
+          "blocks": [
+            {
+              "block_id": "71b77425",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Analogy",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "bf9a120c",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "c9c6abb1",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Puzzle & Arrangement",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "ed498e56",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "355132c3",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Classification",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-07-23",
+          "day_of_week": "Thursday",
+          "blocks": [
+            {
+              "block_id": "17054835",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Time & Work",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "cef7d109",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "9ec5019b",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "ef1b8342",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "70c5d91a",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Coding-Decoding",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-07-24",
+          "day_of_week": "Friday",
+          "blocks": [
+            {
+              "block_id": "1a3816d0",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "History",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "6ed32e90",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "9430d3b6",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Blood Relations",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "f5624a49",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Geography",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "7a1210c6",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-07-25",
+          "day_of_week": "Saturday",
+          "blocks": [
+            {
+              "block_id": "d4a6c8a7",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "b3564bf9",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Polity",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "ac6548f7",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Algebra",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "0df99f83",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "775746d9",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "",
+              "topic": "",
+              "session_type": "mock",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        }
+      ],
+      "total_hours": 60.0
+    },
+    {
+      "week_number": 4,
+      "start_date": "2026-07-26",
+      "end_date": "2026-08-01",
+      "theme": "Mathematics",
+      "days": [
+        {
+          "day_date": "2026-07-26",
+          "day_of_week": "Sunday",
+          "blocks": [],
+          "total_hours": 0.0,
+          "is_rest_day": true
+        },
+        {
+          "day_date": "2026-07-27",
+          "day_of_week": "Monday",
+          "blocks": [
+            {
+              "block_id": "087755ba",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Trigonometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "fe742be2",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Direction & Distance",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "ce8dcb5a",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Science",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "37e8adbb",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Geometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "c0208f24",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Series",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-07-28",
+          "day_of_week": "Tuesday",
+          "blocks": [
+            {
+              "block_id": "1fb54ff6",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Statistics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "e7277ad4",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Analogy",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "a7c86567",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "4cd7a219",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Puzzle & Arrangement",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "f2cacf46",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-07-29",
+          "day_of_week": "Wednesday",
+          "blocks": [
+            {
+              "block_id": "ac4bfdf7",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Classification",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "20c4c402",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Time & Work",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "d0ced503",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "e9e9bea1",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "d65387ca",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-07-30",
+          "day_of_week": "Thursday",
+          "blocks": [
+            {
+              "block_id": "057749d4",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Coding-Decoding",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "6cdaafa3",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "History",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "dd27ae28",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "17443109",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Blood Relations",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "20d0cec9",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Geography",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-07-31",
+          "day_of_week": "Friday",
+          "blocks": [
+            {
+              "block_id": "f94408d1",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "931b39f7",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "2e171f23",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Polity",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "5fea0fb4",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Algebra",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "58cf6fad",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-01",
+          "day_of_week": "Saturday",
+          "blocks": [
+            {
+              "block_id": "1108e0a7",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Economics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "962defe2",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Trigonometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "f488bf98",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Direction & Distance",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "4c1180d9",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Science",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "84ce99a9",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "",
+              "topic": "",
+              "session_type": "mock",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        }
+      ],
+      "total_hours": 60.0
+    },
+    {
+      "week_number": 5,
+      "start_date": "2026-08-02",
+      "end_date": "2026-08-08",
+      "theme": "Mathematics",
+      "days": [
+        {
+          "day_date": "2026-08-02",
+          "day_of_week": "Sunday",
+          "blocks": [],
+          "total_hours": 0.0,
+          "is_rest_day": true
+        },
+        {
+          "day_date": "2026-08-03",
+          "day_of_week": "Monday",
+          "blocks": [
+            {
+              "block_id": "ed7b1c42",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Series",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "05eea031",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Statistics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "be4991eb",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Analogy",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "ec9a9be7",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "cc42f818",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Puzzle & Arrangement",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-04",
+          "day_of_week": "Tuesday",
+          "blocks": [
+            {
+              "block_id": "141db67e",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "4481fc23",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Classification",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "ddec8690",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Time & Work",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "e88e80bb",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "e4323cc1",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-05",
+          "day_of_week": "Wednesday",
+          "blocks": [
+            {
+              "block_id": "04f55c4c",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "310cd11a",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Coding-Decoding",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "e5cdddc8",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "History",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "1e9cbf18",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "4f089f97",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Blood Relations",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-06",
+          "day_of_week": "Thursday",
+          "blocks": [
+            {
+              "block_id": "4db03afc",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Geography",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "669973f0",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "fac8c6a3",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "3aac2d1e",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Polity",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "a5ba8607",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Algebra",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-07",
+          "day_of_week": "Friday",
+          "blocks": [
+            {
+              "block_id": "63666ba6",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "e1828b3d",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Economics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "3ffd4493",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Trigonometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "2accaf5a",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Direction & Distance",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "98018bd1",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Science",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-08",
+          "day_of_week": "Saturday",
+          "blocks": [
+            {
+              "block_id": "1503e7d4",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Geometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "19ccf51c",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Series",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "ec368e27",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Statistics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "492a9994",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Analogy",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "3d2d71de",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "",
+              "topic": "",
+              "session_type": "mock",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        }
+      ],
+      "total_hours": 60.0
+    },
+    {
+      "week_number": 6,
+      "start_date": "2026-08-09",
+      "end_date": "2026-08-15",
+      "theme": "Mathematics",
+      "days": [
+        {
+          "day_date": "2026-08-09",
+          "day_of_week": "Sunday",
+          "blocks": [],
+          "total_hours": 0.0,
+          "is_rest_day": true
+        },
+        {
+          "day_date": "2026-08-10",
+          "day_of_week": "Monday",
+          "blocks": [
+            {
+              "block_id": "ab41c579",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Puzzle & Arrangement",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "6c04cb9e",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "42d43c31",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Classification",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "2111468e",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Time & Work",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "407a400f",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-11",
+          "day_of_week": "Tuesday",
+          "blocks": [
+            {
+              "block_id": "38690766",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "90f7ccdd",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "f027604e",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Coding-Decoding",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "20818a68",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "History",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "adf1055b",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-12",
+          "day_of_week": "Wednesday",
+          "blocks": [
+            {
+              "block_id": "6fe9b425",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Blood Relations",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "5604b3f6",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Geography",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "6a5622f5",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "1372e1f0",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "a6902b84",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Polity",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-13",
+          "day_of_week": "Thursday",
+          "blocks": [
+            {
+              "block_id": "26ac0962",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Algebra",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "09b1c307",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "e0fa810a",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Economics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "dcdb9ae7",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Trigonometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "5cb7cb48",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Direction & Distance",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-14",
+          "day_of_week": "Friday",
+          "blocks": [
+            {
+              "block_id": "c60adbb3",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Science",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "b6b55e0f",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Geometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "6d6192dd",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Series",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "2d0ff737",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Statistics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "56e2d570",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Analogy",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-15",
+          "day_of_week": "Saturday",
+          "blocks": [
+            {
+              "block_id": "106b24f9",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "5e77f174",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Puzzle & Arrangement",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "0da2890e",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "0f9d8045",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Classification",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "d357b750",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "",
+              "topic": "",
+              "session_type": "mock",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        }
+      ],
+      "total_hours": 60.0
+    },
+    {
+      "week_number": 7,
+      "start_date": "2026-08-16",
+      "end_date": "2026-08-22",
+      "theme": "Mathematics",
+      "days": [
+        {
+          "day_date": "2026-08-16",
+          "day_of_week": "Sunday",
+          "blocks": [],
+          "total_hours": 0.0,
+          "is_rest_day": true
+        },
+        {
+          "day_date": "2026-08-17",
+          "day_of_week": "Monday",
+          "blocks": [
+            {
+              "block_id": "68e0b512",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "28308091",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "bf9dab7c",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "f1367490",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Coding-Decoding",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "a3a4bbb6",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "History",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-18",
+          "day_of_week": "Tuesday",
+          "blocks": [
+            {
+              "block_id": "1a25d6be",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "f0d0acba",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Blood Relations",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "848915cc",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Geography",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "705edad0",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "28a27011",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-19",
+          "day_of_week": "Wednesday",
+          "blocks": [
+            {
+              "block_id": "bd083eec",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Polity",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "ddb01c27",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Algebra",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "dee94bee",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "68e3d19e",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Economics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "6c4ab910",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Trigonometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-20",
+          "day_of_week": "Thursday",
+          "blocks": [
+            {
+              "block_id": "52507bb2",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Direction & Distance",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "237b3ecb",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Science",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "01d75e4f",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Geometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "05c37f5b",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Series",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "b8c71b64",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Statistics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-21",
+          "day_of_week": "Friday",
+          "blocks": [
+            {
+              "block_id": "5729c3fd",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Analogy",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "ad9a23b7",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "4b156dd8",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Puzzle & Arrangement",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "fb963127",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "6472f61f",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Classification",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-22",
+          "day_of_week": "Saturday",
+          "blocks": [
+            {
+              "block_id": "716b3b6c",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Time & Work",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "8cedecc8",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "fc2a2d1e",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "1c437c4a",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "7efaddb1",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "",
+              "topic": "",
+              "session_type": "mock",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        }
+      ],
+      "total_hours": 60.0
+    },
+    {
+      "week_number": 8,
+      "start_date": "2026-08-23",
+      "end_date": "2026-08-29",
+      "theme": "Mathematics",
+      "days": [
+        {
+          "day_date": "2026-08-23",
+          "day_of_week": "Sunday",
+          "blocks": [],
+          "total_hours": 0.0,
+          "is_rest_day": true
+        },
+        {
+          "day_date": "2026-08-24",
+          "day_of_week": "Monday",
+          "blocks": [
+            {
+              "block_id": "31db268c",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "History",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "1351aeac",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "8a9bb171",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Blood Relations",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "8df6b4e7",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Geography",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "3c36b310",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-25",
+          "day_of_week": "Tuesday",
+          "blocks": [
+            {
+              "block_id": "840616dc",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "520a1293",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Polity",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "ed04ebb1",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Algebra",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "db8deb8e",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "fc61e876",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Economics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-26",
+          "day_of_week": "Wednesday",
+          "blocks": [
+            {
+              "block_id": "d3dbbbf0",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Trigonometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "0f47ba0a",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Direction & Distance",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "66c4341b",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Science",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "8cd699f8",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Geometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "34a75777",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Series",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-27",
+          "day_of_week": "Thursday",
+          "blocks": [
+            {
+              "block_id": "0ac7153b",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Statistics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "fb1853c5",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Analogy",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "7d8c9097",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "39833e27",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Puzzle & Arrangement",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "811efd32",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-28",
+          "day_of_week": "Friday",
+          "blocks": [
+            {
+              "block_id": "ba5d9729",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Classification",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "75264eb0",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Time & Work",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "fc0df0bf",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "d0606044",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "5032444a",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-08-29",
+          "day_of_week": "Saturday",
+          "blocks": [
+            {
+              "block_id": "461fac17",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Coding-Decoding",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "cd528f4e",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "History",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "2b70ad8f",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "a02fb9bd",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Blood Relations",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "d896136c",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "",
+              "topic": "",
+              "session_type": "mock",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        }
+      ],
+      "total_hours": 60.0
+    },
+    {
+      "week_number": 9,
+      "start_date": "2026-08-30",
+      "end_date": "2026-09-05",
+      "theme": "Mathematics",
+      "days": [
+        {
+          "day_date": "2026-08-30",
+          "day_of_week": "Sunday",
+          "blocks": [],
+          "total_hours": 0.0,
+          "is_rest_day": true
+        },
+        {
+          "day_date": "2026-08-31",
+          "day_of_week": "Monday",
+          "blocks": [
+            {
+              "block_id": "ad57ac05",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "122a2f79",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "249bdc08",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Polity",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "b3da9958",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Algebra",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "8f7c2a49",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-01",
+          "day_of_week": "Tuesday",
+          "blocks": [
+            {
+              "block_id": "af43963b",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Economics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "2f9c7966",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Trigonometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "1efd4d32",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Direction & Distance",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "1ff71985",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Science",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "3b346fe9",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Geometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-02",
+          "day_of_week": "Wednesday",
+          "blocks": [
+            {
+              "block_id": "ddc6aab4",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Series",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "0a0fc15a",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Statistics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "d2984136",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Analogy",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "f32ca29f",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "922d0c69",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Puzzle & Arrangement",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-03",
+          "day_of_week": "Thursday",
+          "blocks": [
+            {
+              "block_id": "1f560f82",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "97197d7d",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Classification",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "27b92097",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Time & Work",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "7b4b23dd",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "bdceed44",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-04",
+          "day_of_week": "Friday",
+          "blocks": [
+            {
+              "block_id": "01ab5f19",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "3e46abba",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Coding-Decoding",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "2dcfac47",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "History",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "45443fce",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "88319edf",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Blood Relations",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-05",
+          "day_of_week": "Saturday",
+          "blocks": [
+            {
+              "block_id": "93552614",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Geography",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "4ccb5ea2",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "b2fde4d0",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "9385d8af",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Polity",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "1b5dfe83",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "",
+              "topic": "",
+              "session_type": "mock",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        }
+      ],
+      "total_hours": 60.0
+    },
+    {
+      "week_number": 10,
+      "start_date": "2026-09-06",
+      "end_date": "2026-09-12",
+      "theme": "Mathematics",
+      "days": [
+        {
+          "day_date": "2026-09-06",
+          "day_of_week": "Sunday",
+          "blocks": [],
+          "total_hours": 0.0,
+          "is_rest_day": true
+        },
+        {
+          "day_date": "2026-09-07",
+          "day_of_week": "Monday",
+          "blocks": [
+            {
+              "block_id": "cb19b5d8",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "4c9b359c",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Economics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "2dcf0e04",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Trigonometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "6bc1bd78",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Direction & Distance",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "f793b1a5",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Science",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-08",
+          "day_of_week": "Tuesday",
+          "blocks": [
+            {
+              "block_id": "8da545bd",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Geometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "39a4a657",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Series",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "794348d7",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Statistics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "4622c919",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Analogy",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "91ab5b43",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-09",
+          "day_of_week": "Wednesday",
+          "blocks": [
+            {
+              "block_id": "7a925399",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Puzzle & Arrangement",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "5e288d44",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "ffa4f9aa",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Classification",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "a443e96a",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Time & Work",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "7a563449",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-10",
+          "day_of_week": "Thursday",
+          "blocks": [
+            {
+              "block_id": "4115e40f",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "eb2e5f09",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "0db223a4",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Coding-Decoding",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "7dfbc734",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "History",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "175ddb56",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-11",
+          "day_of_week": "Friday",
+          "blocks": [
+            {
+              "block_id": "0a27075e",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Blood Relations",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "00747e31",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Geography",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "66d96bbe",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "d9688117",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "5afe36d1",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Polity",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-12",
+          "day_of_week": "Saturday",
+          "blocks": [
+            {
+              "block_id": "66508198",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Algebra",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "bfde50db",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "767251af",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Economics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "c4f6ea62",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Trigonometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "570a6af0",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "",
+              "topic": "",
+              "session_type": "mock",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        }
+      ],
+      "total_hours": 60.0
+    },
+    {
+      "week_number": 11,
+      "start_date": "2026-09-13",
+      "end_date": "2026-09-19",
+      "theme": "Mathematics",
+      "days": [
+        {
+          "day_date": "2026-09-13",
+          "day_of_week": "Sunday",
+          "blocks": [],
+          "total_hours": 0.0,
+          "is_rest_day": true
+        },
+        {
+          "day_date": "2026-09-14",
+          "day_of_week": "Monday",
+          "blocks": [
+            {
+              "block_id": "48e0772a",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Science",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "d27d1c9b",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Geometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "4c45cb06",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Series",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "8dbcb075",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Statistics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "213058b9",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Analogy",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-15",
+          "day_of_week": "Tuesday",
+          "blocks": [
+            {
+              "block_id": "06f54f1f",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "7c74def4",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Puzzle & Arrangement",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "221c83f3",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "c5bf2413",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Classification",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "75e182e2",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Time & Work",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-16",
+          "day_of_week": "Wednesday",
+          "blocks": [
+            {
+              "block_id": "c5b8db17",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "15b5d211",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "c91a370c",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "94c08d78",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Coding-Decoding",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "4d5d2e62",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "History",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-17",
+          "day_of_week": "Thursday",
+          "blocks": [
+            {
+              "block_id": "448c51d4",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "71690c59",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Blood Relations",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "63e9bf0d",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Geography",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "289692cc",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "c77fc70a",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-18",
+          "day_of_week": "Friday",
+          "blocks": [
+            {
+              "block_id": "65632ed1",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Polity",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "c92f3205",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Algebra",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "1da77c04",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "9f69e702",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Economics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "4198121d",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Trigonometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-19",
+          "day_of_week": "Saturday",
+          "blocks": [
+            {
+              "block_id": "8873f2dc",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Direction & Distance",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "40366ec1",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Science",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "33ac713e",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Geometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "e10845a7",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Series",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "f4f0f498",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "",
+              "topic": "",
+              "session_type": "mock",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        }
+      ],
+      "total_hours": 60.0
+    },
+    {
+      "week_number": 12,
+      "start_date": "2026-09-20",
+      "end_date": "2026-09-26",
+      "theme": "Mathematics",
+      "days": [
+        {
+          "day_date": "2026-09-20",
+          "day_of_week": "Sunday",
+          "blocks": [],
+          "total_hours": 0.0,
+          "is_rest_day": true
+        },
+        {
+          "day_date": "2026-09-21",
+          "day_of_week": "Monday",
+          "blocks": [
+            {
+              "block_id": "10c9733c",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Analogy",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "2a3a3171",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "f27a920d",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Puzzle & Arrangement",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "45369012",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "989f31e0",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Classification",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-22",
+          "day_of_week": "Tuesday",
+          "blocks": [
+            {
+              "block_id": "9312d6cd",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Time & Work",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "04f6e74a",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "e778695b",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "823863e8",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "85fe1778",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Coding-Decoding",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-23",
+          "day_of_week": "Wednesday",
+          "blocks": [
+            {
+              "block_id": "b1c9a08c",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "History",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "e1c10b7e",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "46690488",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Blood Relations",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "82e8042f",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Geography",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "76afe0db",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-24",
+          "day_of_week": "Thursday",
+          "blocks": [
+            {
+              "block_id": "a45f147a",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "e7bca75f",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Polity",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "1e02678e",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Algebra",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "4cc64311",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "d87a4ebf",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Economics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-25",
+          "day_of_week": "Friday",
+          "blocks": [
+            {
+              "block_id": "40f97512",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Trigonometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "5ea34715",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Direction & Distance",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "15a4a489",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Science",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "120c06c5",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Geometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "d5d89f52",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Series",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-26",
+          "day_of_week": "Saturday",
+          "blocks": [
+            {
+              "block_id": "50d545cf",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Statistics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "d5329265",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Analogy",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "5df86ce9",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "6bd9a66d",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Puzzle & Arrangement",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "509026e5",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "",
+              "topic": "",
+              "session_type": "mock",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        }
+      ],
+      "total_hours": 60.0
+    },
+    {
+      "week_number": 13,
+      "start_date": "2026-09-27",
+      "end_date": "2026-10-03",
+      "theme": "Mathematics",
+      "days": [
+        {
+          "day_date": "2026-09-27",
+          "day_of_week": "Sunday",
+          "blocks": [],
+          "total_hours": 0.0,
+          "is_rest_day": true
+        },
+        {
+          "day_date": "2026-09-28",
+          "day_of_week": "Monday",
+          "blocks": [
+            {
+              "block_id": "a59bef43",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Classification",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "0b57531c",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Time & Work",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "da2b38f5",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "efa41315",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Ratio & Proportion",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "35def444",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-29",
+          "day_of_week": "Tuesday",
+          "blocks": [
+            {
+              "block_id": "88fb2373",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Coding-Decoding",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "6025ea40",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "History",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "76669f78",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "8b82a5c1",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Blood Relations",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "b6d1b755",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Geography",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-09-30",
+          "day_of_week": "Wednesday",
+          "blocks": [
+            {
+              "block_id": "0da9426d",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Number System",
+              "session_type": "practice",
+              "priority": 3,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "6106b3c5",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "189a0d50",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Polity",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "6d015f2b",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Algebra",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "e4aebe7a",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Syllogism",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-10-01",
+          "day_of_week": "Thursday",
+          "blocks": [
+            {
+              "block_id": "96015335",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Economics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "0bc8c6bc",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Trigonometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "ca1c6ef2",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Direction & Distance",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "7afb086d",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "General Awareness",
+              "topic": "Science",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "5564b7d0",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Geometry",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        },
+        {
+          "day_date": "2026-10-02",
+          "day_of_week": "Friday",
+          "blocks": [
+            {
+              "block_id": "8617d34f",
+              "start_hour": 7,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Series",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "f50feebe",
+              "start_hour": 9,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Statistics",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "f23283f4",
+              "start_hour": 11,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Analogy",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "5d2e5e19",
+              "start_hour": 14,
+              "duration_hours": 2,
+              "subject": "Mathematics",
+              "topic": "Percentage",
+              "session_type": "practice",
+              "priority": 2,
+              "completed": false,
+              "rescheduled": false
+            },
+            {
+              "block_id": "b6b86d69",
+              "start_hour": 16,
+              "duration_hours": 2,
+              "subject": "General Intelligence & Reasoning",
+              "topic": "Puzzle & Arrangement",
+              "session_type": "study",
+              "priority": 1,
+              "completed": false,
+              "rescheduled": false
+            }
+          ],
+          "total_hours": 10.0,
+          "is_rest_day": false
+        }
+      ],
+      "total_hours": 50.0
+    }
+  ],
+  "weak_topics": [
+    "Mathematics → Number System",
+    "Mathematics → Percentage",
+    "Mathematics → Ratio & Proportion",
+    "General Intelligence & Reasoning → Syllogism"
+  ],
+  "diagnostic_score": 0.76,
+  "naga_note": "",
+  "created_at": "2026-07-05T17:45:55.328702",
+  "approved_at": "2026-07-05T20:17:11.747862",
+  "total_study_hours": 770.0
+}

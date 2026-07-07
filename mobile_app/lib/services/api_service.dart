@@ -120,9 +120,14 @@ class ApiService {
     });
   }
 
-  // Diagnostic
-  Future<Map<String, dynamic>> startDiagnostic(String studentId) {
-    return post('/api/session/diagnostic/start', {'student_id': studentId, 'paper_id': 'p1'});
+  // Diagnostic — long timeout because the server generates ~100 questions via LLM
+  Future<Map<String, dynamic>> startDiagnostic(String studentId) async {
+    final response = await http.post(
+      Uri.parse('$baseUrl/api/session/diagnostic/start'),
+      headers: _headers,
+      body: jsonEncode({'student_id': studentId, 'paper_id': 'p1'}),
+    ).timeout(const Duration(seconds: 120));
+    return _parseResponse(response);
   }
 
   Future<Map<String, dynamic>> submitDiagnostic(

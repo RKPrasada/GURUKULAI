@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/auth_provider.dart';
 import '../theme/app_theme.dart';
-import '../utils/constants.dart';
 import '../utils/helpers.dart';
 import 'diagnostic_screen.dart';
 import 'study_screen.dart';
@@ -10,8 +9,7 @@ import 'study_plan_screen.dart';
 import 'test_screen.dart';
 import 'mock_screen.dart';
 import 'naga_screen.dart';
-import 'progress_screen.dart';
-import 'settings_screen.dart';
+import 'profile_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -25,11 +23,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final _screens = const [
     _HomeTab(),
-    StudyScreen(),
-    TestScreen(),
-    MockScreen(),
-    NagaScreen(),
-    ProgressScreen(),
+    StudyScreen(),    // AI Tutor
+    TestScreen(),     // Practice Test
+    MockScreen(),     // Mock Test
+    NagaScreen(),     // Ask NAGA
   ];
 
   @override
@@ -43,7 +40,8 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Row(
           children: [
             const Text('📚 ', style: TextStyle(fontSize: 20)),
-            const Text('Gurukul AI', style: TextStyle(fontWeight: FontWeight.w800, color: AppTheme.primary)),
+            const Text('Gurukul AI',
+                style: TextStyle(fontWeight: FontWeight.w800, color: AppTheme.primary)),
             const SizedBox(width: 8),
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
@@ -53,15 +51,18 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               child: Text(
                 '🔥 ${student.studyStreakDays}',
-                style: const TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
+                style: const TextStyle(
+                    color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
               ),
             ),
           ],
         ),
         actions: [
           IconButton(
-            icon: const Icon(Icons.settings_outlined),
-            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const SettingsScreen())),
+            icon: const Icon(Icons.account_circle_outlined),
+            tooltip: lang == 'hi' ? 'प्रोफ़ाइल' : 'Profile',
+            onPressed: () => Navigator.push(
+                context, MaterialPageRoute(builder: (_) => const ProfileScreen())),
           ),
         ],
       ),
@@ -79,9 +80,9 @@ class _HomeScreenState extends State<HomeScreen> {
             label: lang == 'hi' ? 'होम' : 'Home',
           ),
           BottomNavigationBarItem(
-            icon: const Icon(Icons.menu_book_outlined),
-            activeIcon: const Icon(Icons.menu_book),
-            label: lang == 'hi' ? 'पढ़ाई' : 'Study',
+            icon: const Icon(Icons.smart_toy_outlined),
+            activeIcon: const Icon(Icons.smart_toy),
+            label: lang == 'hi' ? 'AI ट्यूटर' : 'AI Tutor',
           ),
           BottomNavigationBarItem(
             icon: const Icon(Icons.quiz_outlined),
@@ -91,17 +92,12 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: const Icon(Icons.assignment_outlined),
             activeIcon: const Icon(Icons.assignment),
-            label: lang == 'hi' ? 'मॉक' : 'Mock',
+            label: lang == 'hi' ? 'मॉक टेस्ट' : 'Mock Test',
           ),
           BottomNavigationBarItem(
-            icon: const Icon(Icons.person_outlined),
-            activeIcon: const Icon(Icons.person),
-            label: 'NAGA',
-          ),
-          BottomNavigationBarItem(
-            icon: const Icon(Icons.bar_chart_outlined),
-            activeIcon: const Icon(Icons.bar_chart),
-            label: lang == 'hi' ? 'प्रगति' : 'Progress',
+            icon: const Icon(Icons.support_agent_outlined),
+            activeIcon: const Icon(Icons.support_agent),
+            label: lang == 'hi' ? 'NAGA' : 'Ask NAGA',
           ),
         ],
       ),
@@ -122,48 +118,55 @@ class _HomeTab extends StatelessWidget {
     return ListView(
       padding: const EdgeInsets.all(16),
       children: [
+        // Welcome card
         Card(
           child: Padding(
             padding: const EdgeInsets.all(20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  lang == 'hi' ? 'स्वागत है! 👋' : 'Welcome! 👋',
-                  style: Theme.of(context).textTheme.headlineMedium,
-                ),
-                const SizedBox(height: 4),
-                Text(
-                  lang == 'hi' ? 'लक्ष्य परीक्षा: $examName' : 'Target Exam: $examName',
-                  style: TextStyle(color: Colors.grey.shade600),
-                ),
-              ],
-            ),
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Text(
+                lang == 'hi' ? 'स्वागत है! 👋' : 'Welcome! 👋',
+                style: Theme.of(context).textTheme.headlineMedium,
+              ),
+              const SizedBox(height: 4),
+              Text(
+                lang == 'hi' ? 'लक्ष्य परीक्षा: $examName' : 'Target Exam: $examName',
+                style: TextStyle(color: Colors.grey.shade600),
+              ),
+            ]),
           ),
         ),
         const SizedBox(height: 12),
+
+        // Diagnostic prompt (if not done)
         if (!student.diagnosticDone) ...[
           Card(
             color: const Color(0xFFFFF8E1),
             child: ListTile(
               leading: const Text('🎯', style: TextStyle(fontSize: 28)),
               title: Text(lang == 'hi' ? 'डायग्नोस्टिक टेस्ट दें' : 'Take Diagnostic Test'),
-              subtitle: Text(lang == 'hi' ? 'अपनी कमज़ोरियाँ जानें' : 'Find your weak areas'),
+              subtitle: Text(
+                  lang == 'hi' ? 'अपनी कमज़ोरियाँ जानें' : 'Find your weak areas'),
               trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const DiagnosticScreen())),
+              onTap: () => Navigator.push(context,
+                  MaterialPageRoute(builder: (_) => const DiagnosticScreen())),
             ),
           ),
         ] else ...[
-          Row(
-            children: [
-              _StatCard(label: lang == 'hi' ? 'प्रश्न' : 'Questions',
-                        value: '${student.totalQuestionsAttempted}', icon: '✏️'),
-              const SizedBox(width: 12),
-              _StatCard(label: lang == 'hi' ? 'क्रम' : 'Streak',
-                        value: '${student.studyStreakDays}d 🔥', icon: '📅'),
-            ],
-          ),
+          // Stats row
+          Row(children: [
+            _StatCard(
+                label: lang == 'hi' ? 'प्रश्न' : 'Questions',
+                value: '${student.totalQuestionsAttempted}',
+                icon: '✏️'),
+            const SizedBox(width: 12),
+            _StatCard(
+                label: lang == 'hi' ? 'क्रम' : 'Streak',
+                value: '${student.studyStreakDays}d 🔥',
+                icon: '📅'),
+          ]),
           const SizedBox(height: 12),
+
+          // Focus areas
           if (student.weaknessMap.isNotEmpty) ...[
             Text(
               lang == 'hi' ? '📉 कमज़ोर विषय' : '📉 Focus Areas',
@@ -172,15 +175,21 @@ class _HomeTab extends StatelessWidget {
             const SizedBox(height: 8),
             ...student.weaknessMap.take(3).map((w) => Card(
               child: ListTile(
-                leading: Text(scoreEmoji(w.scorePct), style: const TextStyle(fontSize: 20)),
+                leading: Text(scoreEmoji(w.scorePct),
+                    style: const TextStyle(fontSize: 20)),
                 title: Text(w.topic),
                 subtitle: Text(w.subject),
-                trailing: Text('${(w.scorePct * 100).toStringAsFixed(0)}%',
-                    style: TextStyle(color: scoreColor(w.scorePct), fontWeight: FontWeight.bold)),
+                trailing: Text(
+                  '${(w.scorePct * 100).toStringAsFixed(0)}%',
+                  style: TextStyle(
+                      color: scoreColor(w.scorePct),
+                      fontWeight: FontWeight.bold),
+                ),
               ),
             )),
           ],
           const SizedBox(height: 12),
+
           // Study Plan card
           Card(
             color: AppTheme.primary.withOpacity(0.06),
@@ -189,16 +198,26 @@ class _HomeTab extends StatelessWidget {
               side: BorderSide(color: AppTheme.primary.withOpacity(0.2)),
             ),
             child: ListTile(
-              leading: const Icon(Icons.calendar_month, color: AppTheme.primary, size: 30),
-              title: Text(lang == 'hi' ? 'मेरी पढ़ाई योजना' : 'My Study Plan',
-                  style: const TextStyle(fontWeight: FontWeight.w700)),
-              subtitle: Text(lang == 'hi' ? 'Dabbu की योजना देखें' : 'View your Dabbu-powered schedule'),
-              trailing: const Icon(Icons.arrow_forward_ios, size: 14, color: AppTheme.primary),
-              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const StudyPlanScreen())),
+              leading:
+                  const Icon(Icons.calendar_today, color: AppTheme.primary, size: 28),
+              title: Text(
+                lang == 'hi' ? 'आज की पढ़ाई' : "Today's Study Plan",
+                style: const TextStyle(fontWeight: FontWeight.w700),
+              ),
+              subtitle: Text(lang == 'hi'
+                  ? 'आज के विषय देखें'
+                  : "View today's subjects and schedule"),
+              trailing: const Icon(Icons.arrow_forward_ios,
+                  size: 14, color: AppTheme.primary),
+              onTap: () => Navigator.push(context,
+                  MaterialPageRoute(builder: (_) => const StudyPlanScreen())),
             ),
           ),
         ],
+
         const SizedBox(height: 12),
+
+        // Quick action grid
         GridView.count(
           crossAxisCount: 2,
           shrinkWrap: true,
@@ -207,14 +226,22 @@ class _HomeTab extends StatelessWidget {
           mainAxisSpacing: 10,
           childAspectRatio: 2.8,
           children: [
-            _QuickAction(icon: Icons.menu_book, label: lang == 'hi' ? 'पढ़ाई' : 'Study',
+            _QuickAction(
+                icon: Icons.smart_toy,
+                label: lang == 'hi' ? 'AI ट्यूटर' : 'AI Tutor',
                 onTap: () => _changeTab(context, 1)),
-            _QuickAction(icon: Icons.quiz, label: lang == 'hi' ? 'अभ्यास' : 'Practice',
+            _QuickAction(
+                icon: Icons.quiz,
+                label: lang == 'hi' ? 'अभ्यास' : 'Practice',
                 onTap: () => _changeTab(context, 2)),
-            _QuickAction(icon: Icons.calendar_month, label: lang == 'hi' ? 'योजना' : 'Plan',
-                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const StudyPlanScreen()))),
-            _QuickAction(icon: Icons.assignment, label: lang == 'hi' ? 'मॉक टेस्ट' : 'Mock Test',
+            _QuickAction(
+                icon: Icons.assignment,
+                label: lang == 'hi' ? 'मॉक टेस्ट' : 'Mock Test',
                 onTap: () => _changeTab(context, 3)),
+            _QuickAction(
+                icon: Icons.support_agent,
+                label: lang == 'hi' ? 'NAGA से पूछें' : 'Ask NAGA',
+                onTap: () => _changeTab(context, 4)),
           ],
         ),
       ],
@@ -222,8 +249,10 @@ class _HomeTab extends StatelessWidget {
   }
 }
 
+// ignore: invalid_use_of_protected_member
 void _changeTab(BuildContext context, int tab) {
   final state = context.findAncestorStateOfType<_HomeScreenState>();
+  // ignore: invalid_use_of_protected_member
   state?.setState(() => state._tab = tab);
 }
 
@@ -231,7 +260,8 @@ class _QuickAction extends StatelessWidget {
   final IconData icon;
   final String label;
   final VoidCallback onTap;
-  const _QuickAction({required this.icon, required this.label, required this.onTap});
+  const _QuickAction(
+      {required this.icon, required this.label, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -243,13 +273,13 @@ class _QuickAction extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-          child: Row(
-            children: [
-              Icon(icon, size: 18, color: AppTheme.primary),
-              const SizedBox(width: 8),
-              Text(label, style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 13)),
-            ],
-          ),
+          child: Row(children: [
+            Icon(icon, size: 18, color: AppTheme.primary),
+            const SizedBox(width: 8),
+            Text(label,
+                style: const TextStyle(
+                    fontWeight: FontWeight.w600, fontSize: 13)),
+          ]),
         ),
       ),
     );
@@ -258,7 +288,8 @@ class _QuickAction extends StatelessWidget {
 
 class _StatCard extends StatelessWidget {
   final String label, value, icon;
-  const _StatCard({required this.label, required this.value, required this.icon});
+  const _StatCard(
+      {required this.label, required this.value, required this.icon});
 
   @override
   Widget build(BuildContext context) {
@@ -266,14 +297,16 @@ class _StatCard extends StatelessWidget {
       child: Card(
         child: Padding(
           padding: const EdgeInsets.all(16),
-          child: Column(
-            children: [
-              Text(icon, style: const TextStyle(fontSize: 28)),
-              const SizedBox(height: 4),
-              Text(value, style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 18)),
-              Text(label, style: TextStyle(color: Colors.grey.shade600, fontSize: 12)),
-            ],
-          ),
+          child: Column(children: [
+            Text(icon, style: const TextStyle(fontSize: 28)),
+            const SizedBox(height: 4),
+            Text(value,
+                style: const TextStyle(
+                    fontWeight: FontWeight.w700, fontSize: 18)),
+            Text(label,
+                style: TextStyle(
+                    color: Colors.grey.shade600, fontSize: 12)),
+          ]),
         ),
       ),
     );

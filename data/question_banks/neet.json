@@ -1108,5 +1108,1370 @@
     "correct_index": 0,
     "explanation": "For ideal gas: internal energy depends only on temperature. Isothermal→T constant→ΔU=0.",
     "id": "neet_physic_thermo_f22a0b"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "difficulty": 2,
+    "question_text": "The fluid mosaic model of the cell membrane was proposed by:",
+    "options": [
+      "Singer and Nicolson",
+      "Watson and Crick",
+      "Robert Hooke",
+      "Schleiden and Schwann"
+    ],
+    "correct_index": 0,
+    "explanation": "Singer and Nicolson (1972) proposed the fluid mosaic model: phospholipid bilayer with embedded proteins, both components having lateral mobility.",
+    "id": "neet_biol_8454e8"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Genetics",
+    "difficulty": 2,
+    "question_text": "In a monohybrid cross between Tt and Tt, the phenotypic ratio is:",
+    "options": [
+      "3:1",
+      "1:2:1",
+      "1:1",
+      "2:1"
+    ],
+    "correct_index": 0,
+    "explanation": "Tt × Tt → TT:Tt:tt = 1:2:1 (genotypic). Phenotypically: 3 tall : 1 dwarf (3:1) as T is dominant.",
+    "id": "neet_biol_c45ccf"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "difficulty": 2,
+    "question_text": "The normal pH of human blood is:",
+    "options": [
+      "7.35–7.45",
+      "6.8–7.0",
+      "7.8–8.0",
+      "7.0 exactly"
+    ],
+    "correct_index": 0,
+    "explanation": "Normal arterial blood pH: 7.35–7.45. Below 7.35 = acidosis; above 7.45 = alkalosis. Maintained by bicarbonate buffer and respiratory regulation.",
+    "id": "neet_biol_f73e8c"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Plant Physiology",
+    "difficulty": 2,
+    "question_text": "The primary pigment that absorbs light in photosynthesis is:",
+    "options": [
+      "Chlorophyll a",
+      "Chlorophyll b",
+      "Carotenoids",
+      "Xanthophylls"
+    ],
+    "correct_index": 0,
+    "explanation": "Chlorophyll a is the primary photosynthetic pigment — directly involved in converting light energy to chemical energy. Others are accessory pigments.",
+    "id": "neet_biol_95231a"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Ecology",
+    "difficulty": 2,
+    "question_text": "The pyramid of energy is always:",
+    "options": [
+      "Upright",
+      "Inverted",
+      "Can be both",
+      "Horizontal"
+    ],
+    "correct_index": 0,
+    "explanation": "Energy pyramid is always upright — energy decreases at each trophic level due to heat loss (only ~10% transferred). Unlike biomass or number pyramids, it cannot be inverted.",
+    "id": "neet_biol_2da3fb"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Reproduction",
+    "difficulty": 2,
+    "question_text": "Fertilisation in humans normally occurs in the:",
+    "options": [
+      "Fallopian tube (oviduct)",
+      "Uterus",
+      "Ovary",
+      "Vagina"
+    ],
+    "correct_index": 0,
+    "explanation": "Fertilisation occurs in the ampullary region of the fallopian tube. The fertilised egg (zygote) then travels to the uterus for implantation.",
+    "id": "neet_biol_f5f0f6"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Cell Division",
+    "difficulty": 2,
+    "question_text": "During which phase of mitosis do chromosomes align at the cell's equator?",
+    "options": [
+      "Metaphase",
+      "Anaphase",
+      "Prophase",
+      "Telophase"
+    ],
+    "correct_index": 0,
+    "explanation": "Metaphase: chromosomes align at the metaphase plate (cell equator). This is used for karyotyping as chromosomes are most condensed and visible.",
+    "id": "neet_biol_008a9c"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Biomolecules",
+    "difficulty": 2,
+    "question_text": "The monomer unit of proteins is:",
+    "options": [
+      "Amino acid",
+      "Glucose",
+      "Nucleotide",
+      "Fatty acid"
+    ],
+    "correct_index": 0,
+    "explanation": "Proteins are polymers of amino acids joined by peptide bonds. There are 20 standard amino acids. Glucose→polysaccharides, nucleotides→nucleic acids.",
+    "id": "neet_biol_006f5f"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Laws of Motion",
+    "difficulty": 2,
+    "question_text": "A 60 kg person stands in a lift moving upward at 2 m/s². Normal force is (g=10):",
+    "options": [
+      "720 N",
+      "600 N",
+      "480 N",
+      "660 N"
+    ],
+    "correct_index": 0,
+    "explanation": "N - mg = ma → N = m(g+a) = 60×(10+2) = 60×12 = 720 N.",
+    "id": "neet_phys_22efa7"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Optics",
+    "difficulty": 2,
+    "question_text": "The power of a lens with focal length 25 cm is:",
+    "options": [
+      "4 D",
+      "0.25 D",
+      "25 D",
+      "2.5 D"
+    ],
+    "correct_index": 0,
+    "explanation": "P = 1/f(m) = 1/0.25 = 4 Diopters. Converging lens: positive power; diverging: negative power.",
+    "id": "neet_phys_6c0fb4"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 2,
+    "question_text": "The IUPAC name of CH₃-CH₂-OH is:",
+    "options": [
+      "Ethanol",
+      "Methanol",
+      "Propanol",
+      "Ethanoic acid"
+    ],
+    "correct_index": 0,
+    "explanation": "CH₃-CH₂-OH: 2-carbon chain (eth-) with -OH group → ethanol. Methanol: CH₃OH (1C). Propanol: C₃H₇OH (3C).",
+    "id": "neet_chem_8c3e84"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Periodic Table",
+    "difficulty": 2,
+    "question_text": "Electronegativity generally increases across a period because:",
+    "options": [
+      "Nuclear charge increases while atomic radius decreases",
+      "More electrons are added",
+      "Valence shell is further from nucleus",
+      "Ionisation energy decreases"
+    ],
+    "correct_index": 0,
+    "explanation": "Across a period: proton number rises (stronger nuclear pull) while same shell adds electrons (radius shrinks slightly). Net effect: stronger pull on shared electrons.",
+    "id": "neet_chem_f84ec7"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "difficulty": 2,
+    "question_text": "The functional unit of the kidney is:",
+    "options": [
+      "Nephron",
+      "Glomerulus",
+      "Loop of Henle",
+      "Bowman's capsule"
+    ],
+    "correct_index": 0,
+    "explanation": "The nephron is the structural and functional unit of the kidney — about 1 million per kidney. It consists of Bowman's capsule, glomerulus, proximal/distal tubules, Loop of Henle, and collecting duct.",
+    "id": "neet_biol_bbc1b3"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Genetics",
+    "difficulty": 2,
+    "question_text": "Down syndrome is caused by trisomy of chromosome number:",
+    "options": [
+      "21",
+      "18",
+      "13",
+      "23"
+    ],
+    "correct_index": 0,
+    "explanation": "Down syndrome (Trisomy 21): three copies of chromosome 21 instead of two. Karyotype: 47 chromosomes. Results from non-disjunction during meiosis.",
+    "id": "neet_biol_7e9fac"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Plant Physiology",
+    "difficulty": 2,
+    "question_text": "Stomata open when guard cells are:",
+    "options": [
+      "Turgid (high turgor pressure)",
+      "Flaccid",
+      "Dehydrated",
+      "Equal in water to surroundings"
+    ],
+    "correct_index": 0,
+    "explanation": "Guard cells swell (become turgid) when they take up water due to K⁺ influx → their differential wall thickness causes them to bow apart → stomata open.",
+    "id": "neet_biol_8fda7f"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Ecology",
+    "difficulty": 2,
+    "question_text": "The ozone layer is found in the:",
+    "options": [
+      "Stratosphere",
+      "Troposphere",
+      "Mesosphere",
+      "Thermosphere"
+    ],
+    "correct_index": 0,
+    "explanation": "The ozone layer (20–30 km altitude) is in the stratosphere. It absorbs harmful UV-B and UV-C radiation. CFCs cause stratospheric ozone depletion.",
+    "id": "neet_biol_73ed0b"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Biomolecules",
+    "difficulty": 2,
+    "question_text": "Which vitamin is synthesised by the skin on exposure to sunlight?",
+    "options": [
+      "Vitamin D",
+      "Vitamin C",
+      "Vitamin A",
+      "Vitamin K"
+    ],
+    "correct_index": 0,
+    "explanation": "UV-B radiation converts 7-dehydrocholesterol in skin to cholecalciferol (Vitamin D₃). Deficiency causes rickets (children) and osteomalacia (adults).",
+    "id": "neet_biol_c547d1"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "difficulty": 2,
+    "question_text": "The site of protein synthesis in the cell is the:",
+    "options": [
+      "Ribosome",
+      "Nucleus",
+      "Golgi apparatus",
+      "Endoplasmic reticulum"
+    ],
+    "correct_index": 0,
+    "explanation": "Ribosomes (free or rough ER-bound) are the site of translation — mRNA is read and amino acids are assembled into polypeptides.",
+    "id": "neet_biol_5e29a3"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "difficulty": 2,
+    "question_text": "Absolute zero on the Celsius scale is:",
+    "options": [
+      "−273.15°C",
+      "0°C",
+      "−459.67°C",
+      "100°C"
+    ],
+    "correct_index": 0,
+    "explanation": "Absolute zero = 0 K = −273.15°C. At absolute zero, molecular motion is at its theoretical minimum. −459.67°F is the Fahrenheit equivalent.",
+    "id": "neet_phys_2b299d"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Acids and Bases",
+    "difficulty": 2,
+    "question_text": "A solution with pH 9 is:",
+    "options": [
+      "Basic",
+      "Acidic",
+      "Neutral",
+      "Strongly acidic"
+    ],
+    "correct_index": 0,
+    "explanation": "pH 7 = neutral; pH < 7 = acidic; pH > 7 = basic. pH 9 → [H⁺] = 10⁻⁹ mol/L → basic solution.",
+    "id": "neet_chem_2c579f"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "difficulty": 2,
+    "question_text": "Which blood group is the universal donor?",
+    "options": [
+      "O negative (O−)",
+      "AB positive (AB+)",
+      "A positive (A+)",
+      "O positive (O+)"
+    ],
+    "correct_index": 0,
+    "explanation": "O− blood has no ABO antigens and no Rh factor, so it can be given to patients of any blood group in emergencies. AB+ is universal recipient.",
+    "id": "neet_biol_f72aee"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Reproduction",
+    "difficulty": 2,
+    "question_text": "The process of meiosis results in:",
+    "options": [
+      "4 haploid cells from 1 diploid cell",
+      "2 diploid cells from 1 diploid cell",
+      "4 diploid cells",
+      "2 haploid cells"
+    ],
+    "correct_index": 0,
+    "explanation": "Meiosis I (reductive division) + Meiosis II (equational): one diploid (2n) cell → 4 haploid (n) gametes.",
+    "id": "neet_biol_1a2f21"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 2,
+    "question_text": "Carbohydrates are polymers of:",
+    "options": [
+      "Monosaccharides",
+      "Amino acids",
+      "Fatty acids",
+      "Nucleotides"
+    ],
+    "correct_index": 0,
+    "explanation": "Carbohydrates: monosaccharides (glucose, fructose) → disaccharides (sucrose, lactose) → polysaccharides (starch, glycogen, cellulose).",
+    "id": "neet_chem_983381"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Cell Division",
+    "difficulty": 2,
+    "question_text": "Meiosis occurs in:",
+    "options": [
+      "Gonads (testes and ovaries)",
+      "Skin cells",
+      "Liver cells",
+      "Neurons"
+    ],
+    "correct_index": 0,
+    "explanation": "Meiosis occurs specifically in reproductive organs (gonads) to produce gametes (sperm and ova). Somatic cells divide by mitosis.",
+    "id": "neet_biol_9d5a1e"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Ecology",
+    "difficulty": 2,
+    "question_text": "Mycorrhiza is a mutualistic association between fungi and:",
+    "options": [
+      "Plant roots",
+      "Bacteria",
+      "Algae",
+      "Nitrogen-fixing organisms"
+    ],
+    "correct_index": 0,
+    "explanation": "Mycorrhiza: fungal hyphae colonise plant roots. Fungi provide minerals (especially phosphorus), plant provides carbohydrates. Mutualistic — both benefit.",
+    "id": "neet_biol_b3f0f7"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Genetics",
+    "difficulty": 3,
+    "question_text": "In a testcross AaBb × aabb, the recombinant classes in offspring indicate:",
+    "options": [
+      "Crossing over occurred between the two loci",
+      "Independent assortment of all genes",
+      "Linkage with no crossing over",
+      "Mutation"
+    ],
+    "correct_index": 0,
+    "explanation": "In a testcross, parental types (AB, ab) dominate; recombinants (Ab, aB) result from crossing over during meiosis I between the linked loci.",
+    "id": "neet_biol_4769d3"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Genetics",
+    "difficulty": 3,
+    "question_text": "Sickle cell anaemia is caused by a point mutation where glutamic acid is replaced by:",
+    "options": [
+      "Valine",
+      "Alanine",
+      "Leucine",
+      "Glycine"
+    ],
+    "correct_index": 0,
+    "explanation": "A single base change (GAG→GTG) in the β-globin gene substitutes valine for glutamic acid at position 6 — causing HbS polymerisation under low O₂.",
+    "id": "neet_biol_41fb0d"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "difficulty": 3,
+    "question_text": "The chemiosmotic theory of ATP synthesis in mitochondria involves proton gradient across the:",
+    "options": [
+      "Inner mitochondrial membrane",
+      "Outer mitochondrial membrane",
+      "Matrix",
+      "Cristae surface"
+    ],
+    "correct_index": 0,
+    "explanation": "Mitchell's chemiosmosis: H⁺ pumped from matrix to intermembrane space across inner membrane. H⁺ flows back through ATP synthase (Complex V), driving ATP synthesis.",
+    "id": "neet_biol_cc3c84"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "difficulty": 3,
+    "question_text": "The P/O ratio in oxidative phosphorylation refers to:",
+    "options": [
+      "Moles of ATP per mole of oxygen consumed",
+      "Phosphorus to oxygen atom ratio",
+      "Proton to oxygen ratio",
+      "ATP/ADP ratio"
+    ],
+    "correct_index": 0,
+    "explanation": "P/O ratio = moles of ATP (phosphorylation) per mole of O (½O₂ reduced). NADH: ~2.5 ATP; FADH₂: ~1.5 ATP. Reflects mitochondrial efficiency.",
+    "id": "neet_biol_f0d369"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Plant Physiology",
+    "difficulty": 3,
+    "question_text": "In the C4 pathway (Hatch-Slack), the first stable product of CO₂ fixation is:",
+    "options": [
+      "Oxaloacetate (OAA)",
+      "3-Phosphoglycerate (3-PGA)",
+      "Ribulose bisphosphate (RuBP)",
+      "Glucose-6-phosphate"
+    ],
+    "correct_index": 0,
+    "explanation": "In C4 plants, CO₂ is fixed in mesophyll cells by PEP carboxylase → OAA (4-carbon). Contrast with C3: CO₂+RuBP → 2×3-PGA (3-carbon).",
+    "id": "neet_biol_6f45c1"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Plant Physiology",
+    "difficulty": 3,
+    "question_text": "Vernalisation is the process by which flowering is induced by:",
+    "options": [
+      "Prolonged cold treatment",
+      "Long days",
+      "Short nights",
+      "High temperature"
+    ],
+    "correct_index": 0,
+    "explanation": "Vernalisation: exposure to prolonged cold (0–5°C) that enables plants to flower in the subsequent growing season. Required by winter annuals and biennials.",
+    "id": "neet_biol_611471"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Ecology",
+    "difficulty": 3,
+    "question_text": "The concept of ecological niche was developed by:",
+    "options": [
+      "G.E. Hutchinson",
+      "Charles Elton",
+      "Ernst Haeckel",
+      "E.P. Odum"
+    ],
+    "correct_index": 0,
+    "explanation": "G.E. Hutchinson (1957) defined the niche as an n-dimensional hypervolume — a set of environmental variables within which an organism can survive and reproduce.",
+    "id": "neet_biol_1da1f0"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Ecology",
+    "difficulty": 3,
+    "question_text": "According to the competitive exclusion principle (Gause's law), two species occupying the same niche:",
+    "options": [
+      "Cannot coexist indefinitely",
+      "Always coexist through niche partitioning",
+      "Evolve into the same species",
+      "Show mutualism"
+    ],
+    "correct_index": 0,
+    "explanation": "Gause's law: two species competing for identical resources cannot coexist — one will competitively exclude the other; coexistence requires niche differentiation.",
+    "id": "neet_biol_d230e4"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Reproduction",
+    "difficulty": 3,
+    "question_text": "Capacitation of sperms occurs in:",
+    "options": [
+      "Female reproductive tract",
+      "Epididymis",
+      "Testes",
+      "Seminal vesicle"
+    ],
+    "correct_index": 0,
+    "explanation": "Capacitation: final maturation step enabling sperm to fertilise — occurs in the female reproductive tract (uterus/fallopian tube) through removal of surface proteins and membrane changes.",
+    "id": "neet_biol_5b2b98"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Biomolecules",
+    "difficulty": 3,
+    "question_text": "The Km value of an enzyme represents:",
+    "options": [
+      "Substrate concentration at half-maximal velocity",
+      "Maximum reaction velocity",
+      "Enzyme-substrate affinity directly",
+      "Inhibitor concentration"
+    ],
+    "correct_index": 0,
+    "explanation": "Michaelis constant Km = [S] when v = Vmax/2. Low Km → high affinity. High Km → low affinity. Derived from Michaelis-Menten equation.",
+    "id": "neet_biol_415420"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Cell Division",
+    "difficulty": 3,
+    "question_text": "Synaptonemal complex forms during which sub-stage of meiosis I?",
+    "options": [
+      "Zygotene",
+      "Leptotene",
+      "Pachytene",
+      "Diplotene"
+    ],
+    "correct_index": 0,
+    "explanation": "Synaptonemal complex (SC) — a protein scaffold — forms during zygotene as homologous chromosomes pair (synapsis). Crossing over occurs during pachytene.",
+    "id": "neet_biol_aac1b8"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "difficulty": 3,
+    "question_text": "Juxtaglomerular apparatus (JGA) secretes renin in response to:",
+    "options": [
+      "Low blood pressure / low filtrate flow",
+      "High blood glucose",
+      "High ADH levels",
+      "Increased GFR"
+    ],
+    "correct_index": 0,
+    "explanation": "JGA: specialised cells in afferent arteriole detect reduced stretch (low BP) or low NaCl in distal tubule → secrete renin → RAAS activation → angiotensin II → aldosterone.",
+    "id": "neet_biol_885d6d"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "difficulty": 3,
+    "question_text": "The oxygen-haemoglobin dissociation curve shifts rightward (Bohr effect) due to:",
+    "options": [
+      "Increased CO₂ and decreased pH",
+      "Decreased CO₂ and increased pH",
+      "Increased temperature only",
+      "Decreased 2,3-BPG"
+    ],
+    "correct_index": 0,
+    "explanation": "Right shift (Bohr effect): ↑CO₂, ↓pH, ↑temperature, ↑2,3-BPG → lower O₂ affinity → more O₂ released to tissues. Favours unloading in metabolically active tissue.",
+    "id": "neet_biol_1c01f5"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 3,
+    "question_text": "The peptide bond is formed between the amino group of one amino acid and the:",
+    "options": [
+      "Carboxyl group of another",
+      "Amino group of another",
+      "R-group of another",
+      "Hydroxyl group of another"
+    ],
+    "correct_index": 0,
+    "explanation": "Peptide bond: condensation reaction between −COOH of one AA and −NH₂ of next, releasing H₂O. The −CO−NH− linkage is a peptide bond.",
+    "id": "neet_chem_65ce34"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 3,
+    "question_text": "Which base pairs with adenine (A) in DNA?",
+    "options": [
+      "Thymine (T)",
+      "Guanine (G)",
+      "Cytosine (C)",
+      "Uracil (U)"
+    ],
+    "correct_index": 0,
+    "explanation": "Chargaff's rules: A pairs with T (2 H-bonds); G pairs with C (3 H-bonds) in DNA. In RNA, A pairs with U instead.",
+    "id": "neet_chem_ca1906"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Genetics",
+    "difficulty": 3,
+    "question_text": "If a trait shows continuous variation in a population, it is most likely controlled by:",
+    "options": [
+      "Multiple genes (polygenic inheritance)",
+      "A single dominant gene",
+      "A sex-linked gene",
+      "Maternal inheritance"
+    ],
+    "correct_index": 0,
+    "explanation": "Polygenic traits (height, skin colour, IQ) involve many loci each with small additive effect → continuous (bell-curve) distribution in population.",
+    "id": "neet_biol_dddc1f"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Ecology",
+    "difficulty": 3,
+    "question_text": "The humification of organic matter in soil produces:",
+    "options": [
+      "Humus — stable, dark colloidal organic material",
+      "Inorganic salts only",
+      "CO₂ and H₂O",
+      "Clay minerals"
+    ],
+    "correct_index": 0,
+    "explanation": "Humification: slow microbial decomposition of organic matter into humus — resistant dark colloid that improves soil structure, water retention, and cation exchange capacity.",
+    "id": "neet_biol_a17167"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Plant Physiology",
+    "difficulty": 3,
+    "question_text": "Phytochrome Pfr (far-red absorbing form) promotes:",
+    "options": [
+      "Germination and flowering in long-day plants",
+      "Dormancy",
+      "Flowering in short-day plants",
+      "Stomatal closure"
+    ],
+    "correct_index": 0,
+    "explanation": "Pfr (active form, absorbs 730 nm) promotes seed germination, inhibits sleep movements, and promotes flowering in long-day plants. Pfr → Pr in darkness.",
+    "id": "neet_biol_a4ce66"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "difficulty": 3,
+    "question_text": "Signal recognition particle (SRP) directs ribosomes to the:",
+    "options": [
+      "Rough endoplasmic reticulum",
+      "Nucleolus",
+      "Golgi apparatus",
+      "Lysosome"
+    ],
+    "correct_index": 0,
+    "explanation": "SRP recognises signal peptide on nascent polypeptide → docks ribosome on rough ER → co-translational translocation into ER lumen for secretory/membrane proteins.",
+    "id": "neet_biol_740fbd"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "difficulty": 3,
+    "question_text": "The Frank-Starling law of the heart states that:",
+    "options": [
+      "Stroke volume increases with increased venous return (preload)",
+      "Heart rate determines cardiac output only",
+      "Cardiac output is fixed",
+      "Afterload determines stroke volume"
+    ],
+    "correct_index": 0,
+    "explanation": "Frank-Starling: greater venous return → more ventricular filling → greater stretch of myocardium → stronger contraction → higher stroke volume. Intrinsic cardiac regulation.",
+    "id": "neet_biol_b02ccb"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Biomolecules",
+    "difficulty": 3,
+    "question_text": "The active site of an enzyme is responsible for:",
+    "options": [
+      "Substrate binding and catalysis",
+      "Only substrate binding",
+      "Only product release",
+      "Allosteric regulation"
+    ],
+    "correct_index": 0,
+    "explanation": "Active site: cleft/pocket with specific amino acids that bind substrate (binding site) and chemically transform it (catalytic site). Both functions reside at the active site.",
+    "id": "neet_biol_a66e3b"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Reproduction",
+    "difficulty": 3,
+    "question_text": "Genomic imprinting results in differential gene expression depending on:",
+    "options": [
+      "Parent of origin of the allele",
+      "Zygote's sex",
+      "Environmental temperature",
+      "Number of chromosomes"
+    ],
+    "correct_index": 0,
+    "explanation": "Genomic imprinting: epigenetic silencing of genes based on whether inherited from mother or father. e.g., IGF2 (paternal allele active), H19 (maternal allele active).",
+    "id": "neet_biol_812182"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 3,
+    "question_text": "Which of the following is a nucleophilic substitution (SN2) reaction characteristic?",
+    "options": [
+      "Inversion of configuration, bimolecular",
+      "Retention of configuration",
+      "Carbocation intermediate",
+      "First-order kinetics"
+    ],
+    "correct_index": 0,
+    "explanation": "SN2: concerted backside attack → Walden inversion (stereochemical inversion). Rate = k[substrate][nucleophile] (bimolecular). No carbocation intermediate.",
+    "id": "neet_chem_49b1c4"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "difficulty": 3,
+    "question_text": "Apoptosis (programmed cell death) is executed by:",
+    "options": [
+      "Caspases (cysteine proteases)",
+      "Lysosomes only",
+      "DNA polymerase",
+      "Ribosomes"
+    ],
+    "correct_index": 0,
+    "explanation": "Caspases are the executioner proteases of apoptosis. Initiator caspases (8, 9) activate executioner caspases (3, 6, 7) which cleave cellular substrates → orderly cell death.",
+    "id": "neet_biol_088714"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Genetics",
+    "difficulty": 3,
+    "question_text": "The lac operon in E.coli is an example of:",
+    "options": [
+      "Negative gene regulation (repressible by repressor)",
+      "Positive regulation only",
+      "Constitutive expression",
+      "Post-translational regulation"
+    ],
+    "correct_index": 0,
+    "explanation": "Lac operon: lac repressor (coded by lacI) normally blocks transcription. Allolactose (inducer) binds repressor → conformational change → repressor leaves operator → transcription proceeds.",
+    "id": "neet_biol_2cb634"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "difficulty": 1,
+    "question_text": "The basic unit of life is:",
+    "options": [
+      "Cell",
+      "Organ",
+      "Tissue",
+      "Organism"
+    ],
+    "correct_index": 0,
+    "explanation": "Cell theory: cell is the structural and functional unit of all living organisms.",
+    "id": "neet_232dfc9d"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "difficulty": 1,
+    "question_text": "Cell wall is present in plant cells but absent in:",
+    "options": [
+      "Animal cells",
+      "Fungal cells",
+      "Bacterial cells",
+      "Algal cells"
+    ],
+    "correct_index": 0,
+    "explanation": "Animal cells lack cell wall; they have only a flexible plasma membrane.",
+    "id": "neet_e1c82384"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Genetics",
+    "difficulty": 1,
+    "question_text": "DNA stands for:",
+    "options": [
+      "Deoxyribonucleic Acid",
+      "Diribonucleic Acid",
+      "Deoxyribonitrogen Acid",
+      "Dualribonucleic Acid"
+    ],
+    "correct_index": 0,
+    "explanation": "DNA=Deoxyribonucleic acid. Carries genetic information in double helix.",
+    "id": "neet_5b743752"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "difficulty": 1,
+    "question_text": "The normal body temperature of a healthy human is approximately:",
+    "options": [
+      "37°C (98.6°F)",
+      "36°C",
+      "38°C",
+      "40°C"
+    ],
+    "correct_index": 0,
+    "explanation": "Normal core body temperature ≈37°C. Fever is >38°C.",
+    "id": "neet_20eb786e"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "difficulty": 1,
+    "question_text": "The largest gland in the human body is:",
+    "options": [
+      "Liver",
+      "Pancreas",
+      "Thyroid",
+      "Adrenal"
+    ],
+    "correct_index": 0,
+    "explanation": "Liver weighs ~1.5 kg and is the largest gland, performing 500+ metabolic functions.",
+    "id": "neet_8ca86706"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "difficulty": 1,
+    "question_text": "Insulin is secreted by the:",
+    "options": [
+      "Pancreas (β cells of islets of Langerhans)",
+      "Liver",
+      "Thyroid",
+      "Adrenal cortex"
+    ],
+    "correct_index": 0,
+    "explanation": "β cells of islets of Langerhans in pancreas secrete insulin. α cells secrete glucagon.",
+    "id": "neet_2e93065a"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Plant Biology",
+    "difficulty": 1,
+    "question_text": "Chlorophyll is found in:",
+    "options": [
+      "Chloroplasts",
+      "Mitochondria",
+      "Nucleus",
+      "Ribosomes"
+    ],
+    "correct_index": 0,
+    "explanation": "Chlorophyll pigment is embedded in thylakoid membranes inside chloroplasts.",
+    "id": "neet_60eb1c36"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Plant Biology",
+    "difficulty": 1,
+    "question_text": "The process by which plants lose water vapour is called:",
+    "options": [
+      "Transpiration",
+      "Respiration",
+      "Photosynthesis",
+      "Absorption"
+    ],
+    "correct_index": 0,
+    "explanation": "Transpiration: water evaporates from stomata. Drives nutrient uptake from soil.",
+    "id": "neet_a78e3396"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Ecology",
+    "difficulty": 1,
+    "question_text": "Producers in an ecosystem are:",
+    "options": [
+      "Green plants (autotrophs)",
+      "Herbivores",
+      "Carnivores",
+      "Decomposers"
+    ],
+    "correct_index": 0,
+    "explanation": "Producers (plants, algae) synthesise organic matter from CO₂ via photosynthesis.",
+    "id": "neet_be8983a2"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Ecology",
+    "difficulty": 1,
+    "question_text": "The relationship where both organisms benefit is called:",
+    "options": [
+      "Mutualism",
+      "Parasitism",
+      "Commensalism",
+      "Predation"
+    ],
+    "correct_index": 0,
+    "explanation": "Mutualism: both species benefit. e.g., bee and flower (pollination + nectar).",
+    "id": "neet_ac4d7cc1"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Biomolecules",
+    "difficulty": 1,
+    "question_text": "Glucose is a:",
+    "options": [
+      "Monosaccharide",
+      "Disaccharide",
+      "Polysaccharide",
+      "Protein"
+    ],
+    "correct_index": 0,
+    "explanation": "Glucose (C₆H₁₂O₆) is a simple sugar (monosaccharide). Sucrose is a disaccharide.",
+    "id": "neet_96800b13"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "difficulty": 1,
+    "question_text": "Red blood cells (RBCs) are produced in the:",
+    "options": [
+      "Bone marrow",
+      "Liver",
+      "Spleen",
+      "Kidney"
+    ],
+    "correct_index": 0,
+    "explanation": "RBCs (erythrocytes) are produced in red bone marrow (haematopoiesis).",
+    "id": "neet_dd4efac6"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Basic Chemistry",
+    "difficulty": 1,
+    "question_text": "The formula of water is:",
+    "options": [
+      "H₂O",
+      "H₂O₂",
+      "HO",
+      "H₃O"
+    ],
+    "correct_index": 0,
+    "explanation": "Water = 2 hydrogen atoms + 1 oxygen atom = H₂O.",
+    "id": "neet_f3525932"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Periodic Table",
+    "difficulty": 1,
+    "question_text": "The valency of carbon is:",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "1"
+    ],
+    "correct_index": 0,
+    "explanation": "Carbon has 4 valence electrons → forms 4 bonds. Valency = 4.",
+    "id": "neet_83ec0bc9"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 1,
+    "question_text": "Vinegar contains:",
+    "options": [
+      "Acetic acid (CH₃COOH)",
+      "Hydrochloric acid",
+      "Citric acid",
+      "Lactic acid"
+    ],
+    "correct_index": 0,
+    "explanation": "Vinegar is 5–8% acetic acid (ethanoic acid) in water.",
+    "id": "neet_5a364bec"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Optics",
+    "difficulty": 1,
+    "question_text": "A convex lens is also called a:",
+    "options": [
+      "Converging lens",
+      "Diverging lens",
+      "Plane lens",
+      "Concave lens"
+    ],
+    "correct_index": 0,
+    "explanation": "Convex lens = converging lens — it bends parallel rays to a focal point.",
+    "id": "neet_a3c36a36"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Electricity",
+    "difficulty": 1,
+    "question_text": "The SI unit of charge is:",
+    "options": [
+      "Coulomb",
+      "Ampere",
+      "Volt",
+      "Farad"
+    ],
+    "correct_index": 0,
+    "explanation": "Charge is measured in Coulombs (C). 1C = charge of 6.24×10¹⁸ electrons.",
+    "id": "neet_0f0275cf"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Reproduction",
+    "difficulty": 1,
+    "question_text": "The male reproductive organ in flowering plants is the:",
+    "options": [
+      "Stamen (anther + filament)",
+      "Pistil",
+      "Sepal",
+      "Petal"
+    ],
+    "correct_index": 0,
+    "explanation": "Stamen = male organ. Anther produces pollen. Pistil = female organ.",
+    "id": "neet_dfbde6c7"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "difficulty": 1,
+    "question_text": "Haemoglobin in red blood cells transports:",
+    "options": [
+      "Oxygen",
+      "Carbon dioxide only",
+      "Glucose",
+      "Hormones"
+    ],
+    "correct_index": 0,
+    "explanation": "Haemoglobin (Hb) binds O₂ in lungs and releases it in tissues.",
+    "id": "neet_d8e9d800"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Cell Division",
+    "difficulty": 1,
+    "question_text": "In mitosis, a parent cell divides into:",
+    "options": [
+      "2 identical daughter cells",
+      "4 haploid cells",
+      "2 haploid cells",
+      "4 identical cells"
+    ],
+    "correct_index": 0,
+    "explanation": "Mitosis: one cell → two genetically identical diploid daughter cells.",
+    "id": "neet_1b67bc48"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Ecology",
+    "difficulty": 1,
+    "question_text": "The layer of ozone gas is found in the:",
+    "options": [
+      "Stratosphere",
+      "Troposphere",
+      "Mesosphere",
+      "Exosphere"
+    ],
+    "correct_index": 0,
+    "explanation": "Ozone layer in stratosphere (15–35 km altitude) absorbs UV radiation.",
+    "id": "neet_1c01ab43"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Chemical Reactions",
+    "difficulty": 1,
+    "question_text": "Rusting of iron is an example of:",
+    "options": [
+      "Oxidation",
+      "Reduction",
+      "Neutralisation",
+      "Sublimation"
+    ],
+    "correct_index": 0,
+    "explanation": "Iron oxidises: 4Fe + 3O₂ + 6H₂O → 4Fe(OH)₃. An oxidation process.",
+    "id": "neet_597e3306"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Molecular Biology",
+    "difficulty": 3,
+    "question_text": "In the lac operon, CAP-cAMP complex acts as a:",
+    "options": [
+      "Positive regulator (activates transcription when glucose is absent)",
+      "Negative regulator",
+      "Repressor",
+      "Co-repressor"
+    ],
+    "correct_index": 0,
+    "explanation": "CAP-cAMP binds upstream of promoter → enhances RNA polymerase binding → positive regulation. Activated when glucose low (high cAMP).",
+    "id": "neet_e72eeb1d"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Genetics",
+    "difficulty": 3,
+    "question_text": "A diploid organism (2n=4) can produce how many genetically different gametes (considering independent assortment only)?",
+    "options": [
+      "4",
+      "2",
+      "8",
+      "16"
+    ],
+    "correct_index": 0,
+    "explanation": "With n=2 chromosomes per gamete, independent assortment gives 2² = 4 possible gamete combinations.",
+    "id": "neet_6b3c9fc8"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "difficulty": 3,
+    "question_text": "The proton gradient across the inner mitochondrial membrane drives ATP synthesis through:",
+    "options": [
+      "ATP synthase (Complex V) — F₀F₁ ATPase",
+      "Complex I",
+      "Cytochrome c",
+      "NADH dehydrogenase"
+    ],
+    "correct_index": 0,
+    "explanation": "Protons flow back into matrix through F₀ subunit → drives rotation of F₁ → ATP synthesis from ADP+Pi (Mitchell's chemiosmosis).",
+    "id": "neet_b3bd9ddb"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Plant Physiology",
+    "difficulty": 3,
+    "question_text": "Abscisic acid (ABA) is known as the 'stress hormone' because it:",
+    "options": [
+      "Promotes stomatal closure during water stress",
+      "Promotes cell elongation",
+      "Stimulates germination",
+      "Inhibits ageing"
+    ],
+    "correct_index": 0,
+    "explanation": "ABA triggers stomatal closure (K⁺ efflux from guard cells → water loss → flaccid). Induced by drought, cold, salinity.",
+    "id": "neet_d0b18b8b"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "difficulty": 3,
+    "question_text": "The enzyme that catalyses peptide bond formation during translation is:",
+    "options": [
+      "Peptidyl transferase (23S rRNA ribozyme)",
+      "Aminoacyl-tRNA synthetase",
+      "Helicase",
+      "DNA polymerase"
+    ],
+    "correct_index": 0,
+    "explanation": "Peptidyl transferase activity resides in 23S rRNA (large subunit) — a ribozyme. It catalyses transpeptidation.",
+    "id": "neet_6dbd75d5"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Ecology",
+    "difficulty": 3,
+    "question_text": "The species-area relationship (log S = log c + z·log A) shows that species richness:",
+    "options": [
+      "Increases with area as a power function",
+      "Is independent of area",
+      "Decreases with area",
+      "Is linear with area"
+    ],
+    "correct_index": 0,
+    "explanation": "MacArthur-Wilson: log S = log c + z log A → S = cAᶻ. z typically 0.1–0.2 for same continent, ~0.6–1.2 for islands.",
+    "id": "neet_26ffa1e3"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Genetics",
+    "difficulty": 3,
+    "question_text": "X-linked recessive disorders are more common in males because:",
+    "options": [
+      "Males have only one X chromosome (hemizygous) — one mutant allele causes disease",
+      "Males have lower immunity",
+      "Y chromosome amplifies disease",
+      "Males produce more of the defective protein"
+    ],
+    "correct_index": 0,
+    "explanation": "Males (XY): one X. Single recessive allele on X causes disease (no second X to mask it). Females need two copies.",
+    "id": "neet_597c3b40"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Biomolecules",
+    "difficulty": 3,
+    "question_text": "The active site of lysozyme uses which catalytic mechanism?",
+    "options": [
+      "Acid-base catalysis with Glu35 and Asp52",
+      "Metal ion catalysis",
+      "Covalent catalysis only",
+      "Proximity and orientation"
+    ],
+    "correct_index": 0,
+    "explanation": "Lysozyme: Glu35 acts as general acid (proton donor), Asp52 as nucleophile/base. Cleaves β-1,4-glycosidic bonds in bacterial cell wall.",
+    "id": "neet_fbabd347"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Reproduction",
+    "difficulty": 3,
+    "question_text": "Capacitation of sperm involves:",
+    "options": [
+      "Removal of glycoprotein coat and membrane cholesterol — enabling acrosome reaction",
+      "Addition of fructose for energy",
+      "Formation of the acrosome",
+      "Mitochondrial activation only"
+    ],
+    "correct_index": 0,
+    "explanation": "Capacitation in female tract: removal of surface proteins and cholesterol → membrane becomes hyperpolarised, Ca²⁺ influx increases → enables acrosome reaction for fertilisation.",
+    "id": "neet_c4eb462a"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Cell Division",
+    "difficulty": 3,
+    "question_text": "At the metaphase-to-anaphase transition, the key event is:",
+    "options": [
+      "Cohesin cleavage by separase (activated by APC/C-Cdc20)",
+      "Spindle assembly",
+      "Nuclear envelope breakdown",
+      "Chromatin condensation"
+    ],
+    "correct_index": 0,
+    "explanation": "APC/C ubiquitinates securin → separase activated → cleaves cohesin holding sister chromatids → anaphase begins.",
+    "id": "neet_f8204a53"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 3,
+    "question_text": "The Diels-Alder reaction is a:",
+    "options": [
+      "[4+2] cycloaddition between a diene and a dienophile",
+      "SN2 reaction",
+      "Elimination reaction",
+      "Radical addition"
+    ],
+    "correct_index": 0,
+    "explanation": "Diels-Alder: concerted [4+2] cycloaddition. 4π diene + 2π dienophile → 6-membered ring. Stereospecific (syn addition). Widely used in synthesis.",
+    "id": "neet_68f7c8d3"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Biomolecules",
+    "difficulty": 3,
+    "question_text": "The secondary structure of proteins (α-helix and β-sheet) is stabilised by:",
+    "options": [
+      "Hydrogen bonds between backbone N-H and C=O groups",
+      "Disulfide bonds",
+      "Ionic bonds between R groups",
+      "Hydrophobic interactions"
+    ],
+    "correct_index": 0,
+    "explanation": "α-helix: H-bond between N-H of residue i and C=O of residue i+4. β-sheet: H-bonds between extended backbone strands.",
+    "id": "neet_ffc1dba9"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "difficulty": 3,
+    "question_text": "The juxtaglomerular apparatus (JGA) secretes renin when:",
+    "options": [
+      "Blood pressure/GFR falls or macula densa senses low NaCl",
+      "Blood pressure rises",
+      "ADH levels are high",
+      "Aldosterone is elevated"
+    ],
+    "correct_index": 0,
+    "explanation": "JGA (JG cells + macula densa): low stretch (low BP) or low NaCl at macula densa → renin release → RAAS cascade → angiotensin II → vasoconstriction + aldosterone.",
+    "id": "neet_d186b734"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Ecology",
+    "difficulty": 3,
+    "question_text": "According to Rivet Popper hypothesis (Paul Ehrlich), species in an ecosystem are like:",
+    "options": [
+      "Rivets in an aeroplane — each loss weakens the structure until catastrophic failure",
+      "Redundant components that can be removed without effect",
+      "Interchangeable parts",
+      "Decorative elements"
+    ],
+    "correct_index": 0,
+    "explanation": "Each species = rivet. Loss of rivets (species) weakens the ecosystem. Some positions are critical; others may be redundant — but cumulative loss is dangerous.",
+    "id": "neet_782e55bf"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 3,
+    "question_text": "The Markovnikov's rule explains the regiochemistry of:",
+    "options": [
+      "Electrophilic addition to unsymmetrical alkenes",
+      "Nucleophilic substitution",
+      "Electrophilic aromatic substitution",
+      "Free radical substitution"
+    ],
+    "correct_index": 0,
+    "explanation": "Markovnikov: in HX addition to R-CH=CH₂, H adds to less-substituted C, X to more-substituted C (forms more stable carbocation intermediate).",
+    "id": "neet_d9738642"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Plant Physiology",
+    "difficulty": 3,
+    "question_text": "The C4 photosynthesis pathway reduces photorespiration because:",
+    "options": [
+      "CO₂ is concentrated around RuBisCO in bundle sheath cells, suppressing O₂ fixation",
+      "C4 plants lack RuBisCO",
+      "C4 plants fix CO₂ at night",
+      "C4 plants have more chlorophyll"
+    ],
+    "correct_index": 0,
+    "explanation": "Mesophyll PEP carboxylase (no O₂ affinity) fixes CO₂ → malate/aspartate → bundle sheath where CO₂ released at high concentration → suppresses RuBisCO oxygenase activity.",
+    "id": "neet_43c5c2d7"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "difficulty": 3,
+    "question_text": "The signal peptide hypothesis (Günter Blobel) explains:",
+    "options": [
+      "How secretory proteins are directed to the ER lumen co-translationally",
+      "How DNA is replicated",
+      "Mitochondrial protein import",
+      "Nuclear localisation"
+    ],
+    "correct_index": 0,
+    "explanation": "Signal hypothesis: N-terminal signal peptide recognised by SRP → ribosome docked on ER → polypeptide threaded into ER lumen → signal peptide cleaved.",
+    "id": "neet_f8dee9a3"
+  },
+  {
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "difficulty": 3,
+    "question_text": "Erythropoietin (EPO) is produced mainly by the:",
+    "options": [
+      "Kidney (peritubular fibroblasts) in response to hypoxia",
+      "Liver only",
+      "Bone marrow",
+      "Spleen"
+    ],
+    "correct_index": 0,
+    "explanation": "Kidney peritubular fibroblasts sense O₂ via HIF-1α → EPO production → stimulates bone marrow erythropoiesis → more RBCs → better O₂ delivery.",
+    "id": "neet_ff7dd5e2"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Physical Chemistry",
+    "difficulty": 3,
+    "question_text": "The van't Hoff factor (i) for 0.1 M NaCl (fully dissociated) is:",
+    "options": [
+      "2",
+      "1",
+      "0.5",
+      "3"
+    ],
+    "correct_index": 0,
+    "explanation": "NaCl → Na⁺ + Cl⁻ (2 particles). i = actual particles/formula units = 2. For non-electrolytes i=1. For CaCl₂ i=3.",
+    "id": "neet_3a4a9b0e"
   }
 ]

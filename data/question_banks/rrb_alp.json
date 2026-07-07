@@ -2128,5 +2128,478 @@
     ],
     "correct_index": 2,
     "explanation": "The RBI kept the policy repo rate unchanged at 6.50% in its June 2024 monetary policy review."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 3,
+    "question_text": "If α and β are roots of 3x²+8x+5=0, then 1/α + 1/β equals:",
+    "options": [
+      "−8/5",
+      "8/5",
+      "−8/3",
+      "5/8"
+    ],
+    "correct_index": 0,
+    "explanation": "1/α+1/β = (α+β)/αβ = (−8/3)/(5/3) = −8/5.",
+    "id": "rrb_alp_eb2fd118"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 3,
+    "question_text": "The largest 4-digit number exactly divisible by 88 is:",
+    "options": [
+      "9944",
+      "9900",
+      "9988",
+      "9856"
+    ],
+    "correct_index": 0,
+    "explanation": "9999÷88=113.6... → 113×88=9944. Check: 114×88=10032>9999. Answer: 9944.",
+    "id": "rrb_alp_66598d3c"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "difficulty": 3,
+    "question_text": "A, B, C can do a job in 10, 12, 15 days. A works for 3 days, then B and C finish. Total days taken:",
+    "options": [
+      "8 days",
+      "7 days",
+      "9 days",
+      "6 days"
+    ],
+    "correct_index": 0,
+    "explanation": "A does 3/10 in 3 days. Remaining=7/10. B+C rate=1/12+1/15=3/20. Days=(7/10)/(3/20)=14/3≈4.67. Total=3+4.67≈7.67 → 8 days.",
+    "id": "rrb_alp_4d1690ec"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "difficulty": 3,
+    "question_text": "The diagonal of a rhombus are 16 cm and 12 cm. Its perimeter is:",
+    "options": [
+      "40 cm",
+      "56 cm",
+      "28 cm",
+      "48 cm"
+    ],
+    "correct_index": 0,
+    "explanation": "Side = √((16/2)²+(12/2)²) = √(64+36) = √100 = 10 cm. Perimeter = 4×10 = 40 cm.",
+    "id": "rrb_alp_9aa0efe7"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 3,
+    "question_text": "cos 75° − cos 15° = ?",
+    "options": [
+      "−√2/2",
+      "√2/2",
+      "−√3/2",
+      "√3/2"
+    ],
+    "correct_index": 0,
+    "explanation": "cosA−cosB = −2sin((A+B)/2)sin((A−B)/2). cos75°−cos15° = −2sin(45°)sin(30°) = −2×(√2/2)×(1/2) = −√2/2.",
+    "id": "rrb_alp_2168aac4"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Speed, Distance and Time",
+    "difficulty": 3,
+    "question_text": "A train passes a 200 m platform in 30 s and a pole in 18 s. Speed of the train is:",
+    "options": [
+      "60 km/h",
+      "54 km/h",
+      "72 km/h",
+      "48 km/h"
+    ],
+    "correct_index": 0,
+    "explanation": "Length of train L: L/18 = (L+200)/30 → 30L=18L+3600 → 12L=3600 → L=300m. Speed=300/18=50/3 m/s=50/3×18/5=60 km/h.",
+    "id": "rrb_alp_7b6607c7"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Profit and Loss",
+    "difficulty": 3,
+    "question_text": "A dealer marks price 25% above cost and allows 12% discount. Profit % is:",
+    "options": [
+      "10%",
+      "13%",
+      "15%",
+      "8%"
+    ],
+    "correct_index": 0,
+    "explanation": "SP = CP×1.25×0.88 = CP×1.1. Profit = 10%.",
+    "id": "rrb_alp_721af28f"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "A wire of resistance 8Ω is stretched to double its length. New resistance is:",
+    "options": [
+      "32 Ω",
+      "16 Ω",
+      "4 Ω",
+      "64 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "R = ρl/A. Volume constant: A₂=A/2, l₂=2l. R₂ = ρ(2l)/(A/2) = 4ρl/A = 4R = 32 Ω.",
+    "id": "rrb_alp_52ef97ae"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "In Young's double slit experiment, if slit separation is halved and screen distance doubled, fringe width becomes:",
+    "options": [
+      "4 times",
+      "2 times",
+      "half",
+      "unchanged"
+    ],
+    "correct_index": 0,
+    "explanation": "β = λD/d. New β = λ(2D)/(d/2) = 4λD/d = 4β. Fringe width becomes 4 times.",
+    "id": "rrb_alp_a53bc013"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 3,
+    "question_text": "The pH of a 0.001 M HCl solution is:",
+    "options": [
+      "3",
+      "−3",
+      "11",
+      "7"
+    ],
+    "correct_index": 0,
+    "explanation": "HCl fully dissociates: [H⁺]=0.001=10⁻³ M. pH = −log(10⁻³) = 3.",
+    "id": "rrb_alp_62995fdd"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 3,
+    "question_text": "Which of the following is a Lewis acid?",
+    "options": [
+      "BF₃",
+      "NH₃",
+      "H₂O",
+      "OH⁻"
+    ],
+    "correct_index": 0,
+    "explanation": "Lewis acid = electron pair acceptor. BF₃ has empty p orbital on B → accepts electron pair. NH₃, H₂O, OH⁻ are Lewis bases (electron pair donors).",
+    "id": "rrb_alp_ac02b7c4"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Syllogism",
+    "difficulty": 3,
+    "question_text": "Statements: All pens are keys. No key is a lock. Conclusion I: No pen is a lock. II: Some keys are pens.",
+    "options": [
+      "Both I and II follow",
+      "Only I follows",
+      "Only II follows",
+      "Neither follows"
+    ],
+    "correct_index": 0,
+    "explanation": "I: All pens are keys + No key is a lock → No pen is a lock. ✓ II: All pens are keys → Some keys are pens (conversion). ✓ Both follow.",
+    "id": "rrb_alp_e97686c9"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Mathematical Operations",
+    "difficulty": 3,
+    "question_text": "If + means ×, × means −, − means ÷, ÷ means +, then 8+6÷4×3−2=?",
+    "options": [
+      "50",
+      "44",
+      "52",
+      "48"
+    ],
+    "correct_index": 0,
+    "explanation": "Substitute: 8×6+4−3÷2 = 48+4−1.5 = 50.5 ≈ 50.",
+    "id": "rrb_alp_134fd5bd"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Blood Relations",
+    "difficulty": 3,
+    "question_text": "A man said to a woman 'Your mother's husband's sister is my aunt.' How is the woman related to the man?",
+    "options": [
+      "Sister",
+      "Cousin",
+      "Mother",
+      "Wife"
+    ],
+    "correct_index": 0,
+    "explanation": "Woman's mother's husband = woman's father. Father's sister = woman's paternal aunt = man's aunt. So they share the same paternal aunt → they are siblings (brother-sister).",
+    "id": "rrb_alp_7c7e642a"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 3,
+    "question_text": "A number when divided by 6, 9, and 12 leaves remainder 5 in each case. The smallest such number is:",
+    "options": [
+      "41",
+      "35",
+      "77",
+      "65"
+    ],
+    "correct_index": 0,
+    "explanation": "LCM(6,9,12) = 36. Required number = 36+5 = 41.",
+    "id": "rrb_alp_5931c13e"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Percentage",
+    "difficulty": 3,
+    "question_text": "In an election between 2 candidates, the winner got 58% votes and won by 2400 votes. Total valid votes were:",
+    "options": [
+      "15000",
+      "12000",
+      "10000",
+      "20000"
+    ],
+    "correct_index": 0,
+    "explanation": "Difference in votes = (58−42)% = 16% = 2400. Total = 2400/0.16 = 15000.",
+    "id": "rrb_alp_2d7ef28c"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "The efficiency of a Carnot engine working between 27°C and 327°C is:",
+    "options": [
+      "50%",
+      "75%",
+      "40%",
+      "60%"
+    ],
+    "correct_index": 0,
+    "explanation": "η = 1 − T_cold/T_hot = 1 − 300/600 = 1 − 0.5 = 50%. (Temperatures in Kelvin: 27+273=300K, 327+273=600K).",
+    "id": "rrb_alp_f5f9ec11"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Life Sciences",
+    "difficulty": 3,
+    "question_text": "The process of producing electricity from chemical reactions in a cell is:",
+    "options": [
+      "Electrochemical (Galvanic cell)",
+      "Electrolysis",
+      "Photoelectric effect",
+      "Nuclear fission"
+    ],
+    "correct_index": 0,
+    "explanation": "Galvanic/voltaic cell converts chemical energy → electrical energy via spontaneous redox reactions. Electrolysis is the reverse (electrical → chemical).",
+    "id": "rrb_alp_9198617c"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 3,
+    "question_text": "Three numbers are in ratio 2:3:5 and their sum of squares is 608. The largest number is:",
+    "options": [
+      "20",
+      "15",
+      "8",
+      "25"
+    ],
+    "correct_index": 0,
+    "explanation": "4x²+9x²+25x²=608 → 38x²=608 → x²=16 → x=4. Largest=5×4=20.",
+    "id": "rrb_alp_83071ecb"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 3,
+    "question_text": "If BRAKE=36 (2+18+1+11+5), then LIGHT=?",
+    "options": [
+      "56",
+      "54",
+      "58",
+      "52"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter = its position in alphabet. L=12,I=9,G=7,H=8,T=20. Sum=12+9+7+8+20=56.",
+    "id": "rrb_alp_82a0aada"
+  },
+  {
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 3,
+    "question_text": "The Human Development Index (HDI) is a composite measure of:",
+    "options": [
+      "Life expectancy, education, and per capita income",
+      "GDP, inflation, and unemployment",
+      "Trade balance, FDI, and reserves",
+      "Birth rate, death rate, and literacy"
+    ],
+    "correct_index": 0,
+    "explanation": "HDI (UNDP): combines life expectancy at birth (health), mean/expected years of schooling (education), and GNI per capita (standard of living).",
+    "id": "rrb_alp_7718a557"
+  },
+  {
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 3,
+    "question_text": "Superconductivity refers to the phenomenon where electrical resistance of a material becomes:",
+    "options": [
+      "Exactly zero below critical temperature",
+      "Very small at high temperature",
+      "Maximum at critical temperature",
+      "Infinite at low temperature"
+    ],
+    "correct_index": 0,
+    "explanation": "Superconductivity: zero electrical resistance and expulsion of magnetic fields (Meissner effect) below critical temperature Tc. Used in MRI magnets, maglev trains.",
+    "id": "rrb_alp_bd0ab6eb"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "The time period of a simple pendulum depends on:",
+    "options": [
+      "Length and g only (not mass or amplitude)",
+      "Mass only",
+      "Amplitude only",
+      "Both mass and length"
+    ],
+    "correct_index": 0,
+    "explanation": "T = 2π√(L/g). Period depends only on length L and gravitational acceleration g. Independent of mass and amplitude (for small oscillations).",
+    "id": "rrb_alp_94884dc5"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 3,
+    "question_text": "A sum doubles in 8 years at compound interest. In how many years will it become 8 times?",
+    "options": [
+      "24 years",
+      "16 years",
+      "32 years",
+      "20 years"
+    ],
+    "correct_index": 0,
+    "explanation": "If P doubles in 8 years: 2P in 8 yrs. 4P in 16 yrs. 8P in 24 yrs. (Each doubling takes 8 more years at same CI rate.) 2³=8 → 3×8=24 years.",
+    "id": "rrb_alp_aa231b3e"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 3,
+    "question_text": "The radius of a cone is 7 cm and slant height is 25 cm. Its volume is:",
+    "options": [
+      "1232 cm³",
+      "1540 cm³",
+      "3696 cm³",
+      "616 cm³"
+    ],
+    "correct_index": 0,
+    "explanation": "h=√(25²−7²)=√(625−49)=√576=24 cm. V=πr²h/3=(22/7)×49×24/3=22×7×8=1232 cm³.",
+    "id": "rrb_alp_b676bcf8"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "The cube of 4 is:",
+    "options": [
+      "64",
+      "16",
+      "12",
+      "8"
+    ],
+    "correct_index": 0,
+    "explanation": "4³=4×4×4=64."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Percentage",
+    "difficulty": 1,
+    "question_text": "50% of 80 is:",
+    "options": [
+      "40",
+      "50",
+      "30",
+      "45"
+    ],
+    "correct_index": 0,
+    "explanation": "50/100×80=40."
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "The de Broglie wavelength λ of a particle with momentum p is:",
+    "options": [
+      "h/p",
+      "hp",
+      "p/h",
+      "h²/p"
+    ],
+    "correct_index": 0,
+    "explanation": "de Broglie: λ=h/p where h=Planck's constant, p=mv. Smaller p (slower/lighter) → longer wavelength."
+  },
+  {
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 3,
+    "question_text": "The hybridisation of PCl₅ is:",
+    "options": [
+      "sp³d",
+      "sp³",
+      "sp³d²",
+      "sp²"
+    ],
+    "correct_index": 0,
+    "explanation": "PCl₅: P has 5 bond pairs, 0 lone pairs → trigonal bipyramidal → sp³d hybridisation."
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Syllogism",
+    "difficulty": 3,
+    "question_text": "All metals are good conductors. Silver is a metal. Therefore:",
+    "options": [
+      "Silver is a good conductor",
+      "Silver is not a conductor",
+      "Some metals are not conductors",
+      "Silver is an insulator"
+    ],
+    "correct_index": 0,
+    "explanation": "Valid syllogism: All M are G. S is M. ∴ S is G. Deductively sound."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 3,
+    "question_text": "If log₃ x = 4, then x =",
+    "options": [
+      "81",
+      "12",
+      "64",
+      "27"
+    ],
+    "correct_index": 0,
+    "explanation": "log₃ x=4 → x=3⁴=81."
+  },
+  {
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 3,
+    "question_text": "The SI unit of magnetic field strength (B) is:",
+    "options": [
+      "Tesla (T)",
+      "Weber",
+      "Henry",
+      "Gauss"
+    ],
+    "correct_index": 0,
+    "explanation": "Magnetic flux density B measured in Tesla. 1 T = 1 Wb/m². Gauss is the CGS unit (1T=10000 G)."
   }
 ]

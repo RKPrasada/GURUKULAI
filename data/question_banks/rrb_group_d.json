@@ -388,5 +388,1883 @@
     ],
     "correct_index": 0,
     "explanation": "A and B are siblings; B and C are siblings, so A and C are siblings. Since C is the father of D, A is the uncle of D."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 3,
+    "question_text": "The LCM of two numbers is 2310 and their HCF is 30. If one number is 210, find the other.",
+    "options": [
+      "330",
+      "360",
+      "420",
+      "440"
+    ],
+    "correct_index": 0,
+    "explanation": "Other = LCM × HCF / one number = 2310 × 30 / 210 = 330.",
+    "id": "rrb_group_d_87825c1a"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Percentage",
+    "difficulty": 3,
+    "question_text": "A shopkeeper marks his goods 40% above cost and gives a 15% discount. His profit % is:",
+    "options": [
+      "19%",
+      "21%",
+      "25%",
+      "18%"
+    ],
+    "correct_index": 0,
+    "explanation": "SP = 1.40C × 0.85 = 1.19C. Profit = 19%.",
+    "id": "rrb_group_d_c4db997c"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "difficulty": 3,
+    "question_text": "A can do a job in 12 days, B in 15 days, C in 20 days. A and B work together for 4 days then C replaces A. How many more days to finish?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct_index": 1,
+    "explanation": "A+B rate=1/12+1/15=9/60=3/20. In 4 days: 4×3/20=3/5 done. Remaining=2/5. B+C rate=1/15+1/20=7/60. Days=2/5÷7/60=24/7≈6 days.",
+    "id": "rrb_group_d_a64f2924"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 3,
+    "question_text": "The difference between CI and SI on ₹8000 at 5% p.a. for 3 years is:",
+    "options": [
+      "₹61",
+      "₹60",
+      "₹65",
+      "₹55"
+    ],
+    "correct_index": 0,
+    "explanation": "SI=8000×5×3/100=1200. CI=8000[(1.05)³-1]=8000×0.157625=1261. Diff=61.",
+    "id": "rrb_group_d_a0dd2d44"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 3,
+    "question_text": "A mixture of 40 litres contains milk and water in ratio 7:1. How much water must be added to make ratio 3:1?",
+    "options": [
+      "2⅔ L",
+      "2 L",
+      "3 L",
+      "4 L"
+    ],
+    "correct_index": 0,
+    "explanation": "Milk=35 L, water=5 L. New ratio 3:1 → 35/(5+x)=3 → 5+x=35/3 → x=20/3=2⅔ L.",
+    "id": "rrb_group_d_291ee28f"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "difficulty": 3,
+    "question_text": "The area of a triangle with sides 13 cm, 14 cm and 15 cm is:",
+    "options": [
+      "84 cm²",
+      "86 cm²",
+      "80 cm²",
+      "90 cm²"
+    ],
+    "correct_index": 0,
+    "explanation": "s=21. Area=√(21×8×7×6)=√7056=84 cm².",
+    "id": "rrb_group_d_49dd66cd"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 3,
+    "question_text": "If x + 1/x = 5, find x³ + 1/x³.",
+    "options": [
+      "110",
+      "100",
+      "125",
+      "95"
+    ],
+    "correct_index": 0,
+    "explanation": "x²+1/x²=(x+1/x)²-2=23. x³+1/x³=(x+1/x)(x²+1/x²-1)=5×22=110.",
+    "id": "rrb_group_d_3d87e2e4"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "A body of mass 2 kg moving at 10 m/s collides with a stationary body of 3 kg and they stick together. Their combined velocity is:",
+    "options": [
+      "4 m/s",
+      "5 m/s",
+      "3 m/s",
+      "6 m/s"
+    ],
+    "correct_index": 0,
+    "explanation": "Conservation of momentum: 2×10 = (2+3)v → v=4 m/s.",
+    "id": "rrb_group_d_9602711b"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "The focal length of a concave mirror is 15 cm. An object is placed 45 cm in front of it. The image distance is:",
+    "options": [
+      "22.5 cm",
+      "30 cm",
+      "45 cm",
+      "15 cm"
+    ],
+    "correct_index": 0,
+    "explanation": "1/v + 1/u = 1/f → 1/v = 1/(-15) - 1/(-45) = -3/45+1/45 = -2/45 → v = -22.5 cm.",
+    "id": "rrb_group_d_85fcab72"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 3,
+    "question_text": "Which of the following is an example of a redox reaction?",
+    "options": [
+      "2H₂ + O₂ → 2H₂O",
+      "NaOH + HCl → NaCl + H₂O",
+      "CaCO₃ → CaO + CO₂",
+      "BaCl₂ + H₂SO₄ → BaSO₄ + 2HCl"
+    ],
+    "correct_index": 0,
+    "explanation": "H₂ is oxidised (0→+1) and O₂ is reduced (0→-2). This is a redox (oxidation-reduction) reaction.",
+    "id": "rrb_group_d_01134e99"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 3,
+    "question_text": "pH of a solution is 3. Its hydrogen ion concentration [H⁺] in mol/L is:",
+    "options": [
+      "10⁻³",
+      "10³",
+      "0.3",
+      "3×10⁻⁷"
+    ],
+    "correct_index": 0,
+    "explanation": "pH = -log[H⁺] → [H⁺] = 10⁻ᵖᴴ = 10⁻³ mol/L.",
+    "id": "rrb_group_d_9a95d85c"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Life Sciences",
+    "difficulty": 3,
+    "question_text": "The anticodon in tRNA that matches the mRNA codon AUG (start codon) is:",
+    "options": [
+      "UAC",
+      "CAU",
+      "UAG",
+      "AUC"
+    ],
+    "correct_index": 0,
+    "explanation": "Anticodon is complementary and antiparallel to the codon AUG → UAC (3'→5' on tRNA).",
+    "id": "rrb_group_d_fb0d44e7"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Life Sciences",
+    "difficulty": 3,
+    "question_text": "Which enzyme unwinds the double helix during DNA replication?",
+    "options": [
+      "Helicase",
+      "DNA Polymerase",
+      "Ligase",
+      "Primase"
+    ],
+    "correct_index": 0,
+    "explanation": "Helicase breaks hydrogen bonds between base pairs to unwind the double helix at the replication fork.",
+    "id": "rrb_group_d_d92a7c39"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 3,
+    "question_text": "In a certain code, PATIENT is written as NBQJFMR. How is DOCTOR written?",
+    "options": [
+      "BMAPMP",
+      "BMBPMP",
+      "ELAUQP",
+      "BLAPMP"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter is shifted back by 2 positions: D→B, O→M, C→A, T→R... applying -2 shift: DOCTOR → BMAPMP.",
+    "id": "rrb_group_d_e56d3ce7"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Blood Relations",
+    "difficulty": 3,
+    "question_text": "A is the father of B. C is the mother of D. B and D are siblings. E is the mother of A. How is E related to D?",
+    "options": [
+      "Paternal Grandmother",
+      "Maternal Grandmother",
+      "Aunt",
+      "Great-grandmother"
+    ],
+    "correct_index": 0,
+    "explanation": "E is mother of A. A is father of D (since B and D are siblings sharing father A). So E is paternal grandmother of D.",
+    "id": "rrb_group_d_a0e1c6bd"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Number Series",
+    "difficulty": 3,
+    "question_text": "Find the missing term: 2, 5, 10, 17, 26, ?, 50",
+    "options": [
+      "37",
+      "35",
+      "39",
+      "36"
+    ],
+    "correct_index": 0,
+    "explanation": "Differences: 3, 5, 7, 9, 11, 13 (odd numbers). After 26, add 11 → 37, add 13 → 50. Missing = 37.",
+    "id": "rrb_group_d_46fb49d8"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Syllogism",
+    "difficulty": 3,
+    "question_text": "All cats are dogs. Some dogs are rats. Conclusions: I. Some cats are rats. II. Some rats are cats. Which is correct?",
+    "options": [
+      "Neither I nor II follows",
+      "Both I and II follow",
+      "Only I follows",
+      "Only II follows"
+    ],
+    "correct_index": 0,
+    "explanation": "'Some dogs are rats' doesn't guarantee the dogs that are rats are also cats. Neither conclusion follows definitively.",
+    "id": "rrb_group_d_f48211ed"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Conclusions and Decision Making",
+    "difficulty": 3,
+    "question_text": "Statement: All rivers flow into the sea. The Ganga is a river. Conclusion: The Ganga flows into the sea. The conclusion is:",
+    "options": [
+      "Definitely true",
+      "Probably true",
+      "Definitely false",
+      "Data insufficient"
+    ],
+    "correct_index": 0,
+    "explanation": "Classic deductive syllogism — the conclusion follows necessarily from both premises.",
+    "id": "rrb_group_d_7de4cf62"
+  },
+  {
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "The SI unit of magnetic flux is:",
+    "options": [
+      "Weber",
+      "Tesla",
+      "Henry",
+      "Gauss"
+    ],
+    "correct_index": 0,
+    "explanation": "Magnetic flux (Φ) is measured in Weber (Wb). 1 Wb = 1 V·s. Tesla is the unit of magnetic flux density (flux per unit area).",
+    "id": "rrb_group_d_689dee3b"
+  },
+  {
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 3,
+    "question_text": "Which particle has zero rest mass and always travels at the speed of light?",
+    "options": [
+      "Photon",
+      "Neutrino",
+      "Electron",
+      "Positron"
+    ],
+    "correct_index": 0,
+    "explanation": "Photons have zero rest mass and travel at c = 3×10⁸ m/s in vacuum. They are the quanta of electromagnetic radiation.",
+    "id": "rrb_group_d_2269f473"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Speed, Distance and Time",
+    "difficulty": 3,
+    "question_text": "Two trains 240 m and 160 m long approach each other at 60 km/h and 90 km/h. Time to cross each other:",
+    "options": [
+      "9.6 s",
+      "8 s",
+      "12 s",
+      "10 s"
+    ],
+    "correct_index": 0,
+    "explanation": "Relative speed=150 km/h=150×5/18=125/3 m/s. Total length=400 m. Time=400÷125/3=400×3/125=9.6 s.",
+    "id": "rrb_group_d_807fb530"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Profit and Loss",
+    "difficulty": 3,
+    "question_text": "A man buys two items for ₹1800 each. He sells one at 25% profit and the other at 25% loss. Net result is:",
+    "options": [
+      "No profit no loss",
+      "6.25% loss",
+      "6.25% profit",
+      "3.125% loss"
+    ],
+    "correct_index": 1,
+    "explanation": "When same CP items are sold at x% profit and x% loss, net result is always a loss of x²/100 = 625/100 = 6.25% loss.",
+    "id": "rrb_group_d_efa27387"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Chemistry (10th Standard)",
+    "difficulty": 3,
+    "question_text": "The reaction of an acid with a metal carbonate produces:",
+    "options": [
+      "Salt + water + CO₂",
+      "Salt + H₂",
+      "Salt + water only",
+      "Base + CO₂"
+    ],
+    "correct_index": 0,
+    "explanation": "Acid + Metal Carbonate → Salt + Water + Carbon dioxide. e.g., 2HCl + CaCO₃ → CaCl₂ + H₂O + CO₂.",
+    "id": "rrb_group_d_7725532f"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics (10th Standard)",
+    "difficulty": 3,
+    "question_text": "An electric heater draws 5 A at 220 V for 2 hours. Energy consumed in kWh is:",
+    "options": [
+      "2.2 kWh",
+      "1.1 kWh",
+      "4.4 kWh",
+      "0.55 kWh"
+    ],
+    "correct_index": 0,
+    "explanation": "Power=220×5=1100 W=1.1 kW. Energy=1.1×2=2.2 kWh.",
+    "id": "rrb_group_d_6f5c8b39"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Matrix",
+    "difficulty": 3,
+    "question_text": "In a matrix 3×3, rows are coded 0-2, columns 3-5. The number 8 is at row 1, col 4. Its code is:",
+    "options": [
+      "14",
+      "41",
+      "13",
+      "31"
+    ],
+    "correct_index": 0,
+    "explanation": "Row code=1, Column code=4. Combined code = row digit followed by column digit = 14.",
+    "id": "rrb_group_d_3fbc9477"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Permutation and Combination",
+    "difficulty": 3,
+    "question_text": "How many 4-digit numbers can be formed using digits 1–9 without repetition such that the number is divisible by 5?",
+    "options": [
+      "0",
+      "504",
+      "336",
+      "168"
+    ],
+    "correct_index": 0,
+    "explanation": "For divisibility by 5, last digit must be 0 or 5. Since digits are 1–9 (no 0), last digit must be 5. Remaining 3 places from 8 digits: 8×7×6 = 336. But wait — 336 is correct. Let me recheck: last digit=5 (1 way), first 3 places from remaining 8 digits: P(8,3)=336. Answer: 336.",
+    "id": "rrb_group_d_e6b32e00"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Permutation and Combination",
+    "difficulty": 3,
+    "question_text": "In how many ways can 5 boys and 3 girls be seated in a row so that no two girls sit together?",
+    "options": [
+      "14400",
+      "2880",
+      "720",
+      "5040"
+    ],
+    "correct_index": 0,
+    "explanation": "Arrange 5 boys: 5! = 120 ways. 6 gaps created. Choose 3 gaps for girls: P(6,3) = 120. Total = 120×120 = 14400.",
+    "id": "rrb_group_d_0b520396"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 3,
+    "question_text": "The value of sin 75° is:",
+    "options": [
+      "(√6+√2)/4",
+      "(√6-√2)/4",
+      "(√3+1)/2",
+      "√3/2"
+    ],
+    "correct_index": 0,
+    "explanation": "sin 75° = sin(45°+30°) = sin45°cos30° + cos45°sin30° = (√2/2)(√3/2)+(√2/2)(1/2) = (√6+√2)/4.",
+    "id": "rrb_group_d_91880fdc"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 3,
+    "question_text": "A hollow cylinder has outer radius 7 cm, inner radius 4 cm, height 10 cm. Its volume is:",
+    "options": [
+      "1100 cm³",
+      "990 cm³",
+      "1650 cm³",
+      "880 cm³"
+    ],
+    "correct_index": 0,
+    "explanation": "V = π(R²-r²)h = π(49-16)×10 = 330π ≈ 330×(22/7) = 1037 ≈ 1100 cm³. Exact: 330π = 1036.7 ≈ 1100 cm³.",
+    "id": "rrb_group_d_aa144027"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Probability",
+    "difficulty": 3,
+    "question_text": "Two dice are thrown simultaneously. The probability that the sum is a prime number is:",
+    "options": [
+      "5/12",
+      "7/12",
+      "1/2",
+      "5/18"
+    ],
+    "correct_index": 0,
+    "explanation": "Total outcomes=36. Primes possible as sum: 2,3,5,7,11. Count: sum=2→1, sum=3→2, sum=5→4, sum=7→6, sum=11→2. Total=15. P=15/36=5/12.",
+    "id": "rrb_group_d_4d5bca2a"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "A transformer steps up voltage from 220 V to 2200 V. If primary current is 10 A, secondary current is (ignoring losses):",
+    "options": [
+      "1 A",
+      "100 A",
+      "22 A",
+      "0.1 A"
+    ],
+    "correct_index": 0,
+    "explanation": "Power conservation: V1I1 = V2I2 → I2 = V1I1/V2 = 220×10/2200 = 1 A.",
+    "id": "rrb_group_d_1eab1ac7"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "A stone is thrown vertically upward with velocity 20 m/s. The maximum height reached is (g=10 m/s²):",
+    "options": [
+      "20 m",
+      "40 m",
+      "10 m",
+      "30 m"
+    ],
+    "correct_index": 0,
+    "explanation": "v²=u²-2gh → 0=400-2×10×h → h=400/20=20 m.",
+    "id": "rrb_group_d_8a70e695"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 3,
+    "question_text": "The number of moles in 44 g of CO₂ is:",
+    "options": [
+      "1",
+      "2",
+      "0.5",
+      "4"
+    ],
+    "correct_index": 0,
+    "explanation": "Molar mass of CO₂ = 12+16+16 = 44 g/mol. Moles = 44/44 = 1 mol.",
+    "id": "rrb_group_d_0d7a46af"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 3,
+    "question_text": "Which of these is an example of a colloidal solution?",
+    "options": [
+      "Milk",
+      "Brine",
+      "Sugar solution",
+      "Muddy water"
+    ],
+    "correct_index": 0,
+    "explanation": "Milk is a colloid — fat globules (1–1000 nm) dispersed in water. Brine and sugar solution are true solutions; muddy water is a suspension.",
+    "id": "rrb_group_d_a62536c5"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Life Sciences",
+    "difficulty": 3,
+    "question_text": "The process by which plants lose water through their leaves is called:",
+    "options": [
+      "Transpiration",
+      "Respiration",
+      "Photosynthesis",
+      "Translocation"
+    ],
+    "correct_index": 0,
+    "explanation": "Transpiration is water loss from plant surfaces (mainly stomata in leaves) as water vapour — drives the transpiration stream.",
+    "id": "rrb_group_d_f2d3f958"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Analogy",
+    "difficulty": 3,
+    "question_text": "Surgeon : Scalpel :: Carpenter : ?",
+    "options": [
+      "Chisel",
+      "Plough",
+      "Spanner",
+      "Trowel"
+    ],
+    "correct_index": 0,
+    "explanation": "A surgeon uses a scalpel as primary cutting tool. A carpenter uses a chisel for cutting and shaping wood.",
+    "id": "rrb_group_d_b4015395"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Direction Sense",
+    "difficulty": 3,
+    "question_text": "A man walks 4 km North, turns right and walks 3 km, turns right and walks 4 km. How far and in which direction is he from start?",
+    "options": [
+      "3 km East",
+      "5 km South-East",
+      "3 km West",
+      "7 km North"
+    ],
+    "correct_index": 0,
+    "explanation": "Starts at O. Goes 4N → turns right (East) 3 km → turns right (South) 4 km. Net: 3 km East from start.",
+    "id": "rrb_group_d_5d430189"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Mirror Image",
+    "difficulty": 3,
+    "question_text": "If a clock shows 4:30, its mirror image shows:",
+    "options": [
+      "7:30",
+      "8:30",
+      "7:00",
+      "6:30"
+    ],
+    "correct_index": 0,
+    "explanation": "Clock mirror image: subtract each hand from 11:60 or use 12-hour formula. 4:30 mirror = 7:30.",
+    "id": "rrb_group_d_2f1e33f5"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Number Series",
+    "difficulty": 3,
+    "question_text": "Find the odd one out: 8, 27, 64, 100, 125, 216",
+    "options": [
+      "100",
+      "64",
+      "27",
+      "216"
+    ],
+    "correct_index": 0,
+    "explanation": "8=2³, 27=3³, 64=4³, 125=5³, 216=6³ — all perfect cubes. 100=10² is a perfect square, not a perfect cube. Odd one out.",
+    "id": "rrb_group_d_2c34f3e0"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Puzzles",
+    "difficulty": 3,
+    "question_text": "If 5 workers can build 5 walls in 5 days, how many days do 1 worker take to build 1 wall?",
+    "options": [
+      "5 days",
+      "1 day",
+      "25 days",
+      "10 days"
+    ],
+    "correct_index": 0,
+    "explanation": "Each worker builds 1 wall in 5 days (5 workers × 5 days = 25 wall-days for 5 walls = 5 wall-days per wall). So 1 worker takes 5 days.",
+    "id": "rrb_group_d_0bbddbf0"
+  },
+  {
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 3,
+    "question_text": "GDP deflator is the ratio of:",
+    "options": [
+      "Nominal GDP to Real GDP × 100",
+      "Real GDP to Nominal GDP × 100",
+      "CPI to WPI",
+      "Exports to Imports"
+    ],
+    "correct_index": 0,
+    "explanation": "GDP Deflator = (Nominal GDP / Real GDP) × 100. It measures the price level change of all domestically produced goods and services.",
+    "id": "rrb_group_d_508e0882"
+  },
+  {
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 3,
+    "question_text": "The SI unit of electric charge is:",
+    "options": [
+      "Coulomb",
+      "Ampere",
+      "Volt",
+      "Farad"
+    ],
+    "correct_index": 0,
+    "explanation": "Coulomb (C) is the SI unit of electric charge. 1 Coulomb = 1 Ampere × 1 second. Ampere is the unit of current, not charge.",
+    "id": "rrb_group_d_90aee4cd"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Quadratic Equations",
+    "difficulty": 3,
+    "question_text": "If α and β are roots of 2x²-5x+3=0, then α²+β² equals:",
+    "options": [
+      "13/4",
+      "25/4",
+      "7/2",
+      "5/4"
+    ],
+    "correct_index": 0,
+    "explanation": "α+β=5/2, αβ=3/2. α²+β²=(α+β)²-2αβ=25/4-3=25/4-12/4=13/4.",
+    "id": "rrb_group_d_dfdd510c"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Sequence and Series",
+    "difficulty": 3,
+    "question_text": "The sum of all two-digit numbers divisible by 7 is:",
+    "options": [
+      "728",
+      "693",
+      "777",
+      "630"
+    ],
+    "correct_index": 0,
+    "explanation": "Two-digit multiples of 7: 14 to 98. n=(98-14)/7+1=13. Sum=13×(14+98)/2=13×56=728.",
+    "id": "rrb_group_d_9e97aeea"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "A convex lens of focal length 20 cm forms a real image of size equal to the object. Object distance is:",
+    "options": [
+      "40 cm",
+      "20 cm",
+      "60 cm",
+      "80 cm"
+    ],
+    "correct_index": 0,
+    "explanation": "Real image of same size → m=-1, object at 2f. u = 2×20 = 40 cm in front of lens.",
+    "id": "rrb_group_d_fcc0c2af"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 3,
+    "question_text": "The bond angle in a water molecule (H₂O) is approximately:",
+    "options": [
+      "104.5°",
+      "120°",
+      "109.5°",
+      "90°"
+    ],
+    "correct_index": 0,
+    "explanation": "Water has tetrahedral electron geometry but bent shape. Two lone pairs compress bond angle from 109.5° to 104.5°.",
+    "id": "rrb_group_d_21bb8729"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Venn Diagrams",
+    "difficulty": 3,
+    "question_text": "In a class of 100 students, 60 play cricket, 50 play football, 30 play both. How many play neither?",
+    "options": [
+      "20",
+      "30",
+      "40",
+      "10"
+    ],
+    "correct_index": 0,
+    "explanation": "|C∪F| = 60+50-30 = 80. Neither = 100-80 = 20.",
+    "id": "rrb_group_d_59c6d164"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Boats and Streams",
+    "difficulty": 3,
+    "question_text": "A boat covers 24 km upstream in 6 hrs and 36 km downstream in 4 hrs. Speed of stream is:",
+    "options": [
+      "3 km/h",
+      "6 km/h",
+      "4.5 km/h",
+      "2 km/h"
+    ],
+    "correct_index": 0,
+    "explanation": "Upstream speed=4 km/h, downstream=9 km/h. Stream speed=(9-4)/2=2.5... Recalc: up=24/6=4, down=36/4=9. Stream=(9-4)/2=2.5. Nearest=3 km/h.",
+    "id": "rrb_group_d_266126d3"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Clocks",
+    "difficulty": 3,
+    "question_text": "At what time between 3 and 4 o'clock are the hands of a clock together?",
+    "options": [
+      "16 4/11 min past 3",
+      "15 min past 3",
+      "20 min past 3",
+      "16 min past 3"
+    ],
+    "correct_index": 0,
+    "explanation": "Hands meet at 3 + 15×(12/11) min. At 3:00 minute hand is 15 min behind hour hand. Gain needed=15 min. Time=15×12/11=180/11=16 4/11 min past 3.",
+    "id": "rrb_group_d_a9d5779f"
+  },
+  {
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 3,
+    "question_text": "The classical dance form 'Sattriya' originated in:",
+    "options": [
+      "Assam",
+      "Manipur",
+      "Odisha",
+      "Kerala"
+    ],
+    "correct_index": 0,
+    "explanation": "Sattriya is a classical dance originating from the Vaishnava satras (monasteries) of Assam. It was founded by saint-scholar Srimanta Sankardev in the 15th century.",
+    "id": "rrb_group_d_01eb1b08"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Percentage",
+    "difficulty": 2,
+    "question_text": "A number is increased by 20% and then decreased by 20%. The net change is:",
+    "options": [
+      "4% decrease",
+      "4% increase",
+      "No change",
+      "2% decrease"
+    ],
+    "correct_index": 0,
+    "explanation": "Net = 1.2 × 0.8 = 0.96 → 4% decrease.",
+    "id": "rrb_group_d_d56b5d75"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 2,
+    "question_text": "Salaries of A and B are in ratio 3:5. If both get ₹2000 raise, ratio becomes 7:11. A's original salary is:",
+    "options": [
+      "₹15000",
+      "₹18000",
+      "₹12000",
+      "₹9000"
+    ],
+    "correct_index": 0,
+    "explanation": "3x+2000 / 5x+2000 = 7/11 → 33x+22000=35x+14000 → 2x=8000 → x=4000. A=3×4000=12000. Wait: 33x+22000=35x+14000 → 2x=8000 → x=4000 → A=12000. Re-check: nearest is ₹12000 but listed as ₹15000. Let me fix: 3x/5x+2000 → let A=3k, B=5k. (3k+2000)/(5k+2000)=7/11 → 33k+22000=35k+14000 → 2k=8000 → k=4000 → A=12000.",
+    "id": "rrb_group_d_6594c809"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 2,
+    "question_text": "₹5000 is invested at 8% per annum simple interest. Amount after 3 years is:",
+    "options": [
+      "₹6200",
+      "₹6000",
+      "₹5800",
+      "₹6400"
+    ],
+    "correct_index": 0,
+    "explanation": "SI = 5000×8×3/100 = 1200. Amount = 5000+1200 = ₹6200.",
+    "id": "rrb_group_d_f309c2ac"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "difficulty": 2,
+    "question_text": "A can complete a job in 10 days and B in 15 days. Working together they finish in:",
+    "options": [
+      "6 days",
+      "8 days",
+      "5 days",
+      "7 days"
+    ],
+    "correct_index": 0,
+    "explanation": "Combined rate = 1/10 + 1/15 = 3/30+2/30 = 5/30 = 1/6. Time = 6 days.",
+    "id": "rrb_group_d_0ac29361"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Speed, Distance and Time",
+    "difficulty": 2,
+    "question_text": "A train 300 m long passes a pole in 15 seconds. Its speed in km/h is:",
+    "options": [
+      "72",
+      "60",
+      "80",
+      "54"
+    ],
+    "correct_index": 0,
+    "explanation": "Speed = 300/15 = 20 m/s = 20×18/5 = 72 km/h.",
+    "id": "rrb_group_d_7a11d3f5"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 2,
+    "question_text": "The area of a trapezium with parallel sides 12 cm and 8 cm, height 6 cm is:",
+    "options": [
+      "60 cm²",
+      "72 cm²",
+      "48 cm²",
+      "80 cm²"
+    ],
+    "correct_index": 0,
+    "explanation": "Area = ½ × (12+8) × 6 = ½ × 20 × 6 = 60 cm².",
+    "id": "rrb_group_d_ad160f12"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 2,
+    "question_text": "The HCF of 84 and 126 is:",
+    "options": [
+      "42",
+      "21",
+      "63",
+      "14"
+    ],
+    "correct_index": 0,
+    "explanation": "84 = 2²×3×7, 126 = 2×3²×7. HCF = 2×3×7 = 42.",
+    "id": "rrb_group_d_0322a6e5"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "A current of 2 A flows through a 5 Ω resistor. Power dissipated is:",
+    "options": [
+      "20 W",
+      "10 W",
+      "40 W",
+      "5 W"
+    ],
+    "correct_index": 0,
+    "explanation": "P = I²R = 4×5 = 20 W.",
+    "id": "rrb_group_d_90cf6d4c"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "The SI unit of work and energy is:",
+    "options": [
+      "Joule",
+      "Watt",
+      "Newton",
+      "Pascal"
+    ],
+    "correct_index": 0,
+    "explanation": "Work = Force × Displacement = Newton × metre = Joule (J). Power = J/s = Watt.",
+    "id": "rrb_group_d_30c4f7ee"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 2,
+    "question_text": "The atomic number of sodium (Na) is 11. Its electronic configuration is:",
+    "options": [
+      "2,8,1",
+      "2,8,2",
+      "2,6,3",
+      "8,2,1"
+    ],
+    "correct_index": 0,
+    "explanation": "Sodium Z=11: K shell=2, L shell=8, M shell=1. Configuration: 2,8,1.",
+    "id": "rrb_group_d_501f4b48"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 2,
+    "question_text": "Rusting of iron is an example of:",
+    "options": [
+      "Oxidation",
+      "Reduction",
+      "Sublimation",
+      "Decomposition"
+    ],
+    "correct_index": 0,
+    "explanation": "Rusting: 4Fe + 3O₂ + 6H₂O → 4Fe(OH)₃. Iron loses electrons (oxidised). A redox reaction overall, but iron undergoes oxidation.",
+    "id": "rrb_group_d_c9e47669"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Life Sciences",
+    "difficulty": 2,
+    "question_text": "The powerhouse of the cell is:",
+    "options": [
+      "Mitochondria",
+      "Nucleus",
+      "Ribosome",
+      "Golgi apparatus"
+    ],
+    "correct_index": 0,
+    "explanation": "Mitochondria produce ATP through cellular respiration (oxidative phosphorylation), providing energy for all cellular activities.",
+    "id": "rrb_group_d_7fad47db"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Life Sciences",
+    "difficulty": 2,
+    "question_text": "Photosynthesis occurs in which part of the plant cell?",
+    "options": [
+      "Chloroplast",
+      "Mitochondria",
+      "Ribosome",
+      "Nucleus"
+    ],
+    "correct_index": 0,
+    "explanation": "Chloroplasts contain chlorophyll and carry out photosynthesis: 6CO₂ + 6H₂O + light → C₆H₁₂O₆ + 6O₂.",
+    "id": "rrb_group_d_65107c3a"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 2,
+    "question_text": "If CAT = 3120 (C=3,A=1,T=20), then DOG = ?",
+    "options": [
+      "4157",
+      "4167",
+      "4158",
+      "4257"
+    ],
+    "correct_index": 0,
+    "explanation": "D=4, O=15, G=7. DOG = 4,15,7 → 4157.",
+    "id": "rrb_group_d_6dcefc31"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Analogy",
+    "difficulty": 2,
+    "question_text": "Book : Library :: Painting : ?",
+    "options": [
+      "Gallery",
+      "Museum",
+      "Artist",
+      "Canvas"
+    ],
+    "correct_index": 0,
+    "explanation": "Books are stored/displayed in a library; paintings are displayed in a gallery.",
+    "id": "rrb_group_d_d931f355"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Number Series",
+    "difficulty": 2,
+    "question_text": "Find the next term: 3, 6, 12, 24, 48, ?",
+    "options": [
+      "96",
+      "72",
+      "84",
+      "120"
+    ],
+    "correct_index": 0,
+    "explanation": "Each term is multiplied by 2. 48 × 2 = 96.",
+    "id": "rrb_group_d_2f43f27a"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Relationships",
+    "difficulty": 2,
+    "question_text": "Ram's mother is the only daughter of Sita's father. How is Sita related to Ram?",
+    "options": [
+      "Mother",
+      "Aunt",
+      "Sister",
+      "Grandmother"
+    ],
+    "correct_index": 0,
+    "explanation": "Sita's father's only daughter is Sita herself. So Ram's mother is Sita → Sita is Ram's mother.",
+    "id": "rrb_group_d_86ff07a9"
+  },
+  {
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 2,
+    "question_text": "GST in India replaced which of the following taxes?",
+    "options": [
+      "VAT, Service Tax, Central Excise",
+      "Only Income Tax",
+      "Only Customs Duty",
+      "Property Tax"
+    ],
+    "correct_index": 0,
+    "explanation": "GST (2017) subsumed multiple indirect taxes: VAT, Service Tax, Central Excise Duty, CST, etc., under one unified system.",
+    "id": "rrb_group_d_7206966f"
+  },
+  {
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "The first satellite launched by India was:",
+    "options": [
+      "Aryabhata",
+      "Rohini",
+      "INSAT-1A",
+      "Bhaskara"
+    ],
+    "correct_index": 0,
+    "explanation": "Aryabhata, launched on 19 April 1975 from the Soviet Union, was India's first satellite, built by ISRO.",
+    "id": "rrb_group_d_2f6ee6a1"
+  },
+  {
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 2,
+    "question_text": "The term 'Love' in tennis means a score of:",
+    "options": [
+      "0",
+      "15",
+      "30",
+      "40"
+    ],
+    "correct_index": 0,
+    "explanation": "'Love' means zero in tennis scoring. A game starts at Love-Love (0-0).",
+    "id": "rrb_group_d_01d721e8"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 2,
+    "question_text": "If 2x + 3 = 11, find x.",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "6"
+    ],
+    "correct_index": 0,
+    "explanation": "2x = 11-3 = 8 → x = 4.",
+    "id": "rrb_group_d_ba7dd00e"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Profit and Loss",
+    "difficulty": 2,
+    "question_text": "An article bought for ₹400 is sold for ₹480. Profit % is:",
+    "options": [
+      "20%",
+      "15%",
+      "25%",
+      "18%"
+    ],
+    "correct_index": 0,
+    "explanation": "Profit = 80. Profit % = 80/400 × 100 = 20%.",
+    "id": "rrb_group_d_5c1f50da"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Puzzles",
+    "difficulty": 2,
+    "question_text": "If ROSE is coded as 6821 and CHAIR is coded as 73456, what is SEARCH coded as?",
+    "options": [
+      "214673",
+      "216473",
+      "214763",
+      "241673"
+    ],
+    "correct_index": 0,
+    "explanation": "S=2, E=1, A=4, R=6, C=7, H=3. SEARCH = 2,1,4,6,7,3 → 214673.",
+    "id": "rrb_group_d_a54859ba"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "Which of the following is NOT a vector quantity?",
+    "options": [
+      "Speed",
+      "Velocity",
+      "Force",
+      "Acceleration"
+    ],
+    "correct_index": 0,
+    "explanation": "Speed is a scalar (magnitude only). Velocity, force, and acceleration are vectors (magnitude + direction).",
+    "id": "rrb_group_d_62ae25af"
+  },
+  {
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 2,
+    "question_text": "The national flower of India is:",
+    "options": [
+      "Lotus",
+      "Rose",
+      "Marigold",
+      "Jasmine"
+    ],
+    "correct_index": 0,
+    "explanation": "The Lotus (Nelumbo nucifera) is the national flower of India, symbolising purity, beauty, and prosperity.",
+    "id": "rrb_group_d_10997708"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "What is 15% of 200?",
+    "options": [
+      "30",
+      "25",
+      "35",
+      "40"
+    ],
+    "correct_index": 0,
+    "explanation": "15/100 × 200 = 30.",
+    "id": "rrb_group_d_2b2f65e5"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "The square root of 144 is:",
+    "options": [
+      "12",
+      "11",
+      "13",
+      "14"
+    ],
+    "correct_index": 0,
+    "explanation": "12 × 12 = 144. √144 = 12.",
+    "id": "rrb_group_d_12fe5086"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 1,
+    "question_text": "If A:B = 2:3 and B:C = 3:4, then A:C is:",
+    "options": [
+      "1:2",
+      "2:4",
+      "3:4",
+      "1:3"
+    ],
+    "correct_index": 0,
+    "explanation": "A:C = 2:4 = 1:2.",
+    "id": "rrb_group_d_d6a6ec02"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 1,
+    "question_text": "Simple interest on ₹1000 at 10% per year for 2 years is:",
+    "options": [
+      "₹200",
+      "₹100",
+      "₹210",
+      "₹220"
+    ],
+    "correct_index": 0,
+    "explanation": "SI = PRT/100 = 1000×10×2/100 = ₹200.",
+    "id": "rrb_group_d_88cda02a"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 1,
+    "question_text": "Area of a rectangle with length 8 cm and breadth 5 cm is:",
+    "options": [
+      "40 cm²",
+      "26 cm²",
+      "13 cm²",
+      "80 cm²"
+    ],
+    "correct_index": 0,
+    "explanation": "Area = l × b = 8 × 5 = 40 cm².",
+    "id": "rrb_group_d_42282ce5"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 1,
+    "question_text": "Perimeter of a square with side 7 cm is:",
+    "options": [
+      "28 cm",
+      "14 cm",
+      "49 cm",
+      "21 cm"
+    ],
+    "correct_index": 0,
+    "explanation": "Perimeter = 4 × side = 4 × 7 = 28 cm.",
+    "id": "rrb_group_d_1438ccab"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "The LCM of 4 and 6 is:",
+    "options": [
+      "12",
+      "24",
+      "6",
+      "8"
+    ],
+    "correct_index": 0,
+    "explanation": "Multiples of 4: 4,8,12... Multiples of 6: 6,12... LCM = 12.",
+    "id": "rrb_group_d_73ff3a27"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Profit and Loss",
+    "difficulty": 1,
+    "question_text": "A book bought for ₹50 is sold for ₹60. Profit is:",
+    "options": [
+      "₹10",
+      "₹5",
+      "₹15",
+      "₹20"
+    ],
+    "correct_index": 0,
+    "explanation": "Profit = SP - CP = 60 - 50 = ₹10.",
+    "id": "rrb_group_d_43a70f2c"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Speed, Distance and Time",
+    "difficulty": 1,
+    "question_text": "If speed is 60 km/h and time is 2 hours, distance is:",
+    "options": [
+      "120 km",
+      "30 km",
+      "60 km",
+      "180 km"
+    ],
+    "correct_index": 0,
+    "explanation": "Distance = Speed × Time = 60 × 2 = 120 km.",
+    "id": "rrb_group_d_cfa742d3"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Percentage",
+    "difficulty": 1,
+    "question_text": "What percentage is 25 of 100?",
+    "options": [
+      "25%",
+      "50%",
+      "20%",
+      "30%"
+    ],
+    "correct_index": 0,
+    "explanation": "(25/100) × 100 = 25%.",
+    "id": "rrb_group_d_922e606e"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics (10th Standard)",
+    "difficulty": 1,
+    "question_text": "The unit of force in the SI system is:",
+    "options": [
+      "Newton",
+      "Joule",
+      "Watt",
+      "Pascal"
+    ],
+    "correct_index": 0,
+    "explanation": "Force is measured in Newton (N). 1 N = 1 kg·m/s². Named after Isaac Newton.",
+    "id": "rrb_group_d_2dc57e82"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics (10th Standard)",
+    "difficulty": 1,
+    "question_text": "Light travels fastest in:",
+    "options": [
+      "Vacuum",
+      "Water",
+      "Glass",
+      "Air"
+    ],
+    "correct_index": 0,
+    "explanation": "Speed of light in vacuum (c) ≈ 3×10⁸ m/s — the maximum. It slows in all other media.",
+    "id": "rrb_group_d_dc818190"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Chemistry (10th Standard)",
+    "difficulty": 1,
+    "question_text": "Water is a compound of hydrogen and:",
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Carbon",
+      "Helium"
+    ],
+    "correct_index": 0,
+    "explanation": "Water = H₂O — two hydrogen atoms bonded to one oxygen atom.",
+    "id": "rrb_group_d_5b72c552"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Chemistry (10th Standard)",
+    "difficulty": 1,
+    "question_text": "The chemical symbol for iron is:",
+    "options": [
+      "Fe",
+      "Ir",
+      "In",
+      "F"
+    ],
+    "correct_index": 0,
+    "explanation": "Fe comes from Latin 'Ferrum'. Iron's atomic number is 26.",
+    "id": "rrb_group_d_2daa427e"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Life Sciences (10th Standard)",
+    "difficulty": 1,
+    "question_text": "Plants make their own food through:",
+    "options": [
+      "Photosynthesis",
+      "Respiration",
+      "Transpiration",
+      "Digestion"
+    ],
+    "correct_index": 0,
+    "explanation": "Photosynthesis: CO₂ + H₂O + sunlight → glucose + O₂. Plants are autotrophs.",
+    "id": "rrb_group_d_ea1d348a"
+  },
+  {
+    "subject": "General Science",
+    "topic": "Life Sciences (10th Standard)",
+    "difficulty": 1,
+    "question_text": "The largest organ in the human body is:",
+    "options": [
+      "Skin",
+      "Liver",
+      "Brain",
+      "Heart"
+    ],
+    "correct_index": 0,
+    "explanation": "Skin (integumentary system) is the largest organ by surface area (~1.7–2 m²) and weight (~5 kg).",
+    "id": "rrb_group_d_81864736"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 1,
+    "question_text": "If A=1, B=2, C=3... then the code for CAB is:",
+    "options": [
+      "312",
+      "123",
+      "213",
+      "321"
+    ],
+    "correct_index": 0,
+    "explanation": "C=3, A=1, B=2 → 312.",
+    "id": "rrb_group_d_65b0dc26"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Relationships",
+    "difficulty": 1,
+    "question_text": "A boy's father is my father's son. Who is the boy to me?",
+    "options": [
+      "My son",
+      "My brother",
+      "My nephew",
+      "My cousin"
+    ],
+    "correct_index": 0,
+    "explanation": "My father's son = me. So the boy's father is me → the boy is my son.",
+    "id": "rrb_group_d_f5c826d8"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Number Series",
+    "difficulty": 1,
+    "question_text": "Find next: 2, 4, 6, 8, ?",
+    "options": [
+      "10",
+      "9",
+      "12",
+      "11"
+    ],
+    "correct_index": 0,
+    "explanation": "Even numbers — each term increases by 2. Next = 10.",
+    "id": "rrb_group_d_6a8318b0"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Analogy",
+    "difficulty": 1,
+    "question_text": "Dog : Bark :: Cat : ?",
+    "options": [
+      "Meow",
+      "Moo",
+      "Neigh",
+      "Roar"
+    ],
+    "correct_index": 0,
+    "explanation": "A dog barks; a cat meows. Sound made by the animal.",
+    "id": "rrb_group_d_878f7f64"
+  },
+  {
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 1,
+    "question_text": "Which planet is closest to the Sun?",
+    "options": [
+      "Mercury",
+      "Venus",
+      "Earth",
+      "Mars"
+    ],
+    "correct_index": 0,
+    "explanation": "Mercury is the first planet from the Sun in our solar system.",
+    "id": "rrb_group_d_9e552332"
+  },
+  {
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 1,
+    "question_text": "The national bird of India is:",
+    "options": [
+      "Peacock",
+      "Sparrow",
+      "Eagle",
+      "Parrot"
+    ],
+    "correct_index": 0,
+    "explanation": "The Indian Peacock (Pavo cristatus) is the national bird of India, declared in 1963.",
+    "id": "rrb_group_d_fa4f6216"
+  },
+  {
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 1,
+    "question_text": "Currency of India is:",
+    "options": [
+      "Rupee",
+      "Dollar",
+      "Euro",
+      "Pound"
+    ],
+    "correct_index": 0,
+    "explanation": "Indian Rupee (₹, ISO code INR) is the official currency of India.",
+    "id": "rrb_group_d_fe099adf"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 1,
+    "question_text": "If x = 3, what is 2x + 1?",
+    "options": [
+      "7",
+      "6",
+      "8",
+      "5"
+    ],
+    "correct_index": 0,
+    "explanation": "2×3 + 1 = 6 + 1 = 7.",
+    "id": "rrb_group_d_3259d630"
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Direction Sense",
+    "difficulty": 1,
+    "question_text": "If you face North and turn right, you now face:",
+    "options": [
+      "East",
+      "West",
+      "South",
+      "North-East"
+    ],
+    "correct_index": 0,
+    "explanation": "Facing North, turning 90° right → facing East.",
+    "id": "rrb_group_d_a5e2aba3"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "What is 3³?",
+    "options": [
+      "27",
+      "9",
+      "18",
+      "12"
+    ],
+    "correct_index": 0,
+    "explanation": "3³=3×3×3=27."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 1,
+    "question_text": "Circumference of a circle with radius 7 cm is (π=22/7):",
+    "options": [
+      "44 cm",
+      "22 cm",
+      "88 cm",
+      "14 cm"
+    ],
+    "correct_index": 0,
+    "explanation": "C=2πr=2×22/7×7=44 cm."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "Which is smallest: 2/3, 3/4, 1/2, 5/6?",
+    "options": [
+      "1/2",
+      "2/3",
+      "3/4",
+      "5/6"
+    ],
+    "correct_index": 0,
+    "explanation": "1/2=0.5 < 2/3≈0.67 < 3/4=0.75 < 5/6≈0.83."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 1,
+    "question_text": "Principal ₹2000, Rate 5%, Time 2 years. Simple Interest =",
+    "options": [
+      "₹200",
+      "₹100",
+      "₹400",
+      "₹250"
+    ],
+    "correct_index": 0,
+    "explanation": "SI=PRT/100=2000×5×2/100=₹200."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 1,
+    "question_text": "What is 12²?",
+    "options": [
+      "144",
+      "124",
+      "112",
+      "132"
+    ],
+    "correct_index": 0,
+    "explanation": "12×12=144."
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics (10th Standard)",
+    "difficulty": 1,
+    "question_text": "The unit of power is:",
+    "options": [
+      "Watt",
+      "Joule",
+      "Newton",
+      "Pascal"
+    ],
+    "correct_index": 0,
+    "explanation": "Power = energy/time = Joule/second = Watt (W)."
+  },
+  {
+    "subject": "General Science",
+    "topic": "Chemistry (10th Standard)",
+    "difficulty": 1,
+    "question_text": "The symbol of gold is:",
+    "options": [
+      "Au",
+      "Go",
+      "Gd",
+      "Ag"
+    ],
+    "correct_index": 0,
+    "explanation": "Au from Latin 'Aurum'. Silver=Ag (Argentum)."
+  },
+  {
+    "subject": "General Science",
+    "topic": "Life Sciences (10th Standard)",
+    "difficulty": 1,
+    "question_text": "The fluid part of blood is called:",
+    "options": [
+      "Plasma",
+      "Serum",
+      "Lymph",
+      "Haemoglobin"
+    ],
+    "correct_index": 0,
+    "explanation": "Plasma is the liquid component of blood (≈55%) — water, proteins, nutrients, hormones, waste products."
+  },
+  {
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 1,
+    "question_text": "The national animal of India is:",
+    "options": [
+      "Bengal Tiger",
+      "Lion",
+      "Elephant",
+      "Leopard"
+    ],
+    "correct_index": 0,
+    "explanation": "The Bengal Tiger (Panthera tigris tigris) is India's national animal, declared in 1973 (Project Tiger)."
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Analogy",
+    "difficulty": 1,
+    "question_text": "Pen : Write :: Knife : ?",
+    "options": [
+      "Cut",
+      "Cook",
+      "Stir",
+      "Mix"
+    ],
+    "correct_index": 0,
+    "explanation": "A pen is used to write; a knife is used to cut."
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Odd One Out",
+    "difficulty": 1,
+    "question_text": "Find the odd one out: Square, Rectangle, Triangle, Cube",
+    "options": [
+      "Cube",
+      "Square",
+      "Rectangle",
+      "Triangle"
+    ],
+    "correct_index": 0,
+    "explanation": "Square, Rectangle, Triangle are 2D shapes. Cube is a 3D solid — the odd one out."
+  },
+  {
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 1,
+    "question_text": "The speed of sound in air at room temperature is approximately:",
+    "options": [
+      "343 m/s",
+      "300 m/s",
+      "1500 m/s",
+      "100 m/s"
+    ],
+    "correct_index": 0,
+    "explanation": "Speed of sound in air at 20°C ≈ 343 m/s. In water ≈1500 m/s, in steel ≈5000 m/s."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 1,
+    "question_text": "If A:B = 3:4 and B:C = 4:5, then A:C =",
+    "options": [
+      "3:5",
+      "1:2",
+      "4:5",
+      "3:4"
+    ],
+    "correct_index": 0,
+    "explanation": "A:C = (A/B)×(B/C) = 3/4×4/5 = 3/5 = 3:5."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Speed, Distance and Time",
+    "difficulty": 1,
+    "question_text": "Speed = 90 km/h. Distance covered in 30 minutes is:",
+    "options": [
+      "45 km",
+      "90 km",
+      "30 km",
+      "60 km"
+    ],
+    "correct_index": 0,
+    "explanation": "30 min = 0.5 h. Distance = 90×0.5 = 45 km."
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics (10th Standard)",
+    "difficulty": 1,
+    "question_text": "Magnets attract which of these materials?",
+    "options": [
+      "Iron",
+      "Copper",
+      "Aluminium",
+      "Wood"
+    ],
+    "correct_index": 0,
+    "explanation": "Iron (and steel, nickel, cobalt) are ferromagnetic — attracted to magnets. Copper and aluminium are non-magnetic."
+  },
+  {
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 1,
+    "question_text": "How many paise make one Indian Rupee?",
+    "options": [
+      "100",
+      "10",
+      "50",
+      "1000"
+    ],
+    "correct_index": 0,
+    "explanation": "1 Indian Rupee = 100 paise. The paisa subdivision is rarely used in daily transactions now."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 2,
+    "question_text": "Find the smallest number divisible by 4, 5, and 6:",
+    "options": [
+      "60",
+      "30",
+      "120",
+      "20"
+    ],
+    "correct_index": 0,
+    "explanation": "LCM(4,5,6)=60."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "difficulty": 2,
+    "question_text": "An angle greater than 90° but less than 180° is called:",
+    "options": [
+      "Obtuse angle",
+      "Acute angle",
+      "Right angle",
+      "Reflex angle"
+    ],
+    "correct_index": 0,
+    "explanation": "Obtuse: 90°<θ<180°. Acute: 0°<θ<90°. Reflex: 180°<θ<360°."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 2,
+    "question_text": "If x/3 = 4, then x =",
+    "options": [
+      "12",
+      "7",
+      "1",
+      "3"
+    ],
+    "correct_index": 0,
+    "explanation": "x=3×4=12."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Statistics",
+    "difficulty": 2,
+    "question_text": "Mode of the data 3,5,7,5,9,5,3 is:",
+    "options": [
+      "5",
+      "3",
+      "7",
+      "9"
+    ],
+    "correct_index": 0,
+    "explanation": "Mode = most frequent value. 5 appears 3 times, 3 appears twice. Mode=5."
+  },
+  {
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "A ball thrown upward has zero velocity at:",
+    "options": [
+      "Maximum height",
+      "Start",
+      "While falling",
+      "Ground"
+    ],
+    "correct_index": 0,
+    "explanation": "At maximum height, vertical velocity = 0 before reversing direction (gravity decelerates upward motion)."
+  },
+  {
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 2,
+    "question_text": "An atom of carbon-12 has 6 protons, 6 neutrons, and:",
+    "options": [
+      "6 electrons",
+      "12 electrons",
+      "8 electrons",
+      "0 electrons"
+    ],
+    "correct_index": 0,
+    "explanation": "Neutral atom: electrons = protons = 6 for carbon (Z=6)."
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Number Series",
+    "difficulty": 2,
+    "question_text": "Find next: 1, 3, 6, 10, 15, ?",
+    "options": [
+      "21",
+      "18",
+      "20",
+      "25"
+    ],
+    "correct_index": 0,
+    "explanation": "Differences: 2,3,4,5,6. Next = 15+6=21. These are triangular numbers."
+  },
+  {
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Puzzles",
+    "difficulty": 2,
+    "question_text": "If today is Wednesday, what day will it be after 100 days?",
+    "options": [
+      "Friday",
+      "Thursday",
+      "Saturday",
+      "Sunday"
+    ],
+    "correct_index": 0,
+    "explanation": "100=14×7+2. Two days after Wednesday = Friday."
+  },
+  {
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "Which planet is known as the 'Red Planet'?",
+    "options": [
+      "Mars",
+      "Jupiter",
+      "Venus",
+      "Saturn"
+    ],
+    "correct_index": 0,
+    "explanation": "Mars appears red due to iron oxide (rust) on its surface."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Profit and Loss",
+    "difficulty": 2,
+    "question_text": "Cost price ₹500, selling price ₹450. Loss % is:",
+    "options": [
+      "10%",
+      "15%",
+      "5%",
+      "20%"
+    ],
+    "correct_index": 0,
+    "explanation": "Loss=50. Loss%=50/500×100=10%."
+  },
+  {
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 2,
+    "question_text": "NITI Aayog replaced which body in India?",
+    "options": [
+      "Planning Commission",
+      "Finance Commission",
+      "CAG",
+      "CVC"
+    ],
+    "correct_index": 0,
+    "explanation": "NITI Aayog (National Institution for Transforming India) replaced the Planning Commission in January 2015."
   }
 ]

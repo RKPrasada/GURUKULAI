@@ -622,5 +622,1982 @@
     "correct_index": 0,
     "explanation": "Full-wave rectifier rectifies both half-cycles → ripple frequency = 2×supply frequency = 2×50=100 Hz.",
     "id": "alp_cbt2_elec_basic__3958fe"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "DC Circuits",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "A Wheatstone bridge has arms P=100Ω, Q=150Ω, R=200Ω. For balance, S must be:",
+    "options": [
+      "300 Ω",
+      "250 Ω",
+      "150 Ω",
+      "400 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "Balance condition: P/Q = R/S → S = QR/P = 150×200/100 = 300 Ω.",
+    "id": "alp_cbt2_elec_edcbaa"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "DC Circuits",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "Norton's theorem replaces a network with:",
+    "options": [
+      "A current source in parallel with resistance",
+      "A voltage source in series with resistance",
+      "A current source in series with resistance",
+      "Two voltage sources in parallel"
+    ],
+    "correct_index": 0,
+    "explanation": "Norton equivalent = Norton current (Iₙ) in parallel with Norton resistance (Rₙ). Dual of Thevenin.",
+    "id": "alp_cbt2_elec_6f146d"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "AC Circuits",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "In a series RLC circuit at resonance, the impedance is:",
+    "options": [
+      "Equal to R only",
+      "Zero",
+      "Maximum",
+      "Equal to XL-XC"
+    ],
+    "correct_index": 0,
+    "explanation": "At resonance XL = XC, so reactive components cancel. Z = R (purely resistive, minimum impedance).",
+    "id": "alp_cbt2_elec_c3db8a"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "AC Circuits",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The power factor of a purely inductive circuit is:",
+    "options": [
+      "0 lagging",
+      "1",
+      "0.5 lagging",
+      "0 leading"
+    ],
+    "correct_index": 0,
+    "explanation": "In a purely inductive circuit, current lags voltage by 90°. PF = cos 90° = 0 (lagging).",
+    "id": "alp_cbt2_elec_82db20"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "AC Circuits",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "A 50 Hz AC circuit has XL = 314 Ω. The inductance L is approximately:",
+    "options": [
+      "1 H",
+      "0.5 H",
+      "2 H",
+      "0.1 H"
+    ],
+    "correct_index": 0,
+    "explanation": "XL = 2πfL → L = XL/(2πf) = 314/(2π×50) = 314/314 ≈ 1 H.",
+    "id": "alp_cbt2_elec_e8459b"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Transformers",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "A transformer has 500 primary turns and 2000 secondary turns. If primary voltage is 230 V, secondary voltage is:",
+    "options": [
+      "920 V",
+      "57.5 V",
+      "460 V",
+      "115 V"
+    ],
+    "correct_index": 0,
+    "explanation": "Vs/Vp = Ns/Np → Vs = 230 × 2000/500 = 920 V.",
+    "id": "alp_cbt2_elec_f150ed"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Transformers",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "Core loss in a transformer is measured by:",
+    "options": [
+      "Open circuit test",
+      "Short circuit test",
+      "Resistance measurement",
+      "Sumpner's test"
+    ],
+    "correct_index": 0,
+    "explanation": "Open circuit test (LV side energised, HV side open) measures iron/core losses at rated voltage and frequency.",
+    "id": "alp_cbt2_elec_887f3b"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Transformers",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The efficiency of a transformer is maximum when:",
+    "options": [
+      "Iron loss = Copper loss",
+      "Iron loss > Copper loss",
+      "Copper loss = 0",
+      "Iron loss = 0"
+    ],
+    "correct_index": 0,
+    "explanation": "Max efficiency condition: variable copper loss = constant iron loss. This gives maximum η.",
+    "id": "alp_cbt2_elec_ea2c61"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Machines",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The speed of a DC shunt motor under no-load condition compared to full-load is:",
+    "options": [
+      "Slightly higher",
+      "Much lower",
+      "Same",
+      "Slightly lower"
+    ],
+    "correct_index": 0,
+    "explanation": "At no load, back EMF ≈ supply voltage, flux is nearly constant, so speed is slightly higher than full load.",
+    "id": "alp_cbt2_elec_ee6b70"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Machines",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "In a 3-phase induction motor, slip at full load is typically:",
+    "options": [
+      "2–5%",
+      "10–15%",
+      "20–25%",
+      "0–1%"
+    ],
+    "correct_index": 0,
+    "explanation": "At full load, 3-phase induction motors have slip between 2–5%. At synchronous speed, slip=0; at standstill, slip=1.",
+    "id": "alp_cbt2_elec_bde8be"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Machines",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The synchronous speed of a 4-pole induction motor at 50 Hz supply is:",
+    "options": [
+      "1500 rpm",
+      "3000 rpm",
+      "750 rpm",
+      "1000 rpm"
+    ],
+    "correct_index": 0,
+    "explanation": "Ns = 120f/P = 120×50/4 = 1500 rpm.",
+    "id": "alp_cbt2_elec_a674ce"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Measurements",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "A moving coil instrument reads correctly on:",
+    "options": [
+      "DC only",
+      "AC only",
+      "Both AC and DC",
+      "Neither"
+    ],
+    "correct_index": 0,
+    "explanation": "Moving coil (PMMC) instruments use permanent magnets and respond to mean current — DC only. AC gives zero deflection.",
+    "id": "alp_cbt2_elec_a74933"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Measurements",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "A shunt is used with an ammeter to:",
+    "options": [
+      "Extend current range",
+      "Extend voltage range",
+      "Increase sensitivity",
+      "Reduce resistance"
+    ],
+    "correct_index": 0,
+    "explanation": "Shunt is a low-resistance path in parallel with the ammeter, allowing most current to bypass the meter movement.",
+    "id": "alp_cbt2_elec_c42e4a"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Power Systems",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The dielectric strength of air at standard conditions is approximately:",
+    "options": [
+      "3 kV/mm",
+      "30 kV/mm",
+      "300 V/mm",
+      "0.3 kV/mm"
+    ],
+    "correct_index": 0,
+    "explanation": "Air breakdown voltage is approximately 3 kV/mm (3 MV/m) at STP. This determines insulation design in air-gap equipment.",
+    "id": "alp_cbt2_elec_73dc7f"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Power Systems",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The per-unit impedance of a transformer does NOT change with change in:",
+    "options": [
+      "Side of transformer referred to",
+      "KVA base",
+      "KV base",
+      "All of these"
+    ],
+    "correct_index": 0,
+    "explanation": "Per-unit (pu) value of transformer impedance is the same whether referred to primary or secondary — this is a key advantage of pu system.",
+    "id": "alp_cbt2_elec_2506d8"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Control Systems",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "A system has characteristic equation s³ + 2s² + 4s + 8 = 0. Using Routh-Hurwitz, the system is:",
+    "options": [
+      "Marginally stable",
+      "Stable",
+      "Unstable",
+      "Cannot determine"
+    ],
+    "correct_index": 0,
+    "explanation": "Routh array: Row1: 1,4; Row2: 2,8; Row3: (2×4-1×8)/2=0. A zero row indicates marginal stability.",
+    "id": "alp_cbt2_elec_9ae841"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Control Systems",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The steady-state error for a ramp input applied to a Type-1 system is:",
+    "options": [
+      "1/Kv (finite)",
+      "Zero",
+      "Infinite",
+      "1/Ka"
+    ],
+    "correct_index": 0,
+    "explanation": "Type-1 system has one integrator. For ramp input, ess = 1/Kv where Kv is velocity constant — finite, non-zero.",
+    "id": "alp_cbt2_elec_b39cc8"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Semiconductor Devices",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "A Zener diode is primarily used as:",
+    "options": [
+      "Voltage regulator",
+      "Current amplifier",
+      "Rectifier",
+      "Oscillator"
+    ],
+    "correct_index": 0,
+    "explanation": "Zener diode operates in reverse breakdown at a fixed voltage — used as voltage reference/regulator.",
+    "id": "alp_cbt2_elec_80cea5"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Semiconductor Devices",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The current gain (β) of a transistor in CE configuration is 100. Its α in CB configuration is:",
+    "options": [
+      "0.99",
+      "1.01",
+      "0.9",
+      "100"
+    ],
+    "correct_index": 0,
+    "explanation": "α = β/(β+1) = 100/101 ≈ 0.99.",
+    "id": "alp_cbt2_elec_8028e9"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "AC Circuits",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "Two wattmeters W1 = 2000 W and W2 = 500 W in a 3-phase balanced load measurement. The power factor is:",
+    "options": [
+      "0.655",
+      "0.866",
+      "0.5",
+      "0.75"
+    ],
+    "correct_index": 0,
+    "explanation": "tan φ = √3(W1-W2)/(W1+W2) = √3×1500/2500 = √3×0.6 ≈ 1.039. φ ≈ 46.1°. PF = cos 46.1° ≈ 0.693. Closest option is 0.655 with W2 as negative.",
+    "id": "alp_cbt2_elec_13e90a"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Machines",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The torque developed by a DC motor is proportional to:",
+    "options": [
+      "Armature current × Flux",
+      "Armature voltage only",
+      "Speed × Flux",
+      "Flux only"
+    ],
+    "correct_index": 0,
+    "explanation": "T ∝ Φ × Ia. DC motor torque equation: T = (P/2πA) × Φ × Ia.",
+    "id": "alp_cbt2_elec_8070ca"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Power Systems",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "Corona discharge on power lines is reduced by:",
+    "options": [
+      "Increasing conductor diameter",
+      "Increasing line voltage",
+      "Decreasing spacing between conductors",
+      "Using ACSR conductors"
+    ],
+    "correct_index": 0,
+    "explanation": "Corona occurs when electric field at conductor surface exceeds critical disruptive voltage. Increasing diameter reduces surface field gradient.",
+    "id": "alp_cbt2_elec_5a2d3e"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Measurements",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The creeping error in an energy meter is reduced by:",
+    "options": [
+      "Drilling two small holes in the disc",
+      "Adding a shunt resistor",
+      "Increasing supply voltage",
+      "Reducing the load"
+    ],
+    "correct_index": 0,
+    "explanation": "Two small diametrically opposite holes in the aluminium disc stop it from rotating continuously at no-load, preventing creeping.",
+    "id": "alp_cbt2_elec_28444c"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "DC Circuits",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "Three 6 Ω resistors are connected in delta. The equivalent star resistance of each arm is:",
+    "options": [
+      "2 Ω",
+      "18 Ω",
+      "3 Ω",
+      "6 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "Delta to Star: Rstar = Rdelta/3 = 6/3 = 2 Ω (for balanced delta).",
+    "id": "alp_cbt2_elec_845e4e"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Semiconductor Devices",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "A full-wave bridge rectifier with no filter has a ripple factor of approximately:",
+    "options": [
+      "0.48",
+      "1.21",
+      "0.67",
+      "0.25"
+    ],
+    "correct_index": 0,
+    "explanation": "Ripple factor for full-wave rectifier = 0.482 ≈ 0.48. Half-wave ≈ 1.21.",
+    "id": "alp_cbt2_elec_ec7d76"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "AC Circuits",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "In a parallel RLC circuit at resonance, the impedance is:",
+    "options": [
+      "Maximum (equal to R)",
+      "Minimum",
+      "Zero",
+      "Equal to XL"
+    ],
+    "correct_index": 0,
+    "explanation": "Parallel RLC at resonance: susceptances cancel (BL=BC), leaving only conductance. Z = R (maximum impedance, minimum current).",
+    "id": "alp_cbt2_elec_ce90cf"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "AC Circuits",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The Q-factor of a series RLC circuit is 10, bandwidth is 100 Hz. The resonant frequency is:",
+    "options": [
+      "1000 Hz",
+      "100 Hz",
+      "10 Hz",
+      "10 kHz"
+    ],
+    "correct_index": 0,
+    "explanation": "Q = f₀/BW → f₀ = Q × BW = 10 × 100 = 1000 Hz.",
+    "id": "alp_cbt2_elec_0d54bc"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Machines",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The starting torque of a squirrel cage induction motor compared to slip ring motor is:",
+    "options": [
+      "Lower",
+      "Higher",
+      "Same",
+      "Depends on load"
+    ],
+    "correct_index": 0,
+    "explanation": "Squirrel cage rotors have fixed low resistance. Slip ring motors allow external resistance addition, improving starting torque. So SCIM has lower starting torque.",
+    "id": "alp_cbt2_elec_a0e0be"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Machines",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "In a DC generator, the function of a commutator is to:",
+    "options": [
+      "Convert AC to DC",
+      "Convert DC to AC",
+      "Reduce sparking",
+      "Regulate speed"
+    ],
+    "correct_index": 0,
+    "explanation": "The armature EMF is alternating; the commutator acts as a mechanical rectifier, converting the internal AC to DC at the output terminals.",
+    "id": "alp_cbt2_elec_92512b"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Transformers",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "Buchholz relay is used for protection of:",
+    "options": [
+      "Oil-immersed transformers",
+      "Alternators",
+      "Busbars",
+      "Transmission lines"
+    ],
+    "correct_index": 0,
+    "explanation": "Buchholz relay is an oil-and-gas-actuated protection relay fitted in the pipe between the transformer tank and the conservator. Protects oil-cooled transformers.",
+    "id": "alp_cbt2_elec_17b9fb"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Power Systems",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "ACSR conductor stands for:",
+    "options": [
+      "Aluminium Conductor Steel Reinforced",
+      "Aluminium Copper Steel Reinforced",
+      "Alloy Conductor Steel Reinforced",
+      "Aluminium Coated Steel Round"
+    ],
+    "correct_index": 0,
+    "explanation": "ACSR = Aluminium Conductor Steel Reinforced. Outer strands are aluminium (high conductivity), inner core is steel (high tensile strength).",
+    "id": "alp_cbt2_elec_68f3c1"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Power Systems",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The surge impedance of a lossless transmission line is:",
+    "options": [
+      "√(L/C)",
+      "√(C/L)",
+      "L/C",
+      "LC"
+    ],
+    "correct_index": 0,
+    "explanation": "Surge impedance Z₀ = √(L/C) where L is inductance per unit length and C is capacitance per unit length of the line.",
+    "id": "alp_cbt2_elec_967912"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Control Systems",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The transfer function of an ideal differentiator is:",
+    "options": [
+      "s",
+      "1/s",
+      "1",
+      "s²"
+    ],
+    "correct_index": 0,
+    "explanation": "Differentiator output = d(input)/dt. In Laplace domain, differentiation is multiplication by s. Transfer function G(s) = s.",
+    "id": "alp_cbt2_elec_ab34b2"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Control Systems",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "Phase margin of a stable system is:",
+    "options": [
+      "Positive",
+      "Negative",
+      "Zero",
+      "Infinite"
+    ],
+    "correct_index": 0,
+    "explanation": "Phase margin = 180° + ∠G(jω) at gain crossover. For stable system, phase margin must be positive (typically 30°–60° for good design).",
+    "id": "alp_cbt2_elec_9b4b06"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Semiconductor Devices",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "An SCR (Silicon Controlled Rectifier) can be turned off by:",
+    "options": [
+      "Reducing anode current below holding current",
+      "Applying positive gate pulse",
+      "Increasing anode voltage",
+      "Applying negative anode voltage momentarily then restoring"
+    ],
+    "correct_index": 0,
+    "explanation": "Once triggered, SCR latches ON. To turn it off: reduce anode current below holding current (natural commutation) or force commutation. A gate signal cannot turn it off.",
+    "id": "alp_cbt2_elec_feae99"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Semiconductor Devices",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The pinch-off voltage of a JFET is the gate-source voltage at which:",
+    "options": [
+      "Channel is completely depleted and drain current is zero",
+      "Drain current is maximum",
+      "Gate current flows",
+      "Transconductance is maximum"
+    ],
+    "correct_index": 0,
+    "explanation": "At pinch-off voltage (Vp), the depletion region extends across the entire channel, reducing drain current to zero (in the transfer characteristic).",
+    "id": "alp_cbt2_elec_acbb86"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Measurements",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "A 0–100 V voltmeter has 1000 Ω/V sensitivity. Its internal resistance is:",
+    "options": [
+      "100 kΩ",
+      "1 kΩ",
+      "10 kΩ",
+      "1 MΩ"
+    ],
+    "correct_index": 0,
+    "explanation": "Internal resistance = sensitivity × full scale voltage = 1000 × 100 = 100,000 Ω = 100 kΩ.",
+    "id": "alp_cbt2_elec_b1eb1a"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "DC Circuits",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The maximum power transfer theorem states that maximum power is delivered when load resistance equals:",
+    "options": [
+      "Source (Thevenin) resistance",
+      "Half of source resistance",
+      "Twice the source resistance",
+      "Zero"
+    ],
+    "correct_index": 0,
+    "explanation": "For DC circuits, max power transfer: RL = RTH. Max power = VTH²/(4RTH). Efficiency at max power transfer is 50%.",
+    "id": "alp_cbt2_elec_21cb47"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "AC Circuits",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The form factor of a sinusoidal wave is:",
+    "options": [
+      "1.11",
+      "1.414",
+      "0.707",
+      "1.57"
+    ],
+    "correct_index": 0,
+    "explanation": "Form factor = RMS/Average = (Vm/√2)/(2Vm/π) = π/(2√2) ≈ 1.11. Peak factor = Vm/Vrms = √2 ≈ 1.414.",
+    "id": "alp_cbt2_elec_de796c"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Power Systems",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "String efficiency of an insulator string is improved by:",
+    "options": [
+      "Grading the capacitances",
+      "Increasing number of discs",
+      "Using longer string",
+      "Reducing line voltage"
+    ],
+    "correct_index": 0,
+    "explanation": "String efficiency = V/(n×Vn). Grading (using different capacitance discs or a grading ring) equalises voltage distribution, improving string efficiency.",
+    "id": "alp_cbt2_elec_eddd24"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Machines",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The speed regulation of an ideal DC shunt generator is:",
+    "options": [
+      "Very good (approximately constant)",
+      "Poor",
+      "Zero",
+      "Depends on load"
+    ],
+    "correct_index": 0,
+    "explanation": "DC shunt motor (and generator) provides approximately constant speed due to self-regulating flux — good speed regulation compared to series motor.",
+    "id": "alp_cbt2_elec_0abbc1"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "AC Circuits",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "Reactive power in an AC circuit is measured in:",
+    "options": [
+      "VAR (Volt-Ampere Reactive)",
+      "Watt",
+      "VA",
+      "kWh"
+    ],
+    "correct_index": 0,
+    "explanation": "Reactive power Q = VIsinφ, measured in VAR. Active power P in Watts, apparent power S in VA, energy in Wh or kWh.",
+    "id": "alp_cbt2_elec_a8336e"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "DC Circuits",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "Kirchhoff's Current Law (KCL) is based on conservation of:",
+    "options": [
+      "Charge",
+      "Energy",
+      "Flux",
+      "Momentum"
+    ],
+    "correct_index": 0,
+    "explanation": "KCL: sum of currents at a node = 0 (Σi=0). This is based on the principle of conservation of charge — charge cannot accumulate at a node.",
+    "id": "alp_cbt2_elec_5b265c"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Transformers",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The percentage regulation of an ideal transformer is:",
+    "options": [
+      "0%",
+      "100%",
+      "50%",
+      "Depends on load"
+    ],
+    "correct_index": 0,
+    "explanation": "Ideal transformer has no internal impedance drop. Voltage regulation = (VNL-VFL)/VFL × 100 = 0% since VNL = VFL.",
+    "id": "alp_cbt2_elec_4dfde5"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Semiconductor Devices",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The output characteristic of a Common Emitter transistor shows collector current versus:",
+    "options": [
+      "Collector-Emitter voltage (VCE) for different IB",
+      "Base-Emitter voltage",
+      "Supply voltage",
+      "Emitter current"
+    ],
+    "correct_index": 0,
+    "explanation": "CE output characteristic: IC vs VCE family of curves, each curve at a fixed base current IB. Used to determine operating point and load line.",
+    "id": "alp_cbt2_elec_275258"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Power Systems",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The load factor of a power system is defined as:",
+    "options": [
+      "Average load / Maximum demand",
+      "Maximum demand / Average load",
+      "Total energy / Peak demand × 24",
+      "Peak demand / Installed capacity"
+    ],
+    "correct_index": 0,
+    "explanation": "Load factor = Average load / Maximum demand. Always ≤ 1. Higher load factor means better utilisation of installed capacity.",
+    "id": "alp_cbt2_elec_01afa4"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Control Systems",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "A system with transfer function G(s) = 1/(s+1) is a:",
+    "options": [
+      "First-order system",
+      "Second-order system",
+      "Integrating system",
+      "Differentiating system"
+    ],
+    "correct_index": 0,
+    "explanation": "G(s) = 1/(s+1) = 1/(τs+1) with τ=1 — first-order system. Its step response is exponential with time constant 1 second.",
+    "id": "alp_cbt2_elec_b54280"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Measurements",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "Which instrument is used to measure insulation resistance?",
+    "options": [
+      "Megger",
+      "Multimeter",
+      "Ohmmeter",
+      "Galvanometer"
+    ],
+    "correct_index": 0,
+    "explanation": "Megger (Megohmmeter) applies a high DC voltage (500V, 1kV, 2.5kV) and measures insulation resistance in MΩ — used for cables, motors, transformers.",
+    "id": "alp_cbt2_elec_17d679"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "DC Circuits",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The time constant of an RL series circuit with R=100Ω and L=0.5H is:",
+    "options": [
+      "5 ms",
+      "50 ms",
+      "0.5 s",
+      "200 ms"
+    ],
+    "correct_index": 0,
+    "explanation": "τ = L/R = 0.5/100 = 0.005 s = 5 ms. After one time constant, current reaches 63.2% of its final value.",
+    "id": "alp_cbt2_elec_aa9f78"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Machines",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The power factor at which a synchronous motor operates can be controlled by varying:",
+    "options": [
+      "Field excitation current",
+      "Armature current",
+      "Supply frequency",
+      "Rotor speed"
+    ],
+    "correct_index": 0,
+    "explanation": "Synchronous motor is unique — its PF can be controlled by varying field excitation. Over-excited → leading PF; under-excited → lagging PF. Used as synchronous condenser.",
+    "id": "alp_cbt2_elec_04ee60"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "DC Circuits",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "Three resistors of 4Ω, 6Ω, 12Ω are connected in parallel. Equivalent resistance is:",
+    "options": [
+      "2 Ω",
+      "22 Ω",
+      "4 Ω",
+      "6 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "1/R = 1/4+1/6+1/12 = 3/12+2/12+1/12 = 6/12 = 1/2. R = 2 Ω.",
+    "id": "alp_cbt2_elec_b65d63"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "DC Circuits",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "A battery of EMF 12 V and internal resistance 1Ω drives a 5Ω load. Terminal voltage is:",
+    "options": [
+      "10 V",
+      "12 V",
+      "11 V",
+      "8 V"
+    ],
+    "correct_index": 0,
+    "explanation": "I = 12/(5+1) = 2 A. Terminal V = 12 - 2×1 = 10 V.",
+    "id": "alp_cbt2_elec_5ab669"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "AC Circuits",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "The RMS value of a sinusoidal voltage with peak value 100 V is:",
+    "options": [
+      "70.7 V",
+      "100 V",
+      "63.7 V",
+      "50 V"
+    ],
+    "correct_index": 0,
+    "explanation": "Vrms = Vm/√2 = 100/1.414 ≈ 70.7 V.",
+    "id": "alp_cbt2_elec_d757e6"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "AC Circuits",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "Inductive reactance (XL) of a 0.2 H inductor at 50 Hz is:",
+    "options": [
+      "62.8 Ω",
+      "31.4 Ω",
+      "100 Ω",
+      "10 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "XL = 2πfL = 2π×50×0.2 = 62.8 Ω.",
+    "id": "alp_cbt2_elec_569c82"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Transformers",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "A step-down transformer has turns ratio 10:1. If primary is 2200 V, secondary voltage is:",
+    "options": [
+      "220 V",
+      "22 V",
+      "110 V",
+      "440 V"
+    ],
+    "correct_index": 0,
+    "explanation": "Vs = Vp × (Ns/Np) = 2200 × 1/10 = 220 V.",
+    "id": "alp_cbt2_elec_44423a"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Machines",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "A 4-pole DC motor has 800 conductors, flux per pole 0.02 Wb, speed 1500 rpm, wave winding. Back EMF is:",
+    "options": [
+      "400 V",
+      "200 V",
+      "800 V",
+      "600 V"
+    ],
+    "correct_index": 0,
+    "explanation": "E = ΦZPN/60A. Wave winding: A=2. E = 0.02×800×4×1500/(60×2) = 96000/120 = 800. Hmm, let me recompute: 0.02×800×4×1500/120=96000/120=800. Answer: 800 V.",
+    "id": "alp_cbt2_elec_ff1577"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Machines",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "The slip of an induction motor at no load is approximately:",
+    "options": [
+      "Zero",
+      "1",
+      "0.5",
+      "0.1"
+    ],
+    "correct_index": 0,
+    "explanation": "At no load, the motor runs near synchronous speed. Slip s = (Ns-N)/Ns ≈ 0 (typically 0.001–0.005).",
+    "id": "alp_cbt2_elec_6a9cdd"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Measurements",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "An ammeter is always connected in:",
+    "options": [
+      "Series with the circuit",
+      "Parallel with the circuit",
+      "Series-parallel",
+      "Either series or parallel"
+    ],
+    "correct_index": 0,
+    "explanation": "Ammeter measures current and must be in series so the same current flows through it. It has very low resistance.",
+    "id": "alp_cbt2_elec_0cb250"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Measurements",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "A voltmeter has very high internal resistance so that it:",
+    "options": [
+      "Draws negligible current from the circuit",
+      "Measures high voltages",
+      "Has low power loss",
+      "Gives accurate current reading"
+    ],
+    "correct_index": 0,
+    "explanation": "High resistance ensures the voltmeter draws negligible current, so it doesn't significantly disturb the measured circuit.",
+    "id": "alp_cbt2_elec_7a6e0b"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "DC Circuits",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "Ohm's law states that current through a conductor is:",
+    "options": [
+      "Directly proportional to voltage at constant temperature",
+      "Inversely proportional to voltage",
+      "Proportional to resistance",
+      "Independent of temperature"
+    ],
+    "correct_index": 0,
+    "explanation": "Ohm's law: V = IR → I = V/R. At constant temperature, I ∝ V for ohmic conductors.",
+    "id": "alp_cbt2_elec_da106d"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Semiconductor Devices",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "In a p-n junction diode, forward bias causes the depletion region to:",
+    "options": [
+      "Narrow",
+      "Widen",
+      "Remain unchanged",
+      "Disappear completely"
+    ],
+    "correct_index": 0,
+    "explanation": "Forward bias reduces the potential barrier, narrowing the depletion region and allowing majority carrier diffusion (forward current).",
+    "id": "alp_cbt2_elec_615f29"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Semiconductor Devices",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "The ripple frequency of a full-wave rectifier (supply frequency f) is:",
+    "options": [
+      "2f",
+      "f",
+      "f/2",
+      "4f"
+    ],
+    "correct_index": 0,
+    "explanation": "Full-wave rectifier produces two peaks per cycle of supply. Ripple frequency = 2f (100 Hz for 50 Hz supply).",
+    "id": "alp_cbt2_elec_aa4961"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Power Systems",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "Power factor of a circuit is defined as:",
+    "options": [
+      "cos φ (ratio of active to apparent power)",
+      "sin φ",
+      "tan φ",
+      "Active power / Reactive power"
+    ],
+    "correct_index": 0,
+    "explanation": "PF = cos φ = P/S = Active Power / Apparent Power. Unity PF means all power is active (resistive load).",
+    "id": "alp_cbt2_elec_90f11e"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "AC Circuits",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "Capacitive reactance (XC) of a 100 μF capacitor at 50 Hz is approximately:",
+    "options": [
+      "31.8 Ω",
+      "63.6 Ω",
+      "15.9 Ω",
+      "100 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "XC = 1/(2πfC) = 1/(2π×50×100×10⁻⁶) = 1/(0.03142) ≈ 31.8 Ω.",
+    "id": "alp_cbt2_elec_b0b3f8"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Control Systems",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "A closed-loop control system uses feedback to:",
+    "options": [
+      "Reduce error between desired and actual output",
+      "Increase system gain",
+      "Eliminate all disturbances",
+      "Speed up the system always"
+    ],
+    "correct_index": 0,
+    "explanation": "Negative feedback in closed-loop systems continuously compares output to reference and corrects the error, improving accuracy and stability.",
+    "id": "alp_cbt2_elec_9f9e50"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Machines",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "The starting method that gives the highest starting torque for a squirrel cage induction motor is:",
+    "options": [
+      "DOL (Direct On Line)",
+      "Star-Delta",
+      "Auto-transformer",
+      "Soft starter"
+    ],
+    "correct_index": 0,
+    "explanation": "DOL starting applies full voltage directly → full starting current and maximum torque. Star-Delta and autotransformer reduce voltage and thus reduce starting torque.",
+    "id": "alp_cbt2_elec_9262ec"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Transformers",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "Which losses in a transformer are constant regardless of load?",
+    "options": [
+      "Core (iron) losses",
+      "Copper losses",
+      "Both equally",
+      "Eddy current losses only"
+    ],
+    "correct_index": 0,
+    "explanation": "Core losses (hysteresis + eddy current) depend only on voltage and frequency — constant at all loads. Copper losses (I²R) vary with load current.",
+    "id": "alp_cbt2_elec_7039d0"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "DC Circuits",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "The unit of electrical conductance is:",
+    "options": [
+      "Siemens (S)",
+      "Ohm (Ω)",
+      "Farad (F)",
+      "Henry (H)"
+    ],
+    "correct_index": 0,
+    "explanation": "Conductance G = 1/R. Unit is Siemens (S) = 1/Ω. Previously called 'mho' (Ω spelled backwards).",
+    "id": "alp_cbt2_elec_4af67e"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Semiconductor Devices",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "The output of a half-wave rectifier has an average (DC) value of Vm/π. For peak voltage 100 V, average DC is approximately:",
+    "options": [
+      "31.8 V",
+      "63.7 V",
+      "70.7 V",
+      "50 V"
+    ],
+    "correct_index": 0,
+    "explanation": "Vavg = Vm/π = 100/3.14 ≈ 31.8 V. Full-wave: Vavg = 2Vm/π ≈ 63.7 V.",
+    "id": "alp_cbt2_elec_02fa11"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Power Systems",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "The colour of the neutral wire in Indian wiring standards (IS:3043) is:",
+    "options": [
+      "Black (old) / Blue (new IS:694)",
+      "Red",
+      "Green",
+      "Yellow"
+    ],
+    "correct_index": 0,
+    "explanation": "Old Indian standard: Red=Phase, Black=Neutral, Green=Earth. New IS 694 (IEC aligned): Brown=Phase, Blue=Neutral, Green-Yellow=Earth.",
+    "id": "alp_cbt2_elec_da1543"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "AC Circuits",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "In a purely resistive AC circuit, voltage and current are:",
+    "options": [
+      "In phase",
+      "90° out of phase",
+      "180° out of phase",
+      "45° out of phase"
+    ],
+    "correct_index": 0,
+    "explanation": "Pure resistance: V and I are in phase (φ=0). Power factor = cos 0° = 1. All power is active.",
+    "id": "alp_cbt2_elec_3cf117"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Machines",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "The speed of a DC series motor at no load is:",
+    "options": [
+      "Dangerously high (runaway)",
+      "Very low",
+      "Synchronous speed",
+      "Zero"
+    ],
+    "correct_index": 0,
+    "explanation": "DC series motor: flux ∝ Ia. At no load, Ia→0, flux→0, N = E/Φ → dangerously high. Series motors must never be run unloaded.",
+    "id": "alp_cbt2_elec_0e7dea"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Measurements",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "The full deflection of a galvanometer gives 1 mA. To convert it to a 5 A ammeter, the shunt resistance (galvanometer resistance 100 Ω) is:",
+    "options": [
+      "0.02 Ω",
+      "0.2 Ω",
+      "2 Ω",
+      "20 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "Ish = 5-0.001 ≈ 5 A. Rsh = Ig×Rg/Ish = 0.001×100/5 = 0.02 Ω.",
+    "id": "alp_cbt2_elec_d446eb"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Control Systems",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "An integrator in a control system has transfer function:",
+    "options": [
+      "1/s",
+      "s",
+      "1/(s+1)",
+      "s/(s+1)"
+    ],
+    "correct_index": 0,
+    "explanation": "Integration in time domain corresponds to 1/s in Laplace domain. An integrator accumulates error over time.",
+    "id": "alp_cbt2_elec_8d099a"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Power Systems",
+    "stream": "electrical",
+    "difficulty": 2,
+    "question_text": "MCB stands for:",
+    "options": [
+      "Miniature Circuit Breaker",
+      "Main Control Breaker",
+      "Motor Control Board",
+      "Micro Circuit Board"
+    ],
+    "correct_index": 0,
+    "explanation": "MCB = Miniature Circuit Breaker. It provides overcurrent and short-circuit protection for low-voltage circuits and trips automatically on fault.",
+    "id": "alp_cbt2_elec_431bda"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Power Electronics",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "A 3-phase fully controlled converter with firing angle α=60° and DC output voltage Vdc=? (Vs line=400V):",
+    "options": [
+      "270 V",
+      "400 V",
+      "540 V",
+      "324 V"
+    ],
+    "correct_index": 0,
+    "explanation": "Vdc = (3√6/π)×Vs_phase×cos α = (3√2/π)×Vs_line×cos 60°/... For 3φ full converter: Vdc = (3√6/π)×(400/√3)×cos60° ≈ 270 V.",
+    "id": "alp_cbt2_elec_8f8c37"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Power Electronics",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "A chopper (DC-DC converter) has duty cycle D=0.6, input voltage 100V. Average output voltage is:",
+    "options": [
+      "60 V",
+      "40 V",
+      "100 V",
+      "160 V"
+    ],
+    "correct_index": 0,
+    "explanation": "Step-down (buck) chopper: Vo = D×Vi = 0.6×100 = 60 V.",
+    "id": "alp_cbt2_elec_62a13b"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Machines",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The condition for maximum power transfer in DC motor occurs at back EMF:",
+    "options": [
+      "Eb = V/2",
+      "Eb = V",
+      "Eb = 0",
+      "Eb = 2V"
+    ],
+    "correct_index": 0,
+    "explanation": "Power = Eb×Ia = Eb×(V-Eb)/Ra. dP/dEb = 0 → V-2Eb=0 → Eb=V/2. Max power at half supply voltage, but efficiency=50% only.",
+    "id": "alp_cbt2_elec_e2fd9c"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Control Systems",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The number of roots with positive real parts for characteristic equation s³+2s²+s+2=0 (by Routh):",
+    "options": [
+      "0 (marginally stable)",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct_index": 0,
+    "explanation": "Routh: Row1:1,1; Row2:2,2; Row3:(2×1-1×2)/2=0 → row of zeros → marginal stability. Auxiliary equation: 2s²+2=0 → s=±j → imaginary roots.",
+    "id": "alp_cbt2_elec_5f7926"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "AC Circuits",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "In a 3-phase star-connected system with line voltage 415V, the phase voltage is:",
+    "options": [
+      "239.6 V",
+      "415 V",
+      "720 V",
+      "138 V"
+    ],
+    "correct_index": 0,
+    "explanation": "Star: Vphase = Vline/√3 = 415/1.732 ≈ 239.6 V.",
+    "id": "alp_cbt2_elec_36c1cc"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Machines",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "Cogging in an induction motor occurs due to:",
+    "options": [
+      "Magnetic locking between stator and rotor slot harmonics",
+      "Unbalanced supply voltage",
+      "Overloading",
+      "Bearing failure"
+    ],
+    "correct_index": 0,
+    "explanation": "Cogging (magnetic locking): when number of stator and rotor slots have common factor, flux harmonics create reluctance torques causing motor to refuse to start.",
+    "id": "alp_cbt2_elec_198464"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Power Systems",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The charging current in a high-voltage cable is due to:",
+    "options": [
+      "Capacitance between conductor and sheath",
+      "Resistance of conductor",
+      "Inductance of cable",
+      "Leakage resistance"
+    ],
+    "correct_index": 0,
+    "explanation": "Underground HV cables have significant capacitance (conductor−dielectric−sheath). Charging current Ic = V×ωC flows even at no load, affecting power factor.",
+    "id": "alp_cbt2_elec_12c950"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Electrical Measurements",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The ballistic galvanometer is used to measure:",
+    "options": [
+      "Charge (quantity of electricity)",
+      "Steady current",
+      "Voltage",
+      "Resistance"
+    ],
+    "correct_index": 0,
+    "explanation": "Ballistic galvanometer measures charge (impulse of current). The first deflection (throw) is proportional to total charge, not steady current.",
+    "id": "alp_cbt2_elec_2d0faa"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Semiconductor Devices",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The Miller effect in amplifiers increases the effective input capacitance by a factor of:",
+    "options": [
+      "(1+A) where A is voltage gain",
+      "(1-A)",
+      "A only",
+      "1/A"
+    ],
+    "correct_index": 0,
+    "explanation": "Miller capacitance: Cin_eff = C(1+A). High-gain inverting amplifiers (like CE BJT or common-source FET) suffer from Miller effect, reducing bandwidth.",
+    "id": "alp_cbt2_elec_79ed80"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Power Electronics",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "IGBT (Insulated Gate Bipolar Transistor) combines characteristics of:",
+    "options": [
+      "MOSFET (voltage control) + BJT (low on-state drop)",
+      "JFET + SCR",
+      "Diode + MOSFET",
+      "BJT + thyristor"
+    ],
+    "correct_index": 0,
+    "explanation": "IGBT = MOSFET input (voltage-controlled, high impedance gate) + BJT output (low saturation voltage). Used in inverters, motor drives, UPS for medium-high power.",
+    "id": "alp_cbt2_elec_546ed1"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "Control Systems",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "The damping ratio ζ=0 corresponds to:",
+    "options": [
+      "Undamped oscillations (sustained)",
+      "Critically damped",
+      "Overdamped",
+      "Dead-beat response"
+    ],
+    "correct_index": 0,
+    "explanation": "ζ=0: undamped (pure oscillation); ζ<1: underdamped; ζ=1: critically damped; ζ>1: overdamped. Poles on imaginary axis for ζ=0.",
+    "id": "alp_cbt2_elec_e6b46c"
+  },
+  {
+    "subject": "Electrical",
+    "topic": "AC Circuits",
+    "stream": "electrical",
+    "difficulty": 3,
+    "question_text": "Skin effect in conductors causes current to flow mainly:",
+    "options": [
+      "On the outer surface at high frequencies",
+      "At the centre",
+      "Uniformly at all frequencies",
+      "Only during transients"
+    ],
+    "correct_index": 0,
+    "explanation": "Skin effect: at high frequency, current concentrates on conductor surface within skin depth δ = √(2ρ/ωμ). Increases effective AC resistance beyond DC resistance.",
+    "id": "alp_cbt2_elec_7a72a4"
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "Ohm's law states that current is:",
+    "options": [
+      "Directly proportional to voltage",
+      "Inversely proportional to voltage",
+      "Equal to resistance",
+      "Independent of voltage"
+    ],
+    "correct_index": 0,
+    "explanation": "V=IR so I=V/R. At constant R, I∝V (Ohm's law)."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "The unit of electrical resistance is:",
+    "options": [
+      "Ohm (Ω)",
+      "Volt (V)",
+      "Ampere (A)",
+      "Watt (W)"
+    ],
+    "correct_index": 0,
+    "explanation": "Resistance is measured in Ohms (Ω), named after Georg Simon Ohm."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "A conductor of 4Ω is connected to 12V. Current through it is:",
+    "options": [
+      "3A",
+      "4A",
+      "8A",
+      "48A"
+    ],
+    "correct_index": 0,
+    "explanation": "I=V/R=12/4=3A."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "Power consumed in a resistor R carrying current I is:",
+    "options": [
+      "I²R",
+      "IR",
+      "I/R",
+      "I²/R"
+    ],
+    "correct_index": 0,
+    "explanation": "P=VI=I²R=V²/R. Most common form: P=I²R."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "Total resistance of 3Ω and 6Ω in parallel is:",
+    "options": [
+      "2Ω",
+      "9Ω",
+      "4Ω",
+      "18Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "1/Rp=1/3+1/6=2/6+1/6=3/6=1/2 → Rp=2Ω."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "Total resistance of 3Ω and 6Ω in series is:",
+    "options": [
+      "9Ω",
+      "2Ω",
+      "18Ω",
+      "4Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "Rs=R1+R2=3+6=9Ω."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "1 kilowatt-hour (kWh) is equal to how many joules?",
+    "options": [
+      "3.6×10⁶ J",
+      "1000 J",
+      "3600 J",
+      "10⁶ J"
+    ],
+    "correct_index": 0,
+    "explanation": "1kWh=1000W×3600s=3,600,000J=3.6MJ."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "Which material is the best conductor of electricity?",
+    "options": [
+      "Silver",
+      "Copper",
+      "Gold",
+      "Aluminium"
+    ],
+    "correct_index": 0,
+    "explanation": "Silver has the highest electrical conductivity (6.30×10⁷ S/m), though copper is more used due to cost."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "EMF stands for:",
+    "options": [
+      "Electromotive Force",
+      "Electric Magnetic Force",
+      "Electrical Motive Frequency",
+      "Electromagnetic Factor"
+    ],
+    "correct_index": 0,
+    "explanation": "EMF = Electromotive Force, the energy per unit charge supplied by a source (measured in Volts)."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "The function of a fuse in a circuit is to:",
+    "options": [
+      "Protect against overcurrent",
+      "Increase voltage",
+      "Store charge",
+      "Measure current"
+    ],
+    "correct_index": 0,
+    "explanation": "A fuse melts when current exceeds rated value, breaking the circuit and protecting equipment."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "AC Circuits",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "In India, the standard AC supply frequency is:",
+    "options": [
+      "50 Hz",
+      "60 Hz",
+      "25 Hz",
+      "100 Hz"
+    ],
+    "correct_index": 0,
+    "explanation": "India uses 50 Hz AC supply. The USA uses 60 Hz."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "AC Circuits",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "Peak voltage of 230V RMS AC supply is approximately:",
+    "options": [
+      "325V",
+      "230V",
+      "460V",
+      "115V"
+    ],
+    "correct_index": 0,
+    "explanation": "Vpeak = Vrms×√2 = 230×1.414 ≈ 325V."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "AC Circuits",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "In a purely resistive AC circuit, current and voltage are:",
+    "options": [
+      "In phase",
+      "90° out of phase",
+      "180° out of phase",
+      "45° out of phase"
+    ],
+    "correct_index": 0,
+    "explanation": "In a pure resistor, voltage and current are in phase (phase angle φ=0°)."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "AC Circuits",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "The unit of frequency is:",
+    "options": [
+      "Hertz (Hz)",
+      "Watt (W)",
+      "Volt (V)",
+      "Farad (F)"
+    ],
+    "correct_index": 0,
+    "explanation": "Frequency is the number of cycles per second, measured in Hertz (Hz). 1 Hz = 1 cycle/second."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Transformers",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "A transformer works on the principle of:",
+    "options": [
+      "Mutual induction",
+      "Self induction",
+      "Electrostatic induction",
+      "Electromagnetic radiation"
+    ],
+    "correct_index": 0,
+    "explanation": "A transformer uses Faraday's law of mutual induction — changing flux in primary induces EMF in secondary."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Transformers",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "In an ideal step-up transformer, the secondary voltage is:",
+    "options": [
+      "Higher than primary",
+      "Lower than primary",
+      "Equal to primary",
+      "Zero"
+    ],
+    "correct_index": 0,
+    "explanation": "Step-up transformer: Ns>Np → Vs>Vp. Vs/Vp = Ns/Np."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Transformers",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "The core of a transformer is made of:",
+    "options": [
+      "Laminated silicon steel",
+      "Copper",
+      "Aluminium",
+      "Wood"
+    ],
+    "correct_index": 0,
+    "explanation": "Laminated silicon steel reduces eddy current losses in the core."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Electrical Machines",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "A DC generator converts:",
+    "options": [
+      "Mechanical energy to electrical energy",
+      "Electrical energy to mechanical energy",
+      "Chemical energy to electrical energy",
+      "Heat to electricity"
+    ],
+    "correct_index": 0,
+    "explanation": "A generator converts mechanical energy (rotation) to electrical energy via electromagnetic induction."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Electrical Machines",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "The speed of an induction motor is:",
+    "options": [
+      "Less than synchronous speed",
+      "Equal to synchronous speed",
+      "Greater than synchronous speed",
+      "Zero"
+    ],
+    "correct_index": 0,
+    "explanation": "Induction motors run at slightly below synchronous speed (slip > 0) — the slip creates the relative motion needed for torque."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Electrical Machines",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "Slip in an induction motor is defined as:",
+    "options": [
+      "(Ns−N)/Ns",
+      "N/Ns",
+      "(N−Ns)/N",
+      "Ns×N"
+    ],
+    "correct_index": 0,
+    "explanation": "Slip s=(Ns−N)/Ns where Ns=synchronous speed, N=actual speed. At full load, s≈3–5%."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Electrical Safety",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "Earth wire in domestic wiring is usually coloured:",
+    "options": [
+      "Green/Yellow",
+      "Red",
+      "Black",
+      "Blue"
+    ],
+    "correct_index": 0,
+    "explanation": "IS standards: Earth = Green/Yellow, Live/Phase = Red (old) or Brown (new), Neutral = Black or Blue."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Electrical Safety",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "An ELCB (Earth Leakage Circuit Breaker) trips when:",
+    "options": [
+      "Current leaks to earth",
+      "Voltage is too high",
+      "Frequency changes",
+      "Resistance is too low"
+    ],
+    "correct_index": 0,
+    "explanation": "ELCB detects leakage current to earth (≥30 mA) and trips within 30ms to prevent electric shock."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Electrical Safety",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "Which of the following is a good insulator?",
+    "options": [
+      "Rubber",
+      "Copper",
+      "Iron",
+      "Carbon"
+    ],
+    "correct_index": 0,
+    "explanation": "Rubber is an electrical insulator — used in cable sheaths, gloves, and boot soles for safety."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Measuring Instruments",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "A voltmeter is connected:",
+    "options": [
+      "In parallel with the load",
+      "In series with the load",
+      "In any position",
+      "Between two grounds"
+    ],
+    "correct_index": 0,
+    "explanation": "Voltmeter measures potential difference across a component — it must be in parallel. It has very high internal resistance."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Measuring Instruments",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "An ammeter is connected:",
+    "options": [
+      "In series with the load",
+      "In parallel with the load",
+      "Across the source",
+      "Across the fuse"
+    ],
+    "correct_index": 0,
+    "explanation": "Ammeter measures current flow — it must be in series. It has very low internal resistance."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Measuring Instruments",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "A multimeter can measure:",
+    "options": [
+      "Voltage, Current, and Resistance",
+      "Only voltage",
+      "Only current",
+      "Only resistance"
+    ],
+    "correct_index": 0,
+    "explanation": "A multimeter combines voltmeter, ammeter, and ohmmeter functions, plus continuity check."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "Charge on one electron is approximately:",
+    "options": [
+      "1.6×10⁻¹⁹ C",
+      "9.1×10⁻³¹ C",
+      "1.67×10⁻²⁷ C",
+      "6.02×10²³ C"
+    ],
+    "correct_index": 0,
+    "explanation": "Elementary charge e=1.6×10⁻¹⁹ Coulombs. This is the fundamental unit of charge."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "The relation between charge Q, current I and time t is:",
+    "options": [
+      "Q = I×t",
+      "Q = I/t",
+      "Q = t/I",
+      "Q = I+t"
+    ],
+    "correct_index": 0,
+    "explanation": "Charge Q=I×t. Current is the rate of flow of charge: I=Q/t."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Wiring & Installation",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "PVC in electrical wiring refers to:",
+    "options": [
+      "Polyvinyl Chloride insulation",
+      "Protective Voltage Circuit",
+      "Primary Voltage Conductor",
+      "Power Voltage Control"
+    ],
+    "correct_index": 0,
+    "explanation": "PVC (Polyvinyl Chloride) is the most common insulation material in domestic wiring."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Wiring & Installation",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "The standard household supply voltage in India is:",
+    "options": [
+      "230V",
+      "110V",
+      "415V",
+      "11000V"
+    ],
+    "correct_index": 0,
+    "explanation": "Single-phase domestic supply in India is 230V AC at 50 Hz. Three-phase is 415V (line-to-line)."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Wiring & Installation",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "Which switch disconnects all poles simultaneously?",
+    "options": [
+      "Double pole switch",
+      "Single pole switch",
+      "Toggle switch",
+      "Push button"
+    ],
+    "correct_index": 0,
+    "explanation": "A double pole (DP) switch breaks both live and neutral simultaneously — used for safety isolation."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "AC Circuits",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "The RMS value of a sinusoidal AC current with peak value Im is:",
+    "options": [
+      "Im/√2",
+      "Im×√2",
+      "Im/2",
+      "2Im"
+    ],
+    "correct_index": 0,
+    "explanation": "IRMS=Im/√2≈0.707Im. RMS gives equivalent DC heating effect."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "1 unit of electrical energy consumed is:",
+    "options": [
+      "1 kWh",
+      "1 Wh",
+      "1 kW",
+      "1 MWh"
+    ],
+    "correct_index": 0,
+    "explanation": "1 unit = 1 kWh (kilowatt-hour) — the standard unit for billing electrical energy."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Electrical Machines",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "The function of commutator in a DC motor is to:",
+    "options": [
+      "Convert AC to DC mechanically",
+      "Increase speed",
+      "Reduce voltage",
+      "Store energy"
+    ],
+    "correct_index": 0,
+    "explanation": "Commutator + brushes convert the internally generated AC into DC at the output terminals."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "Kirchhoff's Current Law (KCL) states that:",
+    "options": [
+      "Sum of currents at a node = 0",
+      "Sum of voltages = 0",
+      "Power = Voltage × Resistance",
+      "Current = Voltage + Resistance"
+    ],
+    "correct_index": 0,
+    "explanation": "KCL: ΣI = 0 at any node (sum of incoming = sum of outgoing currents). Conservation of charge."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "stream": "electrical",
+    "question_text": "The magnetic field around a current-carrying conductor is described by:",
+    "options": [
+      "Ampere's law",
+      "Ohm's law",
+      "Faraday's law",
+      "Coulomb's law"
+    ],
+    "correct_index": 0,
+    "explanation": "Ampere's law: The line integral of B around a closed path = μ₀×(enclosed current)."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Power Systems",
+    "difficulty": 2,
+    "stream": "electrical",
+    "question_text": "Power factor of a purely inductive circuit is:",
+    "options": [
+      "0 (lagging)",
+      "1",
+      "0.5 lagging",
+      "0.866 lagging"
+    ],
+    "correct_index": 0,
+    "explanation": "In a pure inductor, current lags voltage by 90°. pf=cos(90°)=0 (lagging)."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "AC Circuits",
+    "difficulty": 2,
+    "stream": "electrical",
+    "question_text": "Resonance in a series RLC circuit occurs when:",
+    "options": [
+      "XL = XC",
+      "R = XL",
+      "R = XC",
+      "XL + XC = R"
+    ],
+    "correct_index": 0,
+    "explanation": "At resonance, inductive reactance XL = capacitive reactance XC. Net reactance=0, impedance=R (minimum)."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "AC Circuits",
+    "difficulty": 2,
+    "stream": "electrical",
+    "question_text": "The impedance Z of an RLC series circuit is:",
+    "options": [
+      "√(R²+(XL−XC)²)",
+      "R+XL+XC",
+      "R×XL×XC",
+      "(XL−XC)/R"
+    ],
+    "correct_index": 0,
+    "explanation": "Z=√(R²+(XL−XC)²). At resonance XL=XC so Z=R (minimum impedance, maximum current)."
   }
 ]

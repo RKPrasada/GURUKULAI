@@ -1,0 +1,2195 @@
+[
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 1,
+    "question_text": "If (x−3)(x+5)=0, the values of x are:",
+    "options": [
+      "3 and −5",
+      "−3 and 5",
+      "3 and 5",
+      "−3 and −5"
+    ],
+    "correct_index": 0,
+    "explanation": "Zero product property: x−3=0 → x=3; x+5=0 → x=−5.",
+    "id": "rrb_je_78747430"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "The remainder when 7²⁵ is divided by 6 is:",
+    "options": [
+      "1",
+      "5",
+      "7",
+      "0"
+    ],
+    "correct_index": 0,
+    "explanation": "7 ≡ 1 (mod 6). So 7²⁵ ≡ 1²⁵ = 1 (mod 6). Remainder = 1.",
+    "id": "rrb_je_d15ab57d"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 1,
+    "question_text": "The total surface area of a cylinder with radius 7 cm and height 10 cm is:",
+    "options": [
+      "748 cm²",
+      "440 cm²",
+      "154 cm²",
+      "594 cm²"
+    ],
+    "correct_index": 0,
+    "explanation": "TSA = 2πr(h+r) = 2×(22/7)×7×(10+7) = 44×17 = 748 cm².",
+    "id": "rrb_je_91c7b473"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 1,
+    "question_text": "If sin θ = 3/5, then cos θ is:",
+    "options": [
+      "4/5",
+      "3/4",
+      "5/3",
+      "1/5"
+    ],
+    "correct_index": 0,
+    "explanation": "sin²θ + cos²θ = 1 → cos²θ = 1−9/25 = 16/25 → cosθ = 4/5.",
+    "id": "rrb_je_ee619e9c"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Percentage",
+    "difficulty": 1,
+    "question_text": "A number when decreased by 12.5% gives 70. The number is:",
+    "options": [
+      "80",
+      "75",
+      "84",
+      "78"
+    ],
+    "correct_index": 0,
+    "explanation": "x × (1−0.125) = 70 → x × 0.875 = 70 → x = 80.",
+    "id": "rrb_je_8d871548"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Profit and Loss",
+    "difficulty": 2,
+    "question_text": "By selling an article for ₹1170, a man gains 17%. Cost price is:",
+    "options": [
+      "₹1000",
+      "₹900",
+      "₹1100",
+      "₹1050"
+    ],
+    "correct_index": 0,
+    "explanation": "CP = SP/(1+profit%) = 1170/1.17 = ₹1000.",
+    "id": "rrb_je_bf74e217"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "difficulty": 2,
+    "question_text": "Pipe A fills a tank in 12 hrs, pipe B empties it in 18 hrs. Both open together, tank fills in:",
+    "options": [
+      "36 hrs",
+      "6 hrs",
+      "9 hrs",
+      "24 hrs"
+    ],
+    "correct_index": 0,
+    "explanation": "Net rate = 1/12 − 1/18 = 3/36 − 2/36 = 1/36. Time = 36 hrs.",
+    "id": "rrb_je_09c5f668"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Statistics",
+    "difficulty": 2,
+    "question_text": "The median of 13, 7, 5, 21, 9, 3, 17 is:",
+    "options": [
+      "9",
+      "10",
+      "13",
+      "7"
+    ],
+    "correct_index": 0,
+    "explanation": "Sorted: 3,5,7,9,13,17,21. Middle (4th) value = 9.",
+    "id": "rrb_je_ffd6ae51"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Coordinate Geometry",
+    "difficulty": 2,
+    "question_text": "The midpoint of the line joining (2,−3) and (6,5) is:",
+    "options": [
+      "(4,1)",
+      "(4,4)",
+      "(8,2)",
+      "(3,1)"
+    ],
+    "correct_index": 0,
+    "explanation": "Midpoint = ((2+6)/2, (−3+5)/2) = (4, 1).",
+    "id": "rrb_je_930741d5"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 2,
+    "question_text": "A tower 30 m high casts a shadow 30 m long. The angle of elevation of the sun is:",
+    "options": [
+      "45°",
+      "30°",
+      "60°",
+      "90°"
+    ],
+    "correct_index": 0,
+    "explanation": "tanθ = height/shadow = 30/30 = 1 → θ = 45°.",
+    "id": "rrb_je_d32aa0a8"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Sequence and Series",
+    "difficulty": 2,
+    "question_text": "The 10th term of AP 3, 7, 11, 15… is:",
+    "options": [
+      "39",
+      "35",
+      "43",
+      "41"
+    ],
+    "correct_index": 0,
+    "explanation": "a=3, d=4. aₙ = a+(n−1)d = 3+(10−1)×4 = 3+36 = 39.",
+    "id": "rrb_je_3633d0fb"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Permutation and Combination",
+    "difficulty": 2,
+    "question_text": "In how many ways can 4 students be selected from 10?",
+    "options": [
+      "210",
+      "5040",
+      "40",
+      "1024"
+    ],
+    "correct_index": 0,
+    "explanation": "C(10,4) = 10!/(4!×6!) = 10×9×8×7/(4×3×2×1) = 5040/24 = 210.",
+    "id": "rrb_je_74a1ad75"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Probability",
+    "difficulty": 2,
+    "question_text": "A bag has 5 red and 3 blue balls. Probability of drawing 2 red balls is:",
+    "options": [
+      "5/14",
+      "10/28",
+      "5/8",
+      "3/8"
+    ],
+    "correct_index": 0,
+    "explanation": "P = C(5,2)/C(8,2) = 10/28 = 5/14.",
+    "id": "rrb_je_0d270212"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Differentiation",
+    "difficulty": 3,
+    "question_text": "d/dx (x² + 4x − 3) at x = 2 is:",
+    "options": [
+      "8",
+      "4",
+      "12",
+      "6"
+    ],
+    "correct_index": 0,
+    "explanation": "dy/dx = 2x+4. At x=2: 4+4 = 8.",
+    "id": "rrb_je_f15ddbad"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Matrices",
+    "difficulty": 2,
+    "question_text": "If A = [[1,2],[3,4]], then det(A) is:",
+    "options": [
+      "−2",
+      "10",
+      "2",
+      "−10"
+    ],
+    "correct_index": 0,
+    "explanation": "det(A) = 1×4 − 2×3 = 4 − 6 = −2.",
+    "id": "rrb_je_c5b880cc"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Integration",
+    "difficulty": 3,
+    "question_text": "∫(2x + 3) dx evaluated from x=1 to x=2 is:",
+    "options": [
+      "6",
+      "8",
+      "5",
+      "4"
+    ],
+    "correct_index": 0,
+    "explanation": "∫(2x+3)dx = x²+3x+C. At x=2: 4+6=10. At x=1: 1+3=4. Definite integral = 10−4 = 6.",
+    "id": "rrb_je_641d7e00"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Complex Numbers",
+    "difficulty": 3,
+    "question_text": "The argument (angle) of complex number (1+i) is:",
+    "options": [
+      "π/4",
+      "π/2",
+      "π/3",
+      "0"
+    ],
+    "correct_index": 0,
+    "explanation": "arg(1+i) = arctan(1/1) = arctan(1) = 45° = π/4.",
+    "id": "rrb_je_6c1820e3"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Vectors",
+    "difficulty": 3,
+    "question_text": "If a⃗=2î+3ĵ−k̂ and b⃗=î−2ĵ+3k̂, then a⃗·b⃗ is:",
+    "options": [
+      "−7",
+      "−1",
+      "7",
+      "1"
+    ],
+    "correct_index": 0,
+    "explanation": "a·b = (2)(1)+(3)(−2)+(−1)(3) = 2−6−3 = −7.",
+    "id": "rrb_je_5afe9ee2"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Laws of Motion",
+    "difficulty": 1,
+    "question_text": "A 10 kg body accelerates at 2 m/s². The net force acting on it is:",
+    "options": [
+      "20 N",
+      "5 N",
+      "12 N",
+      "8 N"
+    ],
+    "correct_index": 0,
+    "explanation": "F = ma = 10×2 = 20 N (Newton's second law).",
+    "id": "rrb_je_0f17d31e"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Work, Energy and Power",
+    "difficulty": 1,
+    "question_text": "A machine does 500 J of work in 25 seconds. Its power is:",
+    "options": [
+      "20 W",
+      "12.5 W",
+      "475 W",
+      "525 W"
+    ],
+    "correct_index": 0,
+    "explanation": "P = W/t = 500/25 = 20 W.",
+    "id": "rrb_je_a21577f3"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "difficulty": 1,
+    "question_text": "Absolute temperature scale was given by:",
+    "options": [
+      "Lord Kelvin",
+      "Newton",
+      "Celsius",
+      "Fahrenheit"
+    ],
+    "correct_index": 0,
+    "explanation": "Lord Kelvin proposed the absolute (Kelvin) temperature scale (0 K = −273.15°C), based on thermodynamic principles.",
+    "id": "rrb_je_f6b6bcab"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Waves and Sound",
+    "difficulty": 2,
+    "question_text": "The phenomenon of superposition of two sound waves of slightly different frequencies producing alternating loud and soft sounds is called:",
+    "options": [
+      "Beats",
+      "Resonance",
+      "Echo",
+      "Interference"
+    ],
+    "correct_index": 0,
+    "explanation": "Beats: |f₁−f₂| oscillations per second in intensity. Used in tuning musical instruments and Doppler measurements.",
+    "id": "rrb_je_af0d2613"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Optics",
+    "difficulty": 2,
+    "question_text": "Total internal reflection occurs when light passes from denser to rarer medium at an angle:",
+    "options": [
+      "Greater than critical angle",
+      "Less than critical angle",
+      "Equal to 45°",
+      "Equal to 90°"
+    ],
+    "correct_index": 0,
+    "explanation": "Critical angle θc = arcsin(n₂/n₁). At angles > θc, all light reflects back — total internal reflection. Basis of optical fibres.",
+    "id": "rrb_je_34efe9a7"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Electrostatics",
+    "difficulty": 2,
+    "question_text": "The capacitance of a parallel plate capacitor increases if:",
+    "options": [
+      "A dielectric is inserted between plates",
+      "Plate separation is increased",
+      "Plate area is decreased",
+      "Voltage is increased"
+    ],
+    "correct_index": 0,
+    "explanation": "C = εA/d = ε₀εᵣA/d. Inserting dielectric (εᵣ>1) increases C. Increasing d or decreasing A reduces C. Voltage doesn't affect C.",
+    "id": "rrb_je_504d744a"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Current Electricity",
+    "difficulty": 2,
+    "question_text": "The internal resistance of an ideal voltage source is:",
+    "options": [
+      "Zero",
+      "Infinite",
+      "1 Ω",
+      "Depends on EMF"
+    ],
+    "correct_index": 0,
+    "explanation": "Ideal voltage source: zero internal resistance → terminal voltage = EMF regardless of current drawn. Ideal current source: infinite internal resistance.",
+    "id": "rrb_je_7cde229d"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Modern Physics",
+    "difficulty": 2,
+    "question_text": "The photoelectric effect proves the particle nature of:",
+    "options": [
+      "Light",
+      "Electrons",
+      "Protons",
+      "X-rays"
+    ],
+    "correct_index": 0,
+    "explanation": "Einstein's photoelectric effect: light behaves as photons (quanta of energy E=hf). Emission of electrons depends on frequency, not intensity — proves light's particle nature.",
+    "id": "rrb_je_29620aa4"
+  },
+  {
+    "subject": "Physics",
+    "topic": "Nuclear Physics",
+    "difficulty": 3,
+    "question_text": "In radioactive decay, beta (β⁻) emission occurs when:",
+    "options": [
+      "A neutron converts to proton + electron + antineutrino",
+      "A proton emits electron",
+      "Alpha particle is released",
+      "Gamma ray is emitted"
+    ],
+    "correct_index": 0,
+    "explanation": "β⁻ decay: n → p + e⁻ + v̄ₑ. Atomic number increases by 1, mass number unchanged. Converts neutron-rich nuclide toward stability.",
+    "id": "rrb_je_0da62ca9"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Atomic Structure",
+    "difficulty": 1,
+    "question_text": "The number of neutrons in ²³⁸₉₂U is:",
+    "options": [
+      "146",
+      "92",
+      "238",
+      "184"
+    ],
+    "correct_index": 0,
+    "explanation": "Neutrons = Mass number − Atomic number = 238 − 92 = 146.",
+    "id": "rrb_je_8297cbc2"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Chemical Bonding",
+    "difficulty": 2,
+    "question_text": "Which of the following has the highest bond order?",
+    "options": [
+      "N₂ (triple bond, BO=3)",
+      "O₂ (double bond, BO=2)",
+      "H₂ (single bond, BO=1)",
+      "F₂ (single bond, BO=1)"
+    ],
+    "correct_index": 0,
+    "explanation": "Bond order: N₂=3 (N≡N), O₂=2 (O=O), H₂=F₂=1. Higher bond order → shorter, stronger bond.",
+    "id": "rrb_je_b3dc23a3"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Thermochemistry",
+    "difficulty": 2,
+    "question_text": "A reaction with ΔH=−ve and ΔS=+ve is:",
+    "options": [
+      "Spontaneous at all temperatures",
+      "Non-spontaneous always",
+      "Spontaneous only at high T",
+      "Spontaneous only at low T"
+    ],
+    "correct_index": 0,
+    "explanation": "ΔG = ΔH − TΔS. ΔH<0 and ΔS>0 → ΔG always negative → spontaneous at all temperatures.",
+    "id": "rrb_je_4269dc2b"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Equilibrium",
+    "difficulty": 2,
+    "question_text": "Ka of a weak acid HA is 10⁻⁵. Its pKa is:",
+    "options": [
+      "5",
+      "−5",
+      "10",
+      "0.00001"
+    ],
+    "correct_index": 0,
+    "explanation": "pKa = −log(Ka) = −log(10⁻⁵) = 5. Stronger acids have lower pKa.",
+    "id": "rrb_je_cd968a5a"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": 2,
+    "question_text": "The functional group present in aldehydes is:",
+    "options": [
+      "−CHO",
+      "−OH",
+      "−COOH",
+      "−CO−"
+    ],
+    "correct_index": 0,
+    "explanation": "Aldehyde group: −CHO (terminal carbonyl). Ketone: −CO− (internal). Carboxylic acid: −COOH. Alcohol: −OH.",
+    "id": "rrb_je_43c49a77"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Electrochemistry",
+    "difficulty": 3,
+    "question_text": "During electrolysis of dilute H₂SO₄, at cathode:",
+    "options": [
+      "H₂ gas is evolved",
+      "O₂ gas is evolved",
+      "H₂SO₄ is deposited",
+      "SO₄²⁻ is deposited"
+    ],
+    "correct_index": 0,
+    "explanation": "Cathode (reduction): 2H⁺ + 2e⁻ → H₂↑. Anode (oxidation): 2H₂O → O₂ + 4H⁺ + 4e⁻. Nett: electrolysis of water.",
+    "id": "rrb_je_217bf90f"
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Polymers",
+    "difficulty": 3,
+    "question_text": "Bakelite is a thermosetting polymer formed by condensation of phenol and:",
+    "options": [
+      "Formaldehyde",
+      "Acetaldehyde",
+      "Urea",
+      "Acetic acid"
+    ],
+    "correct_index": 0,
+    "explanation": "Bakelite (phenol-formaldehyde resin): phenol + HCHO → cross-linked polymer. Thermosetting — once cured, cannot be re-melted.",
+    "id": "rrb_je_eb003a4e"
+  },
+  {
+    "subject": "General Intelligence",
+    "topic": "Number Series",
+    "difficulty": 1,
+    "question_text": "Find the next term: 1, 1, 2, 3, 5, 8, ?",
+    "options": [
+      "13",
+      "10",
+      "11",
+      "15"
+    ],
+    "correct_index": 0,
+    "explanation": "Fibonacci series — each term = sum of previous two. 5+8 = 13.",
+    "id": "rrb_je_25130b22"
+  },
+  {
+    "subject": "General Intelligence",
+    "topic": "Analogy",
+    "difficulty": 1,
+    "question_text": "Current : Ammeter :: Pressure : ?",
+    "options": [
+      "Manometer",
+      "Thermometer",
+      "Barometer",
+      "Altimeter"
+    ],
+    "correct_index": 0,
+    "explanation": "Ammeter measures current; manometer measures fluid pressure. (Barometer measures atmospheric pressure specifically.)",
+    "id": "rrb_je_eb80295a"
+  },
+  {
+    "subject": "General Intelligence",
+    "topic": "Coding and Decoding",
+    "difficulty": 2,
+    "question_text": "In a code, ENGINEER is written as ENIGENRE. How is SCIENCE written?",
+    "options": [
+      "ECISNCE",
+      "SCNEIECI",
+      "IECNSEC",
+      "SCIECNE"
+    ],
+    "correct_index": 0,
+    "explanation": "Pattern: letters at odd positions reversed with even positions. S-C-I-E-N-C-E → first+last swap by pairs: ECISNCE.",
+    "id": "rrb_je_54fedf67"
+  },
+  {
+    "subject": "General Intelligence",
+    "topic": "Syllogism",
+    "difficulty": 2,
+    "question_text": "All engineers are graduates. Some graduates are managers. Conclusion: Some engineers are managers?",
+    "options": [
+      "Does not follow",
+      "Follows",
+      "Partially follows",
+      "Cannot determine"
+    ],
+    "correct_index": 0,
+    "explanation": "'Some graduates are managers' doesn't guarantee those graduates are engineers. The conclusion doesn't necessarily follow.",
+    "id": "rrb_je_cbf1ce42"
+  },
+  {
+    "subject": "General Intelligence",
+    "topic": "Blood Relations",
+    "difficulty": 2,
+    "question_text": "P's father is Q. Q's sister is R. R's husband is S. S's son is T. How is T related to P?",
+    "options": [
+      "Cousin",
+      "Uncle",
+      "Nephew",
+      "Brother"
+    ],
+    "correct_index": 0,
+    "explanation": "P's father Q → Q's sister R → R's husband S → S's son T. P and T share same generation, R is P's aunt, T is P's cousin.",
+    "id": "rrb_je_2f9d89ae"
+  },
+  {
+    "subject": "General Intelligence",
+    "topic": "Direction Sense",
+    "difficulty": 2,
+    "question_text": "A man walks 3 km South, 4 km East, 3 km North. How far is he from start?",
+    "options": [
+      "4 km",
+      "6 km",
+      "√34 km",
+      "5 km"
+    ],
+    "correct_index": 0,
+    "explanation": "South 3, North 3 cancel out. Net displacement = 4 km East.",
+    "id": "rrb_je_e28ba9e1"
+  },
+  {
+    "subject": "General Intelligence",
+    "topic": "Puzzles",
+    "difficulty": 2,
+    "question_text": "6 people can complete a project in 10 days. How many days for 4 people?",
+    "options": [
+      "15",
+      "12",
+      "20",
+      "8"
+    ],
+    "correct_index": 0,
+    "explanation": "Person-days = 6×10 = 60. For 4 people: 60/4 = 15 days.",
+    "id": "rrb_je_83bcd2e2"
+  },
+  {
+    "subject": "General Intelligence",
+    "topic": "Venn Diagrams",
+    "difficulty": 2,
+    "question_text": "In a group of 50 engineers, 30 know Java, 25 know Python, 10 know both. Those knowing neither:",
+    "options": [
+      "5",
+      "10",
+      "15",
+      "20"
+    ],
+    "correct_index": 0,
+    "explanation": "|J∪P| = 30+25−10 = 45. Neither = 50−45 = 5.",
+    "id": "rrb_je_f0105c22"
+  },
+  {
+    "subject": "General Intelligence",
+    "topic": "Cubes and Dice",
+    "difficulty": 2,
+    "question_text": "A cube is painted red on all faces and cut into 27 equal smaller cubes. How many have exactly 2 faces painted?",
+    "options": [
+      "12",
+      "8",
+      "6",
+      "24"
+    ],
+    "correct_index": 0,
+    "explanation": "2 faces painted = edge pieces (not corners). A 3×3×3 cube has 12 edges, 1 piece per edge = 12 pieces with exactly 2 painted faces.",
+    "id": "rrb_je_56e5dae5"
+  },
+  {
+    "subject": "General Intelligence",
+    "topic": "Sequence",
+    "difficulty": 3,
+    "question_text": "Find the missing: 2, 6, 12, 20, 30, ?",
+    "options": [
+      "42",
+      "36",
+      "40",
+      "44"
+    ],
+    "correct_index": 0,
+    "explanation": "Differences: 4,6,8,10,12... Each difference increases by 2. Next = 30+12 = 42. Also: n(n+1): 1×2,2×3,3×4,4×5,5×6,6×7=42.",
+    "id": "rrb_je_5ad8c215"
+  },
+  {
+    "subject": "General Intelligence",
+    "topic": "Data Sufficiency",
+    "difficulty": 3,
+    "question_text": "Is integer N divisible by 6? Statement 1: N is divisible by 2. Statement 2: N is divisible by 3.",
+    "options": [
+      "Both statements together are sufficient",
+      "Statement 1 alone sufficient",
+      "Statement 2 alone sufficient",
+      "Neither sufficient"
+    ],
+    "correct_index": 0,
+    "explanation": "6 = 2×3. N divisible by 6 iff divisible by both 2 and 3. Either statement alone is insufficient; together they are sufficient.",
+    "id": "rrb_je_87768861"
+  },
+  {
+    "subject": "General Intelligence",
+    "topic": "Critical Reasoning",
+    "difficulty": 3,
+    "question_text": "All X are Y. No Y is Z. Conclusion: No X is Z. The conclusion is:",
+    "options": [
+      "Valid (follows necessarily)",
+      "Invalid",
+      "Possibly true only",
+      "Partially valid"
+    ],
+    "correct_index": 0,
+    "explanation": "If all X are Y and no Y is Z, then no X can be Z (since X⊆Y and Y∩Z=∅, so X∩Z=∅). Valid deduction.",
+    "id": "rrb_je_69ba3ba0"
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Science & Technology",
+    "difficulty": 1,
+    "question_text": "The speed of light in vacuum is approximately:",
+    "options": [
+      "3×10⁸ m/s",
+      "3×10⁶ m/s",
+      "3×10¹⁰ m/s",
+      "3×10⁵ m/s"
+    ],
+    "correct_index": 0,
+    "explanation": "c ≈ 2.998×10⁸ m/s ≈ 3×10⁸ m/s. Light travels ~300,000 km per second.",
+    "id": "rrb_je_f097f2aa"
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "Optical fibre communication uses which principle?",
+    "options": [
+      "Total internal reflection",
+      "Refraction",
+      "Diffraction",
+      "Photoelectric effect"
+    ],
+    "correct_index": 0,
+    "explanation": "Optical fibres guide light by total internal reflection at the core-cladding interface. Core has higher refractive index than cladding.",
+    "id": "rrb_je_15fca94e"
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Railway Technology",
+    "difficulty": 2,
+    "question_text": "The gauge used on most Indian Railway mainlines is:",
+    "options": [
+      "Broad gauge (1676 mm)",
+      "Metre gauge (1000 mm)",
+      "Standard gauge (1435 mm)",
+      "Narrow gauge (762 mm)"
+    ],
+    "correct_index": 0,
+    "explanation": "Indian Railways mainlines use Broad gauge (5 ft 6 in = 1676 mm). Standard gauge (1435 mm) is used in most European countries.",
+    "id": "rrb_je_044188f0"
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "The unit of frequency is named after:",
+    "options": [
+      "Heinrich Hertz",
+      "James Watt",
+      "Michael Faraday",
+      "André-Marie Ampère"
+    ],
+    "correct_index": 0,
+    "explanation": "Hertz (Hz) = cycles per second, named after Heinrich Hertz who proved the existence of electromagnetic waves.",
+    "id": "rrb_je_a581deae"
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Environment",
+    "difficulty": 2,
+    "question_text": "The Kyoto Protocol is related to:",
+    "options": [
+      "Reduction of greenhouse gas emissions",
+      "Nuclear non-proliferation",
+      "Free trade",
+      "Biodiversity conservation"
+    ],
+    "correct_index": 0,
+    "explanation": "Kyoto Protocol (1997): international treaty committing countries to reduce greenhouse gas emissions. Successor: Paris Agreement (2015).",
+    "id": "rrb_je_f441c323"
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "The process of converting AC to DC is called:",
+    "options": [
+      "Rectification",
+      "Amplification",
+      "Modulation",
+      "Inversion"
+    ],
+    "correct_index": 0,
+    "explanation": "Rectification: converting AC (alternating current) to DC (direct current) using diodes. Inversion = DC to AC.",
+    "id": "rrb_je_a150b08b"
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Railway Technology",
+    "difficulty": 2,
+    "question_text": "Kavach is an automatic train protection system that prevents:",
+    "options": [
+      "Signal-passing at danger (SPAD) and collisions",
+      "Derailments only",
+      "Flooding of tracks",
+      "Power supply failure"
+    ],
+    "correct_index": 0,
+    "explanation": "Kavach (TCAS): Indian Railways' automatic train protection — prevents collision by applying brakes if driver misses signal or two trains approach on same track.",
+    "id": "rrb_je_c3692e91"
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Science & Technology",
+    "difficulty": 3,
+    "question_text": "The principle behind MRI (Magnetic Resonance Imaging) is:",
+    "options": [
+      "Nuclear magnetic resonance of hydrogen atoms",
+      "X-ray attenuation",
+      "Ultrasound reflection",
+      "Radioactive tracer decay"
+    ],
+    "correct_index": 0,
+    "explanation": "MRI uses NMR: hydrogen nuclei in body align with strong magnetic field, then emit radio waves when disturbed by RF pulses — signals reconstructed into images.",
+    "id": "rrb_je_759e4c47"
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Network Analysis",
+    "difficulty": 2,
+    "question_text": "Thevenin's theorem replaces a complex network with:",
+    "options": [
+      "A voltage source Vth in series with Rth",
+      "A current source in parallel with resistance",
+      "Multiple voltage sources",
+      "A single resistor"
+    ],
+    "correct_index": 0,
+    "explanation": "Thevenin: any linear network = Voc (open circuit voltage) in series with Rth (resistance seen from terminals with sources deactivated).",
+    "id": "rrb_je_10e95deb"
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Electrical Machines",
+    "difficulty": 2,
+    "question_text": "The speed-torque characteristic of a DC shunt motor is:",
+    "options": [
+      "Nearly flat (approximately constant speed)",
+      "Drops sharply with load",
+      "Increases with load",
+      "Inversely proportional to flux"
+    ],
+    "correct_index": 0,
+    "explanation": "DC shunt motor: flux ≈ constant. Speed N ∝ (V−IaRa)/Φ. As load increases, Ia increases slightly, small drop in speed → near-constant speed characteristic.",
+    "id": "rrb_je_6eafa429"
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Power Systems",
+    "difficulty": 2,
+    "question_text": "Ferranti effect in transmission lines causes receiving end voltage to be:",
+    "options": [
+      "Higher than sending end voltage (at no load)",
+      "Lower than sending end",
+      "Equal to sending end",
+      "Zero"
+    ],
+    "correct_index": 0,
+    "explanation": "Ferranti effect: at no load/light load, long transmission line capacitance causes receiving-end voltage to exceed sending-end voltage. Mitigated by shunt reactors.",
+    "id": "rrb_je_46300040"
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Control Systems",
+    "difficulty": 2,
+    "question_text": "In a PID controller, the integral term eliminates:",
+    "options": [
+      "Steady-state error",
+      "Overshoot",
+      "Oscillations",
+      "Rise time"
+    ],
+    "correct_index": 0,
+    "explanation": "Integral action accumulates error over time → drives steady-state error to zero. Derivative reduces overshoot. Proportional gives basic control action.",
+    "id": "rrb_je_9ba3673e"
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Electrical Machines",
+    "difficulty": 3,
+    "question_text": "The torque-speed curve of an induction motor has maximum torque (pull-out torque) at slip:",
+    "options": [
+      "s = R₂/X₂",
+      "s = 0",
+      "s = 1",
+      "s = X₂/R₂"
+    ],
+    "correct_index": 0,
+    "explanation": "Maximum torque (Tmax) occurs at slip s = R₂/X₂. Beyond this slip, torque decreases. Tmax itself is independent of rotor resistance.",
+    "id": "rrb_je_a9e7dba7"
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Power Electronics",
+    "difficulty": 3,
+    "question_text": "In a single-phase half-wave controlled rectifier with firing angle α, the average output voltage is:",
+    "options": [
+      "(Vm/2π)(1+cosα)",
+      "(Vm/π)(1+cosα)",
+      "(2Vm/π)cosα",
+      "Vm cosα"
+    ],
+    "correct_index": 0,
+    "explanation": "Vavg = (Vm/2π)∫[α to π] sinωt d(ωt) = (Vm/2π)[−cosωt]α^π = (Vm/2π)(1+cosα).",
+    "id": "rrb_je_affb9cd8"
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Switchgear & Protection",
+    "difficulty": 3,
+    "question_text": "Differential protection relay operates on the principle of:",
+    "options": [
+      "Difference between incoming and outgoing currents",
+      "Overcurrent only",
+      "Voltage difference",
+      "Impedance measurement"
+    ],
+    "correct_index": 0,
+    "explanation": "Differential relay: compares current entering and leaving a protected zone. In normal operation, difference = 0. On internal fault, difference current operates the relay.",
+    "id": "rrb_je_6e8db079"
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Power Systems",
+    "difficulty": 3,
+    "question_text": "The symmetrical component method resolves unbalanced 3-phase phasors into:",
+    "options": [
+      "Positive, negative, and zero sequence components",
+      "Two balanced + one unbalanced",
+      "Magnitude and phase components",
+      "Harmonic and fundamental"
+    ],
+    "correct_index": 0,
+    "explanation": "Fortescue theorem: any unbalanced 3-phase system = positive sequence (balanced, ABC) + negative sequence (balanced, ACB) + zero sequence (all in phase).",
+    "id": "rrb_je_ff6947f1"
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Electrical Machines",
+    "difficulty": 3,
+    "question_text": "The armature reaction in an alternator causes:",
+    "options": [
+      "Distortion of air-gap flux and voltage regulation effect",
+      "Speed reduction",
+      "No effect on output",
+      "Only heating"
+    ],
+    "correct_index": 0,
+    "explanation": "Armature reaction in alternator: armature mmf distorts main field flux. Lagging PF → demagnetising effect → voltage drops. Leading PF → magnetising effect → voltage rises.",
+    "id": "rrb_je_ac421f20"
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Control Systems",
+    "difficulty": 3,
+    "question_text": "The root locus plot shows the locus of closed-loop poles as:",
+    "options": [
+      "Gain K varies from 0 to ∞",
+      "Frequency varies",
+      "Time increases",
+      "Input changes"
+    ],
+    "correct_index": 0,
+    "explanation": "Root locus: trajectory of closed-loop poles in s-plane as open-loop gain K increases from 0 to ∞. Starts at open-loop poles (K=0), ends at zeros (K=∞).",
+    "id": "rrb_je_53d98869"
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Network Analysis",
+    "difficulty": 3,
+    "question_text": "The Z-parameters (impedance parameters) of a 2-port network relate:",
+    "options": [
+      "V₁,V₂ to I₁,I₂ (V = ZI)",
+      "I₁,I₂ to V₁,V₂",
+      "Power to voltage",
+      "Only input port quantities"
+    ],
+    "correct_index": 0,
+    "explanation": "Z-parameters: [V₁; V₂] = [Z₁₁ Z₁₂; Z₂₁ Z₂₂][I₁; I₂]. Z₁₁=V₁/I₁|I₂=0 (input impedance). Useful for series connections.",
+    "id": "rrb_je_4dde9e39"
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Electrical Machines",
+    "difficulty": 3,
+    "question_text": "In a transformer, the leakage reactance causes:",
+    "options": [
+      "Voltage regulation (voltage drop under load)",
+      "Core losses",
+      "Magnetising current",
+      "Hysteresis loss"
+    ],
+    "correct_index": 0,
+    "explanation": "Leakage flux (not linking both windings) produces leakage reactance jX₁ and jX₂. These cause internal voltage drop → poor voltage regulation under load.",
+    "id": "rrb_je_0c99094f"
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Thermodynamics",
+    "difficulty": 2,
+    "question_text": "The work done in a reversible isothermal expansion of an ideal gas from V₁ to V₂ is:",
+    "options": [
+      "nRT ln(V₂/V₁)",
+      "nRT(V₂−V₁)",
+      "P(V₂−V₁)",
+      "nCvΔT"
+    ],
+    "correct_index": 0,
+    "explanation": "Isothermal (T=const): W = ∫PdV = ∫nRT/V dV = nRT ln(V₂/V₁). For expansion V₂>V₁, work is positive.",
+    "id": "rrb_je_71ac2f60"
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Fluid Mechanics",
+    "difficulty": 2,
+    "question_text": "The hydraulic gradient line (HGL) represents:",
+    "options": [
+      "Pressure head + elevation head at each point",
+      "Total head (pressure+velocity+elevation)",
+      "Only pressure head",
+      "Velocity head only"
+    ],
+    "correct_index": 0,
+    "explanation": "HGL = piezometric head = p/ρg + z. Energy Grade Line (EGL) = HGL + V²/2g (total head). Difference between EGL and HGL = velocity head.",
+    "id": "rrb_je_041e11b2"
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Strength of Materials",
+    "difficulty": 2,
+    "question_text": "The slenderness ratio of a column is defined as:",
+    "options": [
+      "Effective length / Least radius of gyration",
+      "Length / Diameter",
+      "Height / Width",
+      "Load / Area"
+    ],
+    "correct_index": 0,
+    "explanation": "λ = Le/k where k = √(I/A) = least radius of gyration. Higher slenderness ratio → greater tendency to buckle (use Euler's formula for long columns).",
+    "id": "rrb_je_8a67314b"
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Theory of Machines",
+    "difficulty": 2,
+    "question_text": "Gyroscopic couple acts on a body when it undergoes:",
+    "options": [
+      "Precession (change in direction of spin axis)",
+      "Uniform rotation",
+      "Linear acceleration",
+      "Vibration"
+    ],
+    "correct_index": 0,
+    "explanation": "Gyroscopic couple C = Iωωₚ, where ω = spin speed, ωₚ = precession angular velocity. Acts perpendicular to both spin and precession axes.",
+    "id": "rrb_je_72b702b2"
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Manufacturing",
+    "difficulty": 2,
+    "question_text": "The hardness of a material is measured by Brinell test using:",
+    "options": [
+      "Steel ball indenter and measuring indentation diameter",
+      "Diamond pyramid",
+      "Rockwell scale only",
+      "Scratch resistance"
+    ],
+    "correct_index": 0,
+    "explanation": "BHN = Load / Spherical indentation area. Vickers uses diamond pyramid. Rockwell measures depth. Brinell uses 10mm steel/carbide ball.",
+    "id": "rrb_je_70293170"
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Thermodynamics",
+    "difficulty": 3,
+    "question_text": "The effectiveness of a heat exchanger is defined as:",
+    "options": [
+      "Actual heat transfer / Maximum possible heat transfer",
+      "Output power / Input power",
+      "ΔT_hot / ΔT_cold",
+      "NTU / (NTU+1)"
+    ],
+    "correct_index": 0,
+    "explanation": "ε = Q_actual / Q_max. Q_max = Cmin(Th,in − Tc,in). Effectiveness depends on NTU (Number of Transfer Units) and Cmin/Cmax ratio.",
+    "id": "rrb_je_47946aab"
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Fluid Mechanics",
+    "difficulty": 3,
+    "question_text": "The Navier-Stokes equation is applicable to:",
+    "options": [
+      "Viscous incompressible Newtonian fluid flow",
+      "Ideal frictionless flow only",
+      "Compressible gas flow only",
+      "Turbulent flow only"
+    ],
+    "correct_index": 0,
+    "explanation": "Navier-Stokes equations: momentum equations for viscous (Newtonian), incompressible fluid flow. Euler equations apply to inviscid (ideal) flow.",
+    "id": "rrb_je_56096a33"
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Manufacturing",
+    "difficulty": 3,
+    "question_text": "In CNC machining, G-code G02 represents:",
+    "options": [
+      "Circular interpolation clockwise",
+      "Linear interpolation",
+      "Circular interpolation counter-clockwise",
+      "Rapid positioning"
+    ],
+    "correct_index": 0,
+    "explanation": "Standard G-codes: G00=rapid traverse, G01=linear interpolation, G02=circular CW, G03=circular CCW, G04=dwell.",
+    "id": "rrb_je_b9c1977c"
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Strength of Materials",
+    "difficulty": 3,
+    "question_text": "The Rankine-Gordon formula for columns accounts for both:",
+    "options": [
+      "Crushing failure and buckling failure",
+      "Bending and shear only",
+      "Torsion and buckling",
+      "Fatigue and creep"
+    ],
+    "correct_index": 0,
+    "explanation": "Rankine-Gordon: P = σc·A / (1 + a(Le/k)²). Combines crushing stress (short columns) and Euler buckling (long columns) — valid for all slenderness ratios.",
+    "id": "rrb_je_323c65a1"
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Theory of Machines",
+    "difficulty": 3,
+    "question_text": "The transmissibility ratio in vibration isolation is less than 1 when frequency ratio r=ω/ωn is:",
+    "options": [
+      "r > √2",
+      "r < 1",
+      "r = 1",
+      "r < √2"
+    ],
+    "correct_index": 0,
+    "explanation": "Transmissibility T = √[(1+(2ζr)²) / ((1−r²)²+(2ζr)²)]. T<1 (isolation) when r>√2 for all ζ. At r=√2, T=1 regardless of damping.",
+    "id": "rrb_je_b8d7d588"
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Manufacturing",
+    "difficulty": 3,
+    "question_text": "The Merchant's circle in metal cutting gives the relationship between cutting force, thrust force and:",
+    "options": [
+      "Friction force and normal force on rake face",
+      "Tool material and workpiece hardness",
+      "Feed rate and depth of cut",
+      "Temperature and tool life"
+    ],
+    "correct_index": 0,
+    "explanation": "Merchant's circle: 2D force diagram resolving cutting force (Fc), thrust force (Ft) into shear force (Fs), normal on shear plane (Fn), friction (F), and normal on rake face (N).",
+    "id": "rrb_je_a7aa2a8b"
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Fluid Mechanics",
+    "difficulty": 3,
+    "question_text": "In a centrifugal pump, the specific speed (Ns) is an indicator of:",
+    "options": [
+      "Pump shape/type — axial, mixed or radial flow",
+      "Actual rotational speed",
+      "Head developed",
+      "Efficiency"
+    ],
+    "correct_index": 0,
+    "explanation": "Specific speed Ns = N√Q / H^(3/4). Low Ns (centrifugal/radial): high head, low flow. High Ns (axial): low head, high flow. Determines impeller geometry.",
+    "id": "rrb_je_80d3ffaa"
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Strength of Materials",
+    "difficulty": 3,
+    "question_text": "The Wöhler (S-N) curve is used to determine:",
+    "options": [
+      "Fatigue life at different stress amplitudes",
+      "Ultimate tensile strength",
+      "Creep rate",
+      "Hardness variation with temperature"
+    ],
+    "correct_index": 0,
+    "explanation": "S-N curve: stress amplitude vs. cycles to failure. Endurance limit = stress below which infinite life (for ferrous materials). Used in fatigue design.",
+    "id": "rrb_je_6274d299"
+  },
+  {
+    "subject": "Civil Engineering",
+    "topic": "Structural Analysis",
+    "difficulty": 2,
+    "question_text": "A simply supported beam of span L carries central point load W. Maximum bending moment is:",
+    "options": [
+      "WL/4",
+      "WL/8",
+      "WL/2",
+      "WL"
+    ],
+    "correct_index": 0,
+    "explanation": "Simply supported + central point load: Mmax = WL/4 (at midspan). For UDL w: Mmax = wL²/8.",
+    "id": "rrb_je_2d6253b7"
+  },
+  {
+    "subject": "Civil Engineering",
+    "topic": "Soil Mechanics",
+    "difficulty": 2,
+    "question_text": "The bearing capacity of soil is affected most critically by its:",
+    "options": [
+      "Shear strength",
+      "Colour",
+      "Particle shape",
+      "Thermal conductivity"
+    ],
+    "correct_index": 0,
+    "explanation": "Bearing capacity = soil's ability to resist applied loads = function of shear strength (c and φ). Terzaghi's formula: qult = cNc + qNq + 0.5γBNγ.",
+    "id": "rrb_je_c9166ba0"
+  },
+  {
+    "subject": "Civil Engineering",
+    "topic": "RCC Design",
+    "difficulty": 2,
+    "question_text": "The clear cover to reinforcement in RCC beams (moderate exposure, IS 456) is:",
+    "options": [
+      "30 mm",
+      "15 mm",
+      "50 mm",
+      "25 mm"
+    ],
+    "correct_index": 0,
+    "explanation": "IS 456: clear cover for beams — mild exposure: 20 mm, moderate: 30 mm, severe: 45 mm, very severe: 50 mm. Protects steel from corrosion.",
+    "id": "rrb_je_b9b1c720"
+  },
+  {
+    "subject": "Civil Engineering",
+    "topic": "Surveying",
+    "difficulty": 2,
+    "question_text": "The instrument used to measure horizontal and vertical angles in surveying is:",
+    "options": [
+      "Theodolite",
+      "Level",
+      "Chain",
+      "Planimeter"
+    ],
+    "correct_index": 0,
+    "explanation": "Theodolite measures both horizontal and vertical angles precisely. Level measures only vertical angles (for levelling). Total station = electronic theodolite + EDM.",
+    "id": "rrb_je_b9c1dad2"
+  },
+  {
+    "subject": "Civil Engineering",
+    "topic": "Fluid Mechanics",
+    "difficulty": 2,
+    "question_text": "Manning's formula for open channel flow gives discharge Q as:",
+    "options": [
+      "Q = (1/n)A·R^(2/3)·S^(1/2)",
+      "Q = A×V",
+      "Q = Cd·A√(2gh)",
+      "Q = n·A·R·S"
+    ],
+    "correct_index": 0,
+    "explanation": "Manning's equation: V = (1/n)R^(2/3)S^(1/2). Q = AV = (A/n)R^(2/3)S^(1/2). n = Manning's roughness coefficient.",
+    "id": "rrb_je_23889765"
+  },
+  {
+    "subject": "Civil Engineering",
+    "topic": "Concrete Technology",
+    "difficulty": 3,
+    "question_text": "The water-cement (w/c) ratio in concrete primarily controls:",
+    "options": [
+      "Strength and durability (lower w/c → higher strength)",
+      "Workability only",
+      "Setting time only",
+      "Aggregate grading"
+    ],
+    "correct_index": 0,
+    "explanation": "Abrams' law: lower w/c → fewer capillary voids → higher compressive strength and lower permeability. Minimum w/c for full hydration ≈ 0.23; workable concrete 0.45–0.55.",
+    "id": "rrb_je_2c7c7da5"
+  },
+  {
+    "subject": "Civil Engineering",
+    "topic": "Structural Analysis",
+    "difficulty": 3,
+    "question_text": "The degree of static indeterminacy of a propped cantilever beam is:",
+    "options": [
+      "1",
+      "0",
+      "2",
+      "3"
+    ],
+    "correct_index": 0,
+    "explanation": "Propped cantilever: 3 unknown reactions (Va, Ha, Ma at fixed end + Vb at prop). 3 equilibrium equations. DSI = 4−3 = 1. One redundant reaction.",
+    "id": "rrb_je_0a55a987"
+  },
+  {
+    "subject": "Civil Engineering",
+    "topic": "Soil Mechanics",
+    "difficulty": 3,
+    "question_text": "Consolidation of clay soil occurs due to:",
+    "options": [
+      "Expulsion of water from voids under sustained load",
+      "Immediate elastic compression",
+      "Dynamic compaction",
+      "Chemical weathering"
+    ],
+    "correct_index": 0,
+    "explanation": "Primary consolidation: slow drainage of pore water from saturated clay under sustained stress → void ratio decreases → settlement. Terzaghi's consolidation theory.",
+    "id": "rrb_je_91ede84b"
+  },
+  {
+    "subject": "Civil Engineering",
+    "topic": "RCC Design",
+    "difficulty": 3,
+    "question_text": "In limit state design (IS 456), the partial safety factor for concrete (γc) is:",
+    "options": [
+      "1.5",
+      "1.15",
+      "1.0",
+      "2.0"
+    ],
+    "correct_index": 0,
+    "explanation": "IS 456 limit state: γc = 1.5 for concrete, γs = 1.15 for steel. Design strength: fcd = fck/1.5; fyd = fy/1.15. Accounts for material variability and model uncertainty.",
+    "id": "rrb_je_294bf024"
+  },
+  {
+    "subject": "Civil Engineering",
+    "topic": "Surveying",
+    "difficulty": 3,
+    "question_text": "The closing error in a closed traverse is:",
+    "options": [
+      "Difference between calculated and expected closing coordinates",
+      "Error in levelling only",
+      "Instrumental error",
+      "Curvature correction"
+    ],
+    "correct_index": 0,
+    "explanation": "Closing error: a perfect traverse returns to start. Misclosure = √(ΔE²+ΔN²) where ΔE,ΔN are algebraic sums of eastings and northings. Distributed by Bowditch rule.",
+    "id": "rrb_je_d4da0820"
+  },
+  {
+    "subject": "Information Technology",
+    "topic": "Data Structures",
+    "difficulty": 2,
+    "question_text": "The time complexity of binary search in a sorted array of n elements is:",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(n²)",
+      "O(1)"
+    ],
+    "correct_index": 0,
+    "explanation": "Binary search halves the search space each step → log₂n comparisons maximum. O(log n). Linear search = O(n). Array access = O(1).",
+    "id": "rrb_je_26ec8215"
+  },
+  {
+    "subject": "Information Technology",
+    "topic": "Computer Networks",
+    "difficulty": 2,
+    "question_text": "The OSI model layer responsible for end-to-end communication and error recovery is:",
+    "options": [
+      "Transport layer (Layer 4)",
+      "Network layer (Layer 3)",
+      "Data link layer (Layer 2)",
+      "Session layer (Layer 5)"
+    ],
+    "correct_index": 0,
+    "explanation": "Transport layer: TCP (reliable, connection-oriented) and UDP (unreliable, connectionless). Provides segmentation, flow control, and end-to-end error correction.",
+    "id": "rrb_je_0cdbfba0"
+  },
+  {
+    "subject": "Signal & Telecom",
+    "topic": "Signals and Systems",
+    "difficulty": 3,
+    "question_text": "The Nyquist sampling theorem states that a signal must be sampled at a rate of at least:",
+    "options": [
+      "2× the highest frequency component",
+      "Equal to highest frequency",
+      "√2 × bandwidth",
+      "4× the highest frequency"
+    ],
+    "correct_index": 0,
+    "explanation": "Nyquist rate = 2fmax. Sampling below this causes aliasing (frequency overlap). Anti-aliasing filter required before ADC.",
+    "id": "rrb_je_b3f72624"
+  },
+  {
+    "subject": "Signal & Telecom",
+    "topic": "Communication Systems",
+    "difficulty": 3,
+    "question_text": "In PCM (Pulse Code Modulation), if n = 8 bits per sample and sampling rate = 8 kHz, the bit rate is:",
+    "options": [
+      "64 kbps",
+      "8 kbps",
+      "16 kbps",
+      "512 kbps"
+    ],
+    "correct_index": 0,
+    "explanation": "Bit rate = samples/sec × bits/sample = 8000 × 8 = 64,000 bps = 64 kbps. Standard G.711 PCM for voice telephony.",
+    "id": "rrb_je_f01c3f75"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "Simplify: (16×4)÷8",
+    "options": [
+      "8",
+      "16",
+      "4",
+      "32"
+    ],
+    "correct_index": 0,
+    "explanation": "16×4=64; 64÷8=8."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Percentage",
+    "difficulty": 1,
+    "question_text": "20% of 250 =",
+    "options": [
+      "50",
+      "25",
+      "40",
+      "55"
+    ],
+    "correct_index": 0,
+    "explanation": "20/100×250=50."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Simple Interest",
+    "difficulty": 1,
+    "question_text": "SI for P=₹1000, R=10%, T=2 years is:",
+    "options": [
+      "₹200",
+      "₹100",
+      "₹210",
+      "₹220"
+    ],
+    "correct_index": 0,
+    "explanation": "SI=PRT/100=1000×10×2/100=₹200."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 1,
+    "question_text": "If A:B = 2:3 and B:C = 3:5, then A:C =",
+    "options": [
+      "2:5",
+      "1:3",
+      "3:5",
+      "2:3"
+    ],
+    "correct_index": 0,
+    "explanation": "A:C = 2/3×3/5 = 2/5 = 2:5."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 1,
+    "question_text": "If 2x + 5 = 13, then x =",
+    "options": [
+      "4",
+      "8",
+      "3",
+      "6"
+    ],
+    "correct_index": 0,
+    "explanation": "2x=8 → x=4."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "difficulty": 1,
+    "question_text": "Sum of angles in a triangle is:",
+    "options": [
+      "180°",
+      "360°",
+      "90°",
+      "270°"
+    ],
+    "correct_index": 0,
+    "explanation": "The interior angles of any triangle sum to 180°."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 1,
+    "question_text": "Area of a rectangle 8m × 5m is:",
+    "options": [
+      "40 m²",
+      "26 m²",
+      "13 m²",
+      "80 m²"
+    ],
+    "correct_index": 0,
+    "explanation": "Area=length×breadth=8×5=40 m²."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "HCF of 12 and 18 is:",
+    "options": [
+      "6",
+      "3",
+      "9",
+      "12"
+    ],
+    "correct_index": 0,
+    "explanation": "Factors of 12: 1,2,3,4,6,12. Factors of 18: 1,2,3,6,9,18. HCF=6."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "LCM of 4 and 6 is:",
+    "options": [
+      "12",
+      "24",
+      "8",
+      "6"
+    ],
+    "correct_index": 0,
+    "explanation": "LCM(4,6)=12 (smallest number divisible by both)."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Speed, Distance and Time",
+    "difficulty": 1,
+    "question_text": "Distance = 120 km, Speed = 40 km/h. Time taken =",
+    "options": [
+      "3 hours",
+      "4 hours",
+      "2 hours",
+      "5 hours"
+    ],
+    "correct_index": 0,
+    "explanation": "Time=Distance/Speed=120/40=3 hours."
+  },
+  {
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": 1,
+    "question_text": "Force required to give acceleration 2 m/s² to mass 5 kg is:",
+    "options": [
+      "10 N",
+      "2.5 N",
+      "7 N",
+      "3 N"
+    ],
+    "correct_index": 0,
+    "explanation": "F=ma=5×2=10 N (Newton's 2nd law)."
+  },
+  {
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": 1,
+    "question_text": "A body falls freely from rest. After 3 seconds, velocity is (g=10 m/s²):",
+    "options": [
+      "30 m/s",
+      "10 m/s",
+      "3 m/s",
+      "90 m/s"
+    ],
+    "correct_index": 0,
+    "explanation": "v=u+gt=0+10×3=30 m/s."
+  },
+  {
+    "subject": "Physics",
+    "topic": "Work, Energy, Power",
+    "difficulty": 1,
+    "question_text": "Work done to push a 10 kg box 5 m with force 20 N along the direction of motion:",
+    "options": [
+      "100 J",
+      "50 J",
+      "200 J",
+      "10 J"
+    ],
+    "correct_index": 0,
+    "explanation": "W=F×d=20×5=100 J."
+  },
+  {
+    "subject": "Physics",
+    "topic": "Electricity",
+    "difficulty": 1,
+    "question_text": "V=12V, R=6Ω. Current =",
+    "options": [
+      "2A",
+      "6A",
+      "72A",
+      "18A"
+    ],
+    "correct_index": 0,
+    "explanation": "I=V/R=12/6=2A."
+  },
+  {
+    "subject": "Physics",
+    "topic": "Waves and Sound",
+    "difficulty": 1,
+    "question_text": "Speed of light in vacuum is approximately:",
+    "options": [
+      "3×10⁸ m/s",
+      "3×10⁶ m/s",
+      "3×10¹⁰ m/s",
+      "3×10⁴ m/s"
+    ],
+    "correct_index": 0,
+    "explanation": "c ≈ 3×10⁸ m/s = 300,000 km/s."
+  },
+  {
+    "subject": "Physics",
+    "topic": "Heat",
+    "difficulty": 1,
+    "question_text": "Water boils at 100°C = ___ K",
+    "options": [
+      "373 K",
+      "273 K",
+      "100 K",
+      "473 K"
+    ],
+    "correct_index": 0,
+    "explanation": "K=°C+273. 100+273=373 K."
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "question_text": "Atomic number of carbon is:",
+    "options": [
+      "6",
+      "12",
+      "8",
+      "14"
+    ],
+    "correct_index": 0,
+    "explanation": "Carbon: Z=6 (6 protons). Mass number=12 (6 protons+6 neutrons)."
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "question_text": "Chemical formula of common salt is:",
+    "options": [
+      "NaCl",
+      "NaOH",
+      "HCl",
+      "Na₂SO₄"
+    ],
+    "correct_index": 0,
+    "explanation": "Common salt = Sodium Chloride, NaCl."
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "question_text": "pH of a neutral solution at 25°C is:",
+    "options": [
+      "7",
+      "0",
+      "14",
+      "4"
+    ],
+    "correct_index": 0,
+    "explanation": "pH=7 is neutral (pure water at 25°C). pH<7 = acidic, pH>7 = alkaline."
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "question_text": "Which gas is produced when acid reacts with a metal?",
+    "options": [
+      "Hydrogen",
+      "Oxygen",
+      "Carbon dioxide",
+      "Nitrogen"
+    ],
+    "correct_index": 0,
+    "explanation": "Acid + Metal → Salt + Hydrogen gas. e.g., Zn + H₂SO₄ → ZnSO₄ + H₂↑."
+  },
+  {
+    "subject": "General Intelligence and Reasoning",
+    "topic": "Analogy",
+    "difficulty": 1,
+    "question_text": "Doctor : Hospital :: Teacher : ?",
+    "options": [
+      "School",
+      "Student",
+      "Book",
+      "Pen"
+    ],
+    "correct_index": 0,
+    "explanation": "A doctor works in a hospital; a teacher works in a school."
+  },
+  {
+    "subject": "General Intelligence and Reasoning",
+    "topic": "Number Series",
+    "difficulty": 1,
+    "question_text": "Next term in 2, 4, 8, 16, ?",
+    "options": [
+      "32",
+      "24",
+      "20",
+      "30"
+    ],
+    "correct_index": 0,
+    "explanation": "Each term doubles: 16×2=32 (geometric sequence, r=2)."
+  },
+  {
+    "subject": "General Intelligence and Reasoning",
+    "topic": "Coding-Decoding",
+    "difficulty": 1,
+    "question_text": "If CAT = 3120, then DOG = ?",
+    "options": [
+      "4157",
+      "3046",
+      "4621",
+      "5432"
+    ],
+    "correct_index": 0,
+    "explanation": "C=3,A=1,T=20 → 3,1,20. D=4,O=15,G=7 → 4,15,7 = 4157."
+  },
+  {
+    "subject": "General Intelligence and Reasoning",
+    "topic": "Odd One Out",
+    "difficulty": 1,
+    "question_text": "Which does not belong: Circle, Triangle, Sphere, Square?",
+    "options": [
+      "Sphere",
+      "Circle",
+      "Triangle",
+      "Square"
+    ],
+    "correct_index": 0,
+    "explanation": "Sphere is a 3D shape; Circle, Triangle, Square are 2D shapes."
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "General Knowledge",
+    "difficulty": 1,
+    "question_text": "The Rajya Sabha is the:",
+    "options": [
+      "Upper house of Parliament",
+      "Lower house of Parliament",
+      "State assembly",
+      "High Court"
+    ],
+    "correct_index": 0,
+    "explanation": "Indian Parliament: Rajya Sabha (Upper House/Council of States), Lok Sabha (Lower House/House of the People)."
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "General Knowledge",
+    "difficulty": 1,
+    "question_text": "The largest planet in our solar system is:",
+    "options": [
+      "Jupiter",
+      "Saturn",
+      "Uranus",
+      "Neptune"
+    ],
+    "correct_index": 0,
+    "explanation": "Jupiter is the largest planet (diameter ≈139,820 km). Saturn is 2nd largest."
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Science & Technology",
+    "difficulty": 1,
+    "question_text": "CPU stands for:",
+    "options": [
+      "Central Processing Unit",
+      "Computer Power Unit",
+      "Control Processing Unit",
+      "Central Program Utility"
+    ],
+    "correct_index": 0,
+    "explanation": "CPU = Central Processing Unit, the 'brain' of a computer."
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Science & Technology",
+    "difficulty": 1,
+    "question_text": "1 byte =",
+    "options": [
+      "8 bits",
+      "4 bits",
+      "16 bits",
+      "2 bits"
+    ],
+    "correct_index": 0,
+    "explanation": "1 byte = 8 bits. 1 kilobyte = 1024 bytes."
+  },
+  {
+    "subject": "Physics",
+    "topic": "Optics",
+    "difficulty": 1,
+    "question_text": "A concave lens is also called a __ lens:",
+    "options": [
+      "Diverging",
+      "Converging",
+      "Plane",
+      "Cylindrical"
+    ],
+    "correct_index": 0,
+    "explanation": "Concave (thinner at centre) = diverging lens. Convex (thicker at centre) = converging lens."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 1,
+    "question_text": "Volume of a cube of side 3m is:",
+    "options": [
+      "27 m³",
+      "9 m³",
+      "6 m³",
+      "18 m³"
+    ],
+    "correct_index": 0,
+    "explanation": "V=a³=3³=27 m³."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Statistics",
+    "difficulty": 1,
+    "question_text": "Mean of 5, 10, 15, 20, 25 is:",
+    "options": [
+      "15",
+      "10",
+      "20",
+      "25"
+    ],
+    "correct_index": 0,
+    "explanation": "Mean=(5+10+15+20+25)/5=75/5=15."
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Basic Concepts",
+    "difficulty": 1,
+    "question_text": "The process of conversion of solid directly to vapour is called:",
+    "options": [
+      "Sublimation",
+      "Evaporation",
+      "Condensation",
+      "Vaporization"
+    ],
+    "correct_index": 0,
+    "explanation": "Sublimation: solid → gas without passing through liquid phase. Example: dry ice (CO₂), naphthalene."
+  },
+  {
+    "subject": "Physics",
+    "topic": "Magnetism",
+    "difficulty": 1,
+    "question_text": "Like magnetic poles:",
+    "options": [
+      "Repel each other",
+      "Attract each other",
+      "Have no effect",
+      "Cancel out"
+    ],
+    "correct_index": 0,
+    "explanation": "Like poles (N-N or S-S) repel; unlike poles (N-S) attract."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 1,
+    "question_text": "Value of (a+b)² when a=3, b=2 is:",
+    "options": [
+      "25",
+      "10",
+      "13",
+      "24"
+    ],
+    "correct_index": 0,
+    "explanation": "(a+b)²=(3+2)²=25."
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Railway GK",
+    "difficulty": 1,
+    "question_text": "The headquarters of Indian Railways is located in:",
+    "options": [
+      "New Delhi",
+      "Mumbai",
+      "Kolkata",
+      "Chennai"
+    ],
+    "correct_index": 0,
+    "explanation": "The Ministry of Railways and Railway Board headquarters is in Rail Bhawan, New Delhi."
+  },
+  {
+    "subject": "General Awareness",
+    "topic": "Railway GK",
+    "difficulty": 1,
+    "question_text": "The colour of the danger signal on Indian Railways is:",
+    "options": [
+      "Red",
+      "Yellow",
+      "Green",
+      "White"
+    ],
+    "correct_index": 0,
+    "explanation": "Red signal = Danger/Stop. Yellow = Caution. Green = Proceed."
+  },
+  {
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": 1,
+    "question_text": "Pressure = Force / Area. If Force=100N, Area=2m², Pressure=",
+    "options": [
+      "50 Pa",
+      "200 Pa",
+      "100 Pa",
+      "25 Pa"
+    ],
+    "correct_index": 0,
+    "explanation": "P=F/A=100/2=50 Pa."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "√144 =",
+    "options": [
+      "12",
+      "14",
+      "11",
+      "13"
+    ],
+    "correct_index": 0,
+    "explanation": "12²=144 → √144=12."
+  },
+  {
+    "subject": "Physics",
+    "topic": "Electricity",
+    "difficulty": 2,
+    "question_text": "A Wheatstone bridge is used to measure:",
+    "options": [
+      "Unknown resistance",
+      "Capacitance",
+      "Inductance",
+      "Frequency"
+    ],
+    "correct_index": 0,
+    "explanation": "Wheatstone bridge: at balance P/Q=R/S. Used to find unknown resistance S precisely. Galvanometer reads zero at balance."
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 2,
+    "question_text": "The derivative of sin(x) with respect to x is:",
+    "options": [
+      "cos(x)",
+      "−cos(x)",
+      "tan(x)",
+      "−sin(x)"
+    ],
+    "correct_index": 0,
+    "explanation": "d/dx(sin x) = cos x. Follows from first principles and is fundamental in AC circuit analysis."
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Electrochemistry",
+    "difficulty": 2,
+    "question_text": "In an electrolytic cell, oxidation occurs at the:",
+    "options": [
+      "Anode",
+      "Cathode",
+      "Electrolyte",
+      "Conductor"
+    ],
+    "correct_index": 0,
+    "explanation": "Anode: oxidation (loss of electrons). Cathode: reduction (gain of electrons). OIL RIG mnemonic."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Power Systems",
+    "difficulty": 3,
+    "question_text": "The Ferranti effect in a transmission line refers to:",
+    "options": [
+      "Rise in receiving-end voltage above sending-end voltage under no-load",
+      "Voltage drop at receiving end",
+      "Current surge on line energisation",
+      "Corona discharge at high voltage"
+    ],
+    "correct_index": 0,
+    "explanation": "Ferranti effect: at light or no load, the capacitive charging current causes receiving-end voltage to exceed sending-end voltage. More pronounced at high voltage and long lines."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Power Systems",
+    "difficulty": 3,
+    "question_text": "Symmetrical components method decomposes unbalanced 3-phase into:",
+    "options": [
+      "Positive, negative, and zero sequence",
+      "Real and imaginary parts",
+      "Sine and cosine components",
+      "Active and reactive power"
+    ],
+    "correct_index": 0,
+    "explanation": "Fortescue's theorem: any unbalanced 3-phase set = positive-sequence (abc rotation) + negative-sequence (acb) + zero-sequence (all in phase). Used in fault analysis."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Control Systems",
+    "difficulty": 3,
+    "question_text": "A PID controller output is u(t) = Kp×e(t) + Ki∫e(t)dt + Kd×de/dt. The integral term:",
+    "options": [
+      "Eliminates steady-state error",
+      "Reduces overshoot",
+      "Increases speed of response",
+      "Improves stability margin"
+    ],
+    "correct_index": 0,
+    "explanation": "Integral action accumulates error over time, driving steady-state error to zero. Derivative action reduces overshoot. Proportional sets overall gain."
+  },
+  {
+    "subject": "Civil Engineering",
+    "topic": "Structural Analysis",
+    "difficulty": 3,
+    "question_text": "For a simply supported beam of span L with UDL w, the maximum shear force is:",
+    "options": [
+      "wL/2",
+      "wL²/8",
+      "wL",
+      "wL/4"
+    ],
+    "correct_index": 0,
+    "explanation": "For UDL on simply supported beam: each support reaction = wL/2. Max SF = wL/2 (at supports). Max BM = wL²/8 (at midspan)."
+  },
+  {
+    "subject": "Civil Engineering",
+    "topic": "Geotechnical Engineering",
+    "difficulty": 3,
+    "question_text": "Terzaghi's bearing capacity equation for strip footing on clay (φ=0) reduces to:",
+    "options": [
+      "qu = cNc + γDfNq (Nq=1, Nc=5.7)",
+      "qu = c×Nf",
+      "qu = γDf",
+      "qu = c + q"
+    ],
+    "correct_index": 0,
+    "explanation": "For φ=0 (saturated clay, undrained): qu=cNc+qNq=5.14c+q (Terzaghi: Nc≈5.7, Nq≈1). Net bearing capacity = 5.7c for surface footing."
+  },
+  {
+    "subject": "Civil Engineering",
+    "topic": "Hydraulics",
+    "difficulty": 3,
+    "question_text": "Manning's equation for open channel flow is Q =",
+    "options": [
+      "(1/n)×A×R^(2/3)×S^(1/2)",
+      "Q=A×V/n",
+      "Q=C×A√(RS)",
+      "Q=A×R²/n"
+    ],
+    "correct_index": 0,
+    "explanation": "Manning: Q=(1/n)×A×R^(2/3)×S^(1/2). n=Manning's roughness coefficient, R=hydraulic radius, S=bed slope. Used for rivers, sewers."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Thermodynamics",
+    "difficulty": 3,
+    "question_text": "The Rankine cycle is the ideal thermodynamic cycle for:",
+    "options": [
+      "Steam power plants",
+      "Gas turbines",
+      "Refrigeration",
+      "Petrol engines"
+    ],
+    "correct_index": 0,
+    "explanation": "Rankine cycle: boiler (const P heat addition), turbine (adiabatic expansion), condenser (const P heat rejection), pump (adiabatic compression). Used in thermal power plants."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Manufacturing",
+    "difficulty": 3,
+    "question_text": "Taylor's tool life equation is VTⁿ = C. For n=0.25, if speed doubles, tool life decreases by factor:",
+    "options": [
+      "16",
+      "4",
+      "8",
+      "2"
+    ],
+    "correct_index": 0,
+    "explanation": "VTⁿ=C. If V doubles: 2V×T'⁰·²⁵=VT⁰·²⁵ → T'⁰·²⁵=T⁰·²⁵/2 → T'/T=(1/2)⁴=1/16. Tool life drops to 1/16."
+  },
+  {
+    "subject": "IT/Computer Science",
+    "topic": "Data Structures",
+    "difficulty": 3,
+    "question_text": "In a balanced BST (AVL tree) with n nodes, search time complexity is:",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(1)"
+    ],
+    "correct_index": 0,
+    "explanation": "AVL tree maintains balance factor |−1,0,1| at every node, ensuring height O(log n). Search, insert, delete all O(log n)."
+  },
+  {
+    "subject": "IT/Computer Science",
+    "topic": "Computer Networks",
+    "difficulty": 3,
+    "question_text": "In TCP/IP, the 3-way handshake sequence is:",
+    "options": [
+      "SYN → SYN-ACK → ACK",
+      "ACK → SYN → SYN-ACK",
+      "SYN → ACK → SYN-ACK",
+      "SYN-ACK → SYN → ACK"
+    ],
+    "correct_index": 0,
+    "explanation": "TCP connection: Client sends SYN, Server replies SYN-ACK, Client sends ACK. Connection established. Ensures reliable, ordered delivery."
+  },
+  {
+    "subject": "Civil Engineering",
+    "topic": "Concrete Technology",
+    "difficulty": 3,
+    "question_text": "As per IS 456:2000, minimum cover for reinforcement in a beam exposed to moderate conditions is:",
+    "options": [
+      "40 mm",
+      "25 mm",
+      "20 mm",
+      "50 mm"
+    ],
+    "correct_index": 0,
+    "explanation": "IS 456 nominal cover: Mild=20mm, Moderate=30mm for slabs, 40mm for beams/columns in moderate exposure. Cover protects rebar from corrosion."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Machines",
+    "difficulty": 3,
+    "question_text": "The synchronous speed of a 4-pole induction motor on 50 Hz supply is:",
+    "options": [
+      "1500 rpm",
+      "3000 rpm",
+      "750 rpm",
+      "1000 rpm"
+    ],
+    "correct_index": 0,
+    "explanation": "Ns=120f/P=120×50/4=1500 rpm. Actual speed < Ns by slip. For 2-pole: Ns=3000 rpm."
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "topic": "Fluid Mechanics",
+    "difficulty": 3,
+    "question_text": "Navier-Stokes equations describe:",
+    "options": [
+      "Motion of viscous fluid",
+      "Heat transfer in solids",
+      "Elastic deformation",
+      "Gas reactions"
+    ],
+    "correct_index": 0,
+    "explanation": "Navier-Stokes: F=ma applied to fluid elements, including viscous stresses. General solution remains unsolved (Millennium Prize Problem)."
+  },
+  {
+    "subject": "Civil Engineering",
+    "topic": "Transportation",
+    "difficulty": 3,
+    "question_text": "CBR (California Bearing Ratio) test is used to design:",
+    "options": [
+      "Flexible pavements",
+      "Rigid pavements",
+      "Foundations",
+      "Retaining walls"
+    ],
+    "correct_index": 0,
+    "explanation": "CBR measures subgrade strength — higher CBR → thinner pavement. IRC:37 uses CBR for flexible pavement thickness design."
+  },
+  {
+    "subject": "IT/Computer Science",
+    "topic": "Databases",
+    "difficulty": 3,
+    "question_text": "In a relational database, the property ensuring that concurrent transactions leave the database in a consistent state is called:",
+    "options": [
+      "Isolation",
+      "Atomicity",
+      "Consistency",
+      "Durability"
+    ],
+    "correct_index": 0,
+    "explanation": "ACID properties. Isolation ensures concurrent transactions appear serial (no interference). Levels: Read Uncommitted, Read Committed, Repeatable Read, Serializable."
+  },
+  {
+    "subject": "Electrical Engineering",
+    "topic": "Signal Processing",
+    "difficulty": 3,
+    "question_text": "Sampling theorem (Nyquist) states that a band-limited signal with max frequency fm must be sampled at rate fs ≥",
+    "options": [
+      "2fm",
+      "fm",
+      "fm/2",
+      "4fm"
+    ],
+    "correct_index": 0,
+    "explanation": "Nyquist-Shannon sampling theorem: fs≥2fm (Nyquist rate). Below this, aliasing occurs. For voice (fm=4kHz), fs=8kHz is used in telephony."
+  }
+]

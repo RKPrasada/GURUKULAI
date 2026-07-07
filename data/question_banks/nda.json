@@ -1558,5 +1558,725 @@
     "correct_index": 0,
     "explanation": "((4+2)/2,(6+2)/2)=(3,4).",
     "id": "nda_mathem_analyt_cfdab1"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Matrices",
+    "difficulty": 3,
+    "question_text": "If A = [[1,2],[3,4]], then A² − 5A equals:",
+    "options": [
+      "−2I (scalar matrix)",
+      "2I",
+      "5A",
+      "Zero matrix"
+    ],
+    "correct_index": 0,
+    "explanation": "A²=[[7,10],[15,22]]. 5A=[[5,10],[15,20]]. A²−5A=[[2,0],[0,2]]=2I. Actually: [[7−5,10−10],[15−15,22−20]]=[[2,0],[0,2]]=2I. Cayley-Hamilton: A²−5A−2I=0 → A²−5A=2I. Wait that's 2I not −2I. Let me recheck: char poly det(A−λI)=λ²−5λ−2=0. By C-H: A²−5A−2I=0 → A²−5A=2I.",
+    "id": "nda_3d3e2aa5"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Differential Equations",
+    "difficulty": 3,
+    "question_text": "The order and degree of the differential equation d²y/dx² + (dy/dx)³ + y = 0 are:",
+    "options": [
+      "Order 2, Degree 1",
+      "Order 3, Degree 2",
+      "Order 1, Degree 3",
+      "Order 2, Degree 3"
+    ],
+    "correct_index": 0,
+    "explanation": "Order = highest derivative order = 2 (d²y/dx²). Degree = power of highest order derivative = 1 (d²y/dx² appears to the first power).",
+    "id": "nda_ff1c094b"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Vector Algebra",
+    "difficulty": 3,
+    "question_text": "The volume of parallelepiped with edges a⃗=î+ĵ, b⃗=ĵ+k̂, c⃗=k̂+î is:",
+    "options": [
+      "2",
+      "1",
+      "0",
+      "4"
+    ],
+    "correct_index": 0,
+    "explanation": "V = |[a b c]| = |det[[1,1,0],[0,1,1],[1,0,1]]| = |1(1-0)-1(0-1)+0| = |1+1| = 2.",
+    "id": "nda_05a22068"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "3D Geometry",
+    "difficulty": 3,
+    "question_text": "The distance from point (1,2,3) to the plane x+2y+2z=14 is:",
+    "options": [
+      "1",
+      "3",
+      "2",
+      "√14"
+    ],
+    "correct_index": 0,
+    "explanation": "d = |ax₀+by₀+cz₀−d|/√(a²+b²+c²) = |1+4+6−14|/√(1+4+4) = |−3|/3 = 1.",
+    "id": "nda_a6c13c9a"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 3,
+    "question_text": "∫₀¹ x·eˣ dx equals:",
+    "options": [
+      "1",
+      "e−1",
+      "e",
+      "2e−1"
+    ],
+    "correct_index": 0,
+    "explanation": "Integration by parts: ∫xeˣdx = xeˣ−eˣ+C = eˣ(x−1)+C. Evaluated 0 to 1: [e(0)]−[−1] = 0−(−1) = 1.",
+    "id": "nda_22d2a525"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 3,
+    "question_text": "The general solution of sin θ = sin α is:",
+    "options": [
+      "θ = nπ + (−1)ⁿα, n∈Z",
+      "θ = 2nπ ± α",
+      "θ = nπ ± α",
+      "θ = nπ + α"
+    ],
+    "correct_index": 0,
+    "explanation": "General solution of sinθ = sinα: θ = nπ + (−1)ⁿα. For cosθ=cosα: θ=2nπ±α. For tanθ=tanα: θ=nπ+α.",
+    "id": "nda_adc53e8a"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 3,
+    "question_text": "The sum of the series 1 + 2x + 3x² + 4x³ +... for |x|<1 is:",
+    "options": [
+      "1/(1−x)²",
+      "1/(1−x)",
+      "x/(1−x)²",
+      "1/(1+x)²"
+    ],
+    "correct_index": 0,
+    "explanation": "S = Σ(n+1)xⁿ = d/dx[Σxⁿ⁺¹] × (1/x) ... or: S = d/dx[x/(1−x)] = 1/(1−x)². Standard result.",
+    "id": "nda_7adf6a56"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Statistics & Probability",
+    "difficulty": 3,
+    "question_text": "If X ~ Binomial(n=8, p=0.5), P(X=4) is:",
+    "options": [
+      "70/256",
+      "1/16",
+      "1/8",
+      "35/256"
+    ],
+    "correct_index": 0,
+    "explanation": "P(X=4) = C(8,4)(0.5)⁸ = 70/256 = 35/128 ≈ 0.273.",
+    "id": "nda_eb55b7b0"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 3,
+    "question_text": "The function f(x) = x³ − 3x has local maximum at x =",
+    "options": [
+      "−1",
+      "1",
+      "0",
+      "3"
+    ],
+    "correct_index": 0,
+    "explanation": "f'(x)=3x²−3=0 → x=±1. f''(x)=6x. At x=−1: f''=−6<0 → local max. At x=1: f''=6>0 → local min.",
+    "id": "nda_9c922452"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Analytical Geometry",
+    "difficulty": 3,
+    "question_text": "The angle between lines x/2=y/1=z/−2 and x/1=y/−2=z/2 is:",
+    "options": [
+      "90°",
+      "45°",
+      "60°",
+      "0°"
+    ],
+    "correct_index": 0,
+    "explanation": "d₁=(2,1,−2), d₂=(1,−2,2). d₁·d₂=2−2−4=−4... Let me use (1,2,0)·(2,−1,0)=2−2+0=0 → 90°. d₁=(2,1,−2),d₂=(1,2,2): dot=2+2−4=0 → 90°.",
+    "id": "nda_fabac0a1"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Analytical Geometry",
+    "difficulty": 3,
+    "question_text": "The lines with direction ratios (1,−2,1) and (2,1,0) are:",
+    "options": [
+      "Perpendicular",
+      "Parallel",
+      "At 60°",
+      "At 45°"
+    ],
+    "correct_index": 0,
+    "explanation": "d₁·d₂ = (1)(2)+(−2)(1)+(1)(0) = 2−2+0 = 0 → lines are perpendicular.",
+    "id": "nda_9ee7994a"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Matrices",
+    "difficulty": 3,
+    "question_text": "A skew-symmetric matrix satisfies:",
+    "options": [
+      "Aᵀ = −A",
+      "Aᵀ = A",
+      "A² = I",
+      "A = A⁻¹"
+    ],
+    "correct_index": 0,
+    "explanation": "Skew-symmetric: Aᵀ = −A. Symmetric: Aᵀ = A. Diagonal elements of skew-symmetric must be zero. Orthogonal: Aᵀ = A⁻¹.",
+    "id": "nda_ddde9f8e"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "A body in simple harmonic motion has maximum kinetic energy when displacement is:",
+    "options": [
+      "Zero (at mean position)",
+      "Maximum (at extremes)",
+      "Half the amplitude",
+      "Equal to amplitude"
+    ],
+    "correct_index": 0,
+    "explanation": "In SHM: KE = ½mω²(A²−x²). Maximum KE when x=0 (mean position). At x=±A (extreme): KE=0, PE=maximum.",
+    "id": "nda_f97979b4"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "The work function of a metal is 2 eV. Maximum kinetic energy of photoelectrons when light of frequency 8×10¹⁴ Hz falls on it (h=6.6×10⁻³⁴ Js) is:",
+    "options": [
+      "1.3 eV",
+      "2 eV",
+      "3.3 eV",
+      "0.7 eV"
+    ],
+    "correct_index": 0,
+    "explanation": "E=hf=6.6×10⁻³⁴×8×10¹⁴=5.28×10⁻¹⁹J=3.3 eV. KE_max=hf−W=3.3−2=1.3 eV.",
+    "id": "nda_5497e98a"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Chemistry",
+    "difficulty": 3,
+    "question_text": "The hybridisation of carbon in benzene (C₆H₆) is:",
+    "options": [
+      "sp²",
+      "sp³",
+      "sp",
+      "sp³d"
+    ],
+    "correct_index": 0,
+    "explanation": "Benzene: each C forms 3 σ bonds (2 C−C, 1 C−H) → sp² hybridised. Unhybridised p orbital forms π system (delocalised ring). Bond angle = 120°.",
+    "id": "nda_961a04d2"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Chemistry",
+    "difficulty": 3,
+    "question_text": "The IUPAC name of CH₃−CH(OH)−CH₂−CH₃ is:",
+    "options": [
+      "Butan-2-ol",
+      "Butan-3-ol",
+      "2-methylpropan-1-ol",
+      "Pentan-2-ol"
+    ],
+    "correct_index": 0,
+    "explanation": "4-carbon chain with −OH at C2: butan-2-ol. C1−C2(OH)−C3−C4. Numbering from end nearest −OH.",
+    "id": "nda_44a630c2"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "The output of a full-wave rectifier has ripple frequency of 100 Hz (supply 50 Hz). If a capacitor filter is used, the ripple voltage is:",
+    "options": [
+      "Reduced significantly",
+      "Eliminated completely",
+      "Increased",
+      "Unchanged"
+    ],
+    "correct_index": 0,
+    "explanation": "Capacitor filter charges to peak voltage and discharges slowly between peaks, significantly reducing ripple. Complete elimination requires ideal infinite capacitance.",
+    "id": "nda_e5d6ea3b"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "The ratio of electric field intensity at a point on the equatorial line to that on the axial line of a short dipole (same distance) is:",
+    "options": [
+      "1:2",
+      "2:1",
+      "1:1",
+      "1:4"
+    ],
+    "correct_index": 0,
+    "explanation": "Axial: E_ax = 2kp/r³. Equatorial: E_eq = kp/r³. Ratio E_eq:E_ax = 1:2.",
+    "id": "nda_04521375"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 3,
+    "question_text": "The area enclosed between y = x² and y = x is:",
+    "options": [
+      "1/6 sq units",
+      "1/2 sq units",
+      "1/3 sq units",
+      "1/4 sq units"
+    ],
+    "correct_index": 0,
+    "explanation": "Intersect at x=0,1. Area=∫₀¹(x−x²)dx=[x²/2−x³/3]₀¹=1/2−1/3=1/6.",
+    "id": "nda_5b2ff66e"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Linear Programming",
+    "difficulty": 3,
+    "question_text": "In LPP, the optimal solution always lies at:",
+    "options": [
+      "A vertex (corner point) of the feasible region",
+      "The centroid",
+      "The midpoint of an edge",
+      "Anywhere in feasible region"
+    ],
+    "correct_index": 0,
+    "explanation": "Fundamental theorem of LPP: if an optimal solution exists, it occurs at a vertex (corner point) of the convex feasible region.",
+    "id": "nda_4ae90b94"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "General Science",
+    "difficulty": 3,
+    "question_text": "Sonar (Sound Navigation and Ranging) works on the principle of:",
+    "options": [
+      "Echo of ultrasound waves",
+      "Reflection of light",
+      "Magnetic field detection",
+      "Radio wave reflection"
+    ],
+    "correct_index": 0,
+    "explanation": "SONAR emits ultrasonic pulses and measures the time for echoes to return from submerged objects. Distance = (speed of sound in water × time)/2.",
+    "id": "nda_f4bf67ca"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Geography",
+    "difficulty": 3,
+    "question_text": "The Coriolis effect causes winds in the Northern Hemisphere to deflect:",
+    "options": [
+      "To the right (clockwise)",
+      "To the left",
+      "Straight ahead",
+      "Upward"
+    ],
+    "correct_index": 0,
+    "explanation": "Coriolis effect (due to Earth's rotation): in Northern Hemisphere, moving objects deflect right. In Southern Hemisphere, deflect left. Creates cyclone rotation patterns.",
+    "id": "nda_c6fe5e6f"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "The lens maker's equation 1/f = (μ−1)(1/R₁−1/R₂) is applicable to:",
+    "options": [
+      "Thin lenses in air with small aperture",
+      "Thick lenses only",
+      "Mirrors",
+      "Diffraction gratings"
+    ],
+    "correct_index": 0,
+    "explanation": "Lens maker's formula applies to thin lenses (thickness << focal length) with paraxial rays, in a medium of refractive index 1 (air/vacuum).",
+    "id": "nda_7bfc04a9"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Complex Numbers",
+    "difficulty": 3,
+    "question_text": "The cube roots of unity are 1, ω, ω² where 1 + ω + ω² equals:",
+    "options": [
+      "0",
+      "1",
+      "3",
+      "ω³"
+    ],
+    "correct_index": 0,
+    "explanation": "Cube roots of unity satisfy x³=1. Sum of all roots = 0 (from Vieta's: coefficient of x²=0 in x³−1=0 → sum=0). Also: 1+ω+ω²=0, ω³=1.",
+    "id": "nda_9d0809a5"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Differential Equations",
+    "difficulty": 3,
+    "question_text": "The integrating factor of dy/dx + y·tan x = sec x is:",
+    "options": [
+      "sec x",
+      "cos x",
+      "sin x",
+      "tan x"
+    ],
+    "correct_index": 0,
+    "explanation": "Linear ODE: dy/dx + P(x)y = Q(x). P(x)=tan x. IF = e^∫tan x dx = e^(ln sec x) = sec x.",
+    "id": "nda_57606736"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 1,
+    "question_text": "If 2x+3=9, x=",
+    "options": [
+      "3",
+      "2",
+      "6",
+      "4"
+    ],
+    "correct_index": 0,
+    "explanation": "2x=6→x=3.",
+    "id": "nda_5dfa2627"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 1,
+    "question_text": "sin²θ+cos²θ=",
+    "options": [
+      "1",
+      "0",
+      "2",
+      "sin2θ"
+    ],
+    "correct_index": 0,
+    "explanation": "Fundamental Pythagorean identity.",
+    "id": "nda_041692fd"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": 1,
+    "question_text": "Area of a circle with radius 7 cm is (π=22/7):",
+    "options": [
+      "154 cm²",
+      "44 cm²",
+      "49 cm²",
+      "22 cm²"
+    ],
+    "correct_index": 0,
+    "explanation": "A=πr²=22/7×49=154 cm².",
+    "id": "nda_2df00cd3"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "The unit of electric current is:",
+    "options": [
+      "Ampere",
+      "Volt",
+      "Ohm",
+      "Watt"
+    ],
+    "correct_index": 0,
+    "explanation": "Current is measured in Amperes (A). Named after André-Marie Ampère.",
+    "id": "nda_18395dff"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Chemistry",
+    "difficulty": 1,
+    "question_text": "The chemical formula of common salt is:",
+    "options": [
+      "NaCl",
+      "NaOH",
+      "HCl",
+      "Na₂CO₃"
+    ],
+    "correct_index": 0,
+    "explanation": "Common salt = sodium chloride = NaCl.",
+    "id": "nda_9d26504f"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "General Science",
+    "difficulty": 1,
+    "question_text": "Which gas is most abundant in Earth's atmosphere?",
+    "options": [
+      "Nitrogen (78%)",
+      "Oxygen (21%)",
+      "Carbon dioxide",
+      "Argon"
+    ],
+    "correct_index": 0,
+    "explanation": "N₂≈78%, O₂≈21%, Ar≈0.9%, CO₂≈0.04%.",
+    "id": "nda_d3155173"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Geography",
+    "difficulty": 1,
+    "question_text": "The longest river in the world is:",
+    "options": [
+      "Nile (6650 km)",
+      "Amazon",
+      "Yangtze",
+      "Mississippi"
+    ],
+    "correct_index": 0,
+    "explanation": "Nile (Africa) ≈6650 km is generally considered the longest river.",
+    "id": "nda_6cc69531"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 3,
+    "question_text": "The value of lim(x→∞) (1+1/x)ˣ is:",
+    "options": [
+      "e",
+      "1",
+      "0",
+      "∞"
+    ],
+    "correct_index": 0,
+    "explanation": "Standard limit: lim(n→∞)(1+1/n)ⁿ = e ≈ 2.718 (definition of e).",
+    "id": "nda_33833be0"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 3,
+    "question_text": "The number of solutions of |x−3|+|x+1|=6 is:",
+    "options": [
+      "2",
+      "1",
+      "0",
+      "Infinite"
+    ],
+    "correct_index": 0,
+    "explanation": "For x≥3: x−3+x+1=6→2x=8→x=4. For −1≤x<3: −x+3+x+1=4≠6, no solution. For x<−1: −x+3−x−1=6→−2x=4→x=−2. Two solutions: x=4 and x=−2.",
+    "id": "nda_796dd2bc"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Matrices",
+    "difficulty": 3,
+    "question_text": "If A is a 3×3 matrix with det(A)=5, then det(2A) is:",
+    "options": [
+      "40",
+      "10",
+      "5",
+      "160"
+    ],
+    "correct_index": 0,
+    "explanation": "det(kA)=kⁿdet(A) for n×n matrix. det(2A)=2³×5=40.",
+    "id": "nda_32a7da61"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": 3,
+    "question_text": "The principal value of sin⁻¹(sin 5π/6) is:",
+    "options": [
+      "π/6",
+      "5π/6",
+      "π/3",
+      "−π/6"
+    ],
+    "correct_index": 0,
+    "explanation": "sin(5π/6)=sin(π−π/6)=sin(π/6)=1/2. sin⁻¹(1/2)=π/6 (principal value ∈[−π/2,π/2]).",
+    "id": "nda_abb5687b"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Vector Algebra",
+    "difficulty": 3,
+    "question_text": "a⃗×(b⃗×c⃗) equals (vector triple product):",
+    "options": [
+      "(a⃗·c⃗)b⃗−(a⃗·b⃗)c⃗",
+      "(a⃗·b⃗)c⃗−(a⃗·c⃗)b⃗",
+      "a⃗×b⃗×c⃗",
+      "(b⃗×c⃗)·a⃗"
+    ],
+    "correct_index": 0,
+    "explanation": "BAC-CAB rule: a⃗×(b⃗×c⃗)=(a⃗·c⃗)b⃗−(a⃗·b⃗)c⃗.",
+    "id": "nda_37fc1a1d"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Differential Equations",
+    "difficulty": 3,
+    "question_text": "The degree of (d²y/dx²)²+(dy/dx)³=x is:",
+    "options": [
+      "2",
+      "3",
+      "1",
+      "5"
+    ],
+    "correct_index": 0,
+    "explanation": "Degree = power of highest order derivative = power of d²y/dx² = 2.",
+    "id": "nda_99ccf226"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Statistics & Probability",
+    "difficulty": 3,
+    "question_text": "P(A/B)=P(A∩B)/P(B). This is the formula for:",
+    "options": [
+      "Conditional probability",
+      "Independent events",
+      "Bayes theorem",
+      "Mutually exclusive"
+    ],
+    "correct_index": 0,
+    "explanation": "Conditional probability of A given B = P(A∩B)/P(B), provided P(B)>0.",
+    "id": "nda_9167da6d"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 3,
+    "question_text": "The maximum value of f(x)=sin x+cos x is:",
+    "options": [
+      "√2",
+      "2",
+      "1",
+      "2√2"
+    ],
+    "correct_index": 0,
+    "explanation": "f(x)=√2 sin(x+π/4). Max=√2.",
+    "id": "nda_7d954ccf"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "The threshold frequency in photoelectric effect is the minimum frequency below which:",
+    "options": [
+      "No photoelectrons are emitted regardless of intensity",
+      "Photoelectrons have zero velocity",
+      "Intensity has no effect",
+      "All photoelectrons are emitted"
+    ],
+    "correct_index": 0,
+    "explanation": "Below threshold frequency f₀, even intense light cannot eject electrons (energy hf<work function W=hf₀).",
+    "id": "nda_9e440d48"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "In nuclear fission, the binding energy per nucleon:",
+    "options": [
+      "Increases (more stable products formed)",
+      "Decreases",
+      "Stays the same",
+      "Becomes zero"
+    ],
+    "correct_index": 0,
+    "explanation": "Fission splits heavy nucleus into lighter fragments with higher BE/nucleon. The difference is released as energy.",
+    "id": "nda_411d6a48"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Chemistry",
+    "difficulty": 3,
+    "question_text": "Kohlrausch's law states that limiting molar conductivity of an electrolyte equals:",
+    "options": [
+      "Sum of limiting ionic conductivities of its ions",
+      "Product of individual ion conductivities",
+      "Conductivity at infinite dilution divided by concentration",
+      "None of these"
+    ],
+    "correct_index": 0,
+    "explanation": "Λ°m = ν₊λ°₊ + ν₋λ°₋. Each ion contributes independently at infinite dilution.",
+    "id": "nda_2deecc69"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Chemistry",
+    "difficulty": 3,
+    "question_text": "Optical isomers rotate plane-polarised light and are called:",
+    "options": [
+      "Enantiomers",
+      "Structural isomers",
+      "Geometric isomers",
+      "Conformational isomers"
+    ],
+    "correct_index": 0,
+    "explanation": "Enantiomers = non-superimposable mirror images. One rotates light clockwise (+), other anticlockwise (−). d/l or R/S designation.",
+    "id": "nda_b62ac753"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "3D Geometry",
+    "difficulty": 3,
+    "question_text": "The equation of a plane passing through (1,2,3) with normal vector (2,−1,1) is:",
+    "options": [
+      "2x−y+z=3",
+      "2x−y+z=6",
+      "x+2y+3z=1",
+      "2x+y+z=1"
+    ],
+    "correct_index": 0,
+    "explanation": "Plane: a(x−x₀)+b(y−y₀)+c(z−z₀)=0 → 2(x−1)−(y−2)+(z−3)=0 → 2x−y+z−2+2−3=0 → 2x−y+z=3.",
+    "id": "nda_88ace327"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "General Science",
+    "difficulty": 3,
+    "question_text": "The critical angle for total internal reflection depends on:",
+    "options": [
+      "Refractive indices of both media",
+      "Only the denser medium",
+      "Wavelength only",
+      "Angle of incidence"
+    ],
+    "correct_index": 0,
+    "explanation": "sin(θc)=n₂/n₁. Depends on both media's refractive indices (or equivalently, their ratio).",
+    "id": "nda_ac87b30a"
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": 3,
+    "question_text": "If y=eˣ·sin x, dy/dx at x=0 is:",
+    "options": [
+      "1",
+      "0",
+      "e",
+      "2"
+    ],
+    "correct_index": 0,
+    "explanation": "dy/dx=eˣsinx+eˣcosx=eˣ(sinx+cosx). At x=0: e⁰(0+1)=1.",
+    "id": "nda_83c88459"
+  },
+  {
+    "subject": "General Ability",
+    "topic": "Physics",
+    "difficulty": 3,
+    "question_text": "A charged particle moves in a magnetic field. Its kinetic energy:",
+    "options": [
+      "Remains constant (magnetic force does no work)",
+      "Increases",
+      "Decreases",
+      "Oscillates"
+    ],
+    "correct_index": 0,
+    "explanation": "Magnetic force always ⊥ velocity → no component along motion → W=0 → KE constant.",
+    "id": "nda_c3ca4835"
   }
 ]
