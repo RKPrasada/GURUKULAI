@@ -50,6 +50,7 @@ export default function NagaDashboard() {
   const [approvalsMsg, setApprovalsMsg] = useState('')
   const [planNotes, setPlanNotes] = useState<{ [id: string]: string }>({})
   const [noteRejectReasons, setNoteRejectReasons] = useState<{ [key: string]: string }>({})
+  const [kbStats, setKbStats] = useState<{ total: number; by_exam: Record<string, number> } | null>(null)
   const [keywords, setKeywords] = useState<{ blocked: string[]; flagged: string[] } | null>(null)
   const [newKw, setNewKw] = useState('')
   const [newKwTier, setNewKwTier] = useState<'blocked' | 'flagged'>('blocked')
@@ -90,6 +91,13 @@ export default function NagaDashboard() {
     setApprovalsLoading(false)
   }
 
+  const loadKbStats = async () => {
+    try {
+      const res = await api.get('/api/dabbu/knowledge-base/stats')
+      setKbStats(res.data)
+    } catch { /* non-critical */ }
+  }
+
   // Schedule class form
   const [classForm, setClassForm] = useState({
     title: '', description: '', subject: '', topic: '',
@@ -113,7 +121,7 @@ export default function NagaDashboard() {
 
   useEffect(() => {
     loadAll()
-    if (tab === 'approvals') { loadApprovals(); loadKeywords(); loadInterventions() }
+    if (tab === 'approvals') { loadApprovals(); loadKeywords(); loadInterventions(); loadKbStats() }
   }, [tab])
 
   const loadAll = async () => {
@@ -459,6 +467,26 @@ export default function NagaDashboard() {
             }
           </section>
 
+          {/* Knowledge Base Stats */}
+          {kbStats !== null && (
+            <div className="bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-700 rounded-xl p-4 mb-4">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-emerald-700 dark:text-emerald-400 font-bold text-sm">🧠 Knowledge Base</span>
+                <span className="bg-emerald-100 dark:bg-emerald-800 text-emerald-700 dark:text-emerald-300 text-xs font-semibold px-2 py-0.5 rounded-full">{kbStats.total} notes</span>
+              </div>
+              {kbStats.total === 0
+                ? <p className="text-xs text-emerald-600 dark:text-emerald-400">No approved notes in vector store yet. Approve notes below to populate it.</p>
+                : <div className="flex flex-wrap gap-2">
+                    {Object.entries(kbStats.by_exam).map(([exam, count]) => (
+                      <span key={exam} className="text-xs bg-white dark:bg-gray-800 border border-emerald-200 dark:border-emerald-700 rounded-lg px-2 py-0.5 text-gray-700 dark:text-gray-300">
+                        {exam.toUpperCase().replace(/_/g, ' ')}: <strong>{count}</strong>
+                      </span>
+                    ))}
+                  </div>
+              }
+            </div>
+          )}
+
           {/* Notes */}
           <section>
             <h2 className="text-base font-bold text-gray-800 dark:text-white mb-3 flex items-center gap-2">
@@ -486,12 +514,18 @@ export default function NagaDashboard() {
                       onChange={(e) => setNoteRejectReasons((p) => ({ ...p, [key]: e.target.value }))}
                       className="w-full mb-3 border border-gray-300 dark:border-gray-600 rounded-lg px-3 py-1.5 text-sm bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
                     />
-                    <div className="flex gap-2">
+                    <div className="flex gap-2 flex-wrap items-center">
                       <button onClick={async () => {
                         await api.dabbuApproveNote(note.exam, note.subject, note.topic, noteRejectReasons[key] ?? '')
-                        setApprovalsMsg(`Notes for '${note.topic}' approved ✓`)
+                        setApprovalsMsg(`Notes for '${note.topic}' approved ✓ — published to Knowledge Base`)
                         loadApprovals()
-                      }} className="bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-4 py-1.5 rounded-lg transition">Approve & Publish</button>
+                        loadKbStats()
+                      }} className="bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-4 py-1.5 rounded-lg transition">Approve &amp; Publish to KB</button>
+                      {kbStats?.by_exam[note.exam] !== undefined && (
+                        <span className="text-xs text-emerald-700 dark:text-emerald-400 font-semibold flex items-center gap-1">
+                          <CheckCircle size={13} /> In Knowledge Base
+                        </span>
+                      )}
                       <button onClick={async () => {
                         await api.dabbuRejectNote(note.exam, note.subject, note.topic, noteRejectReasons[key] ?? '')
                         setApprovalsMsg(`Notes for '${note.topic}' rejected — will regenerate next run.`)

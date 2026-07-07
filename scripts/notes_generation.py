@@ -185,16 +185,37 @@ def run_exam(exam: str, force: bool = False) -> dict:
 
 
 def approve_note(exam: str, subject: str, topic: str, naga_note: str = "") -> bool:
-    """NAGA approves a note — updates meta status to 'approved'."""
-    _, meta_path = _note_paths(exam, subject, topic)
+    """NAGA approves a note — updates meta status and publishes to the vector store."""
+    note_path, meta_path = _note_paths(exam, subject, topic)
     meta = _read_meta(meta_path)
     if not meta:
         return False
+    approved_at = datetime.utcnow().isoformat()
     meta["status"] = "approved"
-    meta["approved_at"] = datetime.utcnow().isoformat()
+    meta["approved_at"] = approved_at
     meta["naga_note"] = naga_note
     _write_meta(meta_path, meta)
     logger.info("Notes: approved %s/%s/%s", exam, subject, topic)
+
+    # Publish to semantic vector store so future requests skip the LLM
+    try:
+        content = note_path.read_text(encoding="utf-8") if note_path.exists() else ""
+        if content:
+            from agents.notes_vector_store import add as vs_add
+            lang = meta.get("lang", "en")
+            vs_add(
+                topic=topic,
+                subject=subject,
+                exam_key=exam,
+                lang=lang,
+                content=content,
+                approved_at=approved_at,
+            )
+            logger.info("Notes: published to vector store  exam=%s  topic=%r", exam, topic)
+    except Exception as e:
+        logger.error("Notes: vector store publish failed for %s/%s: %s", exam, topic, e)
+        # Don't fail the approval if vector store is unavailable
+
     return True
 
 

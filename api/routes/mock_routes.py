@@ -22,9 +22,10 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
-from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException
+from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException, Request
 from pydantic import BaseModel
 
+from api.rate_limit import rate_limit
 from agents.mock_paper_generator import (
     list_archive, load_current_paper, paper_status,
 )
@@ -402,11 +403,16 @@ async def get_history(auth_id: str = Depends(require_auth)):
 
 # ── NAGA routes ────────────────────────────────────────────────────────────────
 
+_rl_generate = rate_limit(5, 3600)  # 5 manual generations / hour / user
+
+
 @router.post("/generate/{exam_key}")
 async def manual_generate(
     exam_key: str,
+    request: Request,
     background_tasks: BackgroundTasks,
     auth_id: str = Depends(require_auth),
+    _rl: None = Depends(_rl_generate),
     scheduled_date: Optional[str] = None,
 ):
     """NAGA: trigger paper generation manually. Runs in background."""

@@ -20,3 +20,5 @@ plotly==5.22.0
 pandas==2.2.2
 pyinstaller==6.6.0
 email-validator>=2.0.0
+chromadb>=0.4.0
+sentence-transformers>=2.6.0

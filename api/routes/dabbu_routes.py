@@ -469,3 +469,12 @@ async def all_pending(auth_id: str = Depends(require_auth)):
             "total": len(plans) + len(notes) + len(videos),
         },
     }
+
+
+# ── Knowledge Base stats ────────────────────────────────────────────────────────
+
+@router.get("/knowledge-base/stats")
+async def knowledge_base_stats(auth_id: str = Depends(require_auth)):
+    """Return vector store stats for the NAGA dashboard KB widget."""
+    from agents.notes_vector_store import stats as vs_stats
+    return vs_stats()
