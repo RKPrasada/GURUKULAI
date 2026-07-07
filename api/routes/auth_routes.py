@@ -8,10 +8,14 @@ from datetime import datetime
 from pathlib import Path
 from typing import Callable
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Request
 from pydantic import BaseModel, EmailStr, Field
 
 from api.middleware import issue_token
+from api.rate_limit import rate_limit
+
+_rl_login    = rate_limit(5,  60, key="ip")  # 5 login attempts / min / IP
+_rl_register = rate_limit(3,  60, key="ip")  # 3 registrations / min / IP
 from models.auth import UserAuth, Language
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])
@@ -137,7 +141,11 @@ class LoginRequest(BaseModel):
 
 
 @router.post("/register")
-async def register(req: RegisterRequest):
+async def register(
+    req: RegisterRequest,
+    request: Request,
+    _rl: None = Depends(_rl_register),
+):
     """Register a new student."""
     # Validate input
     if req.password != req.confirm_password:
@@ -223,7 +231,11 @@ async def register(req: RegisterRequest):
 
 
 @router.post("/login")
-async def login(req: LoginRequest):
+async def login(
+    req: LoginRequest,
+    request: Request,
+    _rl: None = Depends(_rl_login),
+):
     """Login with username and password."""
     user = _load_user_by_username(req.username)
     if not user or not _verify_password(req.password, user.password_hash):

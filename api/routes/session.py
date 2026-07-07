@@ -2,10 +2,15 @@ from __future__ import annotations
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
 
+from fastapi import Request
 from api.middleware import require_auth
+from api.rate_limit import rate_limit
 from mcp.drive_client import DriveClient
 from security.quarantine import get_quarantine_manager
 from security.vibe_diff import get_vibe_diff
+
+_rl_llm        = rate_limit(20, 60)   # 20 LLM calls / min / user
+_rl_diagnostic = rate_limit(10, 60)   # 10 diagnostic calls / min / user
 
 router = APIRouter(prefix="/api/session", tags=["session"])
 
@@ -66,7 +71,11 @@ def _get_student(student_id: str):
 
 
 @router.post("/diagnostic/start")
-async def start_diagnostic(auth_id: str = Depends(require_auth)):
+async def start_diagnostic(
+    request: Request,
+    auth_id: str = Depends(require_auth),
+    _rl: None = Depends(_rl_diagnostic),
+):
     student = _get_student(auth_id)
     if not student:
         raise HTTPException(status_code=404, detail="Student not found")
@@ -74,7 +83,12 @@ async def start_diagnostic(auth_id: str = Depends(require_auth)):
 
 
 @router.post("/diagnostic/submit")
-async def submit_diagnostic(req: DiagnosticSubmit, auth_id: str = Depends(require_auth)):
+async def submit_diagnostic(
+    req: DiagnosticSubmit,
+    request: Request,
+    auth_id: str = Depends(require_auth),
+    _rl: None = Depends(_rl_diagnostic),
+):
     student_id = _resolve_student_id(auth_id, req.student_id)
     student = _get_student(student_id)
     if not student:
@@ -91,7 +105,12 @@ async def submit_diagnostic(req: DiagnosticSubmit, auth_id: str = Depends(requir
 
 
 @router.post("/chat")
-async def chat(req: ChatRequest, auth_id: str = Depends(require_auth)):
+async def chat(
+    req: ChatRequest,
+    request: Request,
+    auth_id: str = Depends(require_auth),
+    _rl: None = Depends(_rl_llm),
+):
     student_id = _resolve_student_id(auth_id, req.student_id)
 
     qm = get_quarantine_manager()
@@ -121,7 +140,12 @@ async def chat(req: ChatRequest, auth_id: str = Depends(require_auth)):
 
 
 @router.post("/content")
-async def get_study_notes(req: ChatRequest, auth_id: str = Depends(require_auth)):
+async def get_study_notes(
+    req: ChatRequest,
+    request: Request,
+    auth_id: str = Depends(require_auth),
+    _rl: None = Depends(_rl_llm),
+):
     """Directly invokes ContentAgent — always returns study notes, skips orchestrator routing.
 
     Applies the full security stack (InputGuard → ContentAgent → OutputGuard → AuditLogger)
