@@ -115,18 +115,78 @@ class ContentAgent:
         self._drive = drive_client or DriveClient()
         self._youtube = youtube_client or YouTubeClient()
 
-    def generate_notes(self, student: StudentProfile, topic: str) -> str:
-        system = SYSTEM_PROMPT_HI if student.preferred_language.value == "hi" else SYSTEM_PROMPT_EN
-        lang_instruction = "Respond entirely in Hindi (Devanagari script)." if student.preferred_language.value == "hi" else ""
+    def generate_notes(self, student: StudentProfile, topic: str) -> tuple[str, bool]:
+        """
+        Return (notes_markdown, cache_hit).
+
+        cache_hit=True  → served from the NAGA-approved vector store (no LLM call).
+        cache_hit=False → generated fresh by LLM and queued for NAGA approval.
+        """
         exam_key = exam_value(student.exam_target)
+        lang     = student.preferred_language.value
+
+        # ── 1. Semantic cache lookup ──────────────────────────────────────────
+        try:
+            from agents.notes_vector_store import search as vs_search
+            hit = vs_search(topic, exam_key, lang)
+            if hit:
+                logger.info(
+                    "ContentAgent: cache HIT  topic=%r  similarity=%.3f  exam=%s",
+                    topic, hit["similarity"], exam_key,
+                )
+                return hit["content"], True
+        except Exception as e:
+            logger.warning("ContentAgent: vector store lookup failed (%s) — falling back to LLM", e)
+
+        # ── 2. LLM generation ─────────────────────────────────────────────────
+        system = SYSTEM_PROMPT_HI if lang == "hi" else SYSTEM_PROMPT_EN
+        lang_instruction = "Respond entirely in Hindi (Devanagari script)." if lang == "hi" else ""
         prompt = (
             f"Exam: {exam_name(exam_key)} ({exam_key})\n"
             f"Approved syllabus outline:\n{compact_syllabus(exam_key)}\n\n"
             f"Generate study notes for topic: **{topic}**. "
             f"{lang_instruction}"
         )
-        notes = call_gemini(prompt, system)
-        return notes or _offline_notes(topic, exam_key, student.preferred_language.value)
+        notes = call_gemini(prompt, system) or _offline_notes(topic, exam_key, lang)
+
+        # ── 3. Queue for NAGA approval → will enter vector store on approval ──
+        self._queue_for_naga(topic, exam_key, lang, notes)
+
+        return notes, False
+
+    def _queue_for_naga(self, topic: str, exam_key: str, lang: str, content: str) -> None:
+        """Save LLM-generated notes as pending so NAGA can approve and publish to KB."""
+        try:
+            from scripts.notes_generation import process_topic
+            # process_topic skips if status=approved; pending notes are safe to overwrite
+            process_topic(exam_key, subject="General", topic=topic, subtopics=[], force=False)
+        except Exception:
+            pass  # best-effort; primary goal is returning notes to student
+        try:
+            # Direct save so we capture the actual content returned to the student
+            import json
+            from datetime import datetime
+            from pathlib import Path as _Path
+
+            notes_dir = _Path(__file__).parent.parent / "data" / "notes"
+            slug = topic.lower().replace(" ", "_").replace("/", "_")[:40]
+            subj_dir = notes_dir / exam_key / "general"
+            subj_dir.mkdir(parents=True, exist_ok=True)
+            note_path = subj_dir / f"{slug}.md"
+            meta_path = subj_dir / f"{slug}.meta.json"
+
+            if not meta_path.exists() or json.loads(meta_path.read_text()).get("status") != "approved":
+                note_path.write_text(content, encoding="utf-8")
+                meta_path.write_text(json.dumps({
+                    "exam": exam_key, "subject": "General", "topic": topic,
+                    "lang": lang, "note_path": str(note_path),
+                    "status": "pending",
+                    "generated_at": datetime.utcnow().isoformat(),
+                    "source": "content_agent",
+                }, indent=2), encoding="utf-8")
+                logger.info("ContentAgent: queued notes for NAGA approval  exam=%s  topic=%r", exam_key, topic)
+        except Exception as e:
+            logger.warning("ContentAgent: could not queue notes for NAGA: %s", e)
 
     def _extract_topic(self, text: str) -> str:
         match = re.search(r'(?i)\b(explain|notes on|tell me about|what is|notes for|about)\s+(.*)', text)
@@ -147,7 +207,7 @@ class ContentAgent:
         skill_ctx = load_for_topic(topic, student.exam_target)
         enriched_topic = f"{topic}\n\n[Skill Context]\n{skill_ctx}" if skill_ctx else topic
 
-        notes = self.generate_notes(student, enriched_topic)
+        notes, cache_hit = self.generate_notes(student, enriched_topic)
         pending = get_vibe_diff().register(
             student_id=student.student_id,
             action_name="save_to_drive",
@@ -166,8 +226,9 @@ class ContentAgent:
         from agents.content_filter import filter_videos
         safe_videos = filter_videos(raw_videos, topic=topic)
         return tag({
-            "topic": topic,
-            "notes": notes,
+            "topic":          topic,
+            "notes":          notes,
+            "cache_hit":      cache_hit,
             "pending_action": pending.to_dict(),
-            "youtube_videos": safe_videos[:3],  # show max 3 safe videos
+            "youtube_videos": safe_videos[:3],
         }, CardType.NOTE)
