@@ -396,7 +396,7 @@ class _AskNagaSheetState extends State<_AskNagaSheet> {
     try {
       await ApiService().postQuestionToNaga(
         studentId: student.studentId,
-        question: _questionCtrl.text.trim(),
+        content: _questionCtrl.text.trim(),
         subject: _subject,
       );
       if (mounted) Navigator.pop(context);
@@ -418,7 +418,14 @@ class _AskNagaSheetState extends State<_AskNagaSheet> {
         if (e is ApiException) {
           try {
             final body = jsonDecode(e.message) as Map<String, dynamic>;
-            msg = body['detail'] as String? ?? e.message;
+            final detail = body['detail'];
+            if (detail is String) {
+              msg = detail;
+            } else if (detail is List && detail.isNotEmpty) {
+              msg = (detail.first as Map<String, dynamic>)['msg'] as String? ?? e.message;
+            } else {
+              msg = e.message;
+            }
           } catch (_) {
             msg = e.message;
           }

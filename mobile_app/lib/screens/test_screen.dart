@@ -287,24 +287,30 @@ class _TopicSelectorState extends State<_TopicSelector> {
           Text(widget.lang == 'hi' ? 'विषय चुनें (वैकल्पिक):' : 'Select topic (optional):',
               style: const TextStyle(fontWeight: FontWeight.w600)),
           const SizedBox(height: 12),
-          Card(
-            child: RadioListTile<String?>(
-              value: null, groupValue: _topic,
-              title: Text(widget.lang == 'hi' ? '🎲 कमज़ोर विषयों से (सुझाई)' : '🎲 Random from weak areas (recommended)'),
-              onChanged: (v) => setState(() => _topic = v),
-              activeColor: AppTheme.primary,
+          Expanded(
+            child: ListView(
+              children: [
+                Card(
+                  child: RadioListTile<String?>(
+                    value: null, groupValue: _topic,
+                    title: Text(widget.lang == 'hi' ? '🎲 कमज़ोर विषयों से (सुझाई)' : '🎲 Random from weak areas (recommended)'),
+                    onChanged: (v) => setState(() => _topic = v),
+                    activeColor: AppTheme.primary,
+                  ),
+                ),
+                ...weaknesses.take(5).map((w) => Card(
+                  child: RadioListTile<String?>(
+                    value: w.topic, groupValue: _topic,
+                    title: Text(w.topic),
+                    subtitle: Text('${w.subject} — ${(w.scorePct * 100).toStringAsFixed(0)}%'),
+                    onChanged: (v) => setState(() => _topic = v),
+                    activeColor: AppTheme.primary,
+                  ),
+                )),
+              ],
             ),
           ),
-          ...weaknesses.take(5).map((w) => Card(
-            child: RadioListTile<String?>(
-              value: w.topic, groupValue: _topic,
-              title: Text(w.topic),
-              subtitle: Text('${w.subject} — ${(w.scorePct * 100).toStringAsFixed(0)}%'),
-              onChanged: (v) => setState(() => _topic = v),
-              activeColor: AppTheme.primary,
-            ),
-          )),
-          const Spacer(),
+          const SizedBox(height: 16),
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(

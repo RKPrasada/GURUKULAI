@@ -50,7 +50,7 @@ class AuthProvider extends ChangeNotifier {
       _student = StudentProfile.fromJson(data);
       await _saveSession(token: token);
     } catch (e) {
-      _error = e.toString().replaceFirst('ApiException(401): ', '').replaceFirst('ApiException(400): ', '');
+      _error = _friendlyError(e);
     } finally {
       _isLoading = false;
       notifyListeners();
@@ -88,7 +88,7 @@ class AuthProvider extends ChangeNotifier {
       _student = StudentProfile.fromJson(data);
       await _saveSession(token: token);
     } catch (e) {
-      _error = e.toString().replaceFirst('ApiException(409): ', '').replaceFirst('ApiException(400): ', '');
+      _error = _friendlyError(e);
     } finally {
       _isLoading = false;
       notifyListeners();
@@ -106,7 +106,7 @@ class AuthProvider extends ChangeNotifier {
       _student = StudentProfile.fromJson(data);
       await _saveSession(token: token);
     } catch (e) {
-      _error = e.toString();
+      _error = _friendlyError(e);
     } finally {
       _isLoading = false;
       notifyListeners();
@@ -144,5 +144,18 @@ class AuthProvider extends ChangeNotifier {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('student_profile', jsonEncode(_student!.toJson()));
     if (token != null) await prefs.setString('auth_token', token);
+  }
+
+  String _friendlyError(Object e) {
+    final raw = e.toString();
+    // Strip ApiException prefix
+    final body = raw
+        .replaceFirst(RegExp(r'ApiException\(\d+\):\s*'), '');
+    // If it's JSON with a detail field, extract just that
+    try {
+      final decoded = jsonDecode(body) as Map<String, dynamic>;
+      if (decoded.containsKey('detail')) return decoded['detail'].toString();
+    } catch (_) {}
+    return body;
   }
 }

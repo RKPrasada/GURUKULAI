@@ -226,15 +226,14 @@ class ApiService {
 
   Future<Map<String, dynamic>> postQuestionToNaga({
     required String studentId,
-    required String question,
+    required String content,
     required String subject,
     String? topic,
   }) =>
       post('/api/mentor/questions', {
-        'student_id': studentId,
-        'question': question,
+        'content': content,
         'subject': subject,
-        if (topic != null) 'topic': topic,
+        'topic': topic ?? subject,
       });
 
   Future<Map<String, dynamic>> getNagaQuestions({String? studentId}) =>
