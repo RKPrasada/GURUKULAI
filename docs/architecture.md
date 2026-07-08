@@ -154,7 +154,7 @@ Student                              NAGA (Human Mentor)
 - `meeting_requests.jsonl` — 1-to-1 requests + NAGA responses
 - `notifications.jsonl` — per-user notification feed (polled every 30s)
 
-**Login:** `username=naga` / `password=naga@vidyabot` (auto-seeded on startup)
+**Login:** `username=naga` / `password=<set via NAGA_PASSWORD env var>` (auto-seeded on startup)
 
 ---
 

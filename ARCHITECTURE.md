@@ -182,7 +182,7 @@ All free-tier — no LLM cost at current scale.
 
 Single named human mentor, not a bot.
 
-- **Login:** `username=naga` / `password=naga@vidyabot`
+- **Login:** `username=naga` / `password=<set via NAGA_PASSWORD env var>`
 - Auto-seeded to `data/users.jsonl` on every startup via `mentor_routes._seed_naga_user()`
 - NAGA-specific sidebar gated on `student.user_id === 'naga'` in `Layout.tsx`
 - **Dashboard tabs:** Overview / Approvals / Meetings / Schedule

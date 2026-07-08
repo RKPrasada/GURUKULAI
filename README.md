@@ -90,7 +90,7 @@ NAGA is a real human mentor role built into the system:
 - Accepts 1-to-1 meeting requests
 - Manages the content filter keyword blocklist
 
-Login: `username=naga` / `password=naga@vidyabot` (auto-seeded on startup)
+Login: `username=naga` / `password=<set via NAGA_PASSWORD env var>` (auto-seeded on startup)
 
 ### 5. Weekly Mock Test (Every Saturday 16:00)
 

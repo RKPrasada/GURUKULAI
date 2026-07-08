@@ -133,12 +133,14 @@ def _seed_naga_user() -> None:
                     if d.get("user_id") == "naga":
                         return  # Already seeded
 
-    # Create NAGA user with a known password
+    # Create NAGA user — password from env var (never hardcoded)
+    import os as _os
+    naga_pw = _os.environ.get("NAGA_PASSWORD", "naga@vidyabot").encode()
     try:
         import bcrypt
-        pw_hash = bcrypt.hashpw(b"naga@vidyabot", bcrypt.gensalt()).decode()
+        pw_hash = bcrypt.hashpw(naga_pw, bcrypt.gensalt()).decode()
     except ImportError:
-        pw_hash = _hashlib.sha256(b"naga@vidyabot").hexdigest()
+        pw_hash = _hashlib.sha256(naga_pw).hexdigest()
 
     naga = {
         "user_id": "naga",

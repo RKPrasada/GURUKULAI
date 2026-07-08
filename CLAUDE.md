@@ -69,7 +69,7 @@ Free-tier models on OpenRouter rotate availability — if one returns 404/429 th
 ## NAGA — Human Mentor Role
 
 Single named human mentor account, not a bot.
-- **Login:** `username=naga` / `password=naga@vidyabot`
+- **Login:** `username=naga` / `password=<set via NAGA_PASSWORD env var>`
 - Auto-seeded to `data/users.jsonl` on startup via `mentor_routes._seed_naga_user()`
 - `Layout.tsx` shows NAGA-specific sidebar when `student.user_id === 'naga'`
 - Data stored in JSONL files under `data/mentor/` (questions, classes, meetings, notifications)
