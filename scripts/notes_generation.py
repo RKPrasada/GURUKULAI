@@ -70,11 +70,15 @@ def _slug(text: str) -> str:
     return text.lower().replace(" ", "_").replace("&", "and").replace("/", "_")[:40]
 
 
-def _note_paths(exam: str, subject: str, topic: str) -> tuple[Path, Path]:
-    """Return (note_path, meta_path)."""
+def _note_paths(exam: str, subject: str, topic: str, subtopic: str = "") -> tuple[Path, Path]:
+    """Return (note_path, meta_path). Subtopic notes live at
+    {subject}/{topic}__{subtopic}.md; topic-level notes at {subject}/{topic}.md."""
     subj_dir = NOTES_DIR / exam / _slug(subject)
     subj_dir.mkdir(parents=True, exist_ok=True)
-    base = subj_dir / _slug(topic)
+    if subtopic and _slug(subtopic) != _slug(topic):
+        base = subj_dir / f"{_slug(topic)}__{_slug(subtopic)}"
+    else:
+        base = subj_dir / _slug(topic)
     return base.with_suffix(".md"), base.with_suffix(".meta.json")
 
 
@@ -184,9 +188,9 @@ def run_exam(exam: str, force: bool = False) -> dict:
     return counts
 
 
-def approve_note(exam: str, subject: str, topic: str, naga_note: str = "") -> bool:
+def approve_note(exam: str, subject: str, topic: str, naga_note: str = "", subtopic: str = "") -> bool:
     """NAGA approves a note — updates meta status and publishes to the vector store."""
-    note_path, meta_path = _note_paths(exam, subject, topic)
+    note_path, meta_path = _note_paths(exam, subject, topic, subtopic)
     meta = _read_meta(meta_path)
     if not meta:
         return False
@@ -195,7 +199,7 @@ def approve_note(exam: str, subject: str, topic: str, naga_note: str = "") -> bo
     meta["approved_at"] = approved_at
     meta["naga_note"] = naga_note
     _write_meta(meta_path, meta)
-    logger.info("Notes: approved %s/%s/%s", exam, subject, topic)
+    logger.info("Notes: approved %s/%s/%s/%s", exam, subject, topic, subtopic or "-")
 
     # Publish to semantic vector store so future requests skip the LLM
     try:
@@ -210,8 +214,9 @@ def approve_note(exam: str, subject: str, topic: str, naga_note: str = "") -> bo
                 lang=lang,
                 content=content,
                 approved_at=approved_at,
+                subtopic=subtopic or meta.get("subtopic", ""),
             )
-            logger.info("Notes: published to vector store  exam=%s  topic=%r", exam, topic)
+            logger.info("Notes: published to vector store  exam=%s  topic=%r  subtopic=%r", exam, topic, subtopic)
     except Exception as e:
         logger.error("Notes: vector store publish failed for %s/%s: %s", exam, topic, e)
         # Don't fail the approval if vector store is unavailable
@@ -219,9 +224,9 @@ def approve_note(exam: str, subject: str, topic: str, naga_note: str = "") -> bo
     return True
 
 
-def reject_note(exam: str, subject: str, topic: str, reason: str = "") -> bool:
+def reject_note(exam: str, subject: str, topic: str, reason: str = "", subtopic: str = "") -> bool:
     """NAGA rejects a note — marks it rejected so it gets regenerated next run."""
-    _, meta_path = _note_paths(exam, subject, topic)
+    _, meta_path = _note_paths(exam, subject, topic, subtopic)
     meta = _read_meta(meta_path)
     if not meta:
         return False
@@ -229,6 +234,35 @@ def reject_note(exam: str, subject: str, topic: str, reason: str = "") -> bool:
     meta["rejected_at"] = datetime.utcnow().isoformat()
     meta["naga_note"] = reason
     _write_meta(meta_path, meta)
+    return True
+
+
+def save_note(exam: str, subject: str, topic: str, subtopic: str, content: str,
+              source: str = "naga_upload", status: str = "approved",
+              lang: str = "en", student_id: str = "") -> bool:
+    """Persist a note directly (used by NAGA manual upload/paste). When status is
+    'approved' it is also published to the vector store immediately."""
+    note_path, meta_path = _note_paths(exam, subject, topic, subtopic)
+    note_path.write_text(content, encoding="utf-8")
+    now = datetime.utcnow().isoformat()
+    _write_meta(meta_path, {
+        "exam": exam, "subject": subject, "topic": topic, "subtopic": subtopic,
+        "lang": lang, "status": status,
+        "created_at": now,
+        "approved_at": now if status == "approved" else None,
+        "generated_at": now,
+        "rejected_at": None, "naga_note": "",
+        "source": source, "student_id": student_id,
+        "note_path": str(note_path),
+    })
+    if status == "approved":
+        try:
+            from agents.notes_vector_store import add as vs_add
+            vs_add(topic=topic, subject=subject, exam_key=exam, lang=lang,
+                   content=content, approved_at=now, subtopic=subtopic)
+        except Exception as e:
+            logger.error("save_note: vector store publish failed: %s", e)
+    logger.info("Notes: saved (%s, %s) %s/%s/%s/%s", source, status, exam, subject, topic, subtopic or "-")
     return True
 
 
@@ -353,9 +387,9 @@ def list_pending_notes() -> list[dict]:
     return pending
 
 
-def get_note_content(exam: str, subject: str, topic: str) -> str | None:
+def get_note_content(exam: str, subject: str, topic: str, subtopic: str = "") -> str | None:
     """Return note markdown if it exists and is approved."""
-    note_path, meta_path = _note_paths(exam, subject, topic)
+    note_path, meta_path = _note_paths(exam, subject, topic, subtopic)
     meta = _read_meta(meta_path)
     if not note_path.exists():
         return None

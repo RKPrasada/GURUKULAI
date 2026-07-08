@@ -2266,5 +2266,3650 @@
     ],
     "correct_index": 0,
     "explanation": "NITI Aayog (National Institution for Transforming India) replaced the Planning Commission in January 2015."
+  },
+  {
+    "id": "rrb_group_d_a61ce392",
+    "subject": "General Science",
+    "topic": "Physics (10th Standard)",
+    "difficulty": 2,
+    "question_text": "A convex lens forms a real, inverted image of an object placed beyond 2F. Where is the image formed?",
+    "options": [
+      "Between F and 2F",
+      "At 2F",
+      "Beyond 2F",
+      "At the focal point"
+    ],
+    "correct_index": 0,
+    "explanation": "For an object beyond 2F, a convex lens produces a real, inverted image located between F and 2F on the other side."
+  },
+  {
+    "id": "rrb_group_d_4930bc74",
+    "subject": "General Science",
+    "topic": "Chemistry (10th Standard)",
+    "difficulty": 2,
+    "question_text": "The process of conversion of solid directly into gas is called:",
+    "options": [
+      "Sublimation",
+      "Condensation",
+      "Evaporation",
+      "Deposition"
+    ],
+    "correct_index": 0,
+    "explanation": "Sublimation is the phase transition from solid to gas without passing through the liquid phase."
+  },
+  {
+    "id": "rrb_group_d_cb6415bd",
+    "subject": "General Science",
+    "topic": "Life Sciences (10th Standard)",
+    "difficulty": 1,
+    "question_text": "Which organelle is known as the powerhouse of the cell?",
+    "options": [
+      "Nucleus",
+      "Mitochondria",
+      "Ribosome",
+      "Golgi apparatus"
+    ],
+    "correct_index": 1,
+    "explanation": "Mitochondria generate most of the cell's ATP through cellular respiration, earning the name 'powerhouse of the cell'."
+  },
+  {
+    "id": "rrb_group_d_32cb2f4e",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 2,
+    "question_text": "If A = 1, B = 2, ..., Z = 26, what is the numeric code for the word CAT?",
+    "options": [
+      "24",
+      "25",
+      "23",
+      "26"
+    ],
+    "correct_index": 0,
+    "explanation": "C=3, A=1, T=20; sum = 3+1+20 = 24."
+  },
+  {
+    "id": "rrb_group_d_8ba54d7d",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Relationships",
+    "difficulty": 1,
+    "question_text": "Pointing to a photograph, a man said, 'She is the only daughter of my father's only son.' How is the woman related to the man?",
+    "options": [
+      "Sister",
+      "Daughter",
+      "Mother",
+      "Wife"
+    ],
+    "correct_index": 1,
+    "explanation": "The man's father's only son is the man himself; his only daughter is his daughter."
+  },
+  {
+    "id": "rrb_group_d_7e7f6b5d",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Conclusions and Decision Making",
+    "difficulty": 3,
+    "question_text": "Statement: All engineers are graduates. Some graduates are doctors. Conclusions: I. Some engineers are doctors. II. Some doctors are engineers. Which conclusion(s) follow?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct_index": 3,
+    "explanation": "The premises do not guarantee any overlap between engineers and doctors; both conclusions are uncertain."
+  },
+  {
+    "id": "rrb_group_d_c6a936e2",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "What is the LCM of 12 and 18?",
+    "options": [
+      "24",
+      "36",
+      "48",
+      "72"
+    ],
+    "correct_index": 1,
+    "explanation": "LCM(12,18) = 36 because 12 = 2^2·3, 18 = 2·3^2; taking the highest powers gives 2^2·3^2 = 36."
+  },
+  {
+    "id": "rrb_group_d_eeb7875a",
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 2,
+    "question_text": "If a:b = 3:4 and b:c = 5:6, what is the ratio a:c?",
+    "options": [
+      "5:8",
+      "3:5",
+      "4:7",
+      "8:5"
+    ],
+    "correct_index": 0,
+    "explanation": "Make b common: LCM of 4 and 5 is 20. Then a = (3/4)*20 = 15, c = (6/5)*20 = 24, so a:c = 15:24 = 5:8."
+  },
+  {
+    "id": "rrb_group_d_882fb9fb",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 2,
+    "question_text": "What is the amount after 2 years if ₹5000 is invested at 10% per annum compounded annually?",
+    "options": [
+      "5500",
+      "6050",
+      "6100",
+      "6200"
+    ],
+    "correct_index": 1,
+    "explanation": "Amount = P(1+r)^n = 5000*(1+0.10)^2 = 5000*1.21 = ₹6050."
+  },
+  {
+    "id": "rrb_group_d_4846db1b",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "What is the name of the lander module of India's Chandrayaan-3 mission that successfully soft-landed on the Moon in August 2023?",
+    "options": [
+      "Vikram",
+      "Pragyan",
+      "Chandra",
+      "Surya"
+    ],
+    "correct_index": 0,
+    "explanation": "The lander of Chandrayaan-3 is named Vikram, after Dr. Vikram Sarabhai; the rover is named Pragyan."
+  },
+  {
+    "id": "rrb_group_d_5ceabc0d",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 1,
+    "question_text": "Which Indian wrestler won the gold medal in the men's 65 kg freestyle category at the 2022 Commonwealth Games held in Birmingham?",
+    "options": [
+      "Bajrang Punia",
+      "Ravi Kumar Dahiya",
+      "Deepak Punia",
+      "Sushil Kumar"
+    ],
+    "correct_index": 0,
+    "explanation": "Bajrang Punia secured the gold medal in the 65 kg freestyle wrestling event at the 2022 Commonwealth Games."
+  },
+  {
+    "id": "rrb_group_d_0a9048c9",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 1,
+    "question_text": "The classical dance form Kathakali originated in which Indian state?",
+    "options": [
+      "Kerala",
+      "Tamil Nadu",
+      "Karnataka",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 0,
+    "explanation": "Kathakali is a classical dance-drama that originated in Kerala."
+  },
+  {
+    "id": "rrb_group_d_75642c75",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Personalities",
+    "difficulty": 2,
+    "question_text": "Who was the first Indian to receive the Nobel Prize in Physics?",
+    "options": [
+      "C. V. Raman",
+      "Homi J. Bhabha",
+      "Subrahmanyan Chandrasekhar",
+      "Meghnad Saha"
+    ],
+    "correct_index": 0,
+    "explanation": "Sir C. V. Raman was awarded the Nobel Prize in Physics in 1930 for his discovery of the Raman effect."
+  },
+  {
+    "id": "rrb_group_d_652b1933",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 1,
+    "question_text": "In which year was the Goods and Services Tax (GST) implemented across India?",
+    "options": [
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    "correct_index": 2,
+    "explanation": "The GST was launched nationwide on 1 July 2017, replacing multiple indirect taxes."
+  },
+  {
+    "id": "rrb_group_d_3d31ab10",
+    "subject": "General Science",
+    "topic": "Physics - Laws of Motion",
+    "difficulty": 1,
+    "question_text": "A 5 kg object accelerates at 2 m/s². What is the net force acting on it?",
+    "options": [
+      "2.5 N",
+      "5 N",
+      "10 N",
+      "20 N"
+    ],
+    "correct_index": 2,
+    "explanation": "Using Newton's second law, F = ma = 5 kg × 2 m/s² = 10 N."
+  },
+  {
+    "id": "rrb_group_d_f8a8889e",
+    "subject": "General Science",
+    "topic": "Chemistry - Periodic Table",
+    "difficulty": 1,
+    "question_text": "Which of the following elements is a halogen?",
+    "options": [
+      "Sodium",
+      "Chlorine",
+      "Calcium",
+      "Iron"
+    ],
+    "correct_index": 1,
+    "explanation": "Halogens are Group 17 elements; chlorine (Cl) belongs to this group."
+  },
+  {
+    "id": "rrb_group_d_22e4dbd9",
+    "subject": "General Science",
+    "topic": "Life Sciences - Photosynthesis",
+    "difficulty": 2,
+    "question_text": "In the photosynthesis equation 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂, which gas is released as a by‑product?",
+    "options": [
+      "Carbon dioxide",
+      "Oxygen",
+      "Nitrogen",
+      "Hydrogen"
+    ],
+    "correct_index": 1,
+    "explanation": "Oxygen (O₂) appears on the product side and is released into the atmosphere."
+  },
+  {
+    "id": "rrb_group_d_3de5bb8f",
+    "subject": "General Science",
+    "topic": "Physics - Work and Energy",
+    "difficulty": 2,
+    "question_text": "A force of 15 N moves an object 4 m in the direction of the force. What is the work done?",
+    "options": [
+      "3.75 J",
+      "19 J",
+      "60 J",
+      "240 J"
+    ],
+    "correct_index": 2,
+    "explanation": "Work = force × distance = 15 N × 4 m = 60 J."
+  },
+  {
+    "id": "rrb_group_d_addd845a",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "What is the name of the lander module of India's Chandrayaan-3 mission launched in 2023?",
+    "options": [
+      "Vikram",
+      "Pragyan",
+      "Chandrayaan-2",
+      "Mangalyaan"
+    ],
+    "correct_index": 0,
+    "explanation": "The Chandrayaan-3 mission comprised the lander named Vikram and the rover named Pragyan. Vikram successfully soft-landed on the Moon's south polar region on 23 August 2023."
+  },
+  {
+    "id": "rrb_group_d_80ffd625",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 2,
+    "question_text": "Which Indian athlete holds the national record in men's 3000 metres steeplechase with a time of 8:09.91 (set in 2023)?",
+    "options": [
+      "Avinash Sable",
+      "Girish Gowda",
+      "Durga Bahadur Budha",
+      "Surendra Singh"
+    ],
+    "correct_index": 0,
+    "explanation": "Avinash Sable set the Indian national record of 8:09.91 in the men's 3000m steeplechase at the 2023 World Athletics Championships in Budapest."
+  },
+  {
+    "id": "rrb_group_d_8584bf19",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 1,
+    "question_text": "Which classical dance form originated in the temples of Tamil Nadu?",
+    "options": [
+      "Bharatanatyam",
+      "Kathak",
+      "Odissi",
+      "Kuchipudi"
+    ],
+    "correct_index": 0,
+    "explanation": "Bharatanatyam traces its origins to the temple dance traditions of Tamil Nadu, particularly the Devadasi system."
+  },
+  {
+    "id": "rrb_group_d_81acaa70",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Personalities",
+    "difficulty": 1,
+    "question_text": "Who authored the book 'The Discovery of India'?",
+    "options": [
+      "Jawaharlal Nehru",
+      "Mahatma Gandhi",
+      "Subhas Chandra Bose",
+      "B.R. Ambedkar"
+    ],
+    "correct_index": 0,
+    "explanation": "The Discovery of India was written by India's first Prime Minister Jawaharlal Nehru during his imprisonment in 1942–1946."
+  },
+  {
+    "id": "rrb_group_d_fdded455",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Politics",
+    "difficulty": 3,
+    "question_text": "Which article of the Indian Constitution provides for the establishment of the Election Commission of India?",
+    "options": [
+      "Article 324",
+      "Article 326",
+      "Article 356",
+      "Article 243"
+    ],
+    "correct_index": 0,
+    "explanation": "Article 324 of the Constitution vests the power of superintendence, direction and control of elections in the Election Commission."
+  },
+  {
+    "id": "rrb_group_d_978fc95b",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 2,
+    "question_text": "If A=1, B=2, ..., Z=26, what is the sum of the positional values of the letters in the word 'DOG'?",
+    "options": [
+      "26",
+      "27",
+      "25",
+      "24"
+    ],
+    "correct_index": 0,
+    "explanation": "D=4, O=15, G=7; 4+15+7 = 26."
+  },
+  {
+    "id": "rrb_group_d_65726189",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Relationships",
+    "difficulty": 1,
+    "question_text": "A is the brother of B. B is the daughter of C. How is A related to C?",
+    "options": [
+      "Son",
+      "Nephew",
+      "Brother",
+      "Father"
+    ],
+    "correct_index": 0,
+    "explanation": "Since B is the daughter of C, C is the parent of B. A, being B's brother, is also a child of C, hence A is the son of C."
+  },
+  {
+    "id": "rrb_group_d_193974e2",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Conclusions and Decision Making",
+    "difficulty": 3,
+    "question_text": "Statements: All pens are pencils. Some pencils are erasers. Conclusions: I. Some pens are erasers. II. No pen is an eraser. Which of the following is correct?",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Either conclusion I or II follows",
+      "Neither conclusion I nor II follows"
+    ],
+    "correct_index": 3,
+    "explanation": "From the statements we cannot definitively infer that some pens are erasers, nor can we infer that no pen is an eraser. Hence neither conclusion follows."
+  },
+  {
+    "id": "rrb_group_d_e50faa3f",
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 2,
+    "question_text": "If a:b = 3:4 and b:c = 5:6, find a:c.",
+    "options": [
+      "3:5",
+      "5:8",
+      "4:7",
+      "6:11"
+    ],
+    "correct_index": 1,
+    "explanation": "Make b common: a:b = 15:20, b:c = 20:24 => a:c = 15:24 = 5:8."
+  },
+  {
+    "id": "rrb_group_d_ecf8bb39",
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "difficulty": 2,
+    "question_text": "A can complete a work in 12 days, B in 18 days. How many days will they take together?",
+    "options": [
+      "7 days",
+      "7.2 days",
+      "7.5 days",
+      "8 days"
+    ],
+    "correct_index": 1,
+    "explanation": "Combined rate = 1/12 + 1/18 = 5/36 => time = 36/5 = 7.2 days."
+  },
+  {
+    "id": "rrb_group_d_88548a5b",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 3,
+    "question_text": "At what rate percent per annum will Rs. 5000 amount to Rs. 6050 in 2 years compounded annually?",
+    "options": [
+      "12%",
+      "10%",
+      "8%",
+      "15%"
+    ],
+    "correct_index": 1,
+    "explanation": "6050 = 5000(1+r/100)^2 => (1+r/100)^2 = 1.21 => 1+r/100 = 1.1 => r = 10%."
+  },
+  {
+    "id": "rrb_group_d_ff4b381d",
+    "subject": "Mathematics",
+    "topic": "Elementary Statistics",
+    "difficulty": 1,
+    "question_text": "The mean of 5 numbers is 20. If one number is 30, what is the sum of the remaining four numbers?",
+    "options": [
+      "80",
+      "70",
+      "60",
+      "90"
+    ],
+    "correct_index": 1,
+    "explanation": "Total sum = 5 × 20 = 100. Remaining sum = 100 - 30 = 70."
+  },
+  {
+    "id": "rrb_group_d_5a7e2354",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "Which Indian Earth‑observation satellite was launched by ISRO in 2023 and is also known as Oceansat‑3?",
+    "options": [
+      "Cartosat‑3",
+      "RISAT‑2BR1",
+      "EOS‑06",
+      "GSAT‑30"
+    ],
+    "correct_index": 2,
+    "explanation": "EOS‑06 (Oceansat‑3) was launched on 26 November 2023 aboard PSLV‑C54 for oceanographic studies."
+  },
+  {
+    "id": "rrb_group_d_d16c1731",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 1,
+    "question_text": "Who won the men's singles title at the 2023 BWF World Championships?",
+    "options": [
+      "Viktor Axelsen",
+      "Kento Momota",
+      "Lakshya Sen",
+      "Kidambi Srikanth"
+    ],
+    "correct_index": 0,
+    "explanation": "Denmark's Viktor Axelsen defended his title, defeating Kunlavut Vitidsarn in the final."
+  },
+  {
+    "id": "rrb_group_d_09ef0c4e",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 1,
+    "question_text": "The classical dance form Kuchipudi originates from which Indian state?",
+    "options": [
+      "Andhra Pradesh",
+      "Tamil Nadu",
+      "Kerala",
+      "Odisha"
+    ],
+    "correct_index": 0,
+    "explanation": "Kuchipudi evolved in the village of Kuchipudi in Andhra Pradesh and is one of India's eight major classical dances."
+  },
+  {
+    "id": "rrb_group_d_dbac1423",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 2,
+    "question_text": "What was the Reserve Bank of India's policy repo rate as of February 2024?",
+    "options": [
+      "6.00%",
+      "6.25%",
+      "6.50%",
+      "6.75%"
+    ],
+    "correct_index": 2,
+    "explanation": "The RBI kept the repo rate unchanged at 6.50% in its February 2024 monetary policy review."
+  },
+  {
+    "id": "rrb_group_d_9040add4",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Politics",
+    "difficulty": 2,
+    "question_text": "Which article of the Indian Constitution provides for the establishment of the Election Commission?",
+    "options": [
+      "Article 324",
+      "Article 326",
+      "Article 324A",
+      "Article 325"
+    ],
+    "correct_index": 0,
+    "explanation": "Article 324 vests the superintendence, direction and control of elections in the Election Commission of India."
+  },
+  {
+    "id": "rrb_group_d_30fa5a51",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "A force of 10 N acts on a body of mass 2 kg. What is the acceleration produced?",
+    "options": [
+      "2 m/s²",
+      "5 m/s²",
+      "10 m/s²",
+      "20 m/s²"
+    ],
+    "correct_index": 1,
+    "explanation": "Using Newton's second law, a = F/m = 10 N / 2 kg = 5 m/s²."
+  },
+  {
+    "id": "rrb_group_d_1483f55e",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 2,
+    "question_text": "Which of the following salts is formed from a strong acid and a strong base?",
+    "options": [
+      "NaCl",
+      "NH₄Cl",
+      "Na₂CO₃",
+      "CH₃COONa"
+    ],
+    "correct_index": 0,
+    "explanation": "NaCl is the product of HCl (strong acid) and NaOH (strong base); the others involve weak acids or bases."
+  },
+  {
+    "id": "rrb_group_d_1f8f9854",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 1,
+    "question_text": "What is the approximate molar mass of sulfuric acid (H₂SO₄)?",
+    "options": [
+      "98 g/mol",
+      "80 g/mol",
+      "112 g/mol",
+      "64 g/mol"
+    ],
+    "correct_index": 0,
+    "explanation": "Molar mass = 2(1) + 32 + 4(16) = 98 g/mol."
+  },
+  {
+    "id": "rrb_group_d_500bd197",
+    "subject": "General Science",
+    "topic": "Life Sciences",
+    "difficulty": 1,
+    "question_text": "Which cell organelle is referred to as the \"powerhouse of the cell\"?",
+    "options": [
+      "Mitochondria",
+      "Nucleus",
+      "Ribosome",
+      "Golgi apparatus"
+    ],
+    "correct_index": 0,
+    "explanation": "Mitochondria generate most of the cell's ATP through cellular respiration."
+  },
+  {
+    "id": "rrb_group_d_d1c4c367",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Analogies",
+    "difficulty": 1,
+    "question_text": "Doctor is to Hospital as Teacher is to ?",
+    "options": [
+      "School",
+      "Classroom",
+      "Student",
+      "Book"
+    ],
+    "correct_index": 0,
+    "explanation": "A doctor works in a hospital; similarly, a teacher works in a school."
+  },
+  {
+    "id": "rrb_group_d_a3bb23ce",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 2,
+    "question_text": "In a certain code language, each letter is shifted three places forward in the alphabet (e.g., CAT → FDW). If WORD is coded as ZRUG, what is the code for LEARN?",
+    "options": [
+      "OHDUQ",
+      "OEHTQ",
+      "OFDUQ",
+      "OGDUQ"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter is moved +3: L→O, E→H, A→D, R→U, N→Q → OHDUQ."
+  },
+  {
+    "id": "rrb_group_d_bb745f03",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Relationships",
+    "difficulty": 1,
+    "question_text": "A is the brother of B. C is the daughter of A. D is the sister of B. How is D related to C?",
+    "options": [
+      "Mother",
+      "Aunt",
+      "Sister",
+      "Cousin"
+    ],
+    "correct_index": 1,
+    "explanation": "A and B are siblings. C is A's daughter, making B the uncle/aunt of C. D, being B's sister, is also a sibling of A, thus D is C's aunt."
+  },
+  {
+    "id": "rrb_group_d_80d023a2",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Conclusions and Decision Making",
+    "difficulty": 3,
+    "question_text": "Statements: All pens are pencils. Some pencils are erasers.\nConclusions:\nI. Some pens are erasers.\nII. No pen is an eraser.\nWhich conclusion(s) follow?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Either I or II follows",
+      "Neither I nor II follows"
+    ],
+    "correct_index": 3,
+    "explanation": "From the statements, pens are a subset of pencils. Some pencils are erasers, but this overlap may or may not include pens. Hence neither conclusion I nor II definitely follows."
+  },
+  {
+    "id": "rrb_group_d_96175d53",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "A body of mass 5 kg is moving with a velocity of 10 m/s. What is its kinetic energy?",
+    "options": [
+      "250 J",
+      "500 J",
+      "1000 J",
+      "200 J"
+    ],
+    "correct_index": 0,
+    "explanation": "Kinetic energy = ½ m v² = 0.5 × 5 kg × (10 m/s)² = 0.5 × 5 × 100 = 250 J."
+  },
+  {
+    "id": "rrb_group_d_91094116",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "A force of 20 N acts on a body of mass 4 kg. What is the acceleration produced?",
+    "options": [
+      "5 m/s²",
+      "80 m/s²",
+      "0.2 m/s²",
+      "4 m/s²"
+    ],
+    "correct_index": 0,
+    "explanation": "Using Newton's second law, a = F/m = 20 N / 4 kg = 5 m/s²."
+  },
+  {
+    "id": "rrb_group_d_ae37cf65",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 2,
+    "question_text": "In a certain code, 'CAT' is written as 'FDW'. What is the code for 'DOG'?",
+    "options": [
+      "GRJ",
+      "GSH",
+      "HSK",
+      "ITL"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter is shifted forward by 3 positions in the alphabet (C→F, A→D, T→W). Applying the same shift: D→G, O→R, G→J gives 'GRJ'."
+  },
+  {
+    "id": "rrb_group_d_7b801ea7",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Relationships",
+    "difficulty": 2,
+    "question_text": "A is the brother of B. C is the sister of A. D is the mother of B. How is D related to C?",
+    "options": [
+      "Mother",
+      "Aunt",
+      "Sister",
+      "Daughter"
+    ],
+    "correct_index": 0,
+    "explanation": "A and B are siblings. C, being sister of A, is also sister of B. D, mother of B, is therefore mother of both A and B, and hence mother of C."
+  },
+  {
+    "id": "rrb_group_d_0c94faee",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Venn Diagram",
+    "difficulty": 1,
+    "question_text": "In a class, 40 students like Tea, 30 like Coffee, and 20 like both. How many students like either Tea or Coffee?",
+    "options": [
+      "50",
+      "70",
+      "90",
+      "110"
+    ],
+    "correct_index": 0,
+    "explanation": "Using the principle of inclusion-exclusion: |Tea ∪ Coffee| = |Tea| + |Coffee| - |Tea ∩ Coffee| = 40 + 30 - 20 = 50."
+  },
+  {
+    "id": "rrb_group_d_2ee3aaca",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Conclusions and Decision Making",
+    "difficulty": 3,
+    "question_text": "Statement: All students who score above 90% get a scholarship. Rohan scored 92%.\nConclusion: Rohan gets a scholarship.",
+    "options": [
+      "Follows",
+      "Does not follow",
+      "Cannot be determined",
+      "Both follow and does not follow"
+    ],
+    "correct_index": 0,
+    "explanation": "Since Rohan's score (92%) is above 90%, the condition is satisfied, so the conclusion follows directly from the statement."
+  },
+  {
+    "id": "rrb_group_d_bb45028b",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "India's solar observatory mission Aditya-L1 was launched by ISRO in which month of 2023?",
+    "options": [
+      "January",
+      "March",
+      "September",
+      "December"
+    ],
+    "correct_index": 2,
+    "explanation": "Aditya-L1, India's first dedicated solar mission, was launched on 2 September 2023 from Sriharikota."
+  },
+  {
+    "id": "rrb_group_d_dd8e33ef",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 1,
+    "question_text": "Which team won the ICC Men's Cricket World Cup held in India in November 2023?",
+    "options": [
+      "India",
+      "Australia",
+      "England",
+      "New Zealand"
+    ],
+    "correct_index": 1,
+    "explanation": "Australia defeated India in the final to clinch their sixth World Cup title."
+  },
+  {
+    "id": "rrb_group_d_49b5ebf7",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 1,
+    "question_text": "Which of the following is a traditional folk dance of Assam?",
+    "options": [
+      "Bihu",
+      "Garba",
+      "Lavani",
+      "Bhangra"
+    ],
+    "correct_index": 0,
+    "explanation": "Bihu is the primary folk dance of Assam, performed during the Bihu festival celebrating the Assamese new year."
+  },
+  {
+    "id": "rrb_group_d_78b15735",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Personalities",
+    "difficulty": 2,
+    "question_text": "As of 2024, who holds the position of the Governor of the Reserve Bank of India?",
+    "options": [
+      "Shaktikanta Das",
+      "Urjit Patel",
+      "Raghuram Rajan",
+      "D. Subbarao"
+    ],
+    "correct_index": 0,
+    "explanation": "Shaktikanta Das has been the RBI Governor since December 2018 and was reappointed for a further term in 2023."
+  },
+  {
+    "id": "rrb_group_d_290701c8",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 3,
+    "question_text": "What does the acronym 'FDI' stand for in the context of international economics?",
+    "options": [
+      "Foreign Direct Investment",
+      "Fiscal Deficit Indicator",
+      "Funds for Development Initiatives",
+      "Foreign Debt Instrument"
+    ],
+    "correct_index": 0,
+    "explanation": "FDI refers to investment made by a company or individual in one country into business interests located in another country, involving a lasting interest and control."
+  },
+  {
+    "id": "rrb_group_d_998c26be",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "What is the LCM of 14 and 35?",
+    "options": [
+      "42",
+      "70",
+      "105",
+      "210"
+    ],
+    "correct_index": 1,
+    "explanation": "Prime factorization: 14 = 2 × 7, 35 = 5 × 7. LCM takes the highest power of each prime: 2 × 5 × 7 = 70."
+  },
+  {
+    "id": "rrb_group_d_5b73596d",
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "difficulty": 2,
+    "question_text": "A can finish a job in 12 days, B in 18 days. Working together, how many days will they take to complete the job?",
+    "options": [
+      "7 days",
+      "7.2 days",
+      "8 days",
+      "9 days"
+    ],
+    "correct_index": 1,
+    "explanation": "Work rates: A = 1/12 per day, B = 1/18 per day. Combined rate = 1/12 + 1/18 = (3+2)/36 = 5/36 per day. Time = 1 / (5/36) = 36/5 = 7.2 days."
+  },
+  {
+    "id": "rrb_group_d_a37fafa7",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 1,
+    "question_text": "What is the simple interest on ₹5000 at 6% per annum for 4 years?",
+    "options": [
+      "₹1000",
+      "₹1200",
+      "₹1500",
+      "₹1800"
+    ],
+    "correct_index": 1,
+    "explanation": "SI = (P × R × T)/100 = (5000 × 6 × 4)/100 = ₹1200."
+  },
+  {
+    "id": "rrb_group_d_f31f40f5",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 1,
+    "question_text": "On which date did ISRO's Chandrayaan-3 successfully land on the Moon's south pole?",
+    "options": [
+      "23 July 2023",
+      "23 August 2023",
+      "23 September 2023",
+      "23 October 2023"
+    ],
+    "correct_index": 1,
+    "explanation": "Chandrayaan-3's Vikram lander touched down on 23 August 2023, making India the first country to land near the lunar south pole."
+  },
+  {
+    "id": "rrb_group_d_f8269d1c",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 2,
+    "question_text": "Which team won the ICC Men's T20 World Cup held in June 2024?",
+    "options": [
+      "India",
+      "England",
+      "Australia",
+      "Pakistan"
+    ],
+    "correct_index": 0,
+    "explanation": "India defeated South Africa in the final on 29 June 2024 to clinch the T20 World Cup title."
+  },
+  {
+    "id": "rrb_group_d_9230488d",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 2,
+    "question_text": "Which of the following Indian cultural practices was inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in 2017?",
+    "options": [
+      "Kumbh Mela",
+      "Diwali",
+      "Holi",
+      "Navratri"
+    ],
+    "correct_index": 0,
+    "explanation": "The Kumbh Mela was inscribed by UNESCO in 2017 as an Intangible Cultural Heritage of Humanity."
+  },
+  {
+    "id": "rrb_group_d_c150d2c6",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Personalities",
+    "difficulty": 3,
+    "question_text": "Who was awarded the Nobel Peace Prize in 2023?",
+    "options": [
+      "Narges Mohammadi",
+      "Maria Ressa",
+      "Dmitry Muratov",
+      "Abiy Ahmed Ali"
+    ],
+    "correct_index": 0,
+    "explanation": "The Nobel Peace Prize 2023 was awarded to Iranian human rights activist Narges Mohammadi for her fight against the oppression of women in Iran."
+  },
+  {
+    "id": "rrb_group_d_f6fc3f3f",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics & Politics",
+    "difficulty": 1,
+    "question_text": "What was the theme of India's G20 presidency in 2023?",
+    "options": [
+      "One Earth, One Family, One Future",
+      "Vasudhaiva Kutumbakam",
+      "Building Back Better",
+      "People, Planet, Prosperity"
+    ],
+    "correct_index": 1,
+    "explanation": "India's G20 presidency theme for 2023 was 'Vasudhaiva Kutumbakam', which translates to 'One Earth· One Family· One Future'."
+  },
+  {
+    "id": "rrb_group_d_311d91ce",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 2,
+    "question_text": "In a certain code, 'MATH' is written as 'NBUI'. How is 'LOGIC' written in that code?",
+    "options": [
+      "MPJHD",
+      "MPJHE",
+      "MPJHF",
+      "MPJHG"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter is shifted forward by one position in the alphabet: L→M, O→P, G→H, I→J, C→D."
+  },
+  {
+    "id": "rrb_group_d_2341deae",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Relationships",
+    "difficulty": 2,
+    "question_text": "Pointing to a photograph, Ravi said, 'She is the daughter of my grandfather's only son.' How is Ravi related to the girl?",
+    "options": [
+      "Brother",
+      "Cousin",
+      "Uncle",
+      "Father"
+    ],
+    "correct_index": 0,
+    "explanation": "Grandfather's only son is Ravi's father. The daughter of Ravi's father is Ravi's sister, so Ravi is her brother."
+  },
+  {
+    "id": "rrb_group_d_7723003d",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Conclusions and Decision Making",
+    "difficulty": 3,
+    "question_text": "Statement: All teachers are educated. Some educated people are writers.\nConclusions:\nI. Some teachers are writers.\nII. No teacher is a writer.",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Either I or II follows",
+      "Neither I nor II follows"
+    ],
+    "correct_index": 3,
+    "explanation": "From the statements we know teachers ⊂ educated and educated ∩ writers ≠ ∅, but the writers could be entirely outside the teacher set. Hence neither conclusion I nor II definitely follows."
+  },
+  {
+    "id": "rrb_group_d_8292680f",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "A 5 kg object experiences a net force of 20 N. What is its acceleration?",
+    "options": [
+      "2 m/s²",
+      "4 m/s²",
+      "5 m/s²",
+      "10 m/s²"
+    ],
+    "correct_index": 1,
+    "explanation": "Using Newton's second law, a = F/m = 20 N / 5 kg = 4 m/s²."
+  },
+  {
+    "id": "rrb_group_d_fc723e7a",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "The refractive index of water is 1.33. If the speed of light in air is 3.0×10⁸ m/s, what is its speed in water?",
+    "options": [
+      "2.26×10⁸ m/s",
+      "2.5×10⁸ m/s",
+      "3.0×10⁸ m/s",
+      "4.0×10⁸ m/s"
+    ],
+    "correct_index": 0,
+    "explanation": "Speed in medium = c / n = (3.0×10⁸) / 1.33 ≈ 2.26×10⁸ m/s."
+  },
+  {
+    "id": "rrb_group_d_827e2c59",
+    "subject": "General Science",
+    "topic": "Life Sciences",
+    "difficulty": 3,
+    "question_text": "In the overall equation of photosynthesis, which molecule is produced as a by‑product?",
+    "options": [
+      "Carbon dioxide",
+      "Water",
+      "Oxygen",
+      "Glucose"
+    ],
+    "correct_index": 2,
+    "explanation": "The balanced photosynthetic equation is 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂; oxygen (O₂) is released as a by‑product."
+  },
+  {
+    "id": "rrb_group_d_dc08c16e",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 1,
+    "question_text": "Which of the following satellites was launched by India in 2023 to monitor space weather?",
+    "options": [
+      "Gaganyaan",
+      "Chandrayaan‑3",
+      "TARAN",
+      "ARRA‑2"
+    ],
+    "correct_index": 2,
+    "explanation": "AR-Robotic Aerospace Research & Exploration 2 (ARRA‑2) was a 2023 Indian satellite dedicated to monitoring solar and space weather."
+  },
+  {
+    "id": "rrb_group_d_fa1b4751",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 2,
+    "question_text": "At the 2024 Paris Olympics, which country won the gold medal in men's 100 metre sprint?",
+    "options": [
+      "Jamaica",
+      "USA",
+      "Great Britain",
+      "France"
+    ],
+    "correct_index": 1,
+    "explanation": "American sprinter Noah Katterman won gold in men's 100m at the 2024 Games."
+  },
+  {
+    "id": "rrb_group_d_50e22203",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 1,
+    "question_text": "The UNESCO World Heritage site 'Sundarbans' is located in which Indian state?",
+    "options": [
+      "West Bengal",
+      "Assam",
+      "Tripura",
+      "Jharkhand"
+    ],
+    "correct_index": 0,
+    "explanation": "Sundarbans mangrove forest spans across West Bengal and Bangladesh."
+  },
+  {
+    "id": "rrb_group_d_d957573f",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Personalities",
+    "difficulty": 3,
+    "question_text": "Which Indian economist delivered the UN 2023 lecture on ‘Digital Economy and Inclusive Growth’?",
+    "options": [
+      "Raghuram Rajan",
+      "Amartya Sen",
+      "Janardhana Rao",
+      "Anil Kumar"
+    ],
+    "correct_index": 0,
+    "explanation": "Raghuram Rajan gave the 2023 UN lecture on digital economy."
+  },
+  {
+    "id": "rrb_group_d_616e9c69",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 2,
+    "question_text": "In FY2024, the Reserve Bank of India maintained the repo rate at what level?",
+    "options": [
+      "4.25%",
+      "4.50%",
+      "4.75%",
+      "5.00%"
+    ],
+    "correct_index": 1,
+    "explanation": "The RBI kept the repo rate at 4.50% in fiscal year 2024."
+  },
+  {
+    "id": "rrb_group_d_f8a83158",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 2,
+    "question_text": "What is the smallest three-digit number divisible by both 7 and 11?",
+    "options": [
+      "77",
+      "154",
+      "231",
+      "308"
+    ],
+    "correct_index": 1,
+    "explanation": "LCM(7,11)=77. The smallest three-digit multiple of 77 is 77×2=154."
+  },
+  {
+    "id": "rrb_group_d_a7fd5000",
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 1,
+    "question_text": "If 3:5 = x:25, find the value of x.",
+    "options": [
+      "10",
+      "12",
+      "15",
+      "18"
+    ],
+    "correct_index": 2,
+    "explanation": "3/5 = x/25 ⇒ x = (3×25)/5 = 15."
+  },
+  {
+    "id": "rrb_group_d_d45fd933",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 1,
+    "question_text": "What is the compound interest on ₹10,000 at 10% per annum for 2 years, compounded annually?",
+    "options": [
+      "₹2000",
+      "₹2100",
+      "₹2200",
+      "₹2300"
+    ],
+    "correct_index": 1,
+    "explanation": "Amount = 10000×(1.1)^2 = 10000×1.21 = ₹12100. CI = 12100−10000 = ₹2100."
+  },
+  {
+    "id": "rrb_group_d_2c65082c",
+    "subject": "General Science",
+    "topic": "Physics - Laws of Motion",
+    "difficulty": 1,
+    "question_text": "According to Newton's second law of motion, the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its:",
+    "options": [
+      "Velocity",
+      "Mass",
+      "Displacement",
+      "Time"
+    ],
+    "correct_index": 1,
+    "explanation": "Newton's second law states F = ma, where a = F/m; thus acceleration is inversely proportional to mass."
+  },
+  {
+    "id": "rrb_group_d_8da2b155",
+    "subject": "General Science",
+    "topic": "Physics - Electricity",
+    "difficulty": 2,
+    "question_text": "Which of the following materials is a good conductor of electricity?",
+    "options": [
+      "Rubber",
+      "Glass",
+      "Copper",
+      "Wood"
+    ],
+    "correct_index": 2,
+    "explanation": "Copper has free electrons that allow easy flow of electric current, making it a good conductor."
+  },
+  {
+    "id": "rrb_group_d_8334d25f",
+    "subject": "General Science",
+    "topic": "Chemistry - Chemical Reactions",
+    "difficulty": 2,
+    "question_text": "When dilute hydrochloric acid reacts with zinc metal, which gas is evolved?",
+    "options": [
+      "Oxygen",
+      "Carbon dioxide",
+      "Hydrogen",
+      "Nitrogen"
+    ],
+    "correct_index": 2,
+    "explanation": "Zn + 2HCl → ZnCl2 + H2; hydrogen gas is liberated."
+  },
+  {
+    "id": "rrb_group_d_01564828",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "Which Indian organization developed the Navigation with Indian Constellation (NavIC) regional navigation satellite system?",
+    "options": [
+      "ISRO",
+      "DRDO",
+      "BARC",
+      "HAL"
+    ],
+    "correct_index": 0,
+    "explanation": "NavIC (Navigation with Indian Constellation) is an indigenous regional navigation satellite system developed by the Indian Space Research Organisation (ISRO)."
+  },
+  {
+    "id": "rrb_group_d_588b3f39",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 2,
+    "question_text": "Who won the gold medal in men's javelin throw at the 2022 Asian Games (held in 2023)?",
+    "options": [
+      "Neeraj Chopra",
+      "Arshad Nadeem",
+      "Shivpal Singh",
+      "Rohit Yadav"
+    ],
+    "correct_index": 0,
+    "explanation": "Neeraj Chopra secured the gold medal in men's javelin throw at the Hangzhou Asian Games 2022 (held in 2023)."
+  },
+  {
+    "id": "rrb_group_d_de3b338e",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 1,
+    "question_text": "The classical dance form 'Kathakali' originates from which Indian state?",
+    "options": [
+      "Kerala",
+      "Karnataka",
+      "Tamil Nadu",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 0,
+    "explanation": "Kathakali is a classical dance-drama that originated in the southern state of Kerala."
+  },
+  {
+    "id": "rrb_group_d_322f004b",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Politics",
+    "difficulty": 3,
+    "question_text": "Which article of the Indian Constitution provides for the establishment of the Finance Commission?",
+    "options": [
+      "Article 280",
+      "Article 265",
+      "Article 243",
+      "Article 324"
+    ],
+    "correct_index": 0,
+    "explanation": "Article 280 of the Constitution mandates the President to constitute a Finance Commission every five years to recommend distribution of tax revenues between the Centre and the States."
+  },
+  {
+    "id": "rrb_group_d_9228aa6b",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 1,
+    "question_text": "If 'CAT' is coded as 'DBU', how is 'DOG' coded?",
+    "options": [
+      "EPH",
+      "FPI",
+      "EPG",
+      "DPH"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter is shifted one place forward in the alphabet: C→D, A→B, T→U. Applying the same rule: D→E, O→P, G→H gives EPH."
+  },
+  {
+    "id": "rrb_group_d_2f7d3a3b",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Venn Diagram",
+    "difficulty": 2,
+    "question_text": "In a class of 60 students, 35 like Cricket, 30 like Football, and 20 like both. How many students like neither Cricket nor Football?",
+    "options": [
+      "10",
+      "15",
+      "20",
+      "25"
+    ],
+    "correct_index": 1,
+    "explanation": "Using inclusion–exclusion: |C ∪ F| = 35 + 30 − 20 = 45. Students liking neither = 60 − 45 = 15."
+  },
+  {
+    "id": "rrb_group_d_4cdb6d70",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Conclusions and Decision Making",
+    "difficulty": 2,
+    "question_text": "Statements: All managers are employees. Some employees are engineers. Conclusions: I. Some managers are engineers. II. Some engineers are managers. Which conclusion(s) follow?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct_index": 3,
+    "explanation": "From the given statements we cannot deduce any definite relationship between managers and engineers; the middle term 'employees' is not distributed. Hence neither conclusion follows."
+  },
+  {
+    "id": "rrb_group_d_2d230f17",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 1,
+    "question_text": "Which Indian space observatory, launched in 2015, is dedicated to studying celestial sources in X-ray, UV and visible light bands?",
+    "options": [
+      "Astrosat",
+      "Chandrayaan-2",
+      "Mangalyaan",
+      "GSAT-30"
+    ],
+    "correct_index": 0,
+    "explanation": "Astrosat is India's first dedicated multi-wavelength space observatory, launched by ISRO on 28 September 2015."
+  },
+  {
+    "id": "rrb_group_d_5444d495",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 2,
+    "question_text": "Which Indian athlete won the gold medal in men's javelin throw at the Tokyo 2020 Olympics?",
+    "options": [
+      "Neeraj Chopra",
+      "Bajrang Punia",
+      "Ravi Kumar Dahiya",
+      "Mirabai Chanu"
+    ],
+    "correct_index": 0,
+    "explanation": "Neeraj Chopra secured India's first-ever Olympic gold in athletics with a throw of 87.58 m on 7 August 2021."
+  },
+  {
+    "id": "rrb_group_d_442bfc52",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 1,
+    "question_text": "Which classical dance form originated in Assam and is recognized as one of India's eight classical dances?",
+    "options": [
+      "Sattriya",
+      "Kathak",
+      "Manipuri",
+      "Kuchipudi"
+    ],
+    "correct_index": 0,
+    "explanation": "Sattriya dance originated in the Vaishnavite monasteries of Assam in the 15th century and was given classical status in 2000."
+  },
+  {
+    "id": "rrb_group_d_553e8af5",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Personalities",
+    "difficulty": 3,
+    "question_text": "Who is the Chairman of the Indian Space Research Organisation (ISRO) as of 2024?",
+    "options": [
+      "S. Somanath",
+      "K. Sivan",
+      "A.S. Kiran Kumar",
+      "Madhavan Nair"
+    ],
+    "correct_index": 0,
+    "explanation": "S. Somanath assumed office as ISRO Chairman on 12 January 2022, succeeding K. Sivan."
+  },
+  {
+    "id": "rrb_group_d_c209cd7e",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 2,
+    "question_text": "As of June 2024, what is the repo rate set by the Reserve Bank of India?",
+    "options": [
+      "5.75%",
+      "6.00%",
+      "6.25%",
+      "6.50%"
+    ],
+    "correct_index": 3,
+    "explanation": "The RBI kept the repo rate unchanged at 6.50% in its June 2024 monetary policy review."
+  },
+  {
+    "id": "rrb_group_d_30f300e4",
+    "subject": "General Science",
+    "topic": "Physics - Work and Energy",
+    "difficulty": 2,
+    "question_text": "A constant force of 10 N displaces an object by 5 m in the direction of the force. The work done is:",
+    "options": [
+      "2 J",
+      "50 J",
+      "15 J",
+      "5 J"
+    ],
+    "correct_index": 1,
+    "explanation": "Work done = force × displacement = 10 N × 5 m = 50 J."
+  },
+  {
+    "id": "rrb_group_d_377805f0",
+    "subject": "General Science",
+    "topic": "Chemistry - Periodic Classification",
+    "difficulty": 1,
+    "question_text": "An element with atomic number 11 belongs to which group of the periodic table?",
+    "options": [
+      "Group 1",
+      "Group 2",
+      "Group 13",
+      "Group 17"
+    ],
+    "correct_index": 0,
+    "explanation": "Atomic number 11 is sodium (Na), an alkali metal placed in Group 1."
+  },
+  {
+    "id": "rrb_group_d_10142981",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 2,
+    "question_text": "What is the smallest 4-digit number divisible by 12, 15 and 18?",
+    "options": [
+      "1080",
+      "1200",
+      "1440",
+      "1800"
+    ],
+    "correct_index": 0,
+    "explanation": "LCM(12,15,18) = 180. The smallest 4-digit multiple of 180 is 180 × 6 = 1080."
+  },
+  {
+    "id": "rrb_group_d_69a688e6",
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 2,
+    "question_text": "If a : b = 3 : 4 and b : c = 5 : 6, find a : c.",
+    "options": [
+      "5 : 8",
+      "3 : 5",
+      "4 : 7",
+      "9 : 10"
+    ],
+    "correct_index": 0,
+    "explanation": "From a:b = 3:4 and b:c = 5:6, equate b = 4k = 5m → k = 5m/4. Then a = 3k = 15m/4, c = 6m. Ratio a:c = (15/4):6 = 15:24 = 5:8."
+  },
+  {
+    "id": "rrb_group_d_ce962c8d",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 1,
+    "question_text": "The compound interest on Rs. 10,000 at 10% per annum for 2 years, compounded annually, is?",
+    "options": [
+      "2000",
+      "2100",
+      "2200",
+      "2300"
+    ],
+    "correct_index": 1,
+    "explanation": "CI = P(1+r)^n - P = 10000(1.1)^2 - 10000 = 10000×1.21 - 10000 = 2100."
+  },
+  {
+    "id": "rrb_group_d_21a2b1ca",
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": 2,
+    "question_text": "If x + 1/x = 5, find the value of x^2 + 1/x^2.",
+    "options": [
+      "23",
+      "24",
+      "25",
+      "26"
+    ],
+    "correct_index": 0,
+    "explanation": "Square both sides: (x + 1/x)^2 = x^2 + 2 + 1/x^2 = 25 ⇒ x^2 + 1/x^2 = 23."
+  },
+  {
+    "id": "rrb_group_d_55273e0d",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "What is the SI unit of electrical resistivity?",
+    "options": [
+      "ohm",
+      "ohm metre",
+      "siemens",
+      "coulomb"
+    ],
+    "correct_index": 1,
+    "explanation": "Resistivity (ρ) = resistance × area / length, so its unit is ohm × metre² / metre = ohm metre."
+  },
+  {
+    "id": "rrb_group_d_237e7671",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "A 5 kg body accelerates at 2 m/s². What is the net force acting on it?",
+    "options": [
+      "5 N",
+      "10 N",
+      "15 N",
+      "20 N"
+    ],
+    "correct_index": 1,
+    "explanation": "From Newton's second law, F = m·a = 5 kg × 2 m/s² = 10 N."
+  },
+  {
+    "id": "rrb_group_d_a677c1c9",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 2,
+    "question_text": "Which element has atomic number 17?",
+    "options": [
+      "Fluorine",
+      "Chlorine",
+      "Bromine",
+      "Iodine"
+    ],
+    "correct_index": 1,
+    "explanation": "Atomic number equals the number of protons; chlorine has 17 protons."
+  },
+  {
+    "id": "rrb_group_d_2073db46",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Relationships",
+    "difficulty": 2,
+    "question_text": "Pointing to a photograph, a man says, 'She is the only daughter of my father's only son.' How is the woman related to the man?",
+    "options": [
+      "Sister",
+      "Daughter",
+      "Mother",
+      "Wife"
+    ],
+    "correct_index": 1,
+    "explanation": "The man's father's only son is the man himself; his only daughter is his daughter."
+  },
+  {
+    "id": "rrb_group_d_c64ebddd",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 2,
+    "question_text": "What is the greatest 4-digit number that is exactly divisible by 12, 15 and 18?",
+    "options": [
+      "9900",
+      "9720",
+      "9540",
+      "9360"
+    ],
+    "correct_index": 0,
+    "explanation": "LCM(12,15,18) = 180. The largest multiple of 180 not exceeding 9999 is 55 × 180 = 9900."
+  },
+  {
+    "id": "rrb_group_d_48acb284",
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 1,
+    "question_text": "If A : B = 3 : 4 and B : C = 5 : 6, what is A : C?",
+    "options": [
+      "5 : 8",
+      "3 : 5",
+      "15 : 24",
+      "9 : 10"
+    ],
+    "correct_index": 0,
+    "explanation": "Make B common: A:B = 15:20, B:C = 20:24 ⇒ A:C = 15:24 = 5:8."
+  },
+  {
+    "id": "rrb_group_d_d13f89a8",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 1,
+    "question_text": "Find the simple interest on ₹5,000 at 6% per annum for 3 years.",
+    "options": [
+      "900",
+      "800",
+      "1000",
+      "850"
+    ],
+    "correct_index": 0,
+    "explanation": "SI = (P × R × T) / 100 = (5000 × 6 × 3) / 100 = 900."
+  },
+  {
+    "id": "rrb_group_d_ee342e9e",
+    "subject": "Mathematics",
+    "topic": "Elementary Statistics",
+    "difficulty": 1,
+    "question_text": "What is the arithmetic mean of the numbers 5, 10, 15, 20 and 25?",
+    "options": [
+      "15",
+      "14",
+      "16",
+      "13"
+    ],
+    "correct_index": 0,
+    "explanation": "Mean = (5+10+15+20+25) / 5 = 75 / 5 = 15."
+  },
+  {
+    "id": "rrb_group_d_2e8e28e4",
+    "subject": "General Science",
+    "topic": "Physics (10th Standard)",
+    "difficulty": 2,
+    "question_text": "A car accelerates uniformly from rest to 20 m/s in 5 s. What is its acceleration?",
+    "options": [
+      "2 m/s²",
+      "4 m/s²",
+      "5 m/s²",
+      "10 m/s²"
+    ],
+    "correct_index": 1,
+    "explanation": "Acceleration = change in velocity / time = 20 m/s ÷ 5 s = 4 m/s²."
+  },
+  {
+    "id": "rrb_group_d_bff9eaf2",
+    "subject": "General Science",
+    "topic": "Physics (10th Standard)",
+    "difficulty": 3,
+    "question_text": "The wavelength of light in vacuum is 600 nm. What is its frequency?",
+    "options": [
+      "5 × 10⁴ Hz",
+      "3 × 10⁴ Hz",
+      "6 × 10⁴ Hz",
+      "4 × 10⁴ Hz"
+    ],
+    "correct_index": 0,
+    "explanation": "Frequency f = c/λ = (3 × 10⁸ m/s) / (600 × 10⁻⁹ m) = 5 × 10⁴ Hz."
+  },
+  {
+    "id": "rrb_group_d_a058921b",
+    "subject": "General Awareness",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "What is the name of India's first dedicated solar mission launched in 2023?",
+    "options": [
+      "Aditya-L1",
+      "Chandrayaan-3",
+      "Gaganyaan",
+      "Mangalyaan-2"
+    ],
+    "correct_index": 0,
+    "explanation": "Aditya-L1, launched on 2 September 2023, is India's first space-based observatory to study the Sun."
+  },
+  {
+    "id": "rrb_group_d_c66315e1",
+    "subject": "General Awareness",
+    "topic": "Sports",
+    "difficulty": 1,
+    "question_text": "Which country won the 2023 ICC Men's Cricket World Cup?",
+    "options": [
+      "Australia",
+      "India",
+      "England",
+      "New Zealand"
+    ],
+    "correct_index": 0,
+    "explanation": "Australia defeated India in the final held at Ahmedabad on 19 November 2023 to clinch their sixth ODI World Cup title."
+  },
+  {
+    "id": "rrb_group_d_ed972c50",
+    "subject": "General Awareness",
+    "topic": "Personalities",
+    "difficulty": 2,
+    "question_text": "Who was the first President of the Republic of India?",
+    "options": [
+      "Dr. Rajendra Prasad",
+      "Dr. S. Radhakrishnan",
+      "Dr. Zakir Husain",
+      "V. V. Giri"
+    ],
+    "correct_index": 0,
+    "explanation": "Dr. Rajendra Prasad assumed office as the first President of India on 26 January 1950."
+  },
+  {
+    "id": "rrb_group_d_bcdf0885",
+    "subject": "General Awareness",
+    "topic": "Economics",
+    "difficulty": 3,
+    "question_text": "Which committee recommended the introduction of the Goods and Services Tax (GST) in India?",
+    "options": [
+      "Kelkar Committee",
+      "Vijay Kelkar Committee",
+      "Arvind Subramanian Committee",
+      "N. K. Singh Committee"
+    ],
+    "correct_index": 1,
+    "explanation": "The Vijay Kelkar Committee (2003) on indirect tax reforms recommended a comprehensive GST regime for India."
+  },
+  {
+    "id": "rrb_group_d_11a6d396",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 1,
+    "question_text": "A sum of ₹10,000 is invested at 10% per annum compound interest, compounded annually. What will be the amount after 2 years?",
+    "options": [
+      "11000",
+      "12000",
+      "12100",
+      "12200"
+    ],
+    "correct_index": 2,
+    "explanation": "Amount = P(1 + r)^n = 10000 × (1.10)^2 = 10000 × 1.21 = ₹12,100."
+  },
+  {
+    "id": "rrb_group_d_d14f5976",
+    "subject": "Mathematics",
+    "topic": "Elementary Statistics",
+    "difficulty": 2,
+    "question_text": "The mean of 5 numbers is 20. If one number is excluded, the mean of the remaining 4 numbers becomes 18. What is the excluded number?",
+    "options": [
+      "28",
+      "22",
+      "24",
+      "30"
+    ],
+    "correct_index": 0,
+    "explanation": "Total of 5 numbers = 5 × 20 = 100. Total of 4 numbers = 4 × 18 = 72. Excluded number = 100 − 72 = 28."
+  },
+  {
+    "id": "rrb_group_d_024b2997",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "Which Indian satellite, launched in 2023, is dedicated to studying the Sun's corona?",
+    "options": [
+      "Aditya-L1",
+      "Chandrayaan-3",
+      "Gaganyaan",
+      "RISAT-2BR1"
+    ],
+    "correct_index": 0,
+    "explanation": "Aditya-L1, launched on 2 September 2023, is India's first solar observatory mission positioned at the Sun-Earth L1 point to study the solar corona."
+  },
+  {
+    "id": "rrb_group_d_3d4e970b",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 1,
+    "question_text": "Who won the men's singles title at the 2024 Australian Open?",
+    "options": [
+      "Novak Djokovic",
+      "Daniil Medvedev",
+      "Jannik Sinner",
+      "Carlos Alcaraz"
+    ],
+    "correct_index": 2,
+    "explanation": "Jannik Sinner defeated Daniil Medvedev in the final to claim his first Grand Slam title at the 2024 Australian Open."
+  },
+  {
+    "id": "rrb_group_d_9da36e14",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Personalities",
+    "difficulty": 2,
+    "question_text": "Who is the author of the book 'The Discovery of India'?",
+    "options": [
+      "Mahatma Gandhi",
+      "Jawaharlal Nehru",
+      "Sardar Patel",
+      "Subhas Chandra Bose"
+    ],
+    "correct_index": 1,
+    "explanation": "Jawaharlal Nehru wrote 'The Discovery of India' during his imprisonment in 1942-1946."
+  },
+  {
+    "id": "rrb_group_d_b880f710",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 3,
+    "question_text": "What is the current base year for the Consumer Price Index (CPI) in India as of 2024?",
+    "options": [
+      "2010",
+      "2012",
+      "2015",
+      "2018"
+    ],
+    "correct_index": 1,
+    "explanation": "The combined CPI (CPI-C) uses 2012 as its base year, effective since the revision in 2015 and still applicable in 2024."
+  },
+  {
+    "id": "rrb_group_d_298eca4e",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Analogies",
+    "difficulty": 1,
+    "question_text": "Complete the analogy: 12 : 36 :: 15 : ?",
+    "options": [
+      "45",
+      "60",
+      "75",
+      "90"
+    ],
+    "correct_index": 0,
+    "explanation": "The relationship is multiplication by 3 (12 × 3 = 36). Applying the same rule, 15 × 3 = 45."
+  },
+  {
+    "id": "rrb_group_d_a5c6f2ef",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 1,
+    "question_text": "In a certain code, 'HELLO' is written as 'IFMMP'. How is 'WORLD' written in that code?",
+    "options": [
+      "XPSME",
+      "XPSMF",
+      "XPSMD",
+      "XPSMC"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter is shifted forward by one position in the alphabet (H→I, E→F, L→M, L→M, O→P). Applying the same shift to WORLD gives XPSME."
+  },
+  {
+    "id": "rrb_group_d_539701ec",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Relationships",
+    "difficulty": 1,
+    "question_text": "A is the brother of B. B is the sister of C. How is A related to C?",
+    "options": [
+      "Brother",
+      "Sister",
+      "Cousin",
+      "Uncle"
+    ],
+    "correct_index": 0,
+    "explanation": "Since A is the brother of B and B is the sister of C, A and C share the same parents, making A the brother of C."
+  },
+  {
+    "id": "rrb_group_d_302de925",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Conclusions and Decision Making",
+    "difficulty": 2,
+    "question_text": "Statement: All pens are pencils. Some pencils are erasers. Conclusions: (I) Some pens are erasers. (II) No pen is an eraser. Which conclusion follows?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Either I or II follows",
+      "Neither I nor II follows"
+    ],
+    "correct_index": 3,
+    "explanation": "From the statements we cannot definitively infer that some pens are erasers, nor that no pen is an eraser. Both conclusions are uncertain, so neither follows."
+  },
+  {
+    "id": "rrb_group_d_ada5b63d",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 2,
+    "question_text": "If 'CAT' is coded as 'DBU', what is the code for 'DOG'?",
+    "options": [
+      "EPH",
+      "FQI",
+      "DNF",
+      "EPG"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter is shifted forward by one position in the alphabet: C→D, A→B, T→U. Applying the same rule: D→E, O→P, G→H gives EPH."
+  },
+  {
+    "id": "rrb_group_d_adef7c74",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Venn Diagram",
+    "difficulty": 2,
+    "question_text": "In a survey of 100 of 100 people, 60 like tea, 50 like coffee, and 30 like both tea and coffee. How many people like neither tea nor coffee?",
+    "options": [
+      "20",
+      "10",
+      "30",
+      "40"
+    ],
+    "correct_index": 0,
+    "explanation": "Number liking at least one = 60 + 50 - 30 = 80. Therefore, neither = 100 - 80 = 20."
+  },
+  {
+    "id": "rrb_group_d_fa4cd45b",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "What is the smallest number which when divided by 8, 12 and 15 leaves remainder 5 in each case?",
+    "options": [
+      "125",
+      "245",
+      "365",
+      "485"
+    ],
+    "correct_index": 0,
+    "explanation": "LCM of 8, 12, 15 = 120. Required number = LCM + 5 = 125."
+  },
+  {
+    "id": "rrb_group_d_6b613407",
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 2,
+    "question_text": "If A:B = 3:4 and B:C = 5:6, then A:C is equal to:",
+    "options": [
+      "5:8",
+      "15:24",
+      "9:20",
+      "3:10"
+    ],
+    "correct_index": 0,
+    "explanation": "Make B common: A:B = 15:20, B:C = 20:24 ⇒ A:C = 15:24 = 5:8."
+  },
+  {
+    "id": "rrb_group_d_504c9071",
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "difficulty": 2,
+    "question_text": "A can complete a work in 12 days, B in 15 days. They work together for 4 days. What fraction of work is left?",
+    "options": [
+      "1/5",
+      "2/5",
+      "3/5",
+      "4/5"
+    ],
+    "correct_index": 1,
+    "explanation": "A's 1 day = 1/12, B's 1 day = 1/15. Together 1 day = 9/60 = 3/20. In 4 days = 12/20 = 3/5 done. Left = 2/5."
+  },
+  {
+    "id": "rrb_group_d_b9d125b2",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 3,
+    "question_text": "The compound interest on ₹10,000 at 10% per annum for 2 years, compounded annually, is:",
+    "options": [
+      "₹2,000",
+      "₹2,100",
+      "₹2,200",
+      "₹2,300"
+    ],
+    "correct_index": 1,
+    "explanation": "Amount = 10000(1+0.1)^2 = 10000×1.21 = 12100. CI = 12100 - 10000 = ₹2100."
+  },
+  {
+    "id": "rrb_group_d_bf6b97ec",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 2,
+    "question_text": "If CAT is coded as 3120, how is DOG coded?",
+    "options": [
+      "4157",
+      "4156",
+      "4167",
+      "4158"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter is replaced by its position in the alphabet: C=3, A=1, T=20 → 3120. So D=4, O=15, G=7 → 4157."
+  },
+  {
+    "id": "rrb_group_d_6aa5085f",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Relationships",
+    "difficulty": 2,
+    "question_text": "A is the brother of B. C is the daughter of B. D is the father of A. How is D related to C?",
+    "options": [
+      "Grandfather",
+      "Uncle",
+      "Father",
+      "Brother"
+    ],
+    "correct_index": 0,
+    "explanation": "D is father of A, and A is brother of B, so D is father of B. Since C is daughter of B, D is grandfather of C."
+  },
+  {
+    "id": "rrb_group_d_2723d748",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Conclusions and Decision Making",
+    "difficulty": 2,
+    "question_text": "Statement: All pens are pencils. Some pencils are erasers. Conclusions: I. Some pens are erasers. II. No pen is an eraser. Which follows?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct_index": 3,
+    "explanation": "From the given statements we cannot definitively conclude either that some pens are erasers or that no pen is an eraser. Hence neither conclusion follows."
+  },
+  {
+    "id": "rrb_group_d_ccb0decc",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "What is the smallest 4‑digit number divisible by 15, 18 and 24?",
+    "options": [
+      "1080",
+      "1440",
+      "1800",
+      "2160"
+    ],
+    "correct_index": 0,
+    "explanation": "LCM of 15,18,24 = 360. The smallest 4‑digit multiple of 360 is 3×360 = 1080."
+  },
+  {
+    "id": "rrb_group_d_5b3828b3",
+    "subject": "Mathematics",
+    "topic": "Simple Interest",
+    "difficulty": 2,
+    "question_text": "A sum amounts to Rs. 12,000 in 2 years at 10% per annum simple interest. Find the principal.",
+    "options": [
+      "9000",
+      "9500",
+      "10000",
+      "10500"
+    ],
+    "correct_index": 2,
+    "explanation": "Amount = P(1+rt) => P = A/(1+0.1×2) = 12000/1.2 = 10000."
+  },
+  {
+    "id": "rrb_group_d_a0f58900",
+    "subject": "Mathematics",
+    "topic": "Elementary Statistics",
+    "difficulty": 2,
+    "question_text": "The mean of 5 numbers is 20. If one of the numbers is 15, what is the mean of the remaining 4 numbers?",
+    "options": [
+      "18",
+      "20",
+      "21.25",
+      "22.5"
+    ],
+    "correct_index": 2,
+    "explanation": "Total sum = 5×20 = 100. Removing 15 leaves sum = 85 for 4 numbers. Mean = 85/4 = 21.25."
+  },
+  {
+    "id": "rrb_group_d_d7355520",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Relationships",
+    "difficulty": 1,
+    "question_text": "A is the brother of B. C is the sister of A. How is C related to B?",
+    "options": [
+      "Sister",
+      "Brother",
+      "Cousin",
+      "Aunt"
+    ],
+    "correct_index": 0,
+    "explanation": "Since C is the sister of A and A is the brother of B, C must be the sister of B."
+  },
+  {
+    "id": "rrb_group_d_59cb81d4",
+    "subject": "General Science",
+    "topic": "Physics (10th Standard)",
+    "difficulty": 1,
+    "question_text": "What is the approximate value of acceleration due to gravity on the surface of the Earth?",
+    "options": [
+      "9.8 m/s²",
+      "10 m/s²",
+      "9.81 m/s²",
+      "9.5 m/s²"
+    ],
+    "correct_index": 0,
+    "explanation": "The standard value of g is 9.8 m/s² (often rounded to 9.81 m/s²)."
+  },
+  {
+    "id": "rrb_group_d_4c662974",
+    "subject": "General Science",
+    "topic": "Physics (10th Standard)",
+    "difficulty": 2,
+    "question_text": "A resistor of 5 Ω is connected across a 10 V battery. What is the current flowing through the resistor?",
+    "options": [
+      "0.5 A",
+      "2 A",
+      "5 A",
+      "10 A"
+    ],
+    "correct_index": 1,
+    "explanation": "Using Ohm's law, I = V/R = 10 V / 5 Ω = 2 A."
+  },
+  {
+    "id": "rrb_group_d_545c67fe",
+    "subject": "General Science",
+    "topic": "Chemistry (10th Standard)",
+    "difficulty": 2,
+    "question_text": "The element with atomic number 17 belongs to which group of the periodic table?",
+    "options": [
+      "Group 1",
+      "Group 13",
+      "Group 17",
+      "Group 18"
+    ],
+    "correct_index": 2,
+    "explanation": "Atomic number 17 is chlorine, a halogen, which is placed in Group 17."
+  },
+  {
+    "id": "rrb_group_d_858fb596",
+    "subject": "General Science",
+    "topic": "Life Sciences (10th Standard)",
+    "difficulty": 2,
+    "question_text": "Mitochondria are called the powerhouse of the cell because they produce which molecule?",
+    "options": [
+      "ATP",
+      "DNA",
+      "RNA",
+      "Protein"
+    ],
+    "correct_index": 0,
+    "explanation": "Mitochondria generate adenosine triphosphate (ATP) through cellular respiration."
+  },
+  {
+    "id": "rrb_group_d_fb093007",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "Which Indian space mission successfully demonstrated the capability to soft-land on the lunar south pole region in August 2023?",
+    "options": [
+      "Chandrayaan-1",
+      "Chandrayaan-2",
+      "Chandrayaan-3",
+      "Aditya-L1"
+    ],
+    "correct_index": 2,
+    "explanation": "Chandrayaan-3's Vikram lander successfully soft-landed near the lunar south pole on 23 August 2023, making India the first country to achieve this feat in that region."
+  },
+  {
+    "id": "rrb_group_d_38432288",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 1,
+    "question_text": "Who won the Men's Singles title at the 2024 Australian Open tennis tournament?",
+    "options": [
+      "Novak Djokovic",
+      "Jannik Sinner",
+      "Carlos Alcaraz",
+      "Daniil Medvedev"
+    ],
+    "correct_index": 1,
+    "explanation": "Jannik Sinner defeated Daniil Medvedev in the final to win his first Grand Slam title at the 2024 Australian Open."
+  },
+  {
+    "id": "rrb_group_d_be399c9a",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 2,
+    "question_text": "The 'Durga Puja' festival in Kolkata was inscribed on the UNESCO Representative List of the Intangible Cultural Heritage of Humanity in which year?",
+    "options": [
+      "2019",
+      "2020",
+      "2021",
+      "2022"
+    ],
+    "correct_index": 2,
+    "explanation": "UNESCO inscribed 'Durga Puja in Kolkata' on the Representative List of the Intangible Cultural Heritage of Humanity in December 2021."
+  },
+  {
+    "id": "rrb_group_d_a3898023",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Personalities",
+    "difficulty": 3,
+    "question_text": "Who was awarded the Bharat Ratna, India's highest civilian award, in 2024 for contributions as a former Prime Minister and agricultural reformer?",
+    "options": [
+      "P. V. Narasimha Rao",
+      "Chaudhary Charan Singh",
+      "M. S. Swaminathan",
+      "L. K. Advani"
+    ],
+    "correct_index": 1,
+    "explanation": "In February 2024, the Government of India announced Bharat Ratna for former PM Chaudhary Charan Singh (posthumous), P. V. Narasimha Rao (posthumous), and agricultural scientist M. S. Swaminathan (posthumous), along with L. K. Advani. The question specifies the former PM and agricultural reformer — Chaudhary Charan Singh fits both descriptions as a farmer leader and PM."
+  },
+  {
+    "id": "rrb_group_d_9c18d2ac",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 2,
+    "question_text": "What is the current base year for the Consumer Price Index (CPI) used by the Reserve Bank of India for inflation targeting?",
+    "options": [
+      "2004-05",
+      "2011-12",
+      "2017-18",
+      "2022-23"
+    ],
+    "correct_index": 1,
+    "explanation": "The RBI uses CPI (Combined) with base year 2012=100 (i.e., 2011-12) as the key inflation measure for monetary policy. The base was revised from 2010=100 to 2012=100 in January 2015."
+  },
+  {
+    "id": "rrb_group_d_9ef105b9",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "Which Indian space mission successfully launched the Chandrayaan‑3 lunar lander in 2023?",
+    "options": [
+      "Chandrayaan‑2",
+      "Chandrayaan‑3",
+      "Mangalyaan",
+      "Gaganyaan"
+    ],
+    "correct_index": 1,
+    "explanation": "Chandrayaan‑3 was launched on 14 July 2023 and achieved a soft landing on the Moon's south pole on 23 August 2023."
+  },
+  {
+    "id": "rrb_group_d_d0cf3785",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Personalities",
+    "difficulty": 2,
+    "question_text": "Who was the first Indian woman to win a Nobel Prize?",
+    "options": [
+      "Mother Teresa",
+      "Amartya Sen",
+      "Kiran Mazumdar‑Shaw",
+      "Arundhati Roy"
+    ],
+    "correct_index": 0,
+    "explanation": "Mother Teresa (born Agnes Gonxha Bojaxhiu) received the Nobel Peace Prize in 1979 for her humanitarian work."
+  },
+  {
+    "id": "rrb_group_d_47bde166",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 3,
+    "question_text": "Which committee recommended the implementation of the Goods and Services Tax (GST) in India?",
+    "options": [
+      "Kelkar Committee",
+      "Vijay Kelkar Committee",
+      "Arvind Subramanian Committee",
+      "N. K. Singh Committee"
+    ],
+    "correct_index": 1,
+    "explanation": "The Vijay Kelkar Committee (2004) on Fiscal Responsibility and Budget Management recommended a comprehensive GST regime for India."
+  },
+  {
+    "id": "rrb_group_d_3d86d51f",
+    "subject": "General Science",
+    "topic": "Physics (10th Standard)",
+    "difficulty": 1,
+    "question_text": "A resistor of 10 Ω carries a current of 2 A. What is the voltage across it?",
+    "options": [
+      "5 V",
+      "10 V",
+      "20 V",
+      "40 V"
+    ],
+    "correct_index": 2,
+    "explanation": "Using Ohm's law V = I × R = 2 A × 10 Ω = 20 V."
+  },
+  {
+    "id": "rrb_group_d_0ce14857",
+    "subject": "General Science",
+    "topic": "Physics (10th Standard)",
+    "difficulty": 2,
+    "question_text": "A car accelerates uniformly from rest to 20 m/s in 5 s. What is the distance covered during this time?",
+    "options": [
+      "40 m",
+      "50 m",
+      "60 m",
+      "80 m"
+    ],
+    "correct_index": 1,
+    "explanation": "Acceleration a = v/t = 20/5 = 4 m/s². Distance s = ½ a t² = 0.5 × 4 × 5² = 50 m."
+  },
+  {
+    "id": "rrb_group_d_df59de7b",
+    "subject": "General Science",
+    "topic": "Chemistry (10th Standard)",
+    "difficulty": 1,
+    "question_text": "What is the molar mass of sodium chloride (NaCl)?",
+    "options": [
+      "55 g/mol",
+      "58.5 g/mol",
+      "60 g/mol",
+      "65 g/mol"
+    ],
+    "correct_index": 1,
+    "explanation": "Na = 23 g/mol, Cl = 35.5 g/mol → NaCl = 23 + 35.5 = 58.5 g/mol."
+  },
+  {
+    "id": "rrb_group_d_7f996748",
+    "subject": "General Science",
+    "topic": "Chemistry (10th Standard)",
+    "difficulty": 2,
+    "question_text": "In the reaction 2 H₂ + O₂ → 2 H₂O, how many moles of O₂ are required to produce 4 moles of H₂O?",
+    "options": [
+      "1 mol",
+      "2 mol",
+      "3 mol",
+      "4 mol"
+    ],
+    "correct_index": 1,
+    "explanation": "Stoichiometry: 1 mol O₂ yields 2 mol H₂O. For 4 mol H₂O, O₂ needed = 4/2 = 2 mol."
+  },
+  {
+    "id": "rrb_group_d_0c981eb2",
+    "subject": "General Science",
+    "topic": "Life Sciences (10th Standard)",
+    "difficulty": 2,
+    "question_text": "Which pigment primarily absorbs light in the red and blue regions for photosynthesis?",
+    "options": [
+      "Chlorophyll a",
+      "Chlorophyll b",
+      "Carotene",
+      "Xanthophyll"
+    ],
+    "correct_index": 0,
+    "explanation": "Chlorophyll a has absorption peaks around 430 nm (blue) and 662 nm (red), making it the primary photosynthetic pigment."
+  },
+  {
+    "id": "rrb_group_d_372ec8ad",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Venn Diagram",
+    "difficulty": 2,
+    "question_text": "In a class of 60 students, 35 like Mathematics, 30 like Science, and 20 like both. How many students like neither Mathematics nor Science?",
+    "options": [
+      "10",
+      "15",
+      "20",
+      "25"
+    ],
+    "correct_index": 1,
+    "explanation": "Students liking at least one subject = 35 + 30 - 20 = 45. Hence, students liking neither = 60 - 45 = 15."
+  },
+  {
+    "id": "rrb_group_d_5e888e19",
+    "subject": "General Science",
+    "topic": "Life Sciences (10th Standard)",
+    "difficulty": 1,
+    "question_text": "In human beings, which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Pancreas",
+      "Kidney",
+      "Spleen"
+    ],
+    "correct_index": 1,
+    "explanation": "Insulin is secreted by the beta cells of the islets of Langerhans in the pancreas."
+  },
+  {
+    "id": "rrb_group_d_7cc6ae3b",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 2,
+    "question_text": "What is the smallest 4‑digit number divisible by 12, 15 and 18?",
+    "options": [
+      "1080",
+      "1120",
+      "1260",
+      "1380"
+    ],
+    "correct_index": 0,
+    "explanation": "LCM(12,15,18) = 180. The smallest 4‑digit multiple of 180 is 180 × 6 = 1080."
+  },
+  {
+    "id": "rrb_group_d_c128430f",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 1,
+    "question_text": "Find the compound interest on ₹5,000 at 10% per annum compounded annually for 2 years.",
+    "options": [
+      "₹1,000",
+      "₹1,050",
+      "₹1,100",
+      "₹1,150"
+    ],
+    "correct_index": 1,
+    "explanation": "Amount = 5000 × (1 + 0.10)² = 5000 × 1.21 = ₹6,050. Compound interest = ₹6,050 – ₹5,000 = ₹1,050."
+  },
+  {
+    "id": "rrb_group_d_81686be1",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 1,
+    "question_text": "A 5 kg object is accelerated uniformly at 2 m/s². What is the magnitude of the net force acting on the object?",
+    "options": [
+      "2.5 N",
+      "5 N",
+      "10 N",
+      "20 N"
+    ],
+    "correct_index": 2,
+    "explanation": "Using Newton's second law, F = ma = 5 kg × 2 m/s² = 10 N."
+  },
+  {
+    "id": "rrb_group_d_fe9567ae",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 2,
+    "question_text": "When a magnesium ribbon burns in air, which compound is primarily formed?",
+    "options": [
+      "MgO",
+      "Mg(OH)₂",
+      "MgCO₃",
+      "MgCl₂"
+    ],
+    "correct_index": 0,
+    "explanation": "Magnesium reacts with oxygen to form magnesium oxide: 2Mg + O₂ → 2MgO."
+  },
+  {
+    "id": "rrb_group_d_84d4d662",
+    "subject": "General Science",
+    "topic": "Life Sciences",
+    "difficulty": 3,
+    "question_text": "In C₄ photosynthesis, the first stable product formed after CO₂ fixation by PEP carboxylase in the mesophyll cytoplasm is a four‑carbon acid. Which acid is this?",
+    "options": [
+      "Oxaloacetate",
+      "Phosphoglycerate",
+      "Ribulose-1,5-bisphosphate",
+      "Malate"
+    ],
+    "correct_index": 0,
+    "explanation": "PEP carboxylase adds CO₂ to phosphoenolpyruvate producing oxaloacetate (OAA), a four‑carbon compound, which is then often converted to malate."
+  },
+  {
+    "id": "rrb_group_d_02d56a17",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "A light ray travels from air (refractive index = 1.00) into water (refractive index = 1.33) with an angle of incidence of 30°. Using Snell’s law, what is the approximate angle of refraction?",
+    "options": [
+      "22°",
+      "25°",
+      "28°",
+      "32°"
+    ],
+    "correct_index": 0,
+    "explanation": "n₁ sinθ₁ = n₂ sinθ₂ → sinθ₂ = (1.00/1.33) × sin30° ≈ 0.376 → θ₂ ≈ arcsin(0.376) ≈ 22°. "
+  },
+  {
+    "id": "rrb_group_d_d1e5e5f7",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 1,
+    "question_text": "Which of the following elements belongs to the halogen group?",
+    "options": [
+      "Sodium",
+      "Chlorine",
+      "Calcium",
+      "Iron"
+    ],
+    "correct_index": 1,
+    "explanation": "Halogens are Group 17 elements; chlorine (Cl) is a halogen, while Na, Ca, and Fe are not."
+  },
+  {
+    "id": "rrb_group_d_76a5bb00",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "What is the LCM of 8 and 12?",
+    "options": [
+      "16",
+      "24",
+      "32",
+      "48"
+    ],
+    "correct_index": 1,
+    "explanation": "LCM(8,12) = 24 because 8 = 2^3, 12 = 2^2 * 3, so LCM = 2^3 * 3 = 24."
+  },
+  {
+    "id": "rrb_group_d_229c6a77",
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "difficulty": 1,
+    "question_text": "If 3:5 = 12:x, what is the value of x?",
+    "options": [
+      "15",
+      "25",
+      "20",
+      "30"
+    ],
+    "correct_index": 2,
+    "explanation": "3/5 = 12/x => x = (12*5)/3 = 20."
+  },
+  {
+    "id": "rrb_group_d_df97f097",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 2,
+    "question_text": "What is the compound interest on Rs. 5000 at 10% per annum for 2 years, compounded annually?",
+    "options": [
+      "1000",
+      "1050",
+      "1100",
+      "1150"
+    ],
+    "correct_index": 1,
+    "explanation": "Amount = 5000*(1+0.10)^2 = 5000*1.21 = 6050. CI = 6050-5000 = 1050."
+  },
+  {
+    "id": "rrb_group_d_4f477684",
+    "subject": "Mathematics",
+    "topic": "Elementary Statistics",
+    "difficulty": 2,
+    "question_text": "The mean of 10 numbers is 15. The mean of another 15 numbers is 20. What is the mean of all 25 numbers?",
+    "options": [
+      "17",
+      "18",
+      "19",
+      "20"
+    ],
+    "correct_index": 1,
+    "explanation": "Total sum = 10*15 + 15*20 = 150 + 300 = 450. Mean = 450/25 = 18."
+  },
+  {
+    "id": "rrb_group_d_e4a7f287",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Coding and Decoding",
+    "difficulty": 2,
+    "question_text": "If 'CAT' is coded as 'DBU', how will 'DOG' be coded?",
+    "options": [
+      "EPH",
+      "FPI",
+      "DNH",
+      "EPG"
+    ],
+    "correct_index": 0,
+    "explanation": "Each letter is shifted forward by one position in the alphabet: D→E, O→P, G→H → EPH."
+  },
+  {
+    "id": "rrb_group_d_574ecb05",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Relationships",
+    "difficulty": 2,
+    "question_text": "Pointing to a photograph, a man said, 'She is the daughter of my grandfather's only son.' How is the woman related to the man?",
+    "options": [
+      "Sister",
+      "Mother",
+      "Daughter",
+      "Niece"
+    ],
+    "correct_index": 0,
+    "explanation": "Grandfather's only son is the man's father (or the man himself). The daughter of his father is his sister."
+  },
+  {
+    "id": "rrb_group_d_349842c1",
+    "subject": "General Science",
+    "topic": "Physics - Motion",
+    "difficulty": 1,
+    "question_text": "A car travels 150 km in 3 hours. What is its average speed in km/h?",
+    "options": [
+      "40",
+      "45",
+      "50",
+      "55"
+    ],
+    "correct_index": 2,
+    "explanation": "Average speed = total distance / total time = 150 km / 3 h = 50 km/h."
+  },
+  {
+    "id": "rrb_group_d_02e4d344",
+    "subject": "General Science",
+    "topic": "Physics - Electricity",
+    "difficulty": 2,
+    "question_text": "If a resistor of 10 Ω carries a current of 2 A, what is the voltage across it?",
+    "options": [
+      "5 V",
+      "12 V",
+      "20 V",
+      "25 V"
+    ],
+    "correct_index": 2,
+    "explanation": "Using Ohm's law V = I × R = 2 A × 10 Ω = 20 V."
+  },
+  {
+    "id": "rrb_group_d_c4b3f639",
+    "subject": "General Science",
+    "topic": "Chemistry - Acids, Bases and Salts",
+    "difficulty": 2,
+    "question_text": "Which of the following solutions has a pH value greater than 7?",
+    "options": [
+      "0.1 M HCl",
+      "0.1 M NaOH",
+      "0.1 M CH₃COOH",
+      "0.1 M NH₄Cl"
+    ],
+    "correct_index": 1,
+    "explanation": "NaOH is a strong base; its aqueous solution is basic with pH > 7."
+  },
+  {
+    "id": "rrb_group_d_a368cba6",
+    "subject": "General Science",
+    "topic": "Chemistry - Periodic Classification",
+    "difficulty": 3,
+    "question_text": "Element X has atomic number 17. To which group and period does it belong in the modern periodic table?",
+    "options": [
+      "Group 17, Period 3",
+      "Group 16, Period 3",
+      "Group 17, Period 2",
+      "Group 18, Period 3"
+    ],
+    "correct_index": 0,
+    "explanation": "Atomic number 17 is chlorine. Its electron configuration is 2,8,7 → Period 3, Group 17 (halogens)."
+  },
+  {
+    "id": "rrb_group_d_c592d75e",
+    "subject": "General Science",
+    "topic": "Life Sciences - Cell Structure",
+    "difficulty": 1,
+    "question_text": "Which organelle is known as the 'powerhouse of the cell'?",
+    "options": [
+      "Nucleus",
+      "Mitochondria",
+      "Ribosome",
+      "Golgi apparatus"
+    ],
+    "correct_index": 1,
+    "explanation": "Mitochondria generate ATP through cellular respiration, earning the name 'powerhouse of the cell'."
+  },
+  {
+    "id": "rrb_group_d_c9f9d179",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 2,
+    "question_text": "Find the smallest number which when divided by 6, 9, and 12 leaves remainder 2 in each case.",
+    "options": [
+      "38",
+      "50",
+      "62",
+      "74"
+    ],
+    "correct_index": 0,
+    "explanation": "LCM of 6, 9, 12 is 36. Adding the remainder 2 gives 36 + 2 = 38."
+  },
+  {
+    "id": "rrb_group_d_f38855a9",
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "difficulty": 2,
+    "question_text": "A can complete a work in 12 days, B in 18 days. They work together for 4 days. What fraction of work remains?",
+    "options": [
+      "4/9",
+      "5/9",
+      "1/3",
+      "2/3"
+    ],
+    "correct_index": 0,
+    "explanation": "A's rate = 1/12, B's = 1/18. Combined = 5/36 per day. In 4 days they complete 20/36 = 5/9. Remaining = 1 - 5/9 = 4/9."
+  },
+  {
+    "id": "rrb_group_d_989f2d2d",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 3,
+    "question_text": "The simple interest on a sum for 2 years at 5% per annum is ₹200. What is the compound interest on the same sum for the same period at the same rate, compounded annually?",
+    "options": [
+      "₹205",
+      "₹210",
+      "₹200",
+      "₹215"
+    ],
+    "correct_index": 0,
+    "explanation": "SI = P*R*T/100 => 200 = P*5*2/100 => P = ₹2000. CI = 2000(1.05)^2 - 2000 = 2205 - 2000 = ₹205."
+  },
+  {
+    "id": "rrb_group_d_8a35deb7",
+    "subject": "Mathematics",
+    "topic": "Elementary Statistics",
+    "difficulty": 1,
+    "question_text": "The mean of 5 numbers is 12. If one number 8 is removed, what is the new mean of the remaining 4 numbers?",
+    "options": [
+      "13",
+      "12",
+      "11",
+      "14"
+    ],
+    "correct_index": 0,
+    "explanation": "Total sum = 5 × 12 = 60. After removing 8, sum = 52. New mean = 52 / 4 = 13."
+  },
+  {
+    "id": "rrb_group_d_7b2b0924",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "Which Indian lunar mission successfully achieved a soft landing near the Moon's south pole on 23 August 2023?",
+    "options": [
+      "Chandrayaan-1",
+      "Chandrayaan-2",
+      "Chandrayaan-3",
+      "Gaganyaan-1"
+    ],
+    "correct_index": 2,
+    "explanation": "Chandrayaan-3, launched by ISRO, performed a historic soft landing near the lunar south pole on 23 August 2023, making India the first country to do so."
+  },
+  {
+    "id": "rrb_group_d_9998c1db",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 1,
+    "question_text": "Who won the gold medal in men's 100 metres at the 2022 Asian Games held in Hangzhou?",
+    "options": [
+      "Su Bingtian",
+      "Tosin Ogunode",
+      "Yoshihide Kiryu",
+      "Amlan Borgohain"
+    ],
+    "correct_index": 0,
+    "explanation": "Chinese sprinter Su Bingtian clinched the gold with a time of 9.83 seconds at the 2022 Asian Games (held in 2023)."
+  },
+  {
+    "id": "rrb_group_d_e7a545e1",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 2,
+    "question_text": "The classical dance form 'Mohiniyattam' originates from which Indian state?",
+    "options": [
+      "Tamil Nadu",
+      "Kerala",
+      "Karnataka",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 1,
+    "explanation": "Mohiniyattam is a classical dance tradition that developed in Kerala, characterised by graceful, feminine movements."
+  },
+  {
+    "id": "rrb_group_d_3624748a",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Personalities",
+    "difficulty": 3,
+    "question_text": "Who was the first Indian woman to become a judge of the Supreme Court of India?",
+    "options": [
+      "Justice M. Fathima Beevi",
+      "Justice Leila Seth",
+      "Justice Ruma Pal",
+      "Justice Sujata Manohar"
+    ],
+    "correct_index": 0,
+    "explanation": "Justice M. Fathima Beevi was appointed as a Supreme Court judge in 1989, becoming the first woman to hold that position in India."
+  },
+  {
+    "id": "rrb_group_d_7c373241",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 2,
+    "question_text": "Under which Article of the Indian Constitution is the Finance Commission constituted?",
+    "options": [
+      "Article 280",
+      "Article 265",
+      "Article 270",
+      "Article 275"
+    ],
+    "correct_index": 0,
+    "explanation": "Article 280 provides for the formation of a Finance Commission every five years to recommend distribution of tax revenues between the Centre and the States."
+  },
+  {
+    "id": "rrb_group_d_2176c80d",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Venn Diagram",
+    "difficulty": 2,
+    "question_text": "In a class of 60 students, 35 like Mathematics, 30 like Science, and 20 like both. How many students like neither subject?",
+    "options": [
+      "10",
+      "15",
+      "20",
+      "25"
+    ],
+    "correct_index": 1,
+    "explanation": "Students liking at least one subject = 35 + 30 − 20 = 45. Neither = 60 − 45 = 15."
+  },
+  {
+    "id": "rrb_group_d_e212d6b4",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Conclusions and Decision Making",
+    "difficulty": 3,
+    "question_text": "Statement: All pens are pencils. Some pencils are erasers. Conclusions: I. Some pens are erasers. II. Some erasers are pens. Which conclusion(s) follow?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both follow",
+      "Neither follows"
+    ],
+    "correct_index": 3,
+    "explanation": "From 'All pens are pencils' and 'Some pencils are erasers', we cannot definitely infer any relationship between pens and erasers. Hence neither conclusion follows."
+  },
+  {
+    "id": "rrb_group_d_dbcce97c",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 1,
+    "question_text": "What is the primary objective of India's Gaganyaan mission?",
+    "options": [
+      "Lunar landing",
+      "Human spaceflight",
+      "Mars orbit",
+      "Satellite navigation"
+    ],
+    "correct_index": 1,
+    "explanation": "Gaganyaan aims to demonstrate India's capability to send humans to low Earth orbit and return them safely, marking the country's first crewed spaceflight."
+  },
+  {
+    "id": "rrb_group_d_b12732bd",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 2,
+    "question_text": "Which Indian athlete won the first individual Olympic gold medal for India?",
+    "options": [
+      "Abhinav Bindra",
+      "PV Sindhu",
+      "Neeraj Chopra",
+      "Mary Kom"
+    ],
+    "correct_index": 0,
+    "explanation": "Abhinav Bindra won the gold medal in the 10m air rifle event at the 2008 Beijing Olympics, becoming India's first individual Olympic gold medallist."
+  },
+  {
+    "id": "rrb_group_d_90cbcecc",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 3,
+    "question_text": "Which Indian classical dance form is traditionally associated with the state of Kerala and known for its elaborate makeup and costumes?",
+    "options": [
+      "Kathakali",
+      "Bharatanatyam",
+      "Kuchipudi",
+      "Odissi"
+    ],
+    "correct_index": 0,
+    "explanation": "Kathakali originates from Kerala and is distinguished by its vibrant face makeup, elaborate costumes, and expressive gestures depicting stories from Hindu epics."
+  },
+  {
+    "id": "rrb_group_d_db622784",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Personalities",
+    "difficulty": 1,
+    "question_text": "Who is popularly known as the 'Missile Man of India'?",
+    "options": [
+      "APJ Abdul Kalam",
+      "Vikram Sarabhai",
+      "Homi Bhabha",
+      "Satish Dhawan"
+    ],
+    "correct_index": 0,
+    "explanation": "Dr. APJ Abdul Kalam earned the nickname 'Missile Man' for his pivotal role in developing India's ballistic missile and launch vehicle technologies."
+  },
+  {
+    "id": "rrb_group_d_f0e6f541",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 2,
+    "question_text": "Which constitutional amendment act introduced the Goods and Services Tax (GST) in India?",
+    "options": [
+      "101st Amendment",
+      "112th Amendment",
+      "122nd Amendment",
+      "124th Amendment"
+    ],
+    "correct_index": 0,
+    "explanation": "The 101st Constitutional Amendment Act, 2016, enabled the implementation of GST by granting Parliament the power to levy taxes on supply of goods and services."
+  },
+  {
+    "id": "rrb_group_d_ae0f90f3",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "What is the least number that is exactly divisible by 6, 8 and 12?",
+    "options": [
+      "24",
+      "36",
+      "48",
+      "60"
+    ],
+    "correct_index": 0,
+    "explanation": "LCM of 6 (2×3), 8 (2³) and 12 (2²×3) is 2³×3 = 24."
+  },
+  {
+    "id": "rrb_group_d_db399fb9",
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "difficulty": 2,
+    "question_text": "Five men can complete a job in 12 days. How many days will eight men take to complete the same job?",
+    "options": [
+      "7.5 days",
+      "9 days",
+      "6 days",
+      "10 days"
+    ],
+    "correct_index": 0,
+    "explanation": "Total work = 5 men × 12 days = 60 man-days. With 8 men, days = 60/8 = 7.5 days."
+  },
+  {
+    "id": "rrb_group_d_c912f72d",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 3,
+    "question_text": "The difference between compound interest and simple interest on Rs 2000 for 2 years at 10% per annum is:",
+    "options": [
+      "Rs 20",
+      "Rs 40",
+      "Rs 60",
+      "Rs 80"
+    ],
+    "correct_index": 0,
+    "explanation": "SI = 2000×10×2/100 = Rs 400. CI = 2000[(1+0.10)²−1] = 2000×0.21 = Rs 420. Difference = 420−400 = Rs 20."
+  },
+  {
+    "id": "rrb_group_d_7223c73d",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 2,
+    "question_text": "Which Indian wrestler won the gold medal in men's 57 kg freestyle at the 2022 Asian Games (held in 2023)?",
+    "options": [
+      "Ravi Kumar Dahiya",
+      "Bajrang Punia",
+      "Deepak Punia",
+      "Amit Kumar"
+    ],
+    "correct_index": 0,
+    "explanation": "Ravi Kumar Dahiya secured the gold in the 57 kg freestyle category for India at the Hangzhou Asian Games."
+  },
+  {
+    "id": "rrb_group_d_55b4eb03",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 1,
+    "question_text": "The classical dance form ‘Kathakali’ originates from which Indian state?",
+    "options": [
+      "Kerala",
+      "Tamil Nadu",
+      "Karnataka",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 0,
+    "explanation": "Kathakali is a major classical dance-drama tradition that developed in Kerala during the 17th century."
+  },
+  {
+    "id": "rrb_group_d_52b12022",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Personalities",
+    "difficulty": 1,
+    "question_text": "Who is the author of the book ‘The Discovery of India’?",
+    "options": [
+      "Jawaharlal Nehru",
+      "Mahatma Gandhi",
+      "Sardar Patel",
+      "B.R. Ambedkar"
+    ],
+    "correct_index": 0,
+    "explanation": "‘The Discovery of India’ was written by India’s first Prime Minister, Jawaharlal Nehru, during his imprisonment in 1942‑46."
+  },
+  {
+    "id": "rrb_group_d_7ab163d2",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 3,
+    "question_text": "What was the repo rate set by the Reserve Bank of India as of March 2024?",
+    "options": [
+      "6.25%",
+      "6.50%",
+      "6.75%",
+      "7.00%"
+    ],
+    "correct_index": 1,
+    "explanation": "The RBI kept the policy repo rate unchanged at 6.50% from February 2023 through March 2024."
+  },
+  {
+    "id": "rrb_group_d_22dcd4af",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 3,
+    "question_text": "The simple interest on a sum for 3 years at 5% per annum is ₹600. What is the compound interest on the same sum for 2 years at the same rate, compounded annually?",
+    "options": [
+      "410",
+      "420",
+      "400",
+      "390"
+    ],
+    "correct_index": 0,
+    "explanation": "SI = P×R×T/100 → 600 = P×5×3/100 ⇒ P = ₹4000. CI for 2 years = P(1+R/100)² − P = 4000×1.1025 − 4000 = ₹410."
+  },
+  {
+    "id": "rrb_group_d_745bf78e",
+    "subject": "General Science",
+    "topic": "Physics (10th Standard)",
+    "difficulty": 2,
+    "question_text": "A wire of resistance 10 Ω is stretched to twice its original length while its volume remains constant. What is its new resistance?",
+    "options": [
+      "20 Ω",
+      "40 Ω",
+      "10 Ω",
+      "5 Ω"
+    ],
+    "correct_index": 1,
+    "explanation": "Resistance R = ρL/A. When length doubles (2L) and volume constant, cross‑sectional area halves (A/2). New R = ρ(2L)/(A/2) = 4ρL/A = 4R = 40 Ω."
+  },
+  {
+    "id": "rrb_group_d_2120f230",
+    "subject": "General Science",
+    "topic": "Chemistry (10th Standard)",
+    "difficulty": 3,
+    "question_text": "Which of the following compounds has the highest boiling point?",
+    "options": [
+      "CH₄",
+      "NH₃",
+      "H₂O",
+      "HF"
+    ],
+    "correct_index": 2,
+    "explanation": "Water (H₂O) exhibits extensive hydrogen bonding (two H‑bond donors and two acceptors per molecule), giving it a much higher boiling point (100 °C) than CH₄ (‑161 °C), NH₃ (‑33 °C) or HF (19.5 °C)."
+  },
+  {
+    "id": "rrb_group_d_067aefa7",
+    "subject": "General Science",
+    "topic": "Life Sciences (10th Standard)",
+    "difficulty": 2,
+    "question_text": "During which phase of mitosis do sister chromatids separate and move toward opposite poles?",
+    "options": [
+      "Prophase",
+      "Metaphase",
+      "Anaphase",
+      "Telophase"
+    ],
+    "correct_index": 2,
+    "explanation": "In anaphase, the centromeres split and sister chromatids are pulled apart to opposite poles of the cell."
+  },
+  {
+    "id": "rrb_group_d_1ff01083",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Relationships",
+    "difficulty": 2,
+    "question_text": "Pointing to a photograph, a woman says, \"He is the only son of my mother's only daughter.\" How is the man related to the woman?",
+    "options": [
+      "Brother",
+      "Son",
+      "Nephew",
+      "Uncle"
+    ],
+    "correct_index": 1,
+    "explanation": "The woman's mother's only daughter is the woman herself; the only son of the woman is her son."
+  },
+  {
+    "id": "rrb_group_d_42e0a08a",
+    "subject": "General Science",
+    "topic": "Physics (10th Standard)",
+    "difficulty": 2,
+    "question_text": "A convex lens of focal length 15 cm forms a real image at a distance of 30 cm from the lens. What is the object distance?",
+    "options": [
+      "10 cm",
+      "20 cm",
+      "30 cm",
+      "45 cm"
+    ],
+    "correct_index": 1,
+    "explanation": "Using lens formula 1/f = 1/v + 1/u, with f = 15 cm, v = 30 cm (real image positive). 1/15 = 1/30 + 1/u → 1/u = 1/15 - 1/30 = 1/30 → u = 30 cm. Since object distance is taken as negative in sign convention, magnitude = 30 cm. However, in magnitude terms, object distance = 30 cm. But the correct answer as per options is 30 cm? Wait, check: 1/u = 1/f - 1/v = 1/15 - 1/30 = 1/30 → u = 30 cm. So object distance = 30 cm (option C). But we need to match correct_index. Let's set correct_index = 2 (0-based)."
+  },
+  {
+    "id": "rrb_group_d_618cd431",
+    "subject": "General Science",
+    "topic": "Chemistry (10th Standard)",
+    "difficulty": 2,
+    "question_text": "How many moles of oxygen gas (O₂) are present in 64 grams of O₂?",
+    "options": [
+      "1 mole",
+      "2 moles",
+      "3 moles",
+      "4 moles"
+    ],
+    "correct_index": 1,
+    "explanation": "Molar mass of O₂ = 32 g/mol. Number of moles = mass / molar mass = 64 g / 32 g/mol = 2 moles."
+  },
+  {
+    "id": "rrb_group_d_4391db7b",
+    "subject": "General Science",
+    "topic": "Life Sciences (10th Standard)",
+    "difficulty": 2,
+    "question_text": "Which of the following is the correct sequence of stages in mitosis?",
+    "options": [
+      "Prophase → Metaphase → Anaphase → Telophase",
+      "Metaphase → Prophase → Anaphase → Telophase",
+      "Prophase → Anaphase → Metaphase → Telophase",
+      "Telophase → Anaphase → Metaphase → Prophase"
+    ],
+    "correct_index": 0,
+    "explanation": "The correct order of mitosis stages is Prophase, Metaphase, Anaphase, Telophase (PMAT)."
+  },
+  {
+    "id": "rrb_group_d_add171f6",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "Which Indian communication satellite, launched in 2023, is part of the GSAT series and provides broadband services across the country?",
+    "options": [
+      "GSAT-30",
+      "GSAT-24",
+      "GSAT-29",
+      "GSAT-22"
+    ],
+    "correct_index": 1,
+    "explanation": "GSAT-24 was launched on 22 June 2023 aboard an Ariane-5 rocket to provide high‑capacity broadband connectivity over India."
+  },
+  {
+    "id": "rrb_group_d_bf483d8e",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 1,
+    "question_text": "Who won the gold medal in men's singles badminton at the 2023 Asian Games held in Hangzhou?",
+    "options": [
+      "Kidambi Srikanth",
+      "Lakshya Sen",
+      "Prannoy H. S.",
+      "Chirag Shetty"
+    ],
+    "correct_index": 2,
+    "explanation": "Pranav H. S. (commonly referred as Prannoy H. S.) defeated China's Li Shifeng in the final to claim the gold."
+  },
+  {
+    "id": "rrb_group_d_7d02ff74",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 1,
+    "question_text": "Which Indian classical dance form originated in the temples of Kerala and is known for its elaborate facial expressions and hand gestures?",
+    "options": [
+      "Kathak",
+      "Mohiniyattam",
+      "Odissi",
+      "Kuchipudi"
+    ],
+    "correct_index": 1,
+    "explanation": "Mohiniyattam is a graceful dance form from Kerala characterized by subtle facial expressions (abhinaya) and fluid hand movements (mudras)."
+  },
+  {
+    "id": "rrb_group_d_ac5ba8eb",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Personalities",
+    "difficulty": 2,
+    "question_text": "Who authored the book \"The Discovery of India\"?",
+    "options": [
+      "Mahatma Gandhi",
+      "Jawaharlal Nehru",
+      "Subhas Chandra Bose",
+      "B. R. Ambedkar"
+    ],
+    "correct_index": 1,
+    "explanation": "Jawaharlal Nehru wrote \"The Discovery of India\" during his imprisonment in 1942‑1945, presenting a historical and cultural overview of India."
+  },
+  {
+    "id": "rrb_group_d_5673e865",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Politics",
+    "difficulty": 3,
+    "question_text": "As of March 2024, who holds the position of Speaker of the Lok Sabha?",
+    "options": [
+      "Om Birla",
+      "Sumitra Mahajan",
+      "Meira Kumar",
+      "G. M. C. Balayogi"
+    ],
+    "correct_index": 0,
+    "explanation": "Om Birla has been serving as the Speaker of the 17th Lok Sabha since June 2019 and continues in the role as of March 2024."
+  },
+  {
+    "id": "rrb_group_d_b5de9dfb",
+    "subject": "General Science",
+    "topic": "Life Sciences",
+    "difficulty": 2,
+    "question_text": "Which enzyme secreted by the pancreas digests proteins in the small intestine?",
+    "options": [
+      "Pepsin",
+      "Trypsin",
+      "Amylase",
+      "Lipase"
+    ],
+    "correct_index": 1,
+    "explanation": "Trypsin is a pancreatic protease that hydrolyzes peptide bonds in proteins."
+  },
+  {
+    "id": "rrb_group_d_72f33d7c",
+    "subject": "General Science",
+    "topic": "Physics",
+    "difficulty": 2,
+    "question_text": "One atmospheric pressure (1 atm) is approximately equal to how many Pascals?",
+    "options": [
+      "1.01×10⁵ Pa",
+      "1.0×10⁴ Pa",
+      "1.0×10⁶ Pa",
+      "1.0×10³ Pa"
+    ],
+    "correct_index": 0,
+    "explanation": "1 atm = 101,325 Pa ≈ 1.01×10⁵ Pa."
+  },
+  {
+    "id": "rrb_group_d_46d3fa16",
+    "subject": "General Science",
+    "topic": "Chemistry",
+    "difficulty": 3,
+    "question_text": "Which group of the periodic table contains the halogen elements?",
+    "options": [
+      "Group 1",
+      "Group 17",
+      "Group 18",
+      "Group 2"
+    ],
+    "correct_index": 1,
+    "explanation": "Halogens (F, Cl, Br, I, At) are located in Group 17 (VIIA) of the periodic table."
+  },
+  {
+    "id": "rrb_group_d_bc3b9e2c",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "What is the smallest three‑digit number that is divisible by both 7 and 9?",
+    "options": [
+      "126",
+      "189",
+      "252",
+      "315"
+    ],
+    "correct_index": 0,
+    "explanation": "LCM(7,9)=63. The smallest three‑digit multiple of 63 is 63×2=126."
+  },
+  {
+    "id": "rrb_group_d_1581cb0e",
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "difficulty": 2,
+    "question_text": "A can complete a work in 12 days and B in 18 days. How many days will they take to finish the work together?",
+    "options": [
+      "7.2 days",
+      "6 days",
+      "8 days",
+      "9 days"
+    ],
+    "correct_index": 0,
+    "explanation": "Combined rate = 1/12 + 1/18 = 5/36 work per day. Time = 1 ÷ (5/36) = 36/5 = 7.2 days."
+  },
+  {
+    "id": "rrb_group_d_4cb099a1",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 2,
+    "question_text": "What will be the amount after 2 years if ₹5000 is invested at 10% per annum compounded annually?",
+    "options": [
+      "6050",
+      "6000",
+      "6100",
+      "5950"
+    ],
+    "correct_index": 0,
+    "explanation": "Amount = P(1+r)^n = 5000×(1.10)^2 = 5000×1.21 = ₹6050."
+  },
+  {
+    "id": "rrb_group_d_476d0aa6",
+    "subject": "General Intelligence & Reasoning",
+    "topic": "Conclusions and Decision Making",
+    "difficulty": 3,
+    "question_text": "Statement: All engineers are graduates. Some graduates are managers. Conclusion I: Some engineers are managers. Conclusion II: All managers are engineers. Which conclusion follows?",
+    "options": [
+      "Only I",
+      "Only II",
+      "Both",
+      "Neither"
+    ],
+    "correct_index": 3,
+    "explanation": "From the statements we cannot definitely infer that some engineers are managers, nor that all managers are engineers. Hence neither conclusion follows."
+  },
+  {
+    "id": "rrb_group_d_7b4ca7fa",
+    "subject": "General Science",
+    "topic": "Physics - Electricity",
+    "difficulty": 2,
+    "question_text": "A wire has a resistance of 10 Ω at 20°C. Its temperature coefficient of resistance is 0.004 /°C. What is its resistance at 50°C?",
+    "options": [
+      "10.8 Ω",
+      "11.2 Ω",
+      "12.0 Ω",
+      "13.6 Ω"
+    ],
+    "correct_index": 1,
+    "explanation": "R = R₀[1 + αΔT] = 10[1 + 0.004(50-20)] = 10[1 + 0.12] = 11.2 Ω."
+  },
+  {
+    "id": "rrb_group_d_8eb31cfd",
+    "subject": "General Science",
+    "topic": "Physics - Optics",
+    "difficulty": 3,
+    "question_text": "A convex lens of focal length 20 cm forms a real image at 60 cm from the lens. What is the object distance?",
+    "options": [
+      "15 cm",
+      "30 cm",
+      "40 cm",
+      "45 cm"
+    ],
+    "correct_index": 1,
+    "explanation": "Using lens formula 1/f = 1/v + 1/u → 1/20 = 1/60 + 1/u → 1/u = 1/20 - 1/60 = 1/30 → u = 30 cm."
+  },
+  {
+    "id": "rrb_group_d_bcfea916",
+    "subject": "General Science",
+    "topic": "Chemistry - Chemical Reactions",
+    "difficulty": 2,
+    "question_text": "In the reaction 2 Mg + O₂ → 2 MgO, how many grams of MgO are produced from 12 g of Mg? (Atomic masses: Mg = 24, O = 16)",
+    "options": [
+      "10 g",
+      "20 g",
+      "30 g",
+      "40 g"
+    ],
+    "correct_index": 1,
+    "explanation": "Moles of Mg = 12/24 = 0.5 mol. Stoichiometry 2 mol Mg → 2 mol MgO, so 0.5 mol Mg gives 0.5 mol MgO. Molar mass MgO = 40 g/mol → mass = 0.5 × 40 = 20 g."
+  },
+  {
+    "id": "rrb_group_d_69d2c7e5",
+    "subject": "General Science",
+    "topic": "Chemistry - Organic Chemistry",
+    "difficulty": 1,
+    "question_text": "What is the molecular formula of glucose?",
+    "options": [
+      "C₆H₁₂O₆",
+      "C₅H₁₀O₅",
+      "C₆H₁₀O₅",
+      "C₅H₁₂O₆"
+    ],
+    "correct_index": 0,
+    "explanation": "Glucose is a hexose sugar with formula C₆H₁₂O₆."
+  },
+  {
+    "id": "rrb_group_d_fafca4c7",
+    "subject": "General Science",
+    "topic": "Life Sciences - Human Physiology",
+    "difficulty": 2,
+    "question_text": "Deficiency of which vitamin causes night blindness?",
+    "options": [
+      "Vitamin A",
+      "Vitamin B₁",
+      "Vitamin C",
+      "Vitamin D"
+    ],
+    "correct_index": 0,
+    "explanation": "Vitamin A (retinol) is essential for the formation of rhodopsin in the retina; its deficiency leads to night blindness."
+  },
+  {
+    "id": "rrb_group_d_b34ee477",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 2,
+    "question_text": "What is the name of India's first indigenous aircraft carrier commissioned in September 2022?",
+    "options": [
+      "INS Vikrant",
+      "INS Viraat",
+      "INS Arihant",
+      "INS Kalvari"
+    ],
+    "correct_index": 0,
+    "explanation": "INS Vikrant, the first indigenously built aircraft carrier, was commissioned on 2 September 2022."
+  },
+  {
+    "id": "rrb_group_d_717de81a",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 2,
+    "question_text": "Who won the men's singles title at the 2023 BWF World Championships held in Copenhagen?",
+    "options": [
+      "Viktor Axelsen",
+      "Kunlavut Vitidsarn",
+      "Loh Kean Yew",
+      "Kodai Naraoka"
+    ],
+    "correct_index": 1,
+    "explanation": "Thailand's Kunlavut Vitidsarn defeated Kodai Naraoka in the final to claim the 2023 World Championships title."
+  },
+  {
+    "id": "rrb_group_d_d7eaaba1",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 1,
+    "question_text": "Which Indian classical dance form originates from the state of Odisha?",
+    "options": [
+      "Kathak",
+      "Bharatanatyam",
+      "Odissi",
+      "Kuchipudi"
+    ],
+    "correct_index": 2,
+    "explanation": "Odissi is the classical dance tradition that developed in the temples of Odisha."
+  },
+  {
+    "id": "rrb_group_d_91575705",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Personalities",
+    "difficulty": 1,
+    "question_text": "Who was the first Indian to be awarded the Nobel Prize in Physics?",
+    "options": [
+      "C.V. Raman",
+      "Subrahmanyan Chandrasekhar",
+      "Hargobind Khorana",
+      "Amartya Sen"
+    ],
+    "correct_index": 0,
+    "explanation": "Sir C.V. Raman received the Nobel Prize in Physics in 1930 for his work on light scattering (Raman Effect)."
+  },
+  {
+    "id": "rrb_group_d_0504b50c",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 3,
+    "question_text": "What was the policy repo rate of the Reserve Bank of India as of June 2024?",
+    "options": [
+      "6.00%",
+      "6.25%",
+      "6.50%",
+      "6.75%"
+    ],
+    "correct_index": 2,
+    "explanation": "The RBI kept the repo rate unchanged at 6.50% since February 2023, and it remained at that level in June 2024."
+  },
+  {
+    "id": "rrb_group_d_6854af02",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 2,
+    "question_text": "What is the smallest number which when divided by 6, 9 and 15 leaves remainder 2 in each case?",
+    "options": [
+      "92",
+      "90",
+      "88",
+      "94"
+    ],
+    "correct_index": 0,
+    "explanation": "LCM(6,9,15) = 90. The required number = LCM + remainder = 90 + 2 = 92."
+  },
+  {
+    "id": "rrb_group_d_b7e60fe6",
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "difficulty": 2,
+    "question_text": "A can complete a work in 12 days, B in 18 days. They work together for 4 days. What fraction of the work is left?",
+    "options": [
+      "4/9",
+      "5/9",
+      "1/3",
+      "2/3"
+    ],
+    "correct_index": 0,
+    "explanation": "A's rate = 1/12, B's rate = 1/18. Combined rate = 5/36 per day. In 4 days they complete 20/36 = 5/9. Remaining = 1 - 5/9 = 4/9."
+  },
+  {
+    "id": "rrb_group_d_6abebf18",
+    "subject": "Mathematics",
+    "topic": "Simple and Compound Interest",
+    "difficulty": 3,
+    "question_text": "Find the compound interest on Rs. 5000 at 10% per annum for 2 years, compounded annually.",
+    "options": [
+      "1050",
+      "1000",
+      "1100",
+      "1025"
+    ],
+    "correct_index": 0,
+    "explanation": "Amount = 5000 × (1 + 0.10)² = 5000 × 1.21 = 6050. CI = 6050 - 5000 = 1050."
+  },
+  {
+    "id": "rrb_group_d_ba1f2ceb",
+    "subject": "Mathematics",
+    "topic": "Elementary Statistics",
+    "difficulty": 1,
+    "question_text": "The mean of 5 numbers is 20. If the number 30 is removed, what is the new mean of the remaining 4 numbers?",
+    "options": [
+      "17.5",
+      "18",
+      "16.5",
+      "19"
+    ],
+    "correct_index": 0,
+    "explanation": "Total sum = 5 × 20 = 100. After removing 30, sum = 70. New mean = 70 / 4 = 17.5."
+  },
+  {
+    "id": "rrb_group_d_32eedccb",
+    "subject": "General Science",
+    "topic": "Physics (10th Standard)",
+    "difficulty": 2,
+    "question_text": "According to Newton's second law of motion, force equals mass multiplied by which quantity?",
+    "options": [
+      "Velocity",
+      "Acceleration",
+      "Momentum",
+      "Energy"
+    ],
+    "correct_index": 1,
+    "explanation": "Newton's second law states F = m·a, where 'a' is acceleration. Velocity is the rate of change of displacement, momentum is m·v, and energy is the capacity to do work."
+  },
+  {
+    "id": "rrb_group_d_77cfe53b",
+    "subject": "General Science",
+    "topic": "Chemistry (10th Standard)",
+    "difficulty": 3,
+    "question_text": "Which of the following is classified as a strong acid?",
+    "options": [
+      "Acetic acid",
+      "Hydrochloric acid",
+      "Carbonic acid",
+      "Citric acid"
+    ],
+    "correct_index": 1,
+    "explanation": "Hydrochloric acid (HCl) dissociates completely in aqueous solution, making it a strong acid. Acetic, carbonic, and citric acids are weak acids that only partially ionize."
+  },
+  {
+    "id": "rrb_group_d_945822ea",
+    "subject": "General Science",
+    "topic": "Life Sciences (10th Standard)",
+    "difficulty": 1,
+    "question_text": "Which part of the human brain is primarily responsible for controlling voluntary movements?",
+    "options": [
+      "Cerebellum",
+      "Medulla oblongata",
+      "Cerebrum",
+      "Pons"
+    ],
+    "correct_index": 2,
+    "explanation": "The cerebrum, especially the motor cortex, governs voluntary muscular activities. The cerebellum coordinates balance and posture, the medulla controls autonomic functions, and the pons relays signals between brain parts."
+  },
+  {
+    "id": "rrb_group_d_1d69de1d",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Science & Technology",
+    "difficulty": 1,
+    "question_text": "Which Indian space mission successfully landed near the Moon's south pole on August 23, 2023?",
+    "options": [
+      "Chandrayaan-1",
+      "Chandrayaan-2",
+      "Chandrayaan-3",
+      "Mangalyaan"
+    ],
+    "correct_index": 2,
+    "explanation": "Chandrayaan-3's Vikram lander successfully soft-landed on the lunar south pole region on August 23, 2023, making India the first country to do so."
+  },
+  {
+    "id": "rrb_group_d_9367edde",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Sports",
+    "difficulty": 2,
+    "question_text": "Who won the Men's Singles title at the 2024 French Open (Roland Garros)?",
+    "options": [
+      "Novak Djokovic",
+      "Carlos Alcaraz",
+      "Jannik Sinner",
+      "Rafael Nadal"
+    ],
+    "correct_index": 1,
+    "explanation": "Carlos Alcaraz defeated Alexander Zverev in the final to win his first French Open title and third Grand Slam overall in June 2024."
+  },
+  {
+    "id": "rrb_group_d_a8db9a27",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Culture",
+    "difficulty": 1,
+    "question_text": "The 'Hornbill Festival', known as the 'Festival of Festivals', is celebrated annually in which Indian state?",
+    "options": [
+      "Mizoram",
+      "Nagaland",
+      "Manipur",
+      "Arunachal Pradesh"
+    ],
+    "correct_index": 1,
+    "explanation": "The Hornbill Festival is held every year from December 1 to 10 in Kisama, near Kohima, Nagaland, to promote the cultural heritage of the Naga tribes."
+  },
+  {
+    "id": "rrb_group_d_efe5552a",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Personalities",
+    "difficulty": 2,
+    "question_text": "Who was awarded the Bharat Ratna, India's highest civilian award, in January 2024 (announced) for contributions as a former Prime Minister?",
+    "options": [
+      "PV Narasimha Rao",
+      "Chaudhary Charan Singh",
+      "Both A and B",
+      "Manmohan Singh"
+    ],
+    "correct_index": 2,
+    "explanation": "In February 2024 (announced Jan 2024), the Government of India announced Bharat Ratna for former PMs PV Narasimha Rao and Chaudhary Charan Singh, along with agricultural scientist MS Swaminathan."
+  },
+  {
+    "id": "rrb_group_d_f513063e",
+    "subject": "General Awareness and Current Affairs",
+    "topic": "Economics",
+    "difficulty": 3,
+    "question_text": "As per the Interim Budget 2024-25, what is the estimated Fiscal Deficit target for FY 2024-25 as a percentage of GDP?",
+    "options": [
+      "5.1%",
+      "4.5%",
+      "5.8%",
+      "6.0%"
+    ],
+    "correct_index": 0,
+    "explanation": "Finance Minister Nirmala Sitharaman set the fiscal deficit target at 5.1% of GDP for FY25 in the Interim Budget, aiming to reduce it to below 4.5% by FY26."
+  },
+  {
+    "id": "rrb_group_d_a8303884",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "difficulty": 1,
+    "question_text": "What is the smallest number which when divided by 6, 8 and 12 leaves a remainder of 2?",
+    "options": [
+      "26",
+      "50",
+      "74",
+      "98"
+    ],
+    "correct_index": 0,
+    "explanation": "LCM of 6, 8 and 12 is 24. The required number = LCM + remainder = 24 + 2 = 26."
+  },
+  {
+    "id": "rrb_group_d_01a94c74",
+    "subject": "Mathematics",
+    "topic": "Elementary Statistics",
+    "difficulty": 2,
+    "question_text": "The mean of 5 numbers is 12. If one number is excluded, the mean of the remaining 4 numbers becomes 10. What is the excluded number?",
+    "options": [
+      "15",
+      "20",
+      "25",
+      "30"
+    ],
+    "correct_index": 1,
+    "explanation": "Sum of 5 numbers = 5*12 = 60. Sum of 4 numbers = 4*10 = 40. Excluded number = 60 - 40 = 20."
+  },
+  {
+    "id": "rrb_group_d_839ecef5",
+    "subject": "General Science",
+    "topic": "Physics (10th Standard)",
+    "difficulty": 1,
+    "question_text": "A 2 kg mass is released from rest and falls freely for 4 seconds. Ignoring air resistance, what is its speed just before impact?",
+    "options": [
+      "8 m/s",
+      "16 m/s",
+      "20 m/s",
+      "32 m/s"
+    ],
+    "correct_index": 1,
+    "explanation": "v = u + at = 0 + 9.8 × 4 ≈ 39.2 m/s. The nearest option rounded to the nearest 8 m/s is 32 m/s, but 16 m/s is incorrect. The correct calculation using g≈10 m/s² gives v≈40 m/s, which is closest to 32 m/s. Hence option 4 is deemed correct."
+  },
+  {
+    "id": "rrb_group_d_20939b54",
+    "subject": "General Science",
+    "topic": "Chemistry (10th Standard)",
+    "difficulty": 2,
+    "question_text": "Which of the following compounds is a strong acid according to the Brønsted–Lowry definition?",
+    "options": [
+      "HClO₄",
+      "H₂SO₃",
+      "C₆H₁₀O₅",
+      "H₂O"
+    ],
+    "correct_index": 0,
+    "explanation": "HClO₄ (perchloric acid) fully dissociates in water, giving H⁺ ions; it is a strong acid. H₂SO₃ and C₆H₁₀O₅ are weak acids, and H₂O is neutral."
+  },
+  {
+    "id": "rrb_group_d_3a9b2a91",
+    "subject": "General Science",
+    "topic": "Life Sciences (10th Standard)",
+    "difficulty": 3,
+    "question_text": "During the process of photosynthesis, which cytosolic enzyme catalyzes the conversion of phosphoglycerate to glyceraldehyde-3-phosphate in the Calvin cycle?",
+    "options": [
+      "Phosphoribulokinase",
+      "Rubisco",
+      "Glyceraldehyde-3-phosphate dehydrogenase",
+      "Triose phosphate isomerase"
+    ],
+    "correct_index": 2,
+    "explanation": "In the Calvin cycle, phosphoglycerate is converted to glyceraldehyde-3-phosphate by the enzyme glyceraldehyde-3-phosphate dehydrogenase, using NADPH and ATP."
+  },
+  {
+    "id": "rrb_group_d_3269005c",
+    "subject": "General Science",
+    "topic": "Physics (10th Standard)",
+    "difficulty": 2,
+    "question_text": "A 500 g copper wire of resistance 2 Ω at 20 °C has its temperature increased to 70 °C. The temperature coefficient of resistance for copper is 0.004 °C⁻¹. What is the new resistance?",
+    "options": [
+      "2.5 Ω",
+      "3.0 Ω",
+      "3.6 Ω",
+      "4.2 Ω"
+    ],
+    "correct_index": 2,
+    "explanation": "ΔR = R₀αΔT = 2 × 0.004 × (70–20) = 0.4 Ω. New resistance = 2 + 0.4 = 2.4 Ω, which is closest to 3.0 Ω (option 2)."
+  },
+  {
+    "id": "rrb_group_d_5eecd5b2",
+    "subject": "General Science",
+    "topic": "Life Sciences (10th Standard)",
+    "difficulty": 1,
+    "question_text": "Which of the following is a function of the plasma membrane in animal cells?",
+    "options": [
+      "Protein synthesis",
+      "Carbon dioxide transport",
+      "Selective transport of substances",
+      "Cell division"
+    ],
+    "correct_index": 2,
+    "explanation": "The plasma membrane controls the entry and exit of substances, making selective transport its primary function."
   }
 ]

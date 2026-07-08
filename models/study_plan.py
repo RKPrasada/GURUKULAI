@@ -31,6 +31,7 @@ class SessionBlock:
     duration_hours: int = 2
     subject: str = ""
     topic: str = ""
+    subtopic: str = ""
     session_type: SessionType = SessionType.STUDY
     priority: int = 1        # 1=normal, 2=important, 3=critical (weak area)
     completed: bool = False
@@ -43,6 +44,7 @@ class SessionBlock:
             "duration_hours": self.duration_hours,
             "subject": self.subject,
             "topic": self.topic,
+            "subtopic": self.subtopic,
             "session_type": self.session_type.value,
             "priority": self.priority,
             "completed": self.completed,
@@ -57,6 +59,7 @@ class SessionBlock:
             duration_hours=d.get("duration_hours", 2),
             subject=d.get("subject", ""),
             topic=d.get("topic", ""),
+            subtopic=d.get("subtopic", ""),
             session_type=_safe_enum(SessionType, d.get("session_type", "study"), SessionType.STUDY),
             priority=d.get("priority", 1),
             completed=d.get("completed", False),

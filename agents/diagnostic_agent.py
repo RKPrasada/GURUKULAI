@@ -63,6 +63,11 @@ def _subjects_for_exam(exam_key: str) -> list[dict]:
     return result
 
 
+def _normalize_subject(s: str) -> str:
+    """Lowercase, strip punctuation/spaces for fuzzy subject matching."""
+    return "".join(c for c in s.lower() if c.isalnum())
+
+
 def _load_from_question_bank(exam_key: str, subject: str, count: int) -> list[dict]:
     path = _QUESTION_BANK_DIR / f"{exam_key}.json"
     if not path.exists():
@@ -71,9 +76,18 @@ def _load_from_question_bank(exam_key: str, subject: str, count: int) -> list[di
         all_qs = json.loads(path.read_text(encoding="utf-8"))
         if not isinstance(all_qs, list):
             all_qs = all_qs.get("questions", [])
-        # Prefer subject match, fall back to full bank
-        filtered = [q for q in all_qs if q.get("subject", "").lower() == subject.lower()]
-        pool = filtered if len(filtered) >= count else all_qs
+        # Fuzzy subject match: strip punctuation/spaces for comparison
+        # so "General Intelligence & Reasoning" == "General Intelligence and Reasoning"
+        norm_target = _normalize_subject(subject)
+        if norm_target:
+            filtered = [
+                q for q in all_qs
+                if _normalize_subject(q.get("subject", "")) == norm_target
+                or norm_target in _normalize_subject(q.get("subject", ""))
+            ]
+            pool = filtered if len(filtered) >= max(1, count // 2) else all_qs
+        else:
+            pool = all_qs  # empty subject = full bank fetch
         sampled = random.sample(pool, min(count, len(pool)))
         result = []
         for q in sampled:
@@ -272,24 +286,35 @@ class DiagnosticAgent:
         # Correct rounding drift on last batch
         batches[-1]["llm_count"] += llm_total - sum(b["llm_count"] for b in batches)
 
+        # Always serve from the question bank — guaranteed <500ms response.
+        # LLM enrichment runs in the background and deposits fresh questions for
+        # future sessions. We never block the student on LLM calls.
         questions: list[dict] = []
-        with ThreadPoolExecutor(max_workers=len(batches)) as pool:
-            futures = {
-                pool.submit(
-                    _generate_subject_batch,
-                    exam_key, exam_display, b["subject"], b["topics"],
-                    b["count"], b["llm_count"], stage
-                ): b["subject"]
-                for b in batches
-            }
-            for future in as_completed(futures):
-                subject = futures[future]
-                try:
-                    batch = future.result()
-                    questions.extend(batch)
-                    logger.info(f"Generated {len(batch)} questions for {subject}")
-                except Exception as e:
-                    logger.error(f"Batch failed for {subject}: {e}")
+        for b in batches:
+            bank_q = _load_from_question_bank(exam_key, b["subject"], b["count"])
+            questions.extend(bank_q)
+            logger.info(f"Bank: {len(bank_q)}/{b['count']} for {b['subject']}")
+
+        # Background thread: enrich bank for future sessions (never blocks the response)
+        def _enrich_bank_async():
+            with ThreadPoolExecutor(max_workers=len(batches)) as pool:
+                futures = {
+                    pool.submit(
+                        _generate_subject_batch,
+                        exam_key, exam_display, b["subject"], b["topics"],
+                        b["llm_count"], b["llm_count"], stage
+                    ): b["subject"]
+                    for b in batches if b.get("llm_count", 0) > 0
+                }
+                for future in as_completed(futures):
+                    subject = futures[future]
+                    try:
+                        future.result()
+                        logger.info(f"Bank enriched asynchronously for {subject}")
+                    except Exception as e:
+                        logger.warning(f"Async bank enrichment failed for {subject}: {e}")
+
+        threading.Thread(target=_enrich_bank_async, daemon=True, name="diag-enrich").start()
 
         # Deduplicate across all subject batches (LLM sometimes repeats questions,
         # and bank sampling is independent per subject so the same question can appear twice)
@@ -302,10 +327,9 @@ class DiagnosticAgent:
                 unique.append(q)
         questions = unique
 
-        # Pad to question_count if dedup or bank shortfall left us short
+        # Pad if dedup left us short — pull extras from the full bank across all subjects
         if len(questions) < question_count:
-            shortfall = question_count - len(questions)
-            extras = _load_from_question_bank(exam_key, "General", shortfall * 2)
+            extras = _load_from_question_bank(exam_key, "", question_count * 2)
             for q in extras:
                 key = (q.get("question_text_en") or "").strip().lower()[:120]
                 if key and key not in seen:
@@ -313,13 +337,8 @@ class DiagnosticAgent:
                     questions.append(q)
                     if len(questions) >= question_count:
                         break
-            logger.info(
-                f"Padded to {len(questions)}/{question_count} questions after dedup shortfall"
-            )
+            logger.info(f"Bank served {len(questions)}/{question_count} for {exam_key}")
 
-        if not questions:
-            # Last resort: sample directly from question bank
-            questions = _load_from_question_bank(exam_key, "General", question_count)
         if not questions:
             return {"error": "Could not generate questions. Please try again."}
 

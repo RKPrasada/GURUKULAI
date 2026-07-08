@@ -65,6 +65,63 @@ def syllabus_terms(exam: Any) -> set[str]:
     return {term for term in terms if term}
 
 
+def _norm_topic(s: str) -> str:
+    """Lowercase, strip punctuation/spaces for fuzzy topic matching."""
+    return "".join(c for c in s.lower() if c.isalnum())
+
+
+@lru_cache(maxsize=16)
+def _topic_index(exam: str) -> dict[str, tuple[str, str]]:
+    """Build {normalized_name: (subject, canonical_topic)} for an exam.
+
+    Maps BOTH syllabus topics and their subtopics to (subject, topic), so a
+    free-text query like 'Fractions' resolves to ('Mathematics', 'Number System')
+    because 'Fractions' is a subtopic of 'Number System'.
+    """
+    syllabus = load_syllabus(exam)
+    index: dict[str, tuple[str, str]] = {}
+    for subject in syllabus.get("subjects", []):
+        subj_name = subject.get("name", "")
+        for topic in subject.get("topics", []):
+            topic_name = topic.get("name", "")
+            if topic_name:
+                index[_norm_topic(topic_name)] = (subj_name, topic_name)
+            # Subtopics resolve to their parent topic
+            for sub in topic.get("subtopics", []):
+                key = _norm_topic(str(sub))
+                if key and key not in index:
+                    index[key] = (subj_name, topic_name)
+    return index
+
+
+def resolve_topic(exam: Any, topic: str) -> tuple[str, str]:
+    """Resolve a free-text topic to (subject, canonical_topic) using the syllabus.
+
+    Resolution order:
+      1. Exact topic/subtopic name match.
+      2. Fuzzy match — query is a substring of a known name or vice versa.
+      3. Unresolved → ('', topic) so callers can fall back.
+
+    Examples (RRB NTPC):
+      'Fractions'       -> ('Mathematics', 'Number System')
+      'Number System'   -> ('Mathematics', 'Number System')
+      'quadratic eqn'   -> ('Mathematics', 'Algebra')
+    """
+    exam_key = exam_value(exam)
+    index = _topic_index(exam_key)
+    q = _norm_topic(topic)
+    if not q:
+        return ("", topic)
+    # Exact
+    if q in index:
+        return index[q]
+    # Fuzzy: query contains a key or a key contains the query (min 4 chars each)
+    for key, (subj, canon) in index.items():
+        if len(key) >= 4 and len(q) >= 4 and (q in key or key in q):
+            return (subj, canon)
+    return ("", topic)
+
+
 def compact_syllabus(exam: Any) -> str:
     syllabus = load_syllabus(exam_value(exam))
     lines: list[str] = []
@@ -85,6 +142,16 @@ def is_exam_scope_query(text: str, exam: Any) -> bool:
         return True
     for term in syllabus_terms(exam):
         term_words = set(re.findall(r"[a-zA-Z][a-zA-Z&'-]+", term))
-        if term_words and (term in lowered or words & term_words):
+        if not term_words:
+            continue
+        # Exact word match
+        if term in lowered or words & term_words:
+            return True
+        # Singular/plural and stem variants: "fraction" matches "fractions",
+        # "lcm" matches "lcms", etc. — bidirectional substring, min 4 chars.
+        if any(
+            len(w) >= 4 and len(t) >= 4 and (w in t or t in w)
+            for w in words for t in term_words
+        ):
             return True
     return False

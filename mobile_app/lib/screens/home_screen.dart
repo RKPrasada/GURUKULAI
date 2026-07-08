@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/auth_provider.dart';
+import '../services/api_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/helpers.dart';
 import 'diagnostic_screen.dart';
@@ -105,8 +106,35 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 
-class _HomeTab extends StatelessWidget {
+class _HomeTab extends StatefulWidget {
   const _HomeTab();
+
+  @override
+  State<_HomeTab> createState() => _HomeTabState();
+}
+
+class _HomeTabState extends State<_HomeTab> {
+  int _dueCount = 0;
+  List<String> _dueTopics = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _fetchDueReviews();
+  }
+
+  Future<void> _fetchDueReviews() async {
+    try {
+      final data = await ApiService().getDueReviews();
+      final due = (data['due'] as List?)?.cast<Map<String, dynamic>>() ?? [];
+      if (mounted) {
+        setState(() {
+          _dueCount = (data['count'] as int?) ?? 0;
+          _dueTopics = due.map((d) => d['topic'] as String? ?? '').toList();
+        });
+      }
+    } catch (_) {}
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -118,6 +146,38 @@ class _HomeTab extends StatelessWidget {
     return ListView(
       padding: const EdgeInsets.all(16),
       children: [
+        // SM-2 due-reviews banner
+        if (_dueCount > 0) ...[
+          Card(
+            color: const Color(0xFFFFF8E1),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+              side: const BorderSide(color: Colors.amber),
+            ),
+            child: ListTile(
+              leading: const Icon(Icons.notifications_active, color: Colors.amber),
+              title: Text(
+                '$_dueCount topic${_dueCount > 1 ? 's' : ''} due for review today',
+                style: const TextStyle(fontWeight: FontWeight.w700),
+              ),
+              subtitle: Text(
+                _dueTopics.take(3).join(', ') +
+                    (_dueCount > 3 ? ' +${_dueCount - 3} more' : ''),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+              trailing: const Text(
+                'Review →',
+                style: TextStyle(
+                    fontSize: 12, fontWeight: FontWeight.bold, color: Colors.amber),
+              ),
+              onTap: () => Navigator.push(
+                  context, MaterialPageRoute(builder: (_) => const StudyPlanScreen())),
+            ),
+          ),
+          const SizedBox(height: 12),
+        ],
+
         // Welcome card
         Card(
           child: Padding(

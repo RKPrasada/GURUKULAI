@@ -148,6 +148,8 @@ UserAuth  (data/users.jsonl)          StudentProfile  (vidyabot.db SQLite)
 | `data/mock_sessions/` | JSON | Per-student mock session state |
 | `data/progress/{id}/` | JSONL (4 files) | Snapshots, sessions, activity, completions |
 | `data/dabbu/` | JSONL + JSON | Interventions, content keywords, blacklist |
+| `data/practice_banks/{exam}/{topic}__{subtopic}.json` | JSON | NAGA-uploaded practice questions (3-level: exam/topic/subtopic) |
+| `data/notes/{exam}/{topic}__{subtopic}.json` | JSON | NAGA-approved study notes (3-level) |
 
 ### Defensive enum deserialization
 
@@ -313,9 +315,19 @@ Detection pattern: response has `agent === "guardrail"` or `threat` field set.
 
 ---
 
+## SM-2 Auto-Review Banner
+
+When `GET /api/progress/due-reviews` returns `count > 0`, an amber banner appears automatically at the top of the home page:
+
+- **Web** (`HomePage.tsx`): `useEffect` on student load; Bell icon + topic list + "Review now →" link to `/progress`
+- **Flutter** (`home_screen.dart` `_HomeTabState`): `initState()` fetches; amber `Card` with `Icons.notifications_active`; taps to `StudyPlanScreen`
+
+The same data also informs `DabbuAgent._topic_weights()`: overdue SM-2 topics get `weight=4` / `priority=critical` during study plan generation, so they are scheduled first.
+
 ## Flutter Conventions
 
 - Provider pattern for `AuthProvider` + `SessionProvider`
 - `ApiService` singleton, token stored in instance, `flutter_dotenv` for base URL
 - `WeaknessMap` typed Dart model: `.scorePct`, `.topic`, `.subject`
 - Loading states use cycling phrases (1600ms interval) — not a plain spinner
+- `_HomeTab` is a `StatefulWidget` (not `StatelessWidget`) — needed for `initState()` API fetch

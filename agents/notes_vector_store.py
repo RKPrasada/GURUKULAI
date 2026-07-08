@@ -55,9 +55,9 @@ def _init() -> tuple["chromadb.Collection", "SentenceTransformer"]:
     return _col, _embedder
 
 
-def _doc_id(exam: str, topic: str, lang: str) -> str:
+def _doc_id(exam: str, topic: str, lang: str, subtopic: str = "") -> str:
     import hashlib
-    key = f"{exam}|{topic.lower().strip()}|{lang}"
+    key = f"{exam}|{topic.lower().strip()}|{subtopic.lower().strip()}|{lang}"
     return hashlib.md5(key.encode()).hexdigest()[:16]
 
 
@@ -115,6 +115,7 @@ def search(
         return {
             "content":     content,
             "topic":       meta.get("topic", ""),
+            "subtopic":    meta.get("subtopic", ""),
             "subject":     meta.get("subject", ""),
             "exam":        meta.get("exam", ""),
             "lang":        meta.get("lang", "en"),
@@ -133,6 +134,7 @@ def add(
     lang:        str,
     content:     str,
     approved_at: str = "",
+    subtopic:    str = "",
 ) -> bool:
     """
     Add or update an approved note in the vector store.
@@ -140,7 +142,7 @@ def add(
     """
     try:
         col, embedder = _init()
-        doc_id = _doc_id(exam_key, topic, lang)
+        doc_id = _doc_id(exam_key, topic, lang, subtopic)
         vec    = embedder.encode([content]).tolist()
 
         from datetime import datetime, timezone
@@ -152,6 +154,7 @@ def add(
                 "exam":        exam_key,
                 "subject":     subject,
                 "topic":       topic,
+                "subtopic":    subtopic,
                 "lang":        lang,
                 "approved_at": approved_at or datetime.now(timezone.utc).isoformat(),
             }],
@@ -166,11 +169,11 @@ def add(
         return False
 
 
-def remove(exam_key: str, topic: str, lang: str = "en") -> bool:
+def remove(exam_key: str, topic: str, lang: str = "en", subtopic: str = "") -> bool:
     """Remove a note (e.g. when NAGA deletes an approved note)."""
     try:
         col, _ = _init()
-        doc_id = _doc_id(exam_key, topic, lang)
+        doc_id = _doc_id(exam_key, topic, lang, subtopic)
         col.delete(ids=[doc_id])
         logger.info("NotesVectorStore: removed exam=%s topic=%r", exam_key, topic)
         return True

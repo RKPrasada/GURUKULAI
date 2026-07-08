@@ -27,7 +27,7 @@ import logging
 from pathlib import Path
 from typing import Optional
 
-from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException
+from fastapi import APIRouter, BackgroundTasks, Depends, File, Form, HTTPException, UploadFile
 from pydantic import BaseModel
 
 from agents.dabbu_agent import get_dabbu
@@ -66,6 +66,7 @@ class NoteApprovalRequest(BaseModel):
     exam: str
     subject: str
     topic: str
+    subtopic: str = ""
     naga_note: str = ""
 
 
@@ -310,7 +311,7 @@ async def approve_note(req: NoteApprovalRequest, auth_id: str = Depends(require_
     from models.mentor import NotificationType
     from api.routes.mentor import _create_notification
 
-    ok = _approve(req.exam, req.subject, req.topic, naga_note=req.naga_note)
+    ok = _approve(req.exam, req.subject, req.topic, naga_note=req.naga_note, subtopic=req.subtopic)
     if not ok:
         raise HTTPException(status_code=404, detail="Note not found")
 
@@ -338,13 +339,114 @@ async def reject_note(
     """NAGA rejects a note — immediately triggers LLM regeneration in the background."""
     _require_naga(auth_id)
     from scripts.notes_generation import reject_note as _reject, regenerate_note as _regen
-    ok = _reject(req.exam, req.subject, req.topic, reason=req.naga_note)
+    ok = _reject(req.exam, req.subject, req.topic, reason=req.naga_note, subtopic=req.subtopic)
     if not ok:
         raise HTTPException(status_code=404, detail="Note not found")
     # Kick off a fresh LLM generation; the new version will appear in Approvals
     background_tasks.add_task(_regen, req.exam, req.subject, req.topic)
     return {"status": "rejected", "topic": req.topic, "reason": req.naga_note,
             "regenerating": True}
+
+
+# ── NAGA content upload (PDF/DOCX → notes + questions) ──────────────────────────
+
+MAX_UPLOAD_BYTES = 15 * 1024 * 1024   # 15 MB
+
+
+@router.get("/naga/syllabus/{exam_key}")
+async def naga_syllabus(exam_key: str, auth_id: str = Depends(require_auth)):
+    """Full subject/topic/subtopic tree for any exam — drives the upload selectors."""
+    _require_naga(auth_id)
+    from agents.exam_utils import load_syllabus, exam_value
+    syllabus = load_syllabus(exam_value(exam_key))
+    subjects = [
+        {
+            "name": s["name"],
+            "topics": [
+                {"name": t["name"], "subtopics": [str(st) for st in t.get("subtopics", [])]}
+                for t in s.get("topics", [])
+            ],
+        }
+        for s in syllabus.get("subjects", [])
+    ]
+    return {"exam_key": exam_value(exam_key), "subjects": subjects}
+
+
+@router.post("/naga/upload-content")
+async def upload_content(
+    file: UploadFile = File(...),
+    exam: str = Form(...),
+    subject: str = Form(...),
+    topic: str = Form(...),
+    subtopic: str = Form(""),
+    auth_id: str = Depends(require_auth),
+):
+    """
+    NAGA uploads one PDF/DOCX for a subtopic. The LLM extracts study notes +
+    practice questions; notes go to the knowledge base (auto-approved) and
+    questions into the subtopic practice bank. Retriable: on LLM/rate-limit
+    failure returns 503 so the dashboard can offer a Retry button.
+    """
+    _require_naga(auth_id)
+
+    data = await file.read()
+    if not data:
+        raise HTTPException(status_code=400, detail="Empty file.")
+    if len(data) > MAX_UPLOAD_BYTES:
+        raise HTTPException(status_code=413, detail="File too large (max 15 MB).")
+
+    from agents.content_extractor import (
+        extract_text_from_file, extract_structured, ExtractionError,
+    )
+
+    # 1. Extract raw text (fast, local)
+    try:
+        text = extract_text_from_file(file.filename or "", data)
+    except ExtractionError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+    # 2. LLM structuring (the retriable step)
+    try:
+        result = extract_structured(text, exam, subject, topic, subtopic)
+    except ExtractionError as e:
+        # 503 → transient (rate-limit); frontend shows Retry
+        raise HTTPException(status_code=503, detail=str(e))
+
+    notes = result["notes"]
+    questions = result["questions"]
+
+    # 3. Persist — notes auto-approved into KB, questions into subtopic bank
+    notes_saved = False
+    if notes:
+        from scripts.notes_generation import save_note
+        notes_saved = save_note(
+            exam=exam, subject=subject, topic=topic, subtopic=subtopic,
+            content=notes, source="naga_upload", status="approved",
+        )
+
+    questions_added = 0
+    if questions:
+        from agents.practice_bank import get_practice_bank
+        questions_added = get_practice_bank().add_questions(
+            exam_key=exam, subject=subject, topic=topic, subtopic=subtopic,
+            questions=questions,
+        )
+
+    scope = f"{topic} → {subtopic}" if subtopic else topic
+    logger.info("NAGA upload: %s — notes=%s questions=%d", scope, notes_saved, questions_added)
+    return {
+        "status": "ok",
+        "exam": exam, "subject": subject, "topic": topic, "subtopic": subtopic,
+        "notes_saved": notes_saved,
+        "notes_chars": len(notes),
+        "questions_extracted": len(questions),
+        "questions_added": questions_added,
+        "message": (
+            f"Saved notes ({len(notes)} chars) and {questions_added} questions for {scope}."
+            if notes_saved or questions_added
+            else "Nothing was saved — the document produced no usable content."
+        ),
+    }
 
 
 # ── NAGA YouTube video moderation routes ───────────────────────────────────────

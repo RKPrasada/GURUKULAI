@@ -120,9 +120,10 @@ class ApiService {
   }
 
   // Assessment endpoints
-  async startAssessment(difficulty: string) {
+  async startAssessment(difficulty: string, topic?: string) {
     return this.client.post('/api/session/assessment/start', {
       difficulty,
+      ...(topic ? { topic } : {}),
     })
   }
 
@@ -288,11 +289,11 @@ class ApiService {
   async dabbuRejectPlan(studentId: string, reason = '') {
     return this.client.post('/api/dabbu/naga/reject-plan', { student_id: studentId, reason })
   }
-  async dabbuApproveNote(exam: string, subject: string, topic: string, nagaNote = '') {
-    return this.client.post('/api/dabbu/naga/notes/approve', { exam, subject, topic, naga_note: nagaNote })
+  async dabbuApproveNote(exam: string, subject: string, topic: string, nagaNote = '', subtopic = '') {
+    return this.client.post('/api/dabbu/naga/notes/approve', { exam, subject, topic, subtopic, naga_note: nagaNote })
   }
-  async dabbuRejectNote(exam: string, subject: string, topic: string, reason = '') {
-    return this.client.post('/api/dabbu/naga/notes/reject', { exam, subject, topic, naga_note: reason })
+  async dabbuRejectNote(exam: string, subject: string, topic: string, reason = '', subtopic = '') {
+    return this.client.post('/api/dabbu/naga/notes/reject', { exam, subject, topic, subtopic, naga_note: reason })
   }
   async dabbuApproveVideo(videoId: string) {
     return this.client.post('/api/dabbu/naga/videos/approve', { video_id: videoId })
@@ -311,6 +312,35 @@ class ApiService {
   }
   async removeContentKeyword(word: string, tier: 'blocked' | 'flagged') {
     return this.client.post('/api/dabbu/naga/keywords/remove', { word, tier })
+  }
+  async getKbStats() {
+    return this.client.get('/api/dabbu/knowledge-base/stats')
+  }
+  async getPracticeSyllabus() {
+    return this.client.get('/api/practice/syllabus')
+  }
+  async getNagaSyllabus(examKey: string) {
+    return this.client.get(`/api/dabbu/naga/syllabus/${examKey}`)
+  }
+  async uploadNagaContent(file: File, exam: string, subject: string, topic: string, subtopic: string) {
+    const form = new FormData()
+    form.append('file', file)
+    form.append('exam', exam)
+    form.append('subject', subject)
+    form.append('topic', topic)
+    form.append('subtopic', subtopic)
+    return this.client.post('/api/dabbu/naga/upload-content', form, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+    })
+  }
+  async startPracticeSession(examKey: string, subject: string, topic: string, subtopic: string, difficulty: string, count = 10) {
+    return this.client.post('/api/practice/start', { exam_key: examKey, subject, topic, subtopic, count, difficulty })
+  }
+  async morePracticeQuestions(sessionId: string) {
+    return this.client.post('/api/practice/more', { session_id: sessionId })
+  }
+  async submitPracticeSession(sessionId: string, answers: number[]) {
+    return this.client.post('/api/practice/submit', { session_id: sessionId, answers })
   }
 
   // Progress tracking
@@ -382,6 +412,9 @@ class ApiService {
   async triggerMockGeneration(examKey: string, scheduledDate?: string) {
     const params = scheduledDate ? `?scheduled_date=${scheduledDate}` : ''
     return this.client.post(`/api/mock/generate/${examKey}${params}`)
+  }
+  async getDueReviews() {
+    return this.client.get('/api/progress/due-reviews')
   }
 }
 

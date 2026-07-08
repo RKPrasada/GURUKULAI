@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import api from '@/services/api'
 import { MessageSquare, Calendar, Users, Clock, CheckCircle, X, Video, Plus, ShieldAlert, TrendingUp, AlertTriangle, Edit2 } from 'lucide-react'
+import NagaContentUpload from '@/components/NagaContentUpload'
 
 interface DashboardStats {
   pending_questions: number
@@ -37,7 +38,7 @@ interface MeetingRequest {
 const SUBJECTS = ['Mathematics', 'General Intelligence', 'General Awareness', 'Physics', 'Chemistry', 'Biology', 'English', 'History', 'Geography']
 
 export default function NagaDashboard() {
-  const [tab, setTab] = useState<'overview' | 'questions' | 'meetings' | 'schedule' | 'student_schedules' | 'approvals'>('overview')
+  const [tab, setTab] = useState<'overview' | 'questions' | 'meetings' | 'schedule' | 'student_schedules' | 'approvals' | 'upload'>('overview')
   const [stats, setStats] = useState<DashboardStats | null>(null)
   const [questions, setQuestions] = useState<Question[]>([])
   const [meetings, setMeetings] = useState<MeetingRequest[]>([])
@@ -45,7 +46,7 @@ export default function NagaDashboard() {
 
   // Approvals tab state
   interface PendingPlan { type: 'study_plan'; student_id: string; plan_id: string; exam_target: string; duration_months: number; diagnostic_score: number; weak_topics_count: number; total_study_hours: number; created_at: string }
-  interface PendingNote { type: 'note'; exam: string; subject: string; topic: string; status: string; created_at: string; preview: string }
+  interface PendingNote { type: 'note'; exam: string; subject: string; topic: string; subtopic?: string; status: string; created_at: string; preview: string; content?: string; requested_by?: string; generated_at?: string }
   interface FlaggedVideo { type: 'video'; video_id: string; title: string; channel: string; url: string; topic: string; flag_reason: string; status: string }
   const [approvals, setApprovals] = useState<{ study_plans: PendingPlan[]; notes: PendingNote[]; videos: FlaggedVideo[]; totals: { total: number } } | null>(null)
   const [approvalsLoading, setApprovalsLoading] = useState(false)
@@ -96,7 +97,7 @@ export default function NagaDashboard() {
 
   const loadKbStats = async () => {
     try {
-      const res = await api.get('/api/dabbu/knowledge-base/stats')
+      const res = await api.getKbStats()
       setKbStats(res.data)
     } catch { /* non-critical */ }
   }
@@ -191,6 +192,7 @@ export default function NagaDashboard() {
     { id: 'approvals', label: `✅ Dabbu Approvals${approvals ? ` (${approvals.totals.total + interventions.length})` : ''}` },
     { id: 'schedule', label: '📅 Schedule Class' },
     { id: 'student_schedules', label: '🗓️ Student Schedules' },
+    { id: 'upload', label: '📤 Upload Content' },
   ]
 
   return (
@@ -566,7 +568,7 @@ export default function NagaDashboard() {
                     />
                     <div className="flex gap-2 flex-wrap items-center">
                       <button onClick={async () => {
-                        await api.dabbuApproveNote(note.exam, note.subject, note.topic, noteRejectReasons[key] ?? '')
+                        await api.dabbuApproveNote(note.exam, note.subject, note.topic, noteRejectReasons[key] ?? '', note.subtopic ?? '')
                         setApprovalsMsg(`Notes for '${note.topic}' approved ✓ — published to Knowledge Base`)
                         loadApprovals()
                         loadKbStats()
@@ -577,7 +579,7 @@ export default function NagaDashboard() {
                         </span>
                       )}
                       <button onClick={async () => {
-                        await api.dabbuRejectNote(note.exam, note.subject, note.topic, noteRejectReasons[key] ?? '')
+                        await api.dabbuRejectNote(note.exam, note.subject, note.topic, noteRejectReasons[key] ?? '', note.subtopic ?? '')
                         setApprovalsMsg(`Notes for '${note.topic}' rejected — regenerating improved version in background…`)
                         loadApprovals()
                       }} className="bg-red-100 hover:bg-red-200 text-red-700 text-sm font-semibold px-4 py-1.5 rounded-lg transition">Reject &amp; Regenerate</button>
@@ -874,6 +876,9 @@ export default function NagaDashboard() {
           )}
         </div>
       )}
+
+      {/* Upload Content */}
+      {tab === 'upload' && <NagaContentUpload />}
     </div>
   )
 }

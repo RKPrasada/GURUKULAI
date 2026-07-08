@@ -1,11 +1,11 @@
 import { useState, useRef, useEffect } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { useSearchParams, useNavigate } from 'react-router-dom'
 import { useAuthStore } from '@/store/auth'
 import api from '@/services/api'
 import MarkdownRenderer from '@/components/MarkdownRenderer'
 import {
   Search, BookOpen, ExternalLink, CheckCircle, Save, X,
-  Loader2, Lightbulb, ChevronRight, BarChart2,
+  Loader2, Lightbulb, ChevronRight, BarChart2, Zap,
 } from 'lucide-react'
 
 interface Message {
@@ -28,11 +28,12 @@ const LOADING_PHRASES = [
   'Checking exam tips…',
 ]
 
-function NoteCard({ msg, onConfirm, onCancel, actionLoading }: {
+function NoteCard({ msg, onConfirm, onCancel, actionLoading, onPractice }: {
   msg: Message
   onConfirm: (token: string) => void
   onCancel: (token: string) => void
   actionLoading: string | null
+  onPractice: (topic: string) => void
 }) {
   if (msg.loading) {
     return (
@@ -110,26 +111,27 @@ function NoteCard({ msg, onConfirm, onCancel, actionLoading }: {
         </p>
       )}
 
-      {/* Videos */}
-      {msg.videos && msg.videos.length > 0 && (
+      {/* Videos — only shown after NAGA approval */}
+      {msg.videos !== undefined && (
         <div className="border-t border-gray-100 dark:border-gray-700 px-4 py-3">
           <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 mb-2 flex items-center gap-1">
             📺 Related Videos
           </p>
-          <div className="space-y-1.5">
-            {msg.videos.map((v, i) => (
-              <a
-                key={i}
-                href={v.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-xs text-primary hover:underline"
-              >
-                <ExternalLink size={11} className="shrink-0" />
-                {v.title}
-              </a>
-            ))}
-          </div>
+          {msg.videos.length > 0 ? (
+            <div className="space-y-1.5">
+              {msg.videos.map((v, i) => (
+                <a key={i} href={v.url} target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-xs text-primary hover:underline">
+                  <ExternalLink size={11} className="shrink-0" />
+                  {v.title}
+                </a>
+              ))}
+            </div>
+          ) : (
+            <p className="text-xs text-gray-400 italic">
+              Videos queued for NAGA review — will appear here once approved.
+            </p>
+          )}
         </div>
       )}
       {msg.driveUrl && (
@@ -140,11 +142,24 @@ function NoteCard({ msg, onConfirm, onCancel, actionLoading }: {
           </a>
         </div>
       )}
+
+      {/* Practice button — appears when notes are loaded */}
+      {msg.notes && !msg.loading && (
+        <div className="border-t border-gray-100 dark:border-gray-700 px-4 py-3">
+          <button
+            onClick={() => onPractice(msg.topic)}
+            className="inline-flex items-center gap-2 bg-primary/10 hover:bg-primary/20 text-primary text-sm font-semibold px-4 py-2 rounded-lg transition"
+          >
+            <Zap size={14} /> Practice questions on {msg.topic}
+          </button>
+        </div>
+      )}
     </div>
   )
 }
 
 export default function StudyPage() {
+  const navigate = useNavigate()
   const student = useAuthStore((s) => s.student)
   const [searchParams] = useSearchParams()
   const initialTopic = searchParams.get('topic') || ''
@@ -152,7 +167,7 @@ export default function StudyPage() {
   const [query, setQuery] = useState(initialTopic)
   const [messages, setMessages] = useState<Message[]>([])
   const [actionLoading, setActionLoading] = useState<string | null>(null)
-  const hasSearchedRef = useRef(false)
+  const lastFetchedRef = useRef('')
   const bottomRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -192,8 +207,11 @@ export default function StudyPage() {
   }
 
   useEffect(() => {
-    if (initialTopic && !hasSearchedRef.current) {
-      hasSearchedRef.current = true
+    // Auto-fetch when arriving with ?topic= (from study plan or notes links),
+    // and re-fetch if the topic changes while already on the page.
+    if (initialTopic && lastFetchedRef.current !== initialTopic) {
+      lastFetchedRef.current = initialTopic
+      setQuery(initialTopic)
       fetchNotes(initialTopic)
     }
   }, [initialTopic])
@@ -349,6 +367,7 @@ export default function StudyPage() {
               actionLoading={actionLoading}
               onConfirm={(token) => handleConfirm(msg.id, token)}
               onCancel={(token) => handleCancel(msg.id, token)}
+              onPractice={(topic) => navigate(`/test?topic=${encodeURIComponent(topic)}`)}
             />
           ))
         )}

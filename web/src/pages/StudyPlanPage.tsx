@@ -16,6 +16,7 @@ interface SessionBlock {
   duration_hours: number
   subject: string
   topic: string
+  subtopic?: string
   session_type: 'study' | 'practice' | 'mock' | 'revision' | 'rest'
   priority: 1 | 2 | 3
   completed: boolean
@@ -103,6 +104,15 @@ function BlockCard({ block, onToggleDone }: { block: SessionBlock; onToggleDone:
   const startLabel = fmt12h(block.start_hour)
   const endLabel   = fmt12h(block.start_hour + block.duration_hours)
 
+  const isStudy = block.session_type === 'study' || block.session_type === 'revision'
+  const isPractice = block.session_type === 'practice'
+  const actionable = (isStudy || isPractice) && !!block.topic
+
+  const notesHref = `/study?topic=${encodeURIComponent(block.subtopic || block.topic)}`
+  const practiceParams = new URLSearchParams({ subject: block.subject, topic: block.topic })
+  if (block.subtopic) practiceParams.set('subtopic', block.subtopic)
+  const practiceHref = `/test?${practiceParams.toString()}`
+
   return (
     <div className="flex items-stretch gap-0 group">
       {/* Time column */}
@@ -128,11 +138,33 @@ function BlockCard({ block, onToggleDone }: { block: SessionBlock; onToggleDone:
               {block.priority === 2 && <AlertCircle size={11} className="text-amber-500" aria-label="Weak area"/>}
               {block.rescheduled && <span className="text-xs text-gray-400 italic">rescheduled</span>}
             </div>
-            {block.topic && (
-              <p className="text-sm font-semibold text-gray-900 dark:text-white leading-tight">{block.topic}</p>
+            {/* Subtopic is the focus; topic + subject give context */}
+            {(block.subtopic || block.topic) && (
+              <p className="text-sm font-semibold text-gray-900 dark:text-white leading-tight">
+                {block.subtopic || block.topic}
+              </p>
             )}
             {block.subject && (
-              <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{block.subject}</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
+                {block.subject}{block.subtopic && block.topic ? ` · ${block.topic}` : ''}
+              </p>
+            )}
+            {/* Action links */}
+            {actionable && (
+              <div className="flex gap-3 mt-2">
+                {isStudy && (
+                  <a href={notesHref}
+                    className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:underline">
+                    <BookOpen size={12} /> Study notes
+                  </a>
+                )}
+                {(isPractice || isStudy) && (
+                  <a href={practiceHref}
+                    className="inline-flex items-center gap-1 text-xs font-semibold text-fuchsia-600 dark:text-fuchsia-400 hover:underline">
+                    <FlaskConical size={12} /> Practice
+                  </a>
+                )}
+              </div>
             )}
           </div>
           <button

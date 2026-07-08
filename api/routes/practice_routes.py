@@ -37,12 +37,21 @@ class StartPracticeRequest(BaseModel):
     exam_key: str
     subject: str
     topic: str
-    count: int = 20
+    subtopic: str = ""
+    count: int = 10
+    difficulty: str = "adaptive"   # easy | medium | hard | adaptive
 
 
 class SubmitPracticeRequest(BaseModel):
     session_id: str
     answers: list[int]   # -1 = not attempted
+
+
+class MorePracticeRequest(BaseModel):
+    session_id: str
+
+
+SESSION_QUESTION_CAP = 100   # max questions a single session can grow to
 
 
 # ── Routes ──────────────────────────────────────────────────────────────────────
@@ -65,13 +74,16 @@ async def start_practice(
         exam_key=req.exam_key,
         subject=req.subject,
         topic=req.topic,
+        subtopic=req.subtopic,
         count=req.count,
+        difficulty=req.difficulty,
     )
 
+    scope = f"{req.topic} → {req.subtopic}" if req.subtopic else req.topic
     if not questions:
         raise HTTPException(
             status_code=503,
-            detail=f"No questions available for {req.subject} → {req.topic}. Try again shortly.",
+            detail=f"No questions available for {scope}. Try again shortly.",
         )
 
     session_id = str(uuid.uuid4())
@@ -80,7 +92,10 @@ async def start_practice(
         "exam_key": req.exam_key,
         "subject": req.subject,
         "topic": req.topic,
+        "subtopic": req.subtopic,
+        "difficulty": req.difficulty,
         "questions": questions,
+        "seen_ids": {q["question_id"] for q in questions},
         "started_at": datetime.utcnow().isoformat(),
     }
 
@@ -89,8 +104,55 @@ async def start_practice(
         "exam_key": req.exam_key,
         "subject": req.subject,
         "topic": req.topic,
+        "subtopic": req.subtopic,
         "questions": questions,
         "total": len(questions),
+        "cap": SESSION_QUESTION_CAP,
+    }
+
+
+@router.post("/more")
+async def more_practice(req: MorePracticeRequest, auth_id: str = Depends(require_auth)):
+    """
+    Fetch the next batch of 10 questions for an ongoing session.
+    Skips questions already shown, caps the session at SESSION_QUESTION_CAP (100).
+    """
+    session = _practice_sessions.get(req.session_id)
+    if not session:
+        raise HTTPException(status_code=404, detail="Practice session not found or expired")
+    if session["student_id"] != auth_id:
+        raise HTTPException(status_code=403, detail="Session belongs to a different student")
+
+    seen = session.get("seen_ids", set())
+    already = len(session["questions"])
+    remaining = SESSION_QUESTION_CAP - already
+    if remaining <= 0:
+        return {"questions": [], "total": already, "cap_reached": True}
+
+    batch = min(10, remaining)
+    mgr = get_practice_bank()
+    new_qs = mgr.get_questions(
+        exam_key=session["exam_key"],
+        subject=session["subject"],
+        topic=session["topic"],
+        subtopic=session.get("subtopic", ""),
+        count=batch,
+        difficulty=session.get("difficulty", "adaptive"),
+        exclude_ids=seen,
+    )
+    if not new_qs:
+        # Bank exhausted for this subtopic (no unseen questions available yet)
+        return {"questions": [], "total": already, "exhausted": True}
+
+    session["questions"].extend(new_qs)
+    seen.update(q["question_id"] for q in new_qs)
+    session["seen_ids"] = seen
+
+    total = len(session["questions"])
+    return {
+        "questions": new_qs,
+        "total": total,
+        "cap_reached": total >= SESSION_QUESTION_CAP,
     }
 
 
@@ -204,6 +266,33 @@ async def submit_practice(
             else f"{correct}/{len(questions)} on {session['topic']} — keep practising, you'll get there."
         ),
     }
+
+
+@router.get("/syllabus")
+async def get_practice_syllabus(auth_id: str = Depends(require_auth)):
+    """Return subjects and topics for the student's exam — drives the practice selector UI."""
+    from api.main import _students
+    from agents.exam_utils import exam_value
+    student = _students.get(auth_id)
+    if not student:
+        raise HTTPException(status_code=404, detail="Student not found")
+
+    exam_key = exam_value(student.exam_target)
+    syllabus = load_syllabus(exam_key)
+    subjects = [
+        {
+            "name": s["name"],
+            "topics": [
+                {
+                    "name": t["name"],
+                    "subtopics": [str(st) for st in t.get("subtopics", [])],
+                }
+                for t in s.get("topics", [])
+            ],
+        }
+        for s in syllabus.get("subjects", [])
+    ]
+    return {"exam_key": exam_key, "subjects": subjects}
 
 
 @router.get("/banks/{exam_key}")

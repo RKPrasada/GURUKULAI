@@ -217,6 +217,40 @@ def reject_video(video_id: str) -> bool:
     return _update_flagged_status(video_id, "blocked")
 
 
+def naga_gate_videos(videos: list[dict], topic: str = "") -> list[dict]:
+    """
+    All videos go through NAGA before students see them.
+    - Videos already NAGA-approved → returned (shown to student).
+    - New videos → queued for NAGA, not shown yet.
+    - Blocked/blacklisted → dropped silently.
+    Returns the subset that NAGA has already approved.
+    """
+    all_reviewed = list_flagged_videos(status="all")
+    approved_ids = {v.get("video_id") for v in all_reviewed if v.get("status") == "approved"}
+    known_ids = {v.get("video_id") for v in all_reviewed}
+
+    for video in videos:
+        vid_id = video.get("video_id", "")
+        if not vid_id or is_blacklisted(video):
+            continue
+        result = classify_video(video)
+        if result["verdict"] == "BLOCKED":
+            if vid_id not in known_ids:
+                _append_flagged({**video, "topic": topic, "flag_reason": result["reason"], "status": "blocked"})
+            continue
+        # Safe or flagged — queue for NAGA if not already known
+        if vid_id not in known_ids:
+            _append_flagged({**video, "topic": topic, "flag_reason": "Pending NAGA review", "status": "pending"})
+            if result["verdict"] == "FLAGGED":
+                try:
+                    from agents.dabbu_agent import get_dabbu
+                    get_dabbu().submit_video_for_review(video=video, topic=topic, flag_reason=result["reason"])
+                except Exception:
+                    pass
+
+    return [v for v in videos if v.get("video_id") in approved_ids]
+
+
 def blacklist_channel(channel_name: str) -> None:
     with _lock:
         bl = _load_blacklist()

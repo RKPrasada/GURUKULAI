@@ -99,40 +99,76 @@ class AssessmentAgent:
         topic = topic or "General"
         exam_key = exam_value(student.exam_target)
 
+        # ── 1. Serve from topic practice bank immediately ─────────────────────
+        # PracticeBankManager handles bank-first + async LLM enrichment internally.
+        # This is always fast (<100ms) after the first-ever call for a topic.
+        if topic != "General":
+            try:
+                from agents.practice_bank import get_practice_bank
+                # Infer subject from syllabus for this topic
+                subject = self._find_subject(exam_key, topic)
+                bank_qs = get_practice_bank().get_questions(exam_key, subject, topic, count=n)
+                if bank_qs:
+                    # Filter by difficulty if not adaptive
+                    if requested_difficulty != "adaptive":
+                        filtered = [q for q in bank_qs if q.get("difficulty") == difficulty]
+                        bank_qs = filtered if len(filtered) >= n // 2 else bank_qs
+                    return [Question.from_dict({**q, "exam": exam_key}) for q in bank_qs[:n]]
+            except Exception as e:
+                logger.warning("Practice bank unavailable (%s) — falling back to LLM", e)
+
+        # ── 2. Fallback: question bank for "General" or if practice bank fails ─
+        fallback = _fallback_questions(exam_key, topic if topic != "General" else None, difficulty, n)
+        if fallback:
+            return fallback
+
+        # ── 3. Last resort: LLM (slow, only if bank truly empty) ─────────────
         prompt = (
             f"Exam: {exam_name(exam_key)} ({exam_key})\n"
             f"Approved syllabus outline:\n{compact_syllabus(exam_key)}\n\n"
             f"Generate {n} MCQs on '{topic}' for this exam only. "
+            f"ALL questions must be strictly about '{topic}'. "
             f"Difficulty level: {difficulty} (1=easy,2=medium,3=hard). "
             f"If the topic is outside the approved syllabus, return JSON with an empty questions array. "
             f"Return JSON only."
         )
         raw = call_gemini(prompt, SYSTEM_PROMPT.replace("{n}", str(n)))
         try:
-            clean_raw = raw.strip()
-            if clean_raw.startswith("```json"):
-                clean_raw = clean_raw[7:]
-            if clean_raw.startswith("```"):
-                clean_raw = clean_raw[3:]
+            clean_raw = (raw or "").strip()
+            for fence in ("```json", "```"):
+                if clean_raw.startswith(fence):
+                    clean_raw = clean_raw[len(fence):]
             if clean_raw.endswith("```"):
                 clean_raw = clean_raw[:-3]
 
             data = json.loads(clean_raw.strip())
             q_list = data.get("questions") or data.get("MCQs") or data.get("mcqs") or []
-
             if not q_list:
-                raise ValueError("Parsed JSON contains no questions")
+                raise ValueError("No questions in LLM response")
 
             q_list, rejected = filter_questions(q_list, source=f"LLM-serve/assessment/{exam_key}")
             if rejected:
-                logger.warning(f"Filtered {len(rejected)} placeholder questions for {topic}")
+                logger.warning("Filtered %d placeholder questions for %s", len(rejected), topic)
             if not q_list:
                 raise ValueError("All LLM questions failed validation")
 
             return [Question.from_dict({**q, "exam": exam_key}) for q in q_list]
         except Exception as e:
-            logger.error(f"Failed to parse MCQ JSON from Gemini: {e}")
+            logger.error("generate_questions LLM failed for %s: %s", topic, e)
             return []
+
+    def _find_subject(self, exam_key: str, topic: str) -> str:
+        """Return the syllabus subject that owns this topic, or 'General'."""
+        try:
+            from agents.exam_utils import load_syllabus
+            syllabus = load_syllabus(exam_key)
+            for subj in syllabus.get("subjects", []):
+                for t in subj.get("topics", []):
+                    if t.get("name", "").lower() == topic.lower():
+                        return subj["name"]
+        except Exception:
+            pass
+        return "General"
 
     def start_session(self, student: StudentProfile, topic: str | None = None, requested_difficulty: str = "adaptive") -> dict:
         if topic and not is_exam_scope_query(topic, student.exam_target):

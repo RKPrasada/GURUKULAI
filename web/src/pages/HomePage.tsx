@@ -1,9 +1,11 @@
 import { useNavigate } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 import { useAuthStore } from '@/store/auth'
+import api from '@/services/api'
 import {
   Target, BookOpen, PenLine, ClipboardList,
   MessagesSquare, CalendarDays, BarChart3,
-  Flame, CheckCircle2, AlertTriangle, ChevronRight,
+  Flame, CheckCircle2, AlertTriangle, ChevronRight, Bell,
 } from 'lucide-react'
 
 const EXAM_LABEL: Record<string, string> = {
@@ -58,6 +60,12 @@ export default function HomePage() {
   const examLabel = EXAM_LABEL[student?.exam_target ?? ''] ?? student?.exam_target?.toUpperCase() ?? ''
   const isHindi = student?.preferred_language === 'hi'
   const diagnosticDone = student?.diagnostic_done ?? false
+
+  const [dueReviews, setDueReviews] = useState<{count: number; due: {subject: string; topic: string}[]}>({count: 0, due: []})
+  useEffect(() => {
+    if (!student) return
+    api.getDueReviews().then(r => setDueReviews(r.data)).catch(() => {})
+  }, [student])
 
   const totalAttempted = student?.total_questions_attempted ?? 0
   const streakDays = student?.study_streak_days ?? 0
@@ -114,6 +122,22 @@ export default function HomePage() {
 
   return (
     <div className="space-y-6">
+      {/* SM-2 due-reviews banner — shown automatically when Dabbu detects overdue topics */}
+      {dueReviews.count > 0 && (
+        <a href="/progress" className="flex items-center gap-3 bg-amber-50 dark:bg-amber-900/20 border border-amber-300 dark:border-amber-700 rounded-xl px-4 py-3 hover:bg-amber-100 dark:hover:bg-amber-900/30 transition">
+          <Bell size={18} className="text-amber-600 dark:text-amber-400 shrink-0" />
+          <div className="flex-1 min-w-0">
+            <p className="text-sm font-semibold text-amber-800 dark:text-amber-300">
+              {dueReviews.count} topic{dueReviews.count > 1 ? 's' : ''} due for review today
+            </p>
+            <p className="text-xs text-amber-600 dark:text-amber-400 truncate">
+              {dueReviews.due.slice(0, 3).map(d => d.topic).join(', ')}{dueReviews.count > 3 ? ` +${dueReviews.count - 3} more` : ''}
+            </p>
+          </div>
+          <span className="text-xs font-semibold text-amber-700 dark:text-amber-300 shrink-0">Review now →</span>
+        </a>
+      )}
+
       {/* Welcome banner */}
       <div className="bg-gradient-to-br from-primary to-primary/70 rounded-2xl p-6 text-white">
         <p className="text-sm font-medium opacity-80 mb-1">{examLabel} Preparation</p>

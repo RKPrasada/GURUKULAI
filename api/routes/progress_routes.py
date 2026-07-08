@@ -103,6 +103,26 @@ def _get_active_plan(student_id: str) -> Optional[dict]:
 
 # ── Student routes ─────────────────────────────────────────────────────────────
 
+@router.get("/due-reviews")
+async def get_due_reviews(auth_id: str = Depends(require_auth)):
+    """Return SM-2 topics whose review is due today — drives the home-page banner."""
+    from api.main import _students
+    from datetime import date
+    student = _students.get(auth_id)
+    if not student:
+        raise HTTPException(status_code=404, detail="Student not found")
+    today = date.today()
+    due = []
+    for w in student.weakness_map:
+        if not getattr(w, "next_review_date", None):
+            continue
+        review_date = w.next_review_date.date() if hasattr(w.next_review_date, "date") else w.next_review_date
+        if review_date <= today:
+            due.append({"subject": w.subject, "topic": w.topic, "score_pct": round(w.score_pct * 100, 1)})
+    due.sort(key=lambda x: x["score_pct"])  # weakest first
+    return {"count": len(due), "due": due}
+
+
 @router.get("")
 async def get_progress(auth_id: str = Depends(require_auth)):
     """Full progress data for the authenticated student."""

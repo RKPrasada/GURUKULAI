@@ -103,6 +103,7 @@ Login: `username=naga` / `password=naga@vidyabot` (auto-seeded on startup)
 
 ### 6. Progress Tracking
 
+- **SM-2 auto-review banner** — if any SM-2 topics are due today, an amber banner appears automatically on the home page (web + mobile) listing the overdue topics. No action needed — Dabbu also boosts these topics to the top of your next study plan.
 - **60-day streak heatmap** — daily activity calendar
 - **SM-2 spaced repetition** — ease factor, interval days, next review date per topic
 - **Week-over-week history** — triple bar chart: Initial score / Current score / Target (80%)

@@ -138,9 +138,17 @@ Skill context is injected by the orchestrator via `skill_loader.load_for_topic()
 
 **Progress routes:** `api/routes/progress_routes.py`
 - `GET /api/progress` — full progress data for current student
+- `GET /api/progress/due-reviews` — SM-2 topics with `next_review_date <= today`; drives home-page banner
 - `POST /api/progress/snapshot` — force a snapshot
 - `POST /api/progress/dabbu-analyze` — trigger Dabbu analysis → saves intervention if severity medium+
 - `GET /api/progress/interventions` — student's own interventions (FYI)
+
+**SM-2 auto-review banner:**
+- Web `HomePage.tsx` calls `GET /api/progress/due-reviews` on every load; shows amber bell banner listing due topics
+- Flutter `_HomeTab` (`home_screen.dart`) does the same via `getDueReviews()` in `initState()`
+- Both link to the Study Plan page/screen
+- Manual "Ask Dabbu to Review" button on ProgressPage still available anytime
+- `DabbuAgent._topic_weights()` boosts SM-2 overdue topics to `weight=4` / `priority=critical` during plan generation
 
 **Intervention routes (intervention_router at /api/dabbu):**
 - `GET /api/dabbu/naga/interventions?status=pending`
@@ -221,15 +229,17 @@ Questions come from Gemini/OpenRouter first; `data/question_banks/{exam}.json` i
 - `MockTestPage.tsx` — fully rebuilt: landing / test / result views; countdown timer auto-submit; section tabs; question navigator grid; autosave every 30s; negative marking result card
 - `NagaDashboard.tsx` — Approvals tab expanded: progress interventions (approve/amend/dismiss) + keyword blocklist manager (add/remove chips)
 - `RegisterPage.tsx` — conditional `trade` dropdown for ALP/Technician; conditional `engineering_discipline` dropdown for JE
-- `StudyPlanPage.tsx` — Dabbu study plan calendar: year overview of color-coded daily slots, week strip, hour-by-hour `DayTimeline`
-- `TestPage.tsx` — added `AiChatPanel` below each question (calls `/api/session/chat`); guardrail rejections shown as amber bubble with shield label
+- `StudyPlanPage.tsx` — Dabbu study plan calendar: year overview of color-coded daily slots, week strip, hour-by-hour `DayTimeline`; `BlockCard` uses `<a href>` (not `useNavigate()`) for cross-page nav — `useNavigate()` in nested sub-components fails silently
+- `TestPage.tsx` — added `AiChatPanel` below each question (calls `/api/session/chat`); chat button label is **"Ask Naga about this question"**; guardrail rejections shown as amber bubble with shield label
 - `QuestionsPage.tsx` — separate `submitError` state shown in red box; guardrail rejections no longer appear green
+- `HomePage.tsx` — SM-2 due-reviews amber banner (Bell icon) shown above welcome banner when `GET /api/progress/due-reviews` returns `count > 0`
 
 ### Mobile screens added (July 2026)
 - `study_plan_screen.dart` — full study plan UI: diagnostic gate, generate flow, proposed/active plan views, 7-day strip, `_DayScheduleView` timeline
 - `test_screen.dart` — added `_AiChatSheet` bottom sheet via brain-icon FAB; per-message guardrail colouring
 - `study_screen.dart` — detects `agent=guardrail` / `threat` fields in `/content` response; shows amber shield card instead of silent blank
 - `naga_screen.dart` — parses `ApiException` JSON body to surface human-readable guardrail message in amber snackbar
+- `home_screen.dart` (`_HomeTab`) — SM-2 due-reviews amber banner; `_HomeTab` converted to `StatefulWidget`; `initState()` calls `getDueReviews()`; taps through to `StudyPlanScreen`
 
 ## Environment Variables
 
@@ -278,6 +288,12 @@ Every surface that accepts free text from a student must apply InputGuard before
 | Ask NAGA question | `/api/mentor/questions` | `_input_guard` in `mentor.py` |
 
 Response handling: all three frontends detect `{agent: "guardrail", response: "...", threat: "..."}` and render an amber shield card / snackbar — never silent blank.
+
+## NAGA Trusted Upload Path
+
+`POST /api/dabbu/naga/upload-content` → extracts questions from PDF/DOCX, calls `add_questions(trusted=True)`.
+
+`trusted=True` bypasses the length guard-rail in `_append()` that rejects short option strings (e.g. "3/4", "6"). The guard exists for LLM-generated questions (which must have full option text); NAGA-uploaded content from official PDFs may have legitimate short numeric options. Without `trusted=True`, the upload returns `{"added": 0}` silently.
 
 ## Known Architecture Decisions
 

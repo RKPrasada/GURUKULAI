@@ -1,15 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuthStore } from '@/store/auth'
 import api from '@/services/api'
-import { ChevronRight, CheckCircle, XCircle, Trophy, AlertTriangle, BookOpen, Loader2 } from 'lucide-react'
-
-const LOADING_STAGES = [
-  'Generating your diagnostic questions…',
-  'Pulling syllabus topics for your exam…',
-  'Calibrating difficulty levels…',
-  'Almost ready — building your test…',
-]
+import { ChevronRight, CheckCircle, XCircle, Trophy, AlertTriangle, BookOpen, Loader2, RefreshCw } from 'lucide-react'
 
 interface Question {
   question_id: string
@@ -202,45 +195,90 @@ export default function DiagnosticPage() {
   const [session, setSession] = useState<DiagnosticSession | null>(null)
   const [selectedAnswers, setSelectedAnswers] = useState<{ [key: string]: number }>({})
   const [loading, setLoading] = useState(true)
-  const [loadingStage, setLoadingStage] = useState(0)
+  const [loadingSlow, setLoadingSlow] = useState(false)
+  const [loadingTimedOut, setLoadingTimedOut] = useState(false)
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState('')
   const [result, setResult] = useState<DiagnosticResult | null>(null)
 
+  const slowTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const timeoutTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+
   useEffect(() => {
     initDiagnostic()
+    return () => {
+      if (slowTimer.current) clearTimeout(slowTimer.current)
+      if (timeoutTimer.current) clearTimeout(timeoutTimer.current)
+    }
   }, [])
 
   const initDiagnostic = async () => {
-    // Cycle through informative loading messages while we wait
-    const interval = setInterval(() => {
-      setLoadingStage((s) => Math.min(s + 1, LOADING_STAGES.length - 1))
-    }, 1800)
+    setLoadingSlow(false)
+    setLoadingTimedOut(false)
+    setLoading(true)
+    setError('')
+    // Show "taking longer" message after 4s — bank should respond in <1s normally
+    slowTimer.current = setTimeout(() => setLoadingSlow(true), 4000)
+    // Hard timeout at 20s — let the user retry rather than waiting forever
+    timeoutTimer.current = setTimeout(() => {
+      setLoadingTimedOut(true)
+      setLoading(false)
+    }, 20000)
     try {
       const response = await api.startDiagnostic()
       setSession({ ...response.data, current_index: 0 })
     } catch (err: any) {
-      setError(err.response?.data?.detail || 'Failed to start diagnostic')
+      setError(err.response?.data?.detail || 'Failed to load test. Please try again.')
     } finally {
-      clearInterval(interval)
+      if (slowTimer.current) clearTimeout(slowTimer.current)
+      if (timeoutTimer.current) clearTimeout(timeoutTimer.current)
       setLoading(false)
     }
   }
 
   if (loading) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-[400px] gap-4">
-        <Loader2 size={36} className="animate-spin text-primary" />
-        <p className="text-base font-medium text-gray-700 dark:text-gray-300">
-          {LOADING_STAGES[loadingStage]}
-        </p>
-        <div className="flex gap-1 mt-1">
-          {LOADING_STAGES.map((_, i) => (
-            <div
-              key={i}
-              className={`w-1.5 h-1.5 rounded-full transition-all ${i <= loadingStage ? 'bg-primary' : 'bg-gray-300 dark:bg-gray-600'}`}
-            />
-          ))}
+      <div className="flex flex-col items-center justify-center min-h-[400px] gap-5">
+        <Loader2 size={40} className="animate-spin text-primary" />
+        <div className="text-center">
+          <p className="text-base font-semibold text-gray-800 dark:text-gray-200">
+            Loading your test…
+          </p>
+          {loadingSlow && (
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
+              Taking a moment — hang tight…
+            </p>
+          )}
+        </div>
+      </div>
+    )
+  }
+
+  if (loadingTimedOut) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[400px] gap-5 text-center">
+        <AlertTriangle size={40} className="text-orange-500" />
+        <div>
+          <p className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-1">
+            Server is taking too long
+          </p>
+          <p className="text-sm text-gray-500 dark:text-gray-400 mb-5">
+            The backend may be starting up. Please try again in a moment.
+          </p>
+        </div>
+        <div className="flex gap-3">
+          <button
+            onClick={initDiagnostic}
+            className="flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-semibold py-2 px-5 rounded-lg transition"
+          >
+            <RefreshCw size={16} /> Try Again
+          </button>
+          <button
+            onClick={() => navigate('/')}
+            className="py-2 px-5 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition"
+          >
+            Back to Home
+          </button>
         </div>
       </div>
     )
@@ -248,15 +286,25 @@ export default function DiagnosticPage() {
 
   if (error) {
     return (
-      <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-6">
-        <h2 className="text-lg font-semibold text-red-800 dark:text-red-100 mb-2">Error</h2>
-        <p className="text-red-700 dark:text-red-200 mb-4">{error}</p>
-        <button
-          onClick={() => navigate('/')}
-          className="bg-primary hover:bg-primary/90 text-white font-semibold py-2 px-4 rounded-lg"
-        >
-          Back to Home
-        </button>
+      <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-6 text-center">
+        <h2 className="text-lg font-semibold text-red-800 dark:text-red-100 mb-2">
+          Could not load test
+        </h2>
+        <p className="text-red-700 dark:text-red-200 mb-5">{error}</p>
+        <div className="flex gap-3 justify-center">
+          <button
+            onClick={initDiagnostic}
+            className="flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-semibold py-2 px-5 rounded-lg transition"
+          >
+            <RefreshCw size={16} /> Try Again
+          </button>
+          <button
+            onClick={() => navigate('/')}
+            className="py-2 px-5 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition"
+          >
+            Back to Home
+          </button>
+        </div>
       </div>
     )
   }

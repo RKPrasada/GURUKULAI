@@ -85,18 +85,22 @@ def _log_proposal(proposal: dict) -> None:
 
 def _topic_weights(weakness_map: list[WeaknessMap], syllabus: dict) -> list[dict]:
     """
-    Return [{subject, topic, weight, priority}] for every topic in the syllabus.
-    Weak topics (score<0.30) weight=3; moderate (0.30-0.60) weight=2; rest weight=1.
-    Topics not attempted default to weight=1 (treated as unseen, not bad).
+    Return [{subject, topic, subtopic, weight, priority}] for every SUBTOPIC in the
+    syllabus (Subject → Topic → Subtopic). Weakness is tracked at topic level, so
+    each subtopic inherits its parent topic's priority. Weak topics get weight=3
+    (critical) / weight=2 (weak) so their subtopics recur more often in the
+    schedule → more study + practice sessions on weak areas.
+    Topics with no subtopics fall back to a single topic-level entry.
     """
+    from datetime import date as _date
+    today = _date.today()
     wm_index = {(w.subject.lower(), w.topic.lower()): w for w in weakness_map}
     result = []
     for subj in syllabus.get("subjects", []):
         subj_name = subj["name"]
         for topic_obj in subj.get("topics", []):
             topic_name = topic_obj["name"]
-            key = (subj_name.lower(), topic_name.lower())
-            w = wm_index.get(key)
+            w = wm_index.get((subj_name.lower(), topic_name.lower()))
             if w is None:
                 weight, priority = 1, "normal"
             elif w.score_pct < 0.30:
@@ -105,13 +109,27 @@ def _topic_weights(weakness_map: list[WeaknessMap], syllabus: dict) -> list[dict
                 weight, priority = 2, "weak"
             else:
                 weight, priority = 1, "normal"
-            result.append({
-                "subject": subj_name,
-                "topic": topic_name,
-                "weight": weight,
-                "priority": priority,
-                "score_pct": w.score_pct if w else None,
-            })
+            # SM-2: topics whose review is due today get bumped to weight=4
+            if w is not None and hasattr(w, "next_review_date") and w.next_review_date:
+                review_date = w.next_review_date.date() if hasattr(w.next_review_date, "date") else w.next_review_date
+                if review_date <= today:
+                    weight = max(weight, 3)
+                    priority = "critical" if priority != "critical" else priority
+
+            subtopics = [
+                (s if isinstance(s, str) else s.get("name", ""))
+                for s in topic_obj.get("subtopics", [])
+            ]
+            subtopics = [s for s in subtopics if s] or [""]  # ensure ≥1 entry
+            for sub in subtopics:
+                result.append({
+                    "subject": subj_name,
+                    "topic": topic_name,
+                    "subtopic": sub,
+                    "weight": weight,
+                    "priority": priority,
+                    "score_pct": w.score_pct if w else None,
+                })
     return result
 
 
@@ -152,11 +170,11 @@ class DabbuAgent:
         syllabus = load_syllabus(exam_key)
         topic_list = _topic_weights(student.weakness_map, syllabus)
 
-        weak_topics = [
+        weak_topics = sorted({
             f"{t['subject']} → {t['topic']}"
             for t in topic_list
             if t["priority"] in ("critical", "weak")
-        ]
+        })
 
         weeks = self._build_weeks(topic_list, start, total_days)
         total_hours = sum(w.total_hours for w in weeks)
@@ -182,7 +200,7 @@ class DabbuAgent:
 
         # Notify NAGA
         exam_display = exam_name(exam_key)
-        weak_count = len([t for t in topic_list if t["priority"] in ("critical", "weak")])
+        weak_count = len(weak_topics)  # distinct weak subject→topic pairs
         _notify(
             user_id=NAGA_USER_ID,
             ntype=NotificationType.STUDY_PLAN_PROPOSED,
@@ -297,13 +315,13 @@ class DabbuAgent:
                     # Decide session type: mock on Saturdays slot-5, practice for weak, study otherwise
                     if dow == "Saturday" and slot_hr == _DAILY_SLOTS[-1]:
                         stype = SessionType.MOCK
-                        subj, topic_name = "", ""
+                        subj, topic_name, subtopic_name = "", "", ""
                     elif t["priority"] in ("critical", "weak"):
                         stype = SessionType.PRACTICE
-                        subj, topic_name = t["subject"], t["topic"]
+                        subj, topic_name, subtopic_name = t["subject"], t["topic"], t.get("subtopic", "")
                     else:
                         stype = SessionType.STUDY
-                        subj, topic_name = t["subject"], t["topic"]
+                        subj, topic_name, subtopic_name = t["subject"], t["topic"], t.get("subtopic", "")
 
                     priority_map = {"critical": 3, "weak": 2, "normal": 1}
                     blocks.append(SessionBlock(
@@ -312,6 +330,7 @@ class DabbuAgent:
                         duration_hours=2,
                         subject=subj,
                         topic=topic_name,
+                        subtopic=subtopic_name,
                         session_type=stype,
                         priority=priority_map.get(t["priority"], 1),
                     ))
